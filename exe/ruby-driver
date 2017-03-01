@@ -1,0 +1,5 @@
+#!/usr/bin/ruby -wU
+
+require 'ruby/driver'
+
+Ruby::Driver::start(ARGV)
