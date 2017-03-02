@@ -82,20 +82,23 @@ module Ruby
               res.errors = [e.message]
               fatal_msg = e.message
           ensure
-              STDOUT.write(ActiveSupport::JSON.encode(res))
+              @output.write(ActiveSupport::JSON.encode(res))
               if fatal_msg != nil then abort(fatal_msg) end
           end
       end
 
-      def self.start(argv)
+      def self.start(argv, input, output)
           $DRIVER = argv[0]
           if $DRIVER == nil
               $DRIVER = "driver-test"
           end
 
+          @input = input
+          @output = output
+
           parser = Yajl::Parser.new(:symbolize_keys => true)
           parser.on_parse_complete = method(:response_ast)
-          parser.parse(STDIN)
+          parser.parse(@input)
       end
   end
 end
