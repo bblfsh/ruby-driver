@@ -96,9 +96,16 @@ module Ruby
           @input = input
           @output = output
 
-          parser = Yajl::Parser.new(:symbolize_keys => true)
-          parser.on_parse_complete = method(:response_ast)
-          parser.parse(@input)
+          begin
+              parser = Yajl::Parser.new(:symbolize_keys => true)
+              parser.on_parse_complete = method(:response_ast)
+              parser.parse(@input)
+          rescue Exception => e
+              res = ResponseMessage.new($DRIVER)
+              res.status = ResponseMessage::STATUS_FATAL
+              res.errors = [e.message]
+              @output.write(ActiveSupport::JSON.encode(res))
+          end
       end
   end
 end
