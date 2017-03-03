@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class Ruby::DriverTest < Minitest::Test
-    # $stdout = File.new('/dev/null', 'w')
+
     def setup
         @parser = Yajl::Parser.new(:symbolize_keys => true)
     end
@@ -42,19 +42,25 @@ class Ruby::DriverTest < Minitest::Test
     end
 
     def test_start
-        output = StringIO.new
-        input = StringIO.new
-        input << File.read("test/input_test_all.json")
+        output = StringIO.new('', 'a')
+        infile = File.read("test/input_test_all.json")
+        input = StringIO.new(infile, 'r')
 
-        driver_version = 'driver-minitest'
-        Ruby::Driver::start(driver_version, input, output)
+        @driver_version = 'driver-minitest'
+        Ruby::Driver::start(@driver_version, input, output)
 
         @parser.on_parse_complete = method(:callback_start)
-        @parser.parse(output.string)
+        responses = StringIO.new()
+        r = output.string
+        responses = StringIO.new(r, 'r')
+        @parser.parse(responses)
     end
 
     def callback_start(json_res)
-        assert_equal(Ruby::Driver::ResponseMessage::STATUS_OK, json_res.status)
+        assert_equal(Ruby::Driver::ResponseMessage::STATUS_OK, json_res[:status])
+        assert_equal(@driver_version, json_res[:driver])
+        assert_equal('ruby', json_res[:language])
+        assert_equal(RUBY_VERSION, json_res[:language_version])
     end
 
 end

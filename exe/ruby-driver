@@ -2,4 +2,4 @@
 
 require 'ruby/driver'
 
-Ruby::Driver::start(ARGV, $stdin, $stdout)
+Ruby::Driver::start(ARGV[0], $stdin, $stdout)

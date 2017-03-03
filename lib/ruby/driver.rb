@@ -87,8 +87,8 @@ module Ruby
           end
       end
 
-      def self.start(argv, input, output)
-          $DRIVER = argv[0]
+      def self.start(driver, input, output)
+          $DRIVER = driver
           if $DRIVER == nil
               $DRIVER = "driver-test"
           end
