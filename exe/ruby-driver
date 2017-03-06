@@ -1,5 +1,5 @@
 #!/usr/bin/ruby -wU
 
-require 'ruby/driver'
+require_relative '../lib/ruby/driver'
 
 Ruby::Driver::start(ARGV[0], $stdin, $stdout)

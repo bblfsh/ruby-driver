@@ -1,7 +1,7 @@
 require "ruby/driver/version"
-require 'active_support'
 require 'ripper'
 require 'yajl'
+require 'json'
 
 module Ruby
   module Driver
@@ -24,15 +24,6 @@ module Ruby
                   @content = json_req[:content]
           end
 
-          def do_action()
-              case action
-              when PARSE_AST
-                  Ripper.sexp_raw(content).to_s()
-              else
-                  raise MyException, BAD_REQUEST
-              end
-          end
-
           private
           def check_req(req)
               raise MyException, BAD_REQUEST + ": Missing action" unless req.has_key?(:action)
@@ -44,6 +35,10 @@ module Ruby
       end
 
       class ResponseMessage
+          STATUS_OK = "ok"
+          STATUS_ERROR = "error"
+          STATUS_FATAL = "fatal"
+
           attr_accessor :status
           attr_accessor :errors
           attr_accessor :driver
@@ -52,14 +47,28 @@ module Ruby
           attr_accessor :ast
 
           def initialize(driver)
+              @errors = nil
               @driver = driver
               @language = "ruby"
               @language_version = RUBY_VERSION
           end
 
-          STATUS_OK = "ok"
-          STATUS_ERROR = "error"
-          STATUS_FATAL = "fatal"
+          def toHash
+              hash = {
+                  :status => @status,
+                  :driver => @driver,
+                  :language => @language,
+                  :language_version => @language_version,
+                  :ast => @ast
+              }
+
+              if @errors != nil
+                  hash[:errors] = @errors
+              end
+
+              return hash
+          end
+
       end
 
       # json parser callback
@@ -68,7 +77,7 @@ module Ruby
           begin
               req = RequestMessage.new(obj)
               if req.action == RequestMessage::PARSE_AST
-                  res.ast = Ripper.sexp_raw(req.content).to_s()
+                  res.ast = Ripper.sexp_raw(req.content)
               else
                   raise MyException, RequestMessage::BAD_REQUEST + ": Unknown action"
               end
@@ -82,7 +91,7 @@ module Ruby
               res.errors = [e.message]
               fatal_msg = e.message
           ensure
-              @output.write(ActiveSupport::JSON.encode(res))
+              @output.puts(JSON.generate(res.toHash))
               if fatal_msg != nil then abort(fatal_msg) end
           end
       end
@@ -104,7 +113,7 @@ module Ruby
               res = ResponseMessage.new($DRIVER)
               res.status = ResponseMessage::STATUS_FATAL
               res.errors = [e.message]
-              @output.write(ActiveSupport::JSON.encode(res))
+              @output.write(JSON.generate(res.toHash))
           end
       end
   end
