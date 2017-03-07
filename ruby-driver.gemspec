@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'ruby/driver/version'
+require 'ruby_driver/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "ruby-driver"
-  spec.version       = Ruby::Driver::VERSION
+  spec.version       = RubyDriver::VERSION
   spec.authors       = ["Manuel Carmona"]
   spec.email         = ["manuel@sourced.tech"]
 
@@ -13,7 +13,6 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/bblfsh/ruby-driver"
   spec.license       = "GNU GENERAL PUBLIC LICENSE Version 3"
 
-  #spec.files         = `git ls-files -z`.split("\x0").reject do |f|
   spec.files =  `find -type f | grep -E -v '(^./vendor|^./.git|^./.bundle|^./test|^./pkg)' | sed -e 's/..//'`.split("\n").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end

@@ -1,13 +1,13 @@
 require 'test_helper'
 
-class Ruby::DriverTest < Minitest::Test
+class RubyDriverTest < Minitest::Test
 
     def setup
         @parser = Yajl::Parser.new(:symbolize_keys => true)
     end
 
     def test_that_it_has_a_version_number
-        refute_nil ::Ruby::Driver::VERSION
+        refute_nil ::RubyDriver::VERSION
     end
 
     def test_wrong_request
@@ -17,7 +17,7 @@ class Ruby::DriverTest < Minitest::Test
     end
 
     def callback_wrong_request(obj)
-        Ruby::Driver::RequestMessage.new(obj)
+        RubyDriver::RequestMessage.new(obj)
         assert_raises
     end
 
@@ -37,8 +37,8 @@ class Ruby::DriverTest < Minitest::Test
     end
 
     def callback_parse_request(obj)
-        req = Ruby::Driver::RequestMessage.new(obj)
-        assert_equal(Ruby::Driver::RequestMessage::PARSE_AST, req.action)
+        req = RubyDriver::RequestMessage.new(obj)
+        assert_equal(RubyDriver::RequestMessage::PARSE_AST, req.action)
     end
 
     def test_start
@@ -47,7 +47,7 @@ class Ruby::DriverTest < Minitest::Test
         input = StringIO.new(infile, 'r')
 
         @driver_version = 'driver-minitest'
-        Ruby::Driver::start(@driver_version, input, output)
+        RubyDriver::start(@driver_version, input, output)
 
         @parser.on_parse_complete = method(:callback_start)
         responses = StringIO.new()
@@ -57,10 +57,7 @@ class Ruby::DriverTest < Minitest::Test
     end
 
     def callback_start(json_res)
-        assert_equal(Ruby::Driver::ResponseMessage::STATUS_OK, json_res[:status])
-        assert_equal(@driver_version, json_res[:driver])
-        assert_equal('ruby', json_res[:language])
-        assert_equal(RUBY_VERSION, json_res[:language_version])
+        assert_equal(RubyDriver::ResponseMessage::ok, json_res[:status])
     end
 
 end
