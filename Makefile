@@ -1,25 +1,15 @@
-SOURCEDIR=.
-GEMDIR=pkg
-VENDORDIR=vendor
-DRIVER_VERSION=beta-0.0.9
-DOCKERFILE=Dockerfile
-DOCKER_IMAGE_NAME=bblfsh/ruby-driver
-DOCKER_IMAGE_BUILD_NAME=bblfsh/ruby-driver-build
+-include .sdk/Makefile
 
-all: bundle-gem build-gem docker-build
+RUBY_TEST_COMMAND=rake
 
-bundle-gem:
-	bundle install --no-deployment && bundle install --deployment
-	bundle package --all
+$(if $(filter true,$(sdkloaded)),,$(error You must install bblfsh-sdk))
 
-build-gem:
-	rake build
+test-native:
+	cd native; \
+	$(RUBY_TEST_COMMAND) test
 
-docker-build: $(DOCKERFILE)
-	docker build -f ${DOCKERFILE} -t ${DOCKER_IMAGE_NAME} ${SOURCEDIR}
-
-.PHONY:
-clean:
-	if [ -d ${GEMDIR} ] ; then rm -r ${GEMDIR} ; fi
-	if [ -d ${VENDORDIR} ] ; then rm -r ${VENDORDIR} ; fi
-	if [ -f Gemfile.lock ] ; then rm Gemfile.lock ; fi
+build-native:
+	cd native; \
+	echo "not implemented"
+	echo -e "#!/bin/bash\necho 'not implemented'" > $(BUILD_PATH)/native
+	chmod +x $(BUILD_PATH)/native
