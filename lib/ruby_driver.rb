@@ -1,40 +1,45 @@
 require 'ruby_driver/message'
 require 'ripper'
-require 'yajl'
 require 'json'
 
 module RubyDriver
+  # Driver implements the functionality to parse a JSON object per line, which
+  # represents a Request with ruby source code, and reply with a JSON object response containing the AST
+  # of the code.
   class Driver
-    # json parser callback
-    def response_ast(obj)
+
+    # response_ast extracts the AST from a request, and returns a response.
+    def response_ast(hash_req)
       res = Message::Response.new
       begin
-        req = Message::Request.new(obj)
+        req = Message::Request.new(hash_req)
         res.ast = Ripper.sexp_raw(req.content)
         res.status = :ok
       rescue Message::BadRequest => e
-        res.status = 'error'
+        res.status = :error
         res.errors = [e.message]
       end
 
-      @output.puts(JSON.generate(res.to_hash))
+      return res
     end
 
+    # start unmarshal requests from input, and marshal responses to output.
     def start(input, output)
       @input = input
       @output = output
 
       begin
-        parser = Yajl::Parser.new(:symbolize_keys => true)
-        parser.on_parse_complete = method(:response_ast)
-        parser.parse(@input)
+        @input.each_line do |line|
+          res = response_ast(JSON.parse(line))
+          @output.puts(JSON.generate(res.to_hash))
+        end
       rescue Exception => e
         res = Message::Response.new
-        res.status = 'fatal'
+        res.status = :fatal
         res.errors = [e.message]
         @output.puts(JSON.generate(res.to_hash))
+        abort(e.message)
       end
-
     end
 
   end
