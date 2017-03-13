@@ -1,4 +1,4 @@
-# ruby-driver  ![Driver Status](https://img.shields.io/badge/status-planning-e08dd1.svg) [![Build Status](https://travis-ci.org/bblfsh/ruby-driver.svg?branch=master)](https://travis-ci.org/bblfsh/ruby-driver) ![Native Version](https://img.shields.io/badge/ruby%20version--aa93ea.svg) ![Go Version](https://img.shields.io/badge/go%20version-1.8-63afbf.svg)
+# ruby-driver  ![Driver Status](https://img.shields.io/badge/status-planning-e08dd1.svg) [![Build Status](https://travis-ci.org/bblfsh/ruby-driver.svg?branch=master)](https://travis-ci.org/bblfsh/ruby-driver) ![Native Version](https://img.shields.io/badge/ruby%20version-2.3.3--r0-aa93ea.svg) ![Go Version](https://img.shields.io/badge/go%20version-1.8-63afbf.svg)
 
 ruby driver for [babelfish](https://github.com/bblfsh/server).
 
@@ -22,3 +22,6 @@ License
 -------
 
 GPLv3, see [LICENSE](LICENSE)
+
+
+
