@@ -1,2 +1,4 @@
 .sdk
 build
+.bundle
+.gem

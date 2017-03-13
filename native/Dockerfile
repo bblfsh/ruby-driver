@@ -1,14 +1,14 @@
 FROM alpine:3.5
 
 ADD pkg /opt/driver/src/pkg
-ADD vendor/cache /opt/driver/src/vendor/cache
+ADD vendor/bundle/ruby/2.3.0/cache/ /opt/driver/src/cache
 
 RUN mkdir -p /opt/driver/src && \
-    #adduser ${BUILD_USER} -u ${BUILD_UID} -D -h /opt/driver/src && \
-    apk add --no-cache libc-dev gcc make ruby ruby-dev && \
+    apk add -v --no-cache libc-dev gcc make ruby ruby-dev && \
     cd /opt/driver/src && \
-    gem install --no-rdoc --no-ri vendor/cache/* && \
-    gem install --no-rdoc --no-ri pkg/* && \
-    apk del -v libc-dev gcc make ruby-dev
+    gem install -V --no-document --local cache/* && \
+    gem install -V --no-document --bindir /opt/driver/bin --local pkg/* && \
+    apk del -v libc-dev gcc make ruby-dev && \
+    rm -r /opt/driver/src/*
 
-ENTRYPOINT ["native"]
+ENTRYPOINT ["/opt/driver/bin/native"]
