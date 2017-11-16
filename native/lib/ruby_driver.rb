@@ -4,8 +4,8 @@ require 'json'
 
 module RubyDriver
   # Driver implements the functionality to parse a JSON object per line, which
-  # represents a Request with ruby source code, and reply with a JSON object response containing the AST
-  # of the code.
+  # represents a Request with ruby source code, and reply with a JSON object
+  # response containing the AST of the code.
   class Driver
 
     # response_ast extracts the AST from a request, and returns a response.
@@ -28,17 +28,17 @@ module RubyDriver
       @input = input
       @output = output
 
-      begin
-        @input.each_line do |line|
+      @output.sync = true
+      @input.each_line do |line|
+        begin
           res = response_ast(JSON.parse(line))
           @output.puts(JSON.generate(res.to_hash))
+        rescue Exception => e
+          res = Message::Response.new
+          res.status = :fatal
+          res.errors = [e.message]
+          @output.puts(JSON.generate(res.to_hash))
         end
-      rescue Exception => e
-        res = Message::Response.new
-        res.status = :fatal
-        res.errors = [e.message]
-        @output.puts(JSON.generate(res.to_hash))
-        abort(e.message)
       end
     end
 
