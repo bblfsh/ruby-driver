@@ -1,3 +1,7 @@
+-include .sdk/Makefile
+
+$(if $(filter true,$(sdkloaded)),,$(error You must install bblfsh-sdk))
+
 RUBY_MAKE_CMD=rake
 RUBY_DEP_PACK_CMD=bundle
 RUBY_GEM_CMD=gem
@@ -16,5 +20,3 @@ build-native-internal:
 	cp -r pkg $(BUILD_PATH); \
 	mkdir -p $(BUILD_PATH)/dependencies; \
 	cp -r vendor/bundle/ruby/2.3.0/cache/* $(BUILD_PATH)/dependencies;
-
-include .sdk/Makefile

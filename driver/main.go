@@ -1,16 +1,19 @@
 package main
 
 import (
-	"github.com/bblfsh/sdk/protocol/cmd"
-
 	"github.com/bblfsh/ruby-driver/driver/normalizer"
+
+	"gopkg.in/bblfsh/sdk.v1/sdk/driver"
 )
 
-var version string
-var build string
-
 func main() {
-	cmd.DriverMain(version, build,
-		normalizer.NativeToNoder,
-		normalizer.AnnotationRules)
+	d, err := driver.NewDriver(normalizer.ToNode, normalizer.Transformers)
+	if err != nil {
+		panic(err)
+	}
+
+	s := driver.NewServer(d)
+	if err := s.Start(); err != nil {
+		panic(err)
+	}
 }
