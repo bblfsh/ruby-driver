@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bblfsh/sdk"
+	"gopkg.in/bblfsh/sdk"
 
 	"github.com/stretchr/testify/require"
 )

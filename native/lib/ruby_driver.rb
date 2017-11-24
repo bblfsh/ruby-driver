@@ -1,6 +1,9 @@
 require 'ruby_driver/message'
-require 'ripper'
+require 'ruby_driver/node_converter'
+
 require 'json'
+
+require 'parser/current'
 
 module RubyDriver
   # Driver implements the functionality to parse a JSON object per line, which
@@ -12,8 +15,9 @@ module RubyDriver
     def response_ast(hash_req)
       res = Message::Response.new
       begin
-        req = Message::Request.new(hash_req)
-        res.ast = Ripper.sexp_raw(req.content)
+        res = Message::Request.new(hash_req)
+        node = Parser::CurrentRuby.parse(res.content)
+        res.ast = NodeConverter::Converter.new(node).visit.tohash()
         res.status = :ok
       rescue Message::BadRequest => e
         res.status = :error
@@ -41,6 +45,5 @@ module RubyDriver
         end
       end
     end
-
   end
 end
