@@ -5,22 +5,16 @@ require 'parser/current'
 
 module NodeConverter
   class Converter
-    def initialize(node, comments)
-      if not node.is_a?(Parser::AST::Node)
+    def initialize(node)
+      @root = node
+      @dict = {}
+      if not @root.is_a?(Parser::AST::Node)
         raise "Object is not a Parser::AST::Node"
       end
-
-      @root = node
-      @comments = comments
-      @dict = {}
-
     end
 
     def tohash()
-      @dict["ast"] = {}
-      @dict["ast"]["module"] = convert(@root)
-      add_comments()
-      return @dict["ast"]
+      @dict["root"] = convert(@root)
     end
 
     private
@@ -227,33 +221,5 @@ module NodeConverter
       return hash
     end
 
-    # Add comments inside the root node "comments" field
-    def add_comments()
-
-      if @comments == nil
-        return
-      end
-
-      comments = []
-
-      @comments.each do |comment|
-        dcomment = {
-          "type" => "comment",
-          "text" => comment.text,
-          "inline" => comment.inline?,
-          "documentation" => comment.document?,
-          "start_line" => comment.loc.first_line,
-          "end_line" => comment.loc.last_line,
-          "start_col" => comment.loc.column,
-          "end_col" => comment.loc.last_column
-        }
-        comments.push(dcomment)
-      end
-
-      @dict["ast"]["module"]["comments"] = comments
-    end
-
-
   end
 end
-
