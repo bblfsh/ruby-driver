@@ -1,0 +1,207 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+ {
+.  Roles: File
+.  Properties: {
+.  .  end_col: 19
+.  .  end_line: 2
+.  .  start_col: 0
+.  .  start_line: 1
+.  .  type: begin
+.  }
+.  Children: {
+.  .  0:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 24
+.  .  .  .  end_line: 1
+.  .  .  .  internalRole: body
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 1
+.  .  .  .  target: a
+.  .  .  .  type: lvasgn
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 24
+.  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  type: hash
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 13
+.  .  .  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  .  .  internalRole: contents
+.  .  .  .  .  .  .  .  start_col: 5
+.  .  .  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  .  .  type: pair
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  end_col: 8
+.  .  .  .  .  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  .  .  .  .  internalRole: _1
+.  .  .  .  .  .  .  .  .  .  start_col: 5
+.  .  .  .  .  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  .  .  .  .  token: a
+.  .  .  .  .  .  .  .  .  .  type: str
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  1:  {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  end_col: 13
+.  .  .  .  .  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  .  .  .  .  internalRole: _2
+.  .  .  .  .  .  .  .  .  .  start_col: 12
+.  .  .  .  .  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  .  .  .  .  token: 1
+.  .  .  .  .  .  .  .  .  .  type: int
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 23
+.  .  .  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  .  .  internalRole: contents
+.  .  .  .  .  .  .  .  start_col: 15
+.  .  .  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  .  .  type: pair
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  end_col: 18
+.  .  .  .  .  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  .  .  .  .  internalRole: _1
+.  .  .  .  .  .  .  .  .  .  start_col: 15
+.  .  .  .  .  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  .  .  .  .  token: b
+.  .  .  .  .  .  .  .  .  .  type: str
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  1:  {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  end_col: 23
+.  .  .  .  .  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  .  .  .  .  internalRole: _2
+.  .  .  .  .  .  .  .  .  .  start_col: 22
+.  .  .  .  .  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  .  .  .  .  token: 2
+.  .  .  .  .  .  .  .  .  .  type: int
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  1:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 19
+.  .  .  .  end_line: 2
+.  .  .  .  internalRole: body
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 2
+.  .  .  .  target: b
+.  .  .  .  type: lvasgn
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 19
+.  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  type: hash
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 13
+.  .  .  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  .  .  internalRole: contents
+.  .  .  .  .  .  .  .  start_col: 5
+.  .  .  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  .  .  type: pair
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  end_col: 8
+.  .  .  .  .  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  .  .  .  .  internalRole: _1
+.  .  .  .  .  .  .  .  .  .  start_col: 5
+.  .  .  .  .  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  .  .  .  .  token: c
+.  .  .  .  .  .  .  .  .  .  type: str
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  1:  {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  end_col: 13
+.  .  .  .  .  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  .  .  .  .  internalRole: _2
+.  .  .  .  .  .  .  .  .  .  start_col: 12
+.  .  .  .  .  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  .  .  .  .  token: 3
+.  .  .  .  .  .  .  .  .  .  type: int
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 18
+.  .  .  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  .  .  internalRole: contents
+.  .  .  .  .  .  .  .  start_col: 15
+.  .  .  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  .  .  type: kwsplat
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  end_col: 18
+.  .  .  .  .  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  .  .  .  .  internalRole: name
+.  .  .  .  .  .  .  .  .  .  start_col: 17
+.  .  .  .  .  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  .  .  .  .  token: a
+.  .  .  .  .  .  .  .  .  .  type: lvar
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  }
+}
+

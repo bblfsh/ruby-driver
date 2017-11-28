@@ -1,0 +1,57 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+ {
+.  Roles: File
+.  Properties: {
+.  .  end_col: 10
+.  .  end_line: 1
+.  .  start_col: 0
+.  .  start_line: 1
+.  .  target: a
+.  .  type: lvasgn
+.  }
+.  Children: {
+.  .  0:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 10
+.  .  .  .  end_line: 1
+.  .  .  .  internalRole: value
+.  .  .  .  start_col: 4
+.  .  .  .  start_line: 1
+.  .  .  .  type: dstr
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 0
+.  .  .  .  .  .  end_line: 3
+.  .  .  .  .  .  internalRole: children
+.  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  token:     Some text
+
+.  .  .  .  .  .  type: str
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 0
+.  .  .  .  .  .  end_line: 4
+.  .  .  .  .  .  internalRole: children
+.  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  start_line: 3
+.  .  .  .  .  .  token:     multiline
+
+.  .  .  .  .  .  type: str
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  }
+}
+

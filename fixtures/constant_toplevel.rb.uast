@@ -1,0 +1,29 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+ {
+.  Roles: File
+.  Properties: {
+.  .  end_col: 5
+.  .  end_line: 1
+.  .  start_col: 0
+.  .  start_line: 1
+.  .  token: Foo
+.  .  type: const
+.  }
+.  Children: {
+.  .  0:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 2
+.  .  .  .  end_line: 1
+.  .  .  .  internalRole: base
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 1
+.  .  .  .  type: cbase
+.  .  .  }
+.  .  }
+.  }
+}
+

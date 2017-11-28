@@ -1,0 +1,16 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+ {
+.  Roles: File
+.  Properties: {
+.  .  end_col: 4
+.  .  end_line: 1
+.  .  start_col: 0
+.  .  start_line: 1
+.  .  token: foo
+.  .  type: sym
+.  }
+}
+

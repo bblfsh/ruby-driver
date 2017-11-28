@@ -1,0 +1,106 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+ {
+.  Roles: File
+.  Properties: {
+.  .  end_col: 3
+.  .  end_line: 5
+.  .  start_col: 0
+.  .  start_line: 1
+.  .  type: begin
+.  }
+.  Children: {
+.  .  0:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  class: <nil>
+.  .  .  .  end_col: 3
+.  .  .  .  end_line: 1
+.  .  .  .  internalRole: body
+.  .  .  .  name: foo
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 1
+.  .  .  .  type: defs
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 14
+.  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  internalRole: args
+.  .  .  .  .  .  start_col: 13
+.  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  token: a
+.  .  .  .  .  .  type: arg
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 17
+.  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  internalRole: args
+.  .  .  .  .  .  start_col: 16
+.  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  token: b
+.  .  .  .  .  .  type: arg
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  2:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 20
+.  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  internalRole: args
+.  .  .  .  .  .  start_col: 19
+.  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  token: c
+.  .  .  .  .  .  type: arg
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  3:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 8
+.  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  type: self
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  1:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  args: <nil>
+.  .  .  .  class: <nil>
+.  .  .  .  end_col: 3
+.  .  .  .  end_line: 4
+.  .  .  .  internalRole: body
+.  .  .  .  name: bar
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 4
+.  .  .  .  type: defs
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 8
+.  .  .  .  .  .  end_line: 4
+.  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  start_line: 4
+.  .  .  .  .  .  type: self
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  }
+}
+

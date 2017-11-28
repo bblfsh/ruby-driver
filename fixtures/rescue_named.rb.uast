@@ -1,0 +1,171 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+ {
+.  Roles: File
+.  Properties: {
+.  .  end_col: 3
+.  .  end_line: 7
+.  .  start_col: 0
+.  .  start_line: 1
+.  .  type: kwbegin
+.  }
+.  Children: {
+.  .  0:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  internalRole: body
+.  .  .  .  type: rescue
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  end_col: 15
+.  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  selector: raise
+.  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  type: send
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 15
+.  .  .  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  .  .  internalRole: values
+.  .  .  .  .  .  .  .  start_col: 10
+.  .  .  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  .  .  token: foo
+.  .  .  .  .  .  .  .  type: str
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 9
+.  .  .  .  .  .  end_line: 6
+.  .  .  .  .  .  internalRole: else
+.  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  start_line: 6
+.  .  .  .  .  .  target: b
+.  .  .  .  .  .  type: lvasgn
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 9
+.  .  .  .  .  .  .  .  end_line: 6
+.  .  .  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  .  .  start_col: 8
+.  .  .  .  .  .  .  .  start_line: 6
+.  .  .  .  .  .  .  .  token: 0
+.  .  .  .  .  .  .  .  type: int
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  2:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 17
+.  .  .  .  .  .  end_line: 4
+.  .  .  .  .  .  internalRole: handlers
+.  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  start_line: 3
+.  .  .  .  .  .  type: resbody
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 21
+.  .  .  .  .  .  .  .  end_line: 3
+.  .  .  .  .  .  .  .  internalRole: alias
+.  .  .  .  .  .  .  .  start_col: 20
+.  .  .  .  .  .  .  .  start_line: 3
+.  .  .  .  .  .  .  .  target: e
+.  .  .  .  .  .  .  .  type: lvasgn
+.  .  .  .  .  .  .  .  value: <nil>
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 17
+.  .  .  .  .  .  .  .  end_line: 4
+.  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  .  .  start_line: 4
+.  .  .  .  .  .  .  .  target: a
+.  .  .  .  .  .  .  .  type: lvasgn
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  end_col: 17
+.  .  .  .  .  .  .  .  .  .  end_line: 4
+.  .  .  .  .  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  .  .  .  .  selector: message
+.  .  .  .  .  .  .  .  .  .  start_col: 8
+.  .  .  .  .  .  .  .  .  .  start_line: 4
+.  .  .  .  .  .  .  .  .  .  type: send
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  end_col: 9
+.  .  .  .  .  .  .  .  .  .  .  .  end_line: 4
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  .  .  .  .  start_col: 8
+.  .  .  .  .  .  .  .  .  .  .  .  start_line: 4
+.  .  .  .  .  .  .  .  .  .  .  .  token: e
+.  .  .  .  .  .  .  .  .  .  .  .  type: lvar
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  2:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 16
+.  .  .  .  .  .  .  .  end_line: 3
+.  .  .  .  .  .  .  .  internalRole: exceptions
+.  .  .  .  .  .  .  .  start_col: 7
+.  .  .  .  .  .  .  .  start_line: 3
+.  .  .  .  .  .  .  .  type: array
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  .  .  .  .  end_col: 16
+.  .  .  .  .  .  .  .  .  .  end_line: 3
+.  .  .  .  .  .  .  .  .  .  internalRole: contents
+.  .  .  .  .  .  .  .  .  .  start_col: 7
+.  .  .  .  .  .  .  .  .  .  start_line: 3
+.  .  .  .  .  .  .  .  .  .  token: Exception
+.  .  .  .  .  .  .  .  .  .  type: const
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  }
+}
+

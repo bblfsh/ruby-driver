@@ -1,0 +1,120 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+ {
+.  Roles: File
+.  Properties: {
+.  .  end_col: 6
+.  .  end_line: 2
+.  .  start_col: 0
+.  .  start_line: 1
+.  .  type: begin
+.  }
+.  Children: {
+.  .  0:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 10
+.  .  .  .  end_line: 1
+.  .  .  .  internalRole: body
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 1
+.  .  .  .  target: a
+.  .  .  .  type: lvasgn
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 10
+.  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  type: array
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 6
+.  .  .  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  .  .  internalRole: contents
+.  .  .  .  .  .  .  .  start_col: 5
+.  .  .  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  .  .  token: 1
+.  .  .  .  .  .  .  .  type: int
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 9
+.  .  .  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  .  .  internalRole: contents
+.  .  .  .  .  .  .  .  start_col: 8
+.  .  .  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  .  .  token: 2
+.  .  .  .  .  .  .  .  type: int
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  1:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 6
+.  .  .  .  end_line: 2
+.  .  .  .  internalRole: body
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 2
+.  .  .  .  target: b
+.  .  .  .  type: lvasgn
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 6
+.  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  type: array
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 6
+.  .  .  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  .  .  internalRole: contents
+.  .  .  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  .  .  type: splat
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  end_col: 6
+.  .  .  .  .  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  .  .  .  .  internalRole: name
+.  .  .  .  .  .  .  .  .  .  start_col: 5
+.  .  .  .  .  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  .  .  .  .  token: a
+.  .  .  .  .  .  .  .  .  .  type: lvar
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  }
+}
+

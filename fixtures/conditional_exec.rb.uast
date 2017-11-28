@@ -1,0 +1,125 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+ {
+.  Roles: File
+.  Properties: {
+.  .  end_col: 21
+.  .  end_line: 2
+.  .  start_col: 0
+.  .  start_line: 1
+.  .  type: begin
+.  }
+.  Children: {
+.  .  0:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  else: <nil>
+.  .  .  .  end_col: 13
+.  .  .  .  end_line: 1
+.  .  .  .  internalRole: body
+.  .  .  .  start_col: 11
+.  .  .  .  start_line: 1
+.  .  .  .  type: if
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  end_col: 10
+.  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  selector: puts
+.  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  type: send
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 10
+.  .  .  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  .  .  internalRole: values
+.  .  .  .  .  .  .  .  start_col: 5
+.  .  .  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  .  .  token: foo
+.  .  .  .  .  .  .  .  type: str
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  end_col: 17
+.  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  internalRole: condition
+.  .  .  .  .  .  selector: foo
+.  .  .  .  .  .  start_col: 14
+.  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  type: send
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  1:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  body: <nil>
+.  .  .  .  end_col: 17
+.  .  .  .  end_line: 2
+.  .  .  .  internalRole: body
+.  .  .  .  start_col: 11
+.  .  .  .  start_line: 2
+.  .  .  .  type: if
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  end_col: 21
+.  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  internalRole: condition
+.  .  .  .  .  .  selector: foo
+.  .  .  .  .  .  start_col: 18
+.  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  type: send
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  end_col: 10
+.  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  internalRole: else
+.  .  .  .  .  .  selector: puts
+.  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  type: send
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 10
+.  .  .  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  .  .  internalRole: values
+.  .  .  .  .  .  .  .  start_col: 5
+.  .  .  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  .  .  token: bar
+.  .  .  .  .  .  .  .  type: str
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  }
+}
+

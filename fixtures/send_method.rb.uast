@@ -1,0 +1,292 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+ {
+.  Roles: File
+.  Properties: {
+.  .  end_col: 9
+.  .  end_line: 12
+.  .  start_col: 0
+.  .  start_line: 1
+.  .  type: begin
+.  }
+.  Children: {
+.  .  0:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 5
+.  .  .  .  end_line: 1
+.  .  .  .  internalRole: body
+.  .  .  .  name: Foo
+.  .  .  .  parent: <nil>
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 1
+.  .  .  .  type: class
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 7
+.  .  .  .  .  .  end_line: 6
+.  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  type: begin
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 7
+.  .  .  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  name: foo
+.  .  .  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  .  .  type: def
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  end_col: 14
+.  .  .  .  .  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  .  .  .  .  internalRole: args
+.  .  .  .  .  .  .  .  .  .  start_col: 11
+.  .  .  .  .  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  .  .  .  .  type: args
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  end_col: 13
+.  .  .  .  .  .  .  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: children
+.  .  .  .  .  .  .  .  .  .  .  .  start_col: 12
+.  .  .  .  .  .  .  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  .  .  .  .  .  .  token: a
+.  .  .  .  .  .  .  .  .  .  .  .  type: arg
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  1:  {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  .  .  type: NilClass
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 7
+.  .  .  .  .  .  .  .  end_line: 5
+.  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  name: bar
+.  .  .  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  .  .  start_line: 5
+.  .  .  .  .  .  .  .  type: def
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  end_col: 13
+.  .  .  .  .  .  .  .  .  .  end_line: 5
+.  .  .  .  .  .  .  .  .  .  internalRole: args
+.  .  .  .  .  .  .  .  .  .  start_col: 11
+.  .  .  .  .  .  .  .  .  .  start_line: 5
+.  .  .  .  .  .  .  .  .  .  type: args
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  1:  {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  .  .  type: NilClass
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  1:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 13
+.  .  .  .  end_line: 9
+.  .  .  .  internalRole: body
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 9
+.  .  .  .  target: a
+.  .  .  .  type: lvasgn
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 13
+.  .  .  .  .  .  end_line: 9
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  selector: new
+.  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  start_line: 9
+.  .  .  .  .  .  type: send
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  .  .  end_col: 7
+.  .  .  .  .  .  .  .  end_line: 9
+.  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  .  .  start_line: 9
+.  .  .  .  .  .  .  .  token: Foo
+.  .  .  .  .  .  .  .  type: const
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  2:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 8
+.  .  .  .  end_line: 10
+.  .  .  .  internalRole: body
+.  .  .  .  selector: foo
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 10
+.  .  .  .  type: send
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 1
+.  .  .  .  .  .  end_line: 10
+.  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  start_line: 10
+.  .  .  .  .  .  token: a
+.  .  .  .  .  .  type: lvar
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 7
+.  .  .  .  .  .  end_line: 10
+.  .  .  .  .  .  internalRole: values
+.  .  .  .  .  .  start_col: 6
+.  .  .  .  .  .  start_line: 10
+.  .  .  .  .  .  token: 1
+.  .  .  .  .  .  type: int
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  3:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 9
+.  .  .  .  end_line: 11
+.  .  .  .  internalRole: body
+.  .  .  .  selector: +
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 11
+.  .  .  .  type: send
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 5
+.  .  .  .  .  .  end_line: 11
+.  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  selector: bar
+.  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  start_line: 11
+.  .  .  .  .  .  type: send
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 1
+.  .  .  .  .  .  .  .  end_line: 11
+.  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  .  .  start_line: 11
+.  .  .  .  .  .  .  .  token: a
+.  .  .  .  .  .  .  .  type: lvar
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 9
+.  .  .  .  .  .  end_line: 11
+.  .  .  .  .  .  internalRole: values
+.  .  .  .  .  .  start_col: 8
+.  .  .  .  .  .  start_line: 11
+.  .  .  .  .  .  token: 1
+.  .  .  .  .  .  type: int
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  4:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 9
+.  .  .  .  end_line: 12
+.  .  .  .  internalRole: body
+.  .  .  .  selector: foo=
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 12
+.  .  .  .  type: send
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 1
+.  .  .  .  .  .  end_line: 12
+.  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  start_line: 12
+.  .  .  .  .  .  token: a
+.  .  .  .  .  .  type: lvar
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 9
+.  .  .  .  .  .  end_line: 12
+.  .  .  .  .  .  internalRole: values
+.  .  .  .  .  .  start_col: 8
+.  .  .  .  .  .  start_line: 12
+.  .  .  .  .  .  token: 3
+.  .  .  .  .  .  type: int
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  }
+}
+

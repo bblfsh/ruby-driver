@@ -1,0 +1,92 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+ {
+.  Roles: File
+.  Properties: {
+.  .  end_col: 7
+.  .  end_line: 3
+.  .  start_col: 0
+.  .  start_line: 1
+.  .  type: begin
+.  }
+.  Children: {
+.  .  0:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 8
+.  .  .  .  end_line: 1
+.  .  .  .  internalRole: body
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 1
+.  .  .  .  target: a
+.  .  .  .  type: lvasgn
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 8
+.  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  type: true
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  1:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 9
+.  .  .  .  end_line: 2
+.  .  .  .  internalRole: body
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 2
+.  .  .  .  target: b
+.  .  .  .  type: lvasgn
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 9
+.  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  type: false
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  2:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 7
+.  .  .  .  end_line: 3
+.  .  .  .  internalRole: body
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 3
+.  .  .  .  target: c
+.  .  .  .  type: lvasgn
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 7
+.  .  .  .  .  .  end_line: 3
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  start_line: 3
+.  .  .  .  .  .  type: nil
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  }
+}
+

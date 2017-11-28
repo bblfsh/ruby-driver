@@ -1,0 +1,45 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "module": {
+            "args": {
+                "children": [
+                    {
+                        "end_col": 9,
+                        "end_line": 1,
+                        "start_col": 8,
+                        "start_line": 1,
+                        "token": "a",
+                        "type": "kwarg"
+                    },
+                    {
+                        "end_col": 13,
+                        "end_line": 1,
+                        "start_col": 12,
+                        "start_line": 1,
+                        "token": "b",
+                        "type": "kwarg"
+                    }
+                ],
+                "end_col": 15,
+                "end_line": 1,
+                "start_col": 7,
+                "start_line": 1,
+                "type": "args"
+            },
+            "body": [
+                {
+                    "type": "NilClass"
+                }
+            ],
+            "end_col": 3,
+            "end_line": 1,
+            "name": "foo",
+            "start_col": 0,
+            "start_line": 1,
+            "type": "def"
+        }
+    }
+}

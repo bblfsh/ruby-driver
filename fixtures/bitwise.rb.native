@@ -1,0 +1,162 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "module": {
+            "body": [
+                {
+                    "base": {
+                        "end_col": 1,
+                        "end_line": 1,
+                        "start_col": 0,
+                        "start_line": 1,
+                        "token": 1,
+                        "type": "int"
+                    },
+                    "end_col": 5,
+                    "end_line": 1,
+                    "selector": "&",
+                    "start_col": 0,
+                    "start_line": 1,
+                    "type": "send",
+                    "values": [
+                        {
+                            "end_col": 5,
+                            "end_line": 1,
+                            "start_col": 4,
+                            "start_line": 1,
+                            "token": 2,
+                            "type": "int"
+                        }
+                    ]
+                },
+                {
+                    "base": {
+                        "end_col": 1,
+                        "end_line": 2,
+                        "start_col": 0,
+                        "start_line": 2,
+                        "token": 1,
+                        "type": "int"
+                    },
+                    "end_col": 5,
+                    "end_line": 2,
+                    "selector": "|",
+                    "start_col": 0,
+                    "start_line": 2,
+                    "type": "send",
+                    "values": [
+                        {
+                            "end_col": 5,
+                            "end_line": 2,
+                            "start_col": 4,
+                            "start_line": 2,
+                            "token": 2,
+                            "type": "int"
+                        }
+                    ]
+                },
+                {
+                    "base": {
+                        "end_col": 1,
+                        "end_line": 3,
+                        "start_col": 0,
+                        "start_line": 3,
+                        "token": 1,
+                        "type": "int"
+                    },
+                    "end_col": 5,
+                    "end_line": 3,
+                    "selector": "^",
+                    "start_col": 0,
+                    "start_line": 3,
+                    "type": "send",
+                    "values": [
+                        {
+                            "end_col": 5,
+                            "end_line": 3,
+                            "start_col": 4,
+                            "start_line": 3,
+                            "token": 2,
+                            "type": "int"
+                        }
+                    ]
+                },
+                {
+                    "base": {
+                        "end_col": 2,
+                        "end_line": 4,
+                        "start_col": 1,
+                        "start_line": 4,
+                        "token": 2,
+                        "type": "int"
+                    },
+                    "end_col": 2,
+                    "end_line": 4,
+                    "selector": "~",
+                    "start_col": 0,
+                    "start_line": 4,
+                    "type": "send"
+                },
+                {
+                    "base": {
+                        "end_col": 1,
+                        "end_line": 5,
+                        "start_col": 0,
+                        "start_line": 5,
+                        "token": 1,
+                        "type": "int"
+                    },
+                    "end_col": 6,
+                    "end_line": 5,
+                    "selector": "<<",
+                    "start_col": 0,
+                    "start_line": 5,
+                    "type": "send",
+                    "values": [
+                        {
+                            "end_col": 6,
+                            "end_line": 5,
+                            "start_col": 5,
+                            "start_line": 5,
+                            "token": 2,
+                            "type": "int"
+                        }
+                    ]
+                },
+                {
+                    "base": {
+                        "end_col": 1,
+                        "end_line": 6,
+                        "start_col": 0,
+                        "start_line": 6,
+                        "token": 1,
+                        "type": "int"
+                    },
+                    "end_col": 6,
+                    "end_line": 6,
+                    "selector": ">>",
+                    "start_col": 0,
+                    "start_line": 6,
+                    "type": "send",
+                    "values": [
+                        {
+                            "end_col": 6,
+                            "end_line": 6,
+                            "start_col": 5,
+                            "start_line": 6,
+                            "token": 2,
+                            "type": "int"
+                        }
+                    ]
+                }
+            ],
+            "end_col": 6,
+            "end_line": 6,
+            "start_col": 0,
+            "start_line": 1,
+            "type": "begin"
+        }
+    }
+}

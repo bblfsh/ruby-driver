@@ -1,0 +1,72 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+ {
+.  Roles: File
+.  Properties: {
+.  .  end_col: 5
+.  .  end_line: 2
+.  .  start_col: 0
+.  .  start_line: 2
+.  .  target: a
+.  .  type: lvasgn
+.  }
+.  Children: {
+.  .  0:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  documentation: false
+.  .  .  .  end_col: 10
+.  .  .  .  end_line: 1
+.  .  .  .  inline: true
+.  .  .  .  internalRole: comments
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 1
+.  .  .  .  text: # previous
+.  .  .  .  type: comment
+.  .  .  }
+.  .  }
+.  .  1:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  documentation: false
+.  .  .  .  end_col: 14
+.  .  .  .  end_line: 2
+.  .  .  .  inline: true
+.  .  .  .  internalRole: comments
+.  .  .  .  start_col: 6
+.  .  .  .  start_line: 2
+.  .  .  .  text: # inline
+.  .  .  .  type: comment
+.  .  .  }
+.  .  }
+.  .  2:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  documentation: false
+.  .  .  .  end_col: 7
+.  .  .  .  end_line: 3
+.  .  .  .  inline: true
+.  .  .  .  internalRole: comments
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 3
+.  .  .  .  text: # after
+.  .  .  .  type: comment
+.  .  .  }
+.  .  }
+.  .  3:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 5
+.  .  .  .  end_line: 2
+.  .  .  .  internalRole: value
+.  .  .  .  start_col: 4
+.  .  .  .  start_line: 2
+.  .  .  .  token: 1
+.  .  .  .  type: int
+.  .  .  }
+.  .  }
+.  }
+}
+

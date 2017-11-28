@@ -1,0 +1,62 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+ {
+.  Roles: File
+.  Properties: {
+.  .  end_col: 3
+.  .  end_line: 1
+.  .  name: foo
+.  .  start_col: 0
+.  .  start_line: 1
+.  .  type: def
+.  }
+.  Children: {
+.  .  0:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 15
+.  .  .  .  end_line: 1
+.  .  .  .  internalRole: args
+.  .  .  .  start_col: 7
+.  .  .  .  start_line: 1
+.  .  .  .  type: args
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 9
+.  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  internalRole: children
+.  .  .  .  .  .  start_col: 8
+.  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  token: a
+.  .  .  .  .  .  type: kwarg
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 13
+.  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  internalRole: children
+.  .  .  .  .  .  start_col: 12
+.  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  token: b
+.  .  .  .  .  .  type: kwarg
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  1:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  internalRole: body
+.  .  .  .  type: NilClass
+.  .  .  }
+.  .  }
+.  }
+}
+

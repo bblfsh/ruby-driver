@@ -1,0 +1,31 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+ {
+.  Roles: File
+.  Properties: {
+.  .  base: <nil>
+.  .  end_col: 18
+.  .  end_line: 1
+.  .  selector: puts
+.  .  start_col: 0
+.  .  start_line: 1
+.  .  type: send
+.  }
+.  Children: {
+.  .  0:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 18
+.  .  .  .  end_line: 1
+.  .  .  .  internalRole: values
+.  .  .  .  start_col: 5
+.  .  .  .  start_line: 1
+.  .  .  .  token: hello world
+.  .  .  .  type: str
+.  .  .  }
+.  .  }
+.  }
+}
+

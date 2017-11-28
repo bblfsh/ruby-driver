@@ -1,0 +1,288 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+ {
+.  Roles: File
+.  Properties: {
+.  .  end_col: 13
+.  .  end_line: 8
+.  .  start_col: 0
+.  .  start_line: 1
+.  .  type: begin
+.  }
+.  Children: {
+.  .  0:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 5
+.  .  .  .  end_line: 1
+.  .  .  .  internalRole: body
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 1
+.  .  .  .  target: a
+.  .  .  .  type: lvasgn
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 5
+.  .  .  .  .  .  end_line: 1
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  start_col: 4
+.  .  .  .  .  .  start_line: 1
+.  .  .  .  .  .  token: 1
+.  .  .  .  .  .  type: int
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  1:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 6
+.  .  .  .  end_line: 2
+.  .  .  .  internalRole: body
+.  .  .  .  operator: +
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 2
+.  .  .  .  type: op_asgn
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 1
+.  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  internalRole: target
+.  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  target: a
+.  .  .  .  .  .  type: lvasgn
+.  .  .  .  .  .  value: <nil>
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 6
+.  .  .  .  .  .  end_line: 2
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  start_col: 5
+.  .  .  .  .  .  start_line: 2
+.  .  .  .  .  .  token: 1
+.  .  .  .  .  .  type: int
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  2:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 6
+.  .  .  .  end_line: 3
+.  .  .  .  internalRole: body
+.  .  .  .  operator: -
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 3
+.  .  .  .  type: op_asgn
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 1
+.  .  .  .  .  .  end_line: 3
+.  .  .  .  .  .  internalRole: target
+.  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  start_line: 3
+.  .  .  .  .  .  target: a
+.  .  .  .  .  .  type: lvasgn
+.  .  .  .  .  .  value: <nil>
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 6
+.  .  .  .  .  .  end_line: 3
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  start_col: 5
+.  .  .  .  .  .  start_line: 3
+.  .  .  .  .  .  token: 1
+.  .  .  .  .  .  type: int
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  3:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 7
+.  .  .  .  end_line: 5
+.  .  .  .  internalRole: body
+.  .  .  .  operator: +
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 5
+.  .  .  .  type: op_asgn
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 2
+.  .  .  .  .  .  end_line: 5
+.  .  .  .  .  .  internalRole: target
+.  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  start_line: 5
+.  .  .  .  .  .  target: @b
+.  .  .  .  .  .  type: ivasgn
+.  .  .  .  .  .  value: <nil>
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 7
+.  .  .  .  .  .  end_line: 5
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  start_col: 6
+.  .  .  .  .  .  start_line: 5
+.  .  .  .  .  .  token: 2
+.  .  .  .  .  .  type: int
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  4:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 9
+.  .  .  .  end_line: 6
+.  .  .  .  internalRole: body
+.  .  .  .  operator: +
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 6
+.  .  .  .  type: op_asgn
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 4
+.  .  .  .  .  .  end_line: 6
+.  .  .  .  .  .  internalRole: target
+.  .  .  .  .  .  selector: x
+.  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  start_line: 6
+.  .  .  .  .  .  type: send
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 2
+.  .  .  .  .  .  .  .  end_line: 6
+.  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  .  .  start_line: 6
+.  .  .  .  .  .  .  .  token: @c
+.  .  .  .  .  .  .  .  type: ivar
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 9
+.  .  .  .  .  .  end_line: 6
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  start_col: 8
+.  .  .  .  .  .  start_line: 6
+.  .  .  .  .  .  token: 3
+.  .  .  .  .  .  type: int
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  5:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 13
+.  .  .  .  end_line: 8
+.  .  .  .  internalRole: body
+.  .  .  .  operator: +
+.  .  .  .  start_col: 0
+.  .  .  .  start_line: 8
+.  .  .  .  type: op_asgn
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 8
+.  .  .  .  .  .  end_line: 8
+.  .  .  .  .  .  internalRole: target
+.  .  .  .  .  .  selector: []
+.  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  start_line: 8
+.  .  .  .  .  .  type: send
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 2
+.  .  .  .  .  .  .  .  end_line: 8
+.  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  start_col: 0
+.  .  .  .  .  .  .  .  start_line: 8
+.  .  .  .  .  .  .  .  token: @j
+.  .  .  .  .  .  .  .  type: ivar
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 4
+.  .  .  .  .  .  .  .  end_line: 8
+.  .  .  .  .  .  .  .  internalRole: values
+.  .  .  .  .  .  .  .  start_col: 3
+.  .  .  .  .  .  .  .  start_line: 8
+.  .  .  .  .  .  .  .  token: 0
+.  .  .  .  .  .  .  .  type: int
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  2:  {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  end_col: 7
+.  .  .  .  .  .  .  .  end_line: 8
+.  .  .  .  .  .  .  .  internalRole: values
+.  .  .  .  .  .  .  .  start_col: 6
+.  .  .  .  .  .  .  .  start_line: 8
+.  .  .  .  .  .  .  .  token: 1
+.  .  .  .  .  .  .  .  type: int
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1:  {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  end_col: 13
+.  .  .  .  .  .  end_line: 8
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  start_col: 12
+.  .  .  .  .  .  start_line: 8
+.  .  .  .  .  .  token: 4
+.  .  .  .  .  .  type: int
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  }
+}
+

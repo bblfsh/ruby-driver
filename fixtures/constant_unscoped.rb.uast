@@ -1,0 +1,31 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+ {
+.  Roles: File
+.  Properties: {
+.  .  base: <nil>
+.  .  end_col: 7
+.  .  end_line: 1
+.  .  selector: Foo
+.  .  start_col: 0
+.  .  start_line: 1
+.  .  type: casgn
+.  }
+.  Children: {
+.  .  0:  {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  end_col: 7
+.  .  .  .  end_line: 1
+.  .  .  .  internalRole: value
+.  .  .  .  start_col: 6
+.  .  .  .  start_line: 1
+.  .  .  .  token: 1
+.  .  .  .  type: int
+.  .  .  }
+.  .  }
+.  }
+}
+

@@ -1,0 +1,107 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "module": {
+            "body": [
+                {
+                    "body": {
+                        "end_col": 9,
+                        "end_line": 2,
+                        "start_col": 4,
+                        "start_line": 2,
+                        "target": null,
+                        "type": "break"
+                    },
+                    "condition": {
+                        "end_col": 10,
+                        "end_line": 1,
+                        "start_col": 6,
+                        "start_line": 1,
+                        "type": "true"
+                    },
+                    "end_col": 5,
+                    "end_line": 1,
+                    "start_col": 0,
+                    "start_line": 1,
+                    "type": "while"
+                },
+                {
+                    "body": {
+                        "body": [
+                            {
+                                "base": null,
+                                "end_col": 10,
+                                "end_line": 6,
+                                "selector": "puts",
+                                "start_col": 4,
+                                "start_line": 6,
+                                "type": "send",
+                                "values": [
+                                    {
+                                        "end_col": 10,
+                                        "end_line": 6,
+                                        "start_col": 9,
+                                        "start_line": 6,
+                                        "token": 1,
+                                        "type": "int"
+                                    }
+                                ]
+                            },
+                            {
+                                "end_col": 9,
+                                "end_line": 7,
+                                "start_col": 4,
+                                "start_line": 7,
+                                "target": null,
+                                "type": "break"
+                            }
+                        ],
+                        "end_col": 9,
+                        "end_line": 7,
+                        "start_col": 4,
+                        "start_line": 6,
+                        "type": "begin"
+                    },
+                    "condition": {
+                        "base": {
+                            "end_col": 7,
+                            "end_line": 5,
+                            "start_col": 6,
+                            "start_line": 5,
+                            "token": 1,
+                            "type": "int"
+                        },
+                        "end_col": 12,
+                        "end_line": 5,
+                        "selector": "!=",
+                        "start_col": 6,
+                        "start_line": 5,
+                        "type": "send",
+                        "values": [
+                            {
+                                "end_col": 12,
+                                "end_line": 5,
+                                "start_col": 11,
+                                "start_line": 5,
+                                "token": 2,
+                                "type": "int"
+                            }
+                        ]
+                    },
+                    "end_col": 5,
+                    "end_line": 5,
+                    "start_col": 0,
+                    "start_line": 5,
+                    "type": "while"
+                }
+            ],
+            "end_col": 3,
+            "end_line": 8,
+            "start_col": 0,
+            "start_line": 1,
+            "type": "begin"
+        }
+    }
+}
