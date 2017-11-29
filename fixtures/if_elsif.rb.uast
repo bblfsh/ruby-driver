@@ -2,127 +2,175 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+if {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 2
-.  .  end_line: 1
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  type: if
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 2
+.  .  Line: 1
+.  .  Col: 3
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: lvasgn {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "a"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 11
+.  .  .  .  Line: 2
+.  .  .  .  Col: 5
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 16
+.  .  .  .  Line: 2
+.  .  .  .  Col: 10
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 9
-.  .  .  .  end_line: 2
 .  .  .  .  internalRole: body
-.  .  .  .  start_col: 4
-.  .  .  .  start_line: 2
-.  .  .  .  target: a
-.  .  .  .  type: lvasgn
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: int {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "1"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 15
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 9
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 16
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 10
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 9
-.  .  .  .  .  .  end_line: 2
 .  .  .  .  .  .  internalRole: value
-.  .  .  .  .  .  start_col: 8
-.  .  .  .  .  .  start_line: 2
-.  .  .  .  .  .  token: 1
-.  .  .  .  .  .  type: int
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  1:  {
+.  .  1: send {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "foo"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 3
+.  .  .  .  Line: 1
+.  .  .  .  Col: 4
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 6
+.  .  .  .  Line: 1
+.  .  .  .  Col: 7
+.  .  .  }
 .  .  .  Properties: {
 .  .  .  .  base: <nil>
-.  .  .  .  end_col: 6
-.  .  .  .  end_line: 1
 .  .  .  .  internalRole: condition
-.  .  .  .  selector: foo
-.  .  .  .  start_col: 3
-.  .  .  .  start_line: 1
-.  .  .  .  type: send
 .  .  .  }
 .  .  }
-.  .  2:  {
+.  .  2: if {
 .  .  .  Roles: Unannotated
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 17
+.  .  .  .  Line: 3
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 22
+.  .  .  .  Line: 3
+.  .  .  .  Col: 6
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 5
-.  .  .  .  end_line: 3
 .  .  .  .  internalRole: else
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 3
-.  .  .  .  type: if
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: lvasgn {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "b"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 31
+.  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 36
+.  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  Col: 10
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 9
-.  .  .  .  .  .  end_line: 4
 .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  start_col: 4
-.  .  .  .  .  .  start_line: 4
-.  .  .  .  .  .  target: b
-.  .  .  .  .  .  type: lvasgn
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  0: int {
 .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  TOKEN "2"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 35
+.  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 36
+.  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  end_col: 9
-.  .  .  .  .  .  .  .  end_line: 4
 .  .  .  .  .  .  .  .  internalRole: value
-.  .  .  .  .  .  .  .  start_col: 8
-.  .  .  .  .  .  .  .  start_line: 4
-.  .  .  .  .  .  .  .  token: 2
-.  .  .  .  .  .  .  .  type: int
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: send {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "bar"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 23
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 7
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 26
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 10
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  base: <nil>
-.  .  .  .  .  .  end_col: 9
-.  .  .  .  .  .  end_line: 3
 .  .  .  .  .  .  internalRole: condition
-.  .  .  .  .  .  selector: bar
-.  .  .  .  .  .  start_col: 6
-.  .  .  .  .  .  start_line: 3
-.  .  .  .  .  .  type: send
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  2:  {
+.  .  .  .  2: lvasgn {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "c"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 46
+.  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 51
+.  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  Col: 10
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 9
-.  .  .  .  .  .  end_line: 6
 .  .  .  .  .  .  internalRole: else
-.  .  .  .  .  .  start_col: 4
-.  .  .  .  .  .  start_line: 6
-.  .  .  .  .  .  target: c
-.  .  .  .  .  .  type: lvasgn
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  0: int {
 .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  TOKEN "3"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 50
+.  .  .  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 51
+.  .  .  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  end_col: 9
-.  .  .  .  .  .  .  .  end_line: 6
 .  .  .  .  .  .  .  .  internalRole: value
-.  .  .  .  .  .  .  .  start_col: 8
-.  .  .  .  .  .  .  .  start_line: 6
-.  .  .  .  .  .  .  .  token: 3
-.  .  .  .  .  .  .  .  type: int
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }

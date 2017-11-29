@@ -2,38 +2,51 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+lvasgn {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 13
-.  .  end_line: 1
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  target: a
-.  .  type: lvasgn
+.  TOKEN "a"
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 13
+.  .  Line: 1
+.  .  Col: 14
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: csend {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "foo"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 4
+.  .  .  .  Line: 1
+.  .  .  .  Col: 5
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 13
+.  .  .  .  Line: 1
+.  .  .  .  Col: 14
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 13
-.  .  .  .  end_line: 1
 .  .  .  .  internalRole: value
-.  .  .  .  selector: foo
-.  .  .  .  start_col: 4
-.  .  .  .  start_line: 1
-.  .  .  .  type: csend
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: self {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 4
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 8
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 9
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 8
-.  .  .  .  .  .  end_line: 1
 .  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  start_col: 4
-.  .  .  .  .  .  start_line: 1
-.  .  .  .  .  .  type: self
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

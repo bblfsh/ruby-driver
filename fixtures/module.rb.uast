@@ -2,22 +2,24 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+module {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 6
-.  .  end_line: 1
-.  .  name: Foo
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  type: module
+.  TOKEN "Foo"
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 6
+.  .  Line: 1
+.  .  Col: 7
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: NilClass {
 .  .  .  Roles: Unannotated
 .  .  .  Properties: {
 .  .  .  .  internalRole: body
-.  .  .  .  type: NilClass
 .  .  .  }
 .  .  }
 .  }

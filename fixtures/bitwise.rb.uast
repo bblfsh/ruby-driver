@@ -2,228 +2,316 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+begin {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 6
-.  .  end_line: 6
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  type: begin
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 34
+.  .  Line: 6
+.  .  Col: 7
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: send {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "&"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 5
+.  .  .  .  Line: 1
+.  .  .  .  Col: 6
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 5
-.  .  .  .  end_line: 1
 .  .  .  .  internalRole: body
-.  .  .  .  selector: &
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 1
-.  .  .  .  type: send
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: int {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "1"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 0
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 1
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 2
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 1
-.  .  .  .  .  .  end_line: 1
 .  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  start_col: 0
-.  .  .  .  .  .  start_line: 1
-.  .  .  .  .  .  token: 1
-.  .  .  .  .  .  type: int
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: int {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "2"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 4
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 5
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 6
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 5
-.  .  .  .  .  .  end_line: 1
 .  .  .  .  .  .  internalRole: values
-.  .  .  .  .  .  start_col: 4
-.  .  .  .  .  .  start_line: 1
-.  .  .  .  .  .  token: 2
-.  .  .  .  .  .  type: int
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  1:  {
+.  .  1: send {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "|"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 6
+.  .  .  .  Line: 2
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 11
+.  .  .  .  Line: 2
+.  .  .  .  Col: 6
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 5
-.  .  .  .  end_line: 2
 .  .  .  .  internalRole: body
-.  .  .  .  selector: |
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 2
-.  .  .  .  type: send
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: int {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "1"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 6
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 7
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 2
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 1
-.  .  .  .  .  .  end_line: 2
 .  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  start_col: 0
-.  .  .  .  .  .  start_line: 2
-.  .  .  .  .  .  token: 1
-.  .  .  .  .  .  type: int
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: int {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "2"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 10
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 11
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 6
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 5
-.  .  .  .  .  .  end_line: 2
 .  .  .  .  .  .  internalRole: values
-.  .  .  .  .  .  start_col: 4
-.  .  .  .  .  .  start_line: 2
-.  .  .  .  .  .  token: 2
-.  .  .  .  .  .  type: int
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  2:  {
+.  .  2: send {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "^"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 12
+.  .  .  .  Line: 3
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 17
+.  .  .  .  Line: 3
+.  .  .  .  Col: 6
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 5
-.  .  .  .  end_line: 3
 .  .  .  .  internalRole: body
-.  .  .  .  selector: ^
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 3
-.  .  .  .  type: send
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: int {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "1"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 12
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 13
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 2
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 1
-.  .  .  .  .  .  end_line: 3
 .  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  start_col: 0
-.  .  .  .  .  .  start_line: 3
-.  .  .  .  .  .  token: 1
-.  .  .  .  .  .  type: int
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: int {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "2"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 16
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 17
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 6
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 5
-.  .  .  .  .  .  end_line: 3
 .  .  .  .  .  .  internalRole: values
-.  .  .  .  .  .  start_col: 4
-.  .  .  .  .  .  start_line: 3
-.  .  .  .  .  .  token: 2
-.  .  .  .  .  .  type: int
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  3:  {
+.  .  3: send {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "~"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 18
+.  .  .  .  Line: 4
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 20
+.  .  .  .  Line: 4
+.  .  .  .  Col: 3
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 2
-.  .  .  .  end_line: 4
 .  .  .  .  internalRole: body
-.  .  .  .  selector: ~
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 4
-.  .  .  .  type: send
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: int {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "2"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 19
+.  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  Col: 2
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 20
+.  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  Col: 3
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 2
-.  .  .  .  .  .  end_line: 4
 .  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  start_col: 1
-.  .  .  .  .  .  start_line: 4
-.  .  .  .  .  .  token: 2
-.  .  .  .  .  .  type: int
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  4:  {
+.  .  4: send {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "<<"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 21
+.  .  .  .  Line: 5
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 27
+.  .  .  .  Line: 5
+.  .  .  .  Col: 7
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 6
-.  .  .  .  end_line: 5
 .  .  .  .  internalRole: body
-.  .  .  .  selector: <<
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 5
-.  .  .  .  type: send
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: int {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "1"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 21
+.  .  .  .  .  .  Line: 5
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 22
+.  .  .  .  .  .  Line: 5
+.  .  .  .  .  .  Col: 2
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 1
-.  .  .  .  .  .  end_line: 5
 .  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  start_col: 0
-.  .  .  .  .  .  start_line: 5
-.  .  .  .  .  .  token: 1
-.  .  .  .  .  .  type: int
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: int {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "2"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 26
+.  .  .  .  .  .  Line: 5
+.  .  .  .  .  .  Col: 6
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 27
+.  .  .  .  .  .  Line: 5
+.  .  .  .  .  .  Col: 7
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 6
-.  .  .  .  .  .  end_line: 5
 .  .  .  .  .  .  internalRole: values
-.  .  .  .  .  .  start_col: 5
-.  .  .  .  .  .  start_line: 5
-.  .  .  .  .  .  token: 2
-.  .  .  .  .  .  type: int
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  5:  {
+.  .  5: send {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN ">>"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 28
+.  .  .  .  Line: 6
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 34
+.  .  .  .  Line: 6
+.  .  .  .  Col: 7
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 6
-.  .  .  .  end_line: 6
 .  .  .  .  internalRole: body
-.  .  .  .  selector: >>
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 6
-.  .  .  .  type: send
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: int {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "1"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 28
+.  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 29
+.  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  Col: 2
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 1
-.  .  .  .  .  .  end_line: 6
 .  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  start_col: 0
-.  .  .  .  .  .  start_line: 6
-.  .  .  .  .  .  token: 1
-.  .  .  .  .  .  type: int
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: int {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "2"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 33
+.  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  Col: 6
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 34
+.  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  Col: 7
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 6
-.  .  .  .  .  .  end_line: 6
 .  .  .  .  .  .  internalRole: values
-.  .  .  .  .  .  start_col: 5
-.  .  .  .  .  .  start_line: 6
-.  .  .  .  .  .  token: 2
-.  .  .  .  .  .  type: int
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

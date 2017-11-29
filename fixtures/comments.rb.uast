@@ -2,69 +2,92 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+lvasgn {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 5
-.  .  end_line: 2
-.  .  start_col: 0
-.  .  start_line: 2
-.  .  target: a
-.  .  type: lvasgn
+.  TOKEN "a"
+.  StartPosition: {
+.  .  Offset: 11
+.  .  Line: 2
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 16
+.  .  Line: 2
+.  .  Col: 6
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: comment {
 .  .  .  Roles: Unannotated
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 10
+.  .  .  .  Line: 1
+.  .  .  .  Col: 11
+.  .  .  }
 .  .  .  Properties: {
 .  .  .  .  documentation: false
-.  .  .  .  end_col: 10
-.  .  .  .  end_line: 1
 .  .  .  .  inline: true
 .  .  .  .  internalRole: comments
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 1
 .  .  .  .  text: # previous
-.  .  .  .  type: comment
 .  .  .  }
 .  .  }
-.  .  1:  {
+.  .  1: comment {
 .  .  .  Roles: Unannotated
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 17
+.  .  .  .  Line: 2
+.  .  .  .  Col: 7
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 25
+.  .  .  .  Line: 2
+.  .  .  .  Col: 15
+.  .  .  }
 .  .  .  Properties: {
 .  .  .  .  documentation: false
-.  .  .  .  end_col: 14
-.  .  .  .  end_line: 2
 .  .  .  .  inline: true
 .  .  .  .  internalRole: comments
-.  .  .  .  start_col: 6
-.  .  .  .  start_line: 2
 .  .  .  .  text: # inline
-.  .  .  .  type: comment
 .  .  .  }
 .  .  }
-.  .  2:  {
+.  .  2: comment {
 .  .  .  Roles: Unannotated
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 26
+.  .  .  .  Line: 3
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 33
+.  .  .  .  Line: 3
+.  .  .  .  Col: 8
+.  .  .  }
 .  .  .  Properties: {
 .  .  .  .  documentation: false
-.  .  .  .  end_col: 7
-.  .  .  .  end_line: 3
 .  .  .  .  inline: true
 .  .  .  .  internalRole: comments
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 3
 .  .  .  .  text: # after
-.  .  .  .  type: comment
 .  .  .  }
 .  .  }
-.  .  3:  {
+.  .  3: int {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "1"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 15
+.  .  .  .  Line: 2
+.  .  .  .  Col: 5
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 16
+.  .  .  .  Line: 2
+.  .  .  .  Col: 6
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 5
-.  .  .  .  end_line: 2
 .  .  .  .  internalRole: value
-.  .  .  .  start_col: 4
-.  .  .  .  start_line: 2
-.  .  .  .  token: 1
-.  .  .  .  type: int
 .  .  .  }
 .  .  }
 .  }

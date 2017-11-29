@@ -2,27 +2,35 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+lvasgn {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 7
-.  .  end_line: 1
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  target: a
-.  .  type: lvasgn
+.  TOKEN "a"
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 7
+.  .  Line: 1
+.  .  Col: 8
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: int {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "123"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 4
+.  .  .  .  Line: 1
+.  .  .  .  Col: 5
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 7
+.  .  .  .  Line: 1
+.  .  .  .  Col: 8
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 7
-.  .  .  .  end_line: 1
 .  .  .  .  internalRole: value
-.  .  .  .  start_col: 4
-.  .  .  .  start_line: 1
-.  .  .  .  token: 123
-.  .  .  .  type: int
 .  .  .  }
 .  .  }
 .  }

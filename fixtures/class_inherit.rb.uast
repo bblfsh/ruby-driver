@@ -2,68 +2,84 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+begin {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 3
-.  .  end_line: 5
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  type: begin
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 34
+.  .  Line: 5
+.  .  Col: 4
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: class {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "Foo"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 5
+.  .  .  .  Line: 1
+.  .  .  .  Col: 6
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 5
-.  .  .  .  end_line: 1
 .  .  .  .  internalRole: body
-.  .  .  .  name: Foo
 .  .  .  .  parent: <nil>
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 1
-.  .  .  .  type: class
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: NilClass {
 .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  type: NilClass
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  1:  {
+.  .  1: class {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "Bar"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 15
+.  .  .  .  Line: 4
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 20
+.  .  .  .  Line: 4
+.  .  .  .  Col: 6
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 5
-.  .  .  .  end_line: 4
 .  .  .  .  internalRole: body
-.  .  .  .  name: Bar
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 4
-.  .  .  .  type: class
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: NilClass {
 .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  type: NilClass
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: const {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "Foo"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 27
+.  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  Col: 13
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 30
+.  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  Col: 16
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  base: <nil>
-.  .  .  .  .  .  end_col: 15
-.  .  .  .  .  .  end_line: 4
 .  .  .  .  .  .  internalRole: parent
-.  .  .  .  .  .  start_col: 12
-.  .  .  .  .  .  start_line: 4
-.  .  .  .  .  .  token: Foo
-.  .  .  .  .  .  type: const
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

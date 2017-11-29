@@ -2,55 +2,66 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+regexp {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 12
-.  .  end_line: 1
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  type: regexp
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 12
+.  .  Line: 1
+.  .  Col: 13
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: regopt {
 .  .  .  Roles: Unannotated
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 10
+.  .  .  .  Line: 1
+.  .  .  .  Col: 11
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 12
+.  .  .  .  Line: 1
+.  .  .  .  Col: 13
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 12
-.  .  .  .  end_line: 1
 .  .  .  .  internalRole: options
-.  .  .  .  start_col: 10
-.  .  .  .  start_line: 1
-.  .  .  .  type: regopt
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: Symbol {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "i"
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: options
-.  .  .  .  .  .  token: i
-.  .  .  .  .  .  type: Symbol
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: Symbol {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "m"
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: options
-.  .  .  .  .  .  token: m
-.  .  .  .  .  .  type: Symbol
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  1:  {
+.  .  1: str {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "text(.*)"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 1
+.  .  .  .  Line: 1
+.  .  .  .  Col: 2
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 9
+.  .  .  .  Line: 1
+.  .  .  .  Col: 10
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 9
-.  .  .  .  end_line: 1
 .  .  .  .  internalRole: text
-.  .  .  .  start_col: 1
-.  .  .  .  start_line: 1
-.  .  .  .  token: text(.*)
-.  .  .  .  type: str
 .  .  .  }
 .  .  }
 .  }

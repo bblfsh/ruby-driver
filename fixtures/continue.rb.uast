@@ -2,38 +2,51 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+while {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 5
-.  .  end_line: 1
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  type: while
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 5
+.  .  Line: 1
+.  .  Col: 6
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: send {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "continue"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 15
+.  .  .  .  Line: 2
+.  .  .  .  Col: 5
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 23
+.  .  .  .  Line: 2
+.  .  .  .  Col: 13
+.  .  .  }
 .  .  .  Properties: {
 .  .  .  .  base: <nil>
-.  .  .  .  end_col: 12
-.  .  .  .  end_line: 2
 .  .  .  .  internalRole: body
-.  .  .  .  selector: continue
-.  .  .  .  start_col: 4
-.  .  .  .  start_line: 2
-.  .  .  .  type: send
 .  .  .  }
 .  .  }
-.  .  1:  {
+.  .  1: true {
 .  .  .  Roles: Unannotated
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 6
+.  .  .  .  Line: 1
+.  .  .  .  Col: 7
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 10
+.  .  .  .  Line: 1
+.  .  .  .  Col: 11
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 10
-.  .  .  .  end_line: 1
 .  .  .  .  internalRole: condition
-.  .  .  .  start_col: 6
-.  .  .  .  start_line: 1
-.  .  .  .  type: true
 .  .  .  }
 .  .  }
 .  }

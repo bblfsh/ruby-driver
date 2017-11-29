@@ -2,61 +2,78 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+def {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 3
-.  .  end_line: 1
-.  .  name: foo
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  type: def
+.  TOKEN "foo"
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 3
+.  .  Line: 1
+.  .  Col: 4
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: args {
 .  .  .  Roles: Unannotated
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 7
+.  .  .  .  Line: 1
+.  .  .  .  Col: 8
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 13
+.  .  .  .  Line: 1
+.  .  .  .  Col: 14
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 13
-.  .  .  .  end_line: 1
 .  .  .  .  internalRole: args
-.  .  .  .  start_col: 7
-.  .  .  .  start_line: 1
-.  .  .  .  type: args
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: kwoptarg {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "a"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 8
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 9
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 9
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 10
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 9
-.  .  .  .  .  .  end_line: 1
 .  .  .  .  .  .  internalRole: children
-.  .  .  .  .  .  start_col: 8
-.  .  .  .  .  .  start_line: 1
-.  .  .  .  .  .  token: a
-.  .  .  .  .  .  type: kwoptarg
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  0: int {
 .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  TOKEN "1"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 11
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 12
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 12
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  end_col: 12
-.  .  .  .  .  .  .  .  end_line: 1
 .  .  .  .  .  .  .  .  internalRole: default
-.  .  .  .  .  .  .  .  start_col: 11
-.  .  .  .  .  .  .  .  start_line: 1
-.  .  .  .  .  .  .  .  token: 1
-.  .  .  .  .  .  .  .  type: int
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  1:  {
+.  .  1: NilClass {
 .  .  .  Roles: Unannotated
 .  .  .  Properties: {
 .  .  .  .  internalRole: body
-.  .  .  .  type: NilClass
 .  .  .  }
 .  .  }
 .  }

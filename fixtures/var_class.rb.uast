@@ -2,15 +2,18 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+cvar {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 5
-.  .  end_line: 1
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  token: @@foo
-.  .  type: cvar
+.  TOKEN "@@foo"
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 5
+.  .  Line: 1
+.  .  Col: 6
 .  }
 }
 

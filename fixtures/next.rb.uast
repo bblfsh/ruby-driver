@@ -2,62 +2,85 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+while {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 5
-.  .  end_line: 1
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  type: while
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 5
+.  .  Line: 1
+.  .  Col: 6
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: if {
 .  .  .  Roles: Unannotated
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 15
+.  .  .  .  Line: 2
+.  .  .  .  Col: 5
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 17
+.  .  .  .  Line: 2
+.  .  .  .  Col: 7
+.  .  .  }
 .  .  .  Properties: {
 .  .  .  .  else: <nil>
-.  .  .  .  end_col: 6
-.  .  .  .  end_line: 2
 .  .  .  .  internalRole: body
-.  .  .  .  start_col: 4
-.  .  .  .  start_line: 2
-.  .  .  .  type: if
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: next {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "<nil>"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 32
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 9
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 36
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 13
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 12
-.  .  .  .  .  .  end_line: 3
 .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  start_col: 8
-.  .  .  .  .  .  start_line: 3
-.  .  .  .  .  .  target: <nil>
-.  .  .  .  .  .  type: next
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: false {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 18
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 8
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 23
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 13
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 12
-.  .  .  .  .  .  end_line: 2
 .  .  .  .  .  .  internalRole: condition
-.  .  .  .  .  .  start_col: 7
-.  .  .  .  .  .  start_line: 2
-.  .  .  .  .  .  type: false
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  1:  {
+.  .  1: true {
 .  .  .  Roles: Unannotated
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 6
+.  .  .  .  Line: 1
+.  .  .  .  Col: 7
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 10
+.  .  .  .  Line: 1
+.  .  .  .  Col: 11
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 10
-.  .  .  .  end_line: 1
 .  .  .  .  internalRole: condition
-.  .  .  .  start_col: 6
-.  .  .  .  start_line: 1
-.  .  .  .  type: true
 .  .  .  }
 .  .  }
 .  }

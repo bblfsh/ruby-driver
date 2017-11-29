@@ -2,59 +2,76 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+def {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 3
-.  .  end_line: 1
-.  .  name: foo
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  type: def
+.  TOKEN "foo"
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 3
+.  .  Line: 1
+.  .  Col: 4
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: args {
 .  .  .  Roles: Unannotated
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 7
+.  .  .  .  Line: 1
+.  .  .  .  Col: 8
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 15
+.  .  .  .  Line: 1
+.  .  .  .  Col: 16
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 15
-.  .  .  .  end_line: 1
 .  .  .  .  internalRole: args
-.  .  .  .  start_col: 7
-.  .  .  .  start_line: 1
-.  .  .  .  type: args
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: kwarg {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "a"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 8
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 9
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 9
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 10
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 9
-.  .  .  .  .  .  end_line: 1
 .  .  .  .  .  .  internalRole: children
-.  .  .  .  .  .  start_col: 8
-.  .  .  .  .  .  start_line: 1
-.  .  .  .  .  .  token: a
-.  .  .  .  .  .  type: kwarg
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: kwarg {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "b"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 12
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 13
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 13
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 14
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 13
-.  .  .  .  .  .  end_line: 1
 .  .  .  .  .  .  internalRole: children
-.  .  .  .  .  .  start_col: 12
-.  .  .  .  .  .  start_line: 1
-.  .  .  .  .  .  token: b
-.  .  .  .  .  .  type: kwarg
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  1:  {
+.  .  1: NilClass {
 .  .  .  Roles: Unannotated
 .  .  .  Properties: {
 .  .  .  .  internalRole: body
-.  .  .  .  type: NilClass
 .  .  .  }
 .  .  }
 .  }

@@ -2,23 +2,27 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+class {
 .  Roles: File
+.  TOKEN "Foo"
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 5
+.  .  Line: 1
+.  .  Col: 6
+.  }
 .  Properties: {
-.  .  end_col: 5
-.  .  end_line: 1
-.  .  name: Foo
 .  .  parent: <nil>
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  type: class
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: NilClass {
 .  .  .  Roles: Unannotated
 .  .  .  Properties: {
 .  .  .  .  internalRole: body
-.  .  .  .  type: NilClass
 .  .  .  }
 .  .  }
 .  }

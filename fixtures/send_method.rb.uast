@@ -2,114 +2,150 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+begin {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 9
-.  .  end_line: 12
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  type: begin
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 103
+.  .  Line: 12
+.  .  Col: 10
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: class {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "Foo"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 5
+.  .  .  .  Line: 1
+.  .  .  .  Col: 6
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 5
-.  .  .  .  end_line: 1
 .  .  .  .  internalRole: body
-.  .  .  .  name: Foo
 .  .  .  .  parent: <nil>
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 1
-.  .  .  .  type: class
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: begin {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 14
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 55
+.  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  Col: 8
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 7
-.  .  .  .  .  .  end_line: 6
 .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  start_col: 4
-.  .  .  .  .  .  start_line: 2
-.  .  .  .  .  .  type: begin
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  0: def {
 .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  TOKEN "foo"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 14
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 5
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 17
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 8
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  end_col: 7
-.  .  .  .  .  .  .  .  end_line: 2
 .  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  .  name: foo
-.  .  .  .  .  .  .  .  start_col: 4
-.  .  .  .  .  .  .  .  start_line: 2
-.  .  .  .  .  .  .  .  type: def
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  .  0: args {
 .  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 21
+.  .  .  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  .  .  Col: 12
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 24
+.  .  .  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  .  .  Col: 15
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  end_col: 14
-.  .  .  .  .  .  .  .  .  .  end_line: 2
 .  .  .  .  .  .  .  .  .  .  internalRole: args
-.  .  .  .  .  .  .  .  .  .  start_col: 11
-.  .  .  .  .  .  .  .  .  .  start_line: 2
-.  .  .  .  .  .  .  .  .  .  type: args
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  .  .  .  0: arg {
 .  .  .  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  .  .  TOKEN "a"
+.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  Offset: 22
+.  .  .  .  .  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  Offset: 23
+.  .  .  .  .  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  end_col: 13
-.  .  .  .  .  .  .  .  .  .  .  .  end_line: 2
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: children
-.  .  .  .  .  .  .  .  .  .  .  .  start_col: 12
-.  .  .  .  .  .  .  .  .  .  .  .  start_line: 2
-.  .  .  .  .  .  .  .  .  .  .  .  token: a
-.  .  .  .  .  .  .  .  .  .  .  .  type: arg
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1:  {
+.  .  .  .  .  .  .  .  1: NilClass {
 .  .  .  .  .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  .  .  .  type: NilClass
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1:  {
+.  .  .  .  .  .  1: def {
 .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  TOKEN "bar"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 38
+.  .  .  .  .  .  .  .  Line: 5
+.  .  .  .  .  .  .  .  Col: 5
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 41
+.  .  .  .  .  .  .  .  Line: 5
+.  .  .  .  .  .  .  .  Col: 8
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  end_col: 7
-.  .  .  .  .  .  .  .  end_line: 5
 .  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  .  name: bar
-.  .  .  .  .  .  .  .  start_col: 4
-.  .  .  .  .  .  .  .  start_line: 5
-.  .  .  .  .  .  .  .  type: def
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0:  {
+.  .  .  .  .  .  .  .  0: args {
 .  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 45
+.  .  .  .  .  .  .  .  .  .  Line: 5
+.  .  .  .  .  .  .  .  .  .  Col: 12
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 47
+.  .  .  .  .  .  .  .  .  .  Line: 5
+.  .  .  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  end_col: 13
-.  .  .  .  .  .  .  .  .  .  end_line: 5
 .  .  .  .  .  .  .  .  .  .  internalRole: args
-.  .  .  .  .  .  .  .  .  .  start_col: 11
-.  .  .  .  .  .  .  .  .  .  start_line: 5
-.  .  .  .  .  .  .  .  .  .  type: args
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1:  {
+.  .  .  .  .  .  .  .  1: NilClass {
 .  .  .  .  .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  .  .  .  type: NilClass
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
@@ -118,171 +154,236 @@ UAST:
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  1:  {
+.  .  1: lvasgn {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "a"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 61
+.  .  .  .  Line: 9
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 74
+.  .  .  .  Line: 9
+.  .  .  .  Col: 14
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 13
-.  .  .  .  end_line: 9
 .  .  .  .  internalRole: body
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 9
-.  .  .  .  target: a
-.  .  .  .  type: lvasgn
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: send {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "new"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 65
+.  .  .  .  .  .  Line: 9
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 74
+.  .  .  .  .  .  Line: 9
+.  .  .  .  .  .  Col: 14
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 13
-.  .  .  .  .  .  end_line: 9
 .  .  .  .  .  .  internalRole: value
-.  .  .  .  .  .  selector: new
-.  .  .  .  .  .  start_col: 4
-.  .  .  .  .  .  start_line: 9
-.  .  .  .  .  .  type: send
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  0: const {
 .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  TOKEN "Foo"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 65
+.  .  .  .  .  .  .  .  Line: 9
+.  .  .  .  .  .  .  .  Col: 5
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 68
+.  .  .  .  .  .  .  .  Line: 9
+.  .  .  .  .  .  .  .  Col: 8
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  base: <nil>
-.  .  .  .  .  .  .  .  end_col: 7
-.  .  .  .  .  .  .  .  end_line: 9
 .  .  .  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  .  .  start_col: 4
-.  .  .  .  .  .  .  .  start_line: 9
-.  .  .  .  .  .  .  .  token: Foo
-.  .  .  .  .  .  .  .  type: const
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  2:  {
+.  .  2: send {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "foo"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 75
+.  .  .  .  Line: 10
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 83
+.  .  .  .  Line: 10
+.  .  .  .  Col: 9
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 8
-.  .  .  .  end_line: 10
 .  .  .  .  internalRole: body
-.  .  .  .  selector: foo
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 10
-.  .  .  .  type: send
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: lvar {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "a"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 75
+.  .  .  .  .  .  Line: 10
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 76
+.  .  .  .  .  .  Line: 10
+.  .  .  .  .  .  Col: 2
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 1
-.  .  .  .  .  .  end_line: 10
 .  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  start_col: 0
-.  .  .  .  .  .  start_line: 10
-.  .  .  .  .  .  token: a
-.  .  .  .  .  .  type: lvar
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: int {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "1"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 81
+.  .  .  .  .  .  Line: 10
+.  .  .  .  .  .  Col: 7
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 82
+.  .  .  .  .  .  Line: 10
+.  .  .  .  .  .  Col: 8
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 7
-.  .  .  .  .  .  end_line: 10
 .  .  .  .  .  .  internalRole: values
-.  .  .  .  .  .  start_col: 6
-.  .  .  .  .  .  start_line: 10
-.  .  .  .  .  .  token: 1
-.  .  .  .  .  .  type: int
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  3:  {
+.  .  3: send {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "+"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 84
+.  .  .  .  Line: 11
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 93
+.  .  .  .  Line: 11
+.  .  .  .  Col: 10
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 9
-.  .  .  .  end_line: 11
 .  .  .  .  internalRole: body
-.  .  .  .  selector: +
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 11
-.  .  .  .  type: send
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: send {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "bar"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 84
+.  .  .  .  .  .  Line: 11
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 89
+.  .  .  .  .  .  Line: 11
+.  .  .  .  .  .  Col: 6
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 5
-.  .  .  .  .  .  end_line: 11
 .  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  selector: bar
-.  .  .  .  .  .  start_col: 0
-.  .  .  .  .  .  start_line: 11
-.  .  .  .  .  .  type: send
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  0: lvar {
 .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  TOKEN "a"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 84
+.  .  .  .  .  .  .  .  Line: 11
+.  .  .  .  .  .  .  .  Col: 1
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 85
+.  .  .  .  .  .  .  .  Line: 11
+.  .  .  .  .  .  .  .  Col: 2
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  end_col: 1
-.  .  .  .  .  .  .  .  end_line: 11
 .  .  .  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  .  .  start_col: 0
-.  .  .  .  .  .  .  .  start_line: 11
-.  .  .  .  .  .  .  .  token: a
-.  .  .  .  .  .  .  .  type: lvar
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: int {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "1"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 92
+.  .  .  .  .  .  Line: 11
+.  .  .  .  .  .  Col: 9
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 93
+.  .  .  .  .  .  Line: 11
+.  .  .  .  .  .  Col: 10
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 9
-.  .  .  .  .  .  end_line: 11
 .  .  .  .  .  .  internalRole: values
-.  .  .  .  .  .  start_col: 8
-.  .  .  .  .  .  start_line: 11
-.  .  .  .  .  .  token: 1
-.  .  .  .  .  .  type: int
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  4:  {
+.  .  4: send {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "foo="
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 94
+.  .  .  .  Line: 12
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 103
+.  .  .  .  Line: 12
+.  .  .  .  Col: 10
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 9
-.  .  .  .  end_line: 12
 .  .  .  .  internalRole: body
-.  .  .  .  selector: foo=
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 12
-.  .  .  .  type: send
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: lvar {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "a"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 94
+.  .  .  .  .  .  Line: 12
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 95
+.  .  .  .  .  .  Line: 12
+.  .  .  .  .  .  Col: 2
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 1
-.  .  .  .  .  .  end_line: 12
 .  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  start_col: 0
-.  .  .  .  .  .  start_line: 12
-.  .  .  .  .  .  token: a
-.  .  .  .  .  .  type: lvar
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: int {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "3"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 102
+.  .  .  .  .  .  Line: 12
+.  .  .  .  .  .  Col: 9
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 103
+.  .  .  .  .  .  Line: 12
+.  .  .  .  .  .  Col: 10
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 9
-.  .  .  .  .  .  end_line: 12
 .  .  .  .  .  .  internalRole: values
-.  .  .  .  .  .  start_col: 8
-.  .  .  .  .  .  start_line: 12
-.  .  .  .  .  .  token: 3
-.  .  .  .  .  .  type: int
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

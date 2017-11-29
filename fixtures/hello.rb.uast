@@ -2,28 +2,38 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+send {
 .  Roles: File
+.  TOKEN "puts"
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 18
+.  .  Line: 1
+.  .  Col: 19
+.  }
 .  Properties: {
 .  .  base: <nil>
-.  .  end_col: 18
-.  .  end_line: 1
-.  .  selector: puts
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  type: send
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: str {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "hello world"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 5
+.  .  .  .  Line: 1
+.  .  .  .  Col: 6
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 18
+.  .  .  .  Line: 1
+.  .  .  .  Col: 19
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 18
-.  .  .  .  end_line: 1
 .  .  .  .  internalRole: values
-.  .  .  .  start_col: 5
-.  .  .  .  start_line: 1
-.  .  .  .  token: hello world
-.  .  .  .  type: str
 .  .  .  }
 .  .  }
 .  }

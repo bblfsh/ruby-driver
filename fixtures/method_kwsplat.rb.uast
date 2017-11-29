@@ -2,100 +2,125 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+begin {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 3
-.  .  end_line: 5
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  type: begin
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 35
+.  .  Line: 5
+.  .  Col: 4
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: def {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "foo"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 3
+.  .  .  .  Line: 1
+.  .  .  .  Col: 4
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 3
-.  .  .  .  end_line: 1
 .  .  .  .  internalRole: body
-.  .  .  .  name: foo
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 1
-.  .  .  .  type: def
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: args {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 7
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 8
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 14
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 15
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 14
-.  .  .  .  .  .  end_line: 1
 .  .  .  .  .  .  internalRole: args
-.  .  .  .  .  .  start_col: 7
-.  .  .  .  .  .  start_line: 1
-.  .  .  .  .  .  type: args
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  0: kwrestarg {
 .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  TOKEN "foo"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 10
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 11
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 13
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  end_col: 13
-.  .  .  .  .  .  .  .  end_line: 1
 .  .  .  .  .  .  .  .  internalRole: children
-.  .  .  .  .  .  .  .  name: foo
-.  .  .  .  .  .  .  .  start_col: 10
-.  .  .  .  .  .  .  .  start_line: 1
-.  .  .  .  .  .  .  .  type: kwrestarg
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: NilClass {
 .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  type: NilClass
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
 .  .  }
-.  .  1:  {
+.  .  1: def {
 .  .  .  Roles: Unannotated
+.  .  .  TOKEN "bar"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 20
+.  .  .  .  Line: 4
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 23
+.  .  .  .  Line: 4
+.  .  .  .  Col: 4
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 3
-.  .  .  .  end_line: 4
 .  .  .  .  internalRole: body
-.  .  .  .  name: bar
-.  .  .  .  start_col: 0
-.  .  .  .  start_line: 4
-.  .  .  .  type: def
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: args {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 27
+.  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  Col: 8
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 31
+.  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  Col: 12
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 11
-.  .  .  .  .  .  end_line: 4
 .  .  .  .  .  .  internalRole: args
-.  .  .  .  .  .  start_col: 7
-.  .  .  .  .  .  start_line: 4
-.  .  .  .  .  .  type: args
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0:  {
+.  .  .  .  .  .  0: kwrestarg {
 .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  TOKEN "<nil>"
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: children
-.  .  .  .  .  .  .  .  name: <nil>
-.  .  .  .  .  .  .  .  type: kwrestarg
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: NilClass {
 .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  type: NilClass
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

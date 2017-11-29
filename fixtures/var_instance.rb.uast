@@ -2,15 +2,18 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+ivar {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 4
-.  .  end_line: 1
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  token: @foo
-.  .  type: ivar
+.  TOKEN "@foo"
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 4
+.  .  Line: 1
+.  .  Col: 5
 .  }
 }
 

@@ -2,52 +2,70 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+lvasgn {
 .  Roles: File
-.  Properties: {
-.  .  end_col: 10
-.  .  end_line: 1
-.  .  start_col: 0
-.  .  start_line: 1
-.  .  target: a
-.  .  type: lvasgn
+.  TOKEN "a"
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 10
+.  .  Line: 1
+.  .  Col: 11
 .  }
 .  Children: {
-.  .  0:  {
+.  .  0: dstr {
 .  .  .  Roles: Unannotated
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 4
+.  .  .  .  Line: 1
+.  .  .  .  Col: 5
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 10
+.  .  .  .  Line: 1
+.  .  .  .  Col: 11
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  end_col: 10
-.  .  .  .  end_line: 1
 .  .  .  .  internalRole: value
-.  .  .  .  start_col: 4
-.  .  .  .  start_line: 1
-.  .  .  .  type: dstr
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0:  {
+.  .  .  .  0: str {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "    Some text
+"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 11
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 25
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 0
-.  .  .  .  .  .  end_line: 3
 .  .  .  .  .  .  internalRole: children
-.  .  .  .  .  .  start_col: 0
-.  .  .  .  .  .  start_line: 2
-.  .  .  .  .  .  token:     Some text
-
-.  .  .  .  .  .  type: str
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1:  {
+.  .  .  .  1: str {
 .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "    multiline
+"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 25
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 39
+.  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  end_col: 0
-.  .  .  .  .  .  end_line: 4
 .  .  .  .  .  .  internalRole: children
-.  .  .  .  .  .  start_col: 0
-.  .  .  .  .  .  start_line: 3
-.  .  .  .  .  .  token:     multiline
-
-.  .  .  .  .  .  type: str
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
