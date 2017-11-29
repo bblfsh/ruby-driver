@@ -11,9 +11,9 @@ send {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 7
+.  .  Offset: 6
 .  .  Line: 1
-.  .  Col: 8
+.  .  Col: 7
 .  }
 .  Children: {
 .  .  0: send {
@@ -25,9 +25,9 @@ send {
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 3
+.  .  .  .  Offset: 2
 .  .  .  .  Line: 1
-.  .  .  .  Col: 4
+.  .  .  .  Col: 3
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  base: <nil>
@@ -43,9 +43,9 @@ send {
 .  .  .  .  Col: 7
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 7
+.  .  .  .  Offset: 6
 .  .  .  .  Line: 1
-.  .  .  .  Col: 8
+.  .  .  .  Col: 7
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: values

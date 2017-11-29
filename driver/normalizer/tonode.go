@@ -23,7 +23,19 @@ var ToNode = &uast.ObjectToNode{
 		// Native parser uses a [) interval for columns, so add 1 to start_col
 		if col, ok := n["start_col"].(float64); ok {
 			n["start_col"] = col + 1
+
+			// Native parser wrongly set positions at individual lines in multiline
+			// strings at 0, remove the position on those to avoid confusion
+			if t, ok := n["type"].(string); ok && t == "str" {
+				if endCol, ok := n["end_col"].(float64); ok && endCol == 0 {
+					delete(n, "start_col")
+					delete(n, "end_col")
+					delete(n, "start_line")
+					delete(n, "end_line")
+				}
+			}
 		}
+
 		return nil
 	},
 }

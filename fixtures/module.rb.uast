@@ -11,9 +11,9 @@ module {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 6
+.  .  Offset: 5
 .  .  Line: 1
-.  .  Col: 7
+.  .  Col: 6
 .  }
 .  Children: {
 .  .  0: NilClass {

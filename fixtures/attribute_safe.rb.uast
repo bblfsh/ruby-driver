@@ -11,9 +11,9 @@ lvasgn {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 13
+.  .  Offset: 12
 .  .  Line: 1
-.  .  Col: 14
+.  .  Col: 13
 .  }
 .  Children: {
 .  .  0: csend {
@@ -25,9 +25,9 @@ lvasgn {
 .  .  .  .  Col: 5
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 13
+.  .  .  .  Offset: 12
 .  .  .  .  Line: 1
-.  .  .  .  Col: 14
+.  .  .  .  Col: 13
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: value
@@ -41,9 +41,9 @@ lvasgn {
 .  .  .  .  .  .  Col: 5
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 8
+.  .  .  .  .  .  Offset: 7
 .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  Col: 8
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: base

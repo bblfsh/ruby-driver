@@ -11,9 +11,9 @@ lvasgn {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 10
+.  .  Offset: 9
 .  .  Line: 1
-.  .  Col: 11
+.  .  Col: 10
 .  }
 .  Children: {
 .  .  0: array {
@@ -24,9 +24,9 @@ lvasgn {
 .  .  .  .  Col: 5
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 10
+.  .  .  .  Offset: 9
 .  .  .  .  Line: 1
-.  .  .  .  Col: 11
+.  .  .  .  Col: 10
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: value
@@ -41,9 +41,9 @@ lvasgn {
 .  .  .  .  .  .  Col: 6
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 6
+.  .  .  .  .  .  Offset: 5
 .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 7
+.  .  .  .  .  .  Col: 6
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: contents
@@ -58,9 +58,9 @@ lvasgn {
 .  .  .  .  .  .  Col: 9
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 9
+.  .  .  .  .  .  Offset: 8
 .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  Col: 9
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: contents

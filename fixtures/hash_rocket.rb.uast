@@ -11,9 +11,9 @@ lvasgn {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 24
+.  .  Offset: 23
 .  .  Line: 1
-.  .  Col: 25
+.  .  Col: 24
 .  }
 .  Children: {
 .  .  0: hash {
@@ -24,9 +24,9 @@ lvasgn {
 .  .  .  .  Col: 5
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 24
+.  .  .  .  Offset: 23
 .  .  .  .  Line: 1
-.  .  .  .  Col: 25
+.  .  .  .  Col: 24
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: value
@@ -40,9 +40,9 @@ lvasgn {
 .  .  .  .  .  .  Col: 6
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 13
+.  .  .  .  .  .  Offset: 12
 .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  Col: 13
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: contents
@@ -57,9 +57,9 @@ lvasgn {
 .  .  .  .  .  .  .  .  Col: 6
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 8
+.  .  .  .  .  .  .  .  Offset: 7
 .  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  .  Col: 8
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: _1
@@ -74,9 +74,9 @@ lvasgn {
 .  .  .  .  .  .  .  .  Col: 13
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 13
+.  .  .  .  .  .  .  .  Offset: 12
 .  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  .  Col: 13
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: _2
@@ -92,9 +92,9 @@ lvasgn {
 .  .  .  .  .  .  Col: 16
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 23
+.  .  .  .  .  .  Offset: 22
 .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 24
+.  .  .  .  .  .  Col: 23
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: contents
@@ -109,9 +109,9 @@ lvasgn {
 .  .  .  .  .  .  .  .  Col: 16
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 18
+.  .  .  .  .  .  .  .  Offset: 17
 .  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 19
+.  .  .  .  .  .  .  .  Col: 18
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: _1
@@ -126,9 +126,9 @@ lvasgn {
 .  .  .  .  .  .  .  .  Col: 23
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 23
+.  .  .  .  .  .  .  .  Offset: 22
 .  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 24
+.  .  .  .  .  .  .  .  Col: 23
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: _2

@@ -11,9 +11,9 @@ send {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 18
+.  .  Offset: 17
 .  .  Line: 1
-.  .  Col: 19
+.  .  Col: 18
 .  }
 .  Properties: {
 .  .  base: <nil>
@@ -28,9 +28,9 @@ send {
 .  .  .  .  Col: 6
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 18
+.  .  .  .  Offset: 17
 .  .  .  .  Line: 1
-.  .  .  .  Col: 19
+.  .  .  .  Col: 18
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: values

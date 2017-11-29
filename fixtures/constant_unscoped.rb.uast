@@ -11,9 +11,9 @@ casgn {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 7
+.  .  Offset: 6
 .  .  Line: 1
-.  .  Col: 8
+.  .  Col: 7
 .  }
 .  Properties: {
 .  .  base: <nil>
@@ -28,9 +28,9 @@ casgn {
 .  .  .  .  Col: 7
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 7
+.  .  .  .  Offset: 6
 .  .  .  .  Line: 1
-.  .  .  .  Col: 8
+.  .  .  .  Col: 7
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: value

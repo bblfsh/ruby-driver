@@ -11,9 +11,9 @@ const {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 6
+.  .  Offset: 5
 .  .  Line: 1
-.  .  Col: 7
+.  .  Col: 6
 .  }
 .  Children: {
 .  .  0: send {
@@ -25,9 +25,9 @@ const {
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 1
+.  .  .  .  Offset: 0
 .  .  .  .  Line: 1
-.  .  .  .  Col: 2
+.  .  .  .  Col: 1
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  base: <nil>

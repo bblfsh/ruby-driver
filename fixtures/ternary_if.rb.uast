@@ -11,9 +11,9 @@ lvasgn {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 15
+.  .  Offset: 14
 .  .  Line: 1
-.  .  Col: 16
+.  .  Col: 15
 .  }
 .  Children: {
 .  .  0: if {
@@ -24,9 +24,9 @@ lvasgn {
 .  .  .  .  Col: 9
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 9
+.  .  .  .  Offset: 8
 .  .  .  .  Line: 1
-.  .  .  .  Col: 10
+.  .  .  .  Col: 9
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: value
@@ -41,9 +41,9 @@ lvasgn {
 .  .  .  .  .  .  Col: 11
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 11
+.  .  .  .  .  .  Offset: 10
 .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 12
+.  .  .  .  .  .  Col: 11
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
@@ -58,9 +58,9 @@ lvasgn {
 .  .  .  .  .  .  Col: 5
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 7
+.  .  .  .  .  .  Offset: 6
 .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 8
+.  .  .  .  .  .  Col: 7
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  base: <nil>
@@ -76,9 +76,9 @@ lvasgn {
 .  .  .  .  .  .  Col: 15
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 15
+.  .  .  .  .  .  Offset: 14
 .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 16
+.  .  .  .  .  .  Col: 15
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: else

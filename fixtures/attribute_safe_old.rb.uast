@@ -11,9 +11,9 @@ lvasgn {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 18
+.  .  Offset: 17
 .  .  Line: 1
-.  .  Col: 19
+.  .  Col: 18
 .  }
 .  Children: {
 .  .  0: send {
@@ -25,9 +25,9 @@ lvasgn {
 .  .  .  .  Col: 5
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 18
+.  .  .  .  Offset: 17
 .  .  .  .  Line: 1
-.  .  .  .  Col: 19
+.  .  .  .  Col: 18
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: value
@@ -41,9 +41,9 @@ lvasgn {
 .  .  .  .  .  .  Col: 5
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 8
+.  .  .  .  .  .  Offset: 7
 .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  Col: 8
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: base
@@ -58,9 +58,9 @@ lvasgn {
 .  .  .  .  .  .  Col: 14
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 17
+.  .  .  .  .  .  Offset: 16
 .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 18
+.  .  .  .  .  .  Col: 17
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: values

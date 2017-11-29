@@ -11,9 +11,9 @@ gvar {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 4
+.  .  Offset: 3
 .  .  Line: 1
-.  .  Col: 5
+.  .  Col: 4
 .  }
 }
 

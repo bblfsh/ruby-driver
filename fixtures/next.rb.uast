@@ -10,9 +10,9 @@ while {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 5
+.  .  Offset: 4
 .  .  Line: 1
-.  .  Col: 6
+.  .  Col: 5
 .  }
 .  Children: {
 .  .  0: if {
@@ -23,9 +23,9 @@ while {
 .  .  .  .  Col: 5
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 17
+.  .  .  .  Offset: 16
 .  .  .  .  Line: 2
-.  .  .  .  Col: 7
+.  .  .  .  Col: 6
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  else: <nil>
@@ -41,9 +41,9 @@ while {
 .  .  .  .  .  .  Col: 9
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 36
+.  .  .  .  .  .  Offset: 35
 .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  Col: 12
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
@@ -57,9 +57,9 @@ while {
 .  .  .  .  .  .  Col: 8
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 23
+.  .  .  .  .  .  Offset: 22
 .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  Col: 12
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: condition
@@ -75,9 +75,9 @@ while {
 .  .  .  .  Col: 7
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 10
+.  .  .  .  Offset: 9
 .  .  .  .  Line: 1
-.  .  .  .  Col: 11
+.  .  .  .  Col: 10
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: condition

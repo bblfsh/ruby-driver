@@ -11,9 +11,9 @@ const {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 5
+.  .  Offset: 4
 .  .  Line: 1
-.  .  Col: 6
+.  .  Col: 5
 .  }
 .  Children: {
 .  .  0: cbase {
@@ -24,9 +24,9 @@ const {
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 2
+.  .  .  .  Offset: 1
 .  .  .  .  Line: 1
-.  .  .  .  Col: 3
+.  .  .  .  Col: 2
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: base

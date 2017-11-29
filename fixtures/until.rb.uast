@@ -10,9 +10,9 @@ until {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 24
+.  .  Offset: 23
 .  .  Line: 3
-.  .  Col: 4
+.  .  Col: 3
 .  }
 .  Children: {
 .  .  0: lvasgn {
@@ -24,9 +24,9 @@ until {
 .  .  .  .  Col: 5
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 20
+.  .  .  .  Offset: 19
 .  .  .  .  Line: 2
-.  .  .  .  Col: 10
+.  .  .  .  Col: 9
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: body
@@ -41,9 +41,9 @@ until {
 .  .  .  .  .  .  Col: 9
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 20
+.  .  .  .  .  .  Offset: 19
 .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  Col: 9
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: value
@@ -59,9 +59,9 @@ until {
 .  .  .  .  Col: 7
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 10
+.  .  .  .  Offset: 9
 .  .  .  .  Line: 1
-.  .  .  .  Col: 11
+.  .  .  .  Col: 10
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: condition

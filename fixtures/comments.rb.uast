@@ -11,9 +11,9 @@ lvasgn {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 16
+.  .  Offset: 15
 .  .  Line: 2
-.  .  Col: 6
+.  .  Col: 5
 .  }
 .  Children: {
 .  .  0: comment {
@@ -24,9 +24,9 @@ lvasgn {
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 10
+.  .  .  .  Offset: 9
 .  .  .  .  Line: 1
-.  .  .  .  Col: 11
+.  .  .  .  Col: 10
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  documentation: false
@@ -43,9 +43,9 @@ lvasgn {
 .  .  .  .  Col: 7
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 25
+.  .  .  .  Offset: 24
 .  .  .  .  Line: 2
-.  .  .  .  Col: 15
+.  .  .  .  Col: 14
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  documentation: false
@@ -62,9 +62,9 @@ lvasgn {
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 33
+.  .  .  .  Offset: 32
 .  .  .  .  Line: 3
-.  .  .  .  Col: 8
+.  .  .  .  Col: 7
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  documentation: false
@@ -82,9 +82,9 @@ lvasgn {
 .  .  .  .  Col: 5
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 16
+.  .  .  .  Offset: 15
 .  .  .  .  Line: 2
-.  .  .  .  Col: 6
+.  .  .  .  Col: 5
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: value

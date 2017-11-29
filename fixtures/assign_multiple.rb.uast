@@ -10,9 +10,9 @@ masgn {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 11
+.  .  Offset: 10
 .  .  Line: 1
-.  .  Col: 12
+.  .  Col: 11
 .  }
 .  Properties: {
 .  .  values: <nil>
@@ -27,9 +27,9 @@ masgn {
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 1
+.  .  .  .  Offset: 0
 .  .  .  .  Line: 1
-.  .  .  .  Col: 2
+.  .  .  .  Col: 1
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: targets
@@ -45,9 +45,9 @@ masgn {
 .  .  .  .  Col: 4
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 4
+.  .  .  .  Offset: 3
 .  .  .  .  Line: 1
-.  .  .  .  Col: 5
+.  .  .  .  Col: 4
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: targets

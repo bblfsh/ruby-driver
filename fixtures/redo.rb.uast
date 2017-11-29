@@ -10,9 +10,9 @@ while {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 5
+.  .  Offset: 4
 .  .  Line: 1
-.  .  Col: 6
+.  .  Col: 5
 .  }
 .  Children: {
 .  .  0: redo {
@@ -23,9 +23,9 @@ while {
 .  .  .  .  Col: 5
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 19
+.  .  .  .  Offset: 18
 .  .  .  .  Line: 2
-.  .  .  .  Col: 9
+.  .  .  .  Col: 8
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: body
@@ -39,9 +39,9 @@ while {
 .  .  .  .  Col: 7
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 10
+.  .  .  .  Offset: 9
 .  .  .  .  Line: 1
-.  .  .  .  Col: 11
+.  .  .  .  Col: 10
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: condition

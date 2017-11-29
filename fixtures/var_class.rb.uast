@@ -11,9 +11,9 @@ cvar {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 5
+.  .  Offset: 4
 .  .  Line: 1
-.  .  Col: 6
+.  .  Col: 5
 .  }
 }
 

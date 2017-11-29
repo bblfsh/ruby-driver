@@ -10,9 +10,9 @@ begin {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 34
+.  .  Offset: 33
 .  .  Line: 5
-.  .  Col: 4
+.  .  Col: 3
 .  }
 .  Children: {
 .  .  0: class {
@@ -24,9 +24,9 @@ begin {
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 5
+.  .  .  .  Offset: 4
 .  .  .  .  Line: 1
-.  .  .  .  Col: 6
+.  .  .  .  Col: 5
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: body
@@ -50,9 +50,9 @@ begin {
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 20
+.  .  .  .  Offset: 19
 .  .  .  .  Line: 4
-.  .  .  .  Col: 6
+.  .  .  .  Col: 5
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: body
@@ -73,9 +73,9 @@ begin {
 .  .  .  .  .  .  Col: 13
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 30
+.  .  .  .  .  .  Offset: 29
 .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  Col: 16
+.  .  .  .  .  .  Col: 15
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  base: <nil>

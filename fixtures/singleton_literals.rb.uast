@@ -10,9 +10,9 @@ begin {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 26
+.  .  Offset: 25
 .  .  Line: 3
-.  .  Col: 8
+.  .  Col: 7
 .  }
 .  Children: {
 .  .  0: lvasgn {
@@ -24,9 +24,9 @@ begin {
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 8
+.  .  .  .  Offset: 7
 .  .  .  .  Line: 1
-.  .  .  .  Col: 9
+.  .  .  .  Col: 8
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: body
@@ -40,9 +40,9 @@ begin {
 .  .  .  .  .  .  Col: 5
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 8
+.  .  .  .  .  .  Offset: 7
 .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  Col: 8
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: value
@@ -59,9 +59,9 @@ begin {
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 18
+.  .  .  .  Offset: 17
 .  .  .  .  Line: 2
-.  .  .  .  Col: 10
+.  .  .  .  Col: 9
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: body
@@ -75,9 +75,9 @@ begin {
 .  .  .  .  .  .  Col: 5
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 18
+.  .  .  .  .  .  Offset: 17
 .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  Col: 9
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: value
@@ -94,9 +94,9 @@ begin {
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 26
+.  .  .  .  Offset: 25
 .  .  .  .  Line: 3
-.  .  .  .  Col: 8
+.  .  .  .  Col: 7
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: body
@@ -110,9 +110,9 @@ begin {
 .  .  .  .  .  .  Col: 5
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 26
+.  .  .  .  .  .  Offset: 25
 .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  Col: 8
+.  .  .  .  .  .  Col: 7
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: value

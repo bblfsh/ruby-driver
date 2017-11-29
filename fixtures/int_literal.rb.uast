@@ -11,9 +11,9 @@ lvasgn {
 .  .  Col: 1
 .  }
 .  EndPosition: {
-.  .  Offset: 7
+.  .  Offset: 6
 .  .  Line: 1
-.  .  Col: 8
+.  .  Col: 7
 .  }
 .  Children: {
 .  .  0: int {
@@ -25,9 +25,9 @@ lvasgn {
 .  .  .  .  Col: 5
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 7
+.  .  .  .  Offset: 6
 .  .  .  .  Line: 1
-.  .  .  .  Col: 8
+.  .  .  .  Col: 7
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: value
