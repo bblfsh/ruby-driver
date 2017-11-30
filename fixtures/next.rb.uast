@@ -28,7 +28,7 @@ while {
 .  .  .  .  Col: 6
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  else: <nil>
+.  .  .  .  else: null
 .  .  .  .  internalRole: body
 .  .  .  }
 .  .  .  Children: {

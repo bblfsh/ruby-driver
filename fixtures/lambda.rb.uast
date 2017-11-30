@@ -79,7 +79,7 @@ begin {
 .  .  .  .  .  .  .  .  Col: 10
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  .  .  base: null
 .  .  .  .  .  .  .  .  internalRole: blockdata
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
@@ -170,7 +170,7 @@ begin {
 .  .  .  .  .  .  Col: 10
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  args: <nil>
+.  .  .  .  .  .  args: null
 .  .  .  .  .  .  internalRole: value
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
@@ -188,7 +188,7 @@ begin {
 .  .  .  .  .  .  .  .  Col: 6
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  .  .  base: null
 .  .  .  .  .  .  .  .  internalRole: blockdata
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
@@ -277,7 +277,7 @@ begin {
 .  .  .  .  .  .  .  .  Col: 6
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  .  .  base: null
 .  .  .  .  .  .  .  .  internalRole: blockdata
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }

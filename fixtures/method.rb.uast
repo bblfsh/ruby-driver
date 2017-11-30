@@ -16,7 +16,7 @@ class {
 .  .  Col: 5
 .  }
 .  Properties: {
-.  .  parent: <nil>
+.  .  parent: null
 .  }
 .  Children: {
 .  .  0: def {

@@ -30,7 +30,7 @@ begin {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: body
-.  .  .  .  parent: <nil>
+.  .  .  .  parent: null
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: def {
@@ -142,7 +142,7 @@ begin {
 .  .  .  .  .  .  Col: 15
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  base: null
 .  .  .  .  .  .  internalRole: parent
 .  .  .  .  .  }
 .  .  .  .  }

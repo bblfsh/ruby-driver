@@ -35,7 +35,7 @@ kwbegin {
 .  .  .  .  .  .  Col: 15
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  base: null
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
@@ -125,7 +125,7 @@ kwbegin {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: alias
-.  .  .  .  .  .  .  .  value: <nil>
+.  .  .  .  .  .  .  .  value: null
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: lvasgn {
@@ -213,7 +213,7 @@ kwbegin {
 .  .  .  .  .  .  .  .  .  .  Col: 16
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  .  .  .  .  base: null
 .  .  .  .  .  .  .  .  .  .  internalRole: contents
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }

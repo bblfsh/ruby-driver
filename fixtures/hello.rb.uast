@@ -16,7 +16,7 @@ send {
 .  .  Col: 18
 .  }
 .  Properties: {
-.  .  base: <nil>
+.  .  base: null
 .  }
 .  Children: {
 .  .  0: str {

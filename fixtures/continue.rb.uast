@@ -29,7 +29,7 @@ while {
 .  .  .  .  Col: 12
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  base: <nil>
+.  .  .  .  base: null
 .  .  .  .  internalRole: body
 .  .  .  }
 .  .  }

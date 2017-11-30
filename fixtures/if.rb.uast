@@ -28,7 +28,7 @@ begin {
 .  .  .  .  Col: 2
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  else: <nil>
+.  .  .  .  else: null
 .  .  .  .  internalRole: body
 .  .  .  }
 .  .  .  Children: {
@@ -82,7 +82,7 @@ begin {
 .  .  .  .  .  .  Col: 6
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  base: null
 .  .  .  .  .  .  internalRole: condition
 .  .  .  .  .  }
 .  .  .  .  }
@@ -101,7 +101,7 @@ begin {
 .  .  .  .  Col: 2
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  else: <nil>
+.  .  .  .  else: null
 .  .  .  .  internalRole: body
 .  .  .  }
 .  .  .  Children: {
@@ -209,7 +209,7 @@ begin {
 .  .  .  .  .  .  Col: 6
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  base: null
 .  .  .  .  .  .  internalRole: condition
 .  .  .  .  .  }
 .  .  .  .  }
@@ -228,7 +228,7 @@ begin {
 .  .  .  .  Col: 2
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  else: <nil>
+.  .  .  .  else: null
 .  .  .  .  internalRole: body
 .  .  .  }
 .  .  .  Children: {
@@ -282,7 +282,7 @@ begin {
 .  .  .  .  .  .  Col: 6
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  base: null
 .  .  .  .  .  .  internalRole: condition
 .  .  .  .  .  }
 .  .  .  .  }
@@ -301,7 +301,7 @@ begin {
 .  .  .  .  Col: 8
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  else: <nil>
+.  .  .  .  else: null
 .  .  .  .  internalRole: body
 .  .  .  }
 .  .  .  Children: {
@@ -355,7 +355,7 @@ begin {
 .  .  .  .  .  .  Col: 12
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  base: null
 .  .  .  .  .  .  internalRole: condition
 .  .  .  .  .  }
 .  .  .  .  }

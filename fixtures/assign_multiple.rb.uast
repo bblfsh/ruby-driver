@@ -15,7 +15,7 @@ masgn {
 .  .  Col: 11
 .  }
 .  Properties: {
-.  .  values: <nil>
+.  .  values: null
 .  }
 .  Children: {
 .  .  0: lvasgn {
@@ -33,7 +33,7 @@ masgn {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: targets
-.  .  .  .  value: <nil>
+.  .  .  .  value: null
 .  .  .  }
 .  .  }
 .  .  1: lvasgn {
@@ -51,7 +51,7 @@ masgn {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: targets
-.  .  .  .  value: <nil>
+.  .  .  .  value: null
 .  .  .  }
 .  .  }
 .  }

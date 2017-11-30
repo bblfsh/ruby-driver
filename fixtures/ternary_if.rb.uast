@@ -63,7 +63,7 @@ lvasgn {
 .  .  .  .  .  .  Col: 7
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  base: <nil>
+.  .  .  .  .  .  base: null
 .  .  .  .  .  .  internalRole: condition
 .  .  .  .  .  }
 .  .  .  .  }
