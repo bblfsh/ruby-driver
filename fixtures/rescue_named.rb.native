@@ -1,0 +1,114 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "module": {
+            "body": [
+                {
+                    "body": {
+                        "base": null,
+                        "end_col": 15,
+                        "end_line": 2,
+                        "selector": "raise",
+                        "start_col": 4,
+                        "start_line": 2,
+                        "type": "send",
+                        "values": [
+                            {
+                                "end_col": 15,
+                                "end_line": 2,
+                                "start_col": 10,
+                                "start_line": 2,
+                                "token": "foo",
+                                "type": "str"
+                            }
+                        ]
+                    },
+                    "else": {
+                        "end_col": 9,
+                        "end_line": 6,
+                        "start_col": 4,
+                        "start_line": 6,
+                        "target": "b",
+                        "type": "lvasgn",
+                        "value": {
+                            "end_col": 9,
+                            "end_line": 6,
+                            "start_col": 8,
+                            "start_line": 6,
+                            "token": 0,
+                            "type": "int"
+                        }
+                    },
+                    "handlers": [
+                        {
+                            "alias": {
+                                "end_col": 21,
+                                "end_line": 3,
+                                "start_col": 20,
+                                "start_line": 3,
+                                "target": "e",
+                                "type": "lvasgn",
+                                "value": null
+                            },
+                            "body": {
+                                "end_col": 17,
+                                "end_line": 4,
+                                "start_col": 4,
+                                "start_line": 4,
+                                "target": "a",
+                                "type": "lvasgn",
+                                "value": {
+                                    "base": {
+                                        "end_col": 9,
+                                        "end_line": 4,
+                                        "start_col": 8,
+                                        "start_line": 4,
+                                        "token": "e",
+                                        "type": "lvar"
+                                    },
+                                    "end_col": 17,
+                                    "end_line": 4,
+                                    "selector": "message",
+                                    "start_col": 8,
+                                    "start_line": 4,
+                                    "type": "send"
+                                }
+                            },
+                            "end_col": 17,
+                            "end_line": 4,
+                            "exceptions": {
+                                "contents": [
+                                    {
+                                        "base": null,
+                                        "end_col": 16,
+                                        "end_line": 3,
+                                        "start_col": 7,
+                                        "start_line": 3,
+                                        "token": "Exception",
+                                        "type": "const"
+                                    }
+                                ],
+                                "end_col": 16,
+                                "end_line": 3,
+                                "start_col": 7,
+                                "start_line": 3,
+                                "type": "array"
+                            },
+                            "start_col": 0,
+                            "start_line": 3,
+                            "type": "resbody"
+                        }
+                    ],
+                    "type": "rescue"
+                }
+            ],
+            "end_col": 3,
+            "end_line": 7,
+            "start_col": 0,
+            "start_line": 1,
+            "type": "kwbegin"
+        }
+    }
+}

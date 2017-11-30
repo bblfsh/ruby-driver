@@ -1,0 +1,54 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+send {
+.  Roles: File
+.  TOKEN "foo="
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 11
+.  .  Line: 1
+.  .  Col: 12
+.  }
+.  Children: {
+.  .  0: self {
+.  .  .  Roles: Unannotated
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 3
+.  .  .  .  Line: 1
+.  .  .  .  Col: 4
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: base
+.  .  .  }
+.  .  }
+.  .  1: int {
+.  .  .  Roles: Unannotated
+.  .  .  TOKEN "1"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 11
+.  .  .  .  Line: 1
+.  .  .  .  Col: 12
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 11
+.  .  .  .  Line: 1
+.  .  .  .  Col: 12
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: values
+.  .  .  }
+.  .  }
+.  }
+}
+

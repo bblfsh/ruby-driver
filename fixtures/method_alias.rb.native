@@ -1,0 +1,70 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "module": {
+            "body": [
+                {
+                    "body": [
+                        {
+                            "args": {
+                                "end_col": 13,
+                                "end_line": 2,
+                                "start_col": 11,
+                                "start_line": 2,
+                                "type": "args"
+                            },
+                            "body": [
+                                {
+                                    "type": "NilClass"
+                                }
+                            ],
+                            "end_col": 7,
+                            "end_line": 2,
+                            "name": "bar",
+                            "start_col": 4,
+                            "start_line": 2,
+                            "type": "def"
+                        },
+                        {
+                            "_1": {
+                                "end_col": 13,
+                                "end_line": 5,
+                                "start_col": 10,
+                                "start_line": 5,
+                                "token": "baz",
+                                "type": "sym"
+                            },
+                            "_2": {
+                                "end_col": 17,
+                                "end_line": 5,
+                                "start_col": 14,
+                                "start_line": 5,
+                                "token": "bar",
+                                "type": "sym"
+                            },
+                            "end_col": 9,
+                            "end_line": 5,
+                            "start_col": 4,
+                            "start_line": 5,
+                            "type": "alias"
+                        }
+                    ],
+                    "end_col": 17,
+                    "end_line": 5,
+                    "start_col": 4,
+                    "start_line": 2,
+                    "type": "begin"
+                }
+            ],
+            "end_col": 5,
+            "end_line": 1,
+            "name": "Foo",
+            "parent": null,
+            "start_col": 0,
+            "start_line": 1,
+            "type": "class"
+        }
+    }
+}

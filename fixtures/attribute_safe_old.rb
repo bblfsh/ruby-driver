@@ -1,0 +1,1 @@
+a = self.try(:foo)

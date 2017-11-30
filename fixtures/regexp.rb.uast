@@ -1,0 +1,69 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+regexp {
+.  Roles: File
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 11
+.  .  Line: 1
+.  .  Col: 12
+.  }
+.  Children: {
+.  .  0: regopt {
+.  .  .  Roles: Unannotated
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 10
+.  .  .  .  Line: 1
+.  .  .  .  Col: 11
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 11
+.  .  .  .  Line: 1
+.  .  .  .  Col: 12
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: options
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: Symbol {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "i"
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: options
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1: Symbol {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "m"
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: options
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  1: str {
+.  .  .  Roles: Unannotated
+.  .  .  TOKEN "text(.*)"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 1
+.  .  .  .  Line: 1
+.  .  .  .  Col: 2
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 8
+.  .  .  .  Line: 1
+.  .  .  .  Col: 9
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: text
+.  .  .  }
+.  .  }
+.  }
+}
+

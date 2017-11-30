@@ -1,0 +1,73 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+lvasgn {
+.  Roles: File
+.  TOKEN "a"
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 17
+.  .  Line: 1
+.  .  Col: 18
+.  }
+.  Children: {
+.  .  0: send {
+.  .  .  Roles: Unannotated
+.  .  .  TOKEN "try"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 4
+.  .  .  .  Line: 1
+.  .  .  .  Col: 5
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 17
+.  .  .  .  Line: 1
+.  .  .  .  Col: 18
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: value
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: self {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 4
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 7
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 8
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: base
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1: sym {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "foo"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 13
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 14
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 16
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 17
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: values
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  }
+}
+

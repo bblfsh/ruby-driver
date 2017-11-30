@@ -1,0 +1,37 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+const {
+.  Roles: File
+.  TOKEN "Foo"
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 4
+.  .  Line: 1
+.  .  Col: 5
+.  }
+.  Children: {
+.  .  0: cbase {
+.  .  .  Roles: Unannotated
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 1
+.  .  .  .  Line: 1
+.  .  .  .  Col: 2
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: base
+.  .  .  }
+.  .  }
+.  }
+}
+

@@ -1,0 +1,55 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+lvasgn {
+.  Roles: File
+.  TOKEN "a"
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 9
+.  .  Line: 1
+.  .  Col: 10
+.  }
+.  Children: {
+.  .  0: dstr {
+.  .  .  Roles: Unannotated
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 4
+.  .  .  .  Line: 1
+.  .  .  .  Col: 5
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 9
+.  .  .  .  Line: 1
+.  .  .  .  Col: 10
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: value
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: str {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "    Some text
+"
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: children
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1: str {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  TOKEN "    multiline
+"
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: children
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  }
+}
+

@@ -1,0 +1,27 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+module {
+.  Roles: File
+.  TOKEN "Foo"
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 5
+.  .  Line: 1
+.  .  Col: 6
+.  }
+.  Children: {
+.  .  0: NilClass {
+.  .  .  Roles: Unannotated
+.  .  .  Properties: {
+.  .  .  .  internalRole: body
+.  .  .  }
+.  .  }
+.  }
+}
+

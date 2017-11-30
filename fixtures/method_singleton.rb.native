@@ -1,0 +1,75 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "module": {
+            "body": [
+                {
+                    "args": [
+                        {
+                            "end_col": 14,
+                            "end_line": 1,
+                            "start_col": 13,
+                            "start_line": 1,
+                            "token": "a",
+                            "type": "arg"
+                        },
+                        {
+                            "end_col": 17,
+                            "end_line": 1,
+                            "start_col": 16,
+                            "start_line": 1,
+                            "token": "b",
+                            "type": "arg"
+                        },
+                        {
+                            "end_col": 20,
+                            "end_line": 1,
+                            "start_col": 19,
+                            "start_line": 1,
+                            "token": "c",
+                            "type": "arg"
+                        }
+                    ],
+                    "base": {
+                        "end_col": 8,
+                        "end_line": 1,
+                        "start_col": 4,
+                        "start_line": 1,
+                        "type": "self"
+                    },
+                    "class": null,
+                    "end_col": 3,
+                    "end_line": 1,
+                    "name": "foo",
+                    "start_col": 0,
+                    "start_line": 1,
+                    "type": "defs"
+                },
+                {
+                    "args": null,
+                    "base": {
+                        "end_col": 8,
+                        "end_line": 4,
+                        "start_col": 4,
+                        "start_line": 4,
+                        "type": "self"
+                    },
+                    "class": null,
+                    "end_col": 3,
+                    "end_line": 4,
+                    "name": "bar",
+                    "start_col": 0,
+                    "start_line": 4,
+                    "type": "defs"
+                }
+            ],
+            "end_col": 3,
+            "end_line": 5,
+            "start_col": 0,
+            "start_line": 1,
+            "type": "begin"
+        }
+    }
+}

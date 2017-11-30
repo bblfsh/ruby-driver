@@ -1,0 +1,38 @@
+Status:  ok
+Language:  ruby
+Errors: 
+UAST: 
+lvasgn {
+.  Roles: File
+.  TOKEN "a"
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 16
+.  .  Line: 1
+.  .  Col: 17
+.  }
+.  Children: {
+.  .  0: str {
+.  .  .  Roles: Unannotated
+.  .  .  TOKEN "some string"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 4
+.  .  .  .  Line: 1
+.  .  .  .  Col: 5
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 16
+.  .  .  .  Line: 1
+.  .  .  .  Col: 17
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: value
+.  .  .  }
+.  .  }
+.  }
+}
+

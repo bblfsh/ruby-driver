@@ -1,0 +1,61 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "module": {
+            "body": [
+                {
+                    "end_col": 8,
+                    "end_line": 1,
+                    "start_col": 0,
+                    "start_line": 1,
+                    "target": "a",
+                    "type": "lvasgn",
+                    "value": {
+                        "end_col": 8,
+                        "end_line": 1,
+                        "start_col": 4,
+                        "start_line": 1,
+                        "type": "true"
+                    }
+                },
+                {
+                    "end_col": 9,
+                    "end_line": 2,
+                    "start_col": 0,
+                    "start_line": 2,
+                    "target": "b",
+                    "type": "lvasgn",
+                    "value": {
+                        "end_col": 9,
+                        "end_line": 2,
+                        "start_col": 4,
+                        "start_line": 2,
+                        "type": "false"
+                    }
+                },
+                {
+                    "end_col": 7,
+                    "end_line": 3,
+                    "start_col": 0,
+                    "start_line": 3,
+                    "target": "c",
+                    "type": "lvasgn",
+                    "value": {
+                        "end_col": 7,
+                        "end_line": 3,
+                        "start_col": 4,
+                        "start_line": 3,
+                        "type": "nil"
+                    }
+                }
+            ],
+            "end_col": 7,
+            "end_line": 3,
+            "start_col": 0,
+            "start_line": 1,
+            "type": "begin"
+        }
+    }
+}

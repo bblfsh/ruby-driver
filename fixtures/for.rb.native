@@ -1,0 +1,152 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "module": {
+            "body": [
+                {
+                    "body": {
+                        "end_col": 9,
+                        "end_line": 2,
+                        "start_col": 4,
+                        "start_line": 2,
+                        "target": "a",
+                        "type": "lvasgn",
+                        "value": {
+                            "end_col": 9,
+                            "end_line": 2,
+                            "start_col": 8,
+                            "start_line": 2,
+                            "token": "i",
+                            "type": "lvar"
+                        }
+                    },
+                    "end_col": 3,
+                    "end_line": 1,
+                    "iterated": {
+                        "_1": {
+                            "end_col": 10,
+                            "end_line": 1,
+                            "start_col": 9,
+                            "start_line": 1,
+                            "token": 0,
+                            "type": "int"
+                        },
+                        "_2": {
+                            "end_col": 13,
+                            "end_line": 1,
+                            "start_col": 12,
+                            "start_line": 1,
+                            "token": 5,
+                            "type": "int"
+                        },
+                        "end_col": 13,
+                        "end_line": 1,
+                        "start_col": 9,
+                        "start_line": 1,
+                        "type": "irange"
+                    },
+                    "iterators": {
+                        "end_col": 5,
+                        "end_line": 1,
+                        "start_col": 4,
+                        "start_line": 1,
+                        "target": "i",
+                        "type": "lvasgn",
+                        "value": null
+                    },
+                    "start_col": 0,
+                    "start_line": 1,
+                    "type": "for"
+                },
+                {
+                    "end_col": 13,
+                    "end_line": 5,
+                    "start_col": 0,
+                    "start_line": 5,
+                    "target": "b",
+                    "type": "lvasgn",
+                    "value": {
+                        "contents": [
+                            {
+                                "end_col": 6,
+                                "end_line": 5,
+                                "start_col": 5,
+                                "start_line": 5,
+                                "token": 1,
+                                "type": "int"
+                            },
+                            {
+                                "end_col": 9,
+                                "end_line": 5,
+                                "start_col": 8,
+                                "start_line": 5,
+                                "token": 2,
+                                "type": "int"
+                            },
+                            {
+                                "end_col": 12,
+                                "end_line": 5,
+                                "start_col": 11,
+                                "start_line": 5,
+                                "token": 3,
+                                "type": "int"
+                            }
+                        ],
+                        "end_col": 13,
+                        "end_line": 5,
+                        "start_col": 4,
+                        "start_line": 5,
+                        "type": "array"
+                    }
+                },
+                {
+                    "body": {
+                        "end_col": 9,
+                        "end_line": 8,
+                        "start_col": 4,
+                        "start_line": 8,
+                        "target": "x",
+                        "type": "lvasgn",
+                        "value": {
+                            "end_col": 9,
+                            "end_line": 8,
+                            "start_col": 8,
+                            "start_line": 8,
+                            "token": "i",
+                            "type": "lvar"
+                        }
+                    },
+                    "end_col": 3,
+                    "end_line": 7,
+                    "iterated": {
+                        "end_col": 10,
+                        "end_line": 7,
+                        "start_col": 9,
+                        "start_line": 7,
+                        "token": "b",
+                        "type": "lvar"
+                    },
+                    "iterators": {
+                        "end_col": 5,
+                        "end_line": 7,
+                        "start_col": 4,
+                        "start_line": 7,
+                        "target": "i",
+                        "type": "lvasgn",
+                        "value": null
+                    },
+                    "start_col": 0,
+                    "start_line": 7,
+                    "type": "for"
+                }
+            ],
+            "end_col": 3,
+            "end_line": 9,
+            "start_col": 0,
+            "start_line": 1,
+            "type": "begin"
+        }
+    }
+}

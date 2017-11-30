@@ -39,11 +39,14 @@ module NodeConverter
       when "pair", "irange", "erange", "alias", "iflipflop", "eflipflop"
         return sexp_to_hash(node, {"_1" => 0, "_2" => 1})
 
-      when "lvasgn", "ivasgn", "cvasgn"
+      when "lvasgn", "ivasgn", "cvasgn", "or_asgn", "and_asgn"
         return sexp_to_hash(node, {"target" => 0, "value" => 1})
 
-      when "or_asgn", "and_asgn"
-        return sexp_to_hash(node, {"target.target" => 0, "value" => 1})
+      when "block"
+        return sexp_to_hash(node, {"blockdata" => 0, "args.children" => 1, "body" => 2})
+
+      when "array", "hash"
+        return sexp_to_hash(node, {}, 0, "contents")
 
       when "optarg", "kwoptarg"
         return sexp_to_hash(node, {"token" => 0, "default" => 1})
@@ -51,8 +54,11 @@ module NodeConverter
       when "splat", "kwsplat", "defined?", "kwrestarg"
         return sexp_to_hash(node, {"name" => 0})
 
-      when "casgn", "csend", "send"
+      when "casgn"
         return sexp_to_hash(node, {"base" => 0, "selector" => 1, "value" => 2})
+
+      when "csend", "send"
+        return sexp_to_hash(node, {"base" => 0, "selector" => 1}, 2, "values")
 
       when "complex", "rational", "sym"
         return sexp_to_hash(node, {"token.token" => 0})
@@ -65,10 +71,10 @@ module NodeConverter
         return node.children.map{ |x| convert(x) }.compact
 
       when "masgn"
-        return sexp_to_hash(node, {"targets" => 0, "values" => 1})
+        return sexp_to_hash(node, {"targets" => 0, "values.children" => 1})
 
       when "op_asgn"
-        return sexp_to_hash(node, {"target.target" => 0, "operator" => 1, "value" => 2})
+        return sexp_to_hash(node, {"target" => 0, "operator" => 1, "value" => 2})
 
       when "module"
         d = sexp_to_hash(node, {}, 1, "body")
@@ -100,6 +106,12 @@ module NodeConverter
         d["else"] = convert(node.children[-1])
         return d
 
+      when "when"
+        d = {"type": "when"}
+        d["conditions"] = node.children[0..-2].map{ |x| convert(x) }.compact
+        d["body"] = convert(node.children[-1])
+        return d
+
       when "const"
         return sexp_to_hash(node, {"base" => 0, "token" => 1})
 
@@ -128,6 +140,15 @@ module NodeConverter
 
       when "if"
         return sexp_to_hash(node, {"condition" => 0, "body" => 1, "else" => 2})
+
+      when "defs" # "singleton method"
+        return sexp_to_hash(node, {"base" => 0, "name" => 1, "args.children" => 2, "class" => 3})
+
+      when "regexp"
+        return sexp_to_hash(node, {"text" => 0, "options" => 1})
+
+      when "regopt"
+        return sexp_to_hash(node, {}, 0, "options")
 
       else
         # default conversion
@@ -220,6 +241,10 @@ module NodeConverter
         subelem = "expression"
       end
 
+      if hash["type"] == "if" and not node.loc.respond_to?("keyword")
+        subelem = "question"
+      end
+
       if node != nil
         add_from_subelem(node, hash, subelem)
       end
@@ -250,7 +275,9 @@ module NodeConverter
         comments.push(dcomment)
       end
 
-      @dict["ast"]["module"]["comments"] = comments
+      if comments.length > 0
+        @dict["ast"]["module"]["comments"] = comments
+      end
     end
 
 

@@ -1,0 +1,24 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "module": {
+            "base": {
+                "base": null,
+                "end_col": 1,
+                "end_line": 1,
+                "selector": "a",
+                "start_col": 0,
+                "start_line": 1,
+                "type": "send"
+            },
+            "end_col": 6,
+            "end_line": 1,
+            "start_col": 0,
+            "start_line": 1,
+            "token": "Foo",
+            "type": "const"
+        }
+    }
+}
