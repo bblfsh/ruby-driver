@@ -15,9 +15,6 @@ casgn {
 .  .  Line: 1
 .  .  Col: 7
 .  }
-.  Properties: {
-.  .  base: null
-.  }
 .  Children: {
 .  .  0: int {
 .  .  .  Roles: Unannotated

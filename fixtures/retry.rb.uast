@@ -76,8 +76,6 @@ kwbegin {
 .  .  .  .  .  .  Col: 9
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  alias: null
-.  .  .  .  .  .  exceptions: null
 .  .  .  .  .  .  internalRole: handlers
 .  .  .  .  .  }
 .  .  .  .  .  Children: {

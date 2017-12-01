@@ -134,7 +134,6 @@ begin {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: iterators
-.  .  .  .  .  .  value: null
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
@@ -311,7 +310,6 @@ begin {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: iterators
-.  .  .  .  .  .  value: null
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

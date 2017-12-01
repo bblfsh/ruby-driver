@@ -47,7 +47,6 @@ begin {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: target
-.  .  .  .  .  .  value: null
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: int {
@@ -101,7 +100,6 @@ begin {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: target
-.  .  .  .  .  .  value: null
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: int {
@@ -155,7 +153,6 @@ begin {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: target
-.  .  .  .  .  .  value: null
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: int {
@@ -209,7 +206,6 @@ begin {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: target
-.  .  .  .  .  .  value: null
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: int {
@@ -263,7 +259,6 @@ begin {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: target
-.  .  .  .  .  .  value: null
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: int {
@@ -317,7 +312,6 @@ begin {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: target
-.  .  .  .  .  .  value: null
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: int {

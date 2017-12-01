@@ -14,9 +14,6 @@ masgn {
 .  .  Line: 1
 .  .  Col: 11
 .  }
-.  Properties: {
-.  .  values: null
-.  }
 .  Children: {
 .  .  0: lvasgn {
 .  .  .  Roles: Unannotated
@@ -33,7 +30,6 @@ masgn {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: targets
-.  .  .  .  value: null
 .  .  .  }
 .  .  }
 .  .  1: lvasgn {
@@ -51,7 +47,6 @@ masgn {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: targets
-.  .  .  .  value: null
 .  .  .  }
 .  .  }
 .  }

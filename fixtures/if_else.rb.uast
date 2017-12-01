@@ -65,7 +65,6 @@ if {
 .  .  .  .  Col: 6
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  base: null
 .  .  .  .  internalRole: condition
 .  .  .  }
 .  .  }

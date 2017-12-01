@@ -82,7 +82,6 @@ begin {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: target
-.  .  .  .  .  .  value: null
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: int {
@@ -135,7 +134,6 @@ begin {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: target
-.  .  .  .  .  .  value: null
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: int {
@@ -275,7 +273,6 @@ begin {
 .  .  .  .  .  .  .  .  Col: 3
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  base: null
 .  .  .  .  .  .  .  .  internalRole: base
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }

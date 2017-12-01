@@ -30,7 +30,6 @@ send {
 .  .  .  .  Col: 3
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  base: null
 .  .  .  .  internalRole: base
 .  .  .  }
 .  .  }

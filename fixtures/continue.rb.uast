@@ -29,7 +29,6 @@ while {
 .  .  .  .  Col: 12
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  base: null
 .  .  .  .  internalRole: body
 .  .  .  }
 .  .  }

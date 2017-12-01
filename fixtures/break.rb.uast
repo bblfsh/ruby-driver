@@ -33,7 +33,6 @@ begin {
 .  .  .  Children: {
 .  .  .  .  0: break {
 .  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  TOKEN "<nil>"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 15
 .  .  .  .  .  .  Line: 2
@@ -112,7 +111,6 @@ begin {
 .  .  .  .  .  .  .  .  Col: 10
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  base: null
 .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
@@ -137,7 +135,6 @@ begin {
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: break {
 .  .  .  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  .  .  TOKEN "<nil>"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 54
 .  .  .  .  .  .  .  .  Line: 7

@@ -15,9 +15,6 @@ class {
 .  .  Line: 1
 .  .  Col: 5
 .  }
-.  Properties: {
-.  .  parent: null
-.  }
 .  Children: {
 .  .  0: begin {
 .  .  .  Roles: Unannotated

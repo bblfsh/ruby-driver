@@ -30,7 +30,6 @@ begin {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: body
-.  .  .  .  parent: null
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: NilClass {
@@ -78,7 +77,6 @@ begin {
 .  .  .  .  .  .  Col: 15
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  base: null
 .  .  .  .  .  .  internalRole: parent
 .  .  .  .  .  }
 .  .  .  .  }
