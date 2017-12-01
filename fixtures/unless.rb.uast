@@ -65,7 +65,6 @@ if {
 .  .  .  .  Col: 10
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  base: <nil>
 .  .  .  .  internalRole: condition
 .  .  .  }
 .  .  }

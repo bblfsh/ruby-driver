@@ -110,7 +110,6 @@ begin {
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: kwrestarg {
 .  .  .  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  .  .  TOKEN "<nil>"
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: children
 .  .  .  .  .  .  .  }

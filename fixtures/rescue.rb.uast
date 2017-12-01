@@ -35,7 +35,6 @@ kwbegin {
 .  .  .  .  .  .  Col: 15
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  base: <nil>
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
@@ -77,8 +76,6 @@ kwbegin {
 .  .  .  .  .  .  Col: 9
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  alias: <nil>
-.  .  .  .  .  .  exceptions: <nil>
 .  .  .  .  .  .  internalRole: handlers
 .  .  .  .  .  }
 .  .  .  .  .  Children: {

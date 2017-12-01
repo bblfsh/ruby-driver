@@ -29,7 +29,6 @@ begin {
 .  .  .  .  Col: 3
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  class: <nil>
 .  .  .  .  internalRole: body
 .  .  .  }
 .  .  .  Children: {
@@ -116,8 +115,6 @@ begin {
 .  .  .  .  Col: 3
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  args: <nil>
-.  .  .  .  class: <nil>
 .  .  .  .  internalRole: body
 .  .  .  }
 .  .  .  Children: {

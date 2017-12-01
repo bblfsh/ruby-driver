@@ -65,7 +65,6 @@ if {
 .  .  .  .  Col: 6
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  base: <nil>
 .  .  .  .  internalRole: condition
 .  .  .  }
 .  .  }
@@ -135,7 +134,6 @@ if {
 .  .  .  .  .  .  Col: 9
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  base: <nil>
 .  .  .  .  .  .  internalRole: condition
 .  .  .  .  .  }
 .  .  .  .  }

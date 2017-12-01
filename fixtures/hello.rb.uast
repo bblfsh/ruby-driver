@@ -15,9 +15,6 @@ send {
 .  .  Line: 1
 .  .  Col: 18
 .  }
-.  Properties: {
-.  .  base: <nil>
-.  }
 .  Children: {
 .  .  0: str {
 .  .  .  Roles: Unannotated

@@ -30,7 +30,6 @@ const {
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  base: <nil>
 .  .  .  .  internalRole: base
 .  .  .  }
 .  .  }

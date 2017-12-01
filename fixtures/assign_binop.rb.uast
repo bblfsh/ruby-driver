@@ -83,7 +83,6 @@ begin {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: target
-.  .  .  .  .  .  value: <nil>
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: int {
@@ -137,7 +136,6 @@ begin {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: target
-.  .  .  .  .  .  value: <nil>
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: int {
@@ -191,7 +189,6 @@ begin {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: target
-.  .  .  .  .  .  value: <nil>
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: int {
