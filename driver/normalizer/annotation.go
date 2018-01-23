@@ -20,3 +20,12 @@ var Transformers = []transformer.Tranformer{
 //
 // https://godoc.org/gopkg.in/bblfsh/sdk.v1/uast/ann
 var AnnotationRules = On(Any).Roles(uast.File)
+
+// Identifiers:
+// lvasgn.target/token
+// ivasgn.target/token
+// ivar.token
+// target.send.selector
+// send.selector / send.token (note, sometimes is "foo=")
+// self => needs synth token "self"
+// csend.token
