@@ -3,7 +3,7 @@ Language:  ruby
 Errors: 
 UAST: 
 if {
-.  Roles: File
+.  Roles: Unannotated
 .  StartPosition: {
 .  .  Offset: 0
 .  .  Line: 1

@@ -17,8 +17,7 @@ module NodeConverter
     end
 
     def tohash()
-      @dict["ast"] = {}
-      @dict["ast"]["module"] = convert(@root)
+      @dict["ast"] = {"module": convert(@root)}
       add_comments()
       return @dict["ast"]
     end
@@ -77,7 +76,7 @@ module NodeConverter
         return sexp_to_hash(node, {"target" => 0, "operator" => 1, "value" => 2})
 
       when "module"
-        d = sexp_to_hash(node, {}, 1, "body")
+        d = sexp_to_hash(node, {}, 1, "module")
         d["name"] = node.children[0].children[1].to_s
         return d
 
@@ -262,7 +261,7 @@ module NodeConverter
       comments = []
 
       @comments.each do |comment|
-        dcomment = {
+        commentdict = {
           "type" => "comment",
           "text" => comment.text,
           "inline" => comment.inline?,
@@ -272,11 +271,11 @@ module NodeConverter
           "start_col" => comment.loc.column,
           "end_col" => comment.loc.last_column
         }
-        comments.push(dcomment)
+        comments.push(commentdict)
       end
 
       if comments.length > 0
-        @dict["ast"]["module"]["comments"] = comments
+        @dict["ast"]["RUBYAST"]["module"]["comments"] = comments
       end
     end
 

@@ -1,6 +1,10 @@
 package normalizer
 
 import (
+	//"errors"
+
+	"github.com/bblfsh/ruby-driver/driver/normalizer/rubyast"
+
 	"gopkg.in/bblfsh/sdk.v1/uast"
 	. "gopkg.in/bblfsh/sdk.v1/uast/ann"
 	"gopkg.in/bblfsh/sdk.v1/uast/transformer"
@@ -16,10 +20,19 @@ var Transformers = []transformer.Tranformer{
 	positioner.NewFillOffsetFromLineCol(),
 }
 
+// Nodes doc:
+// https://github.com/whitequark/parser/blob/master/doc/AST_FORMAT.md
+
 // AnnotationRules describes how a UAST should be annotated with `uast.Role`.
 //
 // https://godoc.org/gopkg.in/bblfsh/sdk.v1/uast/ann
-var AnnotationRules = On(Any).Roles(uast.File)
+//var AnnotationRules = On(Any).Self(
+var AnnotationRules = On(HasInternalRole("module")).Roles(uast.Module, uast.File).Descendants(
+	On(rubyast.Begin).Roles(uast.Block),
+	//On(rubyast.Module).Roles(uast.File, uast.Module).Descendants(
+		//On(rubyast.Begin).Roles(uast.Block),
+	//),
+)
 
 // Identifiers:
 // lvasgn.target/token

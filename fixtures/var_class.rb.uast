@@ -3,7 +3,7 @@ Language:  ruby
 Errors: 
 UAST: 
 cvar {
-.  Roles: File
+.  Roles: Unannotated
 .  TOKEN "@@foo"
 .  StartPosition: {
 .  .  Offset: 0

@@ -3,7 +3,7 @@ Language:  ruby
 Errors: 
 UAST: 
 while_post {
-.  Roles: File
+.  Roles: Unannotated
 .  StartPosition: {
 .  .  Offset: 0
 .  .  Line: 1

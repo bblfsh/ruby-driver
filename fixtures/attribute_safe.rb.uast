@@ -3,7 +3,7 @@ Language:  ruby
 Errors: 
 UAST: 
 lvasgn {
-.  Roles: File
+.  Roles: Unannotated
 .  TOKEN "a"
 .  StartPosition: {
 .  .  Offset: 0

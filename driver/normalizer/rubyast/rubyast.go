@@ -59,7 +59,7 @@ var (
 	IVAsgn           = ann.HasInternalType("ivasgn")
 	IVar             = ann.HasInternalType("ivar")
 	If               = ann.HasInternalType("if")
-	Inline           = ann.HAsInternalType("inline")
+	Inline           = ann.HasInternalType("inline")
 	InnerComplex     = ann.HasInternalType("Complex")
 	InnerRational    = ann.HasInternalType("Rational")
 	InnerSymbol      = ann.HasInternalType("Symbol")

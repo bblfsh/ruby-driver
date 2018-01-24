@@ -3,7 +3,7 @@ Language:  ruby
 Errors: 
 UAST: 
 send {
-.  Roles: File
+.  Roles: Unannotated
 .  TOKEN "foo="
 .  StartPosition: {
 .  .  Offset: 0

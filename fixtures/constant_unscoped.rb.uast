@@ -3,7 +3,7 @@ Language:  ruby
 Errors: 
 UAST: 
 casgn {
-.  Roles: File
+.  Roles: Unannotated
 .  TOKEN "Foo"
 .  StartPosition: {
 .  .  Offset: 0
