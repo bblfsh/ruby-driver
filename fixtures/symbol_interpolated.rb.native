@@ -3,72 +3,74 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "module": {
-            "body": [
-                {
-                    "end_col": 7,
-                    "end_line": 1,
-                    "start_col": 0,
-                    "start_line": 1,
-                    "target": "bar",
-                    "type": "lvasgn",
-                    "value": {
+        "RUBYAST": {
+            "module": {
+                "body": [
+                    {
                         "end_col": 7,
                         "end_line": 1,
-                        "start_col": 6,
+                        "start_col": 0,
                         "start_line": 1,
-                        "token": 1,
-                        "type": "int"
-                    }
-                },
-                {
-                    "children": [
-                        {
-                            "end_col": 5,
-                            "end_line": 2,
-                            "start_col": 2,
-                            "start_line": 2,
-                            "token": "foo",
-                            "type": "str"
-                        },
-                        {
-                            "body": [
-                                {
-                                    "end_col": 10,
-                                    "end_line": 2,
-                                    "start_col": 7,
-                                    "start_line": 2,
-                                    "token": "bar",
-                                    "type": "lvar"
-                                }
-                            ],
-                            "end_col": 11,
-                            "end_line": 2,
-                            "start_col": 5,
-                            "start_line": 2,
-                            "type": "begin"
-                        },
-                        {
-                            "end_col": 14,
-                            "end_line": 2,
-                            "start_col": 11,
-                            "start_line": 2,
-                            "token": "baz",
-                            "type": "str"
+                        "target": "bar",
+                        "type": "lvasgn",
+                        "value": {
+                            "end_col": 7,
+                            "end_line": 1,
+                            "start_col": 6,
+                            "start_line": 1,
+                            "token": 1,
+                            "type": "int"
                         }
-                    ],
-                    "end_col": 15,
-                    "end_line": 2,
-                    "start_col": 0,
-                    "start_line": 2,
-                    "type": "dsym"
-                }
-            ],
-            "end_col": 15,
-            "end_line": 2,
-            "start_col": 0,
-            "start_line": 1,
-            "type": "begin"
+                    },
+                    {
+                        "children": [
+                            {
+                                "end_col": 5,
+                                "end_line": 2,
+                                "start_col": 2,
+                                "start_line": 2,
+                                "token": "foo",
+                                "type": "str"
+                            },
+                            {
+                                "body": [
+                                    {
+                                        "end_col": 10,
+                                        "end_line": 2,
+                                        "start_col": 7,
+                                        "start_line": 2,
+                                        "token": "bar",
+                                        "type": "lvar"
+                                    }
+                                ],
+                                "end_col": 11,
+                                "end_line": 2,
+                                "start_col": 5,
+                                "start_line": 2,
+                                "type": "begin"
+                            },
+                            {
+                                "end_col": 14,
+                                "end_line": 2,
+                                "start_col": 11,
+                                "start_line": 2,
+                                "token": "baz",
+                                "type": "str"
+                            }
+                        ],
+                        "end_col": 15,
+                        "end_line": 2,
+                        "start_col": 0,
+                        "start_line": 2,
+                        "type": "dsym"
+                    }
+                ],
+                "end_col": 15,
+                "end_line": 2,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "begin"
+            }
         }
     }
 }

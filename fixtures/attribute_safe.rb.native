@@ -3,27 +3,29 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "module": {
-            "end_col": 13,
-            "end_line": 1,
-            "start_col": 0,
-            "start_line": 1,
-            "target": "a",
-            "type": "lvasgn",
-            "value": {
-                "base": {
-                    "end_col": 8,
-                    "end_line": 1,
-                    "start_col": 4,
-                    "start_line": 1,
-                    "type": "self"
-                },
+        "RUBYAST": {
+            "module": {
                 "end_col": 13,
                 "end_line": 1,
-                "selector": "foo",
-                "start_col": 4,
+                "start_col": 0,
                 "start_line": 1,
-                "type": "csend"
+                "target": "a",
+                "type": "lvasgn",
+                "value": {
+                    "base": {
+                        "end_col": 8,
+                        "end_line": 1,
+                        "start_col": 4,
+                        "start_line": 1,
+                        "type": "self"
+                    },
+                    "end_col": 13,
+                    "end_line": 1,
+                    "selector": "foo",
+                    "start_col": 4,
+                    "start_line": 1,
+                    "type": "csend"
+                }
             }
         }
     }

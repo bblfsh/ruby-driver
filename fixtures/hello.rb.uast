@@ -2,27 +2,16 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-send {
-.  Roles: Unannotated
-.  TOKEN "puts"
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 17
-.  .  Line: 1
-.  .  Col: 18
-.  }
+ {
+.  Roles: Module,File
 .  Children: {
-.  .  0: str {
-.  .  .  Roles: Unannotated
-.  .  .  TOKEN "hello world"
+.  .  0: send {
+.  .  .  Roles: Call,Identifier
+.  .  .  TOKEN "puts"
 .  .  .  StartPosition: {
-.  .  .  .  Offset: 5
+.  .  .  .  Offset: 0
 .  .  .  .  Line: 1
-.  .  .  .  Col: 6
+.  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
 .  .  .  .  Offset: 17
@@ -30,7 +19,26 @@ send {
 .  .  .  .  Col: 18
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: values
+.  .  .  .  internalRole: module
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: str {
+.  .  .  .  .  Roles: Literal,String,Primitive,Argument,Identifier
+.  .  .  .  .  TOKEN "hello world"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 5
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 6
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 17
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 18
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: values
+.  .  .  .  .  }
+.  .  .  .  }
 .  .  .  }
 .  .  }
 .  }

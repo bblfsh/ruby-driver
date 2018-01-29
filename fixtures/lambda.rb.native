@@ -3,149 +3,151 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "module": {
-            "body": [
-                {
-                    "end_col": 20,
-                    "end_line": 1,
-                    "start_col": 0,
-                    "start_line": 1,
-                    "target": "a",
-                    "type": "lvasgn",
-                    "value": {
-                        "args": [
-                            {
-                                "end_col": 14,
-                                "end_line": 1,
-                                "start_col": 13,
-                                "start_line": 1,
-                                "token": "y",
-                                "type": "arg"
-                            }
-                        ],
-                        "blockdata": {
-                            "base": null,
-                            "end_col": 10,
-                            "end_line": 1,
-                            "selector": "lambda",
-                            "start_col": 4,
-                            "start_line": 1,
-                            "type": "send"
-                        },
-                        "body": {
-                            "base": {
-                                "end_col": 17,
-                                "end_line": 1,
-                                "start_col": 16,
-                                "start_line": 1,
-                                "token": 2,
-                                "type": "int"
-                            },
-                            "end_col": 19,
-                            "end_line": 1,
-                            "selector": "*",
-                            "start_col": 16,
-                            "start_line": 1,
-                            "type": "send",
-                            "values": [
-                                {
-                                    "end_col": 19,
-                                    "end_line": 1,
-                                    "start_col": 18,
-                                    "start_line": 1,
-                                    "token": "y",
-                                    "type": "lvar"
-                                }
-                            ]
-                        },
+        "RUBYAST": {
+            "module": {
+                "body": [
+                    {
                         "end_col": 20,
                         "end_line": 1,
-                        "start_col": 4,
+                        "start_col": 0,
                         "start_line": 1,
-                        "type": "block"
-                    }
-                },
-                {
-                    "end_col": 10,
-                    "end_line": 2,
-                    "start_col": 0,
-                    "start_line": 2,
-                    "target": "b",
-                    "type": "lvasgn",
-                    "value": {
-                        "args": null,
-                        "blockdata": {
-                            "base": null,
-                            "end_col": 6,
-                            "end_line": 2,
-                            "selector": "lambda",
+                        "target": "a",
+                        "type": "lvasgn",
+                        "value": {
+                            "args": [
+                                {
+                                    "end_col": 14,
+                                    "end_line": 1,
+                                    "start_col": 13,
+                                    "start_line": 1,
+                                    "token": "y",
+                                    "type": "arg"
+                                }
+                            ],
+                            "blockdata": {
+                                "base": null,
+                                "end_col": 10,
+                                "end_line": 1,
+                                "selector": "lambda",
+                                "start_col": 4,
+                                "start_line": 1,
+                                "type": "send"
+                            },
+                            "body": {
+                                "base": {
+                                    "end_col": 17,
+                                    "end_line": 1,
+                                    "start_col": 16,
+                                    "start_line": 1,
+                                    "token": 2,
+                                    "type": "int"
+                                },
+                                "end_col": 19,
+                                "end_line": 1,
+                                "selector": "*",
+                                "start_col": 16,
+                                "start_line": 1,
+                                "type": "send",
+                                "values": [
+                                    {
+                                        "end_col": 19,
+                                        "end_line": 1,
+                                        "start_col": 18,
+                                        "start_line": 1,
+                                        "token": "y",
+                                        "type": "lvar"
+                                    }
+                                ]
+                            },
+                            "end_col": 20,
+                            "end_line": 1,
                             "start_col": 4,
-                            "start_line": 2,
-                            "type": "send"
-                        },
-                        "body": {
-                            "end_col": 9,
-                            "end_line": 2,
-                            "start_col": 8,
-                            "start_line": 2,
-                            "token": 1,
-                            "type": "int"
-                        },
+                            "start_line": 1,
+                            "type": "block"
+                        }
+                    },
+                    {
                         "end_col": 10,
                         "end_line": 2,
-                        "start_col": 4,
+                        "start_col": 0,
                         "start_line": 2,
-                        "type": "block"
-                    }
-                },
-                {
-                    "end_col": 14,
-                    "end_line": 3,
-                    "start_col": 0,
-                    "start_line": 3,
-                    "target": "c",
-                    "type": "lvasgn",
-                    "value": {
-                        "args": [
-                            {
+                        "target": "b",
+                        "type": "lvasgn",
+                        "value": {
+                            "args": null,
+                            "blockdata": {
+                                "base": null,
+                                "end_col": 6,
+                                "end_line": 2,
+                                "selector": "lambda",
+                                "start_col": 4,
+                                "start_line": 2,
+                                "type": "send"
+                            },
+                            "body": {
                                 "end_col": 9,
-                                "end_line": 3,
+                                "end_line": 2,
                                 "start_col": 8,
-                                "start_line": 3,
-                                "token": "x",
-                                "type": "arg"
-                            }
-                        ],
-                        "blockdata": {
-                            "base": null,
-                            "end_col": 6,
-                            "end_line": 3,
-                            "selector": "lambda",
+                                "start_line": 2,
+                                "token": 1,
+                                "type": "int"
+                            },
+                            "end_col": 10,
+                            "end_line": 2,
                             "start_col": 4,
-                            "start_line": 3,
-                            "type": "send"
-                        },
-                        "body": {
-                            "end_col": 13,
-                            "end_line": 3,
-                            "start_col": 12,
-                            "start_line": 3,
-                            "token": "x",
-                            "type": "lvar"
-                        },
+                            "start_line": 2,
+                            "type": "block"
+                        }
+                    },
+                    {
                         "end_col": 14,
                         "end_line": 3,
-                        "start_col": 4,
+                        "start_col": 0,
                         "start_line": 3,
-                        "type": "block"
+                        "target": "c",
+                        "type": "lvasgn",
+                        "value": {
+                            "args": [
+                                {
+                                    "end_col": 9,
+                                    "end_line": 3,
+                                    "start_col": 8,
+                                    "start_line": 3,
+                                    "token": "x",
+                                    "type": "arg"
+                                }
+                            ],
+                            "blockdata": {
+                                "base": null,
+                                "end_col": 6,
+                                "end_line": 3,
+                                "selector": "lambda",
+                                "start_col": 4,
+                                "start_line": 3,
+                                "type": "send"
+                            },
+                            "body": {
+                                "end_col": 13,
+                                "end_line": 3,
+                                "start_col": 12,
+                                "start_line": 3,
+                                "token": "x",
+                                "type": "lvar"
+                            },
+                            "end_col": 14,
+                            "end_line": 3,
+                            "start_col": 4,
+                            "start_line": 3,
+                            "type": "block"
+                        }
                     }
-                }
-            ],
-            "end_col": 14,
-            "end_line": 3,
-            "start_col": 0,
-            "start_line": 1,
-            "type": "begin"
+                ],
+                "end_col": 14,
+                "end_line": 3,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "begin"
+            }
         }
     }
 }

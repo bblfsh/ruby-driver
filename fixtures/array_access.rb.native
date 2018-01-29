@@ -3,81 +3,83 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "module": {
-            "body": [
-                {
-                    "end_col": 10,
-                    "end_line": 1,
-                    "start_col": 0,
-                    "start_line": 1,
-                    "target": "a",
-                    "type": "lvasgn",
-                    "value": {
-                        "contents": [
-                            {
-                                "end_col": 6,
-                                "end_line": 1,
-                                "start_col": 5,
-                                "start_line": 1,
-                                "token": 1,
-                                "type": "int"
-                            },
-                            {
-                                "end_col": 9,
-                                "end_line": 1,
-                                "start_col": 8,
-                                "start_line": 1,
-                                "token": 2,
-                                "type": "int"
-                            }
-                        ],
+        "RUBYAST": {
+            "module": {
+                "body": [
+                    {
                         "end_col": 10,
                         "end_line": 1,
-                        "start_col": 4,
+                        "start_col": 0,
                         "start_line": 1,
-                        "type": "array"
-                    }
-                },
-                {
-                    "end_col": 8,
-                    "end_line": 2,
-                    "start_col": 0,
-                    "start_line": 2,
-                    "target": "b",
-                    "type": "lvasgn",
-                    "value": {
-                        "base": {
-                            "end_col": 5,
-                            "end_line": 2,
+                        "target": "a",
+                        "type": "lvasgn",
+                        "value": {
+                            "contents": [
+                                {
+                                    "end_col": 6,
+                                    "end_line": 1,
+                                    "start_col": 5,
+                                    "start_line": 1,
+                                    "token": 1,
+                                    "type": "int"
+                                },
+                                {
+                                    "end_col": 9,
+                                    "end_line": 1,
+                                    "start_col": 8,
+                                    "start_line": 1,
+                                    "token": 2,
+                                    "type": "int"
+                                }
+                            ],
+                            "end_col": 10,
+                            "end_line": 1,
                             "start_col": 4,
-                            "start_line": 2,
-                            "token": "a",
-                            "type": "lvar"
-                        },
+                            "start_line": 1,
+                            "type": "array"
+                        }
+                    },
+                    {
                         "end_col": 8,
                         "end_line": 2,
-                        "selector": "[]",
-                        "start_col": 4,
+                        "start_col": 0,
                         "start_line": 2,
-                        "type": "send",
-                        "values": [
-                            {
-                                "end_col": 7,
+                        "target": "b",
+                        "type": "lvasgn",
+                        "value": {
+                            "base": {
+                                "end_col": 5,
                                 "end_line": 2,
-                                "start_col": 6,
+                                "start_col": 4,
                                 "start_line": 2,
-                                "token": 0,
-                                "type": "int"
-                            }
-                        ]
+                                "token": "a",
+                                "type": "lvar"
+                            },
+                            "end_col": 8,
+                            "end_line": 2,
+                            "selector": "[]",
+                            "start_col": 4,
+                            "start_line": 2,
+                            "type": "send",
+                            "values": [
+                                {
+                                    "end_col": 7,
+                                    "end_line": 2,
+                                    "start_col": 6,
+                                    "start_line": 2,
+                                    "token": 0,
+                                    "type": "int"
+                                }
+                            ]
+                        }
                     }
-                }
-            ],
-            "end_col": 8,
-            "end_line": 2,
-            "start_col": 0,
-            "start_line": 1,
-            "type": "begin"
+                ],
+                "end_col": 8,
+                "end_line": 2,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "begin"
+            }
         }
     }
 }

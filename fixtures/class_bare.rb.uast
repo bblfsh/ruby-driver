@@ -2,24 +2,32 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-class {
-.  Roles: Unannotated
-.  TOKEN "Foo"
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 4
-.  .  Line: 1
-.  .  Col: 5
-.  }
+ {
+.  Roles: Module,File
 .  Children: {
-.  .  0: NilClass {
-.  .  .  Roles: Unannotated
+.  .  0: class {
+.  .  .  Roles: Type,Declaration,Identifier
+.  .  .  TOKEN "Foo"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 4
+.  .  .  .  Line: 1
+.  .  .  .  Col: 5
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: body
+.  .  .  .  internalRole: module
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: NilClass {
+.  .  .  .  .  Roles: Type,Null
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: body
+.  .  .  .  .  }
+.  .  .  .  }
 .  .  .  }
 .  .  }
 .  }

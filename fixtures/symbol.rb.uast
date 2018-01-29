@@ -2,18 +2,26 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-sym {
-.  Roles: Unannotated
-.  TOKEN "foo"
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 3
-.  .  Line: 1
-.  .  Col: 4
+ {
+.  Roles: Module,File
+.  Children: {
+.  .  0: sym {
+.  .  .  Roles: Identifier
+.  .  .  TOKEN "foo"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 3
+.  .  .  .  Line: 1
+.  .  .  .  Col: 4
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: module
+.  .  .  }
+.  .  }
 .  }
 }
 

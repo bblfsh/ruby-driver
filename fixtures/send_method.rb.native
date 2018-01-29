@@ -3,195 +3,197 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "module": {
-            "body": [
-                {
-                    "body": [
-                        {
-                            "body": [
-                                {
-                                    "args": {
-                                        "children": [
+        "RUBYAST": {
+            "module": {
+                "body": [
+                    {
+                        "body": [
+                            {
+                                "body": [
+                                    {
+                                        "args": {
+                                            "children": [
+                                                {
+                                                    "end_col": 13,
+                                                    "end_line": 2,
+                                                    "start_col": 12,
+                                                    "start_line": 2,
+                                                    "token": "a",
+                                                    "type": "arg"
+                                                }
+                                            ],
+                                            "end_col": 14,
+                                            "end_line": 2,
+                                            "start_col": 11,
+                                            "start_line": 2,
+                                            "type": "args"
+                                        },
+                                        "body": [
                                             {
-                                                "end_col": 13,
-                                                "end_line": 2,
-                                                "start_col": 12,
-                                                "start_line": 2,
-                                                "token": "a",
-                                                "type": "arg"
+                                                "type": "NilClass"
                                             }
                                         ],
-                                        "end_col": 14,
+                                        "end_col": 7,
                                         "end_line": 2,
-                                        "start_col": 11,
+                                        "name": "foo",
+                                        "start_col": 4,
                                         "start_line": 2,
-                                        "type": "args"
+                                        "type": "def"
                                     },
-                                    "body": [
-                                        {
-                                            "type": "NilClass"
-                                        }
-                                    ],
-                                    "end_col": 7,
-                                    "end_line": 2,
-                                    "name": "foo",
-                                    "start_col": 4,
-                                    "start_line": 2,
-                                    "type": "def"
-                                },
-                                {
-                                    "args": {
-                                        "end_col": 13,
+                                    {
+                                        "args": {
+                                            "end_col": 13,
+                                            "end_line": 5,
+                                            "start_col": 11,
+                                            "start_line": 5,
+                                            "type": "args"
+                                        },
+                                        "body": [
+                                            {
+                                                "type": "NilClass"
+                                            }
+                                        ],
+                                        "end_col": 7,
                                         "end_line": 5,
-                                        "start_col": 11,
+                                        "name": "bar",
+                                        "start_col": 4,
                                         "start_line": 5,
-                                        "type": "args"
-                                    },
-                                    "body": [
-                                        {
-                                            "type": "NilClass"
-                                        }
-                                    ],
-                                    "end_col": 7,
-                                    "end_line": 5,
-                                    "name": "bar",
-                                    "start_col": 4,
-                                    "start_line": 5,
-                                    "type": "def"
-                                }
-                            ],
-                            "end_col": 7,
-                            "end_line": 6,
-                            "start_col": 4,
-                            "start_line": 2,
-                            "type": "begin"
-                        }
-                    ],
-                    "end_col": 5,
-                    "end_line": 1,
-                    "name": "Foo",
-                    "parent": null,
-                    "start_col": 0,
-                    "start_line": 1,
-                    "type": "class"
-                },
-                {
-                    "end_col": 13,
-                    "end_line": 9,
-                    "start_col": 0,
-                    "start_line": 9,
-                    "target": "a",
-                    "type": "lvasgn",
-                    "value": {
-                        "base": {
-                            "base": null,
-                            "end_col": 7,
-                            "end_line": 9,
-                            "start_col": 4,
-                            "start_line": 9,
-                            "token": "Foo",
-                            "type": "const"
-                        },
+                                        "type": "def"
+                                    }
+                                ],
+                                "end_col": 7,
+                                "end_line": 6,
+                                "start_col": 4,
+                                "start_line": 2,
+                                "type": "begin"
+                            }
+                        ],
+                        "end_col": 5,
+                        "end_line": 1,
+                        "name": "Foo",
+                        "parent": null,
+                        "start_col": 0,
+                        "start_line": 1,
+                        "type": "class"
+                    },
+                    {
                         "end_col": 13,
                         "end_line": 9,
-                        "selector": "new",
-                        "start_col": 4,
-                        "start_line": 9,
-                        "type": "send"
-                    }
-                },
-                {
-                    "base": {
-                        "end_col": 1,
-                        "end_line": 10,
                         "start_col": 0,
-                        "start_line": 10,
-                        "token": "a",
-                        "type": "lvar"
-                    },
-                    "end_col": 8,
-                    "end_line": 10,
-                    "selector": "foo",
-                    "start_col": 0,
-                    "start_line": 10,
-                    "type": "send",
-                    "values": [
-                        {
-                            "end_col": 7,
-                            "end_line": 10,
-                            "start_col": 6,
-                            "start_line": 10,
-                            "token": 1,
-                            "type": "int"
+                        "start_line": 9,
+                        "target": "a",
+                        "type": "lvasgn",
+                        "value": {
+                            "base": {
+                                "base": null,
+                                "end_col": 7,
+                                "end_line": 9,
+                                "start_col": 4,
+                                "start_line": 9,
+                                "token": "Foo",
+                                "type": "const"
+                            },
+                            "end_col": 13,
+                            "end_line": 9,
+                            "selector": "new",
+                            "start_col": 4,
+                            "start_line": 9,
+                            "type": "send"
                         }
-                    ]
-                },
-                {
-                    "base": {
+                    },
+                    {
                         "base": {
                             "end_col": 1,
-                            "end_line": 11,
+                            "end_line": 10,
                             "start_col": 0,
-                            "start_line": 11,
+                            "start_line": 10,
                             "token": "a",
                             "type": "lvar"
                         },
-                        "end_col": 5,
+                        "end_col": 8,
+                        "end_line": 10,
+                        "selector": "foo",
+                        "start_col": 0,
+                        "start_line": 10,
+                        "type": "send",
+                        "values": [
+                            {
+                                "end_col": 7,
+                                "end_line": 10,
+                                "start_col": 6,
+                                "start_line": 10,
+                                "token": 1,
+                                "type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "base": {
+                            "base": {
+                                "end_col": 1,
+                                "end_line": 11,
+                                "start_col": 0,
+                                "start_line": 11,
+                                "token": "a",
+                                "type": "lvar"
+                            },
+                            "end_col": 5,
+                            "end_line": 11,
+                            "selector": "bar",
+                            "start_col": 0,
+                            "start_line": 11,
+                            "type": "send"
+                        },
+                        "end_col": 9,
                         "end_line": 11,
-                        "selector": "bar",
+                        "selector": "+",
                         "start_col": 0,
                         "start_line": 11,
-                        "type": "send"
+                        "type": "send",
+                        "values": [
+                            {
+                                "end_col": 9,
+                                "end_line": 11,
+                                "start_col": 8,
+                                "start_line": 11,
+                                "token": 1,
+                                "type": "int"
+                            }
+                        ]
                     },
-                    "end_col": 9,
-                    "end_line": 11,
-                    "selector": "+",
-                    "start_col": 0,
-                    "start_line": 11,
-                    "type": "send",
-                    "values": [
-                        {
-                            "end_col": 9,
-                            "end_line": 11,
-                            "start_col": 8,
-                            "start_line": 11,
-                            "token": 1,
-                            "type": "int"
-                        }
-                    ]
-                },
-                {
-                    "base": {
-                        "end_col": 1,
+                    {
+                        "base": {
+                            "end_col": 1,
+                            "end_line": 12,
+                            "start_col": 0,
+                            "start_line": 12,
+                            "token": "a",
+                            "type": "lvar"
+                        },
+                        "end_col": 9,
                         "end_line": 12,
+                        "selector": "foo=",
                         "start_col": 0,
                         "start_line": 12,
-                        "token": "a",
-                        "type": "lvar"
-                    },
-                    "end_col": 9,
-                    "end_line": 12,
-                    "selector": "foo=",
-                    "start_col": 0,
-                    "start_line": 12,
-                    "type": "send",
-                    "values": [
-                        {
-                            "end_col": 9,
-                            "end_line": 12,
-                            "start_col": 8,
-                            "start_line": 12,
-                            "token": 3,
-                            "type": "int"
-                        }
-                    ]
-                }
-            ],
-            "end_col": 9,
-            "end_line": 12,
-            "start_col": 0,
-            "start_line": 1,
-            "type": "begin"
+                        "type": "send",
+                        "values": [
+                            {
+                                "end_col": 9,
+                                "end_line": 12,
+                                "start_col": 8,
+                                "start_line": 12,
+                                "token": 3,
+                                "type": "int"
+                            }
+                        ]
+                    }
+                ],
+                "end_col": 9,
+                "end_line": 12,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "begin"
+            }
         }
     }
 }
