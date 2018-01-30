@@ -272,7 +272,7 @@ module NodeConverter
       end
 
       if comments.length > 0
-        @dict["ast"]["RUBYAST"]["module"]["comments"] = comments
+        @dict["ast"][:RUBYAST][:module][:comments] = comments
       end
     end
 
