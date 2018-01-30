@@ -6,7 +6,7 @@ UAST:
 .  Roles: Module,File
 .  Children: {
 .  .  0: def {
-.  .  .  Roles: Function,Declaration,Identifier
+.  .  .  Roles: Statement,Function,Declaration,Identifier
 .  .  .  TOKEN "foo"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -23,7 +23,7 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: args {
-.  .  .  .  .  Roles: Argument,Incomplete
+.  .  .  .  .  Roles: Expression,Argument,Incomplete
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 7
 .  .  .  .  .  .  Line: 1
@@ -39,7 +39,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: kwoptarg {
-.  .  .  .  .  .  .  Roles: Argument,Name,Incomplete
+.  .  .  .  .  .  .  Roles: Expression,Argument,Name,Incomplete
 .  .  .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 8
@@ -56,7 +56,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  .  .  Roles: Literal,Number,Primitive
+.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 11
@@ -77,7 +77,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: NilClass {
-.  .  .  .  .  Roles: Type,Null
+.  .  .  .  .  Roles: Statement,Type,Null
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }

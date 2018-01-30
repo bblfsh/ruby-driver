@@ -22,7 +22,7 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: lvasgn {
-.  .  .  .  .  Roles: Assignment,Binary,Identifier,Left
+.  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
 .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 0
@@ -39,7 +39,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  Roles: Right,Literal,Number,Primitive
+.  .  .  .  .  .  .  Roles: Right,Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 4
@@ -58,7 +58,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: op_asgn {
-.  .  .  .  .  Roles: Operator,Binary,Assignment,Arithmetic,Add
+.  .  .  .  .  Roles: Expression,Operator,Binary,Assignment,Arithmetic,Add
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 6
 .  .  .  .  .  .  Line: 2
@@ -75,7 +75,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: lvasgn {
-.  .  .  .  .  .  .  Roles: Assignment,Binary,Identifier,Left
+.  .  .  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
 .  .  .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 6
@@ -92,7 +92,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive,Binary,Right
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Binary,Right
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 11
@@ -111,7 +111,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  2: op_asgn {
-.  .  .  .  .  Roles: Operator,Binary,Assignment,Arithmetic,Substract
+.  .  .  .  .  Roles: Expression,Operator,Binary,Assignment,Arithmetic,Substract
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 13
 .  .  .  .  .  .  Line: 3
@@ -128,7 +128,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: lvasgn {
-.  .  .  .  .  .  .  Roles: Assignment,Binary,Identifier,Left
+.  .  .  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
 .  .  .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 13
@@ -145,7 +145,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive,Binary,Right
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Binary,Right
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 18
@@ -164,7 +164,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  3: op_asgn {
-.  .  .  .  .  Roles: Operator,Binary,Assignment,Arithmetic,Add
+.  .  .  .  .  Roles: Expression,Operator,Binary,Assignment,Arithmetic,Add
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 21
 .  .  .  .  .  .  Line: 5
@@ -181,7 +181,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: ivasgn {
-.  .  .  .  .  .  .  Roles: Assignment,Binary,Identifier,Left,Incomplete
+.  .  .  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left,Incomplete
 .  .  .  .  .  .  .  TOKEN "@b"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 21
@@ -198,7 +198,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive,Binary,Right
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Binary,Right
 .  .  .  .  .  .  .  TOKEN "2"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 27
@@ -217,7 +217,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  4: op_asgn {
-.  .  .  .  .  Roles: Operator,Binary,Assignment,Arithmetic,Add
+.  .  .  .  .  Roles: Expression,Operator,Binary,Assignment,Arithmetic,Add
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 29
 .  .  .  .  .  .  Line: 6
@@ -234,7 +234,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Binary,Left,Identifier
+.  .  .  .  .  .  .  Roles: Binary,Left,Expression,Identifier
 .  .  .  .  .  .  .  TOKEN "x"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 29
@@ -251,7 +251,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: ivar {
-.  .  .  .  .  .  .  .  .  Roles: Identifier,Visibility,Instance
+.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Visibility,Instance
 .  .  .  .  .  .  .  .  .  TOKEN "@c"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 29
@@ -270,7 +270,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive,Binary,Right
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Binary,Right
 .  .  .  .  .  .  .  TOKEN "3"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 37
@@ -289,7 +289,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  5: op_asgn {
-.  .  .  .  .  Roles: Operator,Binary,Assignment,Arithmetic,Add
+.  .  .  .  .  Roles: Expression,Operator,Binary,Assignment,Arithmetic,Add
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 40
 .  .  .  .  .  .  Line: 8
@@ -306,7 +306,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Binary,Left,Identifier
+.  .  .  .  .  .  .  Roles: Binary,Left,Expression,Identifier
 .  .  .  .  .  .  .  TOKEN "[]"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 40
@@ -323,7 +323,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: ivar {
-.  .  .  .  .  .  .  .  .  Roles: Identifier,Visibility,Instance
+.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Visibility,Instance
 .  .  .  .  .  .  .  .  .  TOKEN "@j"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 40
@@ -340,7 +340,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  .  .  Roles: Literal,Number,Primitive
+.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  .  .  TOKEN "0"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 43
@@ -357,7 +357,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  2: int {
-.  .  .  .  .  .  .  .  .  Roles: Literal,Number,Primitive
+.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 46
@@ -376,7 +376,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive,Binary,Right
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Binary,Right
 .  .  .  .  .  .  .  TOKEN "4"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 52

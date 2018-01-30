@@ -6,7 +6,7 @@ UAST:
 .  Roles: Module,File
 .  Children: {
 .  .  0: module {
-.  .  .  Roles: Module,Identifier
+.  .  .  Roles: Statement,Module,Identifier
 .  .  .  TOKEN "FooMod"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -39,7 +39,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: class {
-.  .  .  .  .  .  .  Roles: Type,Declaration,Identifier
+.  .  .  .  .  .  .  Roles: Statement,Type,Declaration,Identifier
 .  .  .  .  .  .  .  TOKEN "Foo"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 15
@@ -56,7 +56,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: NilClass {
-.  .  .  .  .  .  .  .  .  Roles: Type,Null
+.  .  .  .  .  .  .  .  .  Roles: Statement,Type,Null
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  .  .  }
@@ -64,7 +64,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: class {
-.  .  .  .  .  .  .  Roles: Type,Declaration,Identifier
+.  .  .  .  .  .  .  Roles: Statement,Type,Declaration,Identifier
 .  .  .  .  .  .  .  TOKEN "Bar"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 30
@@ -97,7 +97,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: cvasgn {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Binary,Identifier,Left
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "@@classvar"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 50
@@ -114,7 +114,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Binary,Right,Literal,Number,Primitive
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Binary,Right,Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "10"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 63
@@ -133,7 +133,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  1: def {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Function,Declaration,Identifier
+.  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Function,Declaration,Identifier
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "initialize"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 70
@@ -150,7 +150,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: args {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Argument,Incomplete
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 84
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 8
@@ -166,7 +166,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: arg {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Name
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Argument,Name
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 85
@@ -185,7 +185,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: ivasgn {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Binary,Identifier,Left,Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left,Incomplete
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "@instance_var"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 96
@@ -202,7 +202,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: lvar {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Right,Binary,Identifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Right,Binary,Expression,Identifier
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 112
@@ -223,7 +223,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  2: def {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Function,Declaration,Identifier
+.  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Function,Declaration,Identifier
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "foo"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 127
@@ -240,7 +240,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: args {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Argument,Incomplete
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 134
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 12
@@ -256,7 +256,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: NilClass {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Type,Null
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Type,Null
 .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
@@ -264,7 +264,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  3: def {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Function,Declaration,Identifier
+.  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Function,Declaration,Identifier
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "use"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 150
@@ -281,7 +281,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: args {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Argument,Incomplete
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 157
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 15
@@ -313,7 +313,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call,Identifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Call,Identifier
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "puts"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 168
@@ -330,7 +330,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: cvar {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Identifier,Visibility,Type,Argument
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Visibility,Type,Argument
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "@@classvar"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 173
@@ -349,7 +349,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call,Identifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Call,Identifier
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "puts"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 192
@@ -366,7 +366,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: ivar {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Identifier,Visibility,Instance,Argument
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Visibility,Instance,Argument
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "@instance_var"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 197
@@ -385,7 +385,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  2: send {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call,Identifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Call,Identifier
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "foo"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 219
@@ -402,7 +402,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  3: send {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Identifier,Call
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Call
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "foo"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 233
@@ -419,7 +419,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: self {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: This,Left
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,This,Left
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 233
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 19
@@ -441,7 +441,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  4: def {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Function,Declaration,Identifier
+.  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Function,Declaration,Identifier
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "selfinstance"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 257
@@ -458,7 +458,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: args {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Argument,Incomplete
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 273
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 22
@@ -474,7 +474,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: lvasgn {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Binary,Identifier,Left
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 284
@@ -491,7 +491,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Right,Identifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Right,Expression,Identifier
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "new"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 288
@@ -508,7 +508,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: const {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Identifier,Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Incomplete
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "Bar"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 288
@@ -525,7 +525,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Literal,Number,Primitive
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 296
@@ -550,7 +550,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: const {
-.  .  .  .  .  .  .  .  .  Roles: Identifier,Incomplete
+.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Incomplete
 .  .  .  .  .  .  .  .  .  TOKEN "Foo"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 42

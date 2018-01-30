@@ -6,7 +6,7 @@ UAST:
 .  Roles: Module,File
 .  Children: {
 .  .  0: send {
-.  .  .  Roles: Call,Identifier
+.  .  .  Roles: Expression,Call,Identifier
 .  .  .  TOKEN "puts"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -23,7 +23,7 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: str {
-.  .  .  .  .  Roles: Literal,String,Primitive,Argument,Identifier
+.  .  .  .  .  Roles: Expression,Literal,String,Primitive,Argument,Identifier
 .  .  .  .  .  TOKEN "hello world"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 5

@@ -6,7 +6,7 @@ UAST:
 .  Roles: Module,File
 .  Children: {
 .  .  0: lvasgn {
-.  .  .  Roles: Assignment,Binary,Identifier,Left
+.  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
 .  .  .  TOKEN "a"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -23,7 +23,7 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: send {
-.  .  .  .  .  Roles: Right,Identifier
+.  .  .  .  .  Roles: Right,Expression,Identifier
 .  .  .  .  .  TOKEN "try"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 4
@@ -40,7 +40,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: self {
-.  .  .  .  .  .  .  Roles: This,Left
+.  .  .  .  .  .  .  Roles: Expression,This,Left
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 4
 .  .  .  .  .  .  .  .  Line: 1
@@ -56,7 +56,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: sym {
-.  .  .  .  .  .  .  Roles: Identifier
+.  .  .  .  .  .  .  Roles: Expression,Identifier
 .  .  .  .  .  .  .  TOKEN "foo"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 13

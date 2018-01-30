@@ -22,7 +22,7 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: send {
-.  .  .  .  .  Roles: Identifier,Call
+.  .  .  .  .  Roles: Expression,Identifier,Call
 .  .  .  .  .  TOKEN "&"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 0
@@ -39,7 +39,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 0
@@ -56,7 +56,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive,Argument,Identifier
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Argument,Identifier
 .  .  .  .  .  .  .  TOKEN "2"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 4
@@ -75,7 +75,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: send {
-.  .  .  .  .  Roles: Identifier,Call
+.  .  .  .  .  Roles: Expression,Identifier,Call
 .  .  .  .  .  TOKEN "|"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 6
@@ -92,7 +92,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 6
@@ -109,7 +109,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive,Argument,Identifier
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Argument,Identifier
 .  .  .  .  .  .  .  TOKEN "2"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 10
@@ -128,7 +128,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  2: send {
-.  .  .  .  .  Roles: Identifier,Call
+.  .  .  .  .  Roles: Expression,Identifier,Call
 .  .  .  .  .  TOKEN "^"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 12
@@ -145,7 +145,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 12
@@ -162,7 +162,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive,Argument,Identifier
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Argument,Identifier
 .  .  .  .  .  .  .  TOKEN "2"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 16
@@ -181,7 +181,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  3: send {
-.  .  .  .  .  Roles: Identifier,Call
+.  .  .  .  .  Roles: Expression,Identifier,Call
 .  .  .  .  .  TOKEN "~"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 18
@@ -198,7 +198,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  TOKEN "2"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 19
@@ -217,7 +217,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  4: send {
-.  .  .  .  .  Roles: Identifier,Call
+.  .  .  .  .  Roles: Expression,Identifier,Call
 .  .  .  .  .  TOKEN "<<"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 21
@@ -234,7 +234,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 21
@@ -251,7 +251,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive,Argument,Identifier
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Argument,Identifier
 .  .  .  .  .  .  .  TOKEN "2"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 26
@@ -270,7 +270,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  5: send {
-.  .  .  .  .  Roles: Identifier,Call
+.  .  .  .  .  Roles: Expression,Identifier,Call
 .  .  .  .  .  TOKEN ">>"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 28
@@ -287,7 +287,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 28
@@ -304,7 +304,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive,Argument,Identifier
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Argument,Identifier
 .  .  .  .  .  .  .  TOKEN "2"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 33

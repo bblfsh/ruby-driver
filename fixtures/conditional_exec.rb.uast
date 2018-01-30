@@ -22,7 +22,7 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: if {
-.  .  .  .  .  Roles: If,Statement
+.  .  .  .  .  Roles: Statement,If
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 11
 .  .  .  .  .  .  Line: 1
@@ -38,7 +38,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Call,Identifier,If,Then
+.  .  .  .  .  .  .  Roles: Expression,Call,Identifier,If,Then
 .  .  .  .  .  .  .  TOKEN "puts"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 0
@@ -55,7 +55,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: str {
-.  .  .  .  .  .  .  .  .  Roles: Literal,String,Primitive,Argument,Identifier
+.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,String,Primitive,Argument,Identifier
 .  .  .  .  .  .  .  .  .  TOKEN "foo"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 5
@@ -74,7 +74,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Condition,If
+.  .  .  .  .  .  .  Roles: Expression,Condition,If
 .  .  .  .  .  .  .  TOKEN "foo"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 14
@@ -93,7 +93,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: if {
-.  .  .  .  .  Roles: If,Statement
+.  .  .  .  .  Roles: Statement,If
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 29
 .  .  .  .  .  .  Line: 2
@@ -109,7 +109,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Condition,If
+.  .  .  .  .  .  .  Roles: Expression,Condition,If
 .  .  .  .  .  .  .  TOKEN "foo"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 36
@@ -126,7 +126,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: If,Else
+.  .  .  .  .  .  .  Roles: Expression,If,Else
 .  .  .  .  .  .  .  TOKEN "puts"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 18
@@ -143,7 +143,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: str {
-.  .  .  .  .  .  .  .  .  Roles: Literal,String,Primitive
+.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,String,Primitive
 .  .  .  .  .  .  .  .  .  TOKEN "bar"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 23

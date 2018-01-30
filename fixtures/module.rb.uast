@@ -6,7 +6,7 @@ UAST:
 .  Roles: Module,File
 .  Children: {
 .  .  0: module {
-.  .  .  Roles: Module,Identifier
+.  .  .  Roles: Statement,Module,Identifier
 .  .  .  TOKEN "Foo"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -23,7 +23,7 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: NilClass {
-.  .  .  .  .  Roles: Type,Null
+.  .  .  .  .  Roles: Statement,Type,Null
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: begin
 .  .  .  .  .  }

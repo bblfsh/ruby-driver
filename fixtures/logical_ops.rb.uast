@@ -22,7 +22,7 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: and {
-.  .  .  .  .  Roles: Binary,Expression,Operator,Boolean,And
+.  .  .  .  .  Roles: Expression,Binary,Operator,Boolean,And
 .  .  .  .  .  TOKEN "and"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 0
@@ -75,7 +75,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: or {
-.  .  .  .  .  Roles: Binary,Expression,Operator,Boolean,Or
+.  .  .  .  .  Roles: Expression,Binary,Operator,Boolean,Or
 .  .  .  .  .  TOKEN "or"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 8
@@ -128,7 +128,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  2: and {
-.  .  .  .  .  Roles: Binary,Expression,Operator,Boolean,And
+.  .  .  .  .  Roles: Expression,Binary,Operator,Boolean,And
 .  .  .  .  .  TOKEN "and"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 15
@@ -181,7 +181,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  3: or {
-.  .  .  .  .  Roles: Binary,Expression,Operator,Boolean,Or
+.  .  .  .  .  Roles: Expression,Binary,Operator,Boolean,Or
 .  .  .  .  .  TOKEN "or"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 22
@@ -234,7 +234,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  4: send {
-.  .  .  .  .  Roles: Identifier,Operator,Relational,Not
+.  .  .  .  .  Roles: Expression,Identifier,Operator,Relational,Not
 .  .  .  .  .  TOKEN "!"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 29
@@ -251,7 +251,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Qualified,Identifier
+.  .  .  .  .  .  .  Roles: Expression,Qualified,Identifier
 .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 30
@@ -270,7 +270,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  5: send {
-.  .  .  .  .  Roles: Identifier,Operator,Relational,Not
+.  .  .  .  .  Roles: Expression,Identifier,Operator,Relational,Not
 .  .  .  .  .  TOKEN "!"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 32
@@ -303,7 +303,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: and {
-.  .  .  .  .  .  .  .  .  Roles: Binary,Expression,Operator,Boolean,And
+.  .  .  .  .  .  .  .  .  Roles: Expression,Binary,Operator,Boolean,And
 .  .  .  .  .  .  .  .  .  TOKEN "and"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 37

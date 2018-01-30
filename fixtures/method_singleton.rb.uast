@@ -22,7 +22,7 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: defs {
-.  .  .  .  .  Roles: Function,Declaration,Identifier,Incomplete
+.  .  .  .  .  Roles: Statement,Function,Declaration,Identifier,Incomplete
 .  .  .  .  .  TOKEN "foo"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 0
@@ -39,7 +39,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: arg {
-.  .  .  .  .  .  .  Roles: Argument,Incomplete
+.  .  .  .  .  .  .  Roles: Expression,Argument,Incomplete
 .  .  .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 13
@@ -56,7 +56,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: arg {
-.  .  .  .  .  .  .  Roles: Argument,Incomplete
+.  .  .  .  .  .  .  Roles: Expression,Argument,Incomplete
 .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 16
@@ -73,7 +73,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  2: arg {
-.  .  .  .  .  .  .  Roles: Argument,Incomplete
+.  .  .  .  .  .  .  Roles: Expression,Argument,Incomplete
 .  .  .  .  .  .  .  TOKEN "c"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 19
@@ -90,7 +90,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  3: self {
-.  .  .  .  .  .  .  Roles: This,Left
+.  .  .  .  .  .  .  Roles: Expression,This,Left
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 4
 .  .  .  .  .  .  .  .  Line: 1
@@ -108,7 +108,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: defs {
-.  .  .  .  .  Roles: Function,Declaration,Identifier,Incomplete
+.  .  .  .  .  Roles: Statement,Function,Declaration,Identifier,Incomplete
 .  .  .  .  .  TOKEN "bar"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 27
@@ -125,7 +125,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: self {
-.  .  .  .  .  .  .  Roles: This,Left
+.  .  .  .  .  .  .  Roles: Expression,This,Left
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 31
 .  .  .  .  .  .  .  .  Line: 4

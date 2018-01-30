@@ -6,7 +6,7 @@ UAST:
 .  Roles: Module,File
 .  Children: {
 .  .  0: until {
-.  .  .  Roles: Incomplete,While
+.  .  .  Roles: Statement,Incomplete,While
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
@@ -22,7 +22,7 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: lvasgn {
-.  .  .  .  .  Roles: Assignment,Binary,Identifier,Left,While,Body
+.  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left,While,Body
 .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 15
@@ -39,7 +39,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  Roles: Right,Literal,Number,Primitive
+.  .  .  .  .  .  .  Roles: Right,Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 19
@@ -58,7 +58,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: true {
-.  .  .  .  .  Roles: Condition,While,Boolean,Literal
+.  .  .  .  .  Roles: Expression,Condition,While,Boolean,Literal
 .  .  .  .  .  TOKEN "true"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 6

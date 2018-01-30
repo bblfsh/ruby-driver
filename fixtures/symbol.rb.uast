@@ -6,7 +6,7 @@ UAST:
 .  Roles: Module,File
 .  Children: {
 .  .  0: sym {
-.  .  .  Roles: Identifier
+.  .  .  Roles: Expression,Identifier
 .  .  .  TOKEN "foo"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0

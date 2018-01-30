@@ -6,7 +6,7 @@ UAST:
 .  Roles: Module,File
 .  Children: {
 .  .  0: lvasgn {
-.  .  .  Roles: Assignment,Binary,Identifier,Left
+.  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
 .  .  .  TOKEN "a"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -23,7 +23,7 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: if {
-.  .  .  .  .  Roles: Right,If,Statement
+.  .  .  .  .  Roles: Right,Statement,If
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 8
 .  .  .  .  .  .  Line: 1
@@ -39,7 +39,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive,If,Then
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,If,Then
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 10
@@ -56,7 +56,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Condition,If
+.  .  .  .  .  .  .  Roles: Expression,Condition,If
 .  .  .  .  .  .  .  TOKEN "foo"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 4
@@ -73,7 +73,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  2: int {
-.  .  .  .  .  .  .  Roles: Literal,Number,Primitive,If,Else
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,If,Else
 .  .  .  .  .  .  .  TOKEN "2"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 14

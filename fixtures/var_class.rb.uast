@@ -6,7 +6,7 @@ UAST:
 .  Roles: Module,File
 .  Children: {
 .  .  0: cvar {
-.  .  .  Roles: Identifier,Visibility,Type
+.  .  .  Roles: Expression,Identifier,Visibility,Type
 .  .  .  TOKEN "@@foo"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0

@@ -6,7 +6,7 @@ UAST:
 .  Roles: Module,File
 .  Children: {
 .  .  0: def {
-.  .  .  Roles: Function,Declaration,Identifier
+.  .  .  Roles: Statement,Function,Declaration,Identifier
 .  .  .  TOKEN "foo"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -23,7 +23,7 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: args {
-.  .  .  .  .  Roles: Argument,Incomplete
+.  .  .  .  .  Roles: Expression,Argument,Incomplete
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 7
 .  .  .  .  .  .  Line: 1
@@ -39,7 +39,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: kwarg {
-.  .  .  .  .  .  .  Roles: Argument,Name,Map
+.  .  .  .  .  .  .  Roles: Expression,Argument,Name,Map
 .  .  .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 8
@@ -56,7 +56,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: kwarg {
-.  .  .  .  .  .  .  Roles: Argument,Name,Map
+.  .  .  .  .  .  .  Roles: Expression,Argument,Name,Map
 .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 12
@@ -75,7 +75,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: NilClass {
-.  .  .  .  .  Roles: Type,Null
+.  .  .  .  .  Roles: Statement,Type,Null
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }

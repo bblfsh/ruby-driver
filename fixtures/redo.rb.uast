@@ -6,7 +6,7 @@ UAST:
 .  Roles: Module,File
 .  Children: {
 .  .  0: while {
-.  .  .  Roles: While
+.  .  .  Roles: Statement,While
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
@@ -22,7 +22,7 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: redo {
-.  .  .  .  .  Roles: While,Body
+.  .  .  .  .  Roles: Expression,While,Body
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 15
 .  .  .  .  .  .  Line: 2
@@ -38,7 +38,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: true {
-.  .  .  .  .  Roles: Condition,While,Boolean,Literal
+.  .  .  .  .  Roles: Expression,Condition,While,Boolean,Literal
 .  .  .  .  .  TOKEN "true"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 6

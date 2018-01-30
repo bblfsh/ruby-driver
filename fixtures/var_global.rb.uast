@@ -6,7 +6,7 @@ UAST:
 .  Roles: Module,File
 .  Children: {
 .  .  0: gvar {
-.  .  .  Roles: Identifier,Visibility,World
+.  .  .  Roles: Expression,Identifier,Visibility,World
 .  .  .  TOKEN "$foo"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0

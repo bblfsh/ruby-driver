@@ -6,7 +6,7 @@ UAST:
 .  Roles: Module,File
 .  Children: {
 .  .  0: while {
-.  .  .  Roles: While
+.  .  .  Roles: Statement,While
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
@@ -22,7 +22,7 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: if {
-.  .  .  .  .  Roles: If,Statement,While,Body
+.  .  .  .  .  Roles: Statement,If,Expression,While,Body
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 15
 .  .  .  .  .  .  Line: 2
@@ -38,7 +38,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: next {
-.  .  .  .  .  .  .  Roles: If,Then
+.  .  .  .  .  .  .  Roles: Expression,If,Then
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 32
 .  .  .  .  .  .  .  .  Line: 3
@@ -54,7 +54,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: false {
-.  .  .  .  .  .  .  Roles: Condition,If,Boolean,Literal
+.  .  .  .  .  .  .  Roles: Expression,Condition,If,Boolean,Literal
 .  .  .  .  .  .  .  TOKEN "false"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 18
@@ -73,7 +73,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: true {
-.  .  .  .  .  Roles: Condition,While,Boolean,Literal
+.  .  .  .  .  Roles: Expression,Condition,While,Boolean,Literal
 .  .  .  .  .  TOKEN "true"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 6

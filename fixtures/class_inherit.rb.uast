@@ -22,7 +22,7 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: class {
-.  .  .  .  .  Roles: Type,Declaration,Identifier
+.  .  .  .  .  Roles: Statement,Type,Declaration,Identifier
 .  .  .  .  .  TOKEN "Foo"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 0
@@ -39,7 +39,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: NilClass {
-.  .  .  .  .  .  .  Roles: Type,Null
+.  .  .  .  .  .  .  Roles: Statement,Type,Null
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  }
@@ -47,7 +47,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: class {
-.  .  .  .  .  Roles: Type,Declaration,Identifier
+.  .  .  .  .  Roles: Statement,Type,Declaration,Identifier
 .  .  .  .  .  TOKEN "Bar"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 15
@@ -64,13 +64,13 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: NilClass {
-.  .  .  .  .  .  .  Roles: Type,Null
+.  .  .  .  .  .  .  Roles: Statement,Type,Null
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: const {
-.  .  .  .  .  .  .  Roles: Identifier,Incomplete
+.  .  .  .  .  .  .  Roles: Expression,Identifier,Incomplete
 .  .  .  .  .  .  .  TOKEN "Foo"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 27

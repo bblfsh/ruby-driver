@@ -6,7 +6,7 @@ UAST:
 .  Roles: Module,File
 .  Children: {
 .  .  0: ivar {
-.  .  .  Roles: Identifier,Visibility,Instance
+.  .  .  Roles: Expression,Identifier,Visibility,Instance
 .  .  .  TOKEN "@foo"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0

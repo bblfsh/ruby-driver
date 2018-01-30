@@ -6,7 +6,7 @@ UAST:
 .  Roles: Module,File
 .  Children: {
 .  .  0: lvasgn {
-.  .  .  Roles: Assignment,Binary,Identifier,Left
+.  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
 .  .  .  TOKEN "a"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -39,7 +39,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: str {
-.  .  .  .  .  .  .  Roles: Literal,String,Primitive
+.  .  .  .  .  .  .  Roles: Expression,Literal,String,Primitive
 .  .  .  .  .  .  .  TOKEN "    Some text
 "
 .  .  .  .  .  .  .  Properties: {
@@ -47,7 +47,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: str {
-.  .  .  .  .  .  .  Roles: Literal,String,Primitive
+.  .  .  .  .  .  .  Roles: Expression,Literal,String,Primitive
 .  .  .  .  .  .  .  TOKEN "    multiline
 "
 .  .  .  .  .  .  .  Properties: {
