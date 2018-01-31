@@ -1,8 +1,6 @@
 package normalizer
 
 import (
-	//"errors"
-
 	"github.com/bblfsh/ruby-driver/driver/normalizer/rubyast"
 
 	"gopkg.in/bblfsh/sdk.v1/uast"
@@ -32,7 +30,6 @@ var isSomeOperator = Or(HasToken("+"), HasToken("-"), HasToken("*"), HasToken("/
 // AnnotationRules describes how a UAST should be annotated with `uast.Role`.
 //
 // https://godoc.org/gopkg.in/bblfsh/sdk.v1/uast/ann
-//var AnnotationRules = On(Any).Self(
 var AnnotationRules = On(Any).Roles(uast.Module, uast.File).Descendants(
 	On(Or(rubyast.Begin, rubyast.Block)).Roles(uast.Block).Children(
 		On(rubyast.Body).Roles(uast.Body),
