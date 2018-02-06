@@ -2,27 +2,16 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-lvasgn {
-.  Roles: File
-.  TOKEN "a"
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 7
-.  .  Line: 1
-.  .  Col: 8
-.  }
+ {
+.  Roles: Module,File
 .  Children: {
-.  .  0: float {
-.  .  .  Roles: Unannotated
-.  .  .  TOKEN "1.23"
+.  .  0: lvasgn {
+.  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
+.  .  .  TOKEN "a"
 .  .  .  StartPosition: {
-.  .  .  .  Offset: 4
+.  .  .  .  Offset: 0
 .  .  .  .  Line: 1
-.  .  .  .  Col: 5
+.  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
 .  .  .  .  Offset: 7
@@ -30,7 +19,26 @@ lvasgn {
 .  .  .  .  Col: 8
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: value
+.  .  .  .  internalRole: module
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: float {
+.  .  .  .  .  Roles: Right
+.  .  .  .  .  TOKEN "1.23"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 4
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 7
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 8
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  }
+.  .  .  .  }
 .  .  .  }
 .  .  }
 .  }

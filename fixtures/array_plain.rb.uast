@@ -2,26 +2,16 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-lvasgn {
-.  Roles: File
-.  TOKEN "a"
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 9
-.  .  Line: 1
-.  .  Col: 10
-.  }
+ {
+.  Roles: Module,File
 .  Children: {
-.  .  0: array {
-.  .  .  Roles: Unannotated
+.  .  0: lvasgn {
+.  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
+.  .  .  TOKEN "a"
 .  .  .  StartPosition: {
-.  .  .  .  Offset: 4
+.  .  .  .  Offset: 0
 .  .  .  .  Line: 1
-.  .  .  .  Col: 5
+.  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
 .  .  .  .  Offset: 9
@@ -29,41 +19,59 @@ lvasgn {
 .  .  .  .  Col: 10
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: value
+.  .  .  .  internalRole: module
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: int {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  TOKEN "1"
+.  .  .  .  0: array {
+.  .  .  .  .  Roles: Right,Expression,Literal,List,Primitive
 .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 5
+.  .  .  .  .  .  Offset: 4
 .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 6
+.  .  .  .  .  .  Col: 5
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 5
+.  .  .  .  .  .  Offset: 9
 .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 6
+.  .  .  .  .  .  Col: 10
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: contents
+.  .  .  .  .  .  internalRole: value
 .  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: int {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  TOKEN "2"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 8
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 9
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 8
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 9
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: contents
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: int {
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
+.  .  .  .  .  .  .  TOKEN "1"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 5
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 6
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 5
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 6
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: contents
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: int {
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
+.  .  .  .  .  .  .  TOKEN "2"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 8
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 8
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: contents
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

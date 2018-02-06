@@ -3,18 +3,20 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "module": {
-            "body": [
-                {
-                    "type": "NilClass"
-                }
-            ],
-            "end_col": 6,
-            "end_line": 1,
-            "name": "Foo",
-            "start_col": 0,
-            "start_line": 1,
-            "type": "module"
+        "RUBYAST": {
+            "module": {
+                "begin": [
+                    {
+                        "type": "NilClass"
+                    }
+                ],
+                "end_col": 6,
+                "end_line": 1,
+                "name": "Foo",
+                "start_col": 0,
+                "start_line": 1,
+                "type": "module"
+            }
         }
     }
 }

@@ -2,34 +2,42 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-const {
-.  Roles: File
-.  TOKEN "Foo"
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 4
-.  .  Line: 1
-.  .  Col: 5
-.  }
+ {
+.  Roles: Module,File
 .  Children: {
-.  .  0: cbase {
-.  .  .  Roles: Unannotated
+.  .  0: const {
+.  .  .  Roles: Expression,Identifier,Incomplete
+.  .  .  TOKEN "Foo"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 1
+.  .  .  .  Offset: 4
 .  .  .  .  Line: 1
-.  .  .  .  Col: 2
+.  .  .  .  Col: 5
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: base
+.  .  .  .  internalRole: module
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: cbase {
+.  .  .  .  .  Roles: Expression,Identifier,Qualified,Incomplete
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 0
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 1
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 2
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: base
+.  .  .  .  .  }
+.  .  .  .  }
 .  .  .  }
 .  .  }
 .  }

@@ -2,76 +2,84 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-def {
-.  Roles: File
-.  TOKEN "foo"
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 2
-.  .  Line: 1
-.  .  Col: 3
-.  }
+ {
+.  Roles: Module,File
 .  Children: {
-.  .  0: args {
-.  .  .  Roles: Unannotated
+.  .  0: def {
+.  .  .  Roles: Statement,Function,Declaration,Identifier
+.  .  .  TOKEN "foo"
 .  .  .  StartPosition: {
-.  .  .  .  Offset: 7
+.  .  .  .  Offset: 0
 .  .  .  .  Line: 1
-.  .  .  .  Col: 8
+.  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 14
+.  .  .  .  Offset: 2
 .  .  .  .  Line: 1
-.  .  .  .  Col: 15
+.  .  .  .  Col: 3
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: args
+.  .  .  .  internalRole: module
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: kwarg {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  TOKEN "a"
+.  .  .  .  0: args {
+.  .  .  .  .  Roles: Expression,Argument,Incomplete
 .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 8
+.  .  .  .  .  .  Offset: 7
 .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  Col: 8
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 8
+.  .  .  .  .  .  Offset: 14
 .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  Col: 15
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: children
+.  .  .  .  .  .  internalRole: args
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: kwarg {
+.  .  .  .  .  .  .  Roles: Expression,Argument,Name,Map
+.  .  .  .  .  .  .  TOKEN "a"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 8
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 8
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: children
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: kwarg {
+.  .  .  .  .  .  .  Roles: Expression,Argument,Name,Map
+.  .  .  .  .  .  .  TOKEN "b"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 12
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 12
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: children
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1: kwarg {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  TOKEN "b"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 12
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 13
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 12
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 13
-.  .  .  .  .  }
+.  .  .  .  1: NilClass {
+.  .  .  .  .  Roles: Statement,Type,Null
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: children
+.  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  }
-.  .  }
-.  .  1: NilClass {
-.  .  .  Roles: Unannotated
-.  .  .  Properties: {
-.  .  .  .  internalRole: body
 .  .  .  }
 .  .  }
 .  }

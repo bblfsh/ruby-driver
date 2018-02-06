@@ -3,21 +3,23 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "module": {
-            "base": null,
-            "end_col": 7,
-            "end_line": 1,
-            "selector": "Foo",
-            "start_col": 0,
-            "start_line": 1,
-            "type": "casgn",
-            "value": {
+        "RUBYAST": {
+            "module": {
+                "base": null,
                 "end_col": 7,
                 "end_line": 1,
-                "start_col": 6,
+                "selector": "Foo",
+                "start_col": 0,
                 "start_line": 1,
-                "token": 1,
-                "type": "int"
+                "type": "casgn",
+                "value": {
+                    "end_col": 7,
+                    "end_line": 1,
+                    "start_col": 6,
+                    "start_line": 1,
+                    "token": 1,
+                    "type": "int"
+                }
             }
         }
     }

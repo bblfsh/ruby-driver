@@ -3,59 +3,61 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "module": {
-            "args": {
-                "children": [
-                    {
-                        "default": {
-                            "end_col": 11,
+        "RUBYAST": {
+            "module": {
+                "args": {
+                    "children": [
+                        {
+                            "default": {
+                                "end_col": 11,
+                                "end_line": 1,
+                                "start_col": 10,
+                                "start_line": 1,
+                                "token": 1,
+                                "type": "int"
+                            },
+                            "end_col": 9,
                             "end_line": 1,
-                            "start_col": 10,
+                            "start_col": 8,
                             "start_line": 1,
-                            "token": 1,
-                            "type": "int"
+                            "token": "a",
+                            "type": "optarg"
                         },
-                        "end_col": 9,
-                        "end_line": 1,
-                        "start_col": 8,
-                        "start_line": 1,
-                        "token": "a",
-                        "type": "optarg"
-                    },
-                    {
-                        "default": {
-                            "end_col": 16,
+                        {
+                            "default": {
+                                "end_col": 16,
+                                "end_line": 1,
+                                "start_col": 15,
+                                "start_line": 1,
+                                "token": 2,
+                                "type": "int"
+                            },
+                            "end_col": 14,
                             "end_line": 1,
-                            "start_col": 15,
+                            "start_col": 13,
                             "start_line": 1,
-                            "token": 2,
-                            "type": "int"
-                        },
-                        "end_col": 14,
-                        "end_line": 1,
-                        "start_col": 13,
-                        "start_line": 1,
-                        "token": "b",
-                        "type": "optarg"
+                            "token": "b",
+                            "type": "optarg"
+                        }
+                    ],
+                    "end_col": 17,
+                    "end_line": 1,
+                    "start_col": 7,
+                    "start_line": 1,
+                    "type": "args"
+                },
+                "body": [
+                    {
+                        "type": "NilClass"
                     }
                 ],
-                "end_col": 17,
+                "end_col": 3,
                 "end_line": 1,
-                "start_col": 7,
+                "name": "foo",
+                "start_col": 0,
                 "start_line": 1,
-                "type": "args"
-            },
-            "body": [
-                {
-                    "type": "NilClass"
-                }
-            ],
-            "end_col": 3,
-            "end_line": 1,
-            "name": "foo",
-            "start_col": 0,
-            "start_line": 1,
-            "type": "def"
+                "type": "def"
+            }
         }
     }
 }

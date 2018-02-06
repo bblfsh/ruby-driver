@@ -3,50 +3,52 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "module": {
-            "body": [
-                {
-                    "body": [
-                        {
-                            "type": "NilClass"
-                        }
-                    ],
-                    "end_col": 5,
-                    "end_line": 1,
-                    "name": "Foo",
-                    "parent": null,
-                    "start_col": 0,
-                    "start_line": 1,
-                    "type": "class"
-                },
-                {
-                    "body": [
-                        {
-                            "type": "NilClass"
-                        }
-                    ],
-                    "end_col": 5,
-                    "end_line": 4,
-                    "name": "Bar",
-                    "parent": {
-                        "base": null,
-                        "end_col": 15,
-                        "end_line": 4,
-                        "start_col": 12,
-                        "start_line": 4,
-                        "token": "Foo",
-                        "type": "const"
+        "RUBYAST": {
+            "module": {
+                "body": [
+                    {
+                        "body": [
+                            {
+                                "type": "NilClass"
+                            }
+                        ],
+                        "end_col": 5,
+                        "end_line": 1,
+                        "name": "Foo",
+                        "parent": null,
+                        "start_col": 0,
+                        "start_line": 1,
+                        "type": "class"
                     },
-                    "start_col": 0,
-                    "start_line": 4,
-                    "type": "class"
-                }
-            ],
-            "end_col": 3,
-            "end_line": 5,
-            "start_col": 0,
-            "start_line": 1,
-            "type": "begin"
+                    {
+                        "body": [
+                            {
+                                "type": "NilClass"
+                            }
+                        ],
+                        "end_col": 5,
+                        "end_line": 4,
+                        "name": "Bar",
+                        "parent": {
+                            "base": null,
+                            "end_col": 15,
+                            "end_line": 4,
+                            "start_col": 12,
+                            "start_line": 4,
+                            "token": "Foo",
+                            "type": "const"
+                        },
+                        "start_col": 0,
+                        "start_line": 4,
+                        "type": "class"
+                    }
+                ],
+                "end_col": 3,
+                "end_line": 5,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "begin"
+            }
         }
     }
 }

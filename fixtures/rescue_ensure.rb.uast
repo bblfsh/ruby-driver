@@ -2,59 +2,48 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-kwbegin {
-.  Roles: File
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 40
-.  .  Line: 5
-.  .  Col: 3
-.  }
+ {
+.  Roles: Module,File
 .  Children: {
-.  .  0: ensure {
-.  .  .  Roles: Unannotated
+.  .  0: kwbegin {
+.  .  .  Roles: Expression,Block,Try
 .  .  .  StartPosition: {
-.  .  .  .  Offset: 16
-.  .  .  .  Line: 3
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 21
-.  .  .  .  Line: 3
-.  .  .  .  Col: 6
+.  .  .  .  Offset: 40
+.  .  .  .  Line: 5
+.  .  .  .  Col: 3
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: body
+.  .  .  .  internalRole: module
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: lvasgn {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  TOKEN "a"
+.  .  .  .  0: ensure {
+.  .  .  .  .  Roles: Expression,Finally,Body
 .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 10
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 5
+.  .  .  .  .  .  Offset: 16
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 1
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 14
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  Offset: 21
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 6
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  .  .  TOKEN "1"
+.  .  .  .  .  .  0: lvasgn {
+.  .  .  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
+.  .  .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 14
+.  .  .  .  .  .  .  .  Offset: 10
 .  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  .  Col: 5
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  EndPosition: {
 .  .  .  .  .  .  .  .  Offset: 14
@@ -62,35 +51,35 @@ kwbegin {
 .  .  .  .  .  .  .  .  Col: 9
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0: int {
+.  .  .  .  .  .  .  .  .  Roles: Right,Expression,Literal,Number,Primitive
+.  .  .  .  .  .  .  .  .  TOKEN "1"
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 14
+.  .  .  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 14
+.  .  .  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: lvasgn {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  TOKEN "always"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 27
-.  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 36
-.  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  Col: 14
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: ensure_body
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  .  .  TOKEN "0"
+.  .  .  .  .  .  1: lvasgn {
+.  .  .  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
+.  .  .  .  .  .  .  TOKEN "always"
 .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 36
+.  .  .  .  .  .  .  .  Offset: 27
 .  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  .  Col: 5
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  EndPosition: {
 .  .  .  .  .  .  .  .  Offset: 36
@@ -98,7 +87,26 @@ kwbegin {
 .  .  .  .  .  .  .  .  Col: 14
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  .  .  internalRole: ensure_body
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0: int {
+.  .  .  .  .  .  .  .  .  Roles: Right,Expression,Literal,Number,Primitive
+.  .  .  .  .  .  .  .  .  TOKEN "0"
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 36
+.  .  .  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 36
+.  .  .  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }

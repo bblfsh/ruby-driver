@@ -2,146 +2,154 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-begin {
-.  Roles: File
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 69
-.  .  Line: 8
-.  .  Col: 3
-.  }
+ {
+.  Roles: Module,File
 .  Children: {
-.  .  0: class {
-.  .  .  Roles: Unannotated
-.  .  .  TOKEN "Foo"
+.  .  0: begin {
+.  .  .  Roles: Block
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 4
-.  .  .  .  Line: 1
-.  .  .  .  Col: 5
+.  .  .  .  Offset: 69
+.  .  .  .  Line: 8
+.  .  .  .  Col: 3
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: body
+.  .  .  .  internalRole: module
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: def {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  TOKEN "bar"
+.  .  .  .  0: class {
+.  .  .  .  .  Roles: Statement,Type,Declaration,Identifier
+.  .  .  .  .  TOKEN "Foo"
 .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 14
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 5
+.  .  .  .  .  .  Offset: 0
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 1
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 16
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 7
+.  .  .  .  .  .  Offset: 4
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 5
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: args {
-.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  0: def {
+.  .  .  .  .  .  .  Roles: Statement,Function,Declaration,Identifier
+.  .  .  .  .  .  .  TOKEN "bar"
 .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 21
+.  .  .  .  .  .  .  .  Offset: 14
 .  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 12
+.  .  .  .  .  .  .  .  Col: 5
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 22
+.  .  .  .  .  .  .  .  Offset: 16
 .  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  Col: 7
 .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: args
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: NilClass {
-.  .  .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0: args {
+.  .  .  .  .  .  .  .  .  Roles: Expression,Argument,Incomplete
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 21
+.  .  .  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  .  .  Col: 12
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 22
+.  .  .  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: args
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  1: NilClass {
+.  .  .  .  .  .  .  .  .  Roles: Statement,Type,Null
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  }
-.  .  }
-.  .  1: class {
-.  .  .  Roles: Unannotated
-.  .  .  TOKEN "Bar"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 37
-.  .  .  .  Line: 6
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 41
-.  .  .  .  Line: 6
-.  .  .  .  Col: 5
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: body
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: undef {
-.  .  .  .  .  Roles: Unannotated
+.  .  .  .  1: class {
+.  .  .  .  .  Roles: Statement,Type,Declaration,Identifier
+.  .  .  .  .  TOKEN "Bar"
 .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 57
-.  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  Col: 5
+.  .  .  .  .  .  Offset: 37
+.  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  Col: 1
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 61
-.  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  Offset: 41
+.  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  Col: 5
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: sym {
-.  .  .  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  .  .  TOKEN "bar"
+.  .  .  .  .  .  0: undef {
+.  .  .  .  .  .  .  Roles: Statement,Incomplete
 .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 63
+.  .  .  .  .  .  .  .  Offset: 57
 .  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  Col: 11
+.  .  .  .  .  .  .  .  Col: 5
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 65
+.  .  .  .  .  .  .  .  Offset: 61
 .  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  Col: 9
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: target
+.  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0: sym {
+.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
+.  .  .  .  .  .  .  .  .  TOKEN "bar"
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 63
+.  .  .  .  .  .  .  .  .  .  Line: 7
+.  .  .  .  .  .  .  .  .  .  Col: 11
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 65
+.  .  .  .  .  .  .  .  .  .  Line: 7
+.  .  .  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: target
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: const {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  TOKEN "Foo"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 49
-.  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  Col: 13
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 51
-.  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  Col: 15
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: parent
+.  .  .  .  .  .  1: const {
+.  .  .  .  .  .  .  Roles: Expression,Identifier,Incomplete
+.  .  .  .  .  .  .  TOKEN "Foo"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 49
+.  .  .  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 51
+.  .  .  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  .  .  Col: 15
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: parent
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

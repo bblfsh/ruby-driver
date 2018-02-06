@@ -2,18 +2,26 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-cvar {
-.  Roles: File
-.  TOKEN "@@foo"
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 4
-.  .  Line: 1
-.  .  Col: 5
+ {
+.  Roles: Module,File
+.  Children: {
+.  .  0: cvar {
+.  .  .  Roles: Expression,Identifier,Visibility,Type
+.  .  .  TOKEN "@@foo"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 4
+.  .  .  .  Line: 1
+.  .  .  .  Col: 5
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: module
+.  .  .  }
+.  .  }
 .  }
 }
 

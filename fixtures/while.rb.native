@@ -3,35 +3,37 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "module": {
-            "body": {
-                "end_col": 9,
-                "end_line": 2,
-                "start_col": 4,
-                "start_line": 2,
-                "target": "a",
-                "type": "lvasgn",
-                "value": {
+        "RUBYAST": {
+            "module": {
+                "body": {
                     "end_col": 9,
                     "end_line": 2,
-                    "start_col": 8,
+                    "start_col": 4,
                     "start_line": 2,
-                    "token": 1,
-                    "type": "int"
-                }
-            },
-            "condition": {
-                "end_col": 10,
+                    "target": "a",
+                    "type": "lvasgn",
+                    "value": {
+                        "end_col": 9,
+                        "end_line": 2,
+                        "start_col": 8,
+                        "start_line": 2,
+                        "token": 1,
+                        "type": "int"
+                    }
+                },
+                "condition": {
+                    "end_col": 10,
+                    "end_line": 1,
+                    "start_col": 6,
+                    "start_line": 1,
+                    "type": "true"
+                },
+                "end_col": 5,
                 "end_line": 1,
-                "start_col": 6,
+                "start_col": 0,
                 "start_line": 1,
-                "type": "true"
-            },
-            "end_col": 5,
-            "end_line": 1,
-            "start_col": 0,
-            "start_line": 1,
-            "type": "while"
+                "type": "while"
+            }
         }
     }
 }

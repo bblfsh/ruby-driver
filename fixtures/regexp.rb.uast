@@ -2,25 +2,15 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-regexp {
-.  Roles: File
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 11
-.  .  Line: 1
-.  .  Col: 12
-.  }
+ {
+.  Roles: Module,File
 .  Children: {
-.  .  0: regopt {
-.  .  .  Roles: Unannotated
+.  .  0: regexp {
+.  .  .  Roles: Expression,Regexp
 .  .  .  StartPosition: {
-.  .  .  .  Offset: 10
+.  .  .  .  Offset: 0
 .  .  .  .  Line: 1
-.  .  .  .  Col: 11
+.  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
 .  .  .  .  Offset: 11
@@ -28,40 +18,58 @@ regexp {
 .  .  .  .  Col: 12
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: options
+.  .  .  .  internalRole: module
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: Symbol {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  TOKEN "i"
+.  .  .  .  0: regopt {
+.  .  .  .  .  Roles: Expression,Regexp,Incomplete
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 10
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 11
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 11
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 12
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: options
 .  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: Symbol {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  TOKEN "m"
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: options
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: Symbol {
+.  .  .  .  .  .  .  Roles: Expression,Regexp,Incomplete,Identifier
+.  .  .  .  .  .  .  TOKEN "i"
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: options
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: Symbol {
+.  .  .  .  .  .  .  Roles: Expression,Regexp,Incomplete,Identifier
+.  .  .  .  .  .  .  TOKEN "m"
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: options
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  }
-.  .  }
-.  .  1: str {
-.  .  .  Roles: Unannotated
-.  .  .  TOKEN "text(.*)"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 1
-.  .  .  .  Line: 1
-.  .  .  .  Col: 2
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 8
-.  .  .  .  Line: 1
-.  .  .  .  Col: 9
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: text
+.  .  .  .  1: str {
+.  .  .  .  .  Roles: Expression,Literal,String,Primitive
+.  .  .  .  .  TOKEN "text(.*)"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 1
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 2
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 8
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 9
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: text
+.  .  .  .  .  }
+.  .  .  .  }
 .  .  .  }
 .  .  }
 .  }

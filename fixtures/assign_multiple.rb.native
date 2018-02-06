@@ -3,33 +3,227 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "module": {
-            "end_col": 11,
-            "end_line": 1,
-            "start_col": 0,
-            "start_line": 1,
-            "targets": [
-                {
-                    "end_col": 1,
-                    "end_line": 1,
-                    "start_col": 0,
-                    "start_line": 1,
-                    "target": "a",
-                    "type": "lvasgn",
-                    "value": null
-                },
-                {
-                    "end_col": 4,
-                    "end_line": 1,
-                    "start_col": 3,
-                    "start_line": 1,
-                    "target": "b",
-                    "type": "lvasgn",
-                    "value": null
-                }
-            ],
-            "type": "masgn",
-            "values": null
+        "RUBYAST": {
+            "module": {
+                "body": [
+                    {
+                        "end_col": 11,
+                        "end_line": 1,
+                        "start_col": 0,
+                        "start_line": 1,
+                        "targets": {
+                            "children": [
+                                {
+                                    "end_col": 1,
+                                    "end_line": 1,
+                                    "start_col": 0,
+                                    "start_line": 1,
+                                    "target": "a",
+                                    "type": "lvasgn",
+                                    "value": null
+                                },
+                                {
+                                    "end_col": 4,
+                                    "end_line": 1,
+                                    "start_col": 3,
+                                    "start_line": 1,
+                                    "target": "b",
+                                    "type": "lvasgn",
+                                    "value": null
+                                }
+                            ],
+                            "end_col": 4,
+                            "end_line": 1,
+                            "start_col": 0,
+                            "start_line": 1,
+                            "type": "mlhs"
+                        },
+                        "type": "masgn",
+                        "values": {
+                            "contents": [
+                                {
+                                    "end_col": 8,
+                                    "end_line": 1,
+                                    "start_col": 7,
+                                    "start_line": 1,
+                                    "token": 1,
+                                    "type": "int"
+                                },
+                                {
+                                    "end_col": 11,
+                                    "end_line": 1,
+                                    "start_col": 10,
+                                    "start_line": 1,
+                                    "token": 2,
+                                    "type": "int"
+                                }
+                            ],
+                            "end_col": 11,
+                            "end_line": 1,
+                            "start_col": 7,
+                            "start_line": 1,
+                            "type": "array"
+                        }
+                    },
+                    {
+                        "end_col": 13,
+                        "end_line": 2,
+                        "start_col": 0,
+                        "start_line": 2,
+                        "targets": {
+                            "children": [
+                                {
+                                    "end_col": 1,
+                                    "end_line": 2,
+                                    "start_col": 0,
+                                    "start_line": 2,
+                                    "target": "a",
+                                    "type": "lvasgn",
+                                    "value": null
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "end_col": 5,
+                                            "end_line": 2,
+                                            "start_col": 4,
+                                            "start_line": 2,
+                                            "target": "b",
+                                            "type": "lvasgn",
+                                            "value": null
+                                        },
+                                        {
+                                            "end_col": 8,
+                                            "end_line": 2,
+                                            "start_col": 7,
+                                            "start_line": 2,
+                                            "target": "c",
+                                            "type": "lvasgn",
+                                            "value": null
+                                        }
+                                    ],
+                                    "end_col": 9,
+                                    "end_line": 2,
+                                    "start_col": 3,
+                                    "start_line": 2,
+                                    "type": "mlhs"
+                                }
+                            ],
+                            "end_col": 9,
+                            "end_line": 2,
+                            "start_col": 0,
+                            "start_line": 2,
+                            "type": "mlhs"
+                        },
+                        "type": "masgn",
+                        "values": {
+                            "base": null,
+                            "end_col": 13,
+                            "end_line": 2,
+                            "selector": "d",
+                            "start_col": 12,
+                            "start_line": 2,
+                            "type": "send"
+                        }
+                    },
+                    {
+                        "end_col": 10,
+                        "end_line": 3,
+                        "start_col": 0,
+                        "start_line": 3,
+                        "target": "c",
+                        "type": "lvasgn",
+                        "value": {
+                            "contents": [
+                                {
+                                    "end_col": 6,
+                                    "end_line": 3,
+                                    "start_col": 5,
+                                    "start_line": 3,
+                                    "token": 3,
+                                    "type": "int"
+                                },
+                                {
+                                    "end_col": 9,
+                                    "end_line": 3,
+                                    "start_col": 8,
+                                    "start_line": 3,
+                                    "token": 4,
+                                    "type": "int"
+                                }
+                            ],
+                            "end_col": 10,
+                            "end_line": 3,
+                            "start_col": 4,
+                            "start_line": 3,
+                            "type": "array"
+                        }
+                    },
+                    {
+                        "end_col": 12,
+                        "end_line": 4,
+                        "start_col": 0,
+                        "start_line": 4,
+                        "targets": {
+                            "children": [
+                                {
+                                    "end_col": 2,
+                                    "end_line": 4,
+                                    "start_col": 0,
+                                    "start_line": 4,
+                                    "target": "@a",
+                                    "type": "ivasgn",
+                                    "value": null
+                                },
+                                {
+                                    "end_col": 7,
+                                    "end_line": 4,
+                                    "start_col": 4,
+                                    "start_line": 4,
+                                    "target": "@@b",
+                                    "type": "cvasgn",
+                                    "value": null
+                                }
+                            ],
+                            "end_col": 7,
+                            "end_line": 4,
+                            "start_col": 0,
+                            "start_line": 4,
+                            "type": "mlhs"
+                        },
+                        "type": "masgn",
+                        "values": {
+                            "contents": [
+                                {
+                                    "end_col": 12,
+                                    "end_line": 4,
+                                    "name": {
+                                        "end_col": 12,
+                                        "end_line": 4,
+                                        "start_col": 11,
+                                        "start_line": 4,
+                                        "token": "c",
+                                        "type": "lvar"
+                                    },
+                                    "start_col": 10,
+                                    "start_line": 4,
+                                    "type": "splat"
+                                }
+                            ],
+                            "end_col": 12,
+                            "end_line": 4,
+                            "start_col": 10,
+                            "start_line": 4,
+                            "type": "array"
+                        }
+                    }
+                ],
+                "end_col": 12,
+                "end_line": 4,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "begin"
+            }
         }
     }
 }

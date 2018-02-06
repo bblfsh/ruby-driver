@@ -2,82 +2,90 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-begin {
-.  Roles: File
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 33
-.  .  Line: 5
-.  .  Col: 3
-.  }
+ {
+.  Roles: Module,File
 .  Children: {
-.  .  0: class {
-.  .  .  Roles: Unannotated
-.  .  .  TOKEN "Foo"
+.  .  0: begin {
+.  .  .  Roles: Block
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 4
-.  .  .  .  Line: 1
-.  .  .  .  Col: 5
+.  .  .  .  Offset: 33
+.  .  .  .  Line: 5
+.  .  .  .  Col: 3
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: body
+.  .  .  .  internalRole: module
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: NilClass {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: body
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  .  1: class {
-.  .  .  Roles: Unannotated
-.  .  .  TOKEN "Bar"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 15
-.  .  .  .  Line: 4
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 19
-.  .  .  .  Line: 4
-.  .  .  .  Col: 5
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: body
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: NilClass {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: body
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: const {
-.  .  .  .  .  Roles: Unannotated
+.  .  .  .  0: class {
+.  .  .  .  .  Roles: Statement,Type,Declaration,Identifier
 .  .  .  .  .  TOKEN "Foo"
 .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 27
-.  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  Offset: 0
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 1
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 29
-.  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  Col: 15
+.  .  .  .  .  .  Offset: 4
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 5
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: parent
+.  .  .  .  .  .  internalRole: body
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: NilClass {
+.  .  .  .  .  .  .  Roles: Statement,Type,Null
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1: class {
+.  .  .  .  .  Roles: Statement,Type,Declaration,Identifier
+.  .  .  .  .  TOKEN "Bar"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 15
+.  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 19
+.  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: body
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: NilClass {
+.  .  .  .  .  .  .  Roles: Statement,Type,Null
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: const {
+.  .  .  .  .  .  .  Roles: Expression,Identifier,Incomplete
+.  .  .  .  .  .  .  TOKEN "Foo"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 27
+.  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 29
+.  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  Col: 15
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: parent
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

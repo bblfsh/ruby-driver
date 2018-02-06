@@ -3,26 +3,28 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "module": {
-            "body": {
-                "end_col": 8,
-                "end_line": 2,
-                "start_col": 4,
-                "start_line": 2,
-                "type": "redo"
-            },
-            "condition": {
-                "end_col": 10,
+        "RUBYAST": {
+            "module": {
+                "body": {
+                    "end_col": 8,
+                    "end_line": 2,
+                    "start_col": 4,
+                    "start_line": 2,
+                    "type": "redo"
+                },
+                "condition": {
+                    "end_col": 10,
+                    "end_line": 1,
+                    "start_col": 6,
+                    "start_line": 1,
+                    "type": "true"
+                },
+                "end_col": 5,
                 "end_line": 1,
-                "start_col": 6,
+                "start_col": 0,
                 "start_line": 1,
-                "type": "true"
-            },
-            "end_col": 5,
-            "end_line": 1,
-            "start_col": 0,
-            "start_line": 1,
-            "type": "while"
+                "type": "while"
+            }
         }
     }
 }

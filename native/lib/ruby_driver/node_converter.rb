@@ -17,8 +17,7 @@ module NodeConverter
     end
 
     def tohash()
-      @dict["ast"] = {}
-      @dict["ast"]["module"] = convert(@root)
+      @dict["ast"] = {"RUBYAST": {"module": convert(@root)}}
       add_comments()
       return @dict["ast"]
     end
@@ -67,17 +66,17 @@ module NodeConverter
       when "Complex", "Rational", "Symbol"
         return {"type" => node_type(node), "token" => node.to_s}
 
-      when "mlhs"
-        return node.children.map{ |x| convert(x) }.compact
+      #when "mlhs"
+        #return node.children.map{ |x| convert(x) }.compact
 
       when "masgn"
-        return sexp_to_hash(node, {"targets" => 0, "values.children" => 1})
+        return sexp_to_hash(node, {"targets" => 0, "values" => 1})
 
       when "op_asgn"
         return sexp_to_hash(node, {"target" => 0, "operator" => 1, "value" => 2})
 
       when "module"
-        d = sexp_to_hash(node, {}, 1, "body")
+        d = sexp_to_hash(node, {}, 1, "begin")
         d["name"] = node.children[0].children[1].to_s
         return d
 
@@ -210,7 +209,6 @@ module NodeConverter
     end
 
     def add_from_subelem(node, hash, key)
-
       subelem = node.loc.send(key)
       if subelem != nil
         hash["start_line"] = subelem.begin.line
@@ -221,7 +219,6 @@ module NodeConverter
     end
 
     def add_position(node, hash)
-
       case hash["type"]
 
       when "defined?", "module", "class", "sclass", "def", "defs",
@@ -254,7 +251,6 @@ module NodeConverter
 
     # Add comments inside the root node "comments" field
     def add_comments()
-
       if @comments == nil
         return
       end
@@ -262,7 +258,7 @@ module NodeConverter
       comments = []
 
       @comments.each do |comment|
-        dcomment = {
+        commentdict = {
           "type" => "comment",
           "text" => comment.text,
           "inline" => comment.inline?,
@@ -272,11 +268,11 @@ module NodeConverter
           "start_col" => comment.loc.column,
           "end_col" => comment.loc.last_column
         }
-        comments.push(dcomment)
+        comments.push(commentdict)
       end
 
       if comments.length > 0
-        @dict["ast"]["module"]["comments"] = comments
+        @dict["ast"][:RUBYAST][:module][:comments] = comments
       end
     end
 

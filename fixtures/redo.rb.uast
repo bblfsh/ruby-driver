@@ -2,49 +2,58 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-while {
-.  Roles: File
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 4
-.  .  Line: 1
-.  .  Col: 5
-.  }
+ {
+.  Roles: Module,File
 .  Children: {
-.  .  0: redo {
-.  .  .  Roles: Unannotated
+.  .  0: while {
+.  .  .  Roles: Statement,While
 .  .  .  StartPosition: {
-.  .  .  .  Offset: 15
-.  .  .  .  Line: 2
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 4
+.  .  .  .  Line: 1
 .  .  .  .  Col: 5
 .  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 18
-.  .  .  .  Line: 2
-.  .  .  .  Col: 8
-.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: body
+.  .  .  .  internalRole: module
 .  .  .  }
-.  .  }
-.  .  1: true {
-.  .  .  Roles: Unannotated
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 6
-.  .  .  .  Line: 1
-.  .  .  .  Col: 7
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 9
-.  .  .  .  Line: 1
-.  .  .  .  Col: 10
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: condition
+.  .  .  Children: {
+.  .  .  .  0: redo {
+.  .  .  .  .  Roles: Expression,While,Body
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 15
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 18
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 8
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: body
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1: true {
+.  .  .  .  .  Roles: Expression,Condition,While,Boolean,Literal
+.  .  .  .  .  TOKEN "true"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 6
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 7
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 9
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 10
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: condition
+.  .  .  .  .  }
+.  .  .  .  }
 .  .  .  }
 .  .  }
 .  }

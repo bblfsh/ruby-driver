@@ -3,24 +3,26 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "module": {
-            "base": null,
-            "end_col": 18,
-            "end_line": 1,
-            "selector": "puts",
-            "start_col": 0,
-            "start_line": 1,
-            "type": "send",
-            "values": [
-                {
-                    "end_col": 18,
-                    "end_line": 1,
-                    "start_col": 5,
-                    "start_line": 1,
-                    "token": "hello world",
-                    "type": "str"
-                }
-            ]
+        "RUBYAST": {
+            "module": {
+                "base": null,
+                "end_col": 18,
+                "end_line": 1,
+                "selector": "puts",
+                "start_col": 0,
+                "start_line": 1,
+                "type": "send",
+                "values": [
+                    {
+                        "end_col": 18,
+                        "end_line": 1,
+                        "start_col": 5,
+                        "start_line": 1,
+                        "token": "hello world",
+                        "type": "str"
+                    }
+                ]
+            }
         }
     }
 }

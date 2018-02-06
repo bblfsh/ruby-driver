@@ -2,43 +2,32 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-if {
-.  Roles: File
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 5
-.  .  Line: 1
-.  .  Col: 6
-.  }
+ {
+.  Roles: Module,File
 .  Children: {
-.  .  0: lvasgn {
-.  .  .  Roles: Unannotated
-.  .  .  TOKEN "b"
+.  .  0: if {
+.  .  .  Roles: Statement,If
 .  .  .  StartPosition: {
-.  .  .  .  Offset: 30
-.  .  .  .  Line: 4
-.  .  .  .  Col: 5
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 34
-.  .  .  .  Line: 4
-.  .  .  .  Col: 9
+.  .  .  .  Offset: 5
+.  .  .  .  Line: 1
+.  .  .  .  Col: 6
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: body
+.  .  .  .  internalRole: module
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: int {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  TOKEN "2"
+.  .  .  .  0: lvasgn {
+.  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left,If,Then
+.  .  .  .  .  TOKEN "b"
 .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 34
+.  .  .  .  .  .  Offset: 30
 .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  Col: 5
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
 .  .  .  .  .  .  Offset: 34
@@ -46,52 +35,52 @@ if {
 .  .  .  .  .  .  Col: 9
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  internalRole: body
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: int {
+.  .  .  .  .  .  .  Roles: Right,Expression,Literal,Number,Primitive
+.  .  .  .  .  .  .  TOKEN "2"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 34
+.  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 34
+.  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  }
-.  .  }
-.  .  1: send {
-.  .  .  Roles: Unannotated
-.  .  .  TOKEN "foo"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 7
-.  .  .  .  Line: 1
-.  .  .  .  Col: 8
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 9
-.  .  .  .  Line: 1
-.  .  .  .  Col: 10
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: condition
-.  .  .  }
-.  .  }
-.  .  2: lvasgn {
-.  .  .  Roles: Unannotated
-.  .  .  TOKEN "a"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 15
-.  .  .  .  Line: 2
-.  .  .  .  Col: 5
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 19
-.  .  .  .  Line: 2
-.  .  .  .  Col: 9
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: else
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: int {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  TOKEN "1"
+.  .  .  .  1: send {
+.  .  .  .  .  Roles: Expression,Condition,If
+.  .  .  .  .  TOKEN "foo"
 .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 19
+.  .  .  .  .  .  Offset: 7
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 8
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 9
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 10
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: condition
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  2: lvasgn {
+.  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left,If,Else
+.  .  .  .  .  TOKEN "a"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 15
 .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  Col: 5
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
 .  .  .  .  .  .  Offset: 19
@@ -99,7 +88,26 @@ if {
 .  .  .  .  .  .  Col: 9
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  internalRole: else
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: int {
+.  .  .  .  .  .  .  Roles: Right,Expression,Literal,Number,Primitive
+.  .  .  .  .  .  .  TOKEN "1"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 19
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 19
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

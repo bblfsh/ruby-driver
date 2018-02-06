@@ -2,52 +2,60 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-send {
-.  Roles: File
-.  TOKEN "+"
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 6
-.  .  Line: 1
-.  .  Col: 7
-.  }
+ {
+.  Roles: Module,File
 .  Children: {
 .  .  0: send {
-.  .  .  Roles: Unannotated
-.  .  .  TOKEN "foo"
+.  .  .  Roles: Expression,Identifier,Operator,Arithmetic,Add
+.  .  .  TOKEN "+"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 2
-.  .  .  .  Line: 1
-.  .  .  .  Col: 3
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: base
-.  .  .  }
-.  .  }
-.  .  1: int {
-.  .  .  Roles: Unannotated
-.  .  .  TOKEN "1"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 6
-.  .  .  .  Line: 1
-.  .  .  .  Col: 7
-.  .  .  }
-.  .  .  EndPosition: {
 .  .  .  .  Offset: 6
 .  .  .  .  Line: 1
 .  .  .  .  Col: 7
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: values
+.  .  .  .  internalRole: module
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: send {
+.  .  .  .  .  Roles: Expression,Qualified,Identifier
+.  .  .  .  .  TOKEN "foo"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 0
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 2
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 3
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: base
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1: int {
+.  .  .  .  .  Roles: Expression,Literal,Number,Primitive
+.  .  .  .  .  TOKEN "1"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 6
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 7
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 6
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 7
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: values
+.  .  .  .  .  }
+.  .  .  .  }
 .  .  .  }
 .  .  }
 .  }

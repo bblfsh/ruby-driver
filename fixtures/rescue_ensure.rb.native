@@ -3,53 +3,55 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "module": {
-            "body": [
-                {
-                    "body": {
-                        "end_col": 9,
-                        "end_line": 2,
-                        "start_col": 4,
-                        "start_line": 2,
-                        "target": "a",
-                        "type": "lvasgn",
-                        "value": {
+        "RUBYAST": {
+            "module": {
+                "body": [
+                    {
+                        "body": {
                             "end_col": 9,
                             "end_line": 2,
-                            "start_col": 8,
+                            "start_col": 4,
                             "start_line": 2,
-                            "token": 1,
-                            "type": "int"
-                        }
-                    },
-                    "end_col": 6,
-                    "end_line": 3,
-                    "ensure_body": {
-                        "end_col": 14,
-                        "end_line": 4,
-                        "start_col": 4,
-                        "start_line": 4,
-                        "target": "always",
-                        "type": "lvasgn",
-                        "value": {
+                            "target": "a",
+                            "type": "lvasgn",
+                            "value": {
+                                "end_col": 9,
+                                "end_line": 2,
+                                "start_col": 8,
+                                "start_line": 2,
+                                "token": 1,
+                                "type": "int"
+                            }
+                        },
+                        "end_col": 6,
+                        "end_line": 3,
+                        "ensure_body": {
                             "end_col": 14,
                             "end_line": 4,
-                            "start_col": 13,
+                            "start_col": 4,
                             "start_line": 4,
-                            "token": 0,
-                            "type": "int"
-                        }
-                    },
-                    "start_col": 0,
-                    "start_line": 3,
-                    "type": "ensure"
-                }
-            ],
-            "end_col": 3,
-            "end_line": 5,
-            "start_col": 0,
-            "start_line": 1,
-            "type": "kwbegin"
+                            "target": "always",
+                            "type": "lvasgn",
+                            "value": {
+                                "end_col": 14,
+                                "end_line": 4,
+                                "start_col": 13,
+                                "start_line": 4,
+                                "token": 0,
+                                "type": "int"
+                            }
+                        },
+                        "start_col": 0,
+                        "start_line": 3,
+                        "type": "ensure"
+                    }
+                ],
+                "end_col": 3,
+                "end_line": 5,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "kwbegin"
+            }
         }
     }
 }

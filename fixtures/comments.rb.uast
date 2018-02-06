@@ -2,84 +2,16 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-lvasgn {
-.  Roles: File
-.  TOKEN "a"
-.  StartPosition: {
-.  .  Offset: 11
-.  .  Line: 2
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 15
-.  .  Line: 2
-.  .  Col: 5
-.  }
+ {
+.  Roles: Module,File
 .  Children: {
-.  .  0: comment {
-.  .  .  Roles: Unannotated
+.  .  0: lvasgn {
+.  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
+.  .  .  TOKEN "a"
 .  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
+.  .  .  .  Offset: 11
+.  .  .  .  Line: 2
 .  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 9
-.  .  .  .  Line: 1
-.  .  .  .  Col: 10
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  documentation: false
-.  .  .  .  inline: true
-.  .  .  .  internalRole: comments
-.  .  .  .  text: # previous
-.  .  .  }
-.  .  }
-.  .  1: comment {
-.  .  .  Roles: Unannotated
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 17
-.  .  .  .  Line: 2
-.  .  .  .  Col: 7
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 24
-.  .  .  .  Line: 2
-.  .  .  .  Col: 14
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  documentation: false
-.  .  .  .  inline: true
-.  .  .  .  internalRole: comments
-.  .  .  .  text: # inline
-.  .  .  }
-.  .  }
-.  .  2: comment {
-.  .  .  Roles: Unannotated
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 26
-.  .  .  .  Line: 3
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 32
-.  .  .  .  Line: 3
-.  .  .  .  Col: 7
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  documentation: false
-.  .  .  .  inline: true
-.  .  .  .  internalRole: comments
-.  .  .  .  text: # after
-.  .  .  }
-.  .  }
-.  .  3: int {
-.  .  .  Roles: Unannotated
-.  .  .  TOKEN "1"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 15
-.  .  .  .  Line: 2
-.  .  .  .  Col: 5
 .  .  .  }
 .  .  .  EndPosition: {
 .  .  .  .  Offset: 15
@@ -87,7 +19,83 @@ lvasgn {
 .  .  .  .  Col: 5
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: value
+.  .  .  .  internalRole: module
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: comment {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 0
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 9
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 10
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  documentation: false
+.  .  .  .  .  .  inline: true
+.  .  .  .  .  .  internalRole: comments
+.  .  .  .  .  .  text: # previous
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1: comment {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 17
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 7
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 24
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 14
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  documentation: false
+.  .  .  .  .  .  inline: true
+.  .  .  .  .  .  internalRole: comments
+.  .  .  .  .  .  text: # inline
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  2: comment {
+.  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 26
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 32
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 7
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  documentation: false
+.  .  .  .  .  .  inline: true
+.  .  .  .  .  .  internalRole: comments
+.  .  .  .  .  .  text: # after
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  3: int {
+.  .  .  .  .  Roles: Right,Expression,Literal,Number,Primitive
+.  .  .  .  .  TOKEN "1"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 15
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 15
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  }
+.  .  .  .  }
 .  .  .  }
 .  .  }
 .  }
