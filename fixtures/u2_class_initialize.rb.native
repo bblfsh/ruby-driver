@@ -1,0 +1,40 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "RUBYAST": {
+            "module": {
+                "body": [
+                    {
+                        "args": {
+                            "end_col": 20,
+                            "end_line": 2,
+                            "start_col": 18,
+                            "start_line": 2,
+                            "type": "args"
+                        },
+                        "body": [
+                            {
+                                "type": "NilClass"
+                            }
+                        ],
+                        "end_col": 7,
+                        "end_line": 2,
+                        "name": "initialize",
+                        "start_col": 4,
+                        "start_line": 2,
+                        "type": "def"
+                    }
+                ],
+                "end_col": 5,
+                "end_line": 1,
+                "name": "A",
+                "parent": null,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "class"
+            }
+        }
+    }
+}

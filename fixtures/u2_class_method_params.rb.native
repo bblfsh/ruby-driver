@@ -1,0 +1,197 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "RUBYAST": {
+            "module": {
+                "body": [
+                    {
+                        "body": [
+                            {
+                                "args": {
+                                    "children": [
+                                        {
+                                            "end_col": 16,
+                                            "end_line": 2,
+                                            "start_col": 15,
+                                            "start_line": 2,
+                                            "token": "a",
+                                            "type": "arg"
+                                        },
+                                        {
+                                            "end_col": 19,
+                                            "end_line": 2,
+                                            "start_col": 18,
+                                            "start_line": 2,
+                                            "token": "b",
+                                            "type": "arg"
+                                        },
+                                        {
+                                            "end_col": 22,
+                                            "end_line": 2,
+                                            "start_col": 21,
+                                            "start_line": 2,
+                                            "token": "c",
+                                            "type": "arg"
+                                        }
+                                    ],
+                                    "end_col": 23,
+                                    "end_line": 2,
+                                    "start_col": 14,
+                                    "start_line": 2,
+                                    "type": "args"
+                                },
+                                "body": [
+                                    {
+                                        "type": "NilClass"
+                                    }
+                                ],
+                                "end_col": 7,
+                                "end_line": 2,
+                                "name": "normal",
+                                "start_col": 4,
+                                "start_line": 2,
+                                "type": "def"
+                            },
+                            {
+                                "args": {
+                                    "children": [
+                                        {
+                                            "end_col": 17,
+                                            "end_line": 4,
+                                            "start_col": 16,
+                                            "start_line": 4,
+                                            "token": "d",
+                                            "type": "arg"
+                                        },
+                                        {
+                                            "default": {
+                                                "end_col": 23,
+                                                "end_line": 4,
+                                                "start_col": 22,
+                                                "start_line": 4,
+                                                "token": 1,
+                                                "type": "int"
+                                            },
+                                            "end_col": 20,
+                                            "end_line": 4,
+                                            "start_col": 19,
+                                            "start_line": 4,
+                                            "token": "e",
+                                            "type": "kwoptarg"
+                                        }
+                                    ],
+                                    "end_col": 24,
+                                    "end_line": 4,
+                                    "start_col": 15,
+                                    "start_line": 4,
+                                    "type": "args"
+                                },
+                                "body": [
+                                    {
+                                        "type": "NilClass"
+                                    }
+                                ],
+                                "end_col": 7,
+                                "end_line": 4,
+                                "name": "default",
+                                "start_col": 4,
+                                "start_line": 4,
+                                "type": "def"
+                            },
+                            {
+                                "args": {
+                                    "children": [
+                                        {
+                                            "end_col": 17,
+                                            "end_line": 6,
+                                            "start_col": 16,
+                                            "start_line": 6,
+                                            "token": "f",
+                                            "type": "arg"
+                                        },
+                                        {
+                                            "end_col": 21,
+                                            "end_line": 6,
+                                            "start_col": 20,
+                                            "start_line": 6,
+                                            "token": "g",
+                                            "type": "restarg"
+                                        }
+                                    ],
+                                    "end_col": 22,
+                                    "end_line": 6,
+                                    "start_col": 15,
+                                    "start_line": 6,
+                                    "type": "args"
+                                },
+                                "body": [
+                                    {
+                                        "type": "NilClass"
+                                    }
+                                ],
+                                "end_col": 7,
+                                "end_line": 6,
+                                "name": "varargs",
+                                "start_col": 4,
+                                "start_line": 6,
+                                "type": "def"
+                            },
+                            {
+                                "args": {
+                                    "children": [
+                                        {
+                                            "end_col": 18,
+                                            "end_line": 8,
+                                            "start_col": 17,
+                                            "start_line": 8,
+                                            "token": "h",
+                                            "type": "arg"
+                                        },
+                                        {
+                                            "end_col": 21,
+                                            "end_line": 8,
+                                            "start_col": 20,
+                                            "start_line": 8,
+                                            "token": "i",
+                                            "type": "kwarg"
+                                        }
+                                    ],
+                                    "end_col": 23,
+                                    "end_line": 8,
+                                    "start_col": 16,
+                                    "start_line": 8,
+                                    "type": "args"
+                                },
+                                "body": [
+                                    {
+                                        "type": "NilClass"
+                                    }
+                                ],
+                                "end_col": 7,
+                                "end_line": 8,
+                                "name": "required",
+                                "start_col": 4,
+                                "start_line": 8,
+                                "type": "def"
+                            }
+                        ],
+                        "end_col": 7,
+                        "end_line": 9,
+                        "start_col": 4,
+                        "start_line": 2,
+                        "type": "begin"
+                    }
+                ],
+                "end_col": 5,
+                "end_line": 1,
+                "name": "A",
+                "parent": null,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "class"
+            }
+        }
+    }
+}

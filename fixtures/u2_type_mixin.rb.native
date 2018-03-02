@@ -1,0 +1,79 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "RUBYAST": {
+            "module": {
+                "body": [
+                    {
+                        "begin": [
+                            {
+                                "args": {
+                                    "end_col": 20,
+                                    "end_line": 2,
+                                    "start_col": 18,
+                                    "start_line": 2,
+                                    "type": "args"
+                                },
+                                "body": [
+                                    {
+                                        "type": "NilClass"
+                                    }
+                                ],
+                                "end_col": 7,
+                                "end_line": 2,
+                                "name": "mixmethod1",
+                                "start_col": 4,
+                                "start_line": 2,
+                                "type": "def"
+                            }
+                        ],
+                        "end_col": 6,
+                        "end_line": 1,
+                        "name": "Mixin",
+                        "start_col": 0,
+                        "start_line": 1,
+                        "type": "module"
+                    },
+                    {
+                        "body": [
+                            {
+                                "base": null,
+                                "end_col": 17,
+                                "end_line": 6,
+                                "selector": "include",
+                                "start_col": 4,
+                                "start_line": 6,
+                                "type": "send",
+                                "values": [
+                                    {
+                                        "base": null,
+                                        "end_col": 17,
+                                        "end_line": 6,
+                                        "start_col": 12,
+                                        "start_line": 6,
+                                        "token": "Mixin",
+                                        "type": "const"
+                                    }
+                                ]
+                            }
+                        ],
+                        "end_col": 5,
+                        "end_line": 5,
+                        "name": "A",
+                        "parent": null,
+                        "start_col": 0,
+                        "start_line": 5,
+                        "type": "class"
+                    }
+                ],
+                "end_col": 3,
+                "end_line": 7,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "begin"
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "RUBYAST": {
+            "module": {
+                "body": [
+                    {
+                        "body": [
+                            {
+                                "type": "NilClass"
+                            }
+                        ],
+                        "end_col": 5,
+                        "end_line": 1,
+                        "name": "A",
+                        "parent": null,
+                        "start_col": 0,
+                        "start_line": 1,
+                        "type": "class"
+                    },
+                    {
+                        "body": [
+                            {
+                                "type": "NilClass"
+                            }
+                        ],
+                        "end_col": 5,
+                        "end_line": 3,
+                        "name": "B",
+                        "parent": {
+                            "base": null,
+                            "end_col": 11,
+                            "end_line": 3,
+                            "start_col": 10,
+                            "start_line": 3,
+                            "token": "A",
+                            "type": "const"
+                        },
+                        "start_col": 0,
+                        "start_line": 3,
+                        "type": "class"
+                    }
+                ],
+                "end_col": 3,
+                "end_line": 4,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "begin"
+            }
+        }
+    }
+}

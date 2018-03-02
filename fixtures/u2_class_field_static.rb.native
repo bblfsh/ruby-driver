@@ -1,0 +1,36 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "RUBYAST": {
+            "module": {
+                "body": [
+                    {
+                        "end_col": 19,
+                        "end_line": 2,
+                        "start_col": 4,
+                        "start_line": 2,
+                        "target": "@@staticvar",
+                        "type": "cvasgn",
+                        "value": {
+                            "end_col": 19,
+                            "end_line": 2,
+                            "start_col": 18,
+                            "start_line": 2,
+                            "token": 1,
+                            "type": "int"
+                        }
+                    }
+                ],
+                "end_col": 5,
+                "end_line": 1,
+                "name": "A",
+                "parent": null,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "class"
+            }
+        }
+    }
+}
