@@ -1,6 +1,10 @@
 package normalizer
 
-import "gopkg.in/bblfsh/sdk.v1/uast"
+import (
+	"strings"
+
+	"gopkg.in/bblfsh/sdk.v1/uast"
+)
 
 // ToNode is an instance of `uast.ObjectToNode`, defining how to transform an
 // into a UAST (`uast.Node`).
@@ -35,12 +39,18 @@ var ToNode = &uast.ObjectToNode{
 
 			// Native parser wrongly set positions at individual lines in multiline
 			// strings at 0, remove the position on those to avoid confusion
-			if t, ok := n["type"].(string); ok && t == "str" {
-				if endCol, ok := n["end_col"].(float64); ok && endCol == 0 {
-					delete(n, "start_col")
-					delete(n, "end_col")
-					delete(n, "start_line")
-					delete(n, "end_line")
+			if t, ok := n["type"].(string); ok {
+				if t == "str" {
+					if endCol, ok := n["end_col"].(float64); ok && endCol == 0 {
+						delete(n, "start_col")
+						delete(n, "end_col")
+						delete(n, "start_line")
+						delete(n, "end_line")
+					}
+				} else if t == "comment" {
+					if text, ok := n["text"].(string); ok && strings.HasPrefix(text, "#") {
+						n["text"] = text[1:]
+					}
 				}
 			}
 		}

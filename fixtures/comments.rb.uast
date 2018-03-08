@@ -38,7 +38,7 @@ UAST:
 .  .  .  .  .  .  documentation: false
 .  .  .  .  .  .  inline: true
 .  .  .  .  .  .  internalRole: comments
-.  .  .  .  .  .  text: # previous
+.  .  .  .  .  .  text:  previous
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: comment {
@@ -57,7 +57,7 @@ UAST:
 .  .  .  .  .  .  documentation: false
 .  .  .  .  .  .  inline: true
 .  .  .  .  .  .  internalRole: comments
-.  .  .  .  .  .  text: # inline
+.  .  .  .  .  .  text:  inline
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  2: comment {
@@ -76,7 +76,7 @@ UAST:
 .  .  .  .  .  .  documentation: false
 .  .  .  .  .  .  inline: true
 .  .  .  .  .  .  internalRole: comments
-.  .  .  .  .  .  text: # after
+.  .  .  .  .  .  text:  after
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  3: int {
