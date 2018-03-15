@@ -1,2 +1,2 @@
-class Foo
+class Testcls1
 end

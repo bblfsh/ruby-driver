@@ -14,7 +14,7 @@
                         ],
                         "end_col": 5,
                         "end_line": 1,
-                        "name": "A",
+                        "name": "Testcls1",
                         "parent": null,
                         "start_col": 0,
                         "start_line": 1,
@@ -27,24 +27,24 @@
                             }
                         ],
                         "end_col": 5,
-                        "end_line": 3,
-                        "name": "B",
+                        "end_line": 2,
+                        "name": "Testcls2",
                         "parent": {
                             "base": null,
-                            "end_col": 11,
-                            "end_line": 3,
-                            "start_col": 10,
-                            "start_line": 3,
-                            "token": "A",
+                            "end_col": 25,
+                            "end_line": 2,
+                            "start_col": 17,
+                            "start_line": 2,
+                            "token": "Testcls1",
                             "type": "const"
                         },
                         "start_col": 0,
-                        "start_line": 3,
+                        "start_line": 2,
                         "type": "class"
                     }
                 ],
                 "end_col": 3,
-                "end_line": 4,
+                "end_line": 3,
                 "start_col": 0,
                 "start_line": 1,
                 "type": "begin"

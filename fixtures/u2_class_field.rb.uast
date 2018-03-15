@@ -7,7 +7,7 @@ UAST:
 .  Children: {
 .  .  0: class {
 .  .  .  Roles: Statement,Type,Declaration,Identifier
-.  .  .  TOKEN "A1"
+.  .  .  TOKEN "Testcls1"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
@@ -26,12 +26,12 @@ UAST:
 .  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left,Incomplete
 .  .  .  .  .  TOKEN "@member"
 .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 13
+.  .  .  .  .  .  Offset: 19
 .  .  .  .  .  .  Line: 2
 .  .  .  .  .  .  Col: 5
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 23
+.  .  .  .  .  .  Offset: 29
 .  .  .  .  .  .  Line: 2
 .  .  .  .  .  .  Col: 15
 .  .  .  .  .  }
@@ -43,12 +43,12 @@ UAST:
 .  .  .  .  .  .  .  Roles: Right,Binary,Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 23
+.  .  .  .  .  .  .  .  Offset: 29
 .  .  .  .  .  .  .  .  Line: 2
 .  .  .  .  .  .  .  .  Col: 15
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 23
+.  .  .  .  .  .  .  .  Offset: 29
 .  .  .  .  .  .  .  .  Line: 2
 .  .  .  .  .  .  .  .  Col: 15
 .  .  .  .  .  .  .  }

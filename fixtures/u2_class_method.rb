@@ -1,6 +1,4 @@
-class A
-    def method1
-        a = 1
-        b = 2
+class Testcls1
+    def testfnc1()
     end
 end

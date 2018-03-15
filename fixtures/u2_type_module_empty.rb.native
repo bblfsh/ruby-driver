@@ -1,0 +1,22 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "RUBYAST": {
+            "module": {
+                "begin": [
+                    {
+                        "type": "NilClass"
+                    }
+                ],
+                "end_col": 6,
+                "end_line": 1,
+                "name": "Testmodule1",
+                "start_col": 0,
+                "start_line": 1,
+                "type": "module"
+            }
+        }
+    }
+}

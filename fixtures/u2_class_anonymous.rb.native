@@ -5,83 +5,30 @@
     "ast": {
         "RUBYAST": {
             "module": {
-                "body": [
-                    {
-                        "end_col": 3,
-                        "end_line": 2,
+                "args": null,
+                "blockdata": {
+                    "base": {
+                        "base": null,
+                        "end_col": 5,
+                        "end_line": 1,
                         "start_col": 0,
                         "start_line": 1,
-                        "target": "a",
-                        "type": "lvasgn",
-                        "value": {
-                            "args": null,
-                            "blockdata": {
-                                "base": {
-                                    "base": null,
-                                    "end_col": 9,
-                                    "end_line": 1,
-                                    "start_col": 4,
-                                    "start_line": 1,
-                                    "token": "Class",
-                                    "type": "const"
-                                },
-                                "end_col": 13,
-                                "end_line": 1,
-                                "selector": "new",
-                                "start_col": 4,
-                                "start_line": 1,
-                                "type": "send"
-                            },
-                            "body": null,
-                            "end_col": 3,
-                            "end_line": 2,
-                            "start_col": 4,
-                            "start_line": 1,
-                            "type": "block"
-                        }
+                        "token": "Class",
+                        "type": "const"
                     },
-                    {
-                        "end_col": 5,
-                        "end_line": 4,
-                        "start_col": 0,
-                        "start_line": 4,
-                        "target": "b",
-                        "type": "lvasgn",
-                        "value": {
-                            "end_col": 5,
-                            "end_line": 4,
-                            "start_col": 4,
-                            "start_line": 4,
-                            "token": 1,
-                            "type": "int"
-                        }
-                    },
-                    {
-                        "body": [
-                            {
-                                "type": "NilClass"
-                            }
-                        ],
-                        "end_col": 5,
-                        "end_line": 5,
-                        "object": {
-                            "end_col": 10,
-                            "end_line": 5,
-                            "start_col": 9,
-                            "start_line": 5,
-                            "token": "b",
-                            "type": "lvar"
-                        },
-                        "start_col": 0,
-                        "start_line": 5,
-                        "type": "sclass"
-                    }
-                ],
+                    "end_col": 9,
+                    "end_line": 1,
+                    "selector": "new",
+                    "start_col": 0,
+                    "start_line": 1,
+                    "type": "send"
+                },
+                "body": null,
                 "end_col": 3,
-                "end_line": 6,
+                "end_line": 2,
                 "start_col": 0,
                 "start_line": 1,
-                "type": "begin"
+                "type": "block"
             }
         }
     }

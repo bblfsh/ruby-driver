@@ -8,54 +8,20 @@
                 "body": [
                     {
                         "args": {
+                            "end_col": 18,
+                            "end_line": 2,
+                            "start_col": 16,
+                            "start_line": 2,
                             "type": "args"
                         },
                         "body": [
                             {
-                                "body": [
-                                    {
-                                        "end_col": 13,
-                                        "end_line": 3,
-                                        "start_col": 8,
-                                        "start_line": 3,
-                                        "target": "a",
-                                        "type": "lvasgn",
-                                        "value": {
-                                            "end_col": 13,
-                                            "end_line": 3,
-                                            "start_col": 12,
-                                            "start_line": 3,
-                                            "token": 1,
-                                            "type": "int"
-                                        }
-                                    },
-                                    {
-                                        "end_col": 13,
-                                        "end_line": 4,
-                                        "start_col": 8,
-                                        "start_line": 4,
-                                        "target": "b",
-                                        "type": "lvasgn",
-                                        "value": {
-                                            "end_col": 13,
-                                            "end_line": 4,
-                                            "start_col": 12,
-                                            "start_line": 4,
-                                            "token": 2,
-                                            "type": "int"
-                                        }
-                                    }
-                                ],
-                                "end_col": 13,
-                                "end_line": 4,
-                                "start_col": 8,
-                                "start_line": 3,
-                                "type": "begin"
+                                "type": "NilClass"
                             }
                         ],
                         "end_col": 7,
                         "end_line": 2,
-                        "name": "method1",
+                        "name": "testfnc1",
                         "start_col": 4,
                         "start_line": 2,
                         "type": "def"
@@ -63,7 +29,7 @@
                 ],
                 "end_col": 5,
                 "end_line": 1,
-                "name": "A",
+                "name": "Testcls1",
                 "parent": null,
                 "start_col": 0,
                 "start_line": 1,

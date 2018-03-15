@@ -1,0 +1,28 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "RUBYAST": {
+            "module": {
+                "base": null,
+                "end_col": 15,
+                "end_line": 1,
+                "selector": "require",
+                "start_col": 0,
+                "start_line": 1,
+                "type": "send",
+                "values": [
+                    {
+                        "end_col": 15,
+                        "end_line": 1,
+                        "start_col": 8,
+                        "start_line": 1,
+                        "token": "while",
+                        "type": "str"
+                    }
+                ]
+            }
+        }
+    }
+}
