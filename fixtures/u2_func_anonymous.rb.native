@@ -1,0 +1,27 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "RUBYAST": {
+            "module": {
+                "args": null,
+                "blockdata": {
+                    "base": null,
+                    "end_col": 6,
+                    "end_line": 1,
+                    "selector": "lambda",
+                    "start_col": 0,
+                    "start_line": 1,
+                    "type": "send"
+                },
+                "body": null,
+                "end_col": 9,
+                "end_line": 1,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "block"
+            }
+        }
+    }
+}

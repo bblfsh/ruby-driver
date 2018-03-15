@@ -1,0 +1,116 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "RUBYAST": {
+            "module": {
+                "body": [
+                    {
+                        "body": [
+                            {
+                                "base": null,
+                                "end_col": 11,
+                                "end_line": 2,
+                                "selector": "private",
+                                "start_col": 4,
+                                "start_line": 2,
+                                "type": "send"
+                            },
+                            {
+                                "args": {
+                                    "end_col": 18,
+                                    "end_line": 3,
+                                    "start_col": 16,
+                                    "start_line": 3,
+                                    "type": "args"
+                                },
+                                "body": [
+                                    {
+                                        "type": "NilClass"
+                                    }
+                                ],
+                                "end_col": 7,
+                                "end_line": 3,
+                                "name": "testfnc1",
+                                "start_col": 4,
+                                "start_line": 3,
+                                "type": "def"
+                            },
+                            {
+                                "base": null,
+                                "end_col": 13,
+                                "end_line": 5,
+                                "selector": "protected",
+                                "start_col": 4,
+                                "start_line": 5,
+                                "type": "send"
+                            },
+                            {
+                                "args": {
+                                    "end_col": 18,
+                                    "end_line": 6,
+                                    "start_col": 16,
+                                    "start_line": 6,
+                                    "type": "args"
+                                },
+                                "body": [
+                                    {
+                                        "type": "NilClass"
+                                    }
+                                ],
+                                "end_col": 7,
+                                "end_line": 6,
+                                "name": "testfnc2",
+                                "start_col": 4,
+                                "start_line": 6,
+                                "type": "def"
+                            },
+                            {
+                                "base": null,
+                                "end_col": 10,
+                                "end_line": 8,
+                                "selector": "public",
+                                "start_col": 4,
+                                "start_line": 8,
+                                "type": "send"
+                            },
+                            {
+                                "args": {
+                                    "end_col": 18,
+                                    "end_line": 9,
+                                    "start_col": 16,
+                                    "start_line": 9,
+                                    "type": "args"
+                                },
+                                "body": [
+                                    {
+                                        "type": "NilClass"
+                                    }
+                                ],
+                                "end_col": 7,
+                                "end_line": 9,
+                                "name": "testfnc3",
+                                "start_col": 4,
+                                "start_line": 9,
+                                "type": "def"
+                            }
+                        ],
+                        "end_col": 22,
+                        "end_line": 9,
+                        "start_col": 4,
+                        "start_line": 2,
+                        "type": "begin"
+                    }
+                ],
+                "end_col": 5,
+                "end_line": 1,
+                "name": "Testcls1",
+                "parent": null,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "class"
+            }
+        }
+    }
+}

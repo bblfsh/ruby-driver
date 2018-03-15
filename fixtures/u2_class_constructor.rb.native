@@ -1,0 +1,79 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "RUBYAST": {
+            "module": {
+                "body": [
+                    {
+                        "body": [
+                            {
+                                "args": {
+                                    "end_col": 20,
+                                    "end_line": 2,
+                                    "start_col": 18,
+                                    "start_line": 2,
+                                    "type": "args"
+                                },
+                                "body": [
+                                    {
+                                        "type": "NilClass"
+                                    }
+                                ],
+                                "end_col": 7,
+                                "end_line": 2,
+                                "name": "initialize",
+                                "start_col": 4,
+                                "start_line": 2,
+                                "type": "def"
+                            },
+                            {
+                                "args": {
+                                    "children": [
+                                        {
+                                            "end_col": 17,
+                                            "end_line": 3,
+                                            "start_col": 13,
+                                            "start_line": 3,
+                                            "token": "args",
+                                            "type": "restarg"
+                                        }
+                                    ],
+                                    "end_col": 18,
+                                    "end_line": 3,
+                                    "start_col": 11,
+                                    "start_line": 3,
+                                    "type": "args"
+                                },
+                                "body": [
+                                    {
+                                        "type": "NilClass"
+                                    }
+                                ],
+                                "end_col": 7,
+                                "end_line": 3,
+                                "name": "new",
+                                "start_col": 4,
+                                "start_line": 3,
+                                "type": "def"
+                            }
+                        ],
+                        "end_col": 22,
+                        "end_line": 3,
+                        "start_col": 4,
+                        "start_line": 2,
+                        "type": "begin"
+                    }
+                ],
+                "end_col": 5,
+                "end_line": 1,
+                "name": "Testcls1",
+                "parent": null,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "class"
+            }
+        }
+    }
+}

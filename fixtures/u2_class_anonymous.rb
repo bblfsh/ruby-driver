@@ -1,0 +1,2 @@
+Class.new do
+end

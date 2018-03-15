@@ -1,0 +1,34 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "RUBYAST": {
+            "module": {
+                "args": {
+                    "end_col": 14,
+                    "end_line": 1,
+                    "start_col": 12,
+                    "start_line": 1,
+                    "type": "args"
+                },
+                "body": [
+                    {
+                        "end_col": 5,
+                        "end_line": 2,
+                        "start_col": 4,
+                        "start_line": 2,
+                        "token": 1,
+                        "type": "int"
+                    }
+                ],
+                "end_col": 3,
+                "end_line": 1,
+                "name": "testfnc1",
+                "start_col": 0,
+                "start_line": 1,
+                "type": "def"
+            }
+        }
+    }
+}

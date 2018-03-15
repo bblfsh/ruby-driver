@@ -1,0 +1,104 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "RUBYAST": {
+            "module": {
+                "body": [
+                    {
+                        "body": [
+                            {
+                                "base": null,
+                                "end_col": 11,
+                                "end_line": 2,
+                                "selector": "private",
+                                "start_col": 4,
+                                "start_line": 2,
+                                "type": "send"
+                            },
+                            {
+                                "end_col": 10,
+                                "end_line": 3,
+                                "start_col": 4,
+                                "start_line": 3,
+                                "target": "@a",
+                                "type": "ivasgn",
+                                "value": {
+                                    "end_col": 10,
+                                    "end_line": 3,
+                                    "start_col": 9,
+                                    "start_line": 3,
+                                    "token": 1,
+                                    "type": "int"
+                                }
+                            },
+                            {
+                                "base": null,
+                                "end_col": 13,
+                                "end_line": 5,
+                                "selector": "protected",
+                                "start_col": 4,
+                                "start_line": 5,
+                                "type": "send"
+                            },
+                            {
+                                "end_col": 10,
+                                "end_line": 6,
+                                "start_col": 4,
+                                "start_line": 6,
+                                "target": "@b",
+                                "type": "ivasgn",
+                                "value": {
+                                    "end_col": 10,
+                                    "end_line": 6,
+                                    "start_col": 9,
+                                    "start_line": 6,
+                                    "token": 2,
+                                    "type": "int"
+                                }
+                            },
+                            {
+                                "base": null,
+                                "end_col": 10,
+                                "end_line": 8,
+                                "selector": "public",
+                                "start_col": 4,
+                                "start_line": 8,
+                                "type": "send"
+                            },
+                            {
+                                "end_col": 10,
+                                "end_line": 9,
+                                "start_col": 4,
+                                "start_line": 9,
+                                "target": "@c",
+                                "type": "ivasgn",
+                                "value": {
+                                    "end_col": 10,
+                                    "end_line": 9,
+                                    "start_col": 9,
+                                    "start_line": 9,
+                                    "token": 3,
+                                    "type": "int"
+                                }
+                            }
+                        ],
+                        "end_col": 10,
+                        "end_line": 9,
+                        "start_col": 4,
+                        "start_line": 2,
+                        "type": "begin"
+                    }
+                ],
+                "end_col": 5,
+                "end_line": 1,
+                "name": "Testcls1",
+                "parent": null,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "class"
+            }
+        }
+    }
+}

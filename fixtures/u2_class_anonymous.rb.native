@@ -1,0 +1,35 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "RUBYAST": {
+            "module": {
+                "args": null,
+                "blockdata": {
+                    "base": {
+                        "base": null,
+                        "end_col": 5,
+                        "end_line": 1,
+                        "start_col": 0,
+                        "start_line": 1,
+                        "token": "Class",
+                        "type": "const"
+                    },
+                    "end_col": 9,
+                    "end_line": 1,
+                    "selector": "new",
+                    "start_col": 0,
+                    "start_line": 1,
+                    "type": "send"
+                },
+                "body": null,
+                "end_col": 3,
+                "end_line": 2,
+                "start_col": 0,
+                "start_line": 1,
+                "type": "block"
+            }
+        }
+    }
+}
