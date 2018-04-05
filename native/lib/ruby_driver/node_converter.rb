@@ -6,8 +6,14 @@ require 'parser/current'
 module NodeConverter
   class Converter
     def initialize(node, comments)
-      if not node.is_a?(Parser::AST::Node)
-        raise "Object is not a Parser::AST::Node"
+      @empty_with_comments = false
+      if node.is_a?(NilClass) and comments != nil
+        # Since Ruby parses comments and "normal" nodes separately, it will consider
+        # a file with only comments as a NilNode and refuse to parse anymore. We fix it
+        # changing the NilNode to a empty module node
+        @empty_with_comments = true
+      elsif not node.is_a?(Parser::AST::Node)
+        raise "Object is not a Parser::AST::Node, is: #{node.class.name}"
       end
 
       @root = node
@@ -148,6 +154,13 @@ module NodeConverter
 
       when "regopt"
         return sexp_to_hash(node, {}, 0, "options")
+
+      when "NilClass"
+        if @empty_with_comments
+          return {"type" => "module", "name" => "empty_module"}
+        else
+          return {"type" => "NilNode"}
+        end
 
       else
         # default conversion
