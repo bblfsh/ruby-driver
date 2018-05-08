@@ -4,35 +4,36 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "until",
                 "body": {
-                    "end_col": 9,
-                    "end_line": 2,
-                    "start_col": 4,
-                    "start_line": 2,
+                    "@type": "lvasgn",
+                    "pos_col_end": 9,
+                    "pos_col_start": 5,
+                    "pos_line_end": 2,
+                    "pos_line_start": 2,
                     "target": "a",
-                    "type": "lvasgn",
                     "value": {
-                        "end_col": 9,
-                        "end_line": 2,
-                        "start_col": 8,
-                        "start_line": 2,
-                        "token": 1,
-                        "type": "int"
+                        "@type": "int",
+                        "pos_col_end": 9,
+                        "pos_col_start": 9,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
+                        "token": 1
                     }
                 },
                 "condition": {
-                    "end_col": 10,
-                    "end_line": 1,
-                    "start_col": 6,
-                    "start_line": 1,
-                    "type": "true"
+                    "@type": "true",
+                    "pos_col_end": 10,
+                    "pos_col_start": 7,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
                 },
-                "end_col": 3,
-                "end_line": 3,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "until"
+                "pos_col_end": 3,
+                "pos_col_start": 1,
+                "pos_line_end": 3,
+                "pos_line_start": 1
             }
         }
     }

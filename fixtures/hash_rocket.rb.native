@@ -4,67 +4,68 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
-                "end_col": 24,
-                "end_line": 1,
-                "start_col": 0,
-                "start_line": 1,
+                "@type": "lvasgn",
+                "pos_col_end": 24,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1,
                 "target": "a",
-                "type": "lvasgn",
                 "value": {
+                    "@type": "hash",
                     "contents": [
                         {
+                            "@type": "pair",
                             "_1": {
-                                "end_col": 8,
-                                "end_line": 1,
-                                "start_col": 5,
-                                "start_line": 1,
-                                "token": "a",
-                                "type": "str"
+                                "@type": "str",
+                                "pos_col_end": 8,
+                                "pos_col_start": 6,
+                                "pos_line_end": 1,
+                                "pos_line_start": 1,
+                                "token": "a"
                             },
                             "_2": {
-                                "end_col": 13,
-                                "end_line": 1,
-                                "start_col": 12,
-                                "start_line": 1,
-                                "token": 1,
-                                "type": "int"
+                                "@type": "int",
+                                "pos_col_end": 13,
+                                "pos_col_start": 13,
+                                "pos_line_end": 1,
+                                "pos_line_start": 1,
+                                "token": 1
                             },
-                            "end_col": 13,
-                            "end_line": 1,
-                            "start_col": 5,
-                            "start_line": 1,
-                            "type": "pair"
+                            "pos_col_end": 13,
+                            "pos_col_start": 6,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1
                         },
                         {
+                            "@type": "pair",
                             "_1": {
-                                "end_col": 18,
-                                "end_line": 1,
-                                "start_col": 15,
-                                "start_line": 1,
-                                "token": "b",
-                                "type": "str"
+                                "@type": "str",
+                                "pos_col_end": 18,
+                                "pos_col_start": 16,
+                                "pos_line_end": 1,
+                                "pos_line_start": 1,
+                                "token": "b"
                             },
                             "_2": {
-                                "end_col": 23,
-                                "end_line": 1,
-                                "start_col": 22,
-                                "start_line": 1,
-                                "token": 2,
-                                "type": "int"
+                                "@type": "int",
+                                "pos_col_end": 23,
+                                "pos_col_start": 23,
+                                "pos_line_end": 1,
+                                "pos_line_start": 1,
+                                "token": 2
                             },
-                            "end_col": 23,
-                            "end_line": 1,
-                            "start_col": 15,
-                            "start_line": 1,
-                            "type": "pair"
+                            "pos_col_end": 23,
+                            "pos_col_start": 16,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1
                         }
                     ],
-                    "end_col": 24,
-                    "end_line": 1,
-                    "start_col": 4,
-                    "start_line": 1,
-                    "type": "hash"
+                    "pos_col_end": 24,
+                    "pos_col_start": 5,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
                 }
             }
         }

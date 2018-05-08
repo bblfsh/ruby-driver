@@ -4,75 +4,76 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "class",
                 "body": [
                     {
+                        "@type": "begin",
                         "body": [
                             {
+                                "@type": "def",
                                 "args": {
-                                    "end_col": 20,
-                                    "end_line": 2,
-                                    "start_col": 18,
-                                    "start_line": 2,
-                                    "type": "args"
+                                    "@type": "args",
+                                    "pos_col_end": 20,
+                                    "pos_col_start": 19,
+                                    "pos_line_end": 2,
+                                    "pos_line_start": 2
                                 },
                                 "body": [
                                     {
-                                        "type": "NilClass"
+                                        "@type": "NilNode"
                                     }
                                 ],
-                                "end_col": 7,
-                                "end_line": 2,
                                 "name": "initialize",
-                                "start_col": 4,
-                                "start_line": 2,
-                                "type": "def"
+                                "pos_col_end": 7,
+                                "pos_col_start": 5,
+                                "pos_line_end": 2,
+                                "pos_line_start": 2
                             },
                             {
+                                "@type": "def",
                                 "args": {
+                                    "@type": "args",
                                     "children": [
                                         {
-                                            "end_col": 17,
-                                            "end_line": 3,
-                                            "start_col": 13,
-                                            "start_line": 3,
-                                            "token": "args",
-                                            "type": "restarg"
+                                            "@type": "restarg",
+                                            "pos_col_end": 17,
+                                            "pos_col_start": 14,
+                                            "pos_line_end": 3,
+                                            "pos_line_start": 3,
+                                            "token": "args"
                                         }
                                     ],
-                                    "end_col": 18,
-                                    "end_line": 3,
-                                    "start_col": 11,
-                                    "start_line": 3,
-                                    "type": "args"
+                                    "pos_col_end": 18,
+                                    "pos_col_start": 12,
+                                    "pos_line_end": 3,
+                                    "pos_line_start": 3
                                 },
                                 "body": [
                                     {
-                                        "type": "NilClass"
+                                        "@type": "NilNode"
                                     }
                                 ],
-                                "end_col": 7,
-                                "end_line": 3,
                                 "name": "new",
-                                "start_col": 4,
-                                "start_line": 3,
-                                "type": "def"
+                                "pos_col_end": 7,
+                                "pos_col_start": 5,
+                                "pos_line_end": 3,
+                                "pos_line_start": 3
                             }
                         ],
-                        "end_col": 22,
-                        "end_line": 3,
-                        "start_col": 4,
-                        "start_line": 2,
-                        "type": "begin"
+                        "pos_col_end": 22,
+                        "pos_col_start": 5,
+                        "pos_line_end": 3,
+                        "pos_line_start": 2
                     }
                 ],
-                "end_col": 5,
-                "end_line": 1,
                 "name": "Testcls1",
                 "parent": null,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "class"
+                "pos_col_end": 5,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
             }
         }
     }

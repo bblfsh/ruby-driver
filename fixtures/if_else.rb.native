@@ -4,53 +4,54 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "if",
                 "body": {
-                    "end_col": 9,
-                    "end_line": 2,
-                    "start_col": 4,
-                    "start_line": 2,
+                    "@type": "lvasgn",
+                    "pos_col_end": 9,
+                    "pos_col_start": 5,
+                    "pos_line_end": 2,
+                    "pos_line_start": 2,
                     "target": "a",
-                    "type": "lvasgn",
                     "value": {
-                        "end_col": 9,
-                        "end_line": 2,
-                        "start_col": 8,
-                        "start_line": 2,
-                        "token": 1,
-                        "type": "int"
+                        "@type": "int",
+                        "pos_col_end": 9,
+                        "pos_col_start": 9,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
+                        "token": 1
                     }
                 },
                 "condition": {
+                    "@type": "send",
                     "base": null,
-                    "end_col": 6,
-                    "end_line": 1,
-                    "selector": "foo",
-                    "start_col": 3,
-                    "start_line": 1,
-                    "type": "send"
+                    "pos_col_end": 6,
+                    "pos_col_start": 4,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1,
+                    "selector": "foo"
                 },
                 "else": {
-                    "end_col": 9,
-                    "end_line": 4,
-                    "start_col": 4,
-                    "start_line": 4,
+                    "@type": "lvasgn",
+                    "pos_col_end": 9,
+                    "pos_col_start": 5,
+                    "pos_line_end": 4,
+                    "pos_line_start": 4,
                     "target": "b",
-                    "type": "lvasgn",
                     "value": {
-                        "end_col": 9,
-                        "end_line": 4,
-                        "start_col": 8,
-                        "start_line": 4,
-                        "token": 2,
-                        "type": "int"
+                        "@type": "int",
+                        "pos_col_end": 9,
+                        "pos_col_start": 9,
+                        "pos_line_end": 4,
+                        "pos_line_start": 4,
+                        "token": 2
                     }
                 },
-                "end_col": 2,
-                "end_line": 1,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "if"
+                "pos_col_end": 2,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
             }
         }
     }

@@ -5,6 +5,8 @@ require 'parser/current'
 
 module NodeConverter
   class Converter
+    @@typekey = "@type"
+
     def initialize(node, comments)
       @empty_with_comments = false
       if node.is_a?(NilClass) and comments != nil
@@ -23,7 +25,10 @@ module NodeConverter
     end
 
     def tohash()
-      @dict["ast"] = {"RUBYAST": {"module": convert(@root)}}
+      @dict["ast"] = {
+        "RUBYAST": {"file" => convert(@root),
+                    @@typekey => "module"}
+      }
       add_comments()
       return @dict["ast"]
     end
@@ -70,7 +75,7 @@ module NodeConverter
 
       # the inner nodes of the above
       when "Complex", "Rational", "Symbol"
-        return {"type" => node_type(node), "token" => node.to_s}
+        return {@@typekey => node_type(node), "token" => node.to_s}
 
       #when "mlhs"
         #return node.children.map{ |x| convert(x) }.compact
@@ -112,7 +117,7 @@ module NodeConverter
         return d
 
       when "when"
-        d = {"type": "when"}
+        d = {@@typekey => "when"}
         d["conditions"] = node.children[0..-2].map{ |x| convert(x) }.compact
         d["body"] = convert(node.children[-1])
         return d
@@ -157,9 +162,9 @@ module NodeConverter
 
       when "NilClass"
         if @empty_with_comments
-          return {"type" => "module", "name" => "empty_module"}
+          return {@@typekey=> "module", "name" => "empty_module"}
         else
-          return {"type" => "NilNode"}
+          return {@@typekey=> "NilNode"}
         end
 
       else
@@ -191,7 +196,7 @@ module NodeConverter
     # after cdr_index will be converted and assigned as a list of dictnodes to the cdr_key
     # property in the node.
     def sexp_to_hash(node, table, cdr_index=nil, cdr_key=nil)
-      d = {"type" => node_type(node)}
+      d = {@@typekey=> node_type(node)}
 
       table.each do |propname, idx|
         if propname.start_with? "s_"
@@ -224,15 +229,15 @@ module NodeConverter
     def add_from_subelem(node, hash, key)
       subelem = node.loc.send(key)
       if subelem != nil
-        hash["start_line"] = subelem.begin.line
-        hash["end_line"] = subelem.end.line
-        hash["start_col"] = subelem.begin.column
-        hash["end_col"] = subelem.end.column
+        hash["pos_line_start"] = subelem.begin.line
+        hash["pos_line_end"] = subelem.end.line
+        hash["pos_col_start"] = subelem.begin.column + 1
+        hash["pos_col_end"] = subelem.end.column
       end
     end
 
     def add_position(node, hash)
-      case hash["type"]
+      case hash[@@typekey]
 
       when "defined?", "module", "class", "sclass", "def", "defs",
         "undef", "alias", "super", "zsuper", "yield", "if", "when",
@@ -251,7 +256,7 @@ module NodeConverter
         subelem = "expression"
       end
 
-      if hash["type"] == "if" and not node.loc.respond_to?("keyword")
+      if hash[@@typekey] == "if" and not node.loc.respond_to?("keyword")
         subelem = "question"
       end
 
@@ -271,15 +276,16 @@ module NodeConverter
       comments = []
 
       @comments.each do |comment|
+        # XXX remove leading
         commentdict = {
-          "type" => "comment",
+          @@typekey => "comment",
           "text" => comment.text,
           "inline" => comment.inline?,
           "documentation" => comment.document?,
-          "start_line" => comment.loc.first_line,
-          "end_line" => comment.loc.last_line,
-          "start_col" => comment.loc.column,
-          "end_col" => comment.loc.last_column
+          "pos_line_start" => comment.loc.first_line,
+          "pos_line_end" => comment.loc.last_line,
+          "pos_col_start" => comment.loc.column + 1,
+          "pos_col_end" => comment.loc.last_column
         }
         comments.push(commentdict)
       end

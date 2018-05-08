@@ -4,150 +4,151 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "begin",
                 "body": [
                     {
+                        "@type": "for",
                         "body": {
-                            "end_col": 9,
-                            "end_line": 2,
-                            "start_col": 4,
-                            "start_line": 2,
+                            "@type": "lvasgn",
+                            "pos_col_end": 9,
+                            "pos_col_start": 5,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2,
                             "target": "a",
-                            "type": "lvasgn",
                             "value": {
-                                "end_col": 9,
-                                "end_line": 2,
-                                "start_col": 8,
-                                "start_line": 2,
-                                "token": "i",
-                                "type": "lvar"
+                                "@type": "lvar",
+                                "pos_col_end": 9,
+                                "pos_col_start": 9,
+                                "pos_line_end": 2,
+                                "pos_line_start": 2,
+                                "token": "i"
                             }
                         },
-                        "end_col": 3,
-                        "end_line": 1,
                         "iterated": {
+                            "@type": "irange",
                             "_1": {
-                                "end_col": 10,
-                                "end_line": 1,
-                                "start_col": 9,
-                                "start_line": 1,
-                                "token": 0,
-                                "type": "int"
+                                "@type": "int",
+                                "pos_col_end": 10,
+                                "pos_col_start": 10,
+                                "pos_line_end": 1,
+                                "pos_line_start": 1,
+                                "token": 0
                             },
                             "_2": {
-                                "end_col": 13,
-                                "end_line": 1,
-                                "start_col": 12,
-                                "start_line": 1,
-                                "token": 5,
-                                "type": "int"
+                                "@type": "int",
+                                "pos_col_end": 13,
+                                "pos_col_start": 13,
+                                "pos_line_end": 1,
+                                "pos_line_start": 1,
+                                "token": 5
                             },
-                            "end_col": 13,
-                            "end_line": 1,
-                            "start_col": 9,
-                            "start_line": 1,
-                            "type": "irange"
+                            "pos_col_end": 13,
+                            "pos_col_start": 10,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1
                         },
                         "iterators": {
-                            "end_col": 5,
-                            "end_line": 1,
-                            "start_col": 4,
-                            "start_line": 1,
+                            "@type": "lvasgn",
+                            "pos_col_end": 5,
+                            "pos_col_start": 5,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1,
                             "target": "i",
-                            "type": "lvasgn",
                             "value": null
                         },
-                        "start_col": 0,
-                        "start_line": 1,
-                        "type": "for"
+                        "pos_col_end": 3,
+                        "pos_col_start": 1,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1
                     },
                     {
-                        "end_col": 13,
-                        "end_line": 5,
-                        "start_col": 0,
-                        "start_line": 5,
+                        "@type": "lvasgn",
+                        "pos_col_end": 13,
+                        "pos_col_start": 1,
+                        "pos_line_end": 5,
+                        "pos_line_start": 5,
                         "target": "b",
-                        "type": "lvasgn",
                         "value": {
+                            "@type": "array",
                             "contents": [
                                 {
-                                    "end_col": 6,
-                                    "end_line": 5,
-                                    "start_col": 5,
-                                    "start_line": 5,
-                                    "token": 1,
-                                    "type": "int"
+                                    "@type": "int",
+                                    "pos_col_end": 6,
+                                    "pos_col_start": 6,
+                                    "pos_line_end": 5,
+                                    "pos_line_start": 5,
+                                    "token": 1
                                 },
                                 {
-                                    "end_col": 9,
-                                    "end_line": 5,
-                                    "start_col": 8,
-                                    "start_line": 5,
-                                    "token": 2,
-                                    "type": "int"
+                                    "@type": "int",
+                                    "pos_col_end": 9,
+                                    "pos_col_start": 9,
+                                    "pos_line_end": 5,
+                                    "pos_line_start": 5,
+                                    "token": 2
                                 },
                                 {
-                                    "end_col": 12,
-                                    "end_line": 5,
-                                    "start_col": 11,
-                                    "start_line": 5,
-                                    "token": 3,
-                                    "type": "int"
+                                    "@type": "int",
+                                    "pos_col_end": 12,
+                                    "pos_col_start": 12,
+                                    "pos_line_end": 5,
+                                    "pos_line_start": 5,
+                                    "token": 3
                                 }
                             ],
-                            "end_col": 13,
-                            "end_line": 5,
-                            "start_col": 4,
-                            "start_line": 5,
-                            "type": "array"
+                            "pos_col_end": 13,
+                            "pos_col_start": 5,
+                            "pos_line_end": 5,
+                            "pos_line_start": 5
                         }
                     },
                     {
+                        "@type": "for",
                         "body": {
-                            "end_col": 9,
-                            "end_line": 8,
-                            "start_col": 4,
-                            "start_line": 8,
+                            "@type": "lvasgn",
+                            "pos_col_end": 9,
+                            "pos_col_start": 5,
+                            "pos_line_end": 8,
+                            "pos_line_start": 8,
                             "target": "x",
-                            "type": "lvasgn",
                             "value": {
-                                "end_col": 9,
-                                "end_line": 8,
-                                "start_col": 8,
-                                "start_line": 8,
-                                "token": "i",
-                                "type": "lvar"
+                                "@type": "lvar",
+                                "pos_col_end": 9,
+                                "pos_col_start": 9,
+                                "pos_line_end": 8,
+                                "pos_line_start": 8,
+                                "token": "i"
                             }
                         },
-                        "end_col": 3,
-                        "end_line": 7,
                         "iterated": {
-                            "end_col": 10,
-                            "end_line": 7,
-                            "start_col": 9,
-                            "start_line": 7,
-                            "token": "b",
-                            "type": "lvar"
+                            "@type": "lvar",
+                            "pos_col_end": 10,
+                            "pos_col_start": 10,
+                            "pos_line_end": 7,
+                            "pos_line_start": 7,
+                            "token": "b"
                         },
                         "iterators": {
-                            "end_col": 5,
-                            "end_line": 7,
-                            "start_col": 4,
-                            "start_line": 7,
+                            "@type": "lvasgn",
+                            "pos_col_end": 5,
+                            "pos_col_start": 5,
+                            "pos_line_end": 7,
+                            "pos_line_start": 7,
                             "target": "i",
-                            "type": "lvasgn",
                             "value": null
                         },
-                        "start_col": 0,
-                        "start_line": 7,
-                        "type": "for"
+                        "pos_col_end": 3,
+                        "pos_col_start": 1,
+                        "pos_line_end": 7,
+                        "pos_line_start": 7
                     }
                 ],
-                "end_col": 3,
-                "end_line": 9,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "begin"
+                "pos_col_end": 3,
+                "pos_col_start": 1,
+                "pos_line_end": 9,
+                "pos_line_start": 1
             }
         }
     }

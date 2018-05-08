@@ -4,138 +4,139 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "begin",
                 "body": [
                     {
-                        "end_col": 8,
-                        "end_line": 1,
-                        "start_col": 0,
-                        "start_line": 1,
+                        "@type": "lvasgn",
+                        "pos_col_end": 8,
+                        "pos_col_start": 1,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1,
                         "target": "a",
-                        "type": "lvasgn",
                         "value": {
+                            "@type": "xstr",
                             "children": [
                                 {
-                                    "end_col": 7,
-                                    "end_line": 1,
-                                    "start_col": 5,
-                                    "start_line": 1,
-                                    "token": "ls",
-                                    "type": "str"
+                                    "@type": "str",
+                                    "pos_col_end": 7,
+                                    "pos_col_start": 6,
+                                    "pos_line_end": 1,
+                                    "pos_line_start": 1,
+                                    "token": "ls"
                                 }
                             ],
-                            "end_col": 8,
-                            "end_line": 1,
-                            "start_col": 4,
-                            "start_line": 1,
-                            "type": "xstr"
+                            "pos_col_end": 8,
+                            "pos_col_start": 5,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1
                         }
                     },
                     {
-                        "end_col": 7,
-                        "end_line": 2,
-                        "start_col": 0,
-                        "start_line": 2,
+                        "@type": "lvasgn",
+                        "pos_col_end": 7,
+                        "pos_col_start": 1,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
                         "target": "bar",
-                        "type": "lvasgn",
                         "value": {
-                            "end_col": 7,
-                            "end_line": 2,
-                            "start_col": 6,
-                            "start_line": 2,
-                            "token": 1,
-                            "type": "int"
+                            "@type": "int",
+                            "pos_col_end": 7,
+                            "pos_col_start": 7,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2,
+                            "token": 1
                         }
                     },
                     {
-                        "end_col": 18,
-                        "end_line": 3,
-                        "start_col": 0,
-                        "start_line": 3,
+                        "@type": "lvasgn",
+                        "pos_col_end": 18,
+                        "pos_col_start": 1,
+                        "pos_line_end": 3,
+                        "pos_line_start": 3,
                         "target": "b",
-                        "type": "lvasgn",
                         "value": {
+                            "@type": "xstr",
                             "children": [
                                 {
-                                    "end_col": 8,
-                                    "end_line": 3,
-                                    "start_col": 5,
-                                    "start_line": 3,
-                                    "token": "foo",
-                                    "type": "str"
+                                    "@type": "str",
+                                    "pos_col_end": 8,
+                                    "pos_col_start": 6,
+                                    "pos_line_end": 3,
+                                    "pos_line_start": 3,
+                                    "token": "foo"
                                 },
                                 {
+                                    "@type": "begin",
                                     "body": [
                                         {
-                                            "end_col": 13,
-                                            "end_line": 3,
-                                            "start_col": 10,
-                                            "start_line": 3,
-                                            "token": "bar",
-                                            "type": "lvar"
+                                            "@type": "lvar",
+                                            "pos_col_end": 13,
+                                            "pos_col_start": 11,
+                                            "pos_line_end": 3,
+                                            "pos_line_start": 3,
+                                            "token": "bar"
                                         }
                                     ],
-                                    "end_col": 14,
-                                    "end_line": 3,
-                                    "start_col": 8,
-                                    "start_line": 3,
-                                    "type": "begin"
+                                    "pos_col_end": 14,
+                                    "pos_col_start": 9,
+                                    "pos_line_end": 3,
+                                    "pos_line_start": 3
                                 },
                                 {
-                                    "end_col": 17,
-                                    "end_line": 3,
-                                    "start_col": 14,
-                                    "start_line": 3,
-                                    "token": "baz",
-                                    "type": "str"
+                                    "@type": "str",
+                                    "pos_col_end": 17,
+                                    "pos_col_start": 15,
+                                    "pos_line_end": 3,
+                                    "pos_line_start": 3,
+                                    "token": "baz"
                                 }
                             ],
-                            "end_col": 18,
-                            "end_line": 3,
-                            "start_col": 4,
-                            "start_line": 3,
-                            "type": "xstr"
+                            "pos_col_end": 18,
+                            "pos_col_start": 5,
+                            "pos_line_end": 3,
+                            "pos_line_start": 3
                         }
                     },
                     {
-                        "end_col": 12,
-                        "end_line": 4,
-                        "start_col": 0,
-                        "start_line": 4,
+                        "@type": "lvasgn",
+                        "pos_col_end": 12,
+                        "pos_col_start": 1,
+                        "pos_line_end": 4,
+                        "pos_line_start": 4,
                         "target": "c",
-                        "type": "lvasgn",
                         "value": {
+                            "@type": "xstr",
                             "children": [
                                 {
-                                    "end_col": 0,
-                                    "end_line": 6,
-                                    "start_col": 0,
-                                    "start_line": 5,
-                                    "token": "    foobar\n",
-                                    "type": "str"
+                                    "@type": "str",
+                                    "pos_col_end": 0,
+                                    "pos_col_start": 1,
+                                    "pos_line_end": 6,
+                                    "pos_line_start": 5,
+                                    "token": "    foobar\n"
                                 },
                                 {
-                                    "end_col": 0,
-                                    "end_line": 7,
-                                    "start_col": 0,
-                                    "start_line": 6,
-                                    "token": "    multiline\n",
-                                    "type": "str"
+                                    "@type": "str",
+                                    "pos_col_end": 0,
+                                    "pos_col_start": 1,
+                                    "pos_line_end": 7,
+                                    "pos_line_start": 6,
+                                    "token": "    multiline\n"
                                 }
                             ],
-                            "end_col": 12,
-                            "end_line": 4,
-                            "start_col": 4,
-                            "start_line": 4,
-                            "type": "xstr"
+                            "pos_col_end": 12,
+                            "pos_col_start": 5,
+                            "pos_line_end": 4,
+                            "pos_line_start": 4
                         }
                     }
                 ],
-                "end_col": 12,
-                "end_line": 4,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "begin"
+                "pos_col_end": 12,
+                "pos_col_start": 1,
+                "pos_line_end": 4,
+                "pos_line_start": 1
             }
         }
     }

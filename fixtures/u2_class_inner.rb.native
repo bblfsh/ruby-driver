@@ -4,30 +4,31 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "class",
                 "body": [
                     {
+                        "@type": "class",
                         "body": [
                             {
-                                "type": "NilClass"
+                                "@type": "NilNode"
                             }
                         ],
-                        "end_col": 9,
-                        "end_line": 2,
                         "name": "Testcls2",
                         "parent": null,
-                        "start_col": 4,
-                        "start_line": 2,
-                        "type": "class"
+                        "pos_col_end": 9,
+                        "pos_col_start": 5,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2
                     }
                 ],
-                "end_col": 5,
-                "end_line": 1,
                 "name": "Testcls1",
                 "parent": null,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "class"
+                "pos_col_end": 5,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
             }
         }
     }

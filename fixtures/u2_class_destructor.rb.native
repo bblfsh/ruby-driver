@@ -4,104 +4,105 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "class",
                 "body": [
                     {
+                        "@type": "begin",
                         "body": [
                             {
+                                "@type": "defs",
                                 "args": null,
                                 "base": {
-                                    "end_col": 12,
-                                    "end_line": 2,
-                                    "start_col": 8,
-                                    "start_line": 2,
-                                    "type": "self"
+                                    "@type": "self",
+                                    "pos_col_end": 12,
+                                    "pos_col_start": 9,
+                                    "pos_line_end": 2,
+                                    "pos_line_start": 2
                                 },
                                 "class": null,
-                                "end_col": 7,
-                                "end_line": 2,
                                 "name": "testfnc1",
-                                "start_col": 4,
-                                "start_line": 2,
-                                "type": "defs"
+                                "pos_col_end": 7,
+                                "pos_col_start": 5,
+                                "pos_line_end": 2,
+                                "pos_line_start": 2
                             },
                             {
+                                "@type": "def",
                                 "args": {
-                                    "type": "args"
+                                    "@type": "args"
                                 },
                                 "body": [
                                     {
+                                        "@type": "send",
                                         "base": {
+                                            "@type": "const",
                                             "base": null,
-                                            "end_col": 19,
-                                            "end_line": 5,
-                                            "start_col": 8,
-                                            "start_line": 5,
-                                            "token": "ObjectSpace",
-                                            "type": "const"
+                                            "pos_col_end": 19,
+                                            "pos_col_start": 9,
+                                            "pos_line_end": 5,
+                                            "pos_line_start": 5,
+                                            "token": "ObjectSpace"
                                         },
-                                        "end_col": 63,
-                                        "end_line": 5,
+                                        "pos_col_end": 63,
+                                        "pos_col_start": 9,
+                                        "pos_line_end": 5,
+                                        "pos_line_start": 5,
                                         "selector": "define_finalizer",
-                                        "start_col": 8,
-                                        "start_line": 5,
-                                        "type": "send",
                                         "values": [
                                             {
-                                                "end_col": 41,
-                                                "end_line": 5,
-                                                "start_col": 37,
-                                                "start_line": 5,
-                                                "type": "self"
+                                                "@type": "self",
+                                                "pos_col_end": 41,
+                                                "pos_col_start": 38,
+                                                "pos_line_end": 5,
+                                                "pos_line_start": 5
                                             },
                                             {
+                                                "@type": "send",
                                                 "base": {
+                                                    "@type": "send",
                                                     "base": {
-                                                        "end_col": 47,
-                                                        "end_line": 5,
-                                                        "start_col": 43,
-                                                        "start_line": 5,
-                                                        "type": "self"
+                                                        "@type": "self",
+                                                        "pos_col_end": 47,
+                                                        "pos_col_start": 44,
+                                                        "pos_line_end": 5,
+                                                        "pos_line_start": 5
                                                     },
-                                                    "end_col": 53,
-                                                    "end_line": 5,
-                                                    "selector": "class",
-                                                    "start_col": 43,
-                                                    "start_line": 5,
-                                                    "type": "send"
+                                                    "pos_col_end": 53,
+                                                    "pos_col_start": 44,
+                                                    "pos_line_end": 5,
+                                                    "pos_line_start": 5,
+                                                    "selector": "class"
                                                 },
-                                                "end_col": 62,
-                                                "end_line": 5,
-                                                "selector": "testfnc1",
-                                                "start_col": 43,
-                                                "start_line": 5,
-                                                "type": "send"
+                                                "pos_col_end": 62,
+                                                "pos_col_start": 44,
+                                                "pos_line_end": 5,
+                                                "pos_line_start": 5,
+                                                "selector": "testfnc1"
                                             }
                                         ]
                                     }
                                 ],
-                                "end_col": 7,
-                                "end_line": 4,
                                 "name": "initialize",
-                                "start_col": 4,
-                                "start_line": 4,
-                                "type": "def"
+                                "pos_col_end": 7,
+                                "pos_col_start": 5,
+                                "pos_line_end": 4,
+                                "pos_line_start": 4
                             }
                         ],
-                        "end_col": 7,
-                        "end_line": 6,
-                        "start_col": 4,
-                        "start_line": 2,
-                        "type": "begin"
+                        "pos_col_end": 7,
+                        "pos_col_start": 5,
+                        "pos_line_end": 6,
+                        "pos_line_start": 2
                     }
                 ],
-                "end_col": 5,
-                "end_line": 1,
                 "name": "Testcls1",
                 "parent": null,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "class"
+                "pos_col_end": 5,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
             }
         }
     }

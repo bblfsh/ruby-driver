@@ -4,21 +4,22 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "casgn",
                 "base": null,
-                "end_col": 7,
-                "end_line": 1,
+                "pos_col_end": 7,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1,
                 "selector": "Foo",
-                "start_col": 0,
-                "start_line": 1,
-                "type": "casgn",
                 "value": {
-                    "end_col": 7,
-                    "end_line": 1,
-                    "start_col": 6,
-                    "start_line": 1,
-                    "token": 1,
-                    "type": "int"
+                    "@type": "int",
+                    "pos_col_end": 7,
+                    "pos_col_start": 7,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1,
+                    "token": 1
                 }
             }
         }

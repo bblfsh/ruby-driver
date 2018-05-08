@@ -4,31 +4,32 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "block",
                 "args": null,
                 "blockdata": {
+                    "@type": "send",
                     "base": {
+                        "@type": "const",
                         "base": null,
-                        "end_col": 5,
-                        "end_line": 1,
-                        "start_col": 0,
-                        "start_line": 1,
-                        "token": "Class",
-                        "type": "const"
+                        "pos_col_end": 5,
+                        "pos_col_start": 1,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1,
+                        "token": "Class"
                     },
-                    "end_col": 9,
-                    "end_line": 1,
-                    "selector": "new",
-                    "start_col": 0,
-                    "start_line": 1,
-                    "type": "send"
+                    "pos_col_end": 9,
+                    "pos_col_start": 1,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1,
+                    "selector": "new"
                 },
                 "body": null,
-                "end_col": 3,
-                "end_line": 2,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "block"
+                "pos_col_end": 3,
+                "pos_col_start": 1,
+                "pos_line_end": 2,
+                "pos_line_start": 1
             }
         }
     }

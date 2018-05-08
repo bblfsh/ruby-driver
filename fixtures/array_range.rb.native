@@ -4,202 +4,203 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "begin",
                 "body": [
                     {
-                        "end_col": 13,
-                        "end_line": 1,
-                        "start_col": 0,
-                        "start_line": 1,
+                        "@type": "lvasgn",
+                        "pos_col_end": 13,
+                        "pos_col_start": 1,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1,
                         "target": "a",
-                        "type": "lvasgn",
                         "value": {
+                            "@type": "array",
                             "contents": [
                                 {
-                                    "end_col": 6,
-                                    "end_line": 1,
-                                    "start_col": 5,
-                                    "start_line": 1,
-                                    "token": 1,
-                                    "type": "int"
+                                    "@type": "int",
+                                    "pos_col_end": 6,
+                                    "pos_col_start": 6,
+                                    "pos_line_end": 1,
+                                    "pos_line_start": 1,
+                                    "token": 1
                                 },
                                 {
-                                    "end_col": 9,
-                                    "end_line": 1,
-                                    "start_col": 8,
-                                    "start_line": 1,
-                                    "token": 2,
-                                    "type": "int"
+                                    "@type": "int",
+                                    "pos_col_end": 9,
+                                    "pos_col_start": 9,
+                                    "pos_line_end": 1,
+                                    "pos_line_start": 1,
+                                    "token": 2
                                 },
                                 {
-                                    "end_col": 12,
-                                    "end_line": 1,
-                                    "start_col": 11,
-                                    "start_line": 1,
-                                    "token": 3,
-                                    "type": "int"
+                                    "@type": "int",
+                                    "pos_col_end": 12,
+                                    "pos_col_start": 12,
+                                    "pos_line_end": 1,
+                                    "pos_line_start": 1,
+                                    "token": 3
                                 }
                             ],
-                            "end_col": 13,
-                            "end_line": 1,
-                            "start_col": 4,
-                            "start_line": 1,
-                            "type": "array"
+                            "pos_col_end": 13,
+                            "pos_col_start": 5,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1
                         }
                     },
                     {
-                        "end_col": 18,
-                        "end_line": 2,
-                        "start_col": 0,
-                        "start_line": 2,
+                        "@type": "lvasgn",
+                        "pos_col_end": 18,
+                        "pos_col_start": 1,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
                         "target": "inc_end",
-                        "type": "lvasgn",
                         "value": {
+                            "@type": "send",
                             "base": {
-                                "end_col": 11,
-                                "end_line": 2,
-                                "start_col": 10,
-                                "start_line": 2,
-                                "token": "a",
-                                "type": "lvar"
+                                "@type": "lvar",
+                                "pos_col_end": 11,
+                                "pos_col_start": 11,
+                                "pos_line_end": 2,
+                                "pos_line_start": 2,
+                                "token": "a"
                             },
-                            "end_col": 18,
-                            "end_line": 2,
+                            "pos_col_end": 18,
+                            "pos_col_start": 11,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2,
                             "selector": "[]",
-                            "start_col": 10,
-                            "start_line": 2,
-                            "type": "send",
                             "values": [
                                 {
+                                    "@type": "irange",
                                     "_1": {
-                                        "end_col": 13,
-                                        "end_line": 2,
-                                        "start_col": 12,
-                                        "start_line": 2,
-                                        "token": 1,
-                                        "type": "int"
+                                        "@type": "int",
+                                        "pos_col_end": 13,
+                                        "pos_col_start": 13,
+                                        "pos_line_end": 2,
+                                        "pos_line_start": 2,
+                                        "token": 1
                                     },
                                     "_2": {
-                                        "end_col": 17,
-                                        "end_line": 2,
-                                        "start_col": 15,
-                                        "start_line": 2,
-                                        "token": -1,
-                                        "type": "int"
+                                        "@type": "int",
+                                        "pos_col_end": 17,
+                                        "pos_col_start": 16,
+                                        "pos_line_end": 2,
+                                        "pos_line_start": 2,
+                                        "token": -1
                                     },
-                                    "end_col": 17,
-                                    "end_line": 2,
-                                    "start_col": 12,
-                                    "start_line": 2,
-                                    "type": "irange"
+                                    "pos_col_end": 17,
+                                    "pos_col_start": 13,
+                                    "pos_line_end": 2,
+                                    "pos_line_start": 2
                                 }
                             ]
                         }
                     },
                     {
-                        "end_col": 19,
-                        "end_line": 3,
-                        "start_col": 0,
-                        "start_line": 3,
+                        "@type": "lvasgn",
+                        "pos_col_end": 19,
+                        "pos_col_start": 1,
+                        "pos_line_end": 3,
+                        "pos_line_start": 3,
                         "target": "inc_slice",
-                        "type": "lvasgn",
                         "value": {
+                            "@type": "send",
                             "base": {
-                                "end_col": 13,
-                                "end_line": 3,
-                                "start_col": 12,
-                                "start_line": 3,
-                                "token": "a",
-                                "type": "lvar"
+                                "@type": "lvar",
+                                "pos_col_end": 13,
+                                "pos_col_start": 13,
+                                "pos_line_end": 3,
+                                "pos_line_start": 3,
+                                "token": "a"
                             },
-                            "end_col": 19,
-                            "end_line": 3,
+                            "pos_col_end": 19,
+                            "pos_col_start": 13,
+                            "pos_line_end": 3,
+                            "pos_line_start": 3,
                             "selector": "[]",
-                            "start_col": 12,
-                            "start_line": 3,
-                            "type": "send",
                             "values": [
                                 {
+                                    "@type": "irange",
                                     "_1": {
-                                        "end_col": 15,
-                                        "end_line": 3,
-                                        "start_col": 14,
-                                        "start_line": 3,
-                                        "token": 1,
-                                        "type": "int"
+                                        "@type": "int",
+                                        "pos_col_end": 15,
+                                        "pos_col_start": 15,
+                                        "pos_line_end": 3,
+                                        "pos_line_start": 3,
+                                        "token": 1
                                     },
                                     "_2": {
-                                        "end_col": 18,
-                                        "end_line": 3,
-                                        "start_col": 17,
-                                        "start_line": 3,
-                                        "token": 2,
-                                        "type": "int"
+                                        "@type": "int",
+                                        "pos_col_end": 18,
+                                        "pos_col_start": 18,
+                                        "pos_line_end": 3,
+                                        "pos_line_start": 3,
+                                        "token": 2
                                     },
-                                    "end_col": 18,
-                                    "end_line": 3,
-                                    "start_col": 14,
-                                    "start_line": 3,
-                                    "type": "irange"
+                                    "pos_col_end": 18,
+                                    "pos_col_start": 15,
+                                    "pos_line_end": 3,
+                                    "pos_line_start": 3
                                 }
                             ]
                         }
                     },
                     {
-                        "end_col": 19,
-                        "end_line": 4,
-                        "start_col": 0,
-                        "start_line": 4,
+                        "@type": "lvasgn",
+                        "pos_col_end": 19,
+                        "pos_col_start": 1,
+                        "pos_line_end": 4,
+                        "pos_line_start": 4,
                         "target": "exc_end",
-                        "type": "lvasgn",
                         "value": {
+                            "@type": "send",
                             "base": {
-                                "end_col": 11,
-                                "end_line": 4,
-                                "start_col": 10,
-                                "start_line": 4,
-                                "token": "a",
-                                "type": "lvar"
+                                "@type": "lvar",
+                                "pos_col_end": 11,
+                                "pos_col_start": 11,
+                                "pos_line_end": 4,
+                                "pos_line_start": 4,
+                                "token": "a"
                             },
-                            "end_col": 19,
-                            "end_line": 4,
+                            "pos_col_end": 19,
+                            "pos_col_start": 11,
+                            "pos_line_end": 4,
+                            "pos_line_start": 4,
                             "selector": "[]",
-                            "start_col": 10,
-                            "start_line": 4,
-                            "type": "send",
                             "values": [
                                 {
+                                    "@type": "erange",
                                     "_1": {
-                                        "end_col": 13,
-                                        "end_line": 4,
-                                        "start_col": 12,
-                                        "start_line": 4,
-                                        "token": 0,
-                                        "type": "int"
+                                        "@type": "int",
+                                        "pos_col_end": 13,
+                                        "pos_col_start": 13,
+                                        "pos_line_end": 4,
+                                        "pos_line_start": 4,
+                                        "token": 0
                                     },
                                     "_2": {
-                                        "end_col": 18,
-                                        "end_line": 4,
-                                        "start_col": 16,
-                                        "start_line": 4,
-                                        "token": -1,
-                                        "type": "int"
+                                        "@type": "int",
+                                        "pos_col_end": 18,
+                                        "pos_col_start": 17,
+                                        "pos_line_end": 4,
+                                        "pos_line_start": 4,
+                                        "token": -1
                                     },
-                                    "end_col": 18,
-                                    "end_line": 4,
-                                    "start_col": 12,
-                                    "start_line": 4,
-                                    "type": "erange"
+                                    "pos_col_end": 18,
+                                    "pos_col_start": 13,
+                                    "pos_line_end": 4,
+                                    "pos_line_start": 4
                                 }
                             ]
                         }
                     }
                 ],
-                "end_col": 19,
-                "end_line": 4,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "begin"
+                "pos_col_end": 19,
+                "pos_col_start": 1,
+                "pos_line_end": 4,
+                "pos_line_start": 1
             }
         }
     }

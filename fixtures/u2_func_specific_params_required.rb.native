@@ -4,43 +4,44 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "def",
                 "args": {
+                    "@type": "args",
                     "children": [
                         {
-                            "end_col": 14,
-                            "end_line": 1,
-                            "start_col": 13,
-                            "start_line": 1,
-                            "token": "a",
-                            "type": "kwarg"
+                            "@type": "kwarg",
+                            "pos_col_end": 14,
+                            "pos_col_start": 14,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1,
+                            "token": "a"
                         },
                         {
-                            "end_col": 18,
-                            "end_line": 1,
-                            "start_col": 17,
-                            "start_line": 1,
-                            "token": "b",
-                            "type": "kwarg"
+                            "@type": "kwarg",
+                            "pos_col_end": 18,
+                            "pos_col_start": 18,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1,
+                            "token": "b"
                         }
                     ],
-                    "end_col": 20,
-                    "end_line": 1,
-                    "start_col": 12,
-                    "start_line": 1,
-                    "type": "args"
+                    "pos_col_end": 20,
+                    "pos_col_start": 13,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
                 },
                 "body": [
                     {
-                        "type": "NilClass"
+                        "@type": "NilNode"
                     }
                 ],
-                "end_col": 3,
-                "end_line": 1,
                 "name": "testfnc1",
-                "start_col": 0,
-                "start_line": 1,
-                "type": "def"
+                "pos_col_end": 3,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
             }
         }
     }

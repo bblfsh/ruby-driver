@@ -1,93 +1,178 @@
 package normalizer
 
 import (
-	"github.com/bblfsh/ruby-driver/driver/normalizer/rubyast"
-
-	"gopkg.in/bblfsh/sdk.v1/uast"
-	. "gopkg.in/bblfsh/sdk.v1/uast/ann"
-	"gopkg.in/bblfsh/sdk.v1/uast/transformer"
-	"gopkg.in/bblfsh/sdk.v1/uast/transformer/annotatter"
-	"gopkg.in/bblfsh/sdk.v1/uast/transformer/positioner"
+	"gopkg.in/bblfsh/sdk.v2/uast"
+	"gopkg.in/bblfsh/sdk.v2/uast/role"
+	. "gopkg.in/bblfsh/sdk.v2/uast/transformer"
+	"gopkg.in/bblfsh/sdk.v2/uast/transformer/positioner"
 )
 
-// Transformers is the of list `transformer.Transfomer` to apply to a UAST, to
-// learn more about the Transformers and the available ones take a look to:
-// https://godoc.org/gopkg.in/bblfsh/sdk.v1/uast/transformers
-var Transformers = []transformer.Tranformer{
-	annotatter.NewAnnotatter(AnnotationRules),
+var Native = Transformers([][]Transformer{
+	{
+		ResponseMetadata{
+			TopLevelIsRootNode: true,
+		},
+	},
+	{Mappings(Annotations...)},
+	{RolesDedup()},
+}...)
+
+var Code = []CodeTransformer{
 	positioner.NewFillOffsetFromLineCol(),
 }
 
-var isSomeOperator = Or(HasToken("+"), HasToken("-"), HasToken("*"), HasToken("/"),
-	HasToken("%"), HasToken("**"), HasToken("=="), HasToken("!="), HasToken("!"),
-	HasToken("<=>"), HasToken("==="), HasToken("eql?"), HasToken("equal?"),
-	HasToken("<="), HasToken(">="), rubyast.And, rubyast.Or,
-)
+// FIXME: move to the SDK and remove from here and the python driver
+func annotateTypeToken(typ, token string, roles ...role.Role) Mapping {
+	return AnnotateType(typ,
+		FieldRoles{
+			uast.KeyToken: {Add: true, Op: String(token)},
+		}, roles...)
+}
+
+// FIXME: move to the SDK and remove from here and the python driver
+func mapInternalProperty(key string, roles ...role.Role) Mapping {
+	return Map(key,
+		Part("other", Obj{
+			key: ObjectRoles(key),
+		}),
+		Part("other", Obj{
+			key: ObjectRoles(key, roles...),
+		}),
+	)
+}
 
 // Nodes doc:
 // https://github.com/whitequark/parser/blob/master/doc/AST_FORMAT.md
 
-// AnnotationRules describes how a UAST should be annotated with `uast.Role`.
-//
-// https://godoc.org/gopkg.in/bblfsh/sdk.v1/uast/ann
-var AnnotationRules = On(Any).Roles(uast.Module, uast.File).Descendants(
-	On(Or(rubyast.Begin, rubyast.Block)).Roles(uast.Block).Children(
-		On(rubyast.Body).Roles(uast.Body),
-	),
-	// *Asgn with two children = binary and value have the "Right" role but with a single children = multiple assignment target :-/
-	On(rubyast.LVAsgn).Roles(uast.Expression, uast.Assignment, uast.Binary,
-		uast.Identifier, uast.Left).Children(
-		On(HasInternalRole("value")).Roles(uast.Right),
-	),
-	// is also member
-	On(rubyast.IVAsgn).Roles(uast.Expression, uast.Assignment, uast.Binary,
-		uast.Identifier, uast.Left, uast.Incomplete).Children(
-		On(HasInternalRole("value")).Roles(uast.Right),
-	),
-	On(rubyast.GVAsgn).Roles(uast.Expression, uast.Assignment, uast.Binary,
-		uast.Identifier, uast.Left, uast.Visibility, uast.World).Children(
-		On(HasInternalRole("value")).Roles(uast.Right),
-	),
-	// constant
-	On(rubyast.CAsgn).Roles(uast.Expression, uast.Assignment, uast.Binary,
-		uast.Identifier, uast.Left).Children(
-		On(HasInternalRole("value")).Roles(uast.Right),
-	),
-	// class
-	On(rubyast.CVAsgn).Roles(uast.Expression, uast.Assignment, uast.Binary,
-		uast.Identifier, uast.Left).Children(
-		On(HasInternalRole("value")).Roles(uast.Binary, uast.Right),
-	),
-	// instance (member)
-	On(rubyast.IVAsgn).Roles(uast.Expression, uast.Assignment, uast.Binary,
-		uast.Identifier, uast.Left).Children(On(HasInternalRole("value")).Roles(uast.Binary, uast.Right)),
-	// Multiple assignment; second element (whatever it is) must have the "Right" role
-	On(rubyast.MAsgn).Roles(uast.Expression, uast.Assignment, uast.Incomplete).Children(
-		On(HasInternalRole("values")).Roles(uast.Binary, uast.Right),
-	),
-	On(rubyast.MultipleLeftSide).Roles(uast.Left, uast.Incomplete),
+//var isSomeOperator = Or(HasToken("+"), HasToken("-"), HasToken("*"), HasToken("/"),
+	//HasToken("%"), HasToken("**"), HasToken("=="), HasToken("!="), HasToken("!"),
+	//HasToken("<=>"), HasToken("==="), HasToken("eql?"), HasToken("equal?"),
+	//HasToken("<="), HasToken(">="), rubyast.And, rubyast.Or,
+//)
+
+var Annotations = []Mapping{
+	ObjectToNode{
+		LineKey:   "pos_line_start",
+		ColumnKey: "pos_col_start",
+	}.Mapping(),
+	ObjectToNode{
+		EndLineKey:   "pos_line_end",
+		EndColumnKey: "pos_col_end",
+	}.Mapping(),
+
+	AnnotateType("file", nil, role.File),
+	// XXX token
+	AnnotateType("body", nil, role.Body),
+	mapInternalProperty("body", role.Body),
+	// XXX check that these really work
+	mapInternalProperty("left", role.Left),
+	mapInternalProperty("right", role.Right),
+	mapInternalProperty("condition", role.Expression, role.Condition),
+	mapInternalProperty("target", role.Binary, role.Left),
+	mapInternalProperty("value", role.Binary, role.Right),
+	mapInternalProperty("_1", role.Tuple, role.Value),
+	mapInternalProperty("_2", role.Tuple, role.Value),
 
 	// Types
-	On(rubyast.Module).Roles(uast.Statement, uast.Module, uast.Identifier),
-	On(rubyast.Int).Roles(uast.Expression, uast.Literal, uast.Number, uast.Primitive),
-	On(rubyast.Str).Roles(uast.Expression, uast.Literal, uast.String, uast.Primitive),
-	On(rubyast.Pair).Roles(uast.Expression, uast.Literal, uast.Tuple, uast.Primitive),
-	On(rubyast.Array).Roles(uast.Expression, uast.Literal, uast.List, uast.Primitive),
-	On(rubyast.Hash).Roles(uast.Expression, uast.Literal, uast.Map, uast.Primitive),
-	On(rubyast.KwSplat).Roles(uast.Expression, uast.Incomplete),
+	// XXX tokens
+	AnnotateType("module", nil, role.Statement, role.Module, role.Identifier),
+	AnnotateType("block", nil, role.Block),
+	AnnotateType("int", nil, role.Expression, role.Literal, role.Number, role.Primitive),
+	AnnotateType("str", nil, role.Expression, role.Literal, role.String, role.Primitive),
+	AnnotateType("pair", nil, role.Expression, role.Literal, role.Tuple, role.Primitive),
+	AnnotateType("array", nil, role.Expression, role.Literal, role.List, role.Primitive),
+	AnnotateType("hash", nil, role.Expression, role.Literal, role.Map, role.Primitive),
+	AnnotateType("class", nil, role.Statement, role.Type, role.Declaration, role.Identifier),
 
-	// splat (*a)
-	On(rubyast.Splat).Roles(uast.Expression, uast.Identifier, uast.Incomplete),
+	// splats (*a)
+	AnnotateType("kwsplat", nil, role.Expression, role.Incomplete),
+	AnnotateType("splat", nil, role.Expression, role.Identifier, role.Incomplete),
 
-	// local var ::var
-	On(rubyast.LVar).Roles(uast.Expression, uast.Identifier),
-	// instance var  @var
-	On(rubyast.IVar).Roles(uast.Expression, uast.Identifier, uast.Visibility, uast.Instance),
-	// global var $var
-	On(rubyast.GVar).Roles(uast.Expression, uast.Identifier, uast.Visibility, uast.World),
-	// class var @@var
-	On(rubyast.CVar).Roles(uast.Expression, uast.Identifier, uast.Visibility, uast.Type),
+	// Vars
+	// local
+	AnnotateType("lvar", nil, role.Expression, role.Identifier),
+	// instance
+	AnnotateType("ivar", nil, role.Expression, role.Identifier, role.Visibility, role.Instance),
+	// global
+	AnnotateType("gvar", nil, role.Expression, role.Identifier, role.Visibility, role.World),
+	// class
+	AnnotateType("cvar", nil, role.Expression, role.Identifier, role.Visibility, role.Type),
 
+	// Singleton class
+	AnnotateType("sclass", nil, role.Expression, role.Type, role.Declaration, role.Incomplete),
+
+	AnnotateType("alias", nil, role.Statement, role.Alias),
+	AnnotateType("def", nil, role.Statement, role.Function, role.Declaration, role.Identifier),
+	// Singleton method
+	AnnotateType("defs", nil, role.Statement, role.Function, role.Declaration, role.Identifier, role.Incomplete),
+	AnnotateType("NilClass", nil, role.Statement, role.Type, role.Null),
+	AnnotateType("break", nil, role.Statement, role.Break),
+	AnnotateType("undef", nil, role.Statement, role.Incomplete),
+	AnnotateType("case", nil, role.Statement, role.Switch),
+	AnnotateType("when", nil, role.Expression, role.Case),
+
+	// Exceptions
+	AnnotateType("kwbegin", nil, role.Expression, role.Block),
+	AnnotateType("rescue", nil, role.Expression, role.Try, role.Body),
+	AnnotateType("resbody", nil, role.Expression, role.Catch),
+	AnnotateType("retry", nil, role.Expression, role.Statement, role.Call, role.Incomplete),
+	AnnotateType("ensure", nil, role.Expression, role.Finally),
+
+	// Arguments
+	// grouping node, need grouping role
+	AnnotateType("args", nil, role.Expression, role.Argument, role.Incomplete),
+	AnnotateType("kwarg", nil, role.Expression, role.Argument, role.Name, role.Map),
+	AnnotateType("kwoptarg", nil, role.Expression, role.Argument, role.Name, role.Incomplete),
+	AnnotateType("kwrestarg", nil, role.Expression, role.Argument, role.Identifier, role.Incomplete),
+	AnnotateType("optarg", nil, role.Expression, role.Argument, role.Name),
+
+	// Assigns
+	// *Asgn with two children = binary and value have the "Right" role but with a single children = multiple assignment target :-/
+	AnnotateType("lvasgn", nil, role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
+	// is also a member
+	AnnotateType("ivasgn", nil, role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
+	AnnotateType("gvasgn", nil, role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left,
+	// constant assign
+	AnnotateType("casgn", nil, role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
+	// class assign
+	AnnotateType("cvasgn", nil, role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
+	// instance member
+	AnnotateType("ivasgn", nil, role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
+	// multiple
+	AnnotateType("masgn", nil, role.Expression, role.Assignment, role.Incomplete),
+	// Or Assign (a ||= b), And Assign (a &&= b)
+	AnnotateType("and_asgn", nil, role.Expression, role.Operator, role.And, role.Bitwise),
+	AnnotateType("or_asgn", nil, role.Expression, role.Operator, role.Or, role.Bitwise),
+
+	// Misc
+	// multiple left side
+	AnnotateType("mlhs", nil, role.Left, role.Incomplete),
+	AnnotateType("erange", nil, role.Expression, role.Tuple, role.Incomplete),
+	AnnotateType("irange", nil, role.Expression, role.Tuple, role.Incomplete),
+	AnnotateType("regexp", nil, role.Expression, role.Regexp),
+	// regexp back reference
+	AnnotateType("back_ref", nil, role.Expression, role.Regexp, role.Incomplete),
+	// regexp reference
+	AnnotateType("nth_ref", nil, role.Expression, role.Regexp, role.Incomplete),
+	// regexp option/s
+	AnnotateType("regopt", nil, role.Expression, role.Regexp, role.Incomplete),
+	AnnotateType("options", nil, role.Expression, role.Regexp, role.Incomplete),
+
+	AnnotateType("Symbol", nil, role.Expression, role.Identifier),
+	AnnotateType("sym", nil, role.Expression, role.Identifier),
+	// Interpolated symbols on strings
+	AnnotateType("dsym", nil, role.Expression, role.String, role.Incomplete),
+	AnnotateType("self", nil, role.Expression, role.This, role.Left),
+	annotateTypeToken("true", "true", role.Expression, role.Boolean, role.Literal),
+	annotateTypeToken("false", "false", role.Expression, role.Boolean, role.Literal),
+	annotateTypeToken("and", "and", role.Expression, role.Binary, role.Operator, role.Boolean, role.And),
+	annotateTypeToken("or", "or", role.Expression, role.Binary, role.Operator, role.Boolean, role.Or),
+	annotateTypeToken("raise", "raise", role.Statement, role.Throw),
+
+	AnnotateType("const", nil, role.Expression, role.Identifier, role.Incomplete),
+	AnnotateType("cbase", nil, role.Expression, role.Identifier, role.Qualified, role.Incomplete),
+
+/*
 	// Augmented assignment (op-asgn)
 	On(rubyast.OpAsgn).Roles(uast.Expression, uast.Operator, uast.Binary, uast.Assignment).Self(
 		On(HasProperty("operator", "+")).Roles(uast.Arithmetic, uast.Add),
@@ -104,20 +189,7 @@ var AnnotationRules = On(Any).Roles(uast.Module, uast.File).Descendants(
 		On(HasProperty("operator", "~")).Roles(uast.Bitwise, uast.Incomplete),
 		On(HasProperty("operator", "<<")).Roles(uast.Bitwise, uast.LeftShift),
 		On(HasProperty("operator", ">>")).Roles(uast.Bitwise, uast.RightShift),
-	).Children(
-		On(HasInternalRole("target")).Roles(uast.Binary, uast.Left),
-		On(HasInternalRole("value")).Roles(uast.Binary, uast.Right),
-	),
-
-	// Or Assign (a ||= b), And Assign (a &&= b)
-	On(rubyast.AndAsgn).Roles(uast.Expression, uast.Operator, uast.And, uast.Bitwise).Children(
-		On(HasInternalRole("target")).Roles(uast.Binary, uast.Left),
-		On(HasInternalRole("value")).Roles(uast.Binary, uast.Right),
-	),
-	On(rubyast.OrAsgn).Roles(uast.Expression, uast.Operator, uast.Or, uast.Bitwise).Children(
-		On(HasInternalRole("target")).Roles(uast.Binary, uast.Left),
-		On(HasInternalRole("value")).Roles(uast.Binary, uast.Right),
-	),
+	)
 
 	// a.b.c.d would generate the tree d=->c->b->a where "a", "b" and "c" will be
 	// Qualified+Identifier and "d" will be just Identifier.
@@ -172,57 +244,18 @@ var AnnotationRules = On(Any).Roles(uast.Module, uast.File).Descendants(
 	),
 
 	// FIXME: needs Range role or similar
-	On(Or(rubyast.IFlipFlop, rubyast.EFlipFlop)).Roles(uast.Expression, uast.Incomplete,
-		uast.List).Children(
+	On(Or(rubyast.IFlipFlop, rubyast.EFlipFlop)).Roles(uast.Expression, uast.Incomplete, uast.List).Children(
 		On(Any).Roles(uast.Identifier, uast.Incomplete),
 	),
-	On(rubyast.ERange).Roles(uast.Expression, uast.Tuple, uast.Incomplete),
-	On(rubyast.IRange).Roles(uast.Expression, uast.Tuple, uast.Incomplete),
-	On(rubyast.RegExp).Roles(uast.Expression, uast.Expression, uast.Regexp),
-	On(rubyast.RegExpBackRef).Roles(uast.Expression, uast.Regexp, uast.Incomplete),
-	On(rubyast.RegExpRef).Roles(uast.Expression, uast.Regexp, uast.Incomplete),
-	On(rubyast.RegOpt).Roles(uast.Expression, uast.Regexp, uast.Incomplete),
-	On(rubyast.Options).Roles(uast.Expression, uast.Regexp, uast.Incomplete),
-	On(rubyast.Symbol).Roles(uast.Expression, uast.Identifier),
-	On(rubyast.Sym).Roles(uast.Expression, uast.Identifier),
-	On(rubyast.Const).Roles(uast.Expression, uast.Identifier, uast.Incomplete).Children(
-		On(rubyast.CBase).Roles(uast.Expression, uast.Identifier, uast.Qualified, uast.Incomplete),
-	),
-	// Interpolated symbols on strings
-	On(rubyast.DSym).Roles(uast.Expression, uast.String, uast.Incomplete),
-	On(rubyast.Self).Roles(uast.Expression, uast.This, uast.Left),
 
-	On(HasInternalRole("condition")).Roles(uast.Expression, uast.Condition),
 	On(rubyast.If).Roles(uast.Statement, uast.If).Children(
 		On(HasInternalRole("body")).Roles(uast.Expression, uast.If, uast.Then),
 		On(HasInternalRole("condition")).Roles(uast.Expression, uast.If),
 		On(HasInternalRole("else")).Roles(uast.Expression, uast.If, uast.Else),
 	),
 
-	On(rubyast.Class).Roles(uast.Statement, uast.Type, uast.Declaration, uast.Identifier).Children(
-		On(And(rubyast.Block, HasInternalRole("body"))).Roles(uast.Expression, uast.Body),
-	),
-	// Singleton class
-	On(rubyast.SClass).Roles(uast.Expression, uast.Type, uast.Declaration, uast.Incomplete),
-
-	// Arguments grouping node, needs uast.Group or similar
-	On(rubyast.Args).Roles(uast.Expression, uast.Argument, uast.Incomplete).Children(
-		On(rubyast.Arg).Roles(uast.Expression, uast.Argument, uast.Name),
-		On(rubyast.KwArg).Roles(uast.Expression, uast.Argument, uast.Name, uast.Map),
-		On(rubyast.KwOptArg).Roles(uast.Expression, uast.Argument, uast.Name, uast.Incomplete),
-		On(rubyast.KwRestArg).Roles(uast.Expression, uast.Argument, uast.Incomplete).Self(
-			On(Not(HasToken(""))).Roles(uast.Expression, uast.Identifier),
-		),
-		On(rubyast.OptArg).Roles(uast.Expression, uast.Argument, uast.Name).Children(
-			On(Any).Roles(uast.Expression, uast.Argument, uast.Default),
-		),
-	),
-	On(rubyast.Alias).Roles(uast.Statement, uast.Alias),
-	On(rubyast.Def).Roles(uast.Statement, uast.Function, uast.Declaration, uast.Identifier).Children(),
 	// Singleton method
-	On(rubyast.Defs).Roles(uast.Statement, uast.Function, uast.Declaration, uast.Identifier, uast.Incomplete).Children(),
-	On(rubyast.NilClass).Roles(uast.Statement, uast.Type, uast.Null),
-	On(Or(rubyast.Until, rubyast.UntilPost)).Roles(uast.Statement, uast.Incomplete), // Complete annotations below
+	On(Or(rubyast.Until, rubyast.UntilPost)).Roles(uast.Incomplete), // Complete annotations below
 	On(Or(rubyast.Until, rubyast.UntilPost, rubyast.While, rubyast.WhilePost)).Roles(uast.Statement, uast.While).Children(
 		On(HasInternalRole("body")).Roles(uast.Expression, uast.While, uast.Body),
 		On(HasInternalRole("condition")).Roles(uast.Expression, uast.While),
@@ -233,30 +266,6 @@ var AnnotationRules = On(Any).Roles(uast.Module, uast.File).Descendants(
 		On(HasInternalRole("iterated")).Roles(uast.Expression, uast.For, uast.Update),
 		On(HasInternalRole("iterators")).Roles(uast.Expression, uast.For, uast.Iterator),
 	),
-
-	On(rubyast.True).Roles(uast.Expression, uast.Boolean, uast.Literal),
-	On(rubyast.False).Roles(uast.Expression, uast.Boolean, uast.Literal),
-	On(rubyast.And).Roles(uast.Expression, uast.Binary, uast.Expression, uast.Operator, uast.Boolean, uast.And),
-	On(rubyast.Or).Roles(uast.Expression, uast.Binary, uast.Expression, uast.Operator, uast.Boolean, uast.Or),
-	On(HasInternalRole("left")).Roles(uast.Expression, uast.Left),
-	On(HasInternalRole("right")).Roles(uast.Expression, uast.Right),
-	On(HasToken("raise")).Roles(uast.Statement, uast.Throw),
-
-	// Exceptions
-	On(rubyast.KwBegin).Roles(uast.Expression, uast.Block).Self(
-		On(Or(HasChild(rubyast.Rescue), HasChild(rubyast.Ensure))).Roles(uast.Try).Children(
-			On(rubyast.Rescue).Roles(uast.Expression, uast.Try, uast.Body).Children(
-				On(rubyast.ResBody).Roles(uast.Expression, uast.Catch).Children(
-					On(rubyast.Retry).Roles(uast.Expression, uast.Statement, uast.Call),
-				),
-			),
-			On(rubyast.Ensure).Roles(uast.Expression, uast.Finally, uast.Body),
-		),
-	),
-
-	On(rubyast.Case).Roles(uast.Statement, uast.Switch).Children(
-		On(rubyast.When).Roles(uast.Expression, uast.Case),
-	),
-	On(rubyast.Break).Roles(uast.Statement, uast.Break),
-	On(rubyast.Undef).Roles(uast.Statement, uast.Incomplete),
 )
+*/
+}

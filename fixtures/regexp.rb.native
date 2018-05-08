@@ -4,37 +4,38 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
-                "end_col": 12,
-                "end_line": 1,
+                "@type": "regexp",
                 "options": {
-                    "end_col": 12,
-                    "end_line": 1,
+                    "@type": "regopt",
                     "options": [
                         {
-                            "token": "i",
-                            "type": "Symbol"
+                            "@type": "Symbol",
+                            "token": "i"
                         },
                         {
-                            "token": "m",
-                            "type": "Symbol"
+                            "@type": "Symbol",
+                            "token": "m"
                         }
                     ],
-                    "start_col": 10,
-                    "start_line": 1,
-                    "type": "regopt"
+                    "pos_col_end": 12,
+                    "pos_col_start": 11,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
                 },
-                "start_col": 0,
-                "start_line": 1,
+                "pos_col_end": 12,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1,
                 "text": {
-                    "end_col": 9,
-                    "end_line": 1,
-                    "start_col": 1,
-                    "start_line": 1,
-                    "token": "text(.*)",
-                    "type": "str"
-                },
-                "type": "regexp"
+                    "@type": "str",
+                    "pos_col_end": 9,
+                    "pos_col_start": 2,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1,
+                    "token": "text(.*)"
+                }
             }
         }
     }

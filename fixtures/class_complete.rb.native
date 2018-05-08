@@ -4,285 +4,286 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "module",
                 "begin": [
                     {
+                        "@type": "begin",
                         "body": [
                             {
+                                "@type": "class",
                                 "body": [
                                     {
-                                        "type": "NilClass"
+                                        "@type": "NilNode"
                                     }
                                 ],
-                                "end_col": 5,
-                                "end_line": 3,
                                 "name": "Foo",
                                 "parent": null,
-                                "start_col": 0,
-                                "start_line": 3,
-                                "type": "class"
+                                "pos_col_end": 5,
+                                "pos_col_start": 1,
+                                "pos_line_end": 3,
+                                "pos_line_start": 3
                             },
                             {
+                                "@type": "class",
                                 "body": [
                                     {
+                                        "@type": "begin",
                                         "body": [
                                             {
-                                                "end_col": 19,
-                                                "end_line": 7,
-                                                "start_col": 4,
-                                                "start_line": 7,
+                                                "@type": "cvasgn",
+                                                "pos_col_end": 19,
+                                                "pos_col_start": 5,
+                                                "pos_line_end": 7,
+                                                "pos_line_start": 7,
                                                 "target": "@@classvar",
-                                                "type": "cvasgn",
                                                 "value": {
-                                                    "end_col": 19,
-                                                    "end_line": 7,
-                                                    "start_col": 17,
-                                                    "start_line": 7,
-                                                    "token": 10,
-                                                    "type": "int"
+                                                    "@type": "int",
+                                                    "pos_col_end": 19,
+                                                    "pos_col_start": 18,
+                                                    "pos_line_end": 7,
+                                                    "pos_line_start": 7,
+                                                    "token": 10
                                                 }
                                             },
                                             {
+                                                "@type": "def",
                                                 "args": {
+                                                    "@type": "args",
                                                     "children": [
                                                         {
-                                                            "end_col": 20,
-                                                            "end_line": 8,
-                                                            "start_col": 19,
-                                                            "start_line": 8,
-                                                            "token": "a",
-                                                            "type": "arg"
+                                                            "@type": "arg",
+                                                            "pos_col_end": 20,
+                                                            "pos_col_start": 20,
+                                                            "pos_line_end": 8,
+                                                            "pos_line_start": 8,
+                                                            "token": "a"
                                                         }
                                                     ],
-                                                    "end_col": 21,
-                                                    "end_line": 8,
-                                                    "start_col": 18,
-                                                    "start_line": 8,
-                                                    "type": "args"
+                                                    "pos_col_end": 21,
+                                                    "pos_col_start": 19,
+                                                    "pos_line_end": 8,
+                                                    "pos_line_start": 8
                                                 },
                                                 "body": [
                                                     {
-                                                        "end_col": 25,
-                                                        "end_line": 9,
-                                                        "start_col": 8,
-                                                        "start_line": 9,
+                                                        "@type": "ivasgn",
+                                                        "pos_col_end": 25,
+                                                        "pos_col_start": 9,
+                                                        "pos_line_end": 9,
+                                                        "pos_line_start": 9,
                                                         "target": "@instance_var",
-                                                        "type": "ivasgn",
                                                         "value": {
-                                                            "end_col": 25,
-                                                            "end_line": 9,
-                                                            "start_col": 24,
-                                                            "start_line": 9,
-                                                            "token": "a",
-                                                            "type": "lvar"
+                                                            "@type": "lvar",
+                                                            "pos_col_end": 25,
+                                                            "pos_col_start": 25,
+                                                            "pos_line_end": 9,
+                                                            "pos_line_start": 9,
+                                                            "token": "a"
                                                         }
                                                     }
                                                 ],
-                                                "end_col": 7,
-                                                "end_line": 8,
                                                 "name": "initialize",
-                                                "start_col": 4,
-                                                "start_line": 8,
-                                                "type": "def"
+                                                "pos_col_end": 7,
+                                                "pos_col_start": 5,
+                                                "pos_line_end": 8,
+                                                "pos_line_start": 8
                                             },
                                             {
+                                                "@type": "def",
                                                 "args": {
-                                                    "end_col": 13,
-                                                    "end_line": 12,
-                                                    "start_col": 11,
-                                                    "start_line": 12,
-                                                    "type": "args"
+                                                    "@type": "args",
+                                                    "pos_col_end": 13,
+                                                    "pos_col_start": 12,
+                                                    "pos_line_end": 12,
+                                                    "pos_line_start": 12
                                                 },
                                                 "body": [
                                                     {
-                                                        "type": "NilClass"
+                                                        "@type": "NilNode"
                                                     }
                                                 ],
-                                                "end_col": 7,
-                                                "end_line": 12,
                                                 "name": "foo",
-                                                "start_col": 4,
-                                                "start_line": 12,
-                                                "type": "def"
+                                                "pos_col_end": 7,
+                                                "pos_col_start": 5,
+                                                "pos_line_end": 12,
+                                                "pos_line_start": 12
                                             },
                                             {
+                                                "@type": "def",
                                                 "args": {
-                                                    "end_col": 13,
-                                                    "end_line": 15,
-                                                    "start_col": 11,
-                                                    "start_line": 15,
-                                                    "type": "args"
+                                                    "@type": "args",
+                                                    "pos_col_end": 13,
+                                                    "pos_col_start": 12,
+                                                    "pos_line_end": 15,
+                                                    "pos_line_start": 15
                                                 },
                                                 "body": [
                                                     {
+                                                        "@type": "begin",
                                                         "body": [
                                                             {
+                                                                "@type": "send",
                                                                 "base": null,
-                                                                "end_col": 23,
-                                                                "end_line": 16,
+                                                                "pos_col_end": 23,
+                                                                "pos_col_start": 9,
+                                                                "pos_line_end": 16,
+                                                                "pos_line_start": 16,
                                                                 "selector": "puts",
-                                                                "start_col": 8,
-                                                                "start_line": 16,
-                                                                "type": "send",
                                                                 "values": [
                                                                     {
-                                                                        "end_col": 23,
-                                                                        "end_line": 16,
-                                                                        "start_col": 13,
-                                                                        "start_line": 16,
-                                                                        "token": "@@classvar",
-                                                                        "type": "cvar"
+                                                                        "@type": "cvar",
+                                                                        "pos_col_end": 23,
+                                                                        "pos_col_start": 14,
+                                                                        "pos_line_end": 16,
+                                                                        "pos_line_start": 16,
+                                                                        "token": "@@classvar"
                                                                     }
                                                                 ]
                                                             },
                                                             {
+                                                                "@type": "send",
                                                                 "base": null,
-                                                                "end_col": 26,
-                                                                "end_line": 17,
+                                                                "pos_col_end": 26,
+                                                                "pos_col_start": 9,
+                                                                "pos_line_end": 17,
+                                                                "pos_line_start": 17,
                                                                 "selector": "puts",
-                                                                "start_col": 8,
-                                                                "start_line": 17,
-                                                                "type": "send",
                                                                 "values": [
                                                                     {
-                                                                        "end_col": 26,
-                                                                        "end_line": 17,
-                                                                        "start_col": 13,
-                                                                        "start_line": 17,
-                                                                        "token": "@instance_var",
-                                                                        "type": "ivar"
+                                                                        "@type": "ivar",
+                                                                        "pos_col_end": 26,
+                                                                        "pos_col_start": 14,
+                                                                        "pos_line_end": 17,
+                                                                        "pos_line_start": 17,
+                                                                        "token": "@instance_var"
                                                                     }
                                                                 ]
                                                             },
                                                             {
+                                                                "@type": "send",
                                                                 "base": null,
-                                                                "end_col": 13,
-                                                                "end_line": 18,
-                                                                "selector": "foo",
-                                                                "start_col": 8,
-                                                                "start_line": 18,
-                                                                "type": "send"
+                                                                "pos_col_end": 13,
+                                                                "pos_col_start": 9,
+                                                                "pos_line_end": 18,
+                                                                "pos_line_start": 18,
+                                                                "selector": "foo"
                                                             },
                                                             {
+                                                                "@type": "send",
                                                                 "base": {
-                                                                    "end_col": 12,
-                                                                    "end_line": 19,
-                                                                    "start_col": 8,
-                                                                    "start_line": 19,
-                                                                    "type": "self"
+                                                                    "@type": "self",
+                                                                    "pos_col_end": 12,
+                                                                    "pos_col_start": 9,
+                                                                    "pos_line_end": 19,
+                                                                    "pos_line_start": 19
                                                                 },
-                                                                "end_col": 18,
-                                                                "end_line": 19,
-                                                                "selector": "foo",
-                                                                "start_col": 8,
-                                                                "start_line": 19,
-                                                                "type": "send"
+                                                                "pos_col_end": 18,
+                                                                "pos_col_start": 9,
+                                                                "pos_line_end": 19,
+                                                                "pos_line_start": 19,
+                                                                "selector": "foo"
                                                             }
                                                         ],
-                                                        "end_col": 18,
-                                                        "end_line": 19,
-                                                        "start_col": 8,
-                                                        "start_line": 16,
-                                                        "type": "begin"
+                                                        "pos_col_end": 18,
+                                                        "pos_col_start": 9,
+                                                        "pos_line_end": 19,
+                                                        "pos_line_start": 16
                                                     }
                                                 ],
-                                                "end_col": 7,
-                                                "end_line": 15,
                                                 "name": "use",
-                                                "start_col": 4,
-                                                "start_line": 15,
-                                                "type": "def"
+                                                "pos_col_end": 7,
+                                                "pos_col_start": 5,
+                                                "pos_line_end": 15,
+                                                "pos_line_start": 15
                                             },
                                             {
+                                                "@type": "def",
                                                 "args": {
-                                                    "end_col": 22,
-                                                    "end_line": 22,
-                                                    "start_col": 20,
-                                                    "start_line": 22,
-                                                    "type": "args"
+                                                    "@type": "args",
+                                                    "pos_col_end": 22,
+                                                    "pos_col_start": 21,
+                                                    "pos_line_end": 22,
+                                                    "pos_line_start": 22
                                                 },
                                                 "body": [
                                                     {
-                                                        "end_col": 22,
-                                                        "end_line": 23,
-                                                        "start_col": 8,
-                                                        "start_line": 23,
+                                                        "@type": "lvasgn",
+                                                        "pos_col_end": 22,
+                                                        "pos_col_start": 9,
+                                                        "pos_line_end": 23,
+                                                        "pos_line_start": 23,
                                                         "target": "b",
-                                                        "type": "lvasgn",
                                                         "value": {
+                                                            "@type": "send",
                                                             "base": {
+                                                                "@type": "const",
                                                                 "base": null,
-                                                                "end_col": 15,
-                                                                "end_line": 23,
-                                                                "start_col": 12,
-                                                                "start_line": 23,
-                                                                "token": "Bar",
-                                                                "type": "const"
+                                                                "pos_col_end": 15,
+                                                                "pos_col_start": 13,
+                                                                "pos_line_end": 23,
+                                                                "pos_line_start": 23,
+                                                                "token": "Bar"
                                                             },
-                                                            "end_col": 22,
-                                                            "end_line": 23,
+                                                            "pos_col_end": 22,
+                                                            "pos_col_start": 13,
+                                                            "pos_line_end": 23,
+                                                            "pos_line_start": 23,
                                                             "selector": "new",
-                                                            "start_col": 12,
-                                                            "start_line": 23,
-                                                            "type": "send",
                                                             "values": [
                                                                 {
-                                                                    "end_col": 21,
-                                                                    "end_line": 23,
-                                                                    "start_col": 20,
-                                                                    "start_line": 23,
-                                                                    "token": 1,
-                                                                    "type": "int"
+                                                                    "@type": "int",
+                                                                    "pos_col_end": 21,
+                                                                    "pos_col_start": 21,
+                                                                    "pos_line_end": 23,
+                                                                    "pos_line_start": 23,
+                                                                    "token": 1
                                                                 }
                                                             ]
                                                         }
                                                     }
                                                 ],
-                                                "end_col": 7,
-                                                "end_line": 22,
                                                 "name": "selfinstance",
-                                                "start_col": 4,
-                                                "start_line": 22,
-                                                "type": "def"
+                                                "pos_col_end": 7,
+                                                "pos_col_start": 5,
+                                                "pos_line_end": 22,
+                                                "pos_line_start": 22
                                             }
                                         ],
-                                        "end_col": 7,
-                                        "end_line": 24,
-                                        "start_col": 4,
-                                        "start_line": 7,
-                                        "type": "begin"
+                                        "pos_col_end": 7,
+                                        "pos_col_start": 5,
+                                        "pos_line_end": 24,
+                                        "pos_line_start": 7
                                     }
                                 ],
-                                "end_col": 5,
-                                "end_line": 6,
                                 "name": "Bar",
                                 "parent": {
+                                    "@type": "const",
                                     "base": null,
-                                    "end_col": 15,
-                                    "end_line": 6,
-                                    "start_col": 12,
-                                    "start_line": 6,
-                                    "token": "Foo",
-                                    "type": "const"
+                                    "pos_col_end": 15,
+                                    "pos_col_start": 13,
+                                    "pos_line_end": 6,
+                                    "pos_line_start": 6,
+                                    "token": "Foo"
                                 },
-                                "start_col": 0,
-                                "start_line": 6,
-                                "type": "class"
+                                "pos_col_end": 5,
+                                "pos_col_start": 1,
+                                "pos_line_end": 6,
+                                "pos_line_start": 6
                             }
                         ],
-                        "end_col": 3,
-                        "end_line": 25,
-                        "start_col": 0,
-                        "start_line": 3,
-                        "type": "begin"
+                        "pos_col_end": 3,
+                        "pos_col_start": 1,
+                        "pos_line_end": 25,
+                        "pos_line_start": 3
                     }
                 ],
-                "end_col": 6,
-                "end_line": 1,
                 "name": "FooMod",
-                "start_col": 0,
-                "start_line": 1,
-                "type": "module"
+                "pos_col_end": 6,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
             }
         }
     }

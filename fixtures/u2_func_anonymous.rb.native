@@ -4,23 +4,24 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "block",
                 "args": null,
                 "blockdata": {
+                    "@type": "send",
                     "base": null,
-                    "end_col": 6,
-                    "end_line": 1,
-                    "selector": "lambda",
-                    "start_col": 0,
-                    "start_line": 1,
-                    "type": "send"
+                    "pos_col_end": 6,
+                    "pos_col_start": 1,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1,
+                    "selector": "lambda"
                 },
                 "body": null,
-                "end_col": 9,
-                "end_line": 1,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "block"
+                "pos_col_end": 9,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
             }
         }
     }

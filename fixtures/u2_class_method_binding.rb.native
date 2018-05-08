@@ -4,33 +4,34 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "class",
                 "body": [
                     {
+                        "@type": "defs",
                         "args": null,
                         "base": {
-                            "end_col": 12,
-                            "end_line": 2,
-                            "start_col": 8,
-                            "start_line": 2,
-                            "type": "self"
+                            "@type": "self",
+                            "pos_col_end": 12,
+                            "pos_col_start": 9,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2
                         },
                         "class": null,
-                        "end_col": 7,
-                        "end_line": 2,
                         "name": "testfnc1",
-                        "start_col": 4,
-                        "start_line": 2,
-                        "type": "defs"
+                        "pos_col_end": 7,
+                        "pos_col_start": 5,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2
                     }
                 ],
-                "end_col": 5,
-                "end_line": 1,
                 "name": "Testcls1",
                 "parent": null,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "class"
+                "pos_col_end": 5,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
             }
         }
     }

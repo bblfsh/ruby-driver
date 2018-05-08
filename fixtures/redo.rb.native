@@ -4,26 +4,27 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "while",
                 "body": {
-                    "end_col": 8,
-                    "end_line": 2,
-                    "start_col": 4,
-                    "start_line": 2,
-                    "type": "redo"
+                    "@type": "redo",
+                    "pos_col_end": 8,
+                    "pos_col_start": 5,
+                    "pos_line_end": 2,
+                    "pos_line_start": 2
                 },
                 "condition": {
-                    "end_col": 10,
-                    "end_line": 1,
-                    "start_col": 6,
-                    "start_line": 1,
-                    "type": "true"
+                    "@type": "true",
+                    "pos_col_end": 10,
+                    "pos_col_start": 7,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
                 },
-                "end_col": 5,
-                "end_line": 1,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "while"
+                "pos_col_end": 5,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
             }
         }
     }

@@ -4,79 +4,80 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "begin",
                 "body": [
                     {
+                        "@type": "class",
                         "body": [
                             {
+                                "@type": "def",
                                 "args": {
-                                    "end_col": 18,
-                                    "end_line": 2,
-                                    "start_col": 16,
-                                    "start_line": 2,
-                                    "type": "args"
+                                    "@type": "args",
+                                    "pos_col_end": 18,
+                                    "pos_col_start": 17,
+                                    "pos_line_end": 2,
+                                    "pos_line_start": 2
                                 },
                                 "body": [
                                     {
-                                        "type": "NilClass"
+                                        "@type": "NilNode"
                                     }
                                 ],
-                                "end_col": 7,
-                                "end_line": 2,
                                 "name": "testfnc1",
-                                "start_col": 4,
-                                "start_line": 2,
-                                "type": "def"
+                                "pos_col_end": 7,
+                                "pos_col_start": 5,
+                                "pos_line_end": 2,
+                                "pos_line_start": 2
                             }
                         ],
-                        "end_col": 5,
-                        "end_line": 1,
                         "name": "Testcls1",
                         "parent": null,
-                        "start_col": 0,
-                        "start_line": 1,
-                        "type": "class"
+                        "pos_col_end": 5,
+                        "pos_col_start": 1,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1
                     },
                     {
+                        "@type": "class",
                         "body": [
                             {
-                                "end_col": 9,
-                                "end_line": 6,
-                                "start_col": 4,
-                                "start_line": 6,
+                                "@type": "undef",
+                                "pos_col_end": 9,
+                                "pos_col_start": 5,
+                                "pos_line_end": 6,
+                                "pos_line_start": 6,
                                 "target": {
-                                    "end_col": 18,
-                                    "end_line": 6,
-                                    "start_col": 10,
-                                    "start_line": 6,
-                                    "token": "testfnc1",
-                                    "type": "sym"
-                                },
-                                "type": "undef"
+                                    "@type": "sym",
+                                    "pos_col_end": 18,
+                                    "pos_col_start": 11,
+                                    "pos_line_end": 6,
+                                    "pos_line_start": 6,
+                                    "token": "testfnc1"
+                                }
                             }
                         ],
-                        "end_col": 5,
-                        "end_line": 5,
                         "name": "Testcls2",
                         "parent": {
+                            "@type": "const",
                             "base": null,
-                            "end_col": 25,
-                            "end_line": 5,
-                            "start_col": 17,
-                            "start_line": 5,
-                            "token": "Testcls1",
-                            "type": "const"
+                            "pos_col_end": 25,
+                            "pos_col_start": 18,
+                            "pos_line_end": 5,
+                            "pos_line_start": 5,
+                            "token": "Testcls1"
                         },
-                        "start_col": 0,
-                        "start_line": 5,
-                        "type": "class"
+                        "pos_col_end": 5,
+                        "pos_col_start": 1,
+                        "pos_line_end": 5,
+                        "pos_line_start": 5
                     }
                 ],
-                "end_col": 3,
-                "end_line": 7,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "begin"
+                "pos_col_end": 3,
+                "pos_col_start": 1,
+                "pos_line_end": 7,
+                "pos_line_start": 1
             }
         }
     }

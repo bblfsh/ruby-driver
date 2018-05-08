@@ -4,46 +4,47 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "send",
                 "base": {
+                    "@type": "send",
                     "base": {
+                        "@type": "send",
                         "base": {
+                            "@type": "send",
                             "base": null,
-                            "end_col": 1,
-                            "end_line": 1,
-                            "selector": "a",
-                            "start_col": 0,
-                            "start_line": 1,
-                            "type": "send"
+                            "pos_col_end": 1,
+                            "pos_col_start": 1,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1,
+                            "selector": "a"
                         },
-                        "end_col": 3,
-                        "end_line": 1,
-                        "selector": "b",
-                        "start_col": 0,
-                        "start_line": 1,
-                        "type": "send"
+                        "pos_col_end": 3,
+                        "pos_col_start": 1,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1,
+                        "selector": "b"
                     },
-                    "end_col": 5,
-                    "end_line": 1,
-                    "selector": "c",
-                    "start_col": 0,
-                    "start_line": 1,
-                    "type": "send"
+                    "pos_col_end": 5,
+                    "pos_col_start": 1,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1,
+                    "selector": "c"
                 },
-                "end_col": 11,
-                "end_line": 1,
+                "pos_col_end": 11,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1,
                 "selector": "d=",
-                "start_col": 0,
-                "start_line": 1,
-                "type": "send",
                 "values": [
                     {
-                        "end_col": 11,
-                        "end_line": 1,
-                        "start_col": 10,
-                        "start_line": 1,
-                        "token": 1,
-                        "type": "int"
+                        "@type": "int",
+                        "pos_col_end": 11,
+                        "pos_col_start": 11,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1,
+                        "token": 1
                     }
                 ]
             }

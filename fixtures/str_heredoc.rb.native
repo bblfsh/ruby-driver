@@ -4,37 +4,38 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
-                "end_col": 10,
-                "end_line": 1,
-                "start_col": 0,
-                "start_line": 1,
+                "@type": "lvasgn",
+                "pos_col_end": 10,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1,
                 "target": "a",
-                "type": "lvasgn",
                 "value": {
+                    "@type": "dstr",
                     "children": [
                         {
-                            "end_col": 0,
-                            "end_line": 3,
-                            "start_col": 0,
-                            "start_line": 2,
-                            "token": "    Some text\n",
-                            "type": "str"
+                            "@type": "str",
+                            "pos_col_end": 0,
+                            "pos_col_start": 1,
+                            "pos_line_end": 3,
+                            "pos_line_start": 2,
+                            "token": "    Some text\n"
                         },
                         {
-                            "end_col": 0,
-                            "end_line": 4,
-                            "start_col": 0,
-                            "start_line": 3,
-                            "token": "    multiline\n",
-                            "type": "str"
+                            "@type": "str",
+                            "pos_col_end": 0,
+                            "pos_col_start": 1,
+                            "pos_line_end": 4,
+                            "pos_line_start": 3,
+                            "token": "    multiline\n"
                         }
                     ],
-                    "end_col": 10,
-                    "end_line": 1,
-                    "start_col": 4,
-                    "start_line": 1,
-                    "type": "dstr"
+                    "pos_col_end": 10,
+                    "pos_col_start": 5,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
                 }
             }
         }

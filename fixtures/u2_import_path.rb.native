@@ -4,52 +4,53 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "begin",
                 "body": [
                     {
+                        "@type": "send",
                         "base": null,
-                        "end_col": 25,
-                        "end_line": 1,
+                        "pos_col_end": 25,
+                        "pos_col_start": 1,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1,
                         "selector": "require",
-                        "start_col": 0,
-                        "start_line": 1,
-                        "type": "send",
                         "values": [
                             {
-                                "end_col": 25,
-                                "end_line": 1,
-                                "start_col": 8,
-                                "start_line": 1,
-                                "token": "./u2_class_this",
-                                "type": "str"
+                                "@type": "str",
+                                "pos_col_end": 25,
+                                "pos_col_start": 9,
+                                "pos_line_end": 1,
+                                "pos_line_start": 1,
+                                "token": "./u2_class_this"
                             }
                         ]
                     },
                     {
+                        "@type": "send",
                         "base": null,
-                        "end_col": 32,
-                        "end_line": 2,
+                        "pos_col_end": 32,
+                        "pos_col_start": 1,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
                         "selector": "require_relative",
-                        "start_col": 0,
-                        "start_line": 2,
-                        "type": "send",
                         "values": [
                             {
-                                "end_col": 32,
-                                "end_line": 2,
-                                "start_col": 17,
-                                "start_line": 2,
-                                "token": "u2_class_this",
-                                "type": "str"
+                                "@type": "str",
+                                "pos_col_end": 32,
+                                "pos_col_start": 18,
+                                "pos_line_end": 2,
+                                "pos_line_start": 2,
+                                "token": "u2_class_this"
                             }
                         ]
                     }
                 ],
-                "end_col": 32,
-                "end_line": 2,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "begin"
+                "pos_col_end": 32,
+                "pos_col_start": 1,
+                "pos_line_end": 2,
+                "pos_line_start": 1
             }
         }
     }

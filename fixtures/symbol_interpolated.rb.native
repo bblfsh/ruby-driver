@@ -4,72 +4,73 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "begin",
                 "body": [
                     {
-                        "end_col": 7,
-                        "end_line": 1,
-                        "start_col": 0,
-                        "start_line": 1,
+                        "@type": "lvasgn",
+                        "pos_col_end": 7,
+                        "pos_col_start": 1,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1,
                         "target": "bar",
-                        "type": "lvasgn",
                         "value": {
-                            "end_col": 7,
-                            "end_line": 1,
-                            "start_col": 6,
-                            "start_line": 1,
-                            "token": 1,
-                            "type": "int"
+                            "@type": "int",
+                            "pos_col_end": 7,
+                            "pos_col_start": 7,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1,
+                            "token": 1
                         }
                     },
                     {
+                        "@type": "dsym",
                         "children": [
                             {
-                                "end_col": 5,
-                                "end_line": 2,
-                                "start_col": 2,
-                                "start_line": 2,
-                                "token": "foo",
-                                "type": "str"
+                                "@type": "str",
+                                "pos_col_end": 5,
+                                "pos_col_start": 3,
+                                "pos_line_end": 2,
+                                "pos_line_start": 2,
+                                "token": "foo"
                             },
                             {
+                                "@type": "begin",
                                 "body": [
                                     {
-                                        "end_col": 10,
-                                        "end_line": 2,
-                                        "start_col": 7,
-                                        "start_line": 2,
-                                        "token": "bar",
-                                        "type": "lvar"
+                                        "@type": "lvar",
+                                        "pos_col_end": 10,
+                                        "pos_col_start": 8,
+                                        "pos_line_end": 2,
+                                        "pos_line_start": 2,
+                                        "token": "bar"
                                     }
                                 ],
-                                "end_col": 11,
-                                "end_line": 2,
-                                "start_col": 5,
-                                "start_line": 2,
-                                "type": "begin"
+                                "pos_col_end": 11,
+                                "pos_col_start": 6,
+                                "pos_line_end": 2,
+                                "pos_line_start": 2
                             },
                             {
-                                "end_col": 14,
-                                "end_line": 2,
-                                "start_col": 11,
-                                "start_line": 2,
-                                "token": "baz",
-                                "type": "str"
+                                "@type": "str",
+                                "pos_col_end": 14,
+                                "pos_col_start": 12,
+                                "pos_line_end": 2,
+                                "pos_line_start": 2,
+                                "token": "baz"
                             }
                         ],
-                        "end_col": 15,
-                        "end_line": 2,
-                        "start_col": 0,
-                        "start_line": 2,
-                        "type": "dsym"
+                        "pos_col_end": 15,
+                        "pos_col_start": 1,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2
                     }
                 ],
-                "end_col": 15,
-                "end_line": 2,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "begin"
+                "pos_col_end": 15,
+                "pos_col_start": 1,
+                "pos_line_end": 2,
+                "pos_line_start": 1
             }
         }
     }

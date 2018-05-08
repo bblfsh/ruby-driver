@@ -4,105 +4,106 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
+                "@type": "begin",
                 "body": [
                     {
+                        "@type": "def",
                         "args": {
-                            "end_col": 14,
-                            "end_line": 1,
-                            "start_col": 12,
-                            "start_line": 1,
-                            "type": "args"
+                            "@type": "args",
+                            "pos_col_end": 14,
+                            "pos_col_start": 13,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1
                         },
                         "body": [
                             {
+                                "@type": "def",
                                 "args": {
-                                    "end_col": 18,
-                                    "end_line": 2,
-                                    "start_col": 16,
-                                    "start_line": 2,
-                                    "type": "args"
+                                    "@type": "args",
+                                    "pos_col_end": 18,
+                                    "pos_col_start": 17,
+                                    "pos_line_end": 2,
+                                    "pos_line_start": 2
                                 },
                                 "body": [
                                     {
-                                        "type": "NilClass"
+                                        "@type": "NilNode"
                                     }
                                 ],
-                                "end_col": 7,
-                                "end_line": 2,
                                 "name": "testfnc2",
-                                "start_col": 4,
-                                "start_line": 2,
-                                "type": "def"
+                                "pos_col_end": 7,
+                                "pos_col_start": 5,
+                                "pos_line_end": 2,
+                                "pos_line_start": 2
                             }
                         ],
-                        "end_col": 3,
-                        "end_line": 1,
                         "name": "testfnc1",
-                        "start_col": 0,
-                        "start_line": 1,
-                        "type": "def"
+                        "pos_col_end": 3,
+                        "pos_col_start": 1,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1
                     },
                     {
+                        "@type": "def",
                         "args": {
-                            "end_col": 14,
-                            "end_line": 5,
-                            "start_col": 12,
-                            "start_line": 5,
-                            "type": "args"
+                            "@type": "args",
+                            "pos_col_end": 14,
+                            "pos_col_start": 13,
+                            "pos_line_end": 5,
+                            "pos_line_start": 5
                         },
                         "body": [
                             {
+                                "@type": "def",
                                 "args": {
-                                    "end_col": 18,
-                                    "end_line": 6,
-                                    "start_col": 16,
-                                    "start_line": 6,
-                                    "type": "args"
+                                    "@type": "args",
+                                    "pos_col_end": 18,
+                                    "pos_col_start": 17,
+                                    "pos_line_end": 6,
+                                    "pos_line_start": 6
                                 },
                                 "body": [
                                     {
+                                        "@type": "def",
                                         "args": {
-                                            "end_col": 22,
-                                            "end_line": 7,
-                                            "start_col": 20,
-                                            "start_line": 7,
-                                            "type": "args"
+                                            "@type": "args",
+                                            "pos_col_end": 22,
+                                            "pos_col_start": 21,
+                                            "pos_line_end": 7,
+                                            "pos_line_start": 7
                                         },
                                         "body": [
                                             {
-                                                "type": "NilClass"
+                                                "@type": "NilNode"
                                             }
                                         ],
-                                        "end_col": 11,
-                                        "end_line": 7,
                                         "name": "testfnc5",
-                                        "start_col": 8,
-                                        "start_line": 7,
-                                        "type": "def"
+                                        "pos_col_end": 11,
+                                        "pos_col_start": 9,
+                                        "pos_line_end": 7,
+                                        "pos_line_start": 7
                                     }
                                 ],
-                                "end_col": 7,
-                                "end_line": 6,
                                 "name": "testfnc4",
-                                "start_col": 4,
-                                "start_line": 6,
-                                "type": "def"
+                                "pos_col_end": 7,
+                                "pos_col_start": 5,
+                                "pos_line_end": 6,
+                                "pos_line_start": 6
                             }
                         ],
-                        "end_col": 3,
-                        "end_line": 5,
                         "name": "testfnc3",
-                        "start_col": 0,
-                        "start_line": 5,
-                        "type": "def"
+                        "pos_col_end": 3,
+                        "pos_col_start": 1,
+                        "pos_line_end": 5,
+                        "pos_line_start": 5
                     }
                 ],
-                "end_col": 3,
-                "end_line": 10,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "begin"
+                "pos_col_end": 3,
+                "pos_col_start": 1,
+                "pos_line_end": 10,
+                "pos_line_start": 1
             }
         }
     }

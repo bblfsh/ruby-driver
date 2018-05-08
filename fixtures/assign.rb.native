@@ -4,20 +4,21 @@
     "errors": [],
     "ast": {
         "RUBYAST": {
+            "@type": "module",
             "module": {
-                "end_col": 5,
-                "end_line": 1,
-                "start_col": 0,
-                "start_line": 1,
+                "@type": "lvasgn",
+                "pos_col_end": 5,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1,
                 "target": "a",
-                "type": "lvasgn",
                 "value": {
-                    "end_col": 5,
-                    "end_line": 1,
-                    "start_col": 4,
-                    "start_line": 1,
-                    "token": 1,
-                    "type": "int"
+                    "@type": "int",
+                    "pos_col_end": 5,
+                    "pos_col_start": 5,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1,
+                    "token": 1
                 }
             }
         }
