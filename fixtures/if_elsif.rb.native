@@ -3,145 +3,87 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 2,
-                "line": 1
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@type": "if",
-            "body": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 9,
-                    "line": 2
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 5,
-                    "line": 2
-                },
-                "@type": "lvasgn",
-                "target": "a",
-                "value": {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 9,
-                        "line": 2
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 9,
-                        "line": 2
-                    },
-                    "@token": 1,
-                    "@type": "int"
-                }
-            },
-            "condition": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 6,
-                    "line": 1
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 4,
-                    "line": 1
-                },
-                "@type": "send_qualified",
-                "base": null,
-                "selector": "foo"
-            },
-            "else": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 5,
-                    "line": 3
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 1,
-                    "line": 3
-                },
+        "RUBYAST": {
+            "@type": "module",
+            "file": {
                 "@type": "if",
                 "body": {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 9,
-                        "line": 4
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 5,
-                        "line": 4
-                    },
                     "@type": "lvasgn",
-                    "target": "b",
+                    "pos_col_end": 9,
+                    "pos_col_start": 5,
+                    "pos_line_end": 2,
+                    "pos_line_start": 2,
+                    "target": "a",
                     "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 9,
-                            "line": 4
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 9,
-                            "line": 4
-                        },
-                        "@token": 2,
-                        "@type": "int"
+                        "@type": "int",
+                        "pos_col_end": 9,
+                        "pos_col_start": 9,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
+                        "token": 1
                     }
                 },
                 "condition": {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 9,
-                        "line": 3
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 7,
-                        "line": 3
-                    },
-                    "@type": "send_qualified",
+                    "@type": "send",
                     "base": null,
-                    "selector": "bar"
+                    "pos_col_end": 6,
+                    "pos_col_start": 4,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1,
+                    "selector": "foo"
                 },
                 "else": {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 9,
-                        "line": 6
+                    "@type": "if",
+                    "body": {
+                        "@type": "lvasgn",
+                        "pos_col_end": 9,
+                        "pos_col_start": 5,
+                        "pos_line_end": 4,
+                        "pos_line_start": 4,
+                        "target": "b",
+                        "value": {
+                            "@type": "int",
+                            "pos_col_end": 9,
+                            "pos_col_start": 9,
+                            "pos_line_end": 4,
+                            "pos_line_start": 4,
+                            "token": 2
+                        }
                     },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 5,
-                        "line": 6
+                    "condition": {
+                        "@type": "send",
+                        "base": null,
+                        "pos_col_end": 9,
+                        "pos_col_start": 7,
+                        "pos_line_end": 3,
+                        "pos_line_start": 3,
+                        "selector": "bar"
                     },
-                    "@type": "lvasgn",
-                    "target": "c",
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 9,
-                            "line": 6
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 9,
-                            "line": 6
-                        },
-                        "@token": 3,
-                        "@type": "int"
-                    }
-                }
+                    "else": {
+                        "@type": "lvasgn",
+                        "pos_col_end": 9,
+                        "pos_col_start": 5,
+                        "pos_line_end": 6,
+                        "pos_line_start": 6,
+                        "target": "c",
+                        "value": {
+                            "@type": "int",
+                            "pos_col_end": 9,
+                            "pos_col_start": 9,
+                            "pos_line_end": 6,
+                            "pos_line_start": 6,
+                            "token": 3
+                        }
+                    },
+                    "pos_col_end": 5,
+                    "pos_col_start": 1,
+                    "pos_line_end": 3,
+                    "pos_line_start": 3
+                },
+                "pos_col_end": 2,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
             }
         }
     }

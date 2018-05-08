@@ -3,51 +3,35 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 5,
-                "line": 1
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@token": "Testcls1",
-            "@type": "class",
-            "body": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 18,
-                        "line": 2
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 5,
-                        "line": 2
-                    },
-                    "@type": "cvasgn",
-                    "target": "@@classvar",
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 18,
-                            "line": 2
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 18,
-                            "line": 2
-                        },
-                        "@token": 1,
-                        "@type": "int"
+        "RUBYAST": {
+            "@type": "module",
+            "file": {
+                "@type": "class",
+                "body": [
+                    {
+                        "@type": "cvasgn",
+                        "pos_col_end": 18,
+                        "pos_col_start": 5,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
+                        "target": "@@classvar",
+                        "value": {
+                            "@type": "int",
+                            "pos_col_end": 18,
+                            "pos_col_start": 18,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2,
+                            "token": 1
+                        }
                     }
-                }
-            ],
-            "parent": null
+                ],
+                "name": "Testcls1",
+                "parent": null,
+                "pos_col_end": 5,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
+            }
         }
     }
 }

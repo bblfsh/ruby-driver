@@ -2,198 +2,145 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-module {
-.  Roles: Identifier,Module,Statement
+ {
 .  Children: {
-.  .  0: class {
-.  .  .  Roles: Declaration,Identifier,Statement,Type
-.  .  .  TOKEN "Testcls1"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 4
-.  .  .  .  Line: 1
-.  .  .  .  Col: 5
-.  .  .  }
+.  .  0: module {
+.  .  .  Roles: Identifier,Module,Statement
 .  .  .  Properties: {
-.  .  .  .  internalRole: file
+.  .  .  .  internalRole: RUBYAST
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: begin {
-.  .  .  .  .  Roles: Block
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 19
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 134
-.  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  Col: 7
-.  .  .  .  .  }
+.  .  .  .  0: class {
+.  .  .  .  .  Roles: Declaration,Identifier,Statement,Type
+.  .  .  .  .  TOKEN "Testcls1"
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  internalRole: file
+.  .  .  .  .  .  pos_col_end: 5
+.  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  pos_line_start: 1
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: defs {
-.  .  .  .  .  .  .  Roles: Declaration,Function,Identifier,Incomplete,Statement
-.  .  .  .  .  .  .  TOKEN "testfnc1"
+.  .  .  .  .  .  0: begin {
+.  .  .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 19
 .  .  .  .  .  .  .  .  Line: 2
 .  .  .  .  .  .  .  .  Col: 5
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 21
-.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Offset: 134
+.  .  .  .  .  .  .  .  Line: 6
 .  .  .  .  .  .  .  .  Col: 7
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: self {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Left,This
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 23
-.  .  .  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 26
-.  .  .  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  .  .  Col: 12
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: def {
-.  .  .  .  .  .  .  Roles: Declaration,Function,Identifier,Statement
-.  .  .  .  .  .  .  TOKEN "initialize"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 49
-.  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  Col: 5
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 51
-.  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  Col: 7
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: args {
-.  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Incomplete
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: args
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: send_call {
-.  .  .  .  .  .  .  .  .  Roles: Call,Expression,Function
-.  .  .  .  .  .  .  .  .  TOKEN "define_finalizer"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 72
-.  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 126
-.  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  Col: 63
-.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  0: defs {
+.  .  .  .  .  .  .  .  .  Roles: Declaration,Function,Identifier,Incomplete,Statement
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  .  .  name: testfnc1
+.  .  .  .  .  .  .  .  .  .  pos_col_end: 7
+.  .  .  .  .  .  .  .  .  .  pos_col_start: 5
+.  .  .  .  .  .  .  .  .  .  pos_line_end: 2
+.  .  .  .  .  .  .  .  .  .  pos_line_start: 2
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  0: const {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Incomplete
-.  .  .  .  .  .  .  .  .  .  .  TOKEN "ObjectSpace"
-.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 72
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 82
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 19
-.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  0: self {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Left,This
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  .  .  .  .  pos_col_end: 12
+.  .  .  .  .  .  .  .  .  .  .  .  pos_col_start: 9
+.  .  .  .  .  .  .  .  .  .  .  .  pos_line_end: 2
+.  .  .  .  .  .  .  .  .  .  .  .  pos_line_start: 2
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  1: self {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Left,This
-.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 101
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 38
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 104
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 41
-.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  1: def {
+.  .  .  .  .  .  .  .  .  Roles: Declaration,Function,Identifier,Statement
+.  .  .  .  .  .  .  .  .  TOKEN "initialize"
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  .  .  pos_col_end: 7
+.  .  .  .  .  .  .  .  .  .  pos_col_start: 5
+.  .  .  .  .  .  .  .  .  .  pos_line_end: 4
+.  .  .  .  .  .  .  .  .  .  pos_line_start: 4
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  0: args {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Incomplete
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  internalRole: values
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: args
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  2: send_call {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function
-.  .  .  .  .  .  .  .  .  .  .  TOKEN "testfnc1"
-.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 107
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 44
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 125
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 62
-.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  1: send {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  .  .  .  .  .  .  .  TOKEN "define_finalizer"
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  internalRole: values
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  .  .  .  .  pos_col_end: 63
+.  .  .  .  .  .  .  .  .  .  .  .  pos_col_start: 9
+.  .  .  .  .  .  .  .  .  .  .  .  pos_line_end: 5
+.  .  .  .  .  .  .  .  .  .  .  .  pos_line_start: 5
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  .  .  0: send_call {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call,Expression,Function
-.  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "class"
-.  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 107
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 44
-.  .  .  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 116
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 53
-.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  0: const {
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "ObjectSpace"
 .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_col_end: 19
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_col_start: 9
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_line_end: 5
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_line_start: 5
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  1: self {
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Left,This
+.  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: values
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_col_end: 41
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_col_start: 38
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_line_end: 5
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_line_start: 5
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  2: send {
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "testfnc1"
+.  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: values
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_col_end: 62
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_col_start: 44
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_line_end: 5
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_line_start: 5
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  0: self {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Left,This
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 107
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 44
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 110
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 47
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  0: send {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "class"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_col_end: 53
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_col_start: 44
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_line_end: 5
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_line_start: 5
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: self {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Left,This
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_col_end: 47
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_col_start: 44
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_line_end: 5
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  pos_line_start: 5
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  }

@@ -2,88 +2,77 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-module {
-.  Roles: Identifier,Module,Statement
+ {
 .  Children: {
-.  .  0: begin {
-.  .  .  Roles: Block
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 47
-.  .  .  .  Line: 3
-.  .  .  .  Col: 3
-.  .  .  }
+.  .  0: module {
+.  .  .  Roles: Identifier,Module,Statement
 .  .  .  Properties: {
-.  .  .  .  internalRole: file
+.  .  .  .  internalRole: RUBYAST
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: class {
-.  .  .  .  .  Roles: Declaration,Identifier,Statement,Type
-.  .  .  .  .  TOKEN "Testcls1"
+.  .  .  .  0: begin {
+.  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 0
 .  .  .  .  .  .  Line: 1
 .  .  .  .  .  .  Col: 1
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 4
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 5
+.  .  .  .  .  .  Offset: 47
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 3
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  internalRole: file
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: NilNode {
-.  .  .  .  .  .  .  Roles: Null
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: class {
-.  .  .  .  .  Roles: Declaration,Identifier,Statement,Type
-.  .  .  .  .  TOKEN "Testcls2"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 19
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 1
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 23
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: body
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: NilNode {
-.  .  .  .  .  .  .  Roles: Null
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: const {
-.  .  .  .  .  .  .  Roles: Expression,Identifier,Incomplete
+.  .  .  .  .  .  0: class {
+.  .  .  .  .  .  .  Roles: Declaration,Identifier,Statement,Type
 .  .  .  .  .  .  .  TOKEN "Testcls1"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 36
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 18
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 43
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 25
-.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: parent
+.  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  pos_col_end: 5
+.  .  .  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0: NilNode {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: class {
+.  .  .  .  .  .  .  Roles: Declaration,Identifier,Statement,Type
+.  .  .  .  .  .  .  TOKEN "Testcls2"
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  pos_col_end: 5
+.  .  .  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  .  .  pos_line_end: 2
+.  .  .  .  .  .  .  .  pos_line_start: 2
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0: NilNode {
+.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  1: const {
+.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Incomplete
+.  .  .  .  .  .  .  .  .  TOKEN "Testcls1"
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: parent
+.  .  .  .  .  .  .  .  .  .  pos_col_end: 25
+.  .  .  .  .  .  .  .  .  .  pos_col_start: 18
+.  .  .  .  .  .  .  .  .  .  pos_line_end: 2
+.  .  .  .  .  .  .  .  .  .  pos_line_start: 2
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }

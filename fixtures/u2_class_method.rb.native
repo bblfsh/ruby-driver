@@ -3,55 +3,39 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 5,
-                "line": 1
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@token": "Testcls1",
-            "@type": "class",
-            "body": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 7,
-                        "line": 2
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 5,
-                        "line": 2
-                    },
-                    "@token": "testfnc1",
-                    "@type": "def",
-                    "args": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 18,
-                            "line": 2
+        "RUBYAST": {
+            "@type": "module",
+            "file": {
+                "@type": "class",
+                "body": [
+                    {
+                        "@type": "def",
+                        "args": {
+                            "@type": "args",
+                            "pos_col_end": 18,
+                            "pos_col_start": 17,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2
                         },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 17,
-                            "line": 2
-                        },
-                        "@type": "args"
-                    },
-                    "body": [
-                        {
-                            "@type": "NilNode"
-                        }
-                    ]
-                }
-            ],
-            "parent": null
+                        "body": [
+                            {
+                                "@type": "NilNode"
+                            }
+                        ],
+                        "name": "testfnc1",
+                        "pos_col_end": 7,
+                        "pos_col_start": 5,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2
+                    }
+                ],
+                "name": "Testcls1",
+                "parent": null,
+                "pos_col_end": 5,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
+            }
         }
     }
 }

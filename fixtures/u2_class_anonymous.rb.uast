@@ -2,57 +2,46 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-module {
-.  Roles: Identifier,Module,Statement
+ {
 .  Children: {
-.  .  0: block {
-.  .  .  Roles: Block
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 15
-.  .  .  .  Line: 2
-.  .  .  .  Col: 3
-.  .  .  }
+.  .  0: module {
+.  .  .  Roles: Identifier,Module,Statement
 .  .  .  Properties: {
-.  .  .  .  internalRole: file
+.  .  .  .  internalRole: RUBYAST
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send_call {
-.  .  .  .  .  Roles: Call,Expression,Function
-.  .  .  .  .  TOKEN "new"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 0
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 1
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 8
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 9
-.  .  .  .  .  }
+.  .  .  .  0: block {
+.  .  .  .  .  Roles: Block
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: blockdata
+.  .  .  .  .  .  internalRole: file
+.  .  .  .  .  .  pos_col_end: 3
+.  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  pos_line_end: 2
+.  .  .  .  .  .  pos_line_start: 1
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: const {
-.  .  .  .  .  .  .  Roles: Expression,Identifier,Incomplete
-.  .  .  .  .  .  .  TOKEN "Class"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 0
-.  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 1
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 4
-.  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 5
-.  .  .  .  .  .  .  }
+.  .  .  .  .  .  0: send {
+.  .  .  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  .  .  .  TOKEN "new"
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  internalRole: blockdata
+.  .  .  .  .  .  .  .  pos_col_end: 9
+.  .  .  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0: const {
+.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Incomplete
+.  .  .  .  .  .  .  .  .  TOKEN "Class"
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  .  .  pos_col_end: 5
+.  .  .  .  .  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }

@@ -3,102 +3,62 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 7,
-                "line": 3
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@type": "begin",
-            "body": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 8,
-                        "line": 1
+        "RUBYAST": {
+            "@type": "module",
+            "file": {
+                "@type": "begin",
+                "body": [
+                    {
+                        "@type": "lvasgn",
+                        "pos_col_end": 8,
+                        "pos_col_start": 1,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1,
+                        "target": "a",
+                        "value": {
+                            "@type": "true",
+                            "pos_col_end": 8,
+                            "pos_col_start": 5,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1
+                        }
                     },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 1
+                    {
+                        "@type": "lvasgn",
+                        "pos_col_end": 9,
+                        "pos_col_start": 1,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
+                        "target": "b",
+                        "value": {
+                            "@type": "false",
+                            "pos_col_end": 9,
+                            "pos_col_start": 5,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2
+                        }
                     },
-                    "@type": "lvasgn",
-                    "target": "a",
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 8,
-                            "line": 1
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 5,
-                            "line": 1
-                        },
-                        "@type": "true"
+                    {
+                        "@type": "lvasgn",
+                        "pos_col_end": 7,
+                        "pos_col_start": 1,
+                        "pos_line_end": 3,
+                        "pos_line_start": 3,
+                        "target": "c",
+                        "value": {
+                            "@type": "nil",
+                            "pos_col_end": 7,
+                            "pos_col_start": 5,
+                            "pos_line_end": 3,
+                            "pos_line_start": 3
+                        }
                     }
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 9,
-                        "line": 2
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 2
-                    },
-                    "@type": "lvasgn",
-                    "target": "b",
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 9,
-                            "line": 2
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 5,
-                            "line": 2
-                        },
-                        "@type": "false"
-                    }
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 7,
-                        "line": 3
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 3
-                    },
-                    "@type": "lvasgn",
-                    "target": "c",
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 7,
-                            "line": 3
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 5,
-                            "line": 3
-                        },
-                        "@type": "nil"
-                    }
-                }
-            ]
+                ],
+                "pos_col_end": 7,
+                "pos_col_start": 1,
+                "pos_line_end": 3,
+                "pos_line_start": 1
+            }
         }
     }
 }

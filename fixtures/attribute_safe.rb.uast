@@ -2,57 +2,52 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-module {
-.  Roles: Identifier,Module,Statement
+ {
 .  Children: {
-.  .  0: lvasgn {
-.  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
-.  .  .  TOKEN "a"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 12
-.  .  .  .  Line: 1
-.  .  .  .  Col: 13
-.  .  .  }
+.  .  0: module {
+.  .  .  Roles: Identifier,Module,Statement
 .  .  .  Properties: {
-.  .  .  .  internalRole: file
+.  .  .  .  internalRole: RUBYAST
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send_call {
-.  .  .  .  .  Roles: Binary,Call,Expression,Function,Right
-.  .  .  .  .  TOKEN "foo"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 4
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 12
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 13
-.  .  .  .  .  }
+.  .  .  .  0: lvasgn {
+.  .  .  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
+.  .  .  .  .  TOKEN "a"
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  internalRole: file
+.  .  .  .  .  .  pos_col_end: 13
+.  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  pos_line_start: 1
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: self {
-.  .  .  .  .  .  .  Roles: Expression,Left,This
+.  .  .  .  .  .  0: csend {
+.  .  .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 4
 .  .  .  .  .  .  .  .  Line: 1
 .  .  .  .  .  .  .  .  Col: 5
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 7
+.  .  .  .  .  .  .  .  Offset: 12
 .  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 8
+.  .  .  .  .  .  .  .  Col: 13
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  .  .  selector: foo
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0: self {
+.  .  .  .  .  .  .  .  .  Roles: Expression,Left,This
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  .  .  pos_col_end: 8
+.  .  .  .  .  .  .  .  .  .  pos_col_start: 5
+.  .  .  .  .  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }

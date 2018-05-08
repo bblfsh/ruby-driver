@@ -3,34 +3,24 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 7,
-                "line": 1
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@type": "casgn",
-            "base": null,
-            "selector": "Foo",
-            "value": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 7,
-                    "line": 1
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 7,
-                    "line": 1
-                },
-                "@token": 1,
-                "@type": "int"
+        "RUBYAST": {
+            "@type": "module",
+            "file": {
+                "@type": "casgn",
+                "base": null,
+                "pos_col_end": 7,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1,
+                "selector": "Foo",
+                "value": {
+                    "@type": "int",
+                    "pos_col_end": 7,
+                    "pos_col_start": 7,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1,
+                    "token": 1
+                }
             }
         }
     }

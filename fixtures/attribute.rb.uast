@@ -2,58 +2,46 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-module {
-.  Roles: Identifier,Module,Statement
+ {
 .  Children: {
-.  .  0: send_assign {
-.  .  .  Roles: Assignment,Expression,Left
-.  .  .  TOKEN "foo"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 11
-.  .  .  .  Line: 1
-.  .  .  .  Col: 12
-.  .  .  }
+.  .  0: module {
+.  .  .  Roles: Identifier,Module,Statement
 .  .  .  Properties: {
-.  .  .  .  internalRole: file
-.  .  .  .  selector: foo=
+.  .  .  .  internalRole: RUBYAST
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: self {
-.  .  .  .  .  Roles: Expression,Left,This
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 0
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 1
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 3
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 4
-.  .  .  .  .  }
+.  .  .  .  0: send {
+.  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  .  TOKEN "foo="
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  internalRole: file
+.  .  .  .  .  .  pos_col_end: 12
+.  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  pos_line_start: 1
 .  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: int {
-.  .  .  .  .  Roles: Assignment,Expression,Literal,Number,Primitive,Right
-.  .  .  .  .  TOKEN "1"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 11
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 12
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 11
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 12
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: values
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: self {
+.  .  .  .  .  .  .  Roles: Expression,Left,This
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  pos_col_end: 4
+.  .  .  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: int {
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
+.  .  .  .  .  .  .  TOKEN "1"
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: values
+.  .  .  .  .  .  .  .  pos_col_end: 12
+.  .  .  .  .  .  .  .  pos_col_start: 12
+.  .  .  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

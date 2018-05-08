@@ -2,70 +2,59 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-module {
-.  Roles: Identifier,Module,Statement
+ {
 .  Children: {
-.  .  0: regexp {
-.  .  .  Roles: Expression,Regexp
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 11
-.  .  .  .  Line: 1
-.  .  .  .  Col: 12
-.  .  .  }
+.  .  0: module {
+.  .  .  Roles: Identifier,Module,Statement
 .  .  .  Properties: {
-.  .  .  .  internalRole: file
+.  .  .  .  internalRole: RUBYAST
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: str {
-.  .  .  .  .  Roles: Expression,Literal,Primitive,String
-.  .  .  .  .  TOKEN "text(.*)"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 1
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 2
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 8
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 9
-.  .  .  .  .  }
+.  .  .  .  0: regexp {
+.  .  .  .  .  Roles: Expression,Regexp
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: text
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: regopt {
-.  .  .  .  .  Roles: Expression,Incomplete,Regexp
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 10
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 11
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 11
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 12
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: options
+.  .  .  .  .  .  internalRole: file
+.  .  .  .  .  .  pos_col_end: 12
+.  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  pos_line_start: 1
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: Symbol {
-.  .  .  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  .  .  TOKEN "i"
+.  .  .  .  .  .  0: regopt {
+.  .  .  .  .  .  .  Roles: Expression,Incomplete,Regexp
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: options
+.  .  .  .  .  .  .  .  pos_col_end: 12
+.  .  .  .  .  .  .  .  pos_col_start: 11
+.  .  .  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0: Symbol {
+.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
+.  .  .  .  .  .  .  .  .  TOKEN "i"
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: options
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  1: Symbol {
+.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
+.  .  .  .  .  .  .  .  .  TOKEN "m"
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: options
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: Symbol {
-.  .  .  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  .  .  TOKEN "m"
+.  .  .  .  .  .  1: str {
+.  .  .  .  .  .  .  Roles: Expression,Literal,Primitive,String
+.  .  .  .  .  .  .  TOKEN "text(.*)"
 .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: options
+.  .  .  .  .  .  .  .  internalRole: text
+.  .  .  .  .  .  .  .  pos_col_end: 9
+.  .  .  .  .  .  .  .  pos_col_start: 2
+.  .  .  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  .  .  pos_line_start: 1
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }

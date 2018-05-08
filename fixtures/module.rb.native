@@ -3,25 +3,21 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 6,
-                "line": 1
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@token": "Foo",
+        "RUBYAST": {
             "@type": "module",
-            "begin": [
-                {
-                    "@type": "NilNode"
-                }
-            ]
+            "file": {
+                "@type": "module",
+                "begin": [
+                    {
+                        "@type": "NilNode"
+                    }
+                ],
+                "name": "Foo",
+                "pos_col_end": 6,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
+            }
         }
     }
 }

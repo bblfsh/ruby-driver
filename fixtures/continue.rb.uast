@@ -2,40 +2,46 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-module {
-.  Roles: Identifier,Module,Statement
+ {
 .  Children: {
-.  .  0: while {
-.  .  .  Roles: Statement,While
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 4
-.  .  .  .  Line: 1
-.  .  .  .  Col: 5
-.  .  .  }
+.  .  0: module {
+.  .  .  Roles: Identifier,Module,Statement
 .  .  .  Properties: {
-.  .  .  .  internalRole: file
+.  .  .  .  internalRole: RUBYAST
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: true {
-.  .  .  .  .  Roles: Boolean,Condition,Expression,Literal
-.  .  .  .  .  TOKEN "true"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 6
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 7
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 9
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 10
-.  .  .  .  .  }
+.  .  .  .  0: while {
+.  .  .  .  .  Roles: Statement,While
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: condition
+.  .  .  .  .  .  internalRole: file
+.  .  .  .  .  .  pos_col_end: 5
+.  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: send {
+.  .  .  .  .  .  .  Roles: Continue,Statement
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  pos_col_end: 12
+.  .  .  .  .  .  .  .  pos_col_start: 5
+.  .  .  .  .  .  .  .  pos_line_end: 2
+.  .  .  .  .  .  .  .  pos_line_start: 2
+.  .  .  .  .  .  .  .  selector: continue
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: true {
+.  .  .  .  .  .  .  Roles: Boolean,Expression,Literal
+.  .  .  .  .  .  .  TOKEN "true"
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: condition
+.  .  .  .  .  .  .  .  pos_col_end: 10
+.  .  .  .  .  .  .  .  pos_col_start: 7
+.  .  .  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: send_statement {

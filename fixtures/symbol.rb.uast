@@ -2,24 +2,25 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-module {
-.  Roles: Identifier,Module,Statement
+ {
 .  Children: {
-.  .  0: sym {
-.  .  .  Roles: Expression,Identifier
-.  .  .  TOKEN "foo"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 3
-.  .  .  .  Line: 1
-.  .  .  .  Col: 4
-.  .  .  }
+.  .  0: module {
+.  .  .  Roles: Identifier,Module,Statement
 .  .  .  Properties: {
-.  .  .  .  internalRole: file
+.  .  .  .  internalRole: RUBYAST
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: sym {
+.  .  .  .  .  Roles: Expression,Identifier
+.  .  .  .  .  TOKEN "foo"
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: file
+.  .  .  .  .  .  pos_col_end: 4
+.  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  }
+.  .  .  .  }
 .  .  .  }
 .  .  }
 .  }

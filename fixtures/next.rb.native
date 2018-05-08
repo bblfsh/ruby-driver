@@ -3,72 +3,44 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 5,
-                "line": 1
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@type": "while",
-            "body": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 6,
-                    "line": 2
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 5,
-                    "line": 2
-                },
-                "@type": "if",
+        "RUBYAST": {
+            "@type": "module",
+            "file": {
+                "@type": "while",
                 "body": {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 12,
-                        "line": 3
+                    "@type": "if",
+                    "body": {
+                        "@type": "next",
+                        "pos_col_end": 12,
+                        "pos_col_start": 9,
+                        "pos_line_end": 3,
+                        "pos_line_start": 3,
+                        "target": null
                     },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 9,
-                        "line": 3
+                    "condition": {
+                        "@type": "false",
+                        "pos_col_end": 12,
+                        "pos_col_start": 8,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2
                     },
-                    "@type": "next",
-                    "target": null
+                    "else": null,
+                    "pos_col_end": 6,
+                    "pos_col_start": 5,
+                    "pos_line_end": 2,
+                    "pos_line_start": 2
                 },
                 "condition": {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 12,
-                        "line": 2
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 8,
-                        "line": 2
-                    },
-                    "@type": "false"
+                    "@type": "true",
+                    "pos_col_end": 10,
+                    "pos_col_start": 7,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
                 },
-                "else": null
-            },
-            "condition": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 10,
-                    "line": 1
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 7,
-                    "line": 1
-                },
-                "@type": "true"
+                "pos_col_end": 5,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
             }
         }
     }

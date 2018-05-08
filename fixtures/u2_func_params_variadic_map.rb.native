@@ -3,25 +3,26 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 3,
-                "line": 1
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@token": "testfnc1",
-            "@type": "def",
-            "args": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 17,
-                    "line": 1
+        "RUBYAST": {
+            "@type": "module",
+            "file": {
+                "@type": "def",
+                "args": {
+                    "@type": "args",
+                    "children": [
+                        {
+                            "@type": "kwrestarg",
+                            "name": "a",
+                            "pos_col_end": 16,
+                            "pos_col_start": 16,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1
+                        }
+                    ],
+                    "pos_col_end": 17,
+                    "pos_col_start": 13,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
                 },
                 "@start": {
                     "@type": "ast:Position",
@@ -31,26 +32,15 @@
                 "@type": "args",
                 "children": [
                     {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 16,
-                            "line": 1
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 16,
-                            "line": 1
-                        },
-                        "@token": "a",
-                        "@type": "kwrestarg"
+                        "@type": "NilNode"
                     }
-                ]
-            },
-            "body": [
-                {
-                    "@type": "NilNode"
-                }
-            ]
+                ],
+                "name": "testfnc1",
+                "pos_col_end": 3,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
+            }
         }
     }
 }

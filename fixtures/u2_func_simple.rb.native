@@ -3,135 +3,83 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 3,
-                "line": 1
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@token": "testfnc1",
-            "@type": "def",
-            "args": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 18,
-                    "line": 1
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 13,
-                    "line": 1
-                },
-                "@type": "args",
-                "children": [
-                    {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 14,
-                            "line": 1
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 14,
-                            "line": 1
-                        },
-                        "@token": "a",
-                        "@type": "arg"
-                    },
-                    {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 17,
-                            "line": 1
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 17,
-                            "line": 1
-                        },
-                        "@token": "b",
-                        "@type": "arg"
-                    }
-                ]
-            },
-            "body": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 12,
-                        "line": 3
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 5,
-                        "line": 2
-                    },
-                    "@type": "begin",
-                    "body": [
+        "RUBYAST": {
+            "@type": "module",
+            "file": {
+                "@type": "def",
+                "args": {
+                    "@type": "args",
+                    "children": [
                         {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 9,
-                                "line": 2
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 5,
-                                "line": 2
-                            },
-                            "@type": "lvasgn",
-                            "target": "a",
-                            "value": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 9,
-                                    "line": 2
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 9,
-                                    "line": 2
-                                },
-                                "@token": 1,
-                                "@type": "int"
-                            }
+                            "@type": "arg",
+                            "pos_col_end": 14,
+                            "pos_col_start": 14,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1,
+                            "token": "a"
                         },
                         {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 10,
-                                "line": 3
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 5,
-                                "line": 3
-                            },
-                            "@type": "return",
-                            "target": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 12,
-                                    "line": 3
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 12,
-                                    "line": 3
-                                },
-                                "@token": "a",
-                                "@type": "lvar"
-                            }
+                            "@type": "arg",
+                            "pos_col_end": 17,
+                            "pos_col_start": 17,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1,
+                            "token": "b"
                         }
-                    ]
-                }
-            ]
+                    ],
+                    "pos_col_end": 18,
+                    "pos_col_start": 13,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
+                },
+                "body": [
+                    {
+                        "@type": "begin",
+                        "body": [
+                            {
+                                "@type": "lvasgn",
+                                "pos_col_end": 9,
+                                "pos_col_start": 5,
+                                "pos_line_end": 2,
+                                "pos_line_start": 2,
+                                "target": "a",
+                                "value": {
+                                    "@type": "int",
+                                    "pos_col_end": 9,
+                                    "pos_col_start": 9,
+                                    "pos_line_end": 2,
+                                    "pos_line_start": 2,
+                                    "token": 1
+                                }
+                            },
+                            {
+                                "@type": "return",
+                                "pos_col_end": 10,
+                                "pos_col_start": 5,
+                                "pos_line_end": 3,
+                                "pos_line_start": 3,
+                                "target": {
+                                    "@type": "lvar",
+                                    "pos_col_end": 12,
+                                    "pos_col_start": 12,
+                                    "pos_line_end": 3,
+                                    "pos_line_start": 3,
+                                    "token": "a"
+                                }
+                            }
+                        ],
+                        "pos_col_end": 12,
+                        "pos_col_start": 5,
+                        "pos_line_end": 3,
+                        "pos_line_start": 2
+                    }
+                ],
+                "name": "testfnc1",
+                "pos_col_end": 3,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
+            }
         }
     }
 }

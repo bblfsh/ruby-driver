@@ -2,30 +2,31 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-module {
-.  Roles: Identifier,Module,Statement
+ {
 .  Children: {
 .  .  0: module {
 .  .  .  Roles: Identifier,Module,Statement
-.  .  .  TOKEN "Testmodule1"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 5
-.  .  .  .  Line: 1
-.  .  .  .  Col: 6
-.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: file
+.  .  .  .  internalRole: RUBYAST
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: NilNode {
-.  .  .  .  .  Roles: Null
+.  .  .  .  0: module {
+.  .  .  .  .  Roles: Identifier,Module,Statement
+.  .  .  .  .  TOKEN "Testmodule1"
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: begin
+.  .  .  .  .  .  internalRole: file
+.  .  .  .  .  .  pos_col_end: 6
+.  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: NilNode {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: begin
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

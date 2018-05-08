@@ -3,84 +3,52 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 5,
-                "line": 1
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@token": "Testcls1",
-            "@type": "class",
-            "body": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 22,
-                        "line": 3
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 5,
-                        "line": 2
-                    },
-                    "@type": "begin",
-                    "body": [
-                        {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 7,
-                                "line": 2
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 5,
-                                "line": 2
-                            },
-                            "@token": "initialize",
-                            "@type": "def",
-                            "args": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 20,
-                                    "line": 2
+        "RUBYAST": {
+            "@type": "module",
+            "file": {
+                "@type": "class",
+                "body": [
+                    {
+                        "@type": "begin",
+                        "body": [
+                            {
+                                "@type": "def",
+                                "args": {
+                                    "@type": "args",
+                                    "pos_col_end": 20,
+                                    "pos_col_start": 19,
+                                    "pos_line_end": 2,
+                                    "pos_line_start": 2
                                 },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 19,
-                                    "line": 2
-                                },
-                                "@type": "args"
+                                "body": [
+                                    {
+                                        "@type": "NilNode"
+                                    }
+                                ],
+                                "name": "initialize",
+                                "pos_col_end": 7,
+                                "pos_col_start": 5,
+                                "pos_line_end": 2,
+                                "pos_line_start": 2
                             },
-                            "body": [
-                                {
-                                    "@type": "NilNode"
-                                }
-                            ]
-                        },
-                        {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 7,
-                                "line": 3
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 5,
-                                "line": 3
-                            },
-                            "@token": "new",
-                            "@type": "def",
-                            "args": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 18,
-                                    "line": 3
+                            {
+                                "@type": "def",
+                                "args": {
+                                    "@type": "args",
+                                    "children": [
+                                        {
+                                            "@type": "restarg",
+                                            "pos_col_end": 17,
+                                            "pos_col_start": 14,
+                                            "pos_line_end": 3,
+                                            "pos_line_start": 3,
+                                            "token": "args"
+                                        }
+                                    ],
+                                    "pos_col_end": 18,
+                                    "pos_col_start": 12,
+                                    "pos_line_end": 3,
+                                    "pos_line_start": 3
                                 },
                                 "@start": {
                                     "@type": "ast:Position",
@@ -90,31 +58,29 @@
                                 "@type": "args",
                                 "children": [
                                     {
-                                        "@end": {
-                                            "@type": "ast:Position",
-                                            "col": 17,
-                                            "line": 3
-                                        },
-                                        "@start": {
-                                            "@type": "ast:Position",
-                                            "col": 14,
-                                            "line": 3
-                                        },
-                                        "@token": "args",
-                                        "@type": "restarg"
+                                        "@type": "NilNode"
                                     }
-                                ]
-                            },
-                            "body": [
-                                {
-                                    "@type": "NilNode"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "parent": null
+                                ],
+                                "name": "new",
+                                "pos_col_end": 7,
+                                "pos_col_start": 5,
+                                "pos_line_end": 3,
+                                "pos_line_start": 3
+                            }
+                        ],
+                        "pos_col_end": 22,
+                        "pos_col_start": 5,
+                        "pos_line_end": 3,
+                        "pos_line_start": 2
+                    }
+                ],
+                "name": "Testcls1",
+                "parent": null,
+                "pos_col_end": 5,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
+            }
         }
     }
 }

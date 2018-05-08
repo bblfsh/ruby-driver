@@ -3,53 +3,37 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 6,
-                "line": 1
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@token": "Testmodule1",
+        "RUBYAST": {
             "@type": "module",
-            "begin": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 11,
-                        "line": 2
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 5,
-                        "line": 2
-                    },
-                    "@type": "send_qualified",
-                    "base": null,
-                    "selector": "attr",
-                    "values": [
-                        {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 11,
-                                "line": 2
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 10,
-                                "line": 2
-                            },
-                            "@token": "a",
-                            "@type": "sym"
-                        }
-                    ]
-                }
-            ]
+            "file": {
+                "@type": "module",
+                "begin": [
+                    {
+                        "@type": "send",
+                        "base": null,
+                        "pos_col_end": 11,
+                        "pos_col_start": 5,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
+                        "selector": "attr",
+                        "values": [
+                            {
+                                "@type": "sym",
+                                "pos_col_end": 11,
+                                "pos_col_start": 10,
+                                "pos_line_end": 2,
+                                "pos_line_start": 2,
+                                "token": "a"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Testmodule1",
+                "pos_col_end": 6,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
+            }
         }
     }
 }

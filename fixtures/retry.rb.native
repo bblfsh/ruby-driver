@@ -3,85 +3,57 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 3,
-                "line": 5
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@type": "kwbegin",
-            "body": [
-                {
-                    "@type": "rescue",
-                    "body": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 9,
-                            "line": 2
+        "RUBYAST": {
+            "@type": "module",
+            "file": {
+                "@type": "kwbegin",
+                "body": [
+                    {
+                        "@type": "rescue",
+                        "body": {
+                            "@type": "lvasgn",
+                            "pos_col_end": 9,
+                            "pos_col_start": 5,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2,
+                            "target": "a",
+                            "value": {
+                                "@type": "int",
+                                "pos_col_end": 9,
+                                "pos_col_start": 9,
+                                "pos_line_end": 2,
+                                "pos_line_start": 2,
+                                "token": 1
+                            }
                         },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 5,
-                            "line": 2
+                        "else": {
+                            "@type": "NilNode"
                         },
-                        "@type": "lvasgn",
-                        "target": "a",
-                        "value": {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 9,
-                                "line": 2
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 9,
-                                "line": 2
-                            },
-                            "@token": 1,
-                            "@type": "int"
-                        }
-                    },
-                    "else": {
-                        "@type": "NilNode"
-                    },
-                    "handlers": [
-                        {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 9,
-                                "line": 4
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 1,
-                                "line": 3
-                            },
-                            "@type": "resbody",
-                            "alias": null,
-                            "body": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 9,
-                                    "line": 4
+                        "handlers": [
+                            {
+                                "@type": "resbody",
+                                "alias": null,
+                                "body": {
+                                    "@type": "retry",
+                                    "pos_col_end": 9,
+                                    "pos_col_start": 5,
+                                    "pos_line_end": 4,
+                                    "pos_line_start": 4
                                 },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 5,
-                                    "line": 4
-                                },
-                                "@type": "retry"
-                            },
-                            "exceptions": null
-                        }
-                    ]
-                }
-            ]
+                                "exceptions": null,
+                                "pos_col_end": 9,
+                                "pos_col_start": 1,
+                                "pos_line_end": 4,
+                                "pos_line_start": 3
+                            }
+                        ]
+                    }
+                ],
+                "pos_col_end": 3,
+                "pos_col_start": 1,
+                "pos_line_end": 5,
+                "pos_line_start": 1
+            }
         }
     }
 }

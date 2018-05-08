@@ -3,279 +3,167 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 7,
-                "line": 6
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@type": "begin",
-            "body": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 6,
-                        "line": 1
+        "RUBYAST": {
+            "@type": "module",
+            "file": {
+                "@type": "begin",
+                "body": [
+                    {
+                        "@type": "op_asgn",
+                        "operator": "+",
+                        "pos_col_end": 6,
+                        "pos_col_start": 1,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1,
+                        "target": {
+                            "@type": "lvasgn",
+                            "pos_col_end": 1,
+                            "pos_col_start": 1,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1,
+                            "target": "a",
+                            "value": null
+                        },
+                        "value": {
+                            "@type": "int",
+                            "pos_col_end": 6,
+                            "pos_col_start": 6,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1,
+                            "token": 1
+                        }
                     },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 1
+                    {
+                        "@type": "op_asgn",
+                        "operator": "-",
+                        "pos_col_end": 6,
+                        "pos_col_start": 1,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
+                        "target": {
+                            "@type": "lvasgn",
+                            "pos_col_end": 1,
+                            "pos_col_start": 1,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2,
+                            "target": "b",
+                            "value": null
+                        },
+                        "value": {
+                            "@type": "int",
+                            "pos_col_end": 6,
+                            "pos_col_start": 6,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2,
+                            "token": 1
+                        }
                     },
-                    "@type": "op_asgn",
-                    "operator": "+",
-                    "target": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 1
+                    {
+                        "@type": "op_asgn",
+                        "operator": "*",
+                        "pos_col_end": 6,
+                        "pos_col_start": 1,
+                        "pos_line_end": 3,
+                        "pos_line_start": 3,
+                        "target": {
+                            "@type": "lvasgn",
+                            "pos_col_end": 1,
+                            "pos_col_start": 1,
+                            "pos_line_end": 3,
+                            "pos_line_start": 3,
+                            "target": "c",
+                            "value": null
                         },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 1
-                        },
-                        "@type": "lvasgn",
-                        "target": "a",
-                        "value": null
+                        "value": {
+                            "@type": "int",
+                            "pos_col_end": 6,
+                            "pos_col_start": 6,
+                            "pos_line_end": 3,
+                            "pos_line_start": 3,
+                            "token": 1
+                        }
                     },
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 1
+                    {
+                        "@type": "op_asgn",
+                        "operator": "/",
+                        "pos_col_end": 6,
+                        "pos_col_start": 1,
+                        "pos_line_end": 4,
+                        "pos_line_start": 4,
+                        "target": {
+                            "@type": "lvasgn",
+                            "pos_col_end": 1,
+                            "pos_col_start": 1,
+                            "pos_line_end": 4,
+                            "pos_line_start": 4,
+                            "target": "d",
+                            "value": null
                         },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 1
+                        "value": {
+                            "@type": "int",
+                            "pos_col_end": 6,
+                            "pos_col_start": 6,
+                            "pos_line_end": 4,
+                            "pos_line_start": 4,
+                            "token": 1
+                        }
+                    },
+                    {
+                        "@type": "op_asgn",
+                        "operator": "%",
+                        "pos_col_end": 6,
+                        "pos_col_start": 1,
+                        "pos_line_end": 5,
+                        "pos_line_start": 5,
+                        "target": {
+                            "@type": "lvasgn",
+                            "pos_col_end": 1,
+                            "pos_col_start": 1,
+                            "pos_line_end": 5,
+                            "pos_line_start": 5,
+                            "target": "e",
+                            "value": null
                         },
-                        "@token": 1,
-                        "@type": "int"
+                        "value": {
+                            "@type": "int",
+                            "pos_col_end": 6,
+                            "pos_col_start": 6,
+                            "pos_line_end": 5,
+                            "pos_line_start": 5,
+                            "token": 1
+                        }
+                    },
+                    {
+                        "@type": "op_asgn",
+                        "operator": "**",
+                        "pos_col_end": 7,
+                        "pos_col_start": 1,
+                        "pos_line_end": 6,
+                        "pos_line_start": 6,
+                        "target": {
+                            "@type": "lvasgn",
+                            "pos_col_end": 1,
+                            "pos_col_start": 1,
+                            "pos_line_end": 6,
+                            "pos_line_start": 6,
+                            "target": "f",
+                            "value": null
+                        },
+                        "value": {
+                            "@type": "int",
+                            "pos_col_end": 7,
+                            "pos_col_start": 7,
+                            "pos_line_end": 6,
+                            "pos_line_start": 6,
+                            "token": 1
+                        }
                     }
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 6,
-                        "line": 2
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 2
-                    },
-                    "@type": "op_asgn",
-                    "operator": "-",
-                    "target": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 2
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 2
-                        },
-                        "@type": "lvasgn",
-                        "target": "b",
-                        "value": null
-                    },
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 2
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 2
-                        },
-                        "@token": 1,
-                        "@type": "int"
-                    }
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 6,
-                        "line": 3
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 3
-                    },
-                    "@type": "op_asgn",
-                    "operator": "*",
-                    "target": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 3
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 3
-                        },
-                        "@type": "lvasgn",
-                        "target": "c",
-                        "value": null
-                    },
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 3
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 3
-                        },
-                        "@token": 1,
-                        "@type": "int"
-                    }
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 6,
-                        "line": 4
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 4
-                    },
-                    "@type": "op_asgn",
-                    "operator": "/",
-                    "target": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 4
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 4
-                        },
-                        "@type": "lvasgn",
-                        "target": "d",
-                        "value": null
-                    },
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 4
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 4
-                        },
-                        "@token": 1,
-                        "@type": "int"
-                    }
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 6,
-                        "line": 5
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 5
-                    },
-                    "@type": "op_asgn",
-                    "operator": "%",
-                    "target": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 5
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 5
-                        },
-                        "@type": "lvasgn",
-                        "target": "e",
-                        "value": null
-                    },
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 5
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 5
-                        },
-                        "@token": 1,
-                        "@type": "int"
-                    }
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 7,
-                        "line": 6
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 6
-                    },
-                    "@type": "op_asgn",
-                    "operator": "**",
-                    "target": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 6
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 6
-                        },
-                        "@type": "lvasgn",
-                        "target": "f",
-                        "value": null
-                    },
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 7,
-                            "line": 6
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 7,
-                            "line": 6
-                        },
-                        "@token": 1,
-                        "@type": "int"
-                    }
-                }
-            ]
+                ],
+                "pos_col_end": 7,
+                "pos_col_start": 1,
+                "pos_line_end": 6,
+                "pos_line_start": 1
+            }
         }
     }
 }

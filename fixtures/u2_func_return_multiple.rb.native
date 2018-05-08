@@ -3,62 +3,40 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 3,
-                "line": 1
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@token": "testfnc1",
-            "@type": "def",
-            "args": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 14,
-                    "line": 1
+        "RUBYAST": {
+            "@type": "module",
+            "file": {
+                "@type": "def",
+                "args": {
+                    "@type": "args",
+                    "pos_col_end": 14,
+                    "pos_col_start": 13,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
                 },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 13,
-                    "line": 1
-                },
-                "@type": "args"
-            },
-            "body": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 10,
-                        "line": 2
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 5,
-                        "line": 2
-                    },
-                    "@type": "return",
-                    "target": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 12,
-                            "line": 2
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 12,
-                            "line": 2
-                        },
-                        "@token": 1,
-                        "@type": "int"
+                "body": [
+                    {
+                        "@type": "return",
+                        "pos_col_end": 10,
+                        "pos_col_start": 5,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
+                        "target": {
+                            "@type": "int",
+                            "pos_col_end": 12,
+                            "pos_col_start": 12,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2,
+                            "token": 1
+                        }
                     }
-                }
-            ]
+                ],
+                "name": "testfnc1",
+                "pos_col_end": 3,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1
+            }
         }
     }
 }

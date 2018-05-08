@@ -3,228 +3,140 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 3,
-                "line": 10
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@type": "begin",
-            "body": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 7,
-                        "line": 1
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 1
-                    },
-                    "@type": "lvasgn",
-                    "target": "foo",
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 7,
-                            "line": 1
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 7,
-                            "line": 1
-                        },
-                        "@token": 1,
-                        "@type": "int"
-                    }
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 4,
-                        "line": 3
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 3
-                    },
-                    "@type": "case",
-                    "casevar": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 8,
-                            "line": 3
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 3
-                        },
-                        "@token": "foo",
-                        "@type": "lvar"
-                    },
-                    "else": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 11,
-                            "line": 9
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 5,
-                            "line": 9
-                        },
+        "RUBYAST": {
+            "@type": "module",
+            "file": {
+                "@type": "begin",
+                "body": [
+                    {
                         "@type": "lvasgn",
-                        "target": "a",
+                        "pos_col_end": 7,
+                        "pos_col_start": 1,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1,
+                        "target": "foo",
                         "value": {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 11,
-                                "line": 9
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 9,
-                                "line": 9
-                            },
-                            "@token": 100,
-                            "@type": "int"
+                            "@type": "int",
+                            "pos_col_end": 7,
+                            "pos_col_start": 7,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1,
+                            "token": 1
                         }
                     },
-                    "when_clauses": [
-                        {
-                            "@type": "when",
-                            "body": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 9,
-                                    "line": 5
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 5,
-                                    "line": 5
-                                },
-                                "@type": "lvasgn",
-                                "target": "a",
-                                "value": {
-                                    "@end": {
-                                        "@type": "ast:Position",
-                                        "col": 9,
-                                        "line": 5
-                                    },
-                                    "@start": {
-                                        "@type": "ast:Position",
-                                        "col": 9,
-                                        "line": 5
-                                    },
-                                    "@token": 1,
-                                    "@type": "int"
-                                }
-                            },
-                            "conditions": [
-                                {
-                                    "@end": {
-                                        "@type": "ast:Position",
-                                        "col": 6,
-                                        "line": 4
-                                    },
-                                    "@start": {
-                                        "@type": "ast:Position",
-                                        "col": 6,
-                                        "line": 4
-                                    },
-                                    "@token": 1,
-                                    "@type": "int"
-                                }
-                            ]
+                    {
+                        "@type": "case",
+                        "casevar": {
+                            "@type": "lvar",
+                            "pos_col_end": 8,
+                            "pos_col_start": 6,
+                            "pos_line_end": 3,
+                            "pos_line_start": 3,
+                            "token": "foo"
                         },
-                        {
-                            "@type": "when",
-                            "body": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 9,
-                                    "line": 7
+                        "else": {
+                            "@type": "lvasgn",
+                            "pos_col_end": 11,
+                            "pos_col_start": 5,
+                            "pos_line_end": 9,
+                            "pos_line_start": 9,
+                            "target": "a",
+                            "value": {
+                                "@type": "int",
+                                "pos_col_end": 11,
+                                "pos_col_start": 9,
+                                "pos_line_end": 9,
+                                "pos_line_start": 9,
+                                "token": 100
+                            }
+                        },
+                        "pos_col_end": 4,
+                        "pos_col_start": 1,
+                        "pos_line_end": 3,
+                        "pos_line_start": 3,
+                        "when_clauses": [
+                            {
+                                "@type": "when",
+                                "body": {
+                                    "@type": "lvasgn",
+                                    "pos_col_end": 9,
+                                    "pos_col_start": 5,
+                                    "pos_line_end": 5,
+                                    "pos_line_start": 5,
+                                    "target": "a",
+                                    "value": {
+                                        "@type": "int",
+                                        "pos_col_end": 9,
+                                        "pos_col_start": 9,
+                                        "pos_line_end": 5,
+                                        "pos_line_start": 5,
+                                        "token": 1
+                                    }
                                 },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 5,
-                                    "line": 7
-                                },
-                                "@type": "lvasgn",
-                                "target": "a",
-                                "value": {
-                                    "@end": {
-                                        "@type": "ast:Position",
-                                        "col": 9,
-                                        "line": 7
-                                    },
-                                    "@start": {
-                                        "@type": "ast:Position",
-                                        "col": 9,
-                                        "line": 7
-                                    },
-                                    "@token": 3,
-                                    "@type": "int"
-                                }
+                                "conditions": [
+                                    {
+                                        "@type": "int",
+                                        "pos_col_end": 6,
+                                        "pos_col_start": 6,
+                                        "pos_line_end": 4,
+                                        "pos_line_start": 4,
+                                        "token": 1
+                                    }
+                                ]
                             },
-                            "conditions": [
-                                {
-                                    "@end": {
-                                        "@type": "ast:Position",
-                                        "col": 6,
-                                        "line": 6
-                                    },
-                                    "@start": {
-                                        "@type": "ast:Position",
-                                        "col": 6,
-                                        "line": 6
-                                    },
-                                    "@token": 2,
-                                    "@type": "int"
+                            {
+                                "@type": "when",
+                                "body": {
+                                    "@type": "lvasgn",
+                                    "pos_col_end": 9,
+                                    "pos_col_start": 5,
+                                    "pos_line_end": 7,
+                                    "pos_line_start": 7,
+                                    "target": "a",
+                                    "value": {
+                                        "@type": "int",
+                                        "pos_col_end": 9,
+                                        "pos_col_start": 9,
+                                        "pos_line_end": 7,
+                                        "pos_line_start": 7,
+                                        "token": 3
+                                    }
                                 },
-                                {
-                                    "@end": {
-                                        "@type": "ast:Position",
-                                        "col": 9,
-                                        "line": 6
+                                "conditions": [
+                                    {
+                                        "@type": "int",
+                                        "pos_col_end": 6,
+                                        "pos_col_start": 6,
+                                        "pos_line_end": 6,
+                                        "pos_line_start": 6,
+                                        "token": 2
                                     },
-                                    "@start": {
-                                        "@type": "ast:Position",
-                                        "col": 9,
-                                        "line": 6
+                                    {
+                                        "@type": "int",
+                                        "pos_col_end": 9,
+                                        "pos_col_start": 9,
+                                        "pos_line_end": 6,
+                                        "pos_line_start": 6,
+                                        "token": 3
                                     },
-                                    "@token": 3,
-                                    "@type": "int"
-                                },
-                                {
-                                    "@end": {
-                                        "@type": "ast:Position",
-                                        "col": 12,
-                                        "line": 6
-                                    },
-                                    "@start": {
-                                        "@type": "ast:Position",
-                                        "col": 12,
-                                        "line": 6
-                                    },
-                                    "@token": 4,
-                                    "@type": "int"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
+                                    {
+                                        "@type": "int",
+                                        "pos_col_end": 12,
+                                        "pos_col_start": 12,
+                                        "pos_line_end": 6,
+                                        "pos_line_start": 6,
+                                        "token": 4
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "pos_col_end": 3,
+                "pos_col_start": 1,
+                "pos_line_end": 10,
+                "pos_line_start": 1
+            }
         }
     }
 }

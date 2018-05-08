@@ -3,62 +3,40 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 10,
-                "line": 1
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@type": "lvasgn",
-            "target": "a",
-            "value": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 10,
-                    "line": 1
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 5,
-                    "line": 1
-                },
-                "@type": "dstr",
-                "children": [
-                    {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 3
+        "RUBYAST": {
+            "@type": "module",
+            "file": {
+                "@type": "lvasgn",
+                "pos_col_end": 10,
+                "pos_col_start": 1,
+                "pos_line_end": 1,
+                "pos_line_start": 1,
+                "target": "a",
+                "value": {
+                    "@type": "dstr",
+                    "children": [
+                        {
+                            "@type": "str",
+                            "pos_col_end": 0,
+                            "pos_col_start": 1,
+                            "pos_line_end": 3,
+                            "pos_line_start": 2,
+                            "token": "    Some text\n"
                         },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 2
-                        },
-                        "@token": "    Some text\n",
-                        "@type": "str"
-                    },
-                    {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 4
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 3
-                        },
-                        "@token": "    multiline\n",
-                        "@type": "str"
-                    }
-                ]
+                        {
+                            "@type": "str",
+                            "pos_col_end": 0,
+                            "pos_col_start": 1,
+                            "pos_line_end": 4,
+                            "pos_line_start": 3,
+                            "token": "    multiline\n"
+                        }
+                    ],
+                    "pos_col_end": 10,
+                    "pos_col_start": 5,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
+                }
             }
         }
     }

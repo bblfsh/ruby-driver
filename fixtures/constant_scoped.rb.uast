@@ -2,41 +2,36 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
-module {
-.  Roles: Identifier,Module,Statement
+ {
 .  Children: {
-.  .  0: const {
-.  .  .  Roles: Expression,Identifier,Incomplete
-.  .  .  TOKEN "Foo"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 5
-.  .  .  .  Line: 1
-.  .  .  .  Col: 6
-.  .  .  }
+.  .  0: module {
+.  .  .  Roles: Identifier,Module,Statement
 .  .  .  Properties: {
-.  .  .  .  internalRole: file
+.  .  .  .  internalRole: RUBYAST
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send_qualified {
-.  .  .  .  .  Roles: Expression,Identical,Qualified
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 0
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 1
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 0
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 1
-.  .  .  .  .  }
+.  .  .  .  0: const {
+.  .  .  .  .  Roles: Expression,Identifier,Incomplete
+.  .  .  .  .  TOKEN "Foo"
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  selector: a
+.  .  .  .  .  .  internalRole: file
+.  .  .  .  .  .  pos_col_end: 6
+.  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: send {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  pos_col_end: 1
+.  .  .  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  .  .  selector: a
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
