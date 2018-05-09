@@ -5,7 +5,7 @@
     "ast": {
         "RUBYAST": {
             "@type": "module",
-            "module": {
+            "file": {
                 "@type": "while_post",
                 "body": {
                     "@type": "kwbegin",

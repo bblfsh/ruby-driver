@@ -5,7 +5,7 @@
     "ast": {
         "RUBYAST": {
             "@type": "module",
-            "module": {
+            "file": {
                 "@type": "block",
                 "args": null,
                 "blockdata": {

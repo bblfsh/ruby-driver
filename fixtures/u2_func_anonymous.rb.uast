@@ -5,25 +5,19 @@ UAST:
  {
 .  Children: {
 .  .  0: module {
-.  .  .  Roles: File,Module
+.  .  .  Roles: Identifier,Module,Statement
 .  .  .  Properties: {
 .  .  .  .  internalRole: RUBYAST
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: block {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 0
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 1
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 8
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 9
-.  .  .  .  .  }
+.  .  .  .  .  Roles: Block
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: module
+.  .  .  .  .  .  internalRole: file
+.  .  .  .  .  .  pos_col_end: 9
+.  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  pos_line_start: 1
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: send {

@@ -5,7 +5,7 @@
     "ast": {
         "RUBYAST": {
             "@type": "module",
-            "module": {
+            "file": {
                 "@type": "casgn",
                 "base": null,
                 "pos_col_end": 7,

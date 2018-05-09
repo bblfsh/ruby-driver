@@ -5,16 +5,16 @@ UAST:
  {
 .  Children: {
 .  .  0: module {
-.  .  .  Roles: File,Module
+.  .  .  Roles: Identifier,Module,Statement
 .  .  .  Properties: {
 .  .  .  .  internalRole: RUBYAST
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: module {
-.  .  .  .  .  Roles: File,Module
+.  .  .  .  .  Roles: Identifier,Module,Statement
+.  .  .  .  .  TOKEN "Testmodule1"
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: module
-.  .  .  .  .  .  name: Testmodule1
+.  .  .  .  .  .  internalRole: file
 .  .  .  .  .  .  pos_col_end: 6
 .  .  .  .  .  .  pos_col_start: 1
 .  .  .  .  .  .  pos_line_end: 1
