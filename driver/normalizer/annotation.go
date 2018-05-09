@@ -211,6 +211,8 @@ var Annotations = []Mapping{
 	annotateTypeTokenField("const", "token", role.Expression, role.Identifier, role.Incomplete),
 	AnnotateType("cbase", nil, role.Expression, role.Identifier, role.Qualified, role.Incomplete),
 
+	AnnotateType("values", nil, role.Expression, role.Argument, role.Identifier),
+
 	// For
 	AnnotateType("for", ObjRoles{
 		"body": {role.Expression, role.For, role.Body},
@@ -247,6 +249,33 @@ var Annotations = []Mapping{
 		"_1": {role.Identifier, role.Incomplete},
 		"_2": {role.Identical, role.Incomplete},
 	}, role.Expression, role.List, role.Incomplete),
+
+	// The many faces of Ruby's "send" start here
+	MapAST("send", Obj{
+		"selector": String("continue"),
+	}, Obj{
+		"selector": String("continue"),
+	}, role.Statement, role.Continue),
+
+	MapAST("send", Obj{
+		"selector": String("lambda"),
+	}, Obj{
+		"selector": String("lambda"),
+	}, role.Expression, role.Declaration, role.Function, role.Anonymous),
+
+	MapAST("send", Obj{
+		"selector": String("each"),
+	}, Obj{
+		"selector": String("each"),
+	}, role.Statement, role.For, role.Iterator),
+
+	MapAST("send", Obj{
+		"base":     Check(Not(Is(nil)), Var("base")),
+		"selector": Var("selector"),
+	}, Obj{
+		"base": Var("base"),
+		uast.KeyToken: Var("selector"),
+	}, role.Expression, role.Qualified, role.Identifier),
 }
 
 /*
@@ -254,50 +283,10 @@ var Annotations = []Mapping{
 	// and a lot of other things...
 	// XXX Add "selector" as token
 	On(rubyast.Send).Self(
-		On(And(HasInternalRole("base"),
-			Not(isSomeOperator), Not(HasToken("continue")),
-			Not(HasInternalRole("condition")))).Roles(uast.Expression, uast.Qualified, uast.Identifier),
-
-		On(HasChild(HasInternalRole("base"))).Roles(uast.Expression, uast.Identifier),
-
-		On(And(Or(rubyast.BodyRole, HasInternalRole("module")), Not(HasToken("continue")),
-			Not(isSomeOperator))).Roles(uast.Expression, uast.Call, uast.Identifier).Children(
-			On(rubyast.Values).Roles(uast.Expression, uast.Argument, uast.Identifier),
-		),
-
-		On(HasInternalRole("blockdata")).Self(
-			On(HasToken("each")).Roles(uast.Statement, uast.For, uast.Iterator),
-			On(HasToken("lambda")).Roles(uast.Expression, uast.Declaration, uast.Function, uast.Anonymous),
-		),
-
-		On(isSomeOperator).Roles(uast.Expression, uast.Operator).Self(
-			On(HasToken("+")).Roles(uast.Arithmetic, uast.Add),
-			On(HasToken("-")).Roles(uast.Arithmetic, uast.Substract),
-			On(HasToken("*")).Roles(uast.Arithmetic, uast.Multiply),
-			On(HasToken("/")).Roles(uast.Arithmetic, uast.Divide),
-			On(HasToken("%")).Roles(uast.Arithmetic, uast.Modulo),
-			// Pow
-			On(HasToken("**")).Roles(uast.Arithmetic, uast.Incomplete),
-			On(HasToken("&")).Roles(uast.Bitwise, uast.And),
-			On(HasToken("|")).Roles(uast.Bitwise, uast.Or),
-			On(HasToken("^")).Roles(uast.Bitwise, uast.Xor),
-			// Complemen
-			On(HasToken("~")).Roles(uast.Bitwise, uast.Incomplete),
-			On(HasToken("<<")).Roles(uast.Bitwise, uast.LeftShift),
-			On(HasToken(">>")).Roles(uast.Bitwise, uast.RightShift),
-			On(HasToken("==")).Roles(uast.Relational, uast.Equal),
-			On(HasToken(">=")).Roles(uast.Relational, uast.GreaterThanOrEqual),
-			On(HasToken("<=")).Roles(uast.Relational, uast.LessThanOrEqual),
-			On(HasToken("!=")).Roles(uast.Relational, uast.Equal, uast.Not),
-			On(HasToken("!")).Roles(uast.Relational, uast.Not),
-			// Incomplete: check type (1 !eql? 1.0) but not being the same object like equal?
-			On(HasToken("eql?")).Roles(uast.Relational, uast.Identical, uast.Incomplete),
-			On(HasToken("equal?")).Roles(uast.Relational, uast.Identical, uast.Identical),
-			// Combined comparison operator
-			On(HasToken("<==>")).Roles(uast.Relational, uast.Incomplete),
-		),
-
-		On(HasToken("continue")).Roles(uast.Statement, uast.Continue),
+		On(And(Or(rubyast.BodyRole,
+		          HasInternalRole("module")),
+			  Not(HasToken("continue")),
+			  Not(isSomeOperator))).Roles(uast.Expression, uast.Call, uast.Identifier),
 	),
 )
 */

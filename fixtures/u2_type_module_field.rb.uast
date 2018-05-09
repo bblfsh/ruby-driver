@@ -23,18 +23,12 @@ UAST:
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: send {
 .  .  .  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 23
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 5
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 29
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 11
-.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: begin
+.  .  .  .  .  .  .  .  pos_col_end: 11
+.  .  .  .  .  .  .  .  pos_col_start: 5
+.  .  .  .  .  .  .  .  pos_line_end: 2
+.  .  .  .  .  .  .  .  pos_line_start: 2
 .  .  .  .  .  .  .  .  selector: attr
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {

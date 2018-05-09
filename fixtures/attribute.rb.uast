@@ -11,20 +11,14 @@ UAST:
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: send {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 0
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 1
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 11
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 12
-.  .  .  .  .  }
+.  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  .  TOKEN "foo="
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: file
-.  .  .  .  .  .  selector: foo=
+.  .  .  .  .  .  pos_col_end: 12
+.  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  pos_line_start: 1
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: self {

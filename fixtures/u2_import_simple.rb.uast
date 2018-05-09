@@ -12,18 +12,12 @@ UAST:
 .  .  .  Children: {
 .  .  .  .  0: send {
 .  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 0
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 1
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 14
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 15
-.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: file
+.  .  .  .  .  .  pos_col_end: 15
+.  .  .  .  .  .  pos_col_start: 1
+.  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  pos_line_start: 1
 .  .  .  .  .  .  selector: require
 .  .  .  .  .  }
 .  .  .  .  .  Children: {

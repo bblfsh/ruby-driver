@@ -44,7 +44,18 @@ UAST:
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: lvasgn {
+.  .  .  .  .  .  1: send {
+.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: condition
+.  .  .  .  .  .  .  .  pos_col_end: 6
+.  .  .  .  .  .  .  .  pos_col_start: 4
+.  .  .  .  .  .  .  .  pos_line_end: 1
+.  .  .  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  .  .  selector: foo
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  2: lvasgn {
 .  .  .  .  .  .  .  Roles: Assignment,Binary,Else,Expression,Identifier,Left
 .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  Properties: {
@@ -66,23 +77,6 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  pos_line_start: 4
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  2: send {
-.  .  .  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 3
-.  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 4
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 5
-.  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 6
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: condition
-.  .  .  .  .  .  .  .  selector: foo
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
