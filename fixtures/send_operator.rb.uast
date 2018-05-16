@@ -1,52 +1,6 @@
-Status:  ok
+Status:  fatal
 Language:  ruby
 Errors: 
+ .  check: key "base": field was not used: @role
 UAST: 
- {
-.  Children: {
-.  .  0: module {
-.  .  .  Roles: Identifier,Module,Statement
-.  .  .  Properties: {
-.  .  .  .  internalRole: RUBYAST
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: send {
-.  .  .  .  .  Roles: Expression,Identifier,Qualified
-.  .  .  .  .  TOKEN "+"
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: file
-.  .  .  .  .  .  pos_col_end: 7
-.  .  .  .  .  .  pos_col_start: 1
-.  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  pos_line_start: 1
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  .  .  pos_col_end: 3
-.  .  .  .  .  .  .  .  pos_col_start: 1
-.  .  .  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  .  .  pos_line_start: 1
-.  .  .  .  .  .  .  .  selector: foo
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
-.  .  .  .  .  .  .  TOKEN "1"
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: values
-.  .  .  .  .  .  .  .  pos_col_end: 7
-.  .  .  .  .  .  .  .  pos_col_start: 7
-.  .  .  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  .  .  pos_line_start: 1
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  }
-}
 

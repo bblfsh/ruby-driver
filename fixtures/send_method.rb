@@ -3,6 +3,7 @@ class Foo
     end
 
     def bar()
+        this.foo(this.bar(5))
     end
 end
 
