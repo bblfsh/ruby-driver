@@ -2,36 +2,41 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
-.  .  0: module {
-.  .  .  Roles: Identifier,Module,Statement
+.  .  0: lvasgn {
+.  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
+.  .  .  TOKEN "a"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 5
+.  .  .  .  Line: 1
+.  .  .  .  Col: 6
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: RUBYAST
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: lvasgn {
-.  .  .  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
-.  .  .  .  .  TOKEN "a"
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: file
-.  .  .  .  .  .  pos_col_end: 6
-.  .  .  .  .  .  pos_col_start: 1
-.  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  0: complex {
+.  .  .  .  .  Roles: Binary,Expression,Incomplete,Literal,Number,Primitive,Right
+.  .  .  .  .  TOKEN "0+1i"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 4
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 5
 .  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: complex {
-.  .  .  .  .  .  .  Roles: Expression,Incomplete,Literal,Number,Primitive
-.  .  .  .  .  .  .  TOKEN "0+1i"
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: value
-.  .  .  .  .  .  .  .  pos_col_end: 6
-.  .  .  .  .  .  .  .  pos_col_start: 5
-.  .  .  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  .  .  pos_line_start: 1
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 5
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 6
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: value
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

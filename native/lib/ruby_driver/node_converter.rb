@@ -24,10 +24,7 @@ module NodeConverter
     end
 
     def tohash()
-      @dict["ast"] = {
-        "RUBYAST": {"file" => convert(@root),
-                    @@typekey => "module"}
-      }
+      @dict["ast"] = {"file" => convert(@root), @@typekey => "module"}
       add_comments()
       return @dict["ast"]
     end
@@ -74,10 +71,7 @@ module NodeConverter
 
       # the inner nodes of the above
       when "Complex", "Rational", "Symbol"
-        return {@@typekey => node_type(node), "token" => node.to_s}
-
-      #when "mlhs"
-        #return node.children.map{ |x| convert(x) }.compact
+        return {@@typekey => node_type(node), "@token" => node.to_s}
 
       when "masgn"
         return sexp_to_hash(node, {"targets" => 0, "values" => 1})
@@ -161,7 +155,7 @@ module NodeConverter
 
       when "NilClass"
         if @empty_with_comments
-          return {@@typekey=> "module", "name" => "empty_module"}
+          return {@@typekey=> "module", "@token" => "empty_module"}
         else
           return {@@typekey=> "NilNode"}
         end
@@ -262,7 +256,8 @@ module NodeConverter
         hash["pos_line_start"] = subelem.begin.line
         hash["pos_line_end"] = subelem.end.line
         hash["pos_col_start"] = subelem.begin.column + 1
-        hash["pos_col_end"] = subelem.end.column
+        # str inside str have cols set at 0 from the native AST
+        hash["pos_col_end"] = subelem.end.column > 0 ? subelem.end.column : 1
       end
     end
 
@@ -306,10 +301,9 @@ module NodeConverter
       comments = []
 
       @comments.each do |comment|
-        # XXX remove leading
         commentdict = {
           @@typekey => "comment",
-          "text" => comment.text,
+          "@token" => comment.text[1..-1],
           "inline" => comment.inline?,
           "documentation" => comment.document?,
           "pos_line_start" => comment.loc.first_line,

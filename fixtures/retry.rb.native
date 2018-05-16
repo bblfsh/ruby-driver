@@ -3,57 +3,55 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "kwbegin",
-                "body": [
-                    {
-                        "@type": "rescue",
-                        "body": {
-                            "@type": "lvasgn",
+        "@type": "module",
+        "file": {
+            "@type": "kwbegin",
+            "body": [
+                {
+                    "@type": "rescue",
+                    "body": {
+                        "@type": "lvasgn",
+                        "pos_col_end": 9,
+                        "pos_col_start": 5,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
+                        "target": "a",
+                        "value": {
+                            "@token": 1,
+                            "@type": "int",
                             "pos_col_end": 9,
-                            "pos_col_start": 5,
+                            "pos_col_start": 9,
                             "pos_line_end": 2,
-                            "pos_line_start": 2,
-                            "target": "a",
-                            "value": {
-                                "@type": "int",
+                            "pos_line_start": 2
+                        }
+                    },
+                    "else": {
+                        "@type": "NilNode"
+                    },
+                    "handlers": [
+                        {
+                            "@type": "resbody",
+                            "alias": null,
+                            "body": {
+                                "@type": "retry",
                                 "pos_col_end": 9,
-                                "pos_col_start": 9,
-                                "pos_line_end": 2,
-                                "pos_line_start": 2,
-                                "token": 1
-                            }
-                        },
-                        "else": {
-                            "@type": "NilNode"
-                        },
-                        "handlers": [
-                            {
-                                "@type": "resbody",
-                                "alias": null,
-                                "body": {
-                                    "@type": "retry",
-                                    "pos_col_end": 9,
-                                    "pos_col_start": 5,
-                                    "pos_line_end": 4,
-                                    "pos_line_start": 4
-                                },
-                                "exceptions": null,
-                                "pos_col_end": 9,
-                                "pos_col_start": 1,
+                                "pos_col_start": 5,
                                 "pos_line_end": 4,
-                                "pos_line_start": 3
-                            }
-                        ]
-                    }
-                ],
-                "pos_col_end": 3,
-                "pos_col_start": 1,
-                "pos_line_end": 5,
-                "pos_line_start": 1
-            }
+                                "pos_line_start": 4
+                            },
+                            "exceptions": null,
+                            "pos_col_end": 9,
+                            "pos_col_start": 1,
+                            "pos_line_end": 4,
+                            "pos_line_start": 3
+                        }
+                    ]
+                }
+            ],
+            "pos_col_end": 3,
+            "pos_col_start": 1,
+            "pos_line_end": 5,
+            "pos_line_start": 1
         }
     }
 }

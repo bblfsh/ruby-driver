@@ -2,57 +2,74 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
-.  .  0: module {
-.  .  .  Roles: Identifier,Module,Statement
+.  .  0: lvasgn {
+.  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
+.  .  .  TOKEN "a"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 17
+.  .  .  .  Line: 1
+.  .  .  .  Col: 18
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: RUBYAST
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: lvasgn {
-.  .  .  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
-.  .  .  .  .  TOKEN "a"
+.  .  .  .  0: send {
+.  .  .  .  .  Roles: Binary,Expression,Identifier,Qualified,Right
+.  .  .  .  .  TOKEN "try"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 4
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 17
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 18
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: file
-.  .  .  .  .  .  pos_col_end: 18
-.  .  .  .  .  .  pos_col_start: 1
-.  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  internalRole: value
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Expression,Identifier,Qualified
-.  .  .  .  .  .  .  TOKEN "try"
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: value
-.  .  .  .  .  .  .  .  pos_col_end: 18
-.  .  .  .  .  .  .  .  pos_col_start: 5
-.  .  .  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  0: self {
+.  .  .  .  .  .  .  Roles: Expression,Left,This
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 4
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 5
 .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: self {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Left,This
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  .  .  .  .  pos_col_end: 8
-.  .  .  .  .  .  .  .  .  .  pos_col_start: 5
-.  .  .  .  .  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  .  .  .  .  pos_line_start: 1
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: sym {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  .  .  .  .  TOKEN "foo"
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: values
-.  .  .  .  .  .  .  .  .  .  pos_col_end: 17
-.  .  .  .  .  .  .  .  .  .  pos_col_start: 14
-.  .  .  .  .  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  .  .  .  .  pos_line_start: 1
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 7
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 8
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: sym {
+.  .  .  .  .  .  .  Roles: Expression,Identifier
+.  .  .  .  .  .  .  TOKEN "foo"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 13
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 16
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 17
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: values
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }

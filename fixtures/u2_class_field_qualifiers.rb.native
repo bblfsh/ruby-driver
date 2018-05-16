@@ -3,103 +3,101 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "class",
-                "body": [
-                    {
-                        "@type": "begin",
-                        "body": [
-                            {
-                                "@type": "send",
-                                "base": null,
-                                "pos_col_end": 11,
-                                "pos_col_start": 5,
-                                "pos_line_end": 2,
-                                "pos_line_start": 2,
-                                "selector": "private"
-                            },
-                            {
-                                "@type": "ivasgn",
+        "@type": "module",
+        "file": {
+            "@token": "Testcls1",
+            "@type": "class",
+            "body": [
+                {
+                    "@type": "begin",
+                    "body": [
+                        {
+                            "@type": "send",
+                            "base": null,
+                            "pos_col_end": 11,
+                            "pos_col_start": 5,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2,
+                            "selector": "private"
+                        },
+                        {
+                            "@type": "ivasgn",
+                            "pos_col_end": 10,
+                            "pos_col_start": 5,
+                            "pos_line_end": 3,
+                            "pos_line_start": 3,
+                            "target": "@a",
+                            "value": {
+                                "@token": 1,
+                                "@type": "int",
                                 "pos_col_end": 10,
-                                "pos_col_start": 5,
+                                "pos_col_start": 10,
                                 "pos_line_end": 3,
-                                "pos_line_start": 3,
-                                "target": "@a",
-                                "value": {
-                                    "@type": "int",
-                                    "pos_col_end": 10,
-                                    "pos_col_start": 10,
-                                    "pos_line_end": 3,
-                                    "pos_line_start": 3,
-                                    "token": 1
-                                }
-                            },
-                            {
-                                "@type": "send",
-                                "base": null,
-                                "pos_col_end": 13,
-                                "pos_col_start": 5,
-                                "pos_line_end": 5,
-                                "pos_line_start": 5,
-                                "selector": "protected"
-                            },
-                            {
-                                "@type": "ivasgn",
-                                "pos_col_end": 10,
-                                "pos_col_start": 5,
-                                "pos_line_end": 6,
-                                "pos_line_start": 6,
-                                "target": "@b",
-                                "value": {
-                                    "@type": "int",
-                                    "pos_col_end": 10,
-                                    "pos_col_start": 10,
-                                    "pos_line_end": 6,
-                                    "pos_line_start": 6,
-                                    "token": 2
-                                }
-                            },
-                            {
-                                "@type": "send",
-                                "base": null,
-                                "pos_col_end": 10,
-                                "pos_col_start": 5,
-                                "pos_line_end": 8,
-                                "pos_line_start": 8,
-                                "selector": "public"
-                            },
-                            {
-                                "@type": "ivasgn",
-                                "pos_col_end": 10,
-                                "pos_col_start": 5,
-                                "pos_line_end": 9,
-                                "pos_line_start": 9,
-                                "target": "@c",
-                                "value": {
-                                    "@type": "int",
-                                    "pos_col_end": 10,
-                                    "pos_col_start": 10,
-                                    "pos_line_end": 9,
-                                    "pos_line_start": 9,
-                                    "token": 3
-                                }
+                                "pos_line_start": 3
                             }
-                        ],
-                        "pos_col_end": 10,
-                        "pos_col_start": 5,
-                        "pos_line_end": 9,
-                        "pos_line_start": 2
-                    }
-                ],
-                "name": "Testcls1",
-                "parent": null,
-                "pos_col_end": 5,
-                "pos_col_start": 1,
-                "pos_line_end": 1,
-                "pos_line_start": 1
-            }
+                        },
+                        {
+                            "@type": "send",
+                            "base": null,
+                            "pos_col_end": 13,
+                            "pos_col_start": 5,
+                            "pos_line_end": 5,
+                            "pos_line_start": 5,
+                            "selector": "protected"
+                        },
+                        {
+                            "@type": "ivasgn",
+                            "pos_col_end": 10,
+                            "pos_col_start": 5,
+                            "pos_line_end": 6,
+                            "pos_line_start": 6,
+                            "target": "@b",
+                            "value": {
+                                "@token": 2,
+                                "@type": "int",
+                                "pos_col_end": 10,
+                                "pos_col_start": 10,
+                                "pos_line_end": 6,
+                                "pos_line_start": 6
+                            }
+                        },
+                        {
+                            "@type": "send",
+                            "base": null,
+                            "pos_col_end": 10,
+                            "pos_col_start": 5,
+                            "pos_line_end": 8,
+                            "pos_line_start": 8,
+                            "selector": "public"
+                        },
+                        {
+                            "@type": "ivasgn",
+                            "pos_col_end": 10,
+                            "pos_col_start": 5,
+                            "pos_line_end": 9,
+                            "pos_line_start": 9,
+                            "target": "@c",
+                            "value": {
+                                "@token": 3,
+                                "@type": "int",
+                                "pos_col_end": 10,
+                                "pos_col_start": 10,
+                                "pos_line_end": 9,
+                                "pos_line_start": 9
+                            }
+                        }
+                    ],
+                    "pos_col_end": 10,
+                    "pos_col_start": 5,
+                    "pos_line_end": 9,
+                    "pos_line_start": 2
+                }
+            ],
+            "parent": null,
+            "pos_col_end": 5,
+            "pos_col_start": 1,
+            "pos_line_end": 1,
+            "pos_line_start": 1
         }
     }
 }

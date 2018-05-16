@@ -3,23 +3,21 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "lvasgn",
+        "@type": "module",
+        "file": {
+            "@type": "lvasgn",
+            "pos_col_end": 7,
+            "pos_col_start": 1,
+            "pos_line_end": 1,
+            "pos_line_start": 1,
+            "target": "a",
+            "value": {
+                "@token": 123,
+                "@type": "int",
                 "pos_col_end": 7,
-                "pos_col_start": 1,
+                "pos_col_start": 5,
                 "pos_line_end": 1,
-                "pos_line_start": 1,
-                "target": "a",
-                "value": {
-                    "@type": "int",
-                    "pos_col_end": 7,
-                    "pos_col_start": 5,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1,
-                    "token": 123
-                }
+                "pos_line_start": 1
             }
         }
     }

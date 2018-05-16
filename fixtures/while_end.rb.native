@@ -3,47 +3,45 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "while_post",
-                "body": {
-                    "@type": "kwbegin",
-                    "body": [
-                        {
-                            "@type": "lvasgn",
+        "@type": "module",
+        "file": {
+            "@type": "while_post",
+            "body": {
+                "@type": "kwbegin",
+                "body": [
+                    {
+                        "@type": "lvasgn",
+                        "pos_col_end": 9,
+                        "pos_col_start": 5,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
+                        "target": "a",
+                        "value": {
+                            "@token": 1,
+                            "@type": "int",
                             "pos_col_end": 9,
-                            "pos_col_start": 5,
+                            "pos_col_start": 9,
                             "pos_line_end": 2,
-                            "pos_line_start": 2,
-                            "target": "a",
-                            "value": {
-                                "@type": "int",
-                                "pos_col_end": 9,
-                                "pos_col_start": 9,
-                                "pos_line_end": 2,
-                                "pos_line_start": 2,
-                                "token": 1
-                            }
+                            "pos_line_start": 2
                         }
-                    ],
-                    "pos_col_end": 3,
-                    "pos_col_start": 1,
-                    "pos_line_end": 3,
-                    "pos_line_start": 1
-                },
-                "condition": {
-                    "@type": "true",
-                    "pos_col_end": 14,
-                    "pos_col_start": 11,
-                    "pos_line_end": 3,
-                    "pos_line_start": 3
-                },
-                "pos_col_end": 14,
+                    }
+                ],
+                "pos_col_end": 3,
                 "pos_col_start": 1,
                 "pos_line_end": 3,
                 "pos_line_start": 1
-            }
+            },
+            "condition": {
+                "@type": "true",
+                "pos_col_end": 14,
+                "pos_col_start": 11,
+                "pos_line_end": 3,
+                "pos_line_start": 3
+            },
+            "pos_col_end": 14,
+            "pos_col_start": 1,
+            "pos_line_end": 3,
+            "pos_line_start": 1
         }
     }
 }

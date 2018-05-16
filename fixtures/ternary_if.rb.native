@@ -3,47 +3,45 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "lvasgn",
-                "pos_col_end": 15,
-                "pos_col_start": 1,
-                "pos_line_end": 1,
-                "pos_line_start": 1,
-                "target": "a",
-                "value": {
-                    "@type": "if",
-                    "body": {
-                        "@type": "int",
-                        "pos_col_end": 11,
-                        "pos_col_start": 11,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1,
-                        "token": 1
-                    },
-                    "condition": {
-                        "@type": "send",
-                        "base": null,
-                        "pos_col_end": 7,
-                        "pos_col_start": 5,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1,
-                        "selector": "foo"
-                    },
-                    "else": {
-                        "@type": "int",
-                        "pos_col_end": 15,
-                        "pos_col_start": 15,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1,
-                        "token": 2
-                    },
-                    "pos_col_end": 9,
-                    "pos_col_start": 9,
+        "@type": "module",
+        "file": {
+            "@type": "lvasgn",
+            "pos_col_end": 15,
+            "pos_col_start": 1,
+            "pos_line_end": 1,
+            "pos_line_start": 1,
+            "target": "a",
+            "value": {
+                "@type": "if",
+                "body": {
+                    "@token": 1,
+                    "@type": "int",
+                    "pos_col_end": 11,
+                    "pos_col_start": 11,
                     "pos_line_end": 1,
                     "pos_line_start": 1
-                }
+                },
+                "condition": {
+                    "@type": "send",
+                    "base": null,
+                    "pos_col_end": 7,
+                    "pos_col_start": 5,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1,
+                    "selector": "foo"
+                },
+                "else": {
+                    "@token": 2,
+                    "@type": "int",
+                    "pos_col_end": 15,
+                    "pos_col_start": 15,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
+                },
+                "pos_col_end": 9,
+                "pos_col_start": 9,
+                "pos_line_end": 1,
+                "pos_line_start": 1
             }
         }
     }

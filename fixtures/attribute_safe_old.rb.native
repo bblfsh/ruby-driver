@@ -3,40 +3,38 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "lvasgn",
-                "pos_col_end": 18,
-                "pos_col_start": 1,
-                "pos_line_end": 1,
-                "pos_line_start": 1,
-                "target": "a",
-                "value": {
-                    "@type": "send",
-                    "base": {
-                        "@type": "self",
-                        "pos_col_end": 8,
-                        "pos_col_start": 5,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1
-                    },
-                    "pos_col_end": 18,
+        "@type": "module",
+        "file": {
+            "@type": "lvasgn",
+            "pos_col_end": 18,
+            "pos_col_start": 1,
+            "pos_line_end": 1,
+            "pos_line_start": 1,
+            "target": "a",
+            "value": {
+                "@type": "send",
+                "base": {
+                    "@type": "self",
+                    "pos_col_end": 8,
                     "pos_col_start": 5,
                     "pos_line_end": 1,
-                    "pos_line_start": 1,
-                    "selector": "try",
-                    "values": [
-                        {
-                            "@type": "sym",
-                            "pos_col_end": 17,
-                            "pos_col_start": 14,
-                            "pos_line_end": 1,
-                            "pos_line_start": 1,
-                            "token": "foo"
-                        }
-                    ]
-                }
+                    "pos_line_start": 1
+                },
+                "pos_col_end": 18,
+                "pos_col_start": 5,
+                "pos_line_end": 1,
+                "pos_line_start": 1,
+                "selector": "try",
+                "values": [
+                    {
+                        "@token": "foo",
+                        "@type": "sym",
+                        "pos_col_end": 17,
+                        "pos_col_start": 14,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1
+                    }
+                ]
             }
         }
     }

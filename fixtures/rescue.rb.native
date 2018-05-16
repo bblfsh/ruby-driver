@@ -3,72 +3,67 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "kwbegin",
-                "body": [
-                    {
-                        "@type": "rescue",
-                        "body": {
-                            "@type": "send",
-                            "base": null,
-                            "pos_col_end": 15,
-                            "pos_col_start": 5,
-                            "pos_line_end": 2,
-                            "pos_line_start": 2,
-                            "selector": "raise",
-                            "values": [
-                                {
-                                    "@type": "str",
-                                    "pos_col_end": 15,
-                                    "pos_col_start": 11,
-                                    "pos_line_end": 2,
-                                    "pos_line_start": 2,
-                                    "token": "foo"
-                                }
-                            ]
-                        },
-                        "else": {
-                            "@type": "NilNode"
-                        },
-                        "@type": "send_qualified",
+        "@type": "module",
+        "file": {
+            "@type": "kwbegin",
+            "body": [
+                {
+                    "@type": "rescue",
+                    "body": {
+                        "@type": "send",
                         "base": null,
+                        "pos_col_end": 15,
+                        "pos_col_start": 5,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
                         "selector": "raise",
                         "values": [
                             {
-                                "@type": "resbody",
-                                "alias": null,
-                                "body": {
-                                    "@type": "lvasgn",
-                                    "pos_col_end": 9,
-                                    "pos_col_start": 5,
-                                    "pos_line_end": 4,
-                                    "pos_line_start": 4,
-                                    "target": "a",
-                                    "value": {
-                                        "@type": "int",
-                                        "pos_col_end": 9,
-                                        "pos_col_start": 9,
-                                        "pos_line_end": 4,
-                                        "pos_line_start": 4,
-                                        "token": 1
-                                    }
-                                },
-                                "exceptions": null,
-                                "pos_col_end": 9,
-                                "pos_col_start": 1,
-                                "pos_line_end": 4,
-                                "pos_line_start": 3
+                                "@token": "foo",
+                                "@type": "str",
+                                "pos_col_end": 15,
+                                "pos_col_start": 11,
+                                "pos_line_end": 2,
+                                "pos_line_start": 2
                             }
                         ]
-                    }
-                ],
-                "pos_col_end": 3,
-                "pos_col_start": 1,
-                "pos_line_end": 5,
-                "pos_line_start": 1
-            }
+                    },
+                    "else": {
+                        "@type": "NilNode"
+                    },
+                    "handlers": [
+                        {
+                            "@type": "resbody",
+                            "alias": null,
+                            "body": {
+                                "@type": "lvasgn",
+                                "pos_col_end": 9,
+                                "pos_col_start": 5,
+                                "pos_line_end": 4,
+                                "pos_line_start": 4,
+                                "target": "a",
+                                "value": {
+                                    "@token": 1,
+                                    "@type": "int",
+                                    "pos_col_end": 9,
+                                    "pos_col_start": 9,
+                                    "pos_line_end": 4,
+                                    "pos_line_start": 4
+                                }
+                            },
+                            "exceptions": null,
+                            "pos_col_end": 9,
+                            "pos_col_start": 1,
+                            "pos_line_end": 4,
+                            "pos_line_start": 3
+                        }
+                    ]
+                }
+            ],
+            "pos_col_end": 3,
+            "pos_col_start": 1,
+            "pos_line_end": 5,
+            "pos_line_start": 1
         }
     }
 }

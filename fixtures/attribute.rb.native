@@ -3,33 +3,31 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "send",
-                "base": {
-                    "@type": "self",
-                    "pos_col_end": 4,
-                    "pos_col_start": 1,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1
-                },
-                "pos_col_end": 12,
+        "@type": "module",
+        "file": {
+            "@type": "send",
+            "base": {
+                "@type": "self",
+                "pos_col_end": 4,
                 "pos_col_start": 1,
                 "pos_line_end": 1,
-                "pos_line_start": 1,
-                "selector": "foo=",
-                "values": [
-                    {
-                        "@type": "int",
-                        "pos_col_end": 12,
-                        "pos_col_start": 12,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1,
-                        "token": 1
-                    }
-                ]
-            }
+                "pos_line_start": 1
+            },
+            "pos_col_end": 12,
+            "pos_col_start": 1,
+            "pos_line_end": 1,
+            "pos_line_start": 1,
+            "selector": "foo=",
+            "values": [
+                {
+                    "@token": 1,
+                    "@type": "int",
+                    "pos_col_end": 12,
+                    "pos_col_start": 12,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
+                }
+            ]
         }
     }
 }

@@ -1,6 +1,8 @@
 package normalizer
 
 import (
+	"strings"
+
 	"gopkg.in/bblfsh/sdk.v2/uast"
 	"gopkg.in/bblfsh/sdk.v2/uast/role"
 	. "gopkg.in/bblfsh/sdk.v2/uast/transformer"
@@ -8,11 +10,6 @@ import (
 )
 
 var Native = Transformers([][]Transformer{
-	{
-		ResponseMetadata{
-			TopLevelIsRootNode: true,
-		},
-	},
 	{Mappings(Annotations...)},
 	{RolesDedup()},
 }...)
@@ -47,58 +44,101 @@ func mapInternalProperty(key string, roles ...role.Role) Mapping {
 	)
 }
 
-//func annotateWhile(typ string, roles ...role.Role) Mapping {
-	//return AnnotateType(typ, ObjRoles{
-		//"body": {role.Expression, role.While, role.Body},
-		//"condition": {role.
-	//}, role.Statement, role.While, roles...)
-//}
+type opSendAssign struct {
+	op Op
+}
+
+func (op opSendAssign) Check(st *State, n uast.Node) (bool, error) {
+	s, ok := n.(uast.String)
+	if !ok {
+		return false, nil
+	}
+
+	gostr := string(s)
+	if !strings.HasSuffix(gostr, "=") {
+		return false, nil
+	}
+
+	return op.op.Check(st, uast.String(gostr[:len(gostr)-1]))
+}
+
+func (op opSendAssign) Construct(st *State, n uast.Node) (uast.Node, error) {
+	n, err := op.op.Construct(st, n)
+	if err != nil {
+		return nil, err
+	}
+
+	v, ok := n.(uast.String)
+	if !ok {
+		return nil, ErrExpectedValue.New(n)
+	}
+
+	gostr := string(v) + "="
+	return uast.String(gostr), nil
+}
+
+type opSendOperator struct {
+	op Op
+}
+
+func (op opSendOperator) Check(st *State, n uast.Node) (bool, error) {
+	s, ok := n.(uast.String)
+	if !ok {
+		return false, nil
+	}
+
+	if _, ok := operatorRoles[s]; !ok {
+		return false, nil
+	}
+
+	return op.op.Check(st, n)
+}
+
+func (op opSendOperator) Construct(st *State, n uast.Node) (uast.Node, error) {
+	return op.op.Construct(st, n)
+}
 
 // Nodes doc:
 // https://github.com/whitequark/parser/blob/master/doc/AST_FORMAT.md
 
-var	operatorRoles = StringToRolesMap(map[string][]role.Role{
-	"+":   {role.Arithmetic, role.Add},
-	"-":   {role.Arithmetic, role.Substract},
-	"*":   {role.Arithmetic, role.Multiply},
-	"/":   {role.Arithmetic, role.Divide},
-	"%":   {role.Arithmetic, role.Modulo},
+var operatorRoles = StringToRolesMap(map[string][]role.Role{
+	"+": {role.Arithmetic, role.Add},
+	"-": {role.Arithmetic, role.Substract},
+	"*": {role.Arithmetic, role.Multiply},
+	"/": {role.Arithmetic, role.Divide},
+	"%": {role.Arithmetic, role.Modulo},
 	// pow
-	"**":  {role.Arithmetic, role.Incomplete},
-	"&":   {role.Bitwise, role.And},
-	"|":   {role.Bitwise, role.Or},
-	"^":   {role.Bitwise, role.Xor},
+	"**": {role.Arithmetic, role.Incomplete},
+	"&":  {role.Bitwise, role.And},
+	"|":  {role.Bitwise, role.Or},
+	"^":  {role.Bitwise, role.Xor},
 	// Complement
-	"~":   {role.Bitwise, role.Incomplete},
-	"<<":  {role.Bitwise, role.LeftShift},
-	">>":  {role.Bitwise, role.RightShift},
-	"==":  {role.Equal, role.Relational},
-	"<=":  {role.LessThanOrEqual, role.Relational},
-	">=":  {role.GreaterThanOrEqual, role.Relational},
-	"!=":  {role.Equal, role.Not, role.Relational},
-	"!":   {role.Not, role.Relational},
+	"~":  {role.Bitwise, role.Incomplete},
+	"<<": {role.Bitwise, role.LeftShift},
+	">>": {role.Bitwise, role.RightShift},
+	"==": {role.Equal, role.Relational},
+	"<=": {role.LessThanOrEqual, role.Relational},
+	">=": {role.GreaterThanOrEqual, role.Relational},
+	"!=": {role.Equal, role.Not, role.Relational},
+	"!":  {role.Not, role.Relational},
 	// Incomplete: check type (1 !eql? 1.0) but not being the same object like equal?
 	"eql?":   {role.Identical, role.Relational},
-	"equal?":   {role.Identical, role.Relational},
+	"equal?": {role.Identical, role.Relational},
 	// rocket ship operator
-	"<==>":   {role.Identical, role.Incomplete},
+	"<==>": {role.Identical, role.Incomplete},
 })
-
 
 var Annotations = []Mapping{
 	ObjectToNode{
-		LineKey:   "pos_line_start",
-		ColumnKey: "pos_col_start",
-	}.Mapping(),
-	ObjectToNode{
+		LineKey:      "pos_line_start",
+		ColumnKey:    "pos_col_start",
 		EndLineKey:   "pos_line_end",
 		EndColumnKey: "pos_col_end",
 	}.Mapping(),
 
 	AnnotateType("file", nil, role.File),
+	AnnotateType("begin", nil, role.Block),
 	AnnotateType("body", nil, role.Body),
-	// XXX all these mapInternalProperty() calls doesn't seem to work
-	// (dennys: seems to be a bug)
 	mapInternalProperty("body", role.Body),
 	mapInternalProperty("left", role.Left),
 	mapInternalProperty("right", role.Right),
@@ -109,18 +149,21 @@ var Annotations = []Mapping{
 	mapInternalProperty("_2", role.Tuple, role.Value),
 
 	// Types
+	AnnotateType("module", nil, role.Statement, role.Module),
+	AnnotateType("comment", nil, role.Noop, role.Comment),
 	AnnotateType("module", nil, role.Statement, role.Module, role.Identifier),
-	annotateTypeTokenField("module", "name", role.Statement, role.Module, role.Identifier),
 	AnnotateType("block", nil, role.Block),
-	annotateTypeTokenField("int", "token", role.Expression, role.Literal, role.Number, role.Primitive),
-	annotateTypeTokenField("float", "token", role.Expression, role.Literal, role.Number, role.Primitive),
-	annotateTypeTokenField("complex", "token", role.Expression, role.Literal, role.Number, role.Primitive, role.Incomplete),
-	annotateTypeTokenField("rational", "token", role.Expression, role.Literal, role.Number, role.Primitive, role.Incomplete),
-	annotateTypeTokenField("str", "token", role.Expression, role.Literal, role.String, role.Primitive),
+	AnnotateType("int", nil, role.Expression, role.Literal, role.Number, role.Primitive),
+	AnnotateType("NilNode", nil, role.Null),
+	AnnotateType("return", nil, role.Statement, role.Return),
+	AnnotateType("float", nil, role.Expression, role.Literal, role.Number, role.Primitive),
+	AnnotateType("complex", nil, role.Expression, role.Literal, role.Number, role.Primitive, role.Incomplete),
+	AnnotateType("rational", nil, role.Expression, role.Literal, role.Number, role.Primitive, role.Incomplete),
+	AnnotateType("str", nil, role.Expression, role.Literal, role.String, role.Primitive),
 	AnnotateType("pair", nil, role.Expression, role.Literal, role.Tuple, role.Primitive),
 	AnnotateType("array", nil, role.Expression, role.Literal, role.List, role.Primitive),
 	AnnotateType("hash", nil, role.Expression, role.Literal, role.Map, role.Primitive),
-	annotateTypeTokenField("class", "name", role.Statement, role.Type, role.Declaration, role.Identifier),
+	AnnotateType("class", nil, role.Statement, role.Type, role.Declaration, role.Identifier),
 
 	// splats (*a)
 	AnnotateType("kwsplat", nil, role.Expression, role.Incomplete),
@@ -128,19 +171,19 @@ var Annotations = []Mapping{
 
 	// Vars
 	// local
-	annotateTypeTokenField("lvar", "token", role.Expression, role.Identifier),
+	AnnotateType("lvar", nil, role.Expression, role.Identifier),
 	// instance
-	annotateTypeTokenField("ivar", "token", role.Expression, role.Identifier, role.Visibility, role.Instance),
+	AnnotateType("ivar", nil, role.Expression, role.Identifier, role.Visibility, role.Instance),
 	// global
-	annotateTypeTokenField("gvar", "token", role.Expression, role.Identifier, role.Visibility, role.World),
+	AnnotateType("gvar", nil, role.Expression, role.Identifier, role.Visibility, role.World),
 	// class
-	annotateTypeTokenField("cvar", "token", role.Expression, role.Identifier, role.Visibility, role.Type),
+	AnnotateType("cvar", nil, role.Expression, role.Identifier, role.Visibility, role.Type),
 
 	// Singleton class
 	AnnotateType("sclass", nil, role.Expression, role.Type, role.Declaration, role.Incomplete),
 
 	AnnotateType("alias", nil, role.Statement, role.Alias),
-	annotateTypeTokenField("def", "name", role.Statement, role.Function, role.Declaration, role.Identifier),
+	AnnotateType("def", nil, role.Statement, role.Function, role.Declaration, role.Identifier),
 	// Singleton method
 	AnnotateType("defs", nil, role.Statement, role.Function, role.Declaration, role.Identifier, role.Incomplete),
 	AnnotateType("NilClass", nil, role.Statement, role.Type, role.Null),
@@ -157,13 +200,13 @@ var Annotations = []Mapping{
 	AnnotateType("ensure", nil, role.Expression, role.Finally),
 
 	// Arguments
-	// grouping node, need grouping role
+	// grouping node for function definition (not for calls which just use send.values), need grouping role
 	AnnotateType("args", nil, role.Expression, role.Argument, role.Incomplete),
-	annotateTypeTokenField("arg", "token", role.Expression, role.Argument, role.Name, role.Identifier),
-	annotateTypeTokenField("kwarg", "token", role.Expression, role.Argument, role.Name, role.Map),
-	annotateTypeTokenField("kwoptarg", "token", role.Expression, role.Argument, role.Name, role.Incomplete),
-	annotateTypeTokenField("restarg", "name", role.Expression, role.Argument, role.Identifier, role.List),
-	annotateTypeTokenField("kwrestarg", "name", role.Expression, role.Argument, role.Identifier, role.Incomplete),
+	AnnotateType("arg", nil, role.Expression, role.Argument, role.Name, role.Identifier),
+	AnnotateType("kwarg", nil, role.Expression, role.Argument, role.Name, role.Map),
+	AnnotateType("kwoptarg", nil, role.Expression, role.Argument, role.Name, role.Incomplete),
+	AnnotateType("restarg", nil, role.Expression, role.Argument, role.Identifier, role.List),
+	AnnotateType("kwrestarg", nil, role.Expression, role.Argument, role.Identifier, role.Incomplete),
 
 	// Assigns
 	// constant assign
@@ -197,8 +240,8 @@ var Annotations = []Mapping{
 	AnnotateType("regopt", nil, role.Expression, role.Regexp, role.Incomplete),
 	AnnotateType("options", nil, role.Expression, role.Regexp, role.Incomplete),
 
-	annotateTypeTokenField("Symbol", "token", role.Expression, role.Identifier),
-	annotateTypeTokenField("sym", "token", role.Expression, role.Identifier),
+	AnnotateType("Symbol", nil, role.Expression, role.Identifier),
+	AnnotateType("sym", nil, role.Expression, role.Identifier),
 	// Interpolated symbols on strings
 	AnnotateType("dsym", nil, role.Expression, role.String, role.Incomplete),
 	AnnotateType("self", nil, role.Expression, role.This, role.Left),
@@ -208,15 +251,15 @@ var Annotations = []Mapping{
 	annotateTypeToken("or", "or", role.Expression, role.Binary, role.Operator, role.Boolean, role.Or),
 	annotateTypeToken("raise", "raise", role.Statement, role.Throw),
 
-	annotateTypeTokenField("const", "token", role.Expression, role.Identifier, role.Incomplete),
+	AnnotateType("const", nil, role.Expression, role.Identifier, role.Incomplete),
 	AnnotateType("cbase", nil, role.Expression, role.Identifier, role.Qualified, role.Incomplete),
 
 	AnnotateType("values", nil, role.Expression, role.Argument, role.Identifier),
 
 	// For
 	AnnotateType("for", ObjRoles{
-		"body": {role.Expression, role.For, role.Body},
-		"iterated": {role.Expression, role.For, role.Update},
+		"body":      {role.Expression, role.For, role.Body},
+		"iterated":  {role.Expression, role.For, role.Update},
 		"iterators": {role.Expression, role.For, role.Iterator},
 	}, role.Statement, role.For),
 
@@ -228,14 +271,10 @@ var Annotations = []Mapping{
 
 	// If
 	AnnotateType("if", ObjRoles{
-		// XXX check that this is added to the other body key roles (+ condition)
 		"body": {role.Expression, role.Then},
 		"else": {role.Expression, role.Else},
 	}, role.Statement, role.If),
 
-	// XXX check that left, right et all are correctly assigned roles once the issue
-	// referenced above has been fixed
-	// Augmented assignment (op-asgn)
 	MapASTCustom("op_asgn",
 		Obj{
 			"operator": Var("op"),
@@ -250,7 +289,8 @@ var Annotations = []Mapping{
 		"_2": {role.Identical, role.Incomplete},
 	}, role.Expression, role.List, role.Incomplete),
 
-	// The many faces of Ruby's "send" start here
+	// The many faces of Ruby's "send" start here ===>
+
 	MapAST("send", Obj{
 		"selector": String("continue"),
 	}, Obj{
@@ -264,29 +304,112 @@ var Annotations = []Mapping{
 	}, role.Expression, role.Declaration, role.Function, role.Anonymous),
 
 	MapAST("send", Obj{
+		"selector": String("require"),
+	}, Obj{
+		"selector": String("require"),
+	}, role.Expression, role.Import),
+
+	MapAST("send", Obj{
 		"selector": String("each"),
 	}, Obj{
 		"selector": String("each"),
 	}, role.Statement, role.For, role.Iterator),
 
 	MapAST("send", Obj{
+		"selector": String("public"),
+	}, Obj{
+		"selector": String("public"),
+	}, role.Statement, role.Visibility, role.World),
+
+	MapAST("send", Obj{
+		"selector": String("protected"),
+	}, Obj{
+		"selector": String("protected"),
+	}, role.Statement, role.Visibility, role.Subtype),
+
+	MapAST("send", Obj{
+		"selector": String("private"),
+	}, Obj{
+		"selector": String("private"),
+	}, role.Statement, role.Visibility, role.Instance),
+
+	// Operator expression "send"
+	MapASTCustom("send", Obj{
+		"base":     ObjectRoles("bs"),
+		"values":   Check(Not(Is(nil)), EachObjectRoles("values")),
+		"selector": opSendOperator{op: Var("selector")},
+	}, Obj{
+		"base":        ObjectRoles("bs", role.Left),
+		"values":      EachObjectRoles("values", role.Right),
+		uast.KeyToken: Var("selector"),
+	},
+		LookupArrOpVar("selector", operatorRoles),
+		role.Expression, role.Binary, role.Operator),
+
+	// Assignment "send"
+	MapAST("send", Obj{
+		"base":     Var("base"),
+		"values":   EachObjectRoles("values"),
+		"selector": opSendAssign{op: Var("selector")},
+	}, Obj{
+		"base":        Var("base"),
+		"values":      EachObjectRoles("values", role.Assignment, role.Right),
+		uast.KeyToken: Var("selector"),
+	}, role.Expression, role.Assignment, role.Left),
+
+	// Parent of the last element of the qualified identifier (annotates
+	// it and the child which is a normal identifier)
+	MapAST("send", Obj{
+		"base": Obj{
+			uast.KeyType:  String("send"),
+			uast.KeyStart: Var("childstart"),
+			uast.KeyEnd:   Var("childend"),
+			"base":        Check(Is(nil), Var("childbase")),
+			"selector":    Var("childselector"),
+			uast.KeyRoles: Var("roles"),
+		},
+		"selector": Var("selector"),
+	}, Obj{
+		"base": Obj{
+			uast.KeyType:  String("send"),
+			uast.KeyStart: Var("childstart"),
+			uast.KeyEnd:   Var("childend"),
+			"base":        Var("childbase"),
+			"selector":    Var("childselector"),
+			uast.KeyRoles: Append(Var("roles"), Roles(role.Identifier)),
+			"__notcall":   Bool(true),
+		},
+		uast.KeyToken: Var("selector"),
+	}, role.Expression, role.Qualified, role.Identical),
+
+	// Qualified identifier "send" (other than the parent of the last one that will
+	// match the rule above)
+	MapAST("send", Obj{
 		"base":     Check(Not(Is(nil)), Var("base")),
 		"selector": Var("selector"),
 	}, Obj{
-		"base": Var("base"),
+		"base":        Var("base"),
 		uast.KeyToken: Var("selector"),
 	}, role.Expression, role.Qualified, role.Identifier),
-}
 
-/*
-	// send is used for qualified identifiers (foo.bar), method calls (puts "foo")
-	// and a lot of other things...
-	// XXX Add "selector" as token
-	On(rubyast.Send).Self(
-		On(And(Or(rubyast.BodyRole,
-		          HasInternalRole("module")),
-			  Not(HasToken("continue")),
-			  Not(isSomeOperator))).Roles(uast.Expression, uast.Call, uast.Identifier),
-	),
-)
-*/
+	// Function call "send" without arguments
+	MapAST("send", Obj{
+		"base":      Var("base"),
+		"selector":  Var("selector"),
+		//"__notcall": Check(Is(nil), Var("__notcall")),
+	}, Obj{
+		"base":        Var("base"),
+		uast.KeyToken: Var("selector"),
+	}, role.Expression, role.Function, role.Call),
+
+	// Function call "send" with arguments
+	MapAST("send", Obj{
+		"base":     Var("base"),
+		"selector": Var("selector"),
+		"values":   EachObjectRoles("values"),
+	}, Obj{
+		"base":        Var("base"),
+		"values":      EachObjectRoles("values", role.Function, role.Call, role.Argument),
+		uast.KeyToken: Var("selector"),
+	}, role.Expression, role.Function, role.Call),
+}

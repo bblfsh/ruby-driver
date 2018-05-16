@@ -2,41 +2,46 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
-.  .  0: module {
-.  .  .  Roles: Identifier,Module,Statement
+.  .  0: def {
+.  .  .  Roles: Declaration,Function,Identifier,Statement
+.  .  .  TOKEN "testfnc1"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 2
+.  .  .  .  Line: 1
+.  .  .  .  Col: 3
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: RUBYAST
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: def {
-.  .  .  .  .  Roles: Declaration,Function,Identifier,Statement
-.  .  .  .  .  TOKEN "testfnc1"
+.  .  .  .  0: NilNode {
+.  .  .  .  .  Roles: Null
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: file
-.  .  .  .  .  .  pos_col_end: 3
-.  .  .  .  .  .  pos_col_start: 1
-.  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: args {
-.  .  .  .  .  .  .  Roles: Argument,Expression,Incomplete
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: args
-.  .  .  .  .  .  .  .  pos_col_end: 14
-.  .  .  .  .  .  .  .  pos_col_start: 13
-.  .  .  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  .  .  pos_line_start: 1
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: NilNode {
-.  .  .  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1: args {
+.  .  .  .  .  Roles: Argument,Expression,Incomplete
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 12
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 13
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 13
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 14
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: args
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

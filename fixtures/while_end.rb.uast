@@ -2,71 +2,94 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
-.  .  0: module {
-.  .  .  Roles: Identifier,Module,Statement
+.  .  0: while_post {
+.  .  .  Roles: Statement,While
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 29
+.  .  .  .  Line: 3
+.  .  .  .  Col: 14
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: RUBYAST
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: while_post {
-.  .  .  .  .  Roles: Statement,While
+.  .  .  .  0: kwbegin {
+.  .  .  .  .  Roles: Block,Body,Expression
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 0
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 18
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 3
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: file
-.  .  .  .  .  .  pos_col_end: 14
-.  .  .  .  .  .  pos_col_start: 1
-.  .  .  .  .  .  pos_line_end: 3
-.  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: kwbegin {
-.  .  .  .  .  .  .  Roles: Block,Expression
+.  .  .  .  .  .  0: lvasgn {
+.  .  .  .  .  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
+.  .  .  .  .  .  .  TOKEN "a"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 10
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 5
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 14
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  .  pos_col_end: 3
-.  .  .  .  .  .  .  .  pos_col_start: 1
-.  .  .  .  .  .  .  .  pos_line_end: 3
-.  .  .  .  .  .  .  .  pos_line_start: 1
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: lvasgn {
-.  .  .  .  .  .  .  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
-.  .  .  .  .  .  .  .  .  TOKEN "a"
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  .  .  .  pos_col_end: 9
-.  .  .  .  .  .  .  .  .  .  pos_col_start: 5
-.  .  .  .  .  .  .  .  .  .  pos_line_end: 2
-.  .  .  .  .  .  .  .  .  .  pos_line_start: 2
+.  .  .  .  .  .  .  .  0: int {
+.  .  .  .  .  .  .  .  .  Roles: Binary,Expression,Literal,Number,Primitive,Right
+.  .  .  .  .  .  .  .  .  TOKEN "1"
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 14
+.  .  .  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  .  .  Col: 9
 .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
-.  .  .  .  .  .  .  .  .  .  .  TOKEN "1"
-.  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  internalRole: value
-.  .  .  .  .  .  .  .  .  .  .  .  pos_col_end: 9
-.  .  .  .  .  .  .  .  .  .  .  .  pos_col_start: 9
-.  .  .  .  .  .  .  .  .  .  .  .  pos_line_end: 2
-.  .  .  .  .  .  .  .  .  .  .  .  pos_line_start: 2
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 14
+.  .  .  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: value
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: true {
-.  .  .  .  .  .  .  Roles: Boolean,Expression,Literal
-.  .  .  .  .  .  .  TOKEN "true"
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: condition
-.  .  .  .  .  .  .  .  pos_col_end: 14
-.  .  .  .  .  .  .  .  pos_col_start: 11
-.  .  .  .  .  .  .  .  pos_line_end: 3
-.  .  .  .  .  .  .  .  pos_line_start: 3
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1: true {
+.  .  .  .  .  Roles: Boolean,Condition,Expression,Literal
+.  .  .  .  .  TOKEN "true"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 26
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 11
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 29
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 14
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: condition
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

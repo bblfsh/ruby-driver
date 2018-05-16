@@ -3,70 +3,68 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "lvasgn",
-                "pos_col_end": 20,
-                "pos_col_start": 1,
-                "pos_line_end": 1,
-                "pos_line_start": 1,
-                "target": "a",
-                "value": {
-                    "@type": "hash",
-                    "contents": [
-                        {
-                            "@type": "pair",
-                            "_1": {
-                                "@type": "sym",
-                                "pos_col_end": 8,
-                                "pos_col_start": 6,
-                                "pos_line_end": 1,
-                                "pos_line_start": 1,
-                                "token": "a"
-                            },
-                            "_2": {
-                                "@type": "int",
-                                "pos_col_end": 11,
-                                "pos_col_start": 11,
-                                "pos_line_end": 1,
-                                "pos_line_start": 1,
-                                "token": 1
-                            },
-                            "pos_col_end": 11,
+        "@type": "module",
+        "file": {
+            "@type": "lvasgn",
+            "pos_col_end": 20,
+            "pos_col_start": 1,
+            "pos_line_end": 1,
+            "pos_line_start": 1,
+            "target": "a",
+            "value": {
+                "@type": "hash",
+                "contents": [
+                    {
+                        "@type": "pair",
+                        "_1": {
+                            "@token": "a",
+                            "@type": "sym",
+                            "pos_col_end": 8,
                             "pos_col_start": 6,
                             "pos_line_end": 1,
                             "pos_line_start": 1
                         },
-                        {
-                            "@type": "pair",
-                            "_1": {
-                                "@type": "sym",
-                                "pos_col_end": 16,
-                                "pos_col_start": 14,
-                                "pos_line_end": 1,
-                                "pos_line_start": 1,
-                                "token": "b"
-                            },
-                            "_2": {
-                                "@type": "int",
-                                "pos_col_end": 19,
-                                "pos_col_start": 19,
-                                "pos_line_end": 1,
-                                "pos_line_start": 1,
-                                "token": 2
-                            },
-                            "pos_col_end": 19,
+                        "_2": {
+                            "@token": 1,
+                            "@type": "int",
+                            "pos_col_end": 11,
+                            "pos_col_start": 11,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1
+                        },
+                        "pos_col_end": 11,
+                        "pos_col_start": 6,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1
+                    },
+                    {
+                        "@type": "pair",
+                        "_1": {
+                            "@token": "b",
+                            "@type": "sym",
+                            "pos_col_end": 16,
                             "pos_col_start": 14,
                             "pos_line_end": 1,
                             "pos_line_start": 1
-                        }
-                    ],
-                    "pos_col_end": 20,
-                    "pos_col_start": 5,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1
-                }
+                        },
+                        "_2": {
+                            "@token": 2,
+                            "@type": "int",
+                            "pos_col_end": 19,
+                            "pos_col_start": 19,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1
+                        },
+                        "pos_col_end": 19,
+                        "pos_col_start": 14,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1
+                    }
+                ],
+                "pos_col_end": 20,
+                "pos_col_start": 5,
+                "pos_line_end": 1,
+                "pos_line_start": 1
             }
         }
     }

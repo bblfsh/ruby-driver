@@ -3,40 +3,38 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "def",
-                "args": {
-                    "@type": "args",
-                    "pos_col_end": 14,
-                    "pos_col_start": 13,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1
-                },
-                "body": [
-                    {
-                        "@type": "return",
-                        "pos_col_end": 10,
-                        "pos_col_start": 5,
-                        "pos_line_end": 2,
-                        "pos_line_start": 2,
-                        "target": {
-                            "@type": "int",
-                            "pos_col_end": 12,
-                            "pos_col_start": 12,
-                            "pos_line_end": 2,
-                            "pos_line_start": 2,
-                            "token": 1
-                        }
-                    }
-                ],
-                "name": "testfnc1",
-                "pos_col_end": 3,
-                "pos_col_start": 1,
+        "@type": "module",
+        "file": {
+            "@token": "testfnc1",
+            "@type": "def",
+            "args": {
+                "@type": "args",
+                "pos_col_end": 14,
+                "pos_col_start": 13,
                 "pos_line_end": 1,
                 "pos_line_start": 1
-            }
+            },
+            "body": [
+                {
+                    "@type": "return",
+                    "pos_col_end": 10,
+                    "pos_col_start": 5,
+                    "pos_line_end": 2,
+                    "pos_line_start": 2,
+                    "target": {
+                        "@token": 1,
+                        "@type": "int",
+                        "pos_col_end": 12,
+                        "pos_col_start": 12,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2
+                    }
+                }
+            ],
+            "pos_col_end": 3,
+            "pos_col_start": 1,
+            "pos_line_end": 1,
+            "pos_line_start": 1
         }
     }
 }

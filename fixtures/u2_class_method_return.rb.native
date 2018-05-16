@@ -3,117 +3,115 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "class",
-                "body": [
-                    {
-                        "@type": "begin",
-                        "body": [
-                            {
-                                "@type": "def",
-                                "args": {
-                                    "@type": "args",
-                                    "pos_col_end": 17,
-                                    "pos_col_start": 16,
-                                    "pos_line_end": 2,
-                                    "pos_line_start": 2
-                                },
-                                "body": [
-                                    {
-                                        "@type": "return",
-                                        "pos_col_end": 14,
-                                        "pos_col_start": 9,
-                                        "pos_line_end": 3,
-                                        "pos_line_start": 3,
-                                        "target": null
-                                    }
-                                ],
-                                "name": "method1",
-                                "pos_col_end": 7,
-                                "pos_col_start": 5,
+        "@type": "module",
+        "file": {
+            "@token": "A",
+            "@type": "class",
+            "body": [
+                {
+                    "@type": "begin",
+                    "body": [
+                        {
+                            "@token": "method1",
+                            "@type": "def",
+                            "args": {
+                                "@type": "args",
+                                "pos_col_end": 17,
+                                "pos_col_start": 16,
                                 "pos_line_end": 2,
                                 "pos_line_start": 2
                             },
-                            {
-                                "@type": "def",
-                                "args": {
-                                    "@type": "args",
-                                    "pos_col_end": 17,
-                                    "pos_col_start": 16,
-                                    "pos_line_end": 5,
-                                    "pos_line_start": 5
-                                },
-                                "body": [
-                                    {
-                                        "@type": "return",
-                                        "pos_col_end": 14,
-                                        "pos_col_start": 9,
-                                        "pos_line_end": 6,
-                                        "pos_line_start": 6,
-                                        "target": {
-                                            "@type": "int",
-                                            "pos_col_end": 16,
-                                            "pos_col_start": 16,
-                                            "pos_line_end": 6,
-                                            "pos_line_start": 6,
-                                            "token": 1
-                                        }
-                                    }
-                                ],
-                                "name": "method2",
-                                "pos_col_end": 7,
-                                "pos_col_start": 5,
+                            "body": [
+                                {
+                                    "@type": "return",
+                                    "pos_col_end": 14,
+                                    "pos_col_start": 9,
+                                    "pos_line_end": 3,
+                                    "pos_line_start": 3,
+                                    "target": null
+                                }
+                            ],
+                            "pos_col_end": 7,
+                            "pos_col_start": 5,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2
+                        },
+                        {
+                            "@token": "method2",
+                            "@type": "def",
+                            "args": {
+                                "@type": "args",
+                                "pos_col_end": 17,
+                                "pos_col_start": 16,
                                 "pos_line_end": 5,
                                 "pos_line_start": 5
                             },
-                            {
-                                "@type": "def",
-                                "args": {
-                                    "@type": "args",
-                                    "pos_col_end": 17,
-                                    "pos_col_start": 16,
-                                    "pos_line_end": 8,
-                                    "pos_line_start": 8
-                                },
-                                "body": [
-                                    {
-                                        "@type": "return",
-                                        "pos_col_end": 14,
-                                        "pos_col_start": 9,
-                                        "pos_line_end": 9,
-                                        "pos_line_start": 9,
-                                        "target": {
-                                            "@type": "int",
-                                            "pos_col_end": 16,
-                                            "pos_col_start": 16,
-                                            "pos_line_end": 9,
-                                            "pos_line_start": 9,
-                                            "token": 2
-                                        }
+                            "body": [
+                                {
+                                    "@type": "return",
+                                    "pos_col_end": 14,
+                                    "pos_col_start": 9,
+                                    "pos_line_end": 6,
+                                    "pos_line_start": 6,
+                                    "target": {
+                                        "@token": 1,
+                                        "@type": "int",
+                                        "pos_col_end": 16,
+                                        "pos_col_start": 16,
+                                        "pos_line_end": 6,
+                                        "pos_line_start": 6
                                     }
-                                ],
-                                "name": "method3",
-                                "pos_col_end": 7,
-                                "pos_col_start": 5,
+                                }
+                            ],
+                            "pos_col_end": 7,
+                            "pos_col_start": 5,
+                            "pos_line_end": 5,
+                            "pos_line_start": 5
+                        },
+                        {
+                            "@token": "method3",
+                            "@type": "def",
+                            "args": {
+                                "@type": "args",
+                                "pos_col_end": 17,
+                                "pos_col_start": 16,
                                 "pos_line_end": 8,
                                 "pos_line_start": 8
-                            }
-                        ],
-                        "pos_col_end": 7,
-                        "pos_col_start": 5,
-                        "pos_line_end": 10,
-                        "pos_line_start": 2
-                    }
-                ],
-                "name": "A",
-                "parent": null,
-                "pos_col_end": 5,
-                "pos_col_start": 1,
-                "pos_line_end": 1,
-                "pos_line_start": 1
-            }
+                            },
+                            "body": [
+                                {
+                                    "@type": "return",
+                                    "pos_col_end": 14,
+                                    "pos_col_start": 9,
+                                    "pos_line_end": 9,
+                                    "pos_line_start": 9,
+                                    "target": {
+                                        "@token": 2,
+                                        "@type": "int",
+                                        "pos_col_end": 16,
+                                        "pos_col_start": 16,
+                                        "pos_line_end": 9,
+                                        "pos_line_start": 9
+                                    }
+                                }
+                            ],
+                            "pos_col_end": 7,
+                            "pos_col_start": 5,
+                            "pos_line_end": 8,
+                            "pos_line_start": 8
+                        }
+                    ],
+                    "pos_col_end": 7,
+                    "pos_col_start": 5,
+                    "pos_line_end": 10,
+                    "pos_line_start": 2
+                }
+            ],
+            "parent": null,
+            "pos_col_end": 5,
+            "pos_col_start": 1,
+            "pos_line_end": 1,
+            "pos_line_start": 1
         }
     }
 }

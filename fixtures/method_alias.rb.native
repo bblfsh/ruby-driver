@@ -3,71 +3,69 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "class",
-                "body": [
-                    {
-                        "@type": "begin",
-                        "body": [
-                            {
-                                "@type": "def",
-                                "args": {
-                                    "@type": "args",
-                                    "pos_col_end": 13,
-                                    "pos_col_start": 12,
-                                    "pos_line_end": 2,
-                                    "pos_line_start": 2
-                                },
-                                "body": [
-                                    {
-                                        "@type": "NilNode"
-                                    }
-                                ],
-                                "name": "bar",
-                                "pos_col_end": 7,
-                                "pos_col_start": 5,
+        "@type": "module",
+        "file": {
+            "@token": "Foo",
+            "@type": "class",
+            "body": [
+                {
+                    "@type": "begin",
+                    "body": [
+                        {
+                            "@token": "bar",
+                            "@type": "def",
+                            "args": {
+                                "@type": "args",
+                                "pos_col_end": 13,
+                                "pos_col_start": 12,
                                 "pos_line_end": 2,
                                 "pos_line_start": 2
                             },
-                            {
-                                "@type": "alias",
-                                "_1": {
-                                    "@type": "sym",
-                                    "pos_col_end": 13,
-                                    "pos_col_start": 11,
-                                    "pos_line_end": 5,
-                                    "pos_line_start": 5,
-                                    "token": "baz"
-                                },
-                                "_2": {
-                                    "@type": "sym",
-                                    "pos_col_end": 17,
-                                    "pos_col_start": 15,
-                                    "pos_line_end": 5,
-                                    "pos_line_start": 5,
-                                    "token": "bar"
-                                },
-                                "pos_col_end": 9,
-                                "pos_col_start": 5,
+                            "body": [
+                                {
+                                    "@type": "NilNode"
+                                }
+                            ],
+                            "pos_col_end": 7,
+                            "pos_col_start": 5,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2
+                        },
+                        {
+                            "@type": "alias",
+                            "_1": {
+                                "@token": "baz",
+                                "@type": "sym",
+                                "pos_col_end": 13,
+                                "pos_col_start": 11,
                                 "pos_line_end": 5,
                                 "pos_line_start": 5
-                            }
-                        ],
-                        "pos_col_end": 17,
-                        "pos_col_start": 5,
-                        "pos_line_end": 5,
-                        "pos_line_start": 2
-                    }
-                ],
-                "name": "Foo",
-                "parent": null,
-                "pos_col_end": 5,
-                "pos_col_start": 1,
-                "pos_line_end": 1,
-                "pos_line_start": 1
-            }
+                            },
+                            "_2": {
+                                "@token": "bar",
+                                "@type": "sym",
+                                "pos_col_end": 17,
+                                "pos_col_start": 15,
+                                "pos_line_end": 5,
+                                "pos_line_start": 5
+                            },
+                            "pos_col_end": 9,
+                            "pos_col_start": 5,
+                            "pos_line_end": 5,
+                            "pos_line_start": 5
+                        }
+                    ],
+                    "pos_col_end": 17,
+                    "pos_col_start": 5,
+                    "pos_line_end": 5,
+                    "pos_line_start": 2
+                }
+            ],
+            "parent": null,
+            "pos_col_end": 5,
+            "pos_col_start": 1,
+            "pos_line_end": 1,
+            "pos_line_start": 1
         }
     }
 }

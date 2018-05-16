@@ -2,51 +2,56 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
-.  .  0: module {
-.  .  .  Roles: Identifier,Module,Statement
+.  .  0: while {
+.  .  .  Roles: Statement,While
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 4
+.  .  .  .  Line: 1
+.  .  .  .  Col: 5
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: RUBYAST
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: while {
-.  .  .  .  .  Roles: Statement,While
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: file
-.  .  .  .  .  .  pos_col_end: 5
-.  .  .  .  .  .  pos_col_start: 1
-.  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  0: true {
+.  .  .  .  .  Roles: Boolean,Condition,Expression,Literal
+.  .  .  .  .  TOKEN "true"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 6
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 7
 .  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: true {
-.  .  .  .  .  .  .  Roles: Boolean,Expression,Literal
-.  .  .  .  .  .  .  TOKEN "true"
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: condition
-.  .  .  .  .  .  .  .  pos_col_end: 10
-.  .  .  .  .  .  .  .  pos_col_start: 7
-.  .  .  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  .  .  pos_line_start: 1
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: redo {
-.  .  .  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 15
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 5
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 18
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 8
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 9
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 10
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: condition
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1: redo {
+.  .  .  .  .  Roles: Body
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 15
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 18
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 8
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: redo {

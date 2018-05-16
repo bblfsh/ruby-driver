@@ -1,8 +1,56 @@
 {
-    "status": "fatal",
+    "status": "ok",
     "language": "ruby",
-    "errors": [
-        "undefined method `[]=' for nil:NilClass"
-    ],
-    "ast": null
+    "errors": [],
+    "ast": {
+        "@type": "module",
+        "file": {
+            "@type": "lvasgn",
+            "comments": [
+                {
+                    "@token": " previous",
+                    "@type": "comment",
+                    "documentation": false,
+                    "inline": true,
+                    "pos_col_end": 10,
+                    "pos_col_start": 1,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
+                },
+                {
+                    "@token": " inline",
+                    "@type": "comment",
+                    "documentation": false,
+                    "inline": true,
+                    "pos_col_end": 14,
+                    "pos_col_start": 7,
+                    "pos_line_end": 2,
+                    "pos_line_start": 2
+                },
+                {
+                    "@token": " after",
+                    "@type": "comment",
+                    "documentation": false,
+                    "inline": true,
+                    "pos_col_end": 7,
+                    "pos_col_start": 1,
+                    "pos_line_end": 3,
+                    "pos_line_start": 3
+                }
+            ],
+            "pos_col_end": 5,
+            "pos_col_start": 1,
+            "pos_line_end": 2,
+            "pos_line_start": 2,
+            "target": "a",
+            "value": {
+                "@token": 1,
+                "@type": "int",
+                "pos_col_end": 5,
+                "pos_col_start": 5,
+                "pos_line_end": 2,
+                "pos_line_start": 2
+            }
+        }
+    }
 }

@@ -1,4 +1,4 @@
-#!/usr/bin/ruby -wU
+#!/usr/bin/ruby -wUI/opt/driver/src/build/dependencies
 
 require_relative '../lib/ruby_driver'
 

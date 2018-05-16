@@ -3,153 +3,151 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "begin",
-                "body": [
-                    {
-                        "@type": "for",
-                        "body": {
-                            "@type": "lvasgn",
+        "@type": "module",
+        "file": {
+            "@type": "begin",
+            "body": [
+                {
+                    "@type": "for",
+                    "body": {
+                        "@type": "lvasgn",
+                        "pos_col_end": 9,
+                        "pos_col_start": 5,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
+                        "target": "a",
+                        "value": {
+                            "@token": "i",
+                            "@type": "lvar",
                             "pos_col_end": 9,
-                            "pos_col_start": 5,
+                            "pos_col_start": 9,
                             "pos_line_end": 2,
-                            "pos_line_start": 2,
-                            "target": "a",
-                            "value": {
-                                "@type": "lvar",
-                                "pos_col_end": 9,
-                                "pos_col_start": 9,
-                                "pos_line_end": 2,
-                                "pos_line_start": 2,
-                                "token": "i"
-                            }
-                        },
-                        "iterated": {
-                            "@type": "irange",
-                            "_1": {
-                                "@type": "int",
-                                "pos_col_end": 10,
-                                "pos_col_start": 10,
-                                "pos_line_end": 1,
-                                "pos_line_start": 1,
-                                "token": 0
-                            },
-                            "_2": {
-                                "@type": "int",
-                                "pos_col_end": 13,
-                                "pos_col_start": 13,
-                                "pos_line_end": 1,
-                                "pos_line_start": 1,
-                                "token": 5
-                            },
-                            "pos_col_end": 13,
+                            "pos_line_start": 2
+                        }
+                    },
+                    "iterated": {
+                        "@type": "irange",
+                        "_1": {
+                            "@token": 0,
+                            "@type": "int",
+                            "pos_col_end": 10,
                             "pos_col_start": 10,
                             "pos_line_end": 1,
                             "pos_line_start": 1
                         },
-                        "iterators": {
-                            "@type": "lvasgn",
-                            "pos_col_end": 5,
-                            "pos_col_start": 5,
+                        "_2": {
+                            "@token": 5,
+                            "@type": "int",
+                            "pos_col_end": 13,
+                            "pos_col_start": 13,
                             "pos_line_end": 1,
-                            "pos_line_start": 1,
-                            "target": "i",
-                            "value": null
+                            "pos_line_start": 1
                         },
-                        "pos_col_end": 3,
-                        "pos_col_start": 1,
+                        "pos_col_end": 13,
+                        "pos_col_start": 10,
                         "pos_line_end": 1,
                         "pos_line_start": 1
                     },
-                    {
+                    "iterators": {
                         "@type": "lvasgn",
-                        "pos_col_end": 13,
-                        "pos_col_start": 1,
-                        "pos_line_end": 5,
-                        "pos_line_start": 5,
-                        "target": "b",
-                        "value": {
-                            "@type": "array",
-                            "contents": [
-                                {
-                                    "@type": "int",
-                                    "pos_col_end": 6,
-                                    "pos_col_start": 6,
-                                    "pos_line_end": 5,
-                                    "pos_line_start": 5,
-                                    "token": 1
-                                },
-                                {
-                                    "@type": "int",
-                                    "pos_col_end": 9,
-                                    "pos_col_start": 9,
-                                    "pos_line_end": 5,
-                                    "pos_line_start": 5,
-                                    "token": 2
-                                },
-                                {
-                                    "@type": "int",
-                                    "pos_col_end": 12,
-                                    "pos_col_start": 12,
-                                    "pos_line_end": 5,
-                                    "pos_line_start": 5,
-                                    "token": 3
-                                }
-                            ],
-                            "pos_col_end": 13,
-                            "pos_col_start": 5,
-                            "pos_line_end": 5,
-                            "pos_line_start": 5
-                        }
+                        "pos_col_end": 5,
+                        "pos_col_start": 5,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1,
+                        "target": "i",
+                        "value": null
                     },
-                    {
-                        "@type": "for",
-                        "body": {
-                            "@type": "lvasgn",
-                            "pos_col_end": 9,
-                            "pos_col_start": 5,
-                            "pos_line_end": 8,
-                            "pos_line_start": 8,
-                            "target": "x",
-                            "value": {
-                                "@type": "lvar",
+                    "pos_col_end": 3,
+                    "pos_col_start": 1,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
+                },
+                {
+                    "@type": "lvasgn",
+                    "pos_col_end": 13,
+                    "pos_col_start": 1,
+                    "pos_line_end": 5,
+                    "pos_line_start": 5,
+                    "target": "b",
+                    "value": {
+                        "@type": "array",
+                        "contents": [
+                            {
+                                "@token": 1,
+                                "@type": "int",
+                                "pos_col_end": 6,
+                                "pos_col_start": 6,
+                                "pos_line_end": 5,
+                                "pos_line_start": 5
+                            },
+                            {
+                                "@token": 2,
+                                "@type": "int",
                                 "pos_col_end": 9,
                                 "pos_col_start": 9,
-                                "pos_line_end": 8,
-                                "pos_line_start": 8,
-                                "token": "i"
+                                "pos_line_end": 5,
+                                "pos_line_start": 5
+                            },
+                            {
+                                "@token": 3,
+                                "@type": "int",
+                                "pos_col_end": 12,
+                                "pos_col_start": 12,
+                                "pos_line_end": 5,
+                                "pos_line_start": 5
                             }
-                        },
-                        "iterated": {
+                        ],
+                        "pos_col_end": 13,
+                        "pos_col_start": 5,
+                        "pos_line_end": 5,
+                        "pos_line_start": 5
+                    }
+                },
+                {
+                    "@type": "for",
+                    "body": {
+                        "@type": "lvasgn",
+                        "pos_col_end": 9,
+                        "pos_col_start": 5,
+                        "pos_line_end": 8,
+                        "pos_line_start": 8,
+                        "target": "x",
+                        "value": {
+                            "@token": "i",
                             "@type": "lvar",
-                            "pos_col_end": 10,
-                            "pos_col_start": 10,
-                            "pos_line_end": 7,
-                            "pos_line_start": 7,
-                            "token": "b"
-                        },
-                        "iterators": {
-                            "@type": "lvasgn",
-                            "pos_col_end": 5,
-                            "pos_col_start": 5,
-                            "pos_line_end": 7,
-                            "pos_line_start": 7,
-                            "target": "i",
-                            "value": null
-                        },
-                        "pos_col_end": 3,
-                        "pos_col_start": 1,
+                            "pos_col_end": 9,
+                            "pos_col_start": 9,
+                            "pos_line_end": 8,
+                            "pos_line_start": 8
+                        }
+                    },
+                    "iterated": {
+                        "@token": "b",
+                        "@type": "lvar",
+                        "pos_col_end": 10,
+                        "pos_col_start": 10,
                         "pos_line_end": 7,
                         "pos_line_start": 7
-                    }
-                ],
-                "pos_col_end": 3,
-                "pos_col_start": 1,
-                "pos_line_end": 9,
-                "pos_line_start": 1
-            }
+                    },
+                    "iterators": {
+                        "@type": "lvasgn",
+                        "pos_col_end": 5,
+                        "pos_col_start": 5,
+                        "pos_line_end": 7,
+                        "pos_line_start": 7,
+                        "target": "i",
+                        "value": null
+                    },
+                    "pos_col_end": 3,
+                    "pos_col_start": 1,
+                    "pos_line_end": 7,
+                    "pos_line_start": 7
+                }
+            ],
+            "pos_col_end": 3,
+            "pos_col_start": 1,
+            "pos_line_end": 9,
+            "pos_line_start": 1
         }
     }
 }

@@ -2,47 +2,58 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
 .  .  0: module {
 .  .  .  Roles: Identifier,Module,Statement
+.  .  .  TOKEN "Testmodule1"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 5
+.  .  .  .  Line: 1
+.  .  .  .  Col: 6
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: RUBYAST
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: module {
-.  .  .  .  .  Roles: Identifier,Module,Statement
-.  .  .  .  .  TOKEN "Testmodule1"
+.  .  .  .  0: send {
+.  .  .  .  .  Roles: Call,Expression,Function
+.  .  .  .  .  TOKEN "attr"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 23
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 29
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 11
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: file
-.  .  .  .  .  .  pos_col_end: 6
-.  .  .  .  .  .  pos_col_start: 1
-.  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  internalRole: begin
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: begin
-.  .  .  .  .  .  .  .  pos_col_end: 11
-.  .  .  .  .  .  .  .  pos_col_start: 5
-.  .  .  .  .  .  .  .  pos_line_end: 2
-.  .  .  .  .  .  .  .  pos_line_start: 2
-.  .  .  .  .  .  .  .  selector: attr
+.  .  .  .  .  .  0: sym {
+.  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Identifier
+.  .  .  .  .  .  .  TOKEN "a"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 28
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 10
 .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: sym {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  .  .  .  .  TOKEN "a"
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: values
-.  .  .  .  .  .  .  .  .  .  pos_col_end: 11
-.  .  .  .  .  .  .  .  .  .  pos_col_start: 10
-.  .  .  .  .  .  .  .  .  .  pos_line_end: 2
-.  .  .  .  .  .  .  .  .  .  pos_line_start: 2
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 29
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 11
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: values
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }

@@ -2,52 +2,63 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
-.  .  0: module {
-.  .  .  Roles: Identifier,Module,Statement
+.  .  0: class {
+.  .  .  Roles: Declaration,Identifier,Statement,Type
+.  .  .  TOKEN "Testcls1"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 4
+.  .  .  .  Line: 1
+.  .  .  .  Col: 5
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: RUBYAST
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: class {
-.  .  .  .  .  Roles: Declaration,Identifier,Statement,Type
-.  .  .  .  .  TOKEN "Testcls1"
+.  .  .  .  0: def {
+.  .  .  .  .  Roles: Declaration,Function,Identifier,Statement
+.  .  .  .  .  TOKEN "testfnc1"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 19
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 21
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 7
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: file
-.  .  .  .  .  .  pos_col_end: 5
-.  .  .  .  .  .  pos_col_start: 1
-.  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: def {
-.  .  .  .  .  .  .  Roles: Declaration,Function,Identifier,Statement
-.  .  .  .  .  .  .  TOKEN "testfnc1"
+.  .  .  .  .  .  0: NilNode {
+.  .  .  .  .  .  .  Roles: Null
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  .  pos_col_end: 7
-.  .  .  .  .  .  .  .  pos_col_start: 5
-.  .  .  .  .  .  .  .  pos_line_end: 2
-.  .  .  .  .  .  .  .  pos_line_start: 2
 .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: args {
-.  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Incomplete
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: args
-.  .  .  .  .  .  .  .  .  .  pos_col_end: 18
-.  .  .  .  .  .  .  .  .  .  pos_col_start: 17
-.  .  .  .  .  .  .  .  .  .  pos_line_end: 2
-.  .  .  .  .  .  .  .  .  .  pos_line_start: 2
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: NilNode {
-.  .  .  .  .  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: args {
+.  .  .  .  .  .  .  Roles: Argument,Expression,Incomplete
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 31
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 17
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 32
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 18
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: args
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }

@@ -2,72 +2,89 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
-.  .  0: module {
-.  .  .  Roles: Identifier,Module,Statement
+.  .  0: while {
+.  .  .  Roles: Statement,While
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 4
+.  .  .  .  Line: 1
+.  .  .  .  Col: 5
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: RUBYAST
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: while {
-.  .  .  .  .  Roles: Statement,While
+.  .  .  .  0: true {
+.  .  .  .  .  Roles: Boolean,Condition,Expression,Literal
+.  .  .  .  .  TOKEN "true"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 6
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 7
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 9
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 10
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: file
-.  .  .  .  .  .  pos_col_end: 5
-.  .  .  .  .  .  pos_col_start: 1
-.  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  pos_line_start: 1
+.  .  .  .  .  .  internalRole: condition
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1: if {
+.  .  .  .  .  Roles: Body,If,Statement
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 15
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 16
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 6
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: true {
-.  .  .  .  .  .  .  Roles: Boolean,Expression,Literal
-.  .  .  .  .  .  .  TOKEN "true"
+.  .  .  .  .  .  0: false {
+.  .  .  .  .  .  .  Roles: Boolean,Condition,Expression,Literal
+.  .  .  .  .  .  .  TOKEN "false"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 18
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 8
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 22
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 12
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: condition
-.  .  .  .  .  .  .  .  pos_col_end: 10
-.  .  .  .  .  .  .  .  pos_col_start: 7
-.  .  .  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  .  .  pos_line_start: 1
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: if {
-.  .  .  .  .  .  .  Roles: If,Statement
+.  .  .  .  .  .  1: next {
+.  .  .  .  .  .  .  Roles: Body,Expression,Then
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 32
+.  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 35
+.  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  Col: 12
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  .  pos_col_end: 6
-.  .  .  .  .  .  .  .  pos_col_start: 5
-.  .  .  .  .  .  .  .  pos_line_end: 2
-.  .  .  .  .  .  .  .  pos_line_start: 2
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: false {
-.  .  .  .  .  .  .  .  .  Roles: Boolean,Expression,Literal
-.  .  .  .  .  .  .  .  .  TOKEN "false"
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: condition
-.  .  .  .  .  .  .  .  .  .  pos_col_end: 12
-.  .  .  .  .  .  .  .  .  .  pos_col_start: 8
-.  .  .  .  .  .  .  .  .  .  pos_line_end: 2
-.  .  .  .  .  .  .  .  .  .  pos_line_start: 2
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: next {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Then
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 32
-.  .  .  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 35
-.  .  .  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  .  .  Col: 12
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }

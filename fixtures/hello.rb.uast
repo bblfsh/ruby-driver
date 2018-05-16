@@ -2,36 +2,41 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
-.  .  0: module {
-.  .  .  Roles: Identifier,Module,Statement
+.  .  0: send {
+.  .  .  Roles: Call,Expression,Function
+.  .  .  TOKEN "puts"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 17
+.  .  .  .  Line: 1
+.  .  .  .  Col: 18
+.  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: RUBYAST
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: file
-.  .  .  .  .  .  pos_col_end: 18
-.  .  .  .  .  .  pos_col_start: 1
-.  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  pos_line_start: 1
-.  .  .  .  .  .  selector: puts
+.  .  .  .  0: str {
+.  .  .  .  .  Roles: Argument,Call,Expression,Function,Literal,Primitive,String
+.  .  .  .  .  TOKEN "hello world"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 5
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 6
 .  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: str {
-.  .  .  .  .  .  .  Roles: Expression,Literal,Primitive,String
-.  .  .  .  .  .  .  TOKEN "hello world"
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: values
-.  .  .  .  .  .  .  .  pos_col_end: 18
-.  .  .  .  .  .  .  .  pos_col_start: 6
-.  .  .  .  .  .  .  .  pos_line_end: 1
-.  .  .  .  .  .  .  .  pos_line_start: 1
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 17
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 18
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: values
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }
