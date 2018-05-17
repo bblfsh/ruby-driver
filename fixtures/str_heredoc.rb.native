@@ -17,7 +17,7 @@
                     "children": [
                         {
                             "@type": "str",
-                            "pos_col_end": 0,
+                            "pos_col_end": 1,
                             "pos_col_start": 1,
                             "pos_line_end": 3,
                             "pos_line_start": 2,
@@ -25,7 +25,7 @@
                         },
                         {
                             "@type": "str",
-                            "pos_col_end": 0,
+                            "pos_col_end": 1,
                             "pos_col_start": 1,
                             "pos_line_end": 4,
                             "pos_line_start": 3,

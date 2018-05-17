@@ -229,7 +229,8 @@ module NodeConverter
         hash["pos_line_start"] = subelem.begin.line
         hash["pos_line_end"] = subelem.end.line
         hash["pos_col_start"] = subelem.begin.column + 1
-        hash["pos_col_end"] = subelem.end.column
+        # str inside str have cols set at 0 from the native AST
+        hash["pos_col_end"] = subelem.end.column > 0 ? subelem.end.column : 1
       end
     end
 
