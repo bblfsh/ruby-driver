@@ -5,7 +5,7 @@ UAST:
  {
 .  Children: {
 .  .  0: module {
-.  .  .  Roles: Identifier,Module,Statement
+.  .  .  Roles: Module,Statement
 .  .  .  Properties: {
 .  .  .  .  internalRole: RUBYAST
 .  .  .  }
@@ -441,7 +441,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 9
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  __notcall: 1
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  __notcall: true
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: base
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  selector: h
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }

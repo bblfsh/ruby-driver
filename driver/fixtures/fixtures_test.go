@@ -16,7 +16,7 @@ var Suite = &fixtures.Suite{
 	Ext:  ".rb",
 	Path: filepath.Join(projectRoot, fixtures.Dir),
 	NewDriver: func() driver.BaseDriver {
-		return driver.NewExecDriverAt(filepath.Join(projectRoot, "build/bin/native"))
+		return driver.NewExecDriverAt(filepath.Join(projectRoot, "native/exe/native"))
 	},
 	Transforms: driver.Transforms{
 		Native: normalizer.Native,

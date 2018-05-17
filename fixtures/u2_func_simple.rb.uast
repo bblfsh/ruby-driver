@@ -5,7 +5,7 @@ UAST:
  {
 .  Children: {
 .  .  0: module {
-.  .  .  Roles: Identifier,Module,Statement
+.  .  .  Roles: Module,Statement
 .  .  .  Properties: {
 .  .  .  .  internalRole: RUBYAST
 .  .  .  }
