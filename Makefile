@@ -7,7 +7,7 @@ RUBY_DEP_PACK_CMD=bundle
 RUBY_GEM_CMD=gem
 
 test-native-internal:
-	if [ -f native/.bundle/config ] ; then rm native/.bundle/config ; fi
+	rm native/.bundle/config || true
 	cd native; \
 	export BUNDLE_IGNORE_CONFIG=1 && $(RUBY_DEP_PACK_CMD) install --path vendor/bundle --verbose; \
 	export GEM_PATH=./vendor/bundle/ruby/2.4.0 && $(RUBY_MAKE_CMD) test --trace;

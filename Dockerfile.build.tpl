@@ -6,6 +6,6 @@ RUN mkdir -p /opt/driver/src && \
 RUN apk add  --no-cache make git ca-certificates libc-dev gcc \
         ruby=${RUNTIME_NATIVE_VERSION} ruby-dev=${RUNTIME_NATIVE_VERSION}
 
-RUN gem install -V --no-document rake bundler io-console parser
+RUN gem install -V --no-document rake bundler io-console parser json
 
 WORKDIR /opt/driver/src
