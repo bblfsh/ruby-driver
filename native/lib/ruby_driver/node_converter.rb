@@ -77,9 +77,6 @@ module NodeConverter
       when "Complex", "Rational", "Symbol"
         return {@@typekey => node_type(node), "token" => node.to_s}
 
-      #when "mlhs"
-        #return node.children.map{ |x| convert(x) }.compact
-
       when "masgn"
         return sexp_to_hash(node, {"targets" => 0, "values" => 1})
 

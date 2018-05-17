@@ -59,15 +59,12 @@ func (op opSendAssign) Check(st *State, n uast.Node) (bool, error) {
 		return false, nil
 	}
 
-	if gostr, ok := s.Native().(string); ok {
-		if !strings.HasSuffix(gostr, "=") {
-			return false, nil
-		}
-
-		return op.op.Check(st, uast.String(gostr[:len(gostr)-1]))
+	gostr := string(s)
+	if !strings.HasSuffix(gostr, "=") {
+		return false, nil
 	}
 
-	return false, nil
+	return op.op.Check(st, uast.String(gostr[:len(gostr)-1]))
 }
 
 func (op opSendAssign) Construct(st *State, n uast.Node) (uast.Node, error) {
@@ -81,12 +78,8 @@ func (op opSendAssign) Construct(st *State, n uast.Node) (uast.Node, error) {
 		return nil, ErrExpectedValue.New(n)
 	}
 
-	if gostr, ok := v.Native().(string); ok {
-		newstr := gostr + "="
-		return uast.String(newstr), nil
-	}
-
-	return v, nil
+	gostr := string(v) + "="
+	return uast.String(gostr), nil
 }
 
 type opSendOperator struct {
@@ -165,7 +158,7 @@ var Annotations = []Mapping{
 	mapInternalProperty("_2", role.Tuple, role.Value),
 
 	// Types
-	AnnotateType("module", nil, role.Statement, role.Module, role.Identifier),
+	AnnotateType("module", nil, role.Statement, role.Module),
 	annotateTypeTokenField("module", "name", role.Statement, role.Module, role.Identifier),
 	AnnotateType("block", nil, role.Block),
 	annotateTypeTokenField("int", "token", role.Expression, role.Literal, role.Number, role.Primitive),
@@ -371,7 +364,7 @@ var Annotations = []Mapping{
 			"base": Var("childbase"),
 			"selector": Var("childselector"),
 			uast.KeyRoles: Roles(role.Identifier),
-			"__notcall": Int(1),
+			"__notcall": Bool(true),
 		},
 		uast.KeyToken: Var("selector"),
 	}, role.Expression, role.Qualified, role.Identical),
