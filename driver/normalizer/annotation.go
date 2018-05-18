@@ -323,11 +323,11 @@ var Annotations = []Mapping{
 
 	// Operator expression "send"
 	MapASTCustom("send", Obj{
-		"base": Check(Not(Is(nil)), ObjectRoles("base")),
+		"base": ObjectRoles("bs"),
 		"values": Check(Not(Is(nil)), EachObjectRoles("values")),
 		"selector": opSendOperator{op: Var("selector")},
 	}, Obj{
-		"base": ObjectRoles("base", role.Left),
+		"base": ObjectRoles("bs", role.Left),
 		"values": EachObjectRoles("values", role.Right),
 		uast.KeyToken: Var("selector"),
 	},
@@ -354,6 +354,7 @@ var Annotations = []Mapping{
 			uast.KeyEnd: Var("childend"),
 			"base": Check(Is(nil), Var("childbase")),
 			"selector": Var("childselector"),
+			uast.KeyRoles: Var("roles"),
 		},
 		"selector": Var("selector"),
 	}, Obj{
@@ -363,7 +364,7 @@ var Annotations = []Mapping{
 			uast.KeyEnd: Var("childend"),
 			"base": Var("childbase"),
 			"selector": Var("childselector"),
-			uast.KeyRoles: Roles(role.Identifier),
+			uast.KeyRoles: Append(Var("roles"), Roles(role.Identifier)),
 			"__notcall": Bool(true),
 		},
 		uast.KeyToken: Var("selector"),
@@ -399,5 +400,4 @@ var Annotations = []Mapping{
 		"values": EachObjectRoles("values", role.Function, role.Call, role.Argument),
 		uast.KeyToken: Var("selector"),
 	}, role.Expression, role.Function, role.Call),
-
 }

@@ -254,7 +254,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  .  .  Roles: Binary,Expression,Identical,Left,Qualified
+.  .  .  .  .  .  .  .  .  Roles: Binary,Expression,Identifier,Left,Qualified
 .  .  .  .  .  .  .  .  .  TOKEN "pol"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 38
@@ -271,7 +271,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Identifier
+.  .  .  .  .  .  .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 38
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 6
@@ -283,7 +283,6 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  Col: 3
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  __notcall: true
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: base
 .  .  .  .  .  .  .  .  .  .  .  .  selector: pok
 .  .  .  .  .  .  .  .  .  .  .  }
