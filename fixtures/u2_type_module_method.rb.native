@@ -3,38 +3,36 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
+        "@type": "module",
+        "file": {
+            "@token": "Testmodule1",
             "@type": "module",
-            "file": {
-                "@type": "module",
-                "begin": [
-                    {
-                        "@type": "def",
-                        "args": {
-                            "@type": "args",
-                            "pos_col_end": 18,
-                            "pos_col_start": 17,
-                            "pos_line_end": 2,
-                            "pos_line_start": 2
-                        },
-                        "body": [
-                            {
-                                "@type": "NilNode"
-                            }
-                        ],
-                        "name": "testfnc1",
-                        "pos_col_end": 7,
-                        "pos_col_start": 5,
+            "begin": [
+                {
+                    "@token": "testfnc1",
+                    "@type": "def",
+                    "args": {
+                        "@type": "args",
+                        "pos_col_end": 18,
+                        "pos_col_start": 17,
                         "pos_line_end": 2,
                         "pos_line_start": 2
-                    }
-                ],
-                "name": "Testmodule1",
-                "pos_col_end": 6,
-                "pos_col_start": 1,
-                "pos_line_end": 1,
-                "pos_line_start": 1
-            }
+                    },
+                    "body": [
+                        {
+                            "@type": "NilNode"
+                        }
+                    ],
+                    "pos_col_end": 7,
+                    "pos_col_start": 5,
+                    "pos_line_end": 2,
+                    "pos_line_start": 2
+                }
+            ],
+            "pos_col_end": 6,
+            "pos_col_start": 1,
+            "pos_line_end": 1,
+            "pos_line_start": 1
         }
     }
 }

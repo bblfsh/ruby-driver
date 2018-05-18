@@ -3,45 +3,43 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "while",
+        "@type": "module",
+        "file": {
+            "@type": "while",
+            "body": {
+                "@type": "if",
                 "body": {
-                    "@type": "if",
-                    "body": {
-                        "@type": "next",
-                        "pos_col_end": 12,
-                        "pos_col_start": 9,
-                        "pos_line_end": 3,
-                        "pos_line_start": 3,
-                        "target": null
-                    },
-                    "condition": {
-                        "@type": "false",
-                        "pos_col_end": 12,
-                        "pos_col_start": 8,
-                        "pos_line_end": 2,
-                        "pos_line_start": 2
-                    },
-                    "else": null,
-                    "pos_col_end": 6,
-                    "pos_col_start": 5,
+                    "@type": "next",
+                    "pos_col_end": 12,
+                    "pos_col_start": 9,
+                    "pos_line_end": 3,
+                    "pos_line_start": 3,
+                    "target": null
+                },
+                "condition": {
+                    "@type": "false",
+                    "pos_col_end": 12,
+                    "pos_col_start": 8,
                     "pos_line_end": 2,
                     "pos_line_start": 2
                 },
-                "condition": {
-                    "@type": "true",
-                    "pos_col_end": 10,
-                    "pos_col_start": 7,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1
-                },
-                "pos_col_end": 5,
-                "pos_col_start": 1,
+                "else": null,
+                "pos_col_end": 6,
+                "pos_col_start": 5,
+                "pos_line_end": 2,
+                "pos_line_start": 2
+            },
+            "condition": {
+                "@type": "true",
+                "pos_col_end": 10,
+                "pos_col_start": 7,
                 "pos_line_end": 1,
                 "pos_line_start": 1
-            }
+            },
+            "pos_col_end": 5,
+            "pos_col_start": 1,
+            "pos_line_end": 1,
+            "pos_line_start": 1
         }
     }
 }

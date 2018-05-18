@@ -21,14 +21,10 @@ module NodeConverter
       @root = node
       @comments = comments
       @dict = {}
-
     end
 
     def tohash()
-      @dict["ast"] = {
-        "RUBYAST": {"file" => convert(@root),
-                    @@typekey => "module"}
-      }
+      @dict["ast"] = {"file" => convert(@root), @@typekey => "module"}
       add_comments()
       return @dict["ast"]
     end
@@ -41,10 +37,10 @@ module NodeConverter
       case type
 
       when "int", "float", "str"
-        return sexp_to_hash(node, {"l_token" => 0})
+        return sexp_to_hash(node, {"l_@token" => 0})
 
       when "lvar", "ivar", "cvar", "gvar", "arg", "kwarg", "restarg", "blockarg"
-        return sexp_to_hash(node, {"token.token" => 0}, 1, "children")
+        return sexp_to_hash(node, {"@token.@token" => 0}, 1, "children")
 
       when "pair", "irange", "erange", "alias", "iflipflop", "eflipflop"
         return sexp_to_hash(node, {"_1" => 0, "_2" => 1})
@@ -59,10 +55,10 @@ module NodeConverter
         return sexp_to_hash(node, {}, 0, "contents")
 
       when "optarg", "kwoptarg"
-        return sexp_to_hash(node, {"token" => 0, "default" => 1})
+        return sexp_to_hash(node, {"@token" => 0, "default" => 1})
 
       when "splat", "kwsplat", "defined?", "kwrestarg"
-        return sexp_to_hash(node, {"name" => 0})
+        return sexp_to_hash(node, {"@token" => 0})
 
       when "casgn"
         return sexp_to_hash(node, {"base" => 0, "selector" => 1, "value" => 2})
@@ -71,11 +67,11 @@ module NodeConverter
         return sexp_to_hash(node, {"base" => 0, "selector" => 1}, 2, "values")
 
       when "complex", "rational", "sym"
-        return sexp_to_hash(node, {"token.token" => 0})
+        return sexp_to_hash(node, {"@token.@token" => 0})
 
       # the inner nodes of the above
       when "Complex", "Rational", "Symbol"
-        return {@@typekey => node_type(node), "token" => node.to_s}
+        return {@@typekey => node_type(node), "@token" => node.to_s}
 
       when "masgn"
         return sexp_to_hash(node, {"targets" => 0, "values" => 1})
@@ -85,19 +81,19 @@ module NodeConverter
 
       when "module"
         d = sexp_to_hash(node, {}, 1, "begin")
-        d["name"] = node.children[0].children[1].to_s
+        d["@token"] = node.children[0].children[1].to_s
         return d
 
       when "class"
         d = sexp_to_hash(node, {"parent" => 1}, 2, "body")
-        d["name"] = node.children[0].children[1].to_s
+        d["@token"] = node.children[0].children[1].to_s
         return d
 
       when "sclass"
         return sexp_to_hash(node, {"object" => 0}, 1, "body")
 
       when "def"
-        return sexp_to_hash(node, {"s_name" => 0, "args" => 1}, 2, "body")
+        return sexp_to_hash(node, {"s_@token" => 0, "args" => 1}, 2, "body")
 
       when "undef", "yield", "break", "next", "return"
         return sexp_to_hash(node, {"target" => 0})
@@ -120,7 +116,7 @@ module NodeConverter
         return d
 
       when "const"
-        return sexp_to_hash(node, {"base" => 0, "token" => 1})
+        return sexp_to_hash(node, {"base" => 0, "@token" => 1})
 
       when "while", "until", "while_post", "until_post"
         return sexp_to_hash(node, {"condition" => 0, "body" => 1})
@@ -149,7 +145,7 @@ module NodeConverter
         return sexp_to_hash(node, {"condition" => 0, "body" => 1, "else" => 2})
 
       when "defs" # "singleton method"
-        return sexp_to_hash(node, {"base" => 0, "name" => 1, "args.children" => 2, "class" => 3})
+        return sexp_to_hash(node, {"base" => 0, "@token" => 1, "args.children" => 2, "class" => 3})
 
       when "regexp"
         return sexp_to_hash(node, {"text" => 0, "options" => 1})
@@ -159,7 +155,7 @@ module NodeConverter
 
       when "NilClass"
         if @empty_with_comments
-          return {@@typekey=> "module", "name" => "empty_module"}
+          return {@@typekey=> "module", "@token" => "empty_module"}
         else
           return {@@typekey=> "NilNode"}
         end
@@ -274,10 +270,9 @@ module NodeConverter
       comments = []
 
       @comments.each do |comment|
-        # XXX remove leading
         commentdict = {
           @@typekey => "comment",
-          "text" => comment.text,
+          "@token" => comment.text[1..-1],
           "inline" => comment.inline?,
           "documentation" => comment.document?,
           "pos_line_start" => comment.loc.first_line,
@@ -289,7 +284,7 @@ module NodeConverter
       end
 
       if comments.length > 0
-        @dict["ast"][:RUBYAST]["file"][:comments] = comments
+        @dict["ast"]["file"][:comments] = comments
       end
     end
 

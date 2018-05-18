@@ -3,193 +3,191 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "begin",
-                "body": [
-                    {
-                        "@type": "lvasgn",
+        "@type": "module",
+        "file": {
+            "@type": "begin",
+            "body": [
+                {
+                    "@type": "lvasgn",
+                    "pos_col_end": 5,
+                    "pos_col_start": 1,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1,
+                    "target": "a",
+                    "value": {
+                        "@token": 0,
+                        "@type": "int",
                         "pos_col_end": 5,
-                        "pos_col_start": 1,
+                        "pos_col_start": 5,
                         "pos_line_end": 1,
-                        "pos_line_start": 1,
-                        "target": "a",
-                        "value": {
-                            "@type": "int",
-                            "pos_col_end": 5,
-                            "pos_col_start": 5,
-                            "pos_line_end": 1,
-                            "pos_line_start": 1,
-                            "token": 0
-                        }
-                    },
-                    {
-                        "@type": "or_asgn",
-                        "pos_col_end": 7,
+                        "pos_line_start": 1
+                    }
+                },
+                {
+                    "@type": "or_asgn",
+                    "pos_col_end": 7,
+                    "pos_col_start": 1,
+                    "pos_line_end": 2,
+                    "pos_line_start": 2,
+                    "target": {
+                        "@type": "lvasgn",
+                        "pos_col_end": 1,
                         "pos_col_start": 1,
                         "pos_line_end": 2,
                         "pos_line_start": 2,
-                        "target": {
-                            "@type": "lvasgn",
-                            "pos_col_end": 1,
-                            "pos_col_start": 1,
-                            "pos_line_end": 2,
-                            "pos_line_start": 2,
-                            "target": "a",
-                            "value": null
-                        },
-                        "value": {
-                            "@type": "int",
-                            "pos_col_end": 7,
-                            "pos_col_start": 7,
-                            "pos_line_end": 2,
-                            "pos_line_start": 2,
-                            "token": 2
-                        }
+                        "target": "a",
+                        "value": null
                     },
-                    {
-                        "@type": "and_asgn",
+                    "value": {
+                        "@token": 2,
+                        "@type": "int",
                         "pos_col_end": 7,
+                        "pos_col_start": 7,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2
+                    }
+                },
+                {
+                    "@type": "and_asgn",
+                    "pos_col_end": 7,
+                    "pos_col_start": 1,
+                    "pos_line_end": 3,
+                    "pos_line_start": 3,
+                    "target": {
+                        "@type": "lvasgn",
+                        "pos_col_end": 1,
                         "pos_col_start": 1,
                         "pos_line_end": 3,
                         "pos_line_start": 3,
-                        "target": {
-                            "@type": "lvasgn",
-                            "pos_col_end": 1,
-                            "pos_col_start": 1,
-                            "pos_line_end": 3,
-                            "pos_line_start": 3,
-                            "target": "a",
-                            "value": null
-                        },
-                        "value": {
-                            "@type": "int",
-                            "pos_col_end": 7,
-                            "pos_col_start": 7,
-                            "pos_line_end": 3,
-                            "pos_line_start": 3,
-                            "token": 3
-                        }
+                        "target": "a",
+                        "value": null
                     },
-                    {
-                        "@type": "or_asgn",
-                        "pos_col_end": 14,
+                    "value": {
+                        "@token": 3,
+                        "@type": "int",
+                        "pos_col_end": 7,
+                        "pos_col_start": 7,
+                        "pos_line_end": 3,
+                        "pos_line_start": 3
+                    }
+                },
+                {
+                    "@type": "or_asgn",
+                    "pos_col_end": 14,
+                    "pos_col_start": 1,
+                    "pos_line_end": 5,
+                    "pos_line_start": 5,
+                    "target": {
+                        "@type": "send",
+                        "base": {
+                            "@token": "@foo",
+                            "@type": "ivar",
+                            "pos_col_end": 4,
+                            "pos_col_start": 1,
+                            "pos_line_end": 5,
+                            "pos_line_start": 5
+                        },
+                        "pos_col_end": 8,
                         "pos_col_start": 1,
                         "pos_line_end": 5,
                         "pos_line_start": 5,
-                        "target": {
-                            "@type": "send",
-                            "base": {
-                                "@type": "ivar",
-                                "pos_col_end": 4,
-                                "pos_col_start": 1,
-                                "pos_line_end": 5,
-                                "pos_line_start": 5,
-                                "token": "@foo"
-                            },
-                            "pos_col_end": 8,
-                            "pos_col_start": 1,
-                            "pos_line_end": 5,
-                            "pos_line_start": 5,
-                            "selector": "bar"
-                        },
-                        "value": {
-                            "@type": "int",
-                            "pos_col_end": 14,
-                            "pos_col_start": 14,
-                            "pos_line_end": 5,
-                            "pos_line_start": 5,
-                            "token": 4
-                        }
+                        "selector": "bar"
                     },
-                    {
-                        "@type": "and_asgn",
-                        "pos_col_end": 13,
+                    "value": {
+                        "@token": 4,
+                        "@type": "int",
+                        "pos_col_end": 14,
+                        "pos_col_start": 14,
+                        "pos_line_end": 5,
+                        "pos_line_start": 5
+                    }
+                },
+                {
+                    "@type": "and_asgn",
+                    "pos_col_end": 13,
+                    "pos_col_start": 1,
+                    "pos_line_end": 6,
+                    "pos_line_start": 6,
+                    "target": {
+                        "@type": "send",
+                        "base": {
+                            "@type": "send",
+                            "base": null,
+                            "pos_col_end": 3,
+                            "pos_col_start": 1,
+                            "pos_line_end": 6,
+                            "pos_line_start": 6,
+                            "selector": "pok"
+                        },
+                        "pos_col_end": 7,
                         "pos_col_start": 1,
                         "pos_line_end": 6,
                         "pos_line_start": 6,
-                        "target": {
-                            "@type": "send",
-                            "base": {
-                                "@type": "send",
-                                "base": null,
-                                "pos_col_end": 3,
-                                "pos_col_start": 1,
-                                "pos_line_end": 6,
-                                "pos_line_start": 6,
-                                "selector": "pok"
-                            },
-                            "pos_col_end": 7,
-                            "pos_col_start": 1,
-                            "pos_line_end": 6,
-                            "pos_line_start": 6,
-                            "selector": "pol"
-                        },
-                        "value": {
-                            "@type": "int",
-                            "pos_col_end": 13,
-                            "pos_col_start": 13,
-                            "pos_line_end": 6,
-                            "pos_line_start": 6,
-                            "token": 5
-                        }
+                        "selector": "pol"
                     },
-                    {
-                        "@type": "or_asgn",
-                        "pos_col_end": 16,
+                    "value": {
+                        "@token": 5,
+                        "@type": "int",
+                        "pos_col_end": 13,
+                        "pos_col_start": 13,
+                        "pos_line_end": 6,
+                        "pos_line_start": 6
+                    }
+                },
+                {
+                    "@type": "or_asgn",
+                    "pos_col_end": 16,
+                    "pos_col_start": 1,
+                    "pos_line_end": 8,
+                    "pos_line_start": 8,
+                    "target": {
+                        "@type": "send",
+                        "base": {
+                            "@token": "@baz",
+                            "@type": "ivar",
+                            "pos_col_end": 4,
+                            "pos_col_start": 1,
+                            "pos_line_end": 8,
+                            "pos_line_start": 8
+                        },
+                        "pos_col_end": 10,
                         "pos_col_start": 1,
                         "pos_line_end": 8,
                         "pos_line_start": 8,
-                        "target": {
-                            "@type": "send",
-                            "base": {
-                                "@type": "ivar",
-                                "pos_col_end": 4,
-                                "pos_col_start": 1,
+                        "selector": "[]",
+                        "values": [
+                            {
+                                "@token": 1,
+                                "@type": "int",
+                                "pos_col_end": 6,
+                                "pos_col_start": 6,
                                 "pos_line_end": 8,
-                                "pos_line_start": 8,
-                                "token": "@baz"
+                                "pos_line_start": 8
                             },
-                            "pos_col_end": 10,
-                            "pos_col_start": 1,
-                            "pos_line_end": 8,
-                            "pos_line_start": 8,
-                            "selector": "[]",
-                            "values": [
-                                {
-                                    "@type": "int",
-                                    "pos_col_end": 6,
-                                    "pos_col_start": 6,
-                                    "pos_line_end": 8,
-                                    "pos_line_start": 8,
-                                    "token": 1
-                                },
-                                {
-                                    "@type": "int",
-                                    "pos_col_end": 9,
-                                    "pos_col_start": 9,
-                                    "pos_line_end": 8,
-                                    "pos_line_start": 8,
-                                    "token": 2
-                                }
-                            ]
-                        },
-                        "value": {
-                            "@type": "int",
-                            "pos_col_end": 16,
-                            "pos_col_start": 16,
-                            "pos_line_end": 8,
-                            "pos_line_start": 8,
-                            "token": 6
-                        }
+                            {
+                                "@token": 2,
+                                "@type": "int",
+                                "pos_col_end": 9,
+                                "pos_col_start": 9,
+                                "pos_line_end": 8,
+                                "pos_line_start": 8
+                            }
+                        ]
+                    },
+                    "value": {
+                        "@token": 6,
+                        "@type": "int",
+                        "pos_col_end": 16,
+                        "pos_col_start": 16,
+                        "pos_line_end": 8,
+                        "pos_line_start": 8
                     }
-                ],
-                "pos_col_end": 16,
-                "pos_col_start": 1,
-                "pos_line_end": 8,
-                "pos_line_start": 1
-            }
+                }
+            ],
+            "pos_col_end": 16,
+            "pos_col_start": 1,
+            "pos_line_end": 8,
+            "pos_line_start": 1
         }
     }
 }

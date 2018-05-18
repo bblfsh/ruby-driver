@@ -3,115 +3,113 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "begin",
-                "body": [
-                    {
-                        "@type": "if",
-                        "body": {
-                            "@type": "lvasgn",
+        "@type": "module",
+        "file": {
+            "@type": "begin",
+            "body": [
+                {
+                    "@type": "if",
+                    "body": {
+                        "@type": "lvasgn",
+                        "pos_col_end": 9,
+                        "pos_col_start": 5,
+                        "pos_line_end": 2,
+                        "pos_line_start": 2,
+                        "target": "a",
+                        "value": {
+                            "@token": 1,
+                            "@type": "int",
                             "pos_col_end": 9,
-                            "pos_col_start": 5,
+                            "pos_col_start": 9,
                             "pos_line_end": 2,
-                            "pos_line_start": 2,
-                            "target": "a",
-                            "value": {
-                                "@type": "int",
-                                "pos_col_end": 9,
-                                "pos_col_start": 9,
-                                "pos_line_end": 2,
-                                "pos_line_start": 2,
-                                "token": 1
-                            }
-                        },
-                        "condition": {
-                            "@type": "iflipflop",
-                            "_1": {
-                                "@type": "send",
-                                "base": null,
-                                "pos_col_end": 4,
-                                "pos_col_start": 4,
-                                "pos_line_end": 1,
-                                "pos_line_start": 1,
-                                "selector": "a"
-                            },
-                            "_2": {
-                                "@type": "send",
-                                "base": null,
-                                "pos_col_end": 7,
-                                "pos_col_start": 7,
-                                "pos_line_end": 1,
-                                "pos_line_start": 1,
-                                "selector": "b"
-                            },
-                            "pos_col_end": 7,
+                            "pos_line_start": 2
+                        }
+                    },
+                    "condition": {
+                        "@type": "iflipflop",
+                        "_1": {
+                            "@type": "send",
+                            "base": null,
+                            "pos_col_end": 4,
                             "pos_col_start": 4,
                             "pos_line_end": 1,
-                            "pos_line_start": 1
+                            "pos_line_start": 1,
+                            "selector": "a"
                         },
-                        "else": null,
-                        "pos_col_end": 2,
-                        "pos_col_start": 1,
+                        "_2": {
+                            "@type": "send",
+                            "base": null,
+                            "pos_col_end": 7,
+                            "pos_col_start": 7,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1,
+                            "selector": "b"
+                        },
+                        "pos_col_end": 7,
+                        "pos_col_start": 4,
                         "pos_line_end": 1,
                         "pos_line_start": 1
                     },
-                    {
-                        "@type": "if",
-                        "body": {
-                            "@type": "lvasgn",
+                    "else": null,
+                    "pos_col_end": 2,
+                    "pos_col_start": 1,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1
+                },
+                {
+                    "@type": "if",
+                    "body": {
+                        "@type": "lvasgn",
+                        "pos_col_end": 9,
+                        "pos_col_start": 5,
+                        "pos_line_end": 6,
+                        "pos_line_start": 6,
+                        "target": "b",
+                        "value": {
+                            "@token": 2,
+                            "@type": "int",
                             "pos_col_end": 9,
-                            "pos_col_start": 5,
+                            "pos_col_start": 9,
                             "pos_line_end": 6,
-                            "pos_line_start": 6,
-                            "target": "b",
-                            "value": {
-                                "@type": "int",
-                                "pos_col_end": 9,
-                                "pos_col_start": 9,
-                                "pos_line_end": 6,
-                                "pos_line_start": 6,
-                                "token": 2
-                            }
-                        },
-                        "condition": {
-                            "@type": "eflipflop",
-                            "_1": {
-                                "@type": "send",
-                                "base": null,
-                                "pos_col_end": 4,
-                                "pos_col_start": 4,
-                                "pos_line_end": 5,
-                                "pos_line_start": 5,
-                                "selector": "d"
-                            },
-                            "_2": {
-                                "@type": "send",
-                                "base": null,
-                                "pos_col_end": 8,
-                                "pos_col_start": 8,
-                                "pos_line_end": 5,
-                                "pos_line_start": 5,
-                                "selector": "j"
-                            },
-                            "pos_col_end": 8,
+                            "pos_line_start": 6
+                        }
+                    },
+                    "condition": {
+                        "@type": "eflipflop",
+                        "_1": {
+                            "@type": "send",
+                            "base": null,
+                            "pos_col_end": 4,
                             "pos_col_start": 4,
                             "pos_line_end": 5,
-                            "pos_line_start": 5
+                            "pos_line_start": 5,
+                            "selector": "d"
                         },
-                        "else": null,
-                        "pos_col_end": 2,
-                        "pos_col_start": 1,
+                        "_2": {
+                            "@type": "send",
+                            "base": null,
+                            "pos_col_end": 8,
+                            "pos_col_start": 8,
+                            "pos_line_end": 5,
+                            "pos_line_start": 5,
+                            "selector": "j"
+                        },
+                        "pos_col_end": 8,
+                        "pos_col_start": 4,
                         "pos_line_end": 5,
                         "pos_line_start": 5
-                    }
-                ],
-                "pos_col_end": 3,
-                "pos_col_start": 1,
-                "pos_line_end": 7,
-                "pos_line_start": 1
-            }
+                    },
+                    "else": null,
+                    "pos_col_end": 2,
+                    "pos_col_start": 1,
+                    "pos_line_end": 5,
+                    "pos_line_start": 5
+                }
+            ],
+            "pos_col_end": 3,
+            "pos_col_start": 1,
+            "pos_line_end": 7,
+            "pos_line_start": 1
         }
     }
 }

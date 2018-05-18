@@ -3,38 +3,36 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "def",
-                "args": {
-                    "@type": "args",
-                    "children": [
-                        {
-                            "@type": "kwrestarg",
-                            "name": "a",
-                            "pos_col_end": 16,
-                            "pos_col_start": 16,
-                            "pos_line_end": 1,
-                            "pos_line_start": 1
-                        }
-                    ],
-                    "pos_col_end": 17,
-                    "pos_col_start": 13,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1
-                },
-                "body": [
+        "@type": "module",
+        "file": {
+            "@token": "testfnc1",
+            "@type": "def",
+            "args": {
+                "@type": "args",
+                "children": [
                     {
-                        "@type": "NilNode"
+                        "@token": "a",
+                        "@type": "kwrestarg",
+                        "pos_col_end": 16,
+                        "pos_col_start": 16,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1
                     }
                 ],
-                "name": "testfnc1",
-                "pos_col_end": 3,
-                "pos_col_start": 1,
+                "pos_col_end": 17,
+                "pos_col_start": 13,
                 "pos_line_end": 1,
                 "pos_line_start": 1
-            }
+            },
+            "body": [
+                {
+                    "@type": "NilNode"
+                }
+            ],
+            "pos_col_end": 3,
+            "pos_col_start": 1,
+            "pos_line_end": 1,
+            "pos_line_start": 1
         }
     }
 }

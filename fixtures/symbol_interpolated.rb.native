@@ -3,75 +3,73 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "begin",
-                "body": [
-                    {
-                        "@type": "lvasgn",
+        "@type": "module",
+        "file": {
+            "@type": "begin",
+            "body": [
+                {
+                    "@type": "lvasgn",
+                    "pos_col_end": 7,
+                    "pos_col_start": 1,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1,
+                    "target": "bar",
+                    "value": {
+                        "@token": 1,
+                        "@type": "int",
                         "pos_col_end": 7,
-                        "pos_col_start": 1,
+                        "pos_col_start": 7,
                         "pos_line_end": 1,
-                        "pos_line_start": 1,
-                        "target": "bar",
-                        "value": {
-                            "@type": "int",
-                            "pos_col_end": 7,
-                            "pos_col_start": 7,
-                            "pos_line_end": 1,
-                            "pos_line_start": 1,
-                            "token": 1
-                        }
-                    },
-                    {
-                        "@type": "dsym",
-                        "children": [
-                            {
-                                "@type": "str",
-                                "pos_col_end": 5,
-                                "pos_col_start": 3,
-                                "pos_line_end": 2,
-                                "pos_line_start": 2,
-                                "token": "foo"
-                            },
-                            {
-                                "@type": "begin",
-                                "body": [
-                                    {
-                                        "@type": "lvar",
-                                        "pos_col_end": 10,
-                                        "pos_col_start": 8,
-                                        "pos_line_end": 2,
-                                        "pos_line_start": 2,
-                                        "token": "bar"
-                                    }
-                                ],
-                                "pos_col_end": 11,
-                                "pos_col_start": 6,
-                                "pos_line_end": 2,
-                                "pos_line_start": 2
-                            },
-                            {
-                                "@type": "str",
-                                "pos_col_end": 14,
-                                "pos_col_start": 12,
-                                "pos_line_end": 2,
-                                "pos_line_start": 2,
-                                "token": "baz"
-                            }
-                        ],
-                        "pos_col_end": 15,
-                        "pos_col_start": 1,
-                        "pos_line_end": 2,
-                        "pos_line_start": 2
+                        "pos_line_start": 1
                     }
-                ],
-                "pos_col_end": 15,
-                "pos_col_start": 1,
-                "pos_line_end": 2,
-                "pos_line_start": 1
-            }
+                },
+                {
+                    "@type": "dsym",
+                    "children": [
+                        {
+                            "@token": "foo",
+                            "@type": "str",
+                            "pos_col_end": 5,
+                            "pos_col_start": 3,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2
+                        },
+                        {
+                            "@type": "begin",
+                            "body": [
+                                {
+                                    "@token": "bar",
+                                    "@type": "lvar",
+                                    "pos_col_end": 10,
+                                    "pos_col_start": 8,
+                                    "pos_line_end": 2,
+                                    "pos_line_start": 2
+                                }
+                            ],
+                            "pos_col_end": 11,
+                            "pos_col_start": 6,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2
+                        },
+                        {
+                            "@token": "baz",
+                            "@type": "str",
+                            "pos_col_end": 14,
+                            "pos_col_start": 12,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2
+                        }
+                    ],
+                    "pos_col_end": 15,
+                    "pos_col_start": 1,
+                    "pos_line_end": 2,
+                    "pos_line_start": 2
+                }
+            ],
+            "pos_col_end": 15,
+            "pos_col_start": 1,
+            "pos_line_end": 2,
+            "pos_line_start": 1
         }
     }
 }

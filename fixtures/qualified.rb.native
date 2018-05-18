@@ -3,55 +3,13 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "begin",
-                "body": [
-                    {
-                        "@type": "send",
-                        "base": {
-                            "@type": "send",
-                            "base": {
-                                "@type": "send",
-                                "base": {
-                                    "@type": "send",
-                                    "base": null,
-                                    "pos_col_end": 1,
-                                    "pos_col_start": 1,
-                                    "pos_line_end": 1,
-                                    "pos_line_start": 1,
-                                    "selector": "a"
-                                },
-                                "pos_col_end": 3,
-                                "pos_col_start": 1,
-                                "pos_line_end": 1,
-                                "pos_line_start": 1,
-                                "selector": "b"
-                            },
-                            "pos_col_end": 5,
-                            "pos_col_start": 1,
-                            "pos_line_end": 1,
-                            "pos_line_start": 1,
-                            "selector": "c"
-                        },
-                        "pos_col_end": 11,
-                        "pos_col_start": 1,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1,
-                        "selector": "d=",
-                        "values": [
-                            {
-                                "@type": "int",
-                                "pos_col_end": 11,
-                                "pos_col_start": 11,
-                                "pos_line_end": 1,
-                                "pos_line_start": 1,
-                                "token": 1
-                            }
-                        ]
-                    },
-                    {
+        "@type": "module",
+        "file": {
+            "@type": "begin",
+            "body": [
+                {
+                    "@type": "send",
+                    "base": {
                         "@type": "send",
                         "base": {
                             "@type": "send",
@@ -60,28 +18,68 @@
                                 "base": null,
                                 "pos_col_end": 1,
                                 "pos_col_start": 1,
-                                "pos_line_end": 2,
-                                "pos_line_start": 2,
-                                "selector": "h"
+                                "pos_line_end": 1,
+                                "pos_line_start": 1,
+                                "selector": "a"
                             },
                             "pos_col_end": 3,
                             "pos_col_start": 1,
-                            "pos_line_end": 2,
-                            "pos_line_start": 2,
-                            "selector": "i"
+                            "pos_line_end": 1,
+                            "pos_line_start": 1,
+                            "selector": "b"
                         },
                         "pos_col_end": 5,
                         "pos_col_start": 1,
+                        "pos_line_end": 1,
+                        "pos_line_start": 1,
+                        "selector": "c"
+                    },
+                    "pos_col_end": 11,
+                    "pos_col_start": 1,
+                    "pos_line_end": 1,
+                    "pos_line_start": 1,
+                    "selector": "d=",
+                    "values": [
+                        {
+                            "@token": 1,
+                            "@type": "int",
+                            "pos_col_end": 11,
+                            "pos_col_start": 11,
+                            "pos_line_end": 1,
+                            "pos_line_start": 1
+                        }
+                    ]
+                },
+                {
+                    "@type": "send",
+                    "base": {
+                        "@type": "send",
+                        "base": {
+                            "@type": "send",
+                            "base": null,
+                            "pos_col_end": 1,
+                            "pos_col_start": 1,
+                            "pos_line_end": 2,
+                            "pos_line_start": 2,
+                            "selector": "h"
+                        },
+                        "pos_col_end": 3,
+                        "pos_col_start": 1,
                         "pos_line_end": 2,
                         "pos_line_start": 2,
-                        "selector": "j"
-                    }
-                ],
-                "pos_col_end": 5,
-                "pos_col_start": 1,
-                "pos_line_end": 2,
-                "pos_line_start": 1
-            }
+                        "selector": "i"
+                    },
+                    "pos_col_end": 5,
+                    "pos_col_start": 1,
+                    "pos_line_end": 2,
+                    "pos_line_start": 2,
+                    "selector": "j"
+                }
+            ],
+            "pos_col_end": 5,
+            "pos_col_start": 1,
+            "pos_line_end": 2,
+            "pos_line_start": 1
         }
     }
 }

@@ -3,40 +3,38 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "lvasgn",
+        "@type": "module",
+        "file": {
+            "@type": "lvasgn",
+            "pos_col_end": 10,
+            "pos_col_start": 1,
+            "pos_line_end": 1,
+            "pos_line_start": 1,
+            "target": "a",
+            "value": {
+                "@type": "dstr",
+                "children": [
+                    {
+                        "@token": "    Some text\n",
+                        "@type": "str",
+                        "pos_col_end": 1,
+                        "pos_col_start": 1,
+                        "pos_line_end": 3,
+                        "pos_line_start": 2
+                    },
+                    {
+                        "@token": "    multiline\n",
+                        "@type": "str",
+                        "pos_col_end": 1,
+                        "pos_col_start": 1,
+                        "pos_line_end": 4,
+                        "pos_line_start": 3
+                    }
+                ],
                 "pos_col_end": 10,
-                "pos_col_start": 1,
+                "pos_col_start": 5,
                 "pos_line_end": 1,
-                "pos_line_start": 1,
-                "target": "a",
-                "value": {
-                    "@type": "dstr",
-                    "children": [
-                        {
-                            "@type": "str",
-                            "pos_col_end": 1,
-                            "pos_col_start": 1,
-                            "pos_line_end": 3,
-                            "pos_line_start": 2,
-                            "token": "    Some text\n"
-                        },
-                        {
-                            "@type": "str",
-                            "pos_col_end": 1,
-                            "pos_col_start": 1,
-                            "pos_line_end": 4,
-                            "pos_line_start": 3,
-                            "token": "    multiline\n"
-                        }
-                    ],
-                    "pos_col_end": 10,
-                    "pos_col_start": 5,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1
-                }
+                "pos_line_start": 1
             }
         }
     }

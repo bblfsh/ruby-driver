@@ -3,31 +3,29 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "while",
-                "body": {
-                    "@type": "send",
-                    "base": null,
-                    "pos_col_end": 12,
-                    "pos_col_start": 5,
-                    "pos_line_end": 2,
-                    "pos_line_start": 2,
-                    "selector": "continue"
-                },
-                "condition": {
-                    "@type": "true",
-                    "pos_col_end": 10,
-                    "pos_col_start": 7,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1
-                },
-                "pos_col_end": 5,
-                "pos_col_start": 1,
+        "@type": "module",
+        "file": {
+            "@type": "while",
+            "body": {
+                "@type": "send",
+                "base": null,
+                "pos_col_end": 12,
+                "pos_col_start": 5,
+                "pos_line_end": 2,
+                "pos_line_start": 2,
+                "selector": "continue"
+            },
+            "condition": {
+                "@type": "true",
+                "pos_col_end": 10,
+                "pos_col_start": 7,
                 "pos_line_end": 1,
                 "pos_line_start": 1
-            }
+            },
+            "pos_col_end": 5,
+            "pos_col_start": 1,
+            "pos_line_end": 1,
+            "pos_line_start": 1
         }
     }
 }

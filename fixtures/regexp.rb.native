@@ -3,39 +3,37 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "@type": "module",
-            "file": {
-                "@type": "regexp",
-                "options": {
-                    "@type": "regopt",
-                    "options": [
-                        {
-                            "@type": "Symbol",
-                            "token": "i"
-                        },
-                        {
-                            "@type": "Symbol",
-                            "token": "m"
-                        }
-                    ],
-                    "pos_col_end": 12,
-                    "pos_col_start": 11,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1
-                },
+        "@type": "module",
+        "file": {
+            "@type": "regexp",
+            "options": {
+                "@type": "regopt",
+                "options": [
+                    {
+                        "@token": "i",
+                        "@type": "Symbol"
+                    },
+                    {
+                        "@token": "m",
+                        "@type": "Symbol"
+                    }
+                ],
                 "pos_col_end": 12,
-                "pos_col_start": 1,
+                "pos_col_start": 11,
                 "pos_line_end": 1,
-                "pos_line_start": 1,
-                "text": {
-                    "@type": "str",
-                    "pos_col_end": 9,
-                    "pos_col_start": 2,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1,
-                    "token": "text(.*)"
-                }
+                "pos_line_start": 1
+            },
+            "pos_col_end": 12,
+            "pos_col_start": 1,
+            "pos_line_end": 1,
+            "pos_line_start": 1,
+            "text": {
+                "@token": "text(.*)",
+                "@type": "str",
+                "pos_col_end": 9,
+                "pos_col_start": 2,
+                "pos_line_end": 1,
+                "pos_line_start": 1
             }
         }
     }
