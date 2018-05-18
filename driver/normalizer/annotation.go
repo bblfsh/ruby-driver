@@ -396,7 +396,7 @@ var Annotations = []Mapping{
 	MapAST("send", Obj{
 		"base":      Var("base"),
 		"selector":  Var("selector"),
-		"__notcall": Check(Is(nil), Var("__notcall")),
+		//"__notcall": Check(Is(nil), Var("__notcall")),
 	}, Obj{
 		"base":        Var("base"),
 		uast.KeyToken: Var("selector"),
