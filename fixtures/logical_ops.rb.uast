@@ -38,8 +38,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Left
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Left,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 0
 .  .  .  .  .  .  .  .  Line: 1
@@ -55,8 +55,8 @@ module {
 .  .  .  .  .  .  .  .  selector: a
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Right
+.  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Qualified,Right
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 6
 .  .  .  .  .  .  .  .  Line: 1
@@ -91,8 +91,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Left
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Left,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 8
 .  .  .  .  .  .  .  .  Line: 2
@@ -108,8 +108,8 @@ module {
 .  .  .  .  .  .  .  .  selector: a
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Right
+.  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Qualified,Right
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 13
 .  .  .  .  .  .  .  .  Line: 2
@@ -144,8 +144,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Left
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Left,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 15
 .  .  .  .  .  .  .  .  Line: 3
@@ -161,8 +161,8 @@ module {
 .  .  .  .  .  .  .  .  selector: a
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Right
+.  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Qualified,Right
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 20
 .  .  .  .  .  .  .  .  Line: 3
@@ -197,8 +197,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Left
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Left,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 22
 .  .  .  .  .  .  .  .  Line: 4
@@ -214,8 +214,8 @@ module {
 .  .  .  .  .  .  .  .  selector: a
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Right
+.  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Qualified,Right
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 27
 .  .  .  .  .  .  .  .  Line: 4
@@ -233,8 +233,8 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  4: send {
-.  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  4: send_operator {
+.  .  .  .  .  Roles: Expression,Not,Operator,Relational,Unary
 .  .  .  .  .  TOKEN "!"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 29
@@ -250,8 +250,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 30
 .  .  .  .  .  .  .  .  Line: 5
@@ -269,8 +269,8 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  5: send {
-.  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  5: send_operator {
+.  .  .  .  .  Roles: Expression,Not,Operator,Relational,Unary
 .  .  .  .  .  TOKEN "!"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 32
@@ -319,8 +319,8 @@ module {
 .  .  .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Left
+.  .  .  .  .  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identical,Left,Qualified
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 37
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 6
@@ -336,8 +336,8 @@ module {
 .  .  .  .  .  .  .  .  .  .  .  .  selector: a
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Right
+.  .  .  .  .  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identical,Qualified,Right
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 43
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 6

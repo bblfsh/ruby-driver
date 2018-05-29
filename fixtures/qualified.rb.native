@@ -8,13 +8,14 @@
             "@type": "begin",
             "body": [
                 {
-                    "@type": "send",
+                    "@token": "d",
+                    "@type": "send_assign",
                     "base": {
-                        "@type": "send",
+                        "@type": "send_call",
                         "base": {
-                            "@type": "send",
+                            "@type": "send_call",
                             "base": {
-                                "@type": "send",
+                                "@type": "send_qualified",
                                 "base": null,
                                 "pos_col_end": 1,
                                 "pos_col_start": 1,
@@ -51,11 +52,11 @@
                     ]
                 },
                 {
-                    "@type": "send",
+                    "@type": "send_call",
                     "base": {
-                        "@type": "send",
+                        "@type": "send_call",
                         "base": {
-                            "@type": "send",
+                            "@type": "send_qualified",
                             "base": null,
                             "pos_col_end": 1,
                             "pos_col_start": 1,

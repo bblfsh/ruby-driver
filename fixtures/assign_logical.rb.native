@@ -78,7 +78,7 @@
                     "pos_line_end": 5,
                     "pos_line_start": 5,
                     "target": {
-                        "@type": "send",
+                        "@type": "send_call",
                         "base": {
                             "@token": "@foo",
                             "@type": "ivar",
@@ -109,9 +109,9 @@
                     "pos_line_end": 6,
                     "pos_line_start": 6,
                     "target": {
-                        "@type": "send",
+                        "@type": "send_call",
                         "base": {
-                            "@type": "send",
+                            "@type": "send_qualified",
                             "base": null,
                             "pos_col_end": 3,
                             "pos_col_start": 1,
@@ -141,7 +141,7 @@
                     "pos_line_end": 8,
                     "pos_line_start": 8,
                     "target": {
-                        "@type": "send",
+                        "@type": "send_call",
                         "base": {
                             "@token": "@baz",
                             "@type": "ivar",

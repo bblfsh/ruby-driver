@@ -126,8 +126,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Binary,Expression,Identifier,Qualified,Right
+.  .  .  .  .  .  0: send_call {
+.  .  .  .  .  .  .  Roles: Binary,Call,Expression,Function,Right
 .  .  .  .  .  .  .  TOKEN "[]"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 24
@@ -161,7 +161,7 @@ module {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: irange {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Incomplete,Tuple
+.  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Incomplete,Tuple
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 26
 .  .  .  .  .  .  .  .  .  .  Line: 2
@@ -233,8 +233,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Binary,Expression,Identifier,Qualified,Right
+.  .  .  .  .  .  0: send_call {
+.  .  .  .  .  .  .  Roles: Binary,Call,Expression,Function,Right
 .  .  .  .  .  .  .  TOKEN "[]"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 45
@@ -268,7 +268,7 @@ module {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: irange {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Incomplete,Tuple
+.  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Incomplete,Tuple
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 47
 .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -340,8 +340,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Binary,Expression,Identifier,Qualified,Right
+.  .  .  .  .  .  0: send_call {
+.  .  .  .  .  .  .  Roles: Binary,Call,Expression,Function,Right
 .  .  .  .  .  .  .  TOKEN "[]"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 63
@@ -375,7 +375,7 @@ module {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: erange {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Incomplete,Tuple
+.  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Incomplete,Tuple
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 65
 .  .  .  .  .  .  .  .  .  .  Line: 4

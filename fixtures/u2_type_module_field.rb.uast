@@ -22,9 +22,8 @@ module {
 .  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send {
-.  .  .  .  .  Roles: Call,Expression,Function
-.  .  .  .  .  TOKEN "attr"
+.  .  .  .  0: send_qualified {
+.  .  .  .  .  Roles: Expression,Identical,Qualified
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 23
 .  .  .  .  .  .  Line: 2
@@ -37,10 +36,11 @@ module {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: begin
+.  .  .  .  .  .  selector: attr
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: sym {
-.  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Identifier
+.  .  .  .  .  .  .  Roles: Expression,Identifier
 .  .  .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 28

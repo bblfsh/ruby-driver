@@ -61,7 +61,7 @@
                         }
                     ],
                     "blockdata": {
-                        "@type": "send",
+                        "@type": "send_statement",
                         "base": {
                             "@token": "a",
                             "@type": "lvar",
@@ -80,7 +80,7 @@
                         "@type": "begin",
                         "body": [
                             {
-                                "@type": "send",
+                                "@type": "send_qualified",
                                 "base": null,
                                 "pos_col_end": 10,
                                 "pos_col_start": 5,
@@ -99,7 +99,7 @@
                                 ]
                             },
                             {
-                                "@type": "send",
+                                "@type": "send_qualified",
                                 "base": null,
                                 "pos_col_end": 10,
                                 "pos_col_start": 5,
@@ -212,7 +212,7 @@
                         }
                     ],
                     "blockdata": {
-                        "@type": "send",
+                        "@type": "send_statement",
                         "base": {
                             "@token": "b",
                             "@type": "lvar",
@@ -228,7 +228,7 @@
                         "selector": "each"
                     },
                     "body": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 13,
                         "pos_col_start": 5,

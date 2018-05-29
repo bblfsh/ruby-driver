@@ -8,7 +8,7 @@
             "@type": "block",
             "args": null,
             "blockdata": {
-                "@type": "send",
+                "@type": "send_statement",
                 "base": null,
                 "pos_col_end": 6,
                 "pos_col_start": 1,

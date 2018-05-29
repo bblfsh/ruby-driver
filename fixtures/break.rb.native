@@ -35,7 +35,7 @@
                         "@type": "begin",
                         "body": [
                             {
-                                "@type": "send",
+                                "@type": "send_qualified",
                                 "base": null,
                                 "pos_col_end": 10,
                                 "pos_col_start": 5,
@@ -68,7 +68,7 @@
                         "pos_line_start": 6
                     },
                     "condition": {
-                        "@type": "send",
+                        "@type": "send_operator",
                         "base": {
                             "@token": 1,
                             "@type": "int",

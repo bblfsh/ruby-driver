@@ -36,7 +36,7 @@
                             },
                             "body": [
                                 {
-                                    "@type": "send",
+                                    "@type": "send_call",
                                     "base": {
                                         "@token": "ObjectSpace",
                                         "@type": "const",
@@ -60,9 +60,9 @@
                                             "pos_line_start": 5
                                         },
                                         {
-                                            "@type": "send",
+                                            "@type": "send_call",
                                             "base": {
-                                                "@type": "send",
+                                                "@type": "send_call",
                                                 "base": {
                                                     "@type": "self",
                                                     "pos_col_end": 47,

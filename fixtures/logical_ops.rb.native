@@ -10,7 +10,7 @@
                 {
                     "@type": "and",
                     "left": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 1,
                         "pos_col_start": 1,
@@ -23,7 +23,7 @@
                     "pos_line_end": 1,
                     "pos_line_start": 1,
                     "right": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 7,
                         "pos_col_start": 7,
@@ -35,7 +35,7 @@
                 {
                     "@type": "or",
                     "left": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 1,
                         "pos_col_start": 1,
@@ -48,7 +48,7 @@
                     "pos_line_end": 2,
                     "pos_line_start": 2,
                     "right": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 6,
                         "pos_col_start": 6,
@@ -60,7 +60,7 @@
                 {
                     "@type": "and",
                     "left": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 1,
                         "pos_col_start": 1,
@@ -73,7 +73,7 @@
                     "pos_line_end": 3,
                     "pos_line_start": 3,
                     "right": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 6,
                         "pos_col_start": 6,
@@ -85,7 +85,7 @@
                 {
                     "@type": "or",
                     "left": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 1,
                         "pos_col_start": 1,
@@ -98,7 +98,7 @@
                     "pos_line_end": 4,
                     "pos_line_start": 4,
                     "right": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 6,
                         "pos_col_start": 6,
@@ -108,9 +108,9 @@
                     }
                 },
                 {
-                    "@type": "send",
+                    "@type": "send_operator",
                     "base": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 2,
                         "pos_col_start": 2,
@@ -125,14 +125,14 @@
                     "selector": "!"
                 },
                 {
-                    "@type": "send",
+                    "@type": "send_operator",
                     "base": {
                         "@type": "begin",
                         "body": [
                             {
                                 "@type": "and",
                                 "left": {
-                                    "@type": "send",
+                                    "@type": "send_qualified",
                                     "base": null,
                                     "pos_col_end": 6,
                                     "pos_col_start": 6,
@@ -145,7 +145,7 @@
                                 "pos_line_end": 6,
                                 "pos_line_start": 6,
                                 "right": {
-                                    "@type": "send",
+                                    "@type": "send_qualified",
                                     "base": null,
                                     "pos_col_end": 12,
                                     "pos_col_start": 12,

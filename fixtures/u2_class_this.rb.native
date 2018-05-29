@@ -16,7 +16,8 @@
                     },
                     "body": [
                         {
-                            "@type": "send",
+                            "@token": "a",
+                            "@type": "send_assign",
                             "base": {
                                 "@type": "self",
                                 "pos_col_end": 12,

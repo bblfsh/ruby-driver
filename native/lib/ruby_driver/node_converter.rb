@@ -6,6 +6,10 @@ require 'parser/current'
 module NodeConverter
   class Converter
     @@typekey = "@type"
+    @@statement_send = ["continue", "lambda", "require", "each", "public", "protected",
+                        "private"]
+    @@operators = ["+", "-", "*", "/", "%", "**", "&", "|", "^", "~", "<<", ">>",
+                   "==", "===", "<=", ">=", "!=", "!", "eql?", "equal?", "<==>"]
 
     def initialize(node, comments)
       @empty_with_comments = false
@@ -64,7 +68,7 @@ module NodeConverter
         return sexp_to_hash(node, {"base" => 0, "selector" => 1, "value" => 2})
 
       when "csend", "send"
-        return sexp_to_hash(node, {"base" => 0, "selector" => 1}, 2, "values")
+        return process_send(node)
 
       when "complex", "rational", "sym"
         return sexp_to_hash(node, {"@token.@token" => 0})
@@ -189,11 +193,11 @@ module NodeConverter
     # after cdr_index will be converted and assigned as a list of dictnodes to the cdr_key
     # property in the node.
     def sexp_to_hash(node, table, cdr_index=nil, cdr_key=nil)
-      d = {@@typekey=> node_type(node)}
+      d = {@@typekey => node_type(node)}
 
       table.each do |propname, idx|
         if propname.start_with? "s_"
-          d[propname[2..-1]] = node.children[idx].to_s
+          d[propname[ 2..-1]] = node.children[idx].to_s
 
         elsif propname.start_with? "l_"
           d[propname[2..-1]] = node.children[idx]
@@ -217,6 +221,49 @@ module NodeConverter
       end
 
       return add_position(node, d)
+    end
+
+    def process_send(node)
+      hash_send = sexp_to_hash(node, {"base" => 0, "selector" => 1}, 2, "values")
+      selector = hash_send["selector"].to_s
+
+      if @@statement_send.include? selector
+        hash_send[@@typekey] = "send_statement"
+        return hash_send
+      end
+
+      if @@operators.include? selector
+        hash_send[@@typekey] = "send_operator"
+        return hash_send
+      end
+
+      if selector[-1] == "=" and not hash_send["values"].nil?
+        hash_send[@@typekey] = "send_assign"
+        hash_send["@token"] = selector[0..-2]
+        return hash_send
+      end
+
+      if hash_send["base"].nil?
+        hash_send[@@typekey] = "send_qualified"
+        return hash_send
+      else
+        hash_send[@@typekey] = "send_call"
+        return hash_send
+      end
+
+      #if not hash_send["base"].nil?
+        #if hash_send["values"].nil?
+          #if hash_send["base"]["base"].nil?
+            #hash_send["base"][@@typekey] = "send_qualified"
+          #end
+          #hash_send[@@typekey] = "send_qualified"
+        #else
+          #hash_send[@@typekey] = "send_call"
+        #end
+        #return hash_send
+      #end
+
+      return hash_send
     end
 
     def add_from_subelem(node, hash, key)

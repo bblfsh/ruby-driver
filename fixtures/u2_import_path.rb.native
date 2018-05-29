@@ -8,7 +8,7 @@
             "@type": "begin",
             "body": [
                 {
-                    "@type": "send",
+                    "@type": "send_statement",
                     "base": null,
                     "pos_col_end": 25,
                     "pos_col_start": 1,
@@ -27,7 +27,7 @@
                     ]
                 },
                 {
-                    "@type": "send",
+                    "@type": "send_qualified",
                     "base": null,
                     "pos_col_end": 32,
                     "pos_col_start": 1,

@@ -5,7 +5,7 @@
     "ast": {
         "@type": "module",
         "file": {
-            "@type": "send",
+            "@type": "send_statement",
             "base": null,
             "pos_col_end": 15,
             "pos_col_start": 1,

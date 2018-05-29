@@ -118,7 +118,7 @@
                         "pos_line_start": 2
                     },
                     "values": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 13,
                         "pos_col_start": 13,

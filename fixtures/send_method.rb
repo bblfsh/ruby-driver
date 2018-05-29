@@ -9,5 +9,6 @@ end
 
 a = Foo.new()
 a.foo(1)
+a.bar()
 a.bar + 1
 a.foo = 3

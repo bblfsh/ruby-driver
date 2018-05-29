@@ -37,9 +37,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Body,Call,Expression,Function,Then
-.  .  .  .  .  .  .  TOKEN "puts"
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Body,Expression,Identical,Qualified,Then
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 0
 .  .  .  .  .  .  .  .  Line: 1
@@ -52,10 +51,11 @@ module {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  selector: puts
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: str {
-.  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Literal,Primitive,String
+.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Primitive,String
 .  .  .  .  .  .  .  .  .  TOKEN "foo"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 5
@@ -73,8 +73,8 @@ module {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Condition,Expression
+.  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  Roles: Condition,Expression,Identical,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 14
 .  .  .  .  .  .  .  .  Line: 1
@@ -108,9 +108,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Call,Else,Expression,Function
-.  .  .  .  .  .  .  TOKEN "puts"
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Else,Expression,Identical,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 18
 .  .  .  .  .  .  .  .  Line: 2
@@ -123,10 +122,11 @@ module {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: else
+.  .  .  .  .  .  .  .  selector: puts
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: str {
-.  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Literal,Primitive,String
+.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Primitive,String
 .  .  .  .  .  .  .  .  .  TOKEN "bar"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 23
@@ -144,8 +144,8 @@ module {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Condition,Expression
+.  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  Roles: Condition,Expression,Identical,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 36
 .  .  .  .  .  .  .  .  Line: 2

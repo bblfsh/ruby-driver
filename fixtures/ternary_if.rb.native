@@ -22,7 +22,7 @@
                     "pos_line_start": 1
                 },
                 "condition": {
-                    "@type": "send",
+                    "@type": "send_qualified",
                     "base": null,
                     "pos_col_end": 7,
                     "pos_col_start": 5,

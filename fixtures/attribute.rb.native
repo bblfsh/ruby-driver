@@ -5,7 +5,8 @@
     "ast": {
         "@type": "module",
         "file": {
-            "@type": "send",
+            "@token": "foo",
+            "@type": "send_assign",
             "base": {
                 "@type": "self",
                 "pos_col_end": 4,

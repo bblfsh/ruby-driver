@@ -257,8 +257,8 @@ module {
 .  .  .  .  .  .  .  .  internalRole: operator
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Binary,Expression,Identifier,Left,Qualified
+.  .  .  .  .  .  1: send_call {
+.  .  .  .  .  .  .  Roles: Binary,Call,Expression,Function,Left
 .  .  .  .  .  .  .  TOKEN "x"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 29
@@ -335,8 +335,8 @@ module {
 .  .  .  .  .  .  .  .  internalRole: operator
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Binary,Expression,Identifier,Left,Qualified
+.  .  .  .  .  .  1: send_call {
+.  .  .  .  .  .  .  Roles: Binary,Call,Expression,Function,Left
 .  .  .  .  .  .  .  TOKEN "[]"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 40
@@ -370,7 +370,7 @@ module {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
+.  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Literal,Number,Primitive
 .  .  .  .  .  .  .  .  .  TOKEN "0"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 43
@@ -387,7 +387,7 @@ module {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  2: int {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
+.  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Literal,Number,Primitive
 .  .  .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 46

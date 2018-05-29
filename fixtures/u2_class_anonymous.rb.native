@@ -8,7 +8,7 @@
             "@type": "block",
             "args": null,
             "blockdata": {
-                "@type": "send",
+                "@type": "send_call",
                 "base": {
                     "@token": "Class",
                     "@type": "const",

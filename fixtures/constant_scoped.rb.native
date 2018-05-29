@@ -8,7 +8,7 @@
             "@token": "Foo",
             "@type": "const",
             "base": {
-                "@type": "send",
+                "@type": "send_qualified",
                 "base": null,
                 "pos_col_end": 1,
                 "pos_col_start": 1,

@@ -8,7 +8,7 @@
             "@type": "begin",
             "body": [
                 {
-                    "@type": "send",
+                    "@type": "send_operator",
                     "base": {
                         "@token": 1,
                         "@type": "int",
@@ -34,7 +34,7 @@
                     ]
                 },
                 {
-                    "@type": "send",
+                    "@type": "send_operator",
                     "base": {
                         "@token": 3,
                         "@type": "int",
@@ -60,7 +60,7 @@
                     ]
                 },
                 {
-                    "@type": "send",
+                    "@type": "send_operator",
                     "base": {
                         "@token": 5,
                         "@type": "int",
@@ -76,7 +76,7 @@
                     "selector": "!"
                 },
                 {
-                    "@type": "send",
+                    "@type": "send_call",
                     "base": {
                         "@token": 6,
                         "@type": "int",
@@ -102,7 +102,7 @@
                     ]
                 },
                 {
-                    "@type": "send",
+                    "@type": "send_operator",
                     "base": {
                         "@token": 8,
                         "@type": "int",
@@ -128,7 +128,7 @@
                     ]
                 },
                 {
-                    "@type": "send",
+                    "@type": "send_operator",
                     "base": {
                         "@token": 1,
                         "@type": "int",
@@ -154,7 +154,7 @@
                     ]
                 },
                 {
-                    "@type": "send",
+                    "@type": "send_operator",
                     "base": {
                         "@token": 3,
                         "@type": "int",

@@ -96,8 +96,8 @@ module {
 .  .  .  .  .  .  .  .  .  .  internalRole: args
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  .  .  .  .  1: send_call {
+.  .  .  .  .  .  .  .  .  Roles: Call,Expression,Function
 .  .  .  .  .  .  .  .  .  TOKEN "define_finalizer"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 72
@@ -131,7 +131,7 @@ module {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  1: self {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Left,This
+.  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Left,This
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 101
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 5
@@ -146,8 +146,8 @@ module {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: values
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  2: send {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  .  .  .  .  .  .  2: send_call {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "testfnc1"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 107
@@ -163,8 +163,8 @@ module {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: values
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  .  .  .  .  .  .  .  .  0: send_call {
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call,Expression,Function
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "class"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 107

@@ -21,7 +21,7 @@ module {
 .  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send {
+.  .  .  .  0: send_assign {
 .  .  .  .  .  Roles: Assignment,Expression,Left
 .  .  .  .  .  TOKEN "d"
 .  .  .  .  .  StartPosition: {
@@ -36,10 +36,11 @@ module {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  selector: d=
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  .  .  0: send_call {
+.  .  .  .  .  .  .  Roles: Call,Expression,Function
 .  .  .  .  .  .  .  TOKEN "c"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 0
@@ -55,8 +56,8 @@ module {
 .  .  .  .  .  .  .  .  internalRole: base
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  .  .  .  .  0: send_call {
+.  .  .  .  .  .  .  .  .  Roles: Call,Expression,Function
 .  .  .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 0
@@ -72,8 +73,8 @@ module {
 .  .  .  .  .  .  .  .  .  .  internalRole: base
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identical,Qualified
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 0
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 1
@@ -112,8 +113,8 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1: send {
-.  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  1: send_call {
+.  .  .  .  .  Roles: Call,Expression,Function
 .  .  .  .  .  TOKEN "j"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 12
@@ -129,8 +130,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  .  .  0: send_call {
+.  .  .  .  .  .  .  Roles: Call,Expression,Function
 .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 12
@@ -146,8 +147,8 @@ module {
 .  .  .  .  .  .  .  .  internalRole: base
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  .  .  Roles: Expression,Identical,Qualified
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 12
 .  .  .  .  .  .  .  .  .  .  Line: 2

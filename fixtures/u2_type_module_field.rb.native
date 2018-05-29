@@ -9,7 +9,7 @@
             "@type": "module",
             "begin": [
                 {
-                    "@type": "send",
+                    "@type": "send_qualified",
                     "base": null,
                     "pos_col_end": 11,
                     "pos_col_start": 5,

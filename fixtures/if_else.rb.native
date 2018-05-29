@@ -23,7 +23,7 @@
                 }
             },
             "condition": {
-                "@type": "send",
+                "@type": "send_qualified",
                 "base": null,
                 "pos_col_end": 6,
                 "pos_col_start": 4,

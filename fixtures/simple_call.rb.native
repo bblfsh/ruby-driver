@@ -45,7 +45,7 @@
                     },
                     "body": [
                         {
-                            "@type": "send",
+                            "@type": "send_qualified",
                             "base": null,
                             "pos_col_end": 17,
                             "pos_col_start": 6,
@@ -106,7 +106,7 @@
                     "pos_line_start": 5
                 },
                 {
-                    "@type": "send",
+                    "@type": "send_qualified",
                     "base": null,
                     "pos_col_end": 13,
                     "pos_col_start": 1,
@@ -141,7 +141,7 @@
                     ]
                 },
                 {
-                    "@type": "send",
+                    "@type": "send_qualified",
                     "base": null,
                     "pos_col_end": 6,
                     "pos_col_start": 1,

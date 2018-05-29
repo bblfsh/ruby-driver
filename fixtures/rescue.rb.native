@@ -10,7 +10,7 @@
                 {
                     "@type": "rescue",
                     "body": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 15,
                         "pos_col_start": 5,

@@ -27,9 +27,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Body,Call,Expression,Function
-.  .  .  .  .  .  .  TOKEN "raise"
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Body,Expression,Identical,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 10
 .  .  .  .  .  .  .  .  Line: 2
@@ -42,10 +41,11 @@ module {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  selector: raise
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: str {
-.  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Literal,Primitive,String
+.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Primitive,String
 .  .  .  .  .  .  .  .  .  TOKEN "foo"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 16
@@ -148,8 +148,8 @@ module {
 .  .  .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Binary,Expression,Identifier,Qualified,Right
+.  .  .  .  .  .  .  .  .  .  0: send_call {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Binary,Call,Expression,Function,Right
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "message"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 52

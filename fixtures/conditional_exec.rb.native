@@ -10,7 +10,7 @@
                 {
                     "@type": "if",
                     "body": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 10,
                         "pos_col_start": 1,
@@ -29,7 +29,7 @@
                         ]
                     },
                     "condition": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 17,
                         "pos_col_start": 15,
@@ -47,7 +47,7 @@
                     "@type": "if",
                     "body": null,
                     "condition": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 21,
                         "pos_col_start": 19,
@@ -56,7 +56,7 @@
                         "selector": "foo"
                     },
                     "else": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 10,
                         "pos_col_start": 1,

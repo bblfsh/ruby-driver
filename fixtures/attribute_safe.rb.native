@@ -12,7 +12,7 @@
             "pos_line_start": 1,
             "target": "a",
             "value": {
-                "@type": "csend",
+                "@type": "send_call",
                 "base": {
                     "@type": "self",
                     "pos_col_end": 8,

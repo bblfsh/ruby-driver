@@ -45,7 +45,7 @@
                     },
                     "body": [
                         {
-                            "@type": "send",
+                            "@type": "send_qualified",
                             "base": null,
                             "pos_col_end": 17,
                             "pos_col_start": 6,
@@ -114,7 +114,7 @@
                                     "@type": "begin",
                                     "body": [
                                         {
-                                            "@type": "send",
+                                            "@type": "send_qualified",
                                             "base": null,
                                             "pos_col_end": 21,
                                             "pos_col_start": 9,
@@ -149,9 +149,9 @@
                                             ]
                                         },
                                         {
-                                            "@type": "send",
+                                            "@type": "send_call",
                                             "base": {
-                                                "@type": "send",
+                                                "@type": "send_call",
                                                 "base": {
                                                     "@token": "a",
                                                     "@type": "lvar",
@@ -173,11 +173,12 @@
                                             "selector": "c"
                                         },
                                         {
-                                            "@type": "send",
+                                            "@token": "j",
+                                            "@type": "send_assign",
                                             "base": {
-                                                "@type": "send",
+                                                "@type": "send_call",
                                                 "base": {
-                                                    "@type": "send",
+                                                    "@type": "send_qualified",
                                                     "base": null,
                                                     "pos_col_end": 9,
                                                     "pos_col_start": 9,

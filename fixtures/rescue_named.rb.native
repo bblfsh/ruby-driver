@@ -10,7 +10,7 @@
                 {
                     "@type": "rescue",
                     "body": {
-                        "@type": "send",
+                        "@type": "send_qualified",
                         "base": null,
                         "pos_col_end": 15,
                         "pos_col_start": 5,
@@ -64,7 +64,7 @@
                                 "pos_line_start": 4,
                                 "target": "a",
                                 "value": {
-                                    "@type": "send",
+                                    "@type": "send_call",
                                     "base": {
                                         "@token": "e",
                                         "@type": "lvar",

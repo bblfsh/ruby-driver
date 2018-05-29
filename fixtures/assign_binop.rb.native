@@ -106,7 +106,7 @@
                     "pos_line_end": 6,
                     "pos_line_start": 6,
                     "target": {
-                        "@type": "send",
+                        "@type": "send_call",
                         "base": {
                             "@token": "@c",
                             "@type": "ivar",
@@ -138,7 +138,7 @@
                     "pos_line_end": 8,
                     "pos_line_start": 8,
                     "target": {
-                        "@type": "send",
+                        "@type": "send_call",
                         "base": {
                             "@token": "@j",
                             "@type": "ivar",

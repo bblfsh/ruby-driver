@@ -56,9 +56,9 @@
                                     },
                                     "body": [
                                         {
-                                            "@type": "send",
+                                            "@type": "send_call",
                                             "base": {
-                                                "@type": "send",
+                                                "@type": "send_qualified",
                                                 "base": null,
                                                 "pos_col_end": 12,
                                                 "pos_col_start": 9,
@@ -73,9 +73,9 @@
                                             "selector": "foo",
                                             "values": [
                                                 {
-                                                    "@type": "send",
+                                                    "@type": "send_call",
                                                     "base": {
-                                                        "@type": "send",
+                                                        "@type": "send_qualified",
                                                         "base": null,
                                                         "pos_col_end": 21,
                                                         "pos_col_start": 18,
@@ -128,7 +128,7 @@
                     "pos_line_start": 10,
                     "target": "a",
                     "value": {
-                        "@type": "send",
+                        "@type": "send_call",
                         "base": {
                             "@token": "Foo",
                             "@type": "const",
@@ -146,7 +146,7 @@
                     }
                 },
                 {
-                    "@type": "send",
+                    "@type": "send_call",
                     "base": {
                         "@token": "a",
                         "@type": "lvar",
@@ -172,27 +172,43 @@
                     ]
                 },
                 {
-                    "@type": "send",
+                    "@type": "send_call",
                     "base": {
-                        "@type": "send",
+                        "@token": "a",
+                        "@type": "lvar",
+                        "pos_col_end": 1,
+                        "pos_col_start": 1,
+                        "pos_line_end": 12,
+                        "pos_line_start": 12
+                    },
+                    "pos_col_end": 7,
+                    "pos_col_start": 1,
+                    "pos_line_end": 12,
+                    "pos_line_start": 12,
+                    "selector": "bar"
+                },
+                {
+                    "@type": "send_operator",
+                    "base": {
+                        "@type": "send_call",
                         "base": {
                             "@token": "a",
                             "@type": "lvar",
                             "pos_col_end": 1,
                             "pos_col_start": 1,
-                            "pos_line_end": 12,
-                            "pos_line_start": 12
+                            "pos_line_end": 13,
+                            "pos_line_start": 13
                         },
                         "pos_col_end": 5,
                         "pos_col_start": 1,
-                        "pos_line_end": 12,
-                        "pos_line_start": 12,
+                        "pos_line_end": 13,
+                        "pos_line_start": 13,
                         "selector": "bar"
                     },
                     "pos_col_end": 9,
                     "pos_col_start": 1,
-                    "pos_line_end": 12,
-                    "pos_line_start": 12,
+                    "pos_line_end": 13,
+                    "pos_line_start": 13,
                     "selector": "+",
                     "values": [
                         {
@@ -200,25 +216,26 @@
                             "@type": "int",
                             "pos_col_end": 9,
                             "pos_col_start": 9,
-                            "pos_line_end": 12,
-                            "pos_line_start": 12
+                            "pos_line_end": 13,
+                            "pos_line_start": 13
                         }
                     ]
                 },
                 {
-                    "@type": "send",
+                    "@token": "foo",
+                    "@type": "send_assign",
                     "base": {
                         "@token": "a",
                         "@type": "lvar",
                         "pos_col_end": 1,
                         "pos_col_start": 1,
-                        "pos_line_end": 13,
-                        "pos_line_start": 13
+                        "pos_line_end": 14,
+                        "pos_line_start": 14
                     },
                     "pos_col_end": 9,
                     "pos_col_start": 1,
-                    "pos_line_end": 13,
-                    "pos_line_start": 13,
+                    "pos_line_end": 14,
+                    "pos_line_start": 14,
                     "selector": "foo=",
                     "values": [
                         {
@@ -226,15 +243,15 @@
                             "@type": "int",
                             "pos_col_end": 9,
                             "pos_col_start": 9,
-                            "pos_line_end": 13,
-                            "pos_line_start": 13
+                            "pos_line_end": 14,
+                            "pos_line_start": 14
                         }
                     ]
                 }
             ],
             "pos_col_end": 9,
             "pos_col_start": 1,
-            "pos_line_end": 13,
+            "pos_line_end": 14,
             "pos_line_start": 1
         }
     }

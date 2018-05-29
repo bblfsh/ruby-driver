@@ -12,7 +12,7 @@
                     "@type": "begin",
                     "body": [
                         {
-                            "@type": "send",
+                            "@type": "send_statement",
                             "base": null,
                             "pos_col_end": 11,
                             "pos_col_start": 5,
@@ -37,7 +37,7 @@
                             }
                         },
                         {
-                            "@type": "send",
+                            "@type": "send_statement",
                             "base": null,
                             "pos_col_end": 13,
                             "pos_col_start": 5,
@@ -62,7 +62,7 @@
                             }
                         },
                         {
-                            "@type": "send",
+                            "@type": "send_statement",
                             "base": null,
                             "pos_col_end": 10,
                             "pos_col_start": 5,

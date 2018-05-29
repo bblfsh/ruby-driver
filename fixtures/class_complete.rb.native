@@ -126,7 +126,7 @@
                                                     "@type": "begin",
                                                     "body": [
                                                         {
-                                                            "@type": "send",
+                                                            "@type": "send_qualified",
                                                             "base": null,
                                                             "pos_col_end": 23,
                                                             "pos_col_start": 9,
@@ -145,7 +145,7 @@
                                                             ]
                                                         },
                                                         {
-                                                            "@type": "send",
+                                                            "@type": "send_qualified",
                                                             "base": null,
                                                             "pos_col_end": 26,
                                                             "pos_col_start": 9,
@@ -164,7 +164,7 @@
                                                             ]
                                                         },
                                                         {
-                                                            "@type": "send",
+                                                            "@type": "send_qualified",
                                                             "base": null,
                                                             "pos_col_end": 13,
                                                             "pos_col_start": 9,
@@ -173,7 +173,7 @@
                                                             "selector": "foo"
                                                         },
                                                         {
-                                                            "@type": "send",
+                                                            "@type": "send_call",
                                                             "base": {
                                                                 "@type": "self",
                                                                 "pos_col_end": 12,
@@ -218,7 +218,7 @@
                                                     "pos_line_start": 23,
                                                     "target": "b",
                                                     "value": {
-                                                        "@type": "send",
+                                                        "@type": "send_call",
                                                         "base": {
                                                             "@token": "Bar",
                                                             "@type": "const",
