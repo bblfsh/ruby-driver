@@ -1,8 +1,6 @@
 package normalizer
 
 import (
-	"strings"
-
 	"gopkg.in/bblfsh/sdk.v2/uast"
 	"gopkg.in/bblfsh/sdk.v2/uast/role"
 	. "gopkg.in/bblfsh/sdk.v2/uast/transformer"
@@ -42,60 +40,6 @@ func mapInternalProperty(key string, roles ...role.Role) Mapping {
 			key: ObjectRoles(key, roles...),
 		}),
 	)
-}
-
-type opSendAssign struct {
-	op Op
-}
-
-func (op opSendAssign) Check(st *State, n uast.Node) (bool, error) {
-	s, ok := n.(uast.String)
-	if !ok {
-		return false, nil
-	}
-
-	gostr := string(s)
-	if !strings.HasSuffix(gostr, "=") {
-		return false, nil
-	}
-
-	return op.op.Check(st, uast.String(gostr[:len(gostr)-1]))
-}
-
-func (op opSendAssign) Construct(st *State, n uast.Node) (uast.Node, error) {
-	n, err := op.op.Construct(st, n)
-	if err != nil {
-		return nil, err
-	}
-
-	v, ok := n.(uast.String)
-	if !ok {
-		return nil, ErrExpectedValue.New(n)
-	}
-
-	gostr := string(v) + "="
-	return uast.String(gostr), nil
-}
-
-type opSendOperator struct {
-	op Op
-}
-
-func (op opSendOperator) Check(st *State, n uast.Node) (bool, error) {
-	s, ok := n.(uast.String)
-	if !ok {
-		return false, nil
-	}
-
-	if _, ok := operatorRoles[s]; !ok {
-		return false, nil
-	}
-
-	return op.op.Check(st, n)
-}
-
-func (op opSendOperator) Construct(st *State, n uast.Node) (uast.Node, error) {
-	return op.op.Construct(st, n)
 }
 
 // Nodes doc:
@@ -337,7 +281,7 @@ var Annotations = []Mapping{
 	MapASTCustom("send_operator", Obj{
 		"base":     ObjectRoles("bs"),
 		"values":   EachObjectRoles("values"),
-		"selector": opSendOperator{op: Var("selector")},
+		"selector": Var("selector"),
 	}, Obj{
 		"base":        ObjectRoles("bs", role.Left),
 		"values":      EachObjectRoles("values", role.Right),
@@ -348,7 +292,7 @@ var Annotations = []Mapping{
 
 	// Same without values (unary)
 	MapASTCustom("send_operator", Obj{
-		"selector": opSendOperator{op: Var("selector")},
+		"selector": Var("selector"),
 	}, Obj{
 		uast.KeyToken: Var("selector"),
 	},
