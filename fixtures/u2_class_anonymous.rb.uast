@@ -21,8 +21,8 @@ module {
 .  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send {
-.  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  0: send_call {
+.  .  .  .  .  Roles: Call,Expression,Function
 .  .  .  .  .  TOKEN "new"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 0

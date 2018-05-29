@@ -21,8 +21,8 @@ module {
 .  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send {
-.  .  .  .  .  Roles: Condition,Expression
+.  .  .  .  0: send_qualified {
+.  .  .  .  .  Roles: Condition,Expression,Identical,Qualified
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 3
 .  .  .  .  .  .  Line: 1

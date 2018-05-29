@@ -21,7 +21,7 @@ module {
 .  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send {
+.  .  .  .  0: send_operator {
 .  .  .  .  .  Roles: And,Binary,Bitwise,Expression,Operator
 .  .  .  .  .  TOKEN "&"
 .  .  .  .  .  StartPosition: {
@@ -74,7 +74,7 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1: send {
+.  .  .  .  1: send_operator {
 .  .  .  .  .  Roles: Binary,Bitwise,Expression,Operator,Or
 .  .  .  .  .  TOKEN "|"
 .  .  .  .  .  StartPosition: {
@@ -127,7 +127,7 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  2: send {
+.  .  .  .  2: send_operator {
 .  .  .  .  .  Roles: Binary,Bitwise,Expression,Operator,Xor
 .  .  .  .  .  TOKEN "^"
 .  .  .  .  .  StartPosition: {
@@ -180,8 +180,8 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  3: send {
-.  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  3: send_operator {
+.  .  .  .  .  Roles: Bitwise,Expression,Incomplete,Operator,Unary
 .  .  .  .  .  TOKEN "~"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 18
@@ -216,7 +216,7 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  4: send {
+.  .  .  .  4: send_operator {
 .  .  .  .  .  Roles: Binary,Bitwise,Expression,LeftShift,Operator
 .  .  .  .  .  TOKEN "<<"
 .  .  .  .  .  StartPosition: {
@@ -269,7 +269,7 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  5: send {
+.  .  .  .  5: send_operator {
 .  .  .  .  .  Roles: Binary,Bitwise,Expression,Operator,RightShift
 .  .  .  .  .  TOKEN ">>"
 .  .  .  .  .  StartPosition: {

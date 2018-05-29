@@ -21,8 +21,8 @@ module {
 .  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send {
-.  .  .  .  .  Roles: Call,Expression,Function,Import
+.  .  .  .  0: send_statement {
+.  .  .  .  .  Roles: Expression,Import
 .  .  .  .  .  TOKEN "require"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 0
@@ -39,7 +39,7 @@ module {
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: str {
-.  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Literal,Primitive,String
+.  .  .  .  .  .  .  Roles: Expression,Literal,Primitive,String
 .  .  .  .  .  .  .  TOKEN "./u2_class_this"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 8
@@ -57,9 +57,8 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1: send {
-.  .  .  .  .  Roles: Call,Expression,Function
-.  .  .  .  .  TOKEN "require_relative"
+.  .  .  .  1: send_qualified {
+.  .  .  .  .  Roles: Expression,Identical,Qualified
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 26
 .  .  .  .  .  .  Line: 2
@@ -72,10 +71,11 @@ module {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  selector: require_relative
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: str {
-.  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Literal,Primitive,String
+.  .  .  .  .  .  .  Roles: Expression,Literal,Primitive,String
 .  .  .  .  .  .  .  TOKEN "u2_class_this"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 43

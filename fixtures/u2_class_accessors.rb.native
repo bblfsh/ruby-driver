@@ -5,199 +5,325 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 3,
+                "line": 14
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@type": "begin",
             "body": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 1
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1
+                    },
                     "@token": "Testcls1",
                     "@type": "class",
                     "body": [
                         {
-                            "@type": "send",
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 20,
+                                "line": 2
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 2
+                            },
+                            "@type": "send_qualified",
                             "base": null,
-                            "pos_col_end": 20,
-                            "pos_col_start": 5,
-                            "pos_line_end": 2,
-                            "pos_line_start": 2,
                             "selector": "attr_accessor",
                             "values": [
                                 {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 20,
+                                        "line": 2
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 19,
+                                        "line": 2
+                                    },
                                     "@token": "a",
-                                    "@type": "sym",
-                                    "pos_col_end": 20,
-                                    "pos_col_start": 19,
-                                    "pos_line_end": 2,
-                                    "pos_line_start": 2
+                                    "@type": "sym"
                                 }
                             ]
                         }
                     ],
-                    "parent": null,
-                    "pos_col_end": 5,
-                    "pos_col_start": 1,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1
+                    "parent": null
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 4
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 4
+                    },
                     "@token": "Testcls2",
                     "@type": "class",
                     "body": [
                         {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 18,
+                                "line": 6
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 5
+                            },
                             "@type": "begin",
                             "body": [
                                 {
-                                    "@type": "send",
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 18,
+                                        "line": 5
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 5,
+                                        "line": 5
+                                    },
+                                    "@type": "send_qualified",
                                     "base": null,
-                                    "pos_col_end": 18,
-                                    "pos_col_start": 5,
-                                    "pos_line_end": 5,
-                                    "pos_line_start": 5,
                                     "selector": "attr_reader",
                                     "values": [
                                         {
+                                            "@end": {
+                                                "@type": "ast:Position",
+                                                "col": 18,
+                                                "line": 5
+                                            },
+                                            "@start": {
+                                                "@type": "ast:Position",
+                                                "col": 17,
+                                                "line": 5
+                                            },
                                             "@token": "b",
-                                            "@type": "sym",
-                                            "pos_col_end": 18,
-                                            "pos_col_start": 17,
-                                            "pos_line_end": 5,
-                                            "pos_line_start": 5
+                                            "@type": "sym"
                                         }
                                     ]
                                 },
                                 {
-                                    "@type": "send",
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 18,
+                                        "line": 6
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 5,
+                                        "line": 6
+                                    },
+                                    "@type": "send_qualified",
                                     "base": null,
-                                    "pos_col_end": 18,
-                                    "pos_col_start": 5,
-                                    "pos_line_end": 6,
-                                    "pos_line_start": 6,
                                     "selector": "attr_writer",
                                     "values": [
                                         {
+                                            "@end": {
+                                                "@type": "ast:Position",
+                                                "col": 18,
+                                                "line": 6
+                                            },
+                                            "@start": {
+                                                "@type": "ast:Position",
+                                                "col": 17,
+                                                "line": 6
+                                            },
                                             "@token": "b",
-                                            "@type": "sym",
-                                            "pos_col_end": 18,
-                                            "pos_col_start": 17,
-                                            "pos_line_end": 6,
-                                            "pos_line_start": 6
+                                            "@type": "sym"
                                         }
                                     ]
                                 }
-                            ],
-                            "pos_col_end": 18,
-                            "pos_col_start": 5,
-                            "pos_line_end": 6,
-                            "pos_line_start": 5
+                            ]
                         }
                     ],
-                    "parent": null,
-                    "pos_col_end": 5,
-                    "pos_col_start": 1,
-                    "pos_line_end": 4,
-                    "pos_line_start": 4
+                    "parent": null
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 8
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 8
+                    },
                     "@token": "Testcls3",
                     "@type": "class",
                     "body": [
                         {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 7,
+                                "line": 13
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 9
+                            },
                             "@type": "begin",
                             "body": [
                                 {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 10,
+                                        "line": 9
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 5,
+                                        "line": 9
+                                    },
                                     "@type": "ivasgn",
-                                    "pos_col_end": 10,
-                                    "pos_col_start": 5,
-                                    "pos_line_end": 9,
-                                    "pos_line_start": 9,
                                     "target": "@c",
                                     "value": {
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 10,
+                                            "line": 9
+                                        },
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 10,
+                                            "line": 9
+                                        },
                                         "@token": 1,
-                                        "@type": "int",
-                                        "pos_col_end": 10,
-                                        "pos_col_start": 10,
-                                        "pos_line_end": 9,
-                                        "pos_line_start": 9
+                                        "@type": "int"
                                     }
                                 },
                                 {
-                                    "@type": "send",
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 18,
+                                        "line": 10
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 5,
+                                        "line": 10
+                                    },
+                                    "@type": "send_qualified",
                                     "base": null,
-                                    "pos_col_end": 18,
-                                    "pos_col_start": 5,
-                                    "pos_line_end": 10,
-                                    "pos_line_start": 10,
                                     "selector": "attr_reader",
                                     "values": [
                                         {
+                                            "@end": {
+                                                "@type": "ast:Position",
+                                                "col": 18,
+                                                "line": 10
+                                            },
+                                            "@start": {
+                                                "@type": "ast:Position",
+                                                "col": 17,
+                                                "line": 10
+                                            },
                                             "@token": "c",
-                                            "@type": "sym",
-                                            "pos_col_end": 18,
-                                            "pos_col_start": 17,
-                                            "pos_line_end": 10,
-                                            "pos_line_start": 10
+                                            "@type": "sym"
                                         }
                                     ]
                                 },
                                 {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 7,
+                                        "line": 11
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 5,
+                                        "line": 11
+                                    },
                                     "@token": "c=",
                                     "@type": "def",
                                     "args": {
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 17,
+                                            "line": 11
+                                        },
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 11,
+                                            "line": 11
+                                        },
                                         "@type": "args",
                                         "children": [
                                             {
+                                                "@end": {
+                                                    "@type": "ast:Position",
+                                                    "col": 16,
+                                                    "line": 11
+                                                },
+                                                "@start": {
+                                                    "@type": "ast:Position",
+                                                    "col": 12,
+                                                    "line": 11
+                                                },
                                                 "@token": "new_c",
-                                                "@type": "arg",
-                                                "pos_col_end": 16,
-                                                "pos_col_start": 12,
-                                                "pos_line_end": 11,
-                                                "pos_line_start": 11
+                                                "@type": "arg"
                                             }
-                                        ],
-                                        "pos_col_end": 17,
-                                        "pos_col_start": 11,
-                                        "pos_line_end": 11,
-                                        "pos_line_start": 11
+                                        ]
                                     },
                                     "body": [
                                         {
+                                            "@end": {
+                                                "@type": "ast:Position",
+                                                "col": 18,
+                                                "line": 12
+                                            },
+                                            "@start": {
+                                                "@type": "ast:Position",
+                                                "col": 9,
+                                                "line": 12
+                                            },
                                             "@type": "ivasgn",
-                                            "pos_col_end": 18,
-                                            "pos_col_start": 9,
-                                            "pos_line_end": 12,
-                                            "pos_line_start": 12,
                                             "target": "@c",
                                             "value": {
+                                                "@end": {
+                                                    "@type": "ast:Position",
+                                                    "col": 18,
+                                                    "line": 12
+                                                },
+                                                "@start": {
+                                                    "@type": "ast:Position",
+                                                    "col": 14,
+                                                    "line": 12
+                                                },
                                                 "@token": "new_c",
-                                                "@type": "lvar",
-                                                "pos_col_end": 18,
-                                                "pos_col_start": 14,
-                                                "pos_line_end": 12,
-                                                "pos_line_start": 12
+                                                "@type": "lvar"
                                             }
                                         }
-                                    ],
-                                    "pos_col_end": 7,
-                                    "pos_col_start": 5,
-                                    "pos_line_end": 11,
-                                    "pos_line_start": 11
+                                    ]
                                 }
-                            ],
-                            "pos_col_end": 7,
-                            "pos_col_start": 5,
-                            "pos_line_end": 13,
-                            "pos_line_start": 9
+                            ]
                         }
                     ],
-                    "parent": null,
-                    "pos_col_end": 5,
-                    "pos_col_start": 1,
-                    "pos_line_end": 8,
-                    "pos_line_start": 8
+                    "parent": null
                 }
-            ],
-            "pos_col_end": 3,
-            "pos_col_start": 1,
-            "pos_line_end": 14,
-            "pos_line_start": 1
+            ]
         }
     }
 }

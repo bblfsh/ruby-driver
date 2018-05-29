@@ -5,51 +5,81 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 32,
+                "line": 2
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@type": "begin",
             "body": [
                 {
-                    "@type": "send",
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 25,
+                        "line": 1
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1
+                    },
+                    "@type": "send_statement",
                     "base": null,
-                    "pos_col_end": 25,
-                    "pos_col_start": 1,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1,
                     "selector": "require",
                     "values": [
                         {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 25,
+                                "line": 1
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 9,
+                                "line": 1
+                            },
                             "@token": "./u2_class_this",
-                            "@type": "str",
-                            "pos_col_end": 25,
-                            "pos_col_start": 9,
-                            "pos_line_end": 1,
-                            "pos_line_start": 1
+                            "@type": "str"
                         }
                     ]
                 },
                 {
-                    "@type": "send",
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 32,
+                        "line": 2
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 2
+                    },
+                    "@type": "send_qualified",
                     "base": null,
-                    "pos_col_end": 32,
-                    "pos_col_start": 1,
-                    "pos_line_end": 2,
-                    "pos_line_start": 2,
                     "selector": "require_relative",
                     "values": [
                         {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 32,
+                                "line": 2
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 18,
+                                "line": 2
+                            },
                             "@token": "u2_class_this",
-                            "@type": "str",
-                            "pos_col_end": 32,
-                            "pos_col_start": 18,
-                            "pos_line_end": 2,
-                            "pos_line_start": 2
+                            "@type": "str"
                         }
                     ]
                 }
-            ],
-            "pos_col_end": 32,
-            "pos_col_start": 1,
-            "pos_line_end": 2,
-            "pos_line_start": 1
+            ]
         }
     }
 }

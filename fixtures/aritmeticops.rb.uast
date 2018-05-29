@@ -21,7 +21,7 @@ module {
 .  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send {
+.  .  .  .  0: send_operator {
 .  .  .  .  .  Roles: Add,Arithmetic,Binary,Expression,Operator
 .  .  .  .  .  TOKEN "+"
 .  .  .  .  .  StartPosition: {
@@ -74,7 +74,7 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1: send {
+.  .  .  .  1: send_operator {
 .  .  .  .  .  Roles: Arithmetic,Binary,Expression,Operator,Substract
 .  .  .  .  .  TOKEN "-"
 .  .  .  .  .  StartPosition: {
@@ -127,7 +127,7 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  2: send {
+.  .  .  .  2: send_operator {
 .  .  .  .  .  Roles: Arithmetic,Binary,Expression,Multiply,Operator
 .  .  .  .  .  TOKEN "*"
 .  .  .  .  .  StartPosition: {
@@ -180,7 +180,7 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  3: send {
+.  .  .  .  3: send_operator {
 .  .  .  .  .  Roles: Arithmetic,Binary,Divide,Expression,Operator
 .  .  .  .  .  TOKEN "/"
 .  .  .  .  .  StartPosition: {
@@ -233,7 +233,7 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  4: send {
+.  .  .  .  4: send_operator {
 .  .  .  .  .  Roles: Arithmetic,Binary,Expression,Modulo,Operator
 .  .  .  .  .  TOKEN "%"
 .  .  .  .  .  StartPosition: {
@@ -286,7 +286,7 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  5: send {
+.  .  .  .  5: send_operator {
 .  .  .  .  .  Roles: Arithmetic,Binary,Expression,Incomplete,Operator
 .  .  .  .  .  TOKEN "**"
 .  .  .  .  .  StartPosition: {
@@ -339,7 +339,7 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  6: send {
+.  .  .  .  6: send_operator {
 .  .  .  .  .  Roles: Arithmetic,Binary,Expression,Operator,Substract
 .  .  .  .  .  TOKEN "-"
 .  .  .  .  .  StartPosition: {
@@ -356,7 +356,7 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
+.  .  .  .  .  .  0: send_operator {
 .  .  .  .  .  .  .  Roles: Add,Arithmetic,Binary,Expression,Left,Operator
 .  .  .  .  .  .  .  TOKEN "+"
 .  .  .  .  .  .  .  StartPosition: {

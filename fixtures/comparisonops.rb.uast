@@ -21,7 +21,7 @@ module {
 .  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send {
+.  .  .  .  0: send_operator {
 .  .  .  .  .  Roles: Binary,Equal,Expression,Operator,Relational
 .  .  .  .  .  TOKEN "=="
 .  .  .  .  .  StartPosition: {
@@ -74,7 +74,7 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1: send {
+.  .  .  .  1: send_operator {
 .  .  .  .  .  Roles: Binary,Equal,Expression,Not,Operator,Relational
 .  .  .  .  .  TOKEN "!="
 .  .  .  .  .  StartPosition: {
@@ -127,8 +127,8 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  2: send {
-.  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  2: send_operator {
+.  .  .  .  .  Roles: Expression,Not,Operator,Relational,Unary
 .  .  .  .  .  TOKEN "!"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 14
@@ -163,8 +163,8 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  3: send {
-.  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  3: send_call {
+.  .  .  .  .  Roles: Call,Expression,Function
 .  .  .  .  .  TOKEN "<=>"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 20
@@ -198,7 +198,7 @@ module {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
+.  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Literal,Number,Primitive
 .  .  .  .  .  .  .  TOKEN "7"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 26
@@ -216,9 +216,9 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  4: send {
-.  .  .  .  .  Roles: Assignment,Expression,Left
-.  .  .  .  .  TOKEN "=="
+.  .  .  .  4: send_operator {
+.  .  .  .  .  Roles: Binary,Expression,Identical,Operator,Relational
+.  .  .  .  .  TOKEN "==="
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 28
 .  .  .  .  .  .  Line: 5
@@ -234,7 +234,7 @@ module {
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
+.  .  .  .  .  .  .  Roles: Expression,Left,Literal,Number,Primitive
 .  .  .  .  .  .  .  TOKEN "8"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 28
@@ -251,7 +251,7 @@ module {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Assignment,Expression,Literal,Number,Primitive,Right
+.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Right
 .  .  .  .  .  .  .  TOKEN "9"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 34
@@ -269,7 +269,7 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  5: send {
+.  .  .  .  5: send_operator {
 .  .  .  .  .  Roles: Binary,Expression,Identical,Operator,Relational
 .  .  .  .  .  TOKEN "eql?"
 .  .  .  .  .  StartPosition: {
@@ -322,7 +322,7 @@ module {
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  6: send {
+.  .  .  .  6: send_operator {
 .  .  .  .  .  Roles: Binary,Expression,Identical,Operator,Relational
 .  .  .  .  .  TOKEN "equal?"
 .  .  .  .  .  StartPosition: {

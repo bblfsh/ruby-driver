@@ -5,36 +5,60 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 10,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@type": "lvasgn",
-            "pos_col_end": 10,
-            "pos_col_start": 1,
-            "pos_line_end": 1,
-            "pos_line_start": 1,
             "target": "a",
             "value": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 10,
+                    "line": 1
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 5,
+                    "line": 1
+                },
                 "@type": "array",
                 "contents": [
                     {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 1
+                        },
                         "@token": 1,
-                        "@type": "int",
-                        "pos_col_end": 6,
-                        "pos_col_start": 6,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1
+                        "@type": "int"
                     },
                     {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 9,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 9,
+                            "line": 1
+                        },
                         "@token": 2,
-                        "@type": "int",
-                        "pos_col_end": 9,
-                        "pos_col_start": 9,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1
+                        "@type": "int"
                     }
-                ],
-                "pos_col_end": 10,
-                "pos_col_start": 5,
-                "pos_line_end": 1,
-                "pos_line_start": 1
+                ]
             }
         }
     }

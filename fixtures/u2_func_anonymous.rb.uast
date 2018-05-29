@@ -21,8 +21,9 @@ module {
 .  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send {
+.  .  .  .  0: send_statement {
 .  .  .  .  .  Roles: Anonymous,Declaration,Expression,Function
+.  .  .  .  .  TOKEN "lambda"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 0
 .  .  .  .  .  .  Line: 1
@@ -35,7 +36,6 @@ module {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: blockdata
-.  .  .  .  .  .  selector: lambda
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

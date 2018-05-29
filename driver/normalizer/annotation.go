@@ -1,8 +1,6 @@
 package normalizer
 
 import (
-	"strings"
-
 	"gopkg.in/bblfsh/sdk.v2/uast"
 	"gopkg.in/bblfsh/sdk.v2/uast/role"
 	. "gopkg.in/bblfsh/sdk.v2/uast/transformer"
@@ -44,60 +42,6 @@ func mapInternalProperty(key string, roles ...role.Role) Mapping {
 	)
 }
 
-type opSendAssign struct {
-	op Op
-}
-
-func (op opSendAssign) Check(st *State, n uast.Node) (bool, error) {
-	s, ok := n.(uast.String)
-	if !ok {
-		return false, nil
-	}
-
-	gostr := string(s)
-	if !strings.HasSuffix(gostr, "=") {
-		return false, nil
-	}
-
-	return op.op.Check(st, uast.String(gostr[:len(gostr)-1]))
-}
-
-func (op opSendAssign) Construct(st *State, n uast.Node) (uast.Node, error) {
-	n, err := op.op.Construct(st, n)
-	if err != nil {
-		return nil, err
-	}
-
-	v, ok := n.(uast.String)
-	if !ok {
-		return nil, ErrExpectedValue.New(n)
-	}
-
-	gostr := string(v) + "="
-	return uast.String(gostr), nil
-}
-
-type opSendOperator struct {
-	op Op
-}
-
-func (op opSendOperator) Check(st *State, n uast.Node) (bool, error) {
-	s, ok := n.(uast.String)
-	if !ok {
-		return false, nil
-	}
-
-	if _, ok := operatorRoles[s]; !ok {
-		return false, nil
-	}
-
-	return op.op.Check(st, n)
-}
-
-func (op opSendOperator) Construct(st *State, n uast.Node) (uast.Node, error) {
-	return op.op.Construct(st, n)
-}
-
 // Nodes doc:
 // https://github.com/whitequark/parser/blob/master/doc/AST_FORMAT.md
 
@@ -125,17 +69,11 @@ var operatorRoles = StringToRolesMap(map[string][]role.Role{
 	"eql?":   {role.Identical, role.Relational},
 	"equal?": {role.Identical, role.Relational},
 	// rocket ship operator
+	"===": {role.Identical, role.Relational},
 	"<==>": {role.Identical, role.Incomplete},
 })
 
 var Annotations = []Mapping{
-	ObjectToNode{
-		LineKey:      "pos_line_start",
-		ColumnKey:    "pos_col_start",
-		EndLineKey:   "pos_line_end",
-		EndColumnKey: "pos_col_end",
-	}.Mapping(),
-
 	AnnotateType("file", nil, role.File),
 	AnnotateType("begin", nil, role.Block),
 	AnnotateType("body", nil, role.Body),
@@ -290,54 +228,53 @@ var Annotations = []Mapping{
 	}, role.Expression, role.List, role.Incomplete),
 
 	// The many faces of Ruby's "send" start here ===>
-
-	MapAST("send", Obj{
+	MapAST("send_statement", Obj{
 		"selector": String("continue"),
 	}, Obj{
-		"selector": String("continue"),
+		uast.KeyToken: String("continue"),
 	}, role.Statement, role.Continue),
 
-	MapAST("send", Obj{
+	MapAST("send_statement", Obj{
 		"selector": String("lambda"),
 	}, Obj{
-		"selector": String("lambda"),
+		uast.KeyToken: String("lambda"),
 	}, role.Expression, role.Declaration, role.Function, role.Anonymous),
 
-	MapAST("send", Obj{
+	MapAST("send_statement", Obj{
 		"selector": String("require"),
 	}, Obj{
-		"selector": String("require"),
+		uast.KeyToken: String("require"),
 	}, role.Expression, role.Import),
 
-	MapAST("send", Obj{
+	MapAST("send_statement", Obj{
 		"selector": String("each"),
 	}, Obj{
-		"selector": String("each"),
+		uast.KeyToken: String("each"),
 	}, role.Statement, role.For, role.Iterator),
 
-	MapAST("send", Obj{
+	MapAST("send_statement", Obj{
 		"selector": String("public"),
 	}, Obj{
-		"selector": String("public"),
+		uast.KeyToken: String("public"),
 	}, role.Statement, role.Visibility, role.World),
 
-	MapAST("send", Obj{
+	MapAST("send_statement", Obj{
 		"selector": String("protected"),
 	}, Obj{
-		"selector": String("protected"),
+		uast.KeyToken: String("protected"),
 	}, role.Statement, role.Visibility, role.Subtype),
 
-	MapAST("send", Obj{
+	MapAST("send_statement", Obj{
 		"selector": String("private"),
 	}, Obj{
-		"selector": String("private"),
+		uast.KeyType: String("private"),
 	}, role.Statement, role.Visibility, role.Instance),
 
 	// Operator expression "send"
-	MapASTCustom("send", Obj{
+	MapASTCustom("send_operator", Obj{
 		"base":     ObjectRoles("bs"),
-		"values":   Check(Not(Is(nil)), EachObjectRoles("values")),
-		"selector": opSendOperator{op: Var("selector")},
+		"values":   EachObjectRoles("values"),
+		"selector": Var("selector"),
 	}, Obj{
 		"base":        ObjectRoles("bs", role.Left),
 		"values":      EachObjectRoles("values", role.Right),
@@ -346,64 +283,34 @@ var Annotations = []Mapping{
 		LookupArrOpVar("selector", operatorRoles),
 		role.Expression, role.Binary, role.Operator),
 
-	// Assignment "send"
-	MapAST("send", Obj{
-		"base":     Var("base"),
-		"values":   EachObjectRoles("values"),
-		"selector": opSendAssign{op: Var("selector")},
+	// Same without values (unary)
+	MapASTCustom("send_operator", Obj{
+		"selector": Var("selector"),
+	}, Obj{
+		uast.KeyToken: Var("selector"),
+	},
+		LookupArrOpVar("selector", operatorRoles),
+		role.Expression, role.Unary, role.Operator),
+
+	// Assignment "send" (self.foo = 1)
+	MapAST("send_assign", Obj{
+		"base":        Var("base"),
+		"values":      EachObjectRoles("values"),
+		"selector":    Var("sel"),
+		uast.KeyToken: Var("tk"),
 	}, Obj{
 		"base":        Var("base"),
 		"values":      EachObjectRoles("values", role.Assignment, role.Right),
-		uast.KeyToken: Var("selector"),
+		"selector":    Var("sel"),
+		uast.KeyToken: Var("tk"),
 	}, role.Expression, role.Assignment, role.Left),
-
-	// Parent of the last element of the qualified identifier (annotates
-	// it and the child which is a normal identifier)
-	MapAST("send", Obj{
-		"base": Obj{
-			uast.KeyType:  String("send"),
-			uast.KeyStart: Var("childstart"),
-			uast.KeyEnd:   Var("childend"),
-			"base":        Check(Is(nil), Var("childbase")),
-			"selector":    Var("childselector"),
-			uast.KeyRoles: Var("roles"),
-		},
-		"selector": Var("selector"),
-	}, Obj{
-		"base": Obj{
-			uast.KeyType:  String("send"),
-			uast.KeyStart: Var("childstart"),
-			uast.KeyEnd:   Var("childend"),
-			"base":        Var("childbase"),
-			"selector":    Var("childselector"),
-			uast.KeyRoles: Append(Var("roles"), Roles(role.Identifier)),
-			"__notcall":   Bool(true),
-		},
-		uast.KeyToken: Var("selector"),
-	}, role.Expression, role.Qualified, role.Identical),
 
 	// Qualified identifier "send" (other than the parent of the last one that will
 	// match the rule above)
-	MapAST("send", Obj{
-		"base":     Check(Not(Is(nil)), Var("base")),
-		"selector": Var("selector"),
-	}, Obj{
-		"base":        Var("base"),
-		uast.KeyToken: Var("selector"),
-	}, role.Expression, role.Qualified, role.Identifier),
-
-	// Function call "send" without arguments
-	MapAST("send", Obj{
-		"base":      Var("base"),
-		"selector":  Var("selector"),
-		//"__notcall": Check(Is(nil), Var("__notcall")),
-	}, Obj{
-		"base":        Var("base"),
-		uast.KeyToken: Var("selector"),
-	}, role.Expression, role.Function, role.Call),
+	AnnotateType("send_qualified", nil, role.Expression, role.Qualified, role.Identical),
 
 	// Function call "send" with arguments
-	MapAST("send", Obj{
+	MapAST("send_call", Obj{
 		"base":     Var("base"),
 		"selector": Var("selector"),
 		"values":   EachObjectRoles("values"),
@@ -412,4 +319,15 @@ var Annotations = []Mapping{
 		"values":      EachObjectRoles("values", role.Function, role.Call, role.Argument),
 		uast.KeyToken: Var("selector"),
 	}, role.Expression, role.Function, role.Call),
+
+	// Function call "send" without arguments
+	MapAST("send_call", Obj{
+		"base":      Var("base"),
+		"selector":  Var("selector"),
+	}, Obj{
+		"base":        Var("base"),
+		uast.KeyToken: Var("selector"),
+	}, role.Expression, role.Function, role.Call),
+
+	AnnotateType("send_array", nil, role.Expression, role.List),
 }

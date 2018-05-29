@@ -5,51 +5,81 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 5,
+                "line": 2
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 2
+            },
             "@type": "lvasgn",
             "comments": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 10,
+                        "line": 1
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1
+                    },
                     "@token": " previous",
                     "@type": "comment",
                     "documentation": false,
-                    "inline": true,
-                    "pos_col_end": 10,
-                    "pos_col_start": 1,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1
+                    "inline": true
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 14,
+                        "line": 2
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 7,
+                        "line": 2
+                    },
                     "@token": " inline",
                     "@type": "comment",
                     "documentation": false,
-                    "inline": true,
-                    "pos_col_end": 14,
-                    "pos_col_start": 7,
-                    "pos_line_end": 2,
-                    "pos_line_start": 2
+                    "inline": true
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 7,
+                        "line": 3
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 3
+                    },
                     "@token": " after",
                     "@type": "comment",
                     "documentation": false,
-                    "inline": true,
-                    "pos_col_end": 7,
-                    "pos_col_start": 1,
-                    "pos_line_end": 3,
-                    "pos_line_start": 3
+                    "inline": true
                 }
             ],
-            "pos_col_end": 5,
-            "pos_col_start": 1,
-            "pos_line_end": 2,
-            "pos_line_start": 2,
             "target": "a",
             "value": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 5,
+                    "line": 2
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 5,
+                    "line": 2
+                },
                 "@token": 1,
-                "@type": "int",
-                "pos_col_end": 5,
-                "pos_col_start": 5,
-                "pos_line_end": 2,
-                "pos_line_start": 2
+                "@type": "int"
             }
         }
     }

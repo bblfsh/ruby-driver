@@ -5,113 +5,191 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 5,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@token": "A",
             "@type": "class",
             "body": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 7,
+                        "line": 10
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 2
+                    },
                     "@type": "begin",
                     "body": [
                         {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 7,
+                                "line": 2
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 2
+                            },
                             "@token": "method1",
                             "@type": "def",
                             "args": {
-                                "@type": "args",
-                                "pos_col_end": 17,
-                                "pos_col_start": 16,
-                                "pos_line_end": 2,
-                                "pos_line_start": 2
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 17,
+                                    "line": 2
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 16,
+                                    "line": 2
+                                },
+                                "@type": "args"
                             },
                             "body": [
                                 {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 14,
+                                        "line": 3
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 9,
+                                        "line": 3
+                                    },
                                     "@type": "return",
-                                    "pos_col_end": 14,
-                                    "pos_col_start": 9,
-                                    "pos_line_end": 3,
-                                    "pos_line_start": 3,
                                     "target": null
                                 }
-                            ],
-                            "pos_col_end": 7,
-                            "pos_col_start": 5,
-                            "pos_line_end": 2,
-                            "pos_line_start": 2
+                            ]
                         },
                         {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 7,
+                                "line": 5
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 5
+                            },
                             "@token": "method2",
                             "@type": "def",
                             "args": {
-                                "@type": "args",
-                                "pos_col_end": 17,
-                                "pos_col_start": 16,
-                                "pos_line_end": 5,
-                                "pos_line_start": 5
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 17,
+                                    "line": 5
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 16,
+                                    "line": 5
+                                },
+                                "@type": "args"
                             },
                             "body": [
                                 {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 14,
+                                        "line": 6
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 9,
+                                        "line": 6
+                                    },
                                     "@type": "return",
-                                    "pos_col_end": 14,
-                                    "pos_col_start": 9,
-                                    "pos_line_end": 6,
-                                    "pos_line_start": 6,
                                     "target": {
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 16,
+                                            "line": 6
+                                        },
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 16,
+                                            "line": 6
+                                        },
                                         "@token": 1,
-                                        "@type": "int",
-                                        "pos_col_end": 16,
-                                        "pos_col_start": 16,
-                                        "pos_line_end": 6,
-                                        "pos_line_start": 6
+                                        "@type": "int"
                                     }
                                 }
-                            ],
-                            "pos_col_end": 7,
-                            "pos_col_start": 5,
-                            "pos_line_end": 5,
-                            "pos_line_start": 5
+                            ]
                         },
                         {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 7,
+                                "line": 8
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 8
+                            },
                             "@token": "method3",
                             "@type": "def",
                             "args": {
-                                "@type": "args",
-                                "pos_col_end": 17,
-                                "pos_col_start": 16,
-                                "pos_line_end": 8,
-                                "pos_line_start": 8
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 17,
+                                    "line": 8
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 16,
+                                    "line": 8
+                                },
+                                "@type": "args"
                             },
                             "body": [
                                 {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 14,
+                                        "line": 9
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 9,
+                                        "line": 9
+                                    },
                                     "@type": "return",
-                                    "pos_col_end": 14,
-                                    "pos_col_start": 9,
-                                    "pos_line_end": 9,
-                                    "pos_line_start": 9,
                                     "target": {
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 16,
+                                            "line": 9
+                                        },
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 16,
+                                            "line": 9
+                                        },
                                         "@token": 2,
-                                        "@type": "int",
-                                        "pos_col_end": 16,
-                                        "pos_col_start": 16,
-                                        "pos_line_end": 9,
-                                        "pos_line_start": 9
+                                        "@type": "int"
                                     }
                                 }
-                            ],
-                            "pos_col_end": 7,
-                            "pos_col_start": 5,
-                            "pos_line_end": 8,
-                            "pos_line_start": 8
+                            ]
                         }
-                    ],
-                    "pos_col_end": 7,
-                    "pos_col_start": 5,
-                    "pos_line_end": 10,
-                    "pos_line_start": 2
+                    ]
                 }
             ],
-            "parent": null,
-            "pos_col_end": 5,
-            "pos_col_start": 1,
-            "pos_line_end": 1,
-            "pos_line_start": 1
+            "parent": null
         }
     }
 }

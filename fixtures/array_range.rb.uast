@@ -126,9 +126,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Binary,Expression,Identifier,Qualified,Right
-.  .  .  .  .  .  .  TOKEN "[]"
+.  .  .  .  .  .  0: send_array {
+.  .  .  .  .  .  .  Roles: Binary,Expression,List,Right
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 24
 .  .  .  .  .  .  .  .  Line: 2
@@ -141,6 +140,7 @@ module {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  .  .  selector: []
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: lvar {
@@ -233,9 +233,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Binary,Expression,Identifier,Qualified,Right
-.  .  .  .  .  .  .  TOKEN "[]"
+.  .  .  .  .  .  0: send_array {
+.  .  .  .  .  .  .  Roles: Binary,Expression,List,Right
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 45
 .  .  .  .  .  .  .  .  Line: 3
@@ -248,6 +247,7 @@ module {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  .  .  selector: []
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: lvar {
@@ -340,9 +340,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Binary,Expression,Identifier,Qualified,Right
-.  .  .  .  .  .  .  TOKEN "[]"
+.  .  .  .  .  .  0: send_array {
+.  .  .  .  .  .  .  Roles: Binary,Expression,List,Right
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 63
 .  .  .  .  .  .  .  .  Line: 4
@@ -355,6 +354,7 @@ module {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  .  .  selector: []
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: lvar {

@@ -5,13 +5,43 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 6,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@token": "FooMod",
             "@type": "module",
             "begin": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 3,
+                        "line": 25
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 3
+                    },
                     "@type": "begin",
                     "body": [
                         {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 3
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 1,
+                                "line": 3
+                            },
                             "@token": "Foo",
                             "@type": "class",
                             "body": [
@@ -19,270 +49,426 @@
                                     "@type": "NilNode"
                                 }
                             ],
-                            "parent": null,
-                            "pos_col_end": 5,
-                            "pos_col_start": 1,
-                            "pos_line_end": 3,
-                            "pos_line_start": 3
+                            "parent": null
                         },
                         {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 6
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 1,
+                                "line": 6
+                            },
                             "@token": "Bar",
                             "@type": "class",
                             "body": [
                                 {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 7,
+                                        "line": 24
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 5,
+                                        "line": 7
+                                    },
                                     "@type": "begin",
                                     "body": [
                                         {
+                                            "@end": {
+                                                "@type": "ast:Position",
+                                                "col": 19,
+                                                "line": 7
+                                            },
+                                            "@start": {
+                                                "@type": "ast:Position",
+                                                "col": 5,
+                                                "line": 7
+                                            },
                                             "@type": "cvasgn",
-                                            "pos_col_end": 19,
-                                            "pos_col_start": 5,
-                                            "pos_line_end": 7,
-                                            "pos_line_start": 7,
                                             "target": "@@classvar",
                                             "value": {
+                                                "@end": {
+                                                    "@type": "ast:Position",
+                                                    "col": 19,
+                                                    "line": 7
+                                                },
+                                                "@start": {
+                                                    "@type": "ast:Position",
+                                                    "col": 18,
+                                                    "line": 7
+                                                },
                                                 "@token": 10,
-                                                "@type": "int",
-                                                "pos_col_end": 19,
-                                                "pos_col_start": 18,
-                                                "pos_line_end": 7,
-                                                "pos_line_start": 7
+                                                "@type": "int"
                                             }
                                         },
                                         {
+                                            "@end": {
+                                                "@type": "ast:Position",
+                                                "col": 7,
+                                                "line": 8
+                                            },
+                                            "@start": {
+                                                "@type": "ast:Position",
+                                                "col": 5,
+                                                "line": 8
+                                            },
                                             "@token": "initialize",
                                             "@type": "def",
                                             "args": {
+                                                "@end": {
+                                                    "@type": "ast:Position",
+                                                    "col": 21,
+                                                    "line": 8
+                                                },
+                                                "@start": {
+                                                    "@type": "ast:Position",
+                                                    "col": 19,
+                                                    "line": 8
+                                                },
                                                 "@type": "args",
                                                 "children": [
                                                     {
+                                                        "@end": {
+                                                            "@type": "ast:Position",
+                                                            "col": 20,
+                                                            "line": 8
+                                                        },
+                                                        "@start": {
+                                                            "@type": "ast:Position",
+                                                            "col": 20,
+                                                            "line": 8
+                                                        },
                                                         "@token": "a",
-                                                        "@type": "arg",
-                                                        "pos_col_end": 20,
-                                                        "pos_col_start": 20,
-                                                        "pos_line_end": 8,
-                                                        "pos_line_start": 8
+                                                        "@type": "arg"
                                                     }
-                                                ],
-                                                "pos_col_end": 21,
-                                                "pos_col_start": 19,
-                                                "pos_line_end": 8,
-                                                "pos_line_start": 8
+                                                ]
                                             },
                                             "body": [
                                                 {
+                                                    "@end": {
+                                                        "@type": "ast:Position",
+                                                        "col": 25,
+                                                        "line": 9
+                                                    },
+                                                    "@start": {
+                                                        "@type": "ast:Position",
+                                                        "col": 9,
+                                                        "line": 9
+                                                    },
                                                     "@type": "ivasgn",
-                                                    "pos_col_end": 25,
-                                                    "pos_col_start": 9,
-                                                    "pos_line_end": 9,
-                                                    "pos_line_start": 9,
                                                     "target": "@instance_var",
                                                     "value": {
+                                                        "@end": {
+                                                            "@type": "ast:Position",
+                                                            "col": 25,
+                                                            "line": 9
+                                                        },
+                                                        "@start": {
+                                                            "@type": "ast:Position",
+                                                            "col": 25,
+                                                            "line": 9
+                                                        },
                                                         "@token": "a",
-                                                        "@type": "lvar",
-                                                        "pos_col_end": 25,
-                                                        "pos_col_start": 25,
-                                                        "pos_line_end": 9,
-                                                        "pos_line_start": 9
+                                                        "@type": "lvar"
                                                     }
                                                 }
-                                            ],
-                                            "pos_col_end": 7,
-                                            "pos_col_start": 5,
-                                            "pos_line_end": 8,
-                                            "pos_line_start": 8
+                                            ]
                                         },
                                         {
+                                            "@end": {
+                                                "@type": "ast:Position",
+                                                "col": 7,
+                                                "line": 12
+                                            },
+                                            "@start": {
+                                                "@type": "ast:Position",
+                                                "col": 5,
+                                                "line": 12
+                                            },
                                             "@token": "foo",
                                             "@type": "def",
                                             "args": {
-                                                "@type": "args",
-                                                "pos_col_end": 13,
-                                                "pos_col_start": 12,
-                                                "pos_line_end": 12,
-                                                "pos_line_start": 12
+                                                "@end": {
+                                                    "@type": "ast:Position",
+                                                    "col": 13,
+                                                    "line": 12
+                                                },
+                                                "@start": {
+                                                    "@type": "ast:Position",
+                                                    "col": 12,
+                                                    "line": 12
+                                                },
+                                                "@type": "args"
                                             },
                                             "body": [
                                                 {
                                                     "@type": "NilNode"
                                                 }
-                                            ],
-                                            "pos_col_end": 7,
-                                            "pos_col_start": 5,
-                                            "pos_line_end": 12,
-                                            "pos_line_start": 12
+                                            ]
                                         },
                                         {
+                                            "@end": {
+                                                "@type": "ast:Position",
+                                                "col": 7,
+                                                "line": 15
+                                            },
+                                            "@start": {
+                                                "@type": "ast:Position",
+                                                "col": 5,
+                                                "line": 15
+                                            },
                                             "@token": "use",
                                             "@type": "def",
                                             "args": {
-                                                "@type": "args",
-                                                "pos_col_end": 13,
-                                                "pos_col_start": 12,
-                                                "pos_line_end": 15,
-                                                "pos_line_start": 15
+                                                "@end": {
+                                                    "@type": "ast:Position",
+                                                    "col": 13,
+                                                    "line": 15
+                                                },
+                                                "@start": {
+                                                    "@type": "ast:Position",
+                                                    "col": 12,
+                                                    "line": 15
+                                                },
+                                                "@type": "args"
                                             },
                                             "body": [
                                                 {
+                                                    "@end": {
+                                                        "@type": "ast:Position",
+                                                        "col": 18,
+                                                        "line": 19
+                                                    },
+                                                    "@start": {
+                                                        "@type": "ast:Position",
+                                                        "col": 9,
+                                                        "line": 16
+                                                    },
                                                     "@type": "begin",
                                                     "body": [
                                                         {
-                                                            "@type": "send",
+                                                            "@end": {
+                                                                "@type": "ast:Position",
+                                                                "col": 23,
+                                                                "line": 16
+                                                            },
+                                                            "@start": {
+                                                                "@type": "ast:Position",
+                                                                "col": 9,
+                                                                "line": 16
+                                                            },
+                                                            "@type": "send_qualified",
                                                             "base": null,
-                                                            "pos_col_end": 23,
-                                                            "pos_col_start": 9,
-                                                            "pos_line_end": 16,
-                                                            "pos_line_start": 16,
                                                             "selector": "puts",
                                                             "values": [
                                                                 {
+                                                                    "@end": {
+                                                                        "@type": "ast:Position",
+                                                                        "col": 23,
+                                                                        "line": 16
+                                                                    },
+                                                                    "@start": {
+                                                                        "@type": "ast:Position",
+                                                                        "col": 14,
+                                                                        "line": 16
+                                                                    },
                                                                     "@token": "@@classvar",
-                                                                    "@type": "cvar",
-                                                                    "pos_col_end": 23,
-                                                                    "pos_col_start": 14,
-                                                                    "pos_line_end": 16,
-                                                                    "pos_line_start": 16
+                                                                    "@type": "cvar"
                                                                 }
                                                             ]
                                                         },
                                                         {
-                                                            "@type": "send",
+                                                            "@end": {
+                                                                "@type": "ast:Position",
+                                                                "col": 26,
+                                                                "line": 17
+                                                            },
+                                                            "@start": {
+                                                                "@type": "ast:Position",
+                                                                "col": 9,
+                                                                "line": 17
+                                                            },
+                                                            "@type": "send_qualified",
                                                             "base": null,
-                                                            "pos_col_end": 26,
-                                                            "pos_col_start": 9,
-                                                            "pos_line_end": 17,
-                                                            "pos_line_start": 17,
                                                             "selector": "puts",
                                                             "values": [
                                                                 {
+                                                                    "@end": {
+                                                                        "@type": "ast:Position",
+                                                                        "col": 26,
+                                                                        "line": 17
+                                                                    },
+                                                                    "@start": {
+                                                                        "@type": "ast:Position",
+                                                                        "col": 14,
+                                                                        "line": 17
+                                                                    },
                                                                     "@token": "@instance_var",
-                                                                    "@type": "ivar",
-                                                                    "pos_col_end": 26,
-                                                                    "pos_col_start": 14,
-                                                                    "pos_line_end": 17,
-                                                                    "pos_line_start": 17
+                                                                    "@type": "ivar"
                                                                 }
                                                             ]
                                                         },
                                                         {
-                                                            "@type": "send",
+                                                            "@end": {
+                                                                "@type": "ast:Position",
+                                                                "col": 13,
+                                                                "line": 18
+                                                            },
+                                                            "@start": {
+                                                                "@type": "ast:Position",
+                                                                "col": 9,
+                                                                "line": 18
+                                                            },
+                                                            "@type": "send_qualified",
                                                             "base": null,
-                                                            "pos_col_end": 13,
-                                                            "pos_col_start": 9,
-                                                            "pos_line_end": 18,
-                                                            "pos_line_start": 18,
                                                             "selector": "foo"
                                                         },
                                                         {
-                                                            "@type": "send",
-                                                            "base": {
-                                                                "@type": "self",
-                                                                "pos_col_end": 12,
-                                                                "pos_col_start": 9,
-                                                                "pos_line_end": 19,
-                                                                "pos_line_start": 19
+                                                            "@end": {
+                                                                "@type": "ast:Position",
+                                                                "col": 18,
+                                                                "line": 19
                                                             },
-                                                            "pos_col_end": 18,
-                                                            "pos_col_start": 9,
-                                                            "pos_line_end": 19,
-                                                            "pos_line_start": 19,
+                                                            "@start": {
+                                                                "@type": "ast:Position",
+                                                                "col": 9,
+                                                                "line": 19
+                                                            },
+                                                            "@type": "send_call",
+                                                            "base": {
+                                                                "@end": {
+                                                                    "@type": "ast:Position",
+                                                                    "col": 12,
+                                                                    "line": 19
+                                                                },
+                                                                "@start": {
+                                                                    "@type": "ast:Position",
+                                                                    "col": 9,
+                                                                    "line": 19
+                                                                },
+                                                                "@type": "self"
+                                                            },
                                                             "selector": "foo"
                                                         }
-                                                    ],
-                                                    "pos_col_end": 18,
-                                                    "pos_col_start": 9,
-                                                    "pos_line_end": 19,
-                                                    "pos_line_start": 16
+                                                    ]
                                                 }
-                                            ],
-                                            "pos_col_end": 7,
-                                            "pos_col_start": 5,
-                                            "pos_line_end": 15,
-                                            "pos_line_start": 15
+                                            ]
                                         },
                                         {
+                                            "@end": {
+                                                "@type": "ast:Position",
+                                                "col": 7,
+                                                "line": 22
+                                            },
+                                            "@start": {
+                                                "@type": "ast:Position",
+                                                "col": 5,
+                                                "line": 22
+                                            },
                                             "@token": "selfinstance",
                                             "@type": "def",
                                             "args": {
-                                                "@type": "args",
-                                                "pos_col_end": 22,
-                                                "pos_col_start": 21,
-                                                "pos_line_end": 22,
-                                                "pos_line_start": 22
+                                                "@end": {
+                                                    "@type": "ast:Position",
+                                                    "col": 22,
+                                                    "line": 22
+                                                },
+                                                "@start": {
+                                                    "@type": "ast:Position",
+                                                    "col": 21,
+                                                    "line": 22
+                                                },
+                                                "@type": "args"
                                             },
                                             "body": [
                                                 {
+                                                    "@end": {
+                                                        "@type": "ast:Position",
+                                                        "col": 22,
+                                                        "line": 23
+                                                    },
+                                                    "@start": {
+                                                        "@type": "ast:Position",
+                                                        "col": 9,
+                                                        "line": 23
+                                                    },
                                                     "@type": "lvasgn",
-                                                    "pos_col_end": 22,
-                                                    "pos_col_start": 9,
-                                                    "pos_line_end": 23,
-                                                    "pos_line_start": 23,
                                                     "target": "b",
                                                     "value": {
-                                                        "@type": "send",
+                                                        "@end": {
+                                                            "@type": "ast:Position",
+                                                            "col": 22,
+                                                            "line": 23
+                                                        },
+                                                        "@start": {
+                                                            "@type": "ast:Position",
+                                                            "col": 13,
+                                                            "line": 23
+                                                        },
+                                                        "@type": "send_call",
                                                         "base": {
+                                                            "@end": {
+                                                                "@type": "ast:Position",
+                                                                "col": 15,
+                                                                "line": 23
+                                                            },
+                                                            "@start": {
+                                                                "@type": "ast:Position",
+                                                                "col": 13,
+                                                                "line": 23
+                                                            },
                                                             "@token": "Bar",
                                                             "@type": "const",
-                                                            "base": null,
-                                                            "pos_col_end": 15,
-                                                            "pos_col_start": 13,
-                                                            "pos_line_end": 23,
-                                                            "pos_line_start": 23
+                                                            "base": null
                                                         },
-                                                        "pos_col_end": 22,
-                                                        "pos_col_start": 13,
-                                                        "pos_line_end": 23,
-                                                        "pos_line_start": 23,
                                                         "selector": "new",
                                                         "values": [
                                                             {
+                                                                "@end": {
+                                                                    "@type": "ast:Position",
+                                                                    "col": 21,
+                                                                    "line": 23
+                                                                },
+                                                                "@start": {
+                                                                    "@type": "ast:Position",
+                                                                    "col": 21,
+                                                                    "line": 23
+                                                                },
                                                                 "@token": 1,
-                                                                "@type": "int",
-                                                                "pos_col_end": 21,
-                                                                "pos_col_start": 21,
-                                                                "pos_line_end": 23,
-                                                                "pos_line_start": 23
+                                                                "@type": "int"
                                                             }
                                                         ]
                                                     }
                                                 }
-                                            ],
-                                            "pos_col_end": 7,
-                                            "pos_col_start": 5,
-                                            "pos_line_end": 22,
-                                            "pos_line_start": 22
+                                            ]
                                         }
-                                    ],
-                                    "pos_col_end": 7,
-                                    "pos_col_start": 5,
-                                    "pos_line_end": 24,
-                                    "pos_line_start": 7
+                                    ]
                                 }
                             ],
                             "parent": {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 15,
+                                    "line": 6
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 13,
+                                    "line": 6
+                                },
                                 "@token": "Foo",
                                 "@type": "const",
-                                "base": null,
-                                "pos_col_end": 15,
-                                "pos_col_start": 13,
-                                "pos_line_end": 6,
-                                "pos_line_start": 6
-                            },
-                            "pos_col_end": 5,
-                            "pos_col_start": 1,
-                            "pos_line_end": 6,
-                            "pos_line_start": 6
+                                "base": null
+                            }
                         }
-                    ],
-                    "pos_col_end": 3,
-                    "pos_col_start": 1,
-                    "pos_line_end": 25,
-                    "pos_line_start": 3
+                    ]
                 }
-            ],
-            "pos_col_end": 6,
-            "pos_col_start": 1,
-            "pos_line_end": 1,
-            "pos_line_start": 1
+            ]
         }
     }
 }

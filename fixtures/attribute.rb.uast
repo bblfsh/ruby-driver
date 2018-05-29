@@ -5,7 +5,7 @@ UAST:
 module {
 .  Roles: Identifier,Module,Statement
 .  Children: {
-.  .  0: send {
+.  .  0: send_assign {
 .  .  .  Roles: Assignment,Expression,Left
 .  .  .  TOKEN "foo"
 .  .  .  StartPosition: {
@@ -20,6 +20,7 @@ module {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: file
+.  .  .  .  selector: foo=
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: self {

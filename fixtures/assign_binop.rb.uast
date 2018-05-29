@@ -257,8 +257,8 @@ module {
 .  .  .  .  .  .  .  .  internalRole: operator
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Binary,Expression,Identifier,Left,Qualified
+.  .  .  .  .  .  1: send_call {
+.  .  .  .  .  .  .  Roles: Binary,Call,Expression,Function,Left
 .  .  .  .  .  .  .  TOKEN "x"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 29
@@ -335,9 +335,8 @@ module {
 .  .  .  .  .  .  .  .  internalRole: operator
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Binary,Expression,Identifier,Left,Qualified
-.  .  .  .  .  .  .  TOKEN "[]"
+.  .  .  .  .  .  1: send_array {
+.  .  .  .  .  .  .  Roles: Binary,Expression,Left,List
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 40
 .  .  .  .  .  .  .  .  Line: 8
@@ -350,6 +349,7 @@ module {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: target
+.  .  .  .  .  .  .  .  selector: []
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: ivar {

@@ -38,8 +38,9 @@ module {
 .  .  .  .  .  .  internalRole: condition
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  1: send {
+.  .  .  .  1: send_statement {
 .  .  .  .  .  Roles: Body,Continue,Statement
+.  .  .  .  .  TOKEN "continue"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 15
 .  .  .  .  .  .  Line: 2
@@ -52,7 +53,6 @@ module {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  selector: continue
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: send_statement {

@@ -5,29 +5,47 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 3,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@token": "testfnc1",
             "@type": "def",
             "args": {
-                "@type": "args",
-                "pos_col_end": 14,
-                "pos_col_start": 13,
-                "pos_line_end": 1,
-                "pos_line_start": 1
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 14,
+                    "line": 1
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 13,
+                    "line": 1
+                },
+                "@type": "args"
             },
             "body": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 2
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 2
+                    },
                     "@token": 1,
-                    "@type": "int",
-                    "pos_col_end": 5,
-                    "pos_col_start": 5,
-                    "pos_line_end": 2,
-                    "pos_line_start": 2
+                    "@type": "int"
                 }
-            ],
-            "pos_col_end": 3,
-            "pos_col_start": 1,
-            "pos_line_end": 1,
-            "pos_line_start": 1
+            ]
         }
     }
 }

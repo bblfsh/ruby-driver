@@ -22,8 +22,8 @@ module {
 .  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send {
-.  .  .  .  .  Roles: Binary,Expression,Identifier,Qualified,Right
+.  .  .  .  0: send_call {
+.  .  .  .  .  Roles: Binary,Call,Expression,Function,Right
 .  .  .  .  .  TOKEN "try"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 4
@@ -56,7 +56,7 @@ module {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: sym {
-.  .  .  .  .  .  .  Roles: Expression,Identifier
+.  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Identifier
 .  .  .  .  .  .  .  TOKEN "foo"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 13

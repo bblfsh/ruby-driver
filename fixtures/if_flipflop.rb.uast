@@ -53,8 +53,8 @@ module {
 .  .  .  .  .  .  .  .  internalRole: condition
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  .  .  Roles: Identifier,Incomplete,Tuple,Value
+.  .  .  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  .  .  Roles: Expression,Identical,Identifier,Incomplete,Qualified,Tuple,Value
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 3
 .  .  .  .  .  .  .  .  .  .  Line: 1
@@ -70,8 +70,8 @@ module {
 .  .  .  .  .  .  .  .  .  .  selector: a
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  .  .  Roles: Identical,Incomplete,Tuple,Value
+.  .  .  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  .  .  Roles: Expression,Identical,Incomplete,Qualified,Tuple,Value
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 6
 .  .  .  .  .  .  .  .  .  .  Line: 1
@@ -159,8 +159,8 @@ module {
 .  .  .  .  .  .  .  .  internalRole: condition
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  .  .  Roles: Tuple,Value
+.  .  .  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  .  .  Roles: Expression,Identical,Qualified,Tuple,Value
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 26
 .  .  .  .  .  .  .  .  .  .  Line: 5
@@ -176,8 +176,8 @@ module {
 .  .  .  .  .  .  .  .  .  .  selector: d
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  .  .  Roles: Tuple,Value
+.  .  .  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  .  .  Roles: Expression,Identical,Qualified,Tuple,Value
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 30
 .  .  .  .  .  .  .  .  .  .  Line: 5

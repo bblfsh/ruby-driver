@@ -37,8 +37,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Condition,Expression
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Condition,Expression,Identical,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 3
 .  .  .  .  .  .  .  .  Line: 1
@@ -108,8 +108,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Condition,Expression
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Condition,Expression,Identical,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 25
 .  .  .  .  .  .  .  .  Line: 5
@@ -233,8 +233,8 @@ module {
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Condition,Expression
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Condition,Expression,Identical,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 57
 .  .  .  .  .  .  .  .  Line: 10
@@ -340,8 +340,8 @@ module {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Condition,Expression
+.  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  Roles: Condition,Expression,Identical,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 83
 .  .  .  .  .  .  .  .  Line: 12

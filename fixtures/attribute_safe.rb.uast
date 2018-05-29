@@ -22,8 +22,9 @@ module {
 .  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: csend {
-.  .  .  .  .  Roles: Binary,Right
+.  .  .  .  0: send_call {
+.  .  .  .  .  Roles: Binary,Call,Expression,Function,Right
+.  .  .  .  .  TOKEN "foo"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 4
 .  .  .  .  .  .  Line: 1
@@ -36,7 +37,6 @@ module {
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: value
-.  .  .  .  .  .  selector: foo
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: self {

@@ -5,21 +5,33 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 6,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@token": "Foo",
             "@type": "const",
             "base": {
-                "@type": "send",
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 1,
+                    "line": 1
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 1,
+                    "line": 1
+                },
+                "@type": "send_qualified",
                 "base": null,
-                "pos_col_end": 1,
-                "pos_col_start": 1,
-                "pos_line_end": 1,
-                "pos_line_start": 1,
                 "selector": "a"
-            },
-            "pos_col_end": 6,
-            "pos_col_start": 1,
-            "pos_line_end": 1,
-            "pos_line_start": 1
+            }
         }
     }
 }

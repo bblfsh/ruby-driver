@@ -6,6 +6,10 @@ require 'parser/current'
 module NodeConverter
   class Converter
     @@typekey = "@type"
+    @@statement_send = ["continue", "lambda", "require", "each", "public", "protected",
+                        "private"]
+    @@operators = ["+", "-", "*", "/", "%", "**", "&", "|", "^", "~", "<<", ">>",
+                   "==", "===", "<=", ">=", "!=", "!", "eql?", "equal?", "<==>"]
 
     def initialize(node, comments)
       @empty_with_comments = false
@@ -189,7 +193,7 @@ module NodeConverter
     # after cdr_index will be converted and assigned as a list of dictnodes to the cdr_key
     # property in the node.
     def sexp_to_hash(node, table, cdr_index=nil, cdr_key=nil)
-      d = {@@typekey=> node_type(node)}
+      d = {@@typekey => node_type(node)}
 
       table.each do |propname, idx|
         if propname.start_with? "s_"
@@ -253,11 +257,17 @@ module NodeConverter
     def add_from_subelem(node, hash, key)
       subelem = node.loc.send(key)
       if subelem != nil
-        hash["pos_line_start"] = subelem.begin.line
-        hash["pos_line_end"] = subelem.end.line
-        hash["pos_col_start"] = subelem.begin.column + 1
-        # str inside str have cols set at 0 from the native AST
-        hash["pos_col_end"] = subelem.end.column > 0 ? subelem.end.column : 1
+        hash["@start"] = {
+          @@typekey => "ast:Position",
+          "line" => subelem.begin.line,
+          "col" => subelem.begin.column + 1
+        }
+        hash["@end"] = {
+          @@typekey => "ast:Position",
+          "line" => subelem.end.line,
+          # str inside str have cols set at 0 from the native AST
+          "col" => subelem.end.column > 0 ? subelem.end.column : 1
+        }
       end
     end
 
@@ -306,10 +316,16 @@ module NodeConverter
           "@token" => comment.text[1..-1],
           "inline" => comment.inline?,
           "documentation" => comment.document?,
-          "pos_line_start" => comment.loc.first_line,
-          "pos_line_end" => comment.loc.last_line,
-          "pos_col_start" => comment.loc.column + 1,
-          "pos_col_end" => comment.loc.last_column
+          "@start" => {
+            @@typekey => "ast:Position",
+            "line" => comment.loc.first_line,
+            "col" => comment.loc.column + 1
+          },
+          "@end" => {
+            @@typekey => "ast:Position",
+            "line" => comment.loc.last_line,
+            "col" => comment.loc.last_column
+          },
         }
         comments.push(commentdict)
       end

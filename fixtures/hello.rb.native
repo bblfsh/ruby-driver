@@ -5,21 +5,33 @@
     "ast": {
         "@type": "module",
         "file": {
-            "@type": "send",
+            "@end": {
+                "@type": "ast:Position",
+                "col": 18,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "send_qualified",
             "base": null,
-            "pos_col_end": 18,
-            "pos_col_start": 1,
-            "pos_line_end": 1,
-            "pos_line_start": 1,
             "selector": "puts",
             "values": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 18,
+                        "line": 1
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 6,
+                        "line": 1
+                    },
                     "@token": "hello world",
-                    "@type": "str",
-                    "pos_col_end": 18,
-                    "pos_col_start": 6,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1
+                    "@type": "str"
                 }
             ]
         }

@@ -5,42 +5,66 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 3,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@token": "testfnc1",
             "@type": "def",
             "args": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 20,
+                    "line": 1
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 13,
+                    "line": 1
+                },
                 "@type": "args",
                 "children": [
                     {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 14,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 14,
+                            "line": 1
+                        },
                         "@token": "a",
-                        "@type": "kwarg",
-                        "pos_col_end": 14,
-                        "pos_col_start": 14,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1
+                        "@type": "kwarg"
                     },
                     {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 18,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 18,
+                            "line": 1
+                        },
                         "@token": "b",
-                        "@type": "kwarg",
-                        "pos_col_end": 18,
-                        "pos_col_start": 18,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1
+                        "@type": "kwarg"
                     }
-                ],
-                "pos_col_end": 20,
-                "pos_col_start": 13,
-                "pos_line_end": 1,
-                "pos_line_start": 1
+                ]
             },
             "body": [
                 {
                     "@type": "NilNode"
                 }
-            ],
-            "pos_col_end": 3,
-            "pos_col_start": 1,
-            "pos_line_end": 1,
-            "pos_line_start": 1
+            ]
         }
     }
 }

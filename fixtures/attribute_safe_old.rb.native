@@ -5,34 +5,58 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 18,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@type": "lvasgn",
-            "pos_col_end": 18,
-            "pos_col_start": 1,
-            "pos_line_end": 1,
-            "pos_line_start": 1,
             "target": "a",
             "value": {
-                "@type": "send",
-                "base": {
-                    "@type": "self",
-                    "pos_col_end": 8,
-                    "pos_col_start": 5,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 18,
+                    "line": 1
                 },
-                "pos_col_end": 18,
-                "pos_col_start": 5,
-                "pos_line_end": 1,
-                "pos_line_start": 1,
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 5,
+                    "line": 1
+                },
+                "@type": "send_call",
+                "base": {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 8,
+                        "line": 1
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 1
+                    },
+                    "@type": "self"
+                },
                 "selector": "try",
                 "values": [
                     {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 17,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 14,
+                            "line": 1
+                        },
                         "@token": "foo",
-                        "@type": "sym",
-                        "pos_col_end": 17,
-                        "pos_col_start": 14,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1
+                        "@type": "sym"
                     }
                 ]
             }
