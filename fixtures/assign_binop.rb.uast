@@ -335,9 +335,8 @@ module {
 .  .  .  .  .  .  .  .  internalRole: operator
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send_call {
-.  .  .  .  .  .  .  Roles: Binary,Call,Expression,Function,Left
-.  .  .  .  .  .  .  TOKEN "[]"
+.  .  .  .  .  .  1: send_array {
+.  .  .  .  .  .  .  Roles: Binary,Expression,Left,List
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 40
 .  .  .  .  .  .  .  .  Line: 8
@@ -350,6 +349,7 @@ module {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: target
+.  .  .  .  .  .  .  .  selector: []
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: ivar {
@@ -370,7 +370,7 @@ module {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Literal,Number,Primitive
+.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  .  .  TOKEN "0"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 43
@@ -387,7 +387,7 @@ module {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  2: int {
-.  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Literal,Number,Primitive
+.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
 .  .  .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 46

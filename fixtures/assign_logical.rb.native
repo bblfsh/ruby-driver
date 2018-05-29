@@ -141,7 +141,7 @@
                     "pos_line_end": 8,
                     "pos_line_start": 8,
                     "target": {
-                        "@type": "send_call",
+                        "@type": "send_array",
                         "base": {
                             "@token": "@baz",
                             "@type": "ivar",

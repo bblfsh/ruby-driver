@@ -245,23 +245,11 @@ module NodeConverter
 
       if hash_send["base"].nil?
         hash_send[@@typekey] = "send_qualified"
-        return hash_send
+      elsif selector == "[]"
+        hash_send[@@typekey] = "send_array"
       else
         hash_send[@@typekey] = "send_call"
-        return hash_send
       end
-
-      #if not hash_send["base"].nil?
-        #if hash_send["values"].nil?
-          #if hash_send["base"]["base"].nil?
-            #hash_send["base"][@@typekey] = "send_qualified"
-          #end
-          #hash_send[@@typekey] = "send_qualified"
-        #else
-          #hash_send[@@typekey] = "send_call"
-        #end
-        #return hash_send
-      #end
 
       return hash_send
     end

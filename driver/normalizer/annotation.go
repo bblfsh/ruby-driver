@@ -336,4 +336,5 @@ var Annotations = []Mapping{
 		uast.KeyToken: Var("selector"),
 	}, role.Expression, role.Function, role.Call),
 
+	AnnotateType("send_array", nil, role.Expression, role.List),
 }
