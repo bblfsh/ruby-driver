@@ -2,8 +2,8 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
-.  Roles: Module,File
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
 .  .  0: begin {
 .  .  .  Roles: Block
@@ -18,11 +18,11 @@ UAST:
 .  .  .  .  Col: 21
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: module
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: if {
-.  .  .  .  .  Roles: Statement,If
+.  .  .  .  .  Roles: If,Statement
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 11
 .  .  .  .  .  .  Line: 1
@@ -37,9 +37,8 @@ UAST:
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Expression,Call,Identifier,If,Then
-.  .  .  .  .  .  .  TOKEN "puts"
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Body,Expression,Identical,Qualified,Then
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 0
 .  .  .  .  .  .  .  .  Line: 1
@@ -52,10 +51,11 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  selector: puts
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: str {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,String,Primitive,Argument,Identifier
+.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Primitive,String
 .  .  .  .  .  .  .  .  .  TOKEN "foo"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 5
@@ -73,9 +73,8 @@ UAST:
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Expression,Condition,If
-.  .  .  .  .  .  .  TOKEN "foo"
+.  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  Roles: Condition,Expression,Identical,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 14
 .  .  .  .  .  .  .  .  Line: 1
@@ -88,12 +87,13 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: condition
+.  .  .  .  .  .  .  .  selector: foo
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: if {
-.  .  .  .  .  Roles: Statement,If
+.  .  .  .  .  Roles: If,Statement
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 29
 .  .  .  .  .  .  Line: 2
@@ -108,26 +108,8 @@ UAST:
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Expression,Condition,If
-.  .  .  .  .  .  .  TOKEN "foo"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 36
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 19
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 38
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 21
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: condition
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Expression,If,Else
-.  .  .  .  .  .  .  TOKEN "puts"
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Else,Expression,Identical,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 18
 .  .  .  .  .  .  .  .  Line: 2
@@ -140,10 +122,11 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: else
+.  .  .  .  .  .  .  .  selector: puts
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: str {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,String,Primitive
+.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Primitive,String
 .  .  .  .  .  .  .  .  .  TOKEN "bar"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 23
@@ -159,6 +142,23 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  internalRole: values
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  Roles: Condition,Expression,Identical,Qualified
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 36
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 19
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 38
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 21
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: condition
+.  .  .  .  .  .  .  .  selector: foo
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }

@@ -3,39 +3,62 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "end_col": 18,
-                "end_line": 1,
-                "start_col": 0,
-                "start_line": 1,
-                "target": "a",
-                "type": "lvasgn",
-                "value": {
-                    "base": {
-                        "end_col": 8,
-                        "end_line": 1,
-                        "start_col": 4,
-                        "start_line": 1,
-                        "type": "self"
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 18,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "lvasgn",
+            "target": "a",
+            "value": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 18,
+                    "line": 1
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 5,
+                    "line": 1
+                },
+                "@type": "send_call",
+                "base": {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 8,
+                        "line": 1
                     },
-                    "end_col": 18,
-                    "end_line": 1,
-                    "selector": "try",
-                    "start_col": 4,
-                    "start_line": 1,
-                    "type": "send",
-                    "values": [
-                        {
-                            "end_col": 17,
-                            "end_line": 1,
-                            "start_col": 13,
-                            "start_line": 1,
-                            "token": "foo",
-                            "type": "sym"
-                        }
-                    ]
-                }
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 1
+                    },
+                    "@type": "self"
+                },
+                "selector": "try",
+                "values": [
+                    {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 17,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 14,
+                            "line": 1
+                        },
+                        "@token": "foo",
+                        "@type": "sym"
+                    }
+                ]
             }
         }
     }

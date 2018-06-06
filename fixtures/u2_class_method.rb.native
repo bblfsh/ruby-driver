@@ -3,38 +3,55 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "body": [
-                    {
-                        "args": {
-                            "end_col": 18,
-                            "end_line": 2,
-                            "start_col": 16,
-                            "start_line": 2,
-                            "type": "args"
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 5,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@token": "Testcls1",
+            "@type": "class",
+            "body": [
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 7,
+                        "line": 2
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 2
+                    },
+                    "@token": "testfnc1",
+                    "@type": "def",
+                    "args": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 18,
+                            "line": 2
                         },
-                        "body": [
-                            {
-                                "type": "NilClass"
-                            }
-                        ],
-                        "end_col": 7,
-                        "end_line": 2,
-                        "name": "testfnc1",
-                        "start_col": 4,
-                        "start_line": 2,
-                        "type": "def"
-                    }
-                ],
-                "end_col": 5,
-                "end_line": 1,
-                "name": "Testcls1",
-                "parent": null,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "class"
-            }
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 17,
+                            "line": 2
+                        },
+                        "@type": "args"
+                    },
+                    "body": [
+                        {
+                            "@type": "NilNode"
+                        }
+                    ]
+                }
+            ],
+            "parent": null
         }
     }
 }

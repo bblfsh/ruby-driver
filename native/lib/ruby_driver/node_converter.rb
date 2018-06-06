@@ -5,6 +5,12 @@ require 'parser/current'
 
 module NodeConverter
   class Converter
+    @@typekey = "@type"
+    @@statement_send = ["continue", "lambda", "require", "each", "public", "protected",
+                        "private"]
+    @@operators = ["+", "-", "*", "/", "%", "**", "&", "|", "^", "~", "<<", ">>",
+                   "==", "===", "<=", ">=", "!=", "!", "eql?", "equal?", "<==>"]
+
     def initialize(node, comments)
       @empty_with_comments = false
       if node.is_a?(NilClass) and comments != nil
@@ -19,11 +25,10 @@ module NodeConverter
       @root = node
       @comments = comments
       @dict = {}
-
     end
 
     def tohash()
-      @dict["ast"] = {"RUBYAST": {"module": convert(@root)}}
+      @dict["ast"] = {"file" => convert(@root), @@typekey => "module"}
       add_comments()
       return @dict["ast"]
     end
@@ -36,10 +41,10 @@ module NodeConverter
       case type
 
       when "int", "float", "str"
-        return sexp_to_hash(node, {"l_token" => 0})
+        return sexp_to_hash(node, {"l_@token" => 0})
 
       when "lvar", "ivar", "cvar", "gvar", "arg", "kwarg", "restarg", "blockarg"
-        return sexp_to_hash(node, {"token.token" => 0}, 1, "children")
+        return sexp_to_hash(node, {"@token.@token" => 0}, 1, "children")
 
       when "pair", "irange", "erange", "alias", "iflipflop", "eflipflop"
         return sexp_to_hash(node, {"_1" => 0, "_2" => 1})
@@ -54,26 +59,23 @@ module NodeConverter
         return sexp_to_hash(node, {}, 0, "contents")
 
       when "optarg", "kwoptarg"
-        return sexp_to_hash(node, {"token" => 0, "default" => 1})
+        return sexp_to_hash(node, {"@token" => 0, "default" => 1})
 
       when "splat", "kwsplat", "defined?", "kwrestarg"
-        return sexp_to_hash(node, {"name" => 0})
+        return sexp_to_hash(node, {"@token" => 0})
 
       when "casgn"
         return sexp_to_hash(node, {"base" => 0, "selector" => 1, "value" => 2})
 
       when "csend", "send"
-        return sexp_to_hash(node, {"base" => 0, "selector" => 1}, 2, "values")
+        return process_send(node)
 
       when "complex", "rational", "sym"
-        return sexp_to_hash(node, {"token.token" => 0})
+        return sexp_to_hash(node, {"@token.@token" => 0})
 
       # the inner nodes of the above
       when "Complex", "Rational", "Symbol"
-        return {"type" => node_type(node), "token" => node.to_s}
-
-      #when "mlhs"
-        #return node.children.map{ |x| convert(x) }.compact
+        return {@@typekey => node_type(node), "@token" => node.to_s}
 
       when "masgn"
         return sexp_to_hash(node, {"targets" => 0, "values" => 1})
@@ -83,19 +85,19 @@ module NodeConverter
 
       when "module"
         d = sexp_to_hash(node, {}, 1, "begin")
-        d["name"] = node.children[0].children[1].to_s
+        d["@token"] = node.children[0].children[1].to_s
         return d
 
       when "class"
         d = sexp_to_hash(node, {"parent" => 1}, 2, "body")
-        d["name"] = node.children[0].children[1].to_s
+        d["@token"] = node.children[0].children[1].to_s
         return d
 
       when "sclass"
         return sexp_to_hash(node, {"object" => 0}, 1, "body")
 
       when "def"
-        return sexp_to_hash(node, {"s_name" => 0, "args" => 1}, 2, "body")
+        return sexp_to_hash(node, {"s_@token" => 0, "args" => 1}, 2, "body")
 
       when "undef", "yield", "break", "next", "return"
         return sexp_to_hash(node, {"target" => 0})
@@ -112,13 +114,13 @@ module NodeConverter
         return d
 
       when "when"
-        d = {"type": "when"}
+        d = {@@typekey => "when"}
         d["conditions"] = node.children[0..-2].map{ |x| convert(x) }.compact
         d["body"] = convert(node.children[-1])
         return d
 
       when "const"
-        return sexp_to_hash(node, {"base" => 0, "token" => 1})
+        return sexp_to_hash(node, {"base" => 0, "@token" => 1})
 
       when "while", "until", "while_post", "until_post"
         return sexp_to_hash(node, {"condition" => 0, "body" => 1})
@@ -147,7 +149,7 @@ module NodeConverter
         return sexp_to_hash(node, {"condition" => 0, "body" => 1, "else" => 2})
 
       when "defs" # "singleton method"
-        return sexp_to_hash(node, {"base" => 0, "name" => 1, "args.children" => 2, "class" => 3})
+        return sexp_to_hash(node, {"base" => 0, "@token" => 1, "args.children" => 2, "class" => 3})
 
       when "regexp"
         return sexp_to_hash(node, {"text" => 0, "options" => 1})
@@ -157,9 +159,9 @@ module NodeConverter
 
       when "NilClass"
         if @empty_with_comments
-          return {"type" => "module", "name" => "empty_module"}
+          return {@@typekey=> "module", "@token" => "empty_module"}
         else
-          return {"type" => "NilNode"}
+          return {@@typekey=> "NilNode"}
         end
 
       else
@@ -191,11 +193,11 @@ module NodeConverter
     # after cdr_index will be converted and assigned as a list of dictnodes to the cdr_key
     # property in the node.
     def sexp_to_hash(node, table, cdr_index=nil, cdr_key=nil)
-      d = {"type" => node_type(node)}
+      d = {@@typekey => node_type(node)}
 
       table.each do |propname, idx|
         if propname.start_with? "s_"
-          d[propname[2..-1]] = node.children[idx].to_s
+          d[propname[ 2..-1]] = node.children[idx].to_s
 
         elsif propname.start_with? "l_"
           d[propname[2..-1]] = node.children[idx]
@@ -221,18 +223,56 @@ module NodeConverter
       return add_position(node, d)
     end
 
+    def process_send(node)
+      hash_send = sexp_to_hash(node, {"base" => 0, "selector" => 1}, 2, "values")
+      selector = hash_send["selector"].to_s
+
+      if @@statement_send.include? selector
+        hash_send[@@typekey] = "send_statement"
+        return hash_send
+      end
+
+      if @@operators.include? selector
+        hash_send[@@typekey] = "send_operator"
+        return hash_send
+      end
+
+      if selector[-1] == "=" and not hash_send["values"].nil?
+        hash_send[@@typekey] = "send_assign"
+        hash_send["@token"] = selector[0..-2]
+        return hash_send
+      end
+
+      if hash_send["base"].nil?
+        hash_send[@@typekey] = "send_qualified"
+      elsif selector == "[]"
+        hash_send[@@typekey] = "send_array"
+      else
+        hash_send[@@typekey] = "send_call"
+      end
+
+      return hash_send
+    end
+
     def add_from_subelem(node, hash, key)
       subelem = node.loc.send(key)
       if subelem != nil
-        hash["start_line"] = subelem.begin.line
-        hash["end_line"] = subelem.end.line
-        hash["start_col"] = subelem.begin.column
-        hash["end_col"] = subelem.end.column
+        hash["@start"] = {
+          @@typekey => "ast:Position",
+          "line" => subelem.begin.line,
+          "col" => subelem.begin.column + 1
+        }
+        hash["@end"] = {
+          @@typekey => "ast:Position",
+          "line" => subelem.end.line,
+          # str inside str have cols set at 0 from the native AST
+          "col" => subelem.end.column > 0 ? subelem.end.column : 1
+        }
       end
     end
 
     def add_position(node, hash)
-      case hash["type"]
+      case hash[@@typekey]
 
       when "defined?", "module", "class", "sclass", "def", "defs",
         "undef", "alias", "super", "zsuper", "yield", "if", "when",
@@ -251,7 +291,7 @@ module NodeConverter
         subelem = "expression"
       end
 
-      if hash["type"] == "if" and not node.loc.respond_to?("keyword")
+      if hash[@@typekey] == "if" and not node.loc.respond_to?("keyword")
         subelem = "question"
       end
 
@@ -272,20 +312,26 @@ module NodeConverter
 
       @comments.each do |comment|
         commentdict = {
-          "type" => "comment",
-          "text" => comment.text,
+          @@typekey => "comment",
+          "@token" => comment.text[1..-1],
           "inline" => comment.inline?,
           "documentation" => comment.document?,
-          "start_line" => comment.loc.first_line,
-          "end_line" => comment.loc.last_line,
-          "start_col" => comment.loc.column,
-          "end_col" => comment.loc.last_column
+          "@start" => {
+            @@typekey => "ast:Position",
+            "line" => comment.loc.first_line,
+            "col" => comment.loc.column + 1
+          },
+          "@end" => {
+            @@typekey => "ast:Position",
+            "line" => comment.loc.last_line,
+            "col" => comment.loc.last_column
+          },
         }
         comments.push(commentdict)
       end
 
       if comments.length > 0
-        @dict["ast"][:RUBYAST][:module][:comments] = comments
+        @dict["ast"]["file"][:comments] = comments
       end
     end
 

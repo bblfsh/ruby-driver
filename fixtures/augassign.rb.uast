@@ -2,8 +2,8 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
-.  Roles: Module,File
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
 .  .  0: begin {
 .  .  .  Roles: Block
@@ -18,11 +18,11 @@ UAST:
 .  .  .  .  Col: 7
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: module
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: op_asgn {
-.  .  .  .  .  Roles: Expression,Operator,Binary,Assignment,Arithmetic,Add
+.  .  .  .  .  Roles: Add,Arithmetic,Assignment,Binary,Expression,Operator
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 0
 .  .  .  .  .  .  Line: 1
@@ -35,11 +35,17 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  operator: +
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: lvasgn {
-.  .  .  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
+.  .  .  .  .  .  0: ast:Operator {
+.  .  .  .  .  .  .  Roles: Add,Arithmetic,Binary,Expression,Operator
+.  .  .  .  .  .  .  TOKEN "+"
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: operator
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: lvasgn {
+.  .  .  .  .  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
 .  .  .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 0
@@ -55,8 +61,8 @@ UAST:
 .  .  .  .  .  .  .  .  internalRole: target
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Binary,Right
+.  .  .  .  .  .  2: int {
+.  .  .  .  .  .  .  Roles: Binary,Expression,Literal,Number,Primitive,Right
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 5
@@ -75,7 +81,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: op_asgn {
-.  .  .  .  .  Roles: Expression,Operator,Binary,Assignment,Arithmetic,Substract
+.  .  .  .  .  Roles: Arithmetic,Assignment,Binary,Expression,Operator,Substract
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 7
 .  .  .  .  .  .  Line: 2
@@ -88,11 +94,17 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  operator: -
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: lvasgn {
-.  .  .  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
+.  .  .  .  .  .  0: ast:Operator {
+.  .  .  .  .  .  .  Roles: Arithmetic,Binary,Expression,Operator,Substract
+.  .  .  .  .  .  .  TOKEN "-"
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: operator
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: lvasgn {
+.  .  .  .  .  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
 .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 7
@@ -108,8 +120,8 @@ UAST:
 .  .  .  .  .  .  .  .  internalRole: target
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Binary,Right
+.  .  .  .  .  .  2: int {
+.  .  .  .  .  .  .  Roles: Binary,Expression,Literal,Number,Primitive,Right
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 12
@@ -128,7 +140,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  2: op_asgn {
-.  .  .  .  .  Roles: Expression,Operator,Binary,Assignment,Arithmetic,Multiply
+.  .  .  .  .  Roles: Arithmetic,Assignment,Binary,Expression,Multiply,Operator
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 14
 .  .  .  .  .  .  Line: 3
@@ -141,11 +153,17 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  operator: *
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: lvasgn {
-.  .  .  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
+.  .  .  .  .  .  0: ast:Operator {
+.  .  .  .  .  .  .  Roles: Arithmetic,Binary,Expression,Multiply,Operator
+.  .  .  .  .  .  .  TOKEN "*"
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: operator
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: lvasgn {
+.  .  .  .  .  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
 .  .  .  .  .  .  .  TOKEN "c"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 14
@@ -161,8 +179,8 @@ UAST:
 .  .  .  .  .  .  .  .  internalRole: target
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Binary,Right
+.  .  .  .  .  .  2: int {
+.  .  .  .  .  .  .  Roles: Binary,Expression,Literal,Number,Primitive,Right
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 19
@@ -181,7 +199,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  3: op_asgn {
-.  .  .  .  .  Roles: Expression,Operator,Binary,Assignment,Arithmetic,Divide
+.  .  .  .  .  Roles: Arithmetic,Assignment,Binary,Divide,Expression,Operator
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 21
 .  .  .  .  .  .  Line: 4
@@ -194,11 +212,17 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  operator: /
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: lvasgn {
-.  .  .  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
+.  .  .  .  .  .  0: ast:Operator {
+.  .  .  .  .  .  .  Roles: Arithmetic,Binary,Divide,Expression,Operator
+.  .  .  .  .  .  .  TOKEN "/"
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: operator
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: lvasgn {
+.  .  .  .  .  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
 .  .  .  .  .  .  .  TOKEN "d"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 21
@@ -214,8 +238,8 @@ UAST:
 .  .  .  .  .  .  .  .  internalRole: target
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Binary,Right
+.  .  .  .  .  .  2: int {
+.  .  .  .  .  .  .  Roles: Binary,Expression,Literal,Number,Primitive,Right
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 26
@@ -234,7 +258,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  4: op_asgn {
-.  .  .  .  .  Roles: Expression,Operator,Binary,Assignment,Arithmetic,Modulo
+.  .  .  .  .  Roles: Arithmetic,Assignment,Binary,Expression,Modulo,Operator
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 28
 .  .  .  .  .  .  Line: 5
@@ -247,11 +271,17 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  operator: %
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: lvasgn {
-.  .  .  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
+.  .  .  .  .  .  0: ast:Operator {
+.  .  .  .  .  .  .  Roles: Arithmetic,Binary,Expression,Modulo,Operator
+.  .  .  .  .  .  .  TOKEN "%"
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: operator
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: lvasgn {
+.  .  .  .  .  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
 .  .  .  .  .  .  .  TOKEN "e"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 28
@@ -267,8 +297,8 @@ UAST:
 .  .  .  .  .  .  .  .  internalRole: target
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Binary,Right
+.  .  .  .  .  .  2: int {
+.  .  .  .  .  .  .  Roles: Binary,Expression,Literal,Number,Primitive,Right
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 33
@@ -287,7 +317,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  5: op_asgn {
-.  .  .  .  .  Roles: Expression,Operator,Binary,Assignment,Arithmetic,Incomplete
+.  .  .  .  .  Roles: Arithmetic,Assignment,Binary,Expression,Incomplete,Operator
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 35
 .  .  .  .  .  .  Line: 6
@@ -300,11 +330,17 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  operator: **
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: lvasgn {
-.  .  .  .  .  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
+.  .  .  .  .  .  0: ast:Operator {
+.  .  .  .  .  .  .  Roles: Arithmetic,Binary,Expression,Incomplete,Operator
+.  .  .  .  .  .  .  TOKEN "**"
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: operator
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: lvasgn {
+.  .  .  .  .  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
 .  .  .  .  .  .  .  TOKEN "f"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 35
@@ -320,8 +356,8 @@ UAST:
 .  .  .  .  .  .  .  .  internalRole: target
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Binary,Right
+.  .  .  .  .  .  2: int {
+.  .  .  .  .  .  .  Roles: Binary,Expression,Literal,Number,Primitive,Right
 .  .  .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 41

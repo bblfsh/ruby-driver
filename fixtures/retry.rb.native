@@ -3,56 +3,85 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "body": [
-                    {
-                        "body": {
-                            "end_col": 9,
-                            "end_line": 2,
-                            "start_col": 4,
-                            "start_line": 2,
-                            "target": "a",
-                            "type": "lvasgn",
-                            "value": {
-                                "end_col": 9,
-                                "end_line": 2,
-                                "start_col": 8,
-                                "start_line": 2,
-                                "token": 1,
-                                "type": "int"
-                            }
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 3,
+                "line": 5
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "kwbegin",
+            "body": [
+                {
+                    "@type": "rescue",
+                    "body": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 9,
+                            "line": 2
                         },
-                        "else": {
-                            "type": "NilClass"
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 5,
+                            "line": 2
                         },
-                        "handlers": [
-                            {
-                                "alias": null,
-                                "body": {
-                                    "end_col": 9,
-                                    "end_line": 4,
-                                    "start_col": 4,
-                                    "start_line": 4,
-                                    "type": "retry"
+                        "@type": "lvasgn",
+                        "target": "a",
+                        "value": {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 9,
+                                "line": 2
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 9,
+                                "line": 2
+                            },
+                            "@token": 1,
+                            "@type": "int"
+                        }
+                    },
+                    "else": {
+                        "@type": "NilNode"
+                    },
+                    "handlers": [
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 9,
+                                "line": 4
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 1,
+                                "line": 3
+                            },
+                            "@type": "resbody",
+                            "alias": null,
+                            "body": {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 9,
+                                    "line": 4
                                 },
-                                "end_col": 9,
-                                "end_line": 4,
-                                "exceptions": null,
-                                "start_col": 0,
-                                "start_line": 3,
-                                "type": "resbody"
-                            }
-                        ],
-                        "type": "rescue"
-                    }
-                ],
-                "end_col": 3,
-                "end_line": 5,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "kwbegin"
-            }
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 5,
+                                    "line": 4
+                                },
+                                "@type": "retry"
+                            },
+                            "exceptions": null
+                        }
+                    ]
+                }
+            ]
         }
     }
 }

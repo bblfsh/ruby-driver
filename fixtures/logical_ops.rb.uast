@@ -2,8 +2,8 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
-.  Roles: Module,File
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
 .  .  0: begin {
 .  .  .  Roles: Block
@@ -18,11 +18,11 @@ UAST:
 .  .  .  .  Col: 13
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: module
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: and {
-.  .  .  .  .  Roles: Expression,Binary,Operator,Boolean,And
+.  .  .  .  .  Roles: And,Binary,Boolean,Expression,Operator
 .  .  .  .  .  TOKEN "and"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 0
@@ -38,9 +38,8 @@ UAST:
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Expression,Left
-.  .  .  .  .  .  .  TOKEN "a"
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Left,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 0
 .  .  .  .  .  .  .  .  Line: 1
@@ -53,11 +52,11 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: left
+.  .  .  .  .  .  .  .  selector: a
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Expression,Right
-.  .  .  .  .  .  .  TOKEN "b"
+.  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Qualified,Right
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 6
 .  .  .  .  .  .  .  .  Line: 1
@@ -70,12 +69,13 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: right
+.  .  .  .  .  .  .  .  selector: b
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: or {
-.  .  .  .  .  Roles: Expression,Binary,Operator,Boolean,Or
+.  .  .  .  .  Roles: Binary,Boolean,Expression,Operator,Or
 .  .  .  .  .  TOKEN "or"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 8
@@ -91,9 +91,8 @@ UAST:
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Expression,Left
-.  .  .  .  .  .  .  TOKEN "a"
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Left,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 8
 .  .  .  .  .  .  .  .  Line: 2
@@ -106,11 +105,11 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: left
+.  .  .  .  .  .  .  .  selector: a
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Expression,Right
-.  .  .  .  .  .  .  TOKEN "b"
+.  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Qualified,Right
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 13
 .  .  .  .  .  .  .  .  Line: 2
@@ -123,12 +122,13 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: right
+.  .  .  .  .  .  .  .  selector: b
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  2: and {
-.  .  .  .  .  Roles: Expression,Binary,Operator,Boolean,And
+.  .  .  .  .  Roles: And,Binary,Boolean,Expression,Operator
 .  .  .  .  .  TOKEN "and"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 15
@@ -144,9 +144,8 @@ UAST:
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Expression,Left
-.  .  .  .  .  .  .  TOKEN "a"
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Left,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 15
 .  .  .  .  .  .  .  .  Line: 3
@@ -159,11 +158,11 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: left
+.  .  .  .  .  .  .  .  selector: a
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Expression,Right
-.  .  .  .  .  .  .  TOKEN "b"
+.  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Qualified,Right
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 20
 .  .  .  .  .  .  .  .  Line: 3
@@ -176,12 +175,13 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: right
+.  .  .  .  .  .  .  .  selector: b
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  3: or {
-.  .  .  .  .  Roles: Expression,Binary,Operator,Boolean,Or
+.  .  .  .  .  Roles: Binary,Boolean,Expression,Operator,Or
 .  .  .  .  .  TOKEN "or"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 22
@@ -197,9 +197,8 @@ UAST:
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Expression,Left
-.  .  .  .  .  .  .  TOKEN "a"
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Left,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 22
 .  .  .  .  .  .  .  .  Line: 4
@@ -212,11 +211,11 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: left
+.  .  .  .  .  .  .  .  selector: a
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  Roles: Expression,Right
-.  .  .  .  .  .  .  TOKEN "b"
+.  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Qualified,Right
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 27
 .  .  .  .  .  .  .  .  Line: 4
@@ -229,12 +228,13 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: right
+.  .  .  .  .  .  .  .  selector: b
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  4: send {
-.  .  .  .  .  Roles: Expression,Identifier,Operator,Relational,Not
+.  .  .  .  4: send_operator {
+.  .  .  .  .  Roles: Expression,Not,Operator,Relational,Unary
 .  .  .  .  .  TOKEN "!"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 29
@@ -250,9 +250,8 @@ UAST:
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  Roles: Expression,Qualified,Identifier
-.  .  .  .  .  .  .  TOKEN "b"
+.  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  Roles: Expression,Identical,Qualified
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 30
 .  .  .  .  .  .  .  .  Line: 5
@@ -265,12 +264,13 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  .  .  selector: b
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
-.  .  .  .  5: send {
-.  .  .  .  .  Roles: Expression,Identifier,Operator,Relational,Not
+.  .  .  .  5: send_operator {
+.  .  .  .  .  Roles: Expression,Not,Operator,Relational,Unary
 .  .  .  .  .  TOKEN "!"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 32
@@ -303,7 +303,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: and {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Binary,Operator,Boolean,And
+.  .  .  .  .  .  .  .  .  Roles: And,Binary,Boolean,Expression,Operator
 .  .  .  .  .  .  .  .  .  TOKEN "and"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 37
@@ -319,9 +319,8 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Left
-.  .  .  .  .  .  .  .  .  .  .  TOKEN "a"
+.  .  .  .  .  .  .  .  .  .  0: send_qualified {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identical,Left,Qualified
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 37
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 6
@@ -334,11 +333,11 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: left
+.  .  .  .  .  .  .  .  .  .  .  .  selector: a
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Right
-.  .  .  .  .  .  .  .  .  .  .  TOKEN "b"
+.  .  .  .  .  .  .  .  .  .  1: send_qualified {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identical,Qualified,Right
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 43
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 6
@@ -351,6 +350,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: right
+.  .  .  .  .  .  .  .  .  .  .  .  selector: b
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  }

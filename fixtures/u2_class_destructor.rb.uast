@@ -2,11 +2,11 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
-.  Roles: Module,File
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
 .  .  0: class {
-.  .  .  Roles: Statement,Type,Declaration,Identifier
+.  .  .  Roles: Declaration,Identifier,Statement,Type
 .  .  .  TOKEN "Testcls1"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -19,7 +19,7 @@ UAST:
 .  .  .  .  Col: 5
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: module
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: begin {
@@ -39,7 +39,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: defs {
-.  .  .  .  .  .  .  Roles: Statement,Function,Declaration,Identifier,Incomplete
+.  .  .  .  .  .  .  Roles: Declaration,Function,Identifier,Incomplete,Statement
 .  .  .  .  .  .  .  TOKEN "testfnc1"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 19
@@ -56,7 +56,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: self {
-.  .  .  .  .  .  .  .  .  Roles: Expression,This,Left
+.  .  .  .  .  .  .  .  .  Roles: Expression,Left,This
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 23
 .  .  .  .  .  .  .  .  .  .  Line: 2
@@ -74,7 +74,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: def {
-.  .  .  .  .  .  .  Roles: Statement,Function,Declaration,Identifier
+.  .  .  .  .  .  .  Roles: Declaration,Function,Identifier,Statement
 .  .  .  .  .  .  .  TOKEN "initialize"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 49
@@ -91,13 +91,13 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: args {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Argument,Incomplete
+.  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Incomplete
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: args
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: send {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Call
+.  .  .  .  .  .  .  .  1: send_call {
+.  .  .  .  .  .  .  .  .  Roles: Call,Expression,Function
 .  .  .  .  .  .  .  .  .  TOKEN "define_finalizer"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 72
@@ -131,7 +131,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  1: self {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Argument,Identifier,This,Left
+.  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function,Left,This
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 101
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 5
@@ -146,8 +146,8 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: values
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  2: send {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Argument,Identifier
+.  .  .  .  .  .  .  .  .  .  2: send_call {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Function
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "testfnc1"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 107
@@ -163,8 +163,8 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: values
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  .  .  0: send {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Qualified,Identifier
+.  .  .  .  .  .  .  .  .  .  .  .  0: send_call {
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call,Expression,Function
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "class"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 107
@@ -181,7 +181,7 @@ UAST:
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: self {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,This,Left
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Left,This
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 107
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 5

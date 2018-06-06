@@ -3,50 +3,138 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "base": {
-                    "base": {
-                        "base": {
-                            "base": null,
-                            "end_col": 1,
-                            "end_line": 1,
-                            "selector": "a",
-                            "start_col": 0,
-                            "start_line": 1,
-                            "type": "send"
-                        },
-                        "end_col": 3,
-                        "end_line": 1,
-                        "selector": "b",
-                        "start_col": 0,
-                        "start_line": 1,
-                        "type": "send"
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 5,
+                "line": 2
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "begin",
+            "body": [
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 11,
+                        "line": 1
                     },
-                    "end_col": 5,
-                    "end_line": 1,
-                    "selector": "c",
-                    "start_col": 0,
-                    "start_line": 1,
-                    "type": "send"
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1
+                    },
+                    "@token": "d",
+                    "@type": "send_assign",
+                    "base": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 5,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 1
+                        },
+                        "@type": "send_call",
+                        "base": {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 3,
+                                "line": 1
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 1,
+                                "line": 1
+                            },
+                            "@type": "send_call",
+                            "base": {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 1,
+                                    "line": 1
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 1,
+                                    "line": 1
+                                },
+                                "@type": "send_qualified",
+                                "base": null,
+                                "selector": "a"
+                            },
+                            "selector": "b"
+                        },
+                        "selector": "c"
+                    },
+                    "selector": "d=",
+                    "values": [
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 11,
+                                "line": 1
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 11,
+                                "line": 1
+                            },
+                            "@token": 1,
+                            "@type": "int"
+                        }
+                    ]
                 },
-                "end_col": 11,
-                "end_line": 1,
-                "selector": "d=",
-                "start_col": 0,
-                "start_line": 1,
-                "type": "send",
-                "values": [
-                    {
-                        "end_col": 11,
-                        "end_line": 1,
-                        "start_col": 10,
-                        "start_line": 1,
-                        "token": 1,
-                        "type": "int"
-                    }
-                ]
-            }
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 2
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 2
+                    },
+                    "@type": "send_call",
+                    "base": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 3,
+                            "line": 2
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 2
+                        },
+                        "@type": "send_call",
+                        "base": {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 1,
+                                "line": 2
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 1,
+                                "line": 2
+                            },
+                            "@type": "send_qualified",
+                            "base": null,
+                            "selector": "h"
+                        },
+                        "selector": "i"
+                    },
+                    "selector": "j"
+                }
+            ]
         }
     }
 }

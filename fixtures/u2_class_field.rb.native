@@ -3,34 +3,51 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "body": [
-                    {
-                        "end_col": 15,
-                        "end_line": 2,
-                        "start_col": 4,
-                        "start_line": 2,
-                        "target": "@member",
-                        "type": "ivasgn",
-                        "value": {
-                            "end_col": 15,
-                            "end_line": 2,
-                            "start_col": 14,
-                            "start_line": 2,
-                            "token": 1,
-                            "type": "int"
-                        }
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 5,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@token": "Testcls1",
+            "@type": "class",
+            "body": [
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 15,
+                        "line": 2
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 2
+                    },
+                    "@type": "ivasgn",
+                    "target": "@member",
+                    "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 15,
+                            "line": 2
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 15,
+                            "line": 2
+                        },
+                        "@token": 1,
+                        "@type": "int"
                     }
-                ],
-                "end_col": 5,
-                "end_line": 1,
-                "name": "Testcls1",
-                "parent": null,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "class"
-            }
+                }
+            ],
+            "parent": null
         }
     }
 }

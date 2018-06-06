@@ -2,12 +2,11 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
-.  Roles: Module,File
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
-.  .  0: send {
-.  .  .  Roles: Expression,Call,Identifier
-.  .  .  TOKEN "puts"
+.  .  0: send_qualified {
+.  .  .  Roles: Expression,Identical,Qualified
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
@@ -19,11 +18,12 @@ UAST:
 .  .  .  .  Col: 18
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: module
+.  .  .  .  internalRole: file
+.  .  .  .  selector: puts
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: str {
-.  .  .  .  .  Roles: Expression,Literal,String,Primitive,Argument,Identifier
+.  .  .  .  .  Roles: Expression,Literal,Primitive,String
 .  .  .  .  .  TOKEN "hello world"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 5

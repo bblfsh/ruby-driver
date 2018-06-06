@@ -2,11 +2,11 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
-.  Roles: Module,File
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
-.  .  0: send {
-.  .  .  Roles: Expression,Identifier,Operator,Arithmetic,Add
+.  .  0: send_operator {
+.  .  .  Roles: Add,Arithmetic,Binary,Expression,Operator
 .  .  .  TOKEN "+"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -19,12 +19,11 @@ UAST:
 .  .  .  .  Col: 7
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: module
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send {
-.  .  .  .  .  Roles: Expression,Qualified,Identifier
-.  .  .  .  .  TOKEN "foo"
+.  .  .  .  0: send_qualified {
+.  .  .  .  .  Roles: Expression,Identical,Left,Qualified
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 0
 .  .  .  .  .  .  Line: 1
@@ -37,10 +36,11 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: base
+.  .  .  .  .  .  selector: foo
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: int {
-.  .  .  .  .  Roles: Expression,Literal,Number,Primitive
+.  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Right
 .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 6

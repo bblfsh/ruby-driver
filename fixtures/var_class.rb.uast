@@ -2,11 +2,11 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
-.  Roles: Module,File
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
 .  .  0: cvar {
-.  .  .  Roles: Expression,Identifier,Visibility,Type
+.  .  .  Roles: Expression,Identifier,Type,Visibility
 .  .  .  TOKEN "@@foo"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -19,7 +19,7 @@ UAST:
 .  .  .  .  Col: 5
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: module
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  }
 .  }

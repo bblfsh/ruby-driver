@@ -3,166 +3,279 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "body": [
-                    {
-                        "end_col": 6,
-                        "end_line": 1,
-                        "operator": "+",
-                        "start_col": 0,
-                        "start_line": 1,
-                        "target": {
-                            "end_col": 1,
-                            "end_line": 1,
-                            "start_col": 0,
-                            "start_line": 1,
-                            "target": "a",
-                            "type": "lvasgn",
-                            "value": null
-                        },
-                        "type": "op_asgn",
-                        "value": {
-                            "end_col": 6,
-                            "end_line": 1,
-                            "start_col": 5,
-                            "start_line": 1,
-                            "token": 1,
-                            "type": "int"
-                        }
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 7,
+                "line": 6
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "begin",
+            "body": [
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 6,
+                        "line": 1
                     },
-                    {
-                        "end_col": 6,
-                        "end_line": 2,
-                        "operator": "-",
-                        "start_col": 0,
-                        "start_line": 2,
-                        "target": {
-                            "end_col": 1,
-                            "end_line": 2,
-                            "start_col": 0,
-                            "start_line": 2,
-                            "target": "b",
-                            "type": "lvasgn",
-                            "value": null
-                        },
-                        "type": "op_asgn",
-                        "value": {
-                            "end_col": 6,
-                            "end_line": 2,
-                            "start_col": 5,
-                            "start_line": 2,
-                            "token": 1,
-                            "type": "int"
-                        }
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1
                     },
-                    {
-                        "end_col": 6,
-                        "end_line": 3,
-                        "operator": "*",
-                        "start_col": 0,
-                        "start_line": 3,
-                        "target": {
-                            "end_col": 1,
-                            "end_line": 3,
-                            "start_col": 0,
-                            "start_line": 3,
-                            "target": "c",
-                            "type": "lvasgn",
-                            "value": null
+                    "@type": "op_asgn",
+                    "operator": "+",
+                    "target": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 1
                         },
-                        "type": "op_asgn",
-                        "value": {
-                            "end_col": 6,
-                            "end_line": 3,
-                            "start_col": 5,
-                            "start_line": 3,
-                            "token": 1,
-                            "type": "int"
-                        }
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 1
+                        },
+                        "@type": "lvasgn",
+                        "target": "a",
+                        "value": null
                     },
-                    {
-                        "end_col": 6,
-                        "end_line": 4,
-                        "operator": "/",
-                        "start_col": 0,
-                        "start_line": 4,
-                        "target": {
-                            "end_col": 1,
-                            "end_line": 4,
-                            "start_col": 0,
-                            "start_line": 4,
-                            "target": "d",
-                            "type": "lvasgn",
-                            "value": null
+                    "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 1
                         },
-                        "type": "op_asgn",
-                        "value": {
-                            "end_col": 6,
-                            "end_line": 4,
-                            "start_col": 5,
-                            "start_line": 4,
-                            "token": 1,
-                            "type": "int"
-                        }
-                    },
-                    {
-                        "end_col": 6,
-                        "end_line": 5,
-                        "operator": "%",
-                        "start_col": 0,
-                        "start_line": 5,
-                        "target": {
-                            "end_col": 1,
-                            "end_line": 5,
-                            "start_col": 0,
-                            "start_line": 5,
-                            "target": "e",
-                            "type": "lvasgn",
-                            "value": null
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 1
                         },
-                        "type": "op_asgn",
-                        "value": {
-                            "end_col": 6,
-                            "end_line": 5,
-                            "start_col": 5,
-                            "start_line": 5,
-                            "token": 1,
-                            "type": "int"
-                        }
-                    },
-                    {
-                        "end_col": 7,
-                        "end_line": 6,
-                        "operator": "**",
-                        "start_col": 0,
-                        "start_line": 6,
-                        "target": {
-                            "end_col": 1,
-                            "end_line": 6,
-                            "start_col": 0,
-                            "start_line": 6,
-                            "target": "f",
-                            "type": "lvasgn",
-                            "value": null
-                        },
-                        "type": "op_asgn",
-                        "value": {
-                            "end_col": 7,
-                            "end_line": 6,
-                            "start_col": 6,
-                            "start_line": 6,
-                            "token": 1,
-                            "type": "int"
-                        }
+                        "@token": 1,
+                        "@type": "int"
                     }
-                ],
-                "end_col": 7,
-                "end_line": 6,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "begin"
-            }
+                },
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 6,
+                        "line": 2
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 2
+                    },
+                    "@type": "op_asgn",
+                    "operator": "-",
+                    "target": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 2
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 2
+                        },
+                        "@type": "lvasgn",
+                        "target": "b",
+                        "value": null
+                    },
+                    "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 2
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 2
+                        },
+                        "@token": 1,
+                        "@type": "int"
+                    }
+                },
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 6,
+                        "line": 3
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 3
+                    },
+                    "@type": "op_asgn",
+                    "operator": "*",
+                    "target": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 3
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 3
+                        },
+                        "@type": "lvasgn",
+                        "target": "c",
+                        "value": null
+                    },
+                    "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 3
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 3
+                        },
+                        "@token": 1,
+                        "@type": "int"
+                    }
+                },
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 6,
+                        "line": 4
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 4
+                    },
+                    "@type": "op_asgn",
+                    "operator": "/",
+                    "target": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 4
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 4
+                        },
+                        "@type": "lvasgn",
+                        "target": "d",
+                        "value": null
+                    },
+                    "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 4
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 4
+                        },
+                        "@token": 1,
+                        "@type": "int"
+                    }
+                },
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 6,
+                        "line": 5
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 5
+                    },
+                    "@type": "op_asgn",
+                    "operator": "%",
+                    "target": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 5
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 5
+                        },
+                        "@type": "lvasgn",
+                        "target": "e",
+                        "value": null
+                    },
+                    "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 5
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 5
+                        },
+                        "@token": 1,
+                        "@type": "int"
+                    }
+                },
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 7,
+                        "line": 6
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 6
+                    },
+                    "@type": "op_asgn",
+                    "operator": "**",
+                    "target": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 6
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 6
+                        },
+                        "@type": "lvasgn",
+                        "target": "f",
+                        "value": null
+                    },
+                    "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 6
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 6
+                        },
+                        "@token": 1,
+                        "@type": "int"
+                    }
+                }
+            ]
         }
     }
 }

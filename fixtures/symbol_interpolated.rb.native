@@ -3,74 +3,121 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "body": [
-                    {
-                        "end_col": 7,
-                        "end_line": 1,
-                        "start_col": 0,
-                        "start_line": 1,
-                        "target": "bar",
-                        "type": "lvasgn",
-                        "value": {
-                            "end_col": 7,
-                            "end_line": 1,
-                            "start_col": 6,
-                            "start_line": 1,
-                            "token": 1,
-                            "type": "int"
-                        }
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 15,
+                "line": 2
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "begin",
+            "body": [
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 7,
+                        "line": 1
                     },
-                    {
-                        "children": [
-                            {
-                                "end_col": 5,
-                                "end_line": 2,
-                                "start_col": 2,
-                                "start_line": 2,
-                                "token": "foo",
-                                "type": "str"
-                            },
-                            {
-                                "body": [
-                                    {
-                                        "end_col": 10,
-                                        "end_line": 2,
-                                        "start_col": 7,
-                                        "start_line": 2,
-                                        "token": "bar",
-                                        "type": "lvar"
-                                    }
-                                ],
-                                "end_col": 11,
-                                "end_line": 2,
-                                "start_col": 5,
-                                "start_line": 2,
-                                "type": "begin"
-                            },
-                            {
-                                "end_col": 14,
-                                "end_line": 2,
-                                "start_col": 11,
-                                "start_line": 2,
-                                "token": "baz",
-                                "type": "str"
-                            }
-                        ],
-                        "end_col": 15,
-                        "end_line": 2,
-                        "start_col": 0,
-                        "start_line": 2,
-                        "type": "dsym"
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1
+                    },
+                    "@type": "lvasgn",
+                    "target": "bar",
+                    "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 1
+                        },
+                        "@token": 1,
+                        "@type": "int"
                     }
-                ],
-                "end_col": 15,
-                "end_line": 2,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "begin"
-            }
+                },
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 15,
+                        "line": 2
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 2
+                    },
+                    "@type": "dsym",
+                    "children": [
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 2
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 3,
+                                "line": 2
+                            },
+                            "@token": "foo",
+                            "@type": "str"
+                        },
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 11,
+                                "line": 2
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 6,
+                                "line": 2
+                            },
+                            "@type": "begin",
+                            "body": [
+                                {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 10,
+                                        "line": 2
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 8,
+                                        "line": 2
+                                    },
+                                    "@token": "bar",
+                                    "@type": "lvar"
+                                }
+                            ]
+                        },
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 14,
+                                "line": 2
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 12,
+                                "line": 2
+                            },
+                            "@token": "baz",
+                            "@type": "str"
+                        }
+                    ]
+                }
+            ]
         }
     }
 }

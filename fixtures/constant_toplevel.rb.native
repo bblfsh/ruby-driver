@@ -3,21 +3,32 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "base": {
-                    "end_col": 2,
-                    "end_line": 1,
-                    "start_col": 0,
-                    "start_line": 1,
-                    "type": "cbase"
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 5,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@token": "Foo",
+            "@type": "const",
+            "base": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 2,
+                    "line": 1
                 },
-                "end_col": 5,
-                "end_line": 1,
-                "start_col": 0,
-                "start_line": 1,
-                "token": "Foo",
-                "type": "const"
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 1,
+                    "line": 1
+                },
+                "@type": "cbase"
             }
         }
     }

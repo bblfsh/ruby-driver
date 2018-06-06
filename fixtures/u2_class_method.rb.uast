@@ -2,11 +2,11 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
-.  Roles: Module,File
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
 .  .  0: class {
-.  .  .  Roles: Statement,Type,Declaration,Identifier
+.  .  .  Roles: Declaration,Identifier,Statement,Type
 .  .  .  TOKEN "Testcls1"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -19,11 +19,11 @@ UAST:
 .  .  .  .  Col: 5
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: module
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: def {
-.  .  .  .  .  Roles: Statement,Function,Declaration,Identifier
+.  .  .  .  .  Roles: Declaration,Function,Identifier,Statement
 .  .  .  .  .  TOKEN "testfnc1"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 19
@@ -39,8 +39,14 @@ UAST:
 .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: args {
-.  .  .  .  .  .  .  Roles: Expression,Argument,Incomplete
+.  .  .  .  .  .  0: NilNode {
+.  .  .  .  .  .  .  Roles: Null
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: args {
+.  .  .  .  .  .  .  Roles: Argument,Expression,Incomplete
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 31
 .  .  .  .  .  .  .  .  Line: 2
@@ -53,12 +59,6 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: args
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: NilClass {
-.  .  .  .  .  .  .  Roles: Statement,Type,Null
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }

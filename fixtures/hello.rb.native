@@ -3,26 +3,37 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "base": null,
-                "end_col": 18,
-                "end_line": 1,
-                "selector": "puts",
-                "start_col": 0,
-                "start_line": 1,
-                "type": "send",
-                "values": [
-                    {
-                        "end_col": 18,
-                        "end_line": 1,
-                        "start_col": 5,
-                        "start_line": 1,
-                        "token": "hello world",
-                        "type": "str"
-                    }
-                ]
-            }
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 18,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "send_qualified",
+            "base": null,
+            "selector": "puts",
+            "values": [
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 18,
+                        "line": 1
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 6,
+                        "line": 1
+                    },
+                    "@token": "hello world",
+                    "@type": "str"
+                }
+            ]
         }
     }
 }

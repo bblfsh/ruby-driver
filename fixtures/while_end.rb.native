@@ -3,45 +3,74 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "body": {
-                    "body": [
-                        {
-                            "end_col": 9,
-                            "end_line": 2,
-                            "start_col": 4,
-                            "start_line": 2,
-                            "target": "a",
-                            "type": "lvasgn",
-                            "value": {
-                                "end_col": 9,
-                                "end_line": 2,
-                                "start_col": 8,
-                                "start_line": 2,
-                                "token": 1,
-                                "type": "int"
-                            }
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 14,
+                "line": 3
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "while_post",
+            "body": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 3,
+                    "line": 3
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 1,
+                    "line": 1
+                },
+                "@type": "kwbegin",
+                "body": [
+                    {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 9,
+                            "line": 2
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 5,
+                            "line": 2
+                        },
+                        "@type": "lvasgn",
+                        "target": "a",
+                        "value": {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 9,
+                                "line": 2
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 9,
+                                "line": 2
+                            },
+                            "@token": 1,
+                            "@type": "int"
                         }
-                    ],
-                    "end_col": 3,
-                    "end_line": 3,
-                    "start_col": 0,
-                    "start_line": 1,
-                    "type": "kwbegin"
+                    }
+                ]
+            },
+            "condition": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 14,
+                    "line": 3
                 },
-                "condition": {
-                    "end_col": 14,
-                    "end_line": 3,
-                    "start_col": 10,
-                    "start_line": 3,
-                    "type": "true"
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 11,
+                    "line": 3
                 },
-                "end_col": 14,
-                "end_line": 3,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "while_post"
+                "@type": "true"
             }
         }
     }

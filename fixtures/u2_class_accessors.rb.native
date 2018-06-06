@@ -3,202 +3,327 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "body": [
-                    {
-                        "body": [
-                            {
-                                "base": null,
-                                "end_col": 20,
-                                "end_line": 2,
-                                "selector": "attr_accessor",
-                                "start_col": 4,
-                                "start_line": 2,
-                                "type": "send",
-                                "values": [
-                                    {
-                                        "end_col": 20,
-                                        "end_line": 2,
-                                        "start_col": 18,
-                                        "start_line": 2,
-                                        "token": "a",
-                                        "type": "sym"
-                                    }
-                                ]
-                            }
-                        ],
-                        "end_col": 5,
-                        "end_line": 1,
-                        "name": "Testcls1",
-                        "parent": null,
-                        "start_col": 0,
-                        "start_line": 1,
-                        "type": "class"
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 3,
+                "line": 14
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "begin",
+            "body": [
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 1
                     },
-                    {
-                        "body": [
-                            {
-                                "body": [
-                                    {
-                                        "base": null,
-                                        "end_col": 18,
-                                        "end_line": 5,
-                                        "selector": "attr_reader",
-                                        "start_col": 4,
-                                        "start_line": 5,
-                                        "type": "send",
-                                        "values": [
-                                            {
-                                                "end_col": 18,
-                                                "end_line": 5,
-                                                "start_col": 16,
-                                                "start_line": 5,
-                                                "token": "b",
-                                                "type": "sym"
-                                            }
-                                        ]
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1
+                    },
+                    "@token": "Testcls1",
+                    "@type": "class",
+                    "body": [
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 20,
+                                "line": 2
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 2
+                            },
+                            "@type": "send_qualified",
+                            "base": null,
+                            "selector": "attr_accessor",
+                            "values": [
+                                {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 20,
+                                        "line": 2
                                     },
-                                    {
-                                        "base": null,
-                                        "end_col": 18,
-                                        "end_line": 6,
-                                        "selector": "attr_writer",
-                                        "start_col": 4,
-                                        "start_line": 6,
-                                        "type": "send",
-                                        "values": [
-                                            {
-                                                "end_col": 18,
-                                                "end_line": 6,
-                                                "start_col": 16,
-                                                "start_line": 6,
-                                                "token": "b",
-                                                "type": "sym"
-                                            }
-                                        ]
-                                    }
-                                ],
-                                "end_col": 18,
-                                "end_line": 6,
-                                "start_col": 4,
-                                "start_line": 5,
-                                "type": "begin"
-                            }
-                        ],
-                        "end_col": 5,
-                        "end_line": 4,
-                        "name": "Testcls2",
-                        "parent": null,
-                        "start_col": 0,
-                        "start_line": 4,
-                        "type": "class"
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 19,
+                                        "line": 2
+                                    },
+                                    "@token": "a",
+                                    "@type": "sym"
+                                }
+                            ]
+                        }
+                    ],
+                    "parent": null
+                },
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 4
                     },
-                    {
-                        "body": [
-                            {
-                                "body": [
-                                    {
-                                        "end_col": 10,
-                                        "end_line": 9,
-                                        "start_col": 4,
-                                        "start_line": 9,
-                                        "target": "@c",
-                                        "type": "ivasgn",
-                                        "value": {
-                                            "end_col": 10,
-                                            "end_line": 9,
-                                            "start_col": 9,
-                                            "start_line": 9,
-                                            "token": 1,
-                                            "type": "int"
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 4
+                    },
+                    "@token": "Testcls2",
+                    "@type": "class",
+                    "body": [
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 18,
+                                "line": 6
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 5
+                            },
+                            "@type": "begin",
+                            "body": [
+                                {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 18,
+                                        "line": 5
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 5,
+                                        "line": 5
+                                    },
+                                    "@type": "send_qualified",
+                                    "base": null,
+                                    "selector": "attr_reader",
+                                    "values": [
+                                        {
+                                            "@end": {
+                                                "@type": "ast:Position",
+                                                "col": 18,
+                                                "line": 5
+                                            },
+                                            "@start": {
+                                                "@type": "ast:Position",
+                                                "col": 17,
+                                                "line": 5
+                                            },
+                                            "@token": "b",
+                                            "@type": "sym"
                                         }
+                                    ]
+                                },
+                                {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 18,
+                                        "line": 6
                                     },
-                                    {
-                                        "base": null,
-                                        "end_col": 18,
-                                        "end_line": 10,
-                                        "selector": "attr_reader",
-                                        "start_col": 4,
-                                        "start_line": 10,
-                                        "type": "send",
-                                        "values": [
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 5,
+                                        "line": 6
+                                    },
+                                    "@type": "send_qualified",
+                                    "base": null,
+                                    "selector": "attr_writer",
+                                    "values": [
+                                        {
+                                            "@end": {
+                                                "@type": "ast:Position",
+                                                "col": 18,
+                                                "line": 6
+                                            },
+                                            "@start": {
+                                                "@type": "ast:Position",
+                                                "col": 17,
+                                                "line": 6
+                                            },
+                                            "@token": "b",
+                                            "@type": "sym"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "parent": null
+                },
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 8
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 8
+                    },
+                    "@token": "Testcls3",
+                    "@type": "class",
+                    "body": [
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 7,
+                                "line": 13
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 9
+                            },
+                            "@type": "begin",
+                            "body": [
+                                {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 10,
+                                        "line": 9
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 5,
+                                        "line": 9
+                                    },
+                                    "@type": "ivasgn",
+                                    "target": "@c",
+                                    "value": {
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 10,
+                                            "line": 9
+                                        },
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 10,
+                                            "line": 9
+                                        },
+                                        "@token": 1,
+                                        "@type": "int"
+                                    }
+                                },
+                                {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 18,
+                                        "line": 10
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 5,
+                                        "line": 10
+                                    },
+                                    "@type": "send_qualified",
+                                    "base": null,
+                                    "selector": "attr_reader",
+                                    "values": [
+                                        {
+                                            "@end": {
+                                                "@type": "ast:Position",
+                                                "col": 18,
+                                                "line": 10
+                                            },
+                                            "@start": {
+                                                "@type": "ast:Position",
+                                                "col": 17,
+                                                "line": 10
+                                            },
+                                            "@token": "c",
+                                            "@type": "sym"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 7,
+                                        "line": 11
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 5,
+                                        "line": 11
+                                    },
+                                    "@token": "c=",
+                                    "@type": "def",
+                                    "args": {
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 17,
+                                            "line": 11
+                                        },
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 11,
+                                            "line": 11
+                                        },
+                                        "@type": "args",
+                                        "children": [
                                             {
-                                                "end_col": 18,
-                                                "end_line": 10,
-                                                "start_col": 16,
-                                                "start_line": 10,
-                                                "token": "c",
-                                                "type": "sym"
+                                                "@end": {
+                                                    "@type": "ast:Position",
+                                                    "col": 16,
+                                                    "line": 11
+                                                },
+                                                "@start": {
+                                                    "@type": "ast:Position",
+                                                    "col": 12,
+                                                    "line": 11
+                                                },
+                                                "@token": "new_c",
+                                                "@type": "arg"
                                             }
                                         ]
                                     },
-                                    {
-                                        "args": {
-                                            "children": [
-                                                {
-                                                    "end_col": 16,
-                                                    "end_line": 11,
-                                                    "start_col": 11,
-                                                    "start_line": 11,
-                                                    "token": "new_c",
-                                                    "type": "arg"
-                                                }
-                                            ],
-                                            "end_col": 17,
-                                            "end_line": 11,
-                                            "start_col": 10,
-                                            "start_line": 11,
-                                            "type": "args"
-                                        },
-                                        "body": [
-                                            {
-                                                "end_col": 18,
-                                                "end_line": 12,
-                                                "start_col": 8,
-                                                "start_line": 12,
-                                                "target": "@c",
-                                                "type": "ivasgn",
-                                                "value": {
-                                                    "end_col": 18,
-                                                    "end_line": 12,
-                                                    "start_col": 13,
-                                                    "start_line": 12,
-                                                    "token": "new_c",
-                                                    "type": "lvar"
-                                                }
+                                    "body": [
+                                        {
+                                            "@end": {
+                                                "@type": "ast:Position",
+                                                "col": 18,
+                                                "line": 12
+                                            },
+                                            "@start": {
+                                                "@type": "ast:Position",
+                                                "col": 9,
+                                                "line": 12
+                                            },
+                                            "@type": "ivasgn",
+                                            "target": "@c",
+                                            "value": {
+                                                "@end": {
+                                                    "@type": "ast:Position",
+                                                    "col": 18,
+                                                    "line": 12
+                                                },
+                                                "@start": {
+                                                    "@type": "ast:Position",
+                                                    "col": 14,
+                                                    "line": 12
+                                                },
+                                                "@token": "new_c",
+                                                "@type": "lvar"
                                             }
-                                        ],
-                                        "end_col": 7,
-                                        "end_line": 11,
-                                        "name": "c=",
-                                        "start_col": 4,
-                                        "start_line": 11,
-                                        "type": "def"
-                                    }
-                                ],
-                                "end_col": 7,
-                                "end_line": 13,
-                                "start_col": 4,
-                                "start_line": 9,
-                                "type": "begin"
-                            }
-                        ],
-                        "end_col": 5,
-                        "end_line": 8,
-                        "name": "Testcls3",
-                        "parent": null,
-                        "start_col": 0,
-                        "start_line": 8,
-                        "type": "class"
-                    }
-                ],
-                "end_col": 3,
-                "end_line": 14,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "begin"
-            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "parent": null
+                }
+            ]
         }
     }
 }

@@ -3,38 +3,55 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "end_col": 12,
-                "end_line": 1,
-                "options": {
-                    "end_col": 12,
-                    "end_line": 1,
-                    "options": [
-                        {
-                            "token": "i",
-                            "type": "Symbol"
-                        },
-                        {
-                            "token": "m",
-                            "type": "Symbol"
-                        }
-                    ],
-                    "start_col": 10,
-                    "start_line": 1,
-                    "type": "regopt"
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 12,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "regexp",
+            "options": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 12,
+                    "line": 1
                 },
-                "start_col": 0,
-                "start_line": 1,
-                "text": {
-                    "end_col": 9,
-                    "end_line": 1,
-                    "start_col": 1,
-                    "start_line": 1,
-                    "token": "text(.*)",
-                    "type": "str"
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 11,
+                    "line": 1
                 },
-                "type": "regexp"
+                "@type": "regopt",
+                "options": [
+                    {
+                        "@token": "i",
+                        "@type": "Symbol"
+                    },
+                    {
+                        "@token": "m",
+                        "@type": "Symbol"
+                    }
+                ]
+            },
+            "text": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 9,
+                    "line": 1
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 2,
+                    "line": 1
+                },
+                "@token": "text(.*)",
+                "@type": "str"
             }
         }
     }

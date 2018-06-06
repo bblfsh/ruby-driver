@@ -1,0 +1,261 @@
+{
+    "status": "ok",
+    "language": "ruby",
+    "errors": [],
+    "ast": {
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 6,
+                "line": 9
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "begin",
+            "body": [
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 3,
+                        "line": 1
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1
+                    },
+                    "@token": "fnc1",
+                    "@type": "def",
+                    "args": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 17,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 9,
+                            "line": 1
+                        },
+                        "@type": "args",
+                        "children": [
+                            {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 10,
+                                    "line": 1
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 10,
+                                    "line": 1
+                                },
+                                "@token": "a",
+                                "@type": "arg"
+                            },
+                            {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 13,
+                                    "line": 1
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 13,
+                                    "line": 1
+                                },
+                                "@token": "b",
+                                "@type": "arg"
+                            },
+                            {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 16,
+                                    "line": 1
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 16,
+                                    "line": 1
+                                },
+                                "@token": "c",
+                                "@type": "arg"
+                            }
+                        ]
+                    },
+                    "body": [
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 17,
+                                "line": 2
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 6,
+                                "line": 2
+                            },
+                            "@type": "send_qualified",
+                            "base": null,
+                            "selector": "puts",
+                            "values": [
+                                {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 11,
+                                        "line": 2
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 11,
+                                        "line": 2
+                                    },
+                                    "@token": "a",
+                                    "@type": "lvar"
+                                },
+                                {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 14,
+                                        "line": 2
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 14,
+                                        "line": 2
+                                    },
+                                    "@token": "b",
+                                    "@type": "lvar"
+                                },
+                                {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 17,
+                                        "line": 2
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 17,
+                                        "line": 2
+                                    },
+                                    "@token": "c",
+                                    "@type": "lvar"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 3,
+                        "line": 5
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 5
+                    },
+                    "@token": "fnc2",
+                    "@type": "def",
+                    "args": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 10,
+                            "line": 5
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 9,
+                            "line": 5
+                        },
+                        "@type": "args"
+                    },
+                    "body": [
+                        {
+                            "@type": "NilNode"
+                        }
+                    ]
+                },
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 13,
+                        "line": 8
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 8
+                    },
+                    "@type": "send_qualified",
+                    "base": null,
+                    "selector": "fnc1",
+                    "values": [
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 6,
+                                "line": 8
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 6,
+                                "line": 8
+                            },
+                            "@token": 1,
+                            "@type": "int"
+                        },
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 9,
+                                "line": 8
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 9,
+                                "line": 8
+                            },
+                            "@token": 2,
+                            "@type": "int"
+                        },
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 12,
+                                "line": 8
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 12,
+                                "line": 8
+                            },
+                            "@token": 3,
+                            "@type": "int"
+                        }
+                    ]
+                },
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 6,
+                        "line": 9
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 9
+                    },
+                    "@type": "send_qualified",
+                    "base": null,
+                    "selector": "fnc2"
+                }
+            ]
+        }
+    }
+}

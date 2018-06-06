@@ -3,54 +3,83 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "comments": [
-                    {
-                        "documentation": false,
-                        "end_col": 10,
-                        "end_line": 1,
-                        "inline": true,
-                        "start_col": 0,
-                        "start_line": 1,
-                        "text": "# previous",
-                        "type": "comment"
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 5,
+                "line": 2
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 2
+            },
+            "@type": "lvasgn",
+            "comments": [
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 10,
+                        "line": 1
                     },
-                    {
-                        "documentation": false,
-                        "end_col": 14,
-                        "end_line": 2,
-                        "inline": true,
-                        "start_col": 6,
-                        "start_line": 2,
-                        "text": "# inline",
-                        "type": "comment"
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1
                     },
-                    {
-                        "documentation": false,
-                        "end_col": 7,
-                        "end_line": 3,
-                        "inline": true,
-                        "start_col": 0,
-                        "start_line": 3,
-                        "text": "# after",
-                        "type": "comment"
-                    }
-                ],
-                "end_col": 5,
-                "end_line": 2,
-                "start_col": 0,
-                "start_line": 2,
-                "target": "a",
-                "type": "lvasgn",
-                "value": {
-                    "end_col": 5,
-                    "end_line": 2,
-                    "start_col": 4,
-                    "start_line": 2,
-                    "token": 1,
-                    "type": "int"
+                    "@token": " previous",
+                    "@type": "comment",
+                    "documentation": false,
+                    "inline": true
+                },
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 14,
+                        "line": 2
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 7,
+                        "line": 2
+                    },
+                    "@token": " inline",
+                    "@type": "comment",
+                    "documentation": false,
+                    "inline": true
+                },
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 7,
+                        "line": 3
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 3
+                    },
+                    "@token": " after",
+                    "@type": "comment",
+                    "documentation": false,
+                    "inline": true
                 }
+            ],
+            "target": "a",
+            "value": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 5,
+                    "line": 2
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 5,
+                    "line": 2
+                },
+                "@token": 1,
+                "@type": "int"
             }
         }
     }

@@ -3,33 +3,50 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "args": null,
-                "blockdata": {
-                    "base": {
-                        "base": null,
-                        "end_col": 5,
-                        "end_line": 1,
-                        "start_col": 0,
-                        "start_line": 1,
-                        "token": "Class",
-                        "type": "const"
-                    },
-                    "end_col": 9,
-                    "end_line": 1,
-                    "selector": "new",
-                    "start_col": 0,
-                    "start_line": 1,
-                    "type": "send"
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 3,
+                "line": 2
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "block",
+            "args": null,
+            "blockdata": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 9,
+                    "line": 1
                 },
-                "body": null,
-                "end_col": 3,
-                "end_line": 2,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "block"
-            }
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 1,
+                    "line": 1
+                },
+                "@type": "send_call",
+                "base": {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 1
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1
+                    },
+                    "@token": "Class",
+                    "@type": "const",
+                    "base": null
+                },
+                "selector": "new"
+            },
+            "body": null
         }
     }
 }

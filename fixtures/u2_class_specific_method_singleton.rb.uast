@@ -2,11 +2,11 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
-.  Roles: Module,File
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
 .  .  0: defs {
-.  .  .  Roles: Statement,Function,Declaration,Identifier,Incomplete
+.  .  .  Roles: Declaration,Function,Identifier,Incomplete,Statement
 .  .  .  TOKEN "testfnc1"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -19,11 +19,11 @@ UAST:
 .  .  .  .  Col: 3
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: module
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: self {
-.  .  .  .  .  Roles: Expression,This,Left
+.  .  .  .  .  Roles: Expression,Left,This
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 4
 .  .  .  .  .  .  Line: 1

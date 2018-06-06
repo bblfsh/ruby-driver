@@ -2,11 +2,11 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
-.  Roles: Module,File
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
 .  .  0: module {
-.  .  .  Roles: Statement,Module,Identifier
+.  .  .  Roles: Identifier,Module,Statement
 .  .  .  TOKEN "Foo"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -19,11 +19,11 @@ UAST:
 .  .  .  .  Col: 6
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: module
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: NilClass {
-.  .  .  .  .  Roles: Statement,Type,Null
+.  .  .  .  0: NilNode {
+.  .  .  .  .  Roles: Null
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: begin
 .  .  .  .  .  }

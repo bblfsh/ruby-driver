@@ -2,12 +2,12 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
-.  Roles: Module,File
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
-.  .  0: send {
-.  .  .  Roles: Expression,Identifier,Call
-.  .  .  TOKEN "foo="
+.  .  0: send_assign {
+.  .  .  Roles: Assignment,Expression,Left
+.  .  .  TOKEN "foo"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
@@ -19,11 +19,12 @@ UAST:
 .  .  .  .  Col: 12
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: module
+.  .  .  .  internalRole: file
+.  .  .  .  selector: foo=
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: self {
-.  .  .  .  .  Roles: Expression,This,Left
+.  .  .  .  .  Roles: Expression,Left,This
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 0
 .  .  .  .  .  .  Line: 1
@@ -39,7 +40,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: int {
-.  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Argument,Identifier
+.  .  .  .  .  Roles: Assignment,Expression,Literal,Number,Primitive,Right
 .  .  .  .  .  TOKEN "1"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 11

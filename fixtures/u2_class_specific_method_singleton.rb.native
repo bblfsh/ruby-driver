@@ -3,24 +3,35 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "args": null,
-                "base": {
-                    "end_col": 8,
-                    "end_line": 1,
-                    "start_col": 4,
-                    "start_line": 1,
-                    "type": "self"
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 3,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@token": "testfnc1",
+            "@type": "defs",
+            "args": null,
+            "base": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 8,
+                    "line": 1
                 },
-                "class": null,
-                "end_col": 3,
-                "end_line": 1,
-                "name": "testfnc1",
-                "start_col": 0,
-                "start_line": 1,
-                "type": "defs"
-            }
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 5,
+                    "line": 1
+                },
+                "@type": "self"
+            },
+            "class": null
         }
     }
 }

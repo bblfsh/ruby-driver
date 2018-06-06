@@ -3,39 +3,62 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "end_col": 10,
-                "end_line": 1,
-                "start_col": 0,
-                "start_line": 1,
-                "target": "a",
-                "type": "lvasgn",
-                "value": {
-                    "children": [
-                        {
-                            "end_col": 0,
-                            "end_line": 3,
-                            "start_col": 0,
-                            "start_line": 2,
-                            "token": "    Some text\n",
-                            "type": "str"
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 10,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "lvasgn",
+            "target": "a",
+            "value": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 10,
+                    "line": 1
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 5,
+                    "line": 1
+                },
+                "@type": "dstr",
+                "children": [
+                    {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 3
                         },
-                        {
-                            "end_col": 0,
-                            "end_line": 4,
-                            "start_col": 0,
-                            "start_line": 3,
-                            "token": "    multiline\n",
-                            "type": "str"
-                        }
-                    ],
-                    "end_col": 10,
-                    "end_line": 1,
-                    "start_col": 4,
-                    "start_line": 1,
-                    "type": "dstr"
-                }
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 2
+                        },
+                        "@token": "    Some text\n",
+                        "@type": "str"
+                    },
+                    {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 4
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 3
+                        },
+                        "@token": "    multiline\n",
+                        "@type": "str"
+                    }
+                ]
             }
         }
     }

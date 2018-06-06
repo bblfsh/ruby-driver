@@ -2,8 +2,8 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
-.  Roles: Module,File
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
 .  .  0: block {
 .  .  .  Roles: Block
@@ -18,11 +18,11 @@ UAST:
 .  .  .  .  Col: 9
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: module
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send {
-.  .  .  .  .  Roles: Expression,Declaration,Function,Anonymous
+.  .  .  .  0: send_statement {
+.  .  .  .  .  Roles: Anonymous,Declaration,Expression,Function
 .  .  .  .  .  TOKEN "lambda"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 0

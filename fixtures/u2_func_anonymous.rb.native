@@ -3,25 +3,36 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "args": null,
-                "blockdata": {
-                    "base": null,
-                    "end_col": 6,
-                    "end_line": 1,
-                    "selector": "lambda",
-                    "start_col": 0,
-                    "start_line": 1,
-                    "type": "send"
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 9,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "block",
+            "args": null,
+            "blockdata": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 6,
+                    "line": 1
                 },
-                "body": null,
-                "end_col": 9,
-                "end_line": 1,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "block"
-            }
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 1,
+                    "line": 1
+                },
+                "@type": "send_statement",
+                "base": null,
+                "selector": "lambda"
+            },
+            "body": null
         }
     }
 }

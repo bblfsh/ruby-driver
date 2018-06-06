@@ -3,107 +3,172 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "body": [
-                    {
-                        "args": {
-                            "end_col": 14,
-                            "end_line": 1,
-                            "start_col": 12,
-                            "start_line": 1,
-                            "type": "args"
-                        },
-                        "body": [
-                            {
-                                "args": {
-                                    "end_col": 18,
-                                    "end_line": 2,
-                                    "start_col": 16,
-                                    "start_line": 2,
-                                    "type": "args"
-                                },
-                                "body": [
-                                    {
-                                        "type": "NilClass"
-                                    }
-                                ],
-                                "end_col": 7,
-                                "end_line": 2,
-                                "name": "testfnc2",
-                                "start_col": 4,
-                                "start_line": 2,
-                                "type": "def"
-                            }
-                        ],
-                        "end_col": 3,
-                        "end_line": 1,
-                        "name": "testfnc1",
-                        "start_col": 0,
-                        "start_line": 1,
-                        "type": "def"
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 3,
+                "line": 10
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "begin",
+            "body": [
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 3,
+                        "line": 1
                     },
-                    {
-                        "args": {
-                            "end_col": 14,
-                            "end_line": 5,
-                            "start_col": 12,
-                            "start_line": 5,
-                            "type": "args"
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1
+                    },
+                    "@token": "testfnc1",
+                    "@type": "def",
+                    "args": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 14,
+                            "line": 1
                         },
-                        "body": [
-                            {
-                                "args": {
-                                    "end_col": 18,
-                                    "end_line": 6,
-                                    "start_col": 16,
-                                    "start_line": 6,
-                                    "type": "args"
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 13,
+                            "line": 1
+                        },
+                        "@type": "args"
+                    },
+                    "body": [
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 7,
+                                "line": 2
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 2
+                            },
+                            "@token": "testfnc2",
+                            "@type": "def",
+                            "args": {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 18,
+                                    "line": 2
                                 },
-                                "body": [
-                                    {
-                                        "args": {
-                                            "end_col": 22,
-                                            "end_line": 7,
-                                            "start_col": 20,
-                                            "start_line": 7,
-                                            "type": "args"
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 17,
+                                    "line": 2
+                                },
+                                "@type": "args"
+                            },
+                            "body": [
+                                {
+                                    "@type": "NilNode"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 3,
+                        "line": 5
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 5
+                    },
+                    "@token": "testfnc3",
+                    "@type": "def",
+                    "args": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 14,
+                            "line": 5
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 13,
+                            "line": 5
+                        },
+                        "@type": "args"
+                    },
+                    "body": [
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 7,
+                                "line": 6
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 6
+                            },
+                            "@token": "testfnc4",
+                            "@type": "def",
+                            "args": {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 18,
+                                    "line": 6
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 17,
+                                    "line": 6
+                                },
+                                "@type": "args"
+                            },
+                            "body": [
+                                {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 11,
+                                        "line": 7
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 9,
+                                        "line": 7
+                                    },
+                                    "@token": "testfnc5",
+                                    "@type": "def",
+                                    "args": {
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 22,
+                                            "line": 7
                                         },
-                                        "body": [
-                                            {
-                                                "type": "NilClass"
-                                            }
-                                        ],
-                                        "end_col": 11,
-                                        "end_line": 7,
-                                        "name": "testfnc5",
-                                        "start_col": 8,
-                                        "start_line": 7,
-                                        "type": "def"
-                                    }
-                                ],
-                                "end_col": 7,
-                                "end_line": 6,
-                                "name": "testfnc4",
-                                "start_col": 4,
-                                "start_line": 6,
-                                "type": "def"
-                            }
-                        ],
-                        "end_col": 3,
-                        "end_line": 5,
-                        "name": "testfnc3",
-                        "start_col": 0,
-                        "start_line": 5,
-                        "type": "def"
-                    }
-                ],
-                "end_col": 3,
-                "end_line": 10,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "begin"
-            }
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 21,
+                                            "line": 7
+                                        },
+                                        "@type": "args"
+                                    },
+                                    "body": [
+                                        {
+                                            "@type": "NilNode"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     }
 }

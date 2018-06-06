@@ -3,34 +3,51 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "base": {
-                    "base": null,
-                    "end_col": 3,
-                    "end_line": 1,
-                    "selector": "foo",
-                    "start_col": 0,
-                    "start_line": 1,
-                    "type": "send"
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 7,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "send_operator",
+            "base": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 3,
+                    "line": 1
                 },
-                "end_col": 7,
-                "end_line": 1,
-                "selector": "+",
-                "start_col": 0,
-                "start_line": 1,
-                "type": "send",
-                "values": [
-                    {
-                        "end_col": 7,
-                        "end_line": 1,
-                        "start_col": 6,
-                        "start_line": 1,
-                        "token": 1,
-                        "type": "int"
-                    }
-                ]
-            }
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 1,
+                    "line": 1
+                },
+                "@type": "send_qualified",
+                "base": null,
+                "selector": "foo"
+            },
+            "selector": "+",
+            "values": [
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 7,
+                        "line": 1
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 7,
+                        "line": 1
+                    },
+                    "@token": 1,
+                    "@type": "int"
+                }
+            ]
         }
     }
 }

@@ -3,37 +3,54 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "args": {
-                    "children": [
-                        {
-                            "end_col": 16,
-                            "end_line": 1,
-                            "name": "a",
-                            "start_col": 15,
-                            "start_line": 1,
-                            "type": "kwrestarg"
-                        }
-                    ],
-                    "end_col": 17,
-                    "end_line": 1,
-                    "start_col": 12,
-                    "start_line": 1,
-                    "type": "args"
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 3,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@token": "testfnc1",
+            "@type": "def",
+            "args": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 17,
+                    "line": 1
                 },
-                "body": [
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 13,
+                    "line": 1
+                },
+                "@type": "args",
+                "children": [
                     {
-                        "type": "NilClass"
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 16,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 16,
+                            "line": 1
+                        },
+                        "@token": "a",
+                        "@type": "kwrestarg"
                     }
-                ],
-                "end_col": 3,
-                "end_line": 1,
-                "name": "testfnc1",
-                "start_col": 0,
-                "start_line": 1,
-                "type": "def"
-            }
+                ]
+            },
+            "body": [
+                {
+                    "@type": "NilNode"
+                }
+            ]
         }
     }
 }

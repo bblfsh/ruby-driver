@@ -3,102 +3,167 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "body": [
-                    {
-                        "body": [
-                            {
-                                "base": null,
-                                "end_col": 11,
-                                "end_line": 2,
-                                "selector": "private",
-                                "start_col": 4,
-                                "start_line": 2,
-                                "type": "send"
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 5,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@token": "Testcls1",
+            "@type": "class",
+            "body": [
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 10,
+                        "line": 9
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 2
+                    },
+                    "@type": "begin",
+                    "body": [
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 11,
+                                "line": 2
                             },
-                            {
-                                "end_col": 10,
-                                "end_line": 3,
-                                "start_col": 4,
-                                "start_line": 3,
-                                "target": "@a",
-                                "type": "ivasgn",
-                                "value": {
-                                    "end_col": 10,
-                                    "end_line": 3,
-                                    "start_col": 9,
-                                    "start_line": 3,
-                                    "token": 1,
-                                    "type": "int"
-                                }
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 2
                             },
-                            {
-                                "base": null,
-                                "end_col": 13,
-                                "end_line": 5,
-                                "selector": "protected",
-                                "start_col": 4,
-                                "start_line": 5,
-                                "type": "send"
+                            "@type": "send_statement",
+                            "base": null,
+                            "selector": "private"
+                        },
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 10,
+                                "line": 3
                             },
-                            {
-                                "end_col": 10,
-                                "end_line": 6,
-                                "start_col": 4,
-                                "start_line": 6,
-                                "target": "@b",
-                                "type": "ivasgn",
-                                "value": {
-                                    "end_col": 10,
-                                    "end_line": 6,
-                                    "start_col": 9,
-                                    "start_line": 6,
-                                    "token": 2,
-                                    "type": "int"
-                                }
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 3
                             },
-                            {
-                                "base": null,
-                                "end_col": 10,
-                                "end_line": 8,
-                                "selector": "public",
-                                "start_col": 4,
-                                "start_line": 8,
-                                "type": "send"
-                            },
-                            {
-                                "end_col": 10,
-                                "end_line": 9,
-                                "start_col": 4,
-                                "start_line": 9,
-                                "target": "@c",
-                                "type": "ivasgn",
-                                "value": {
-                                    "end_col": 10,
-                                    "end_line": 9,
-                                    "start_col": 9,
-                                    "start_line": 9,
-                                    "token": 3,
-                                    "type": "int"
-                                }
+                            "@type": "ivasgn",
+                            "target": "@a",
+                            "value": {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 10,
+                                    "line": 3
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 10,
+                                    "line": 3
+                                },
+                                "@token": 1,
+                                "@type": "int"
                             }
-                        ],
-                        "end_col": 10,
-                        "end_line": 9,
-                        "start_col": 4,
-                        "start_line": 2,
-                        "type": "begin"
-                    }
-                ],
-                "end_col": 5,
-                "end_line": 1,
-                "name": "Testcls1",
-                "parent": null,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "class"
-            }
+                        },
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 13,
+                                "line": 5
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 5
+                            },
+                            "@type": "send_statement",
+                            "base": null,
+                            "selector": "protected"
+                        },
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 10,
+                                "line": 6
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 6
+                            },
+                            "@type": "ivasgn",
+                            "target": "@b",
+                            "value": {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 10,
+                                    "line": 6
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 10,
+                                    "line": 6
+                                },
+                                "@token": 2,
+                                "@type": "int"
+                            }
+                        },
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 10,
+                                "line": 8
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 8
+                            },
+                            "@type": "send_statement",
+                            "base": null,
+                            "selector": "public"
+                        },
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 10,
+                                "line": 9
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 9
+                            },
+                            "@type": "ivasgn",
+                            "target": "@c",
+                            "value": {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 10,
+                                    "line": 9
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 10,
+                                    "line": 9
+                                },
+                                "@token": 3,
+                                "@type": "int"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "parent": null
         }
     }
 }

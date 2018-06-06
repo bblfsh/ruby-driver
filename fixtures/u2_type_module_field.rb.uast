@@ -2,11 +2,11 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
-.  Roles: Module,File
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
 .  .  0: module {
-.  .  .  Roles: Statement,Module,Identifier
+.  .  .  Roles: Identifier,Module,Statement
 .  .  .  TOKEN "Testmodule1"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -19,12 +19,11 @@ UAST:
 .  .  .  .  Col: 6
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: module
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: send {
-.  .  .  .  .  Roles: Unannotated
-.  .  .  .  .  TOKEN "attr"
+.  .  .  .  0: send_qualified {
+.  .  .  .  .  Roles: Expression,Identical,Qualified
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 23
 .  .  .  .  .  .  Line: 2
@@ -37,6 +36,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: begin
+.  .  .  .  .  .  selector: attr
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: sym {

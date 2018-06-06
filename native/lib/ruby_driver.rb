@@ -1,5 +1,5 @@
-require 'ruby_driver/message'
-require 'ruby_driver/node_converter'
+require_relative './ruby_driver/message'
+require_relative './ruby_driver/node_converter'
 
 require 'json'
 

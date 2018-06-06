@@ -2,11 +2,11 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
-.  Roles: Module,File
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
 .  .  0: def {
-.  .  .  Roles: Statement,Function,Declaration,Identifier
+.  .  .  Roles: Declaration,Function,Identifier,Statement
 .  .  .  TOKEN "testfnc1"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -19,11 +19,17 @@ UAST:
 .  .  .  .  Col: 3
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: module
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: args {
-.  .  .  .  .  Roles: Expression,Argument,Incomplete
+.  .  .  .  0: NilNode {
+.  .  .  .  .  Roles: Null
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: body
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1: args {
+.  .  .  .  .  Roles: Argument,Expression,Incomplete
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 12
 .  .  .  .  .  .  Line: 1
@@ -39,7 +45,7 @@ UAST:
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: kwarg {
-.  .  .  .  .  .  .  Roles: Expression,Argument,Name,Map
+.  .  .  .  .  .  .  Roles: Argument,Expression,Map,Name
 .  .  .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 13
@@ -56,7 +62,7 @@ UAST:
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: kwarg {
-.  .  .  .  .  .  .  Roles: Expression,Argument,Name,Map
+.  .  .  .  .  .  .  Roles: Argument,Expression,Map,Name
 .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 17
@@ -72,12 +78,6 @@ UAST:
 .  .  .  .  .  .  .  .  internalRole: children
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: NilClass {
-.  .  .  .  .  Roles: Statement,Type,Null
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: body
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  }

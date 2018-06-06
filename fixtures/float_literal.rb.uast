@@ -2,11 +2,11 @@ Status:  ok
 Language:  ruby
 Errors: 
 UAST: 
- {
-.  Roles: Module,File
+module {
+.  Roles: Identifier,Module,Statement
 .  Children: {
 .  .  0: lvasgn {
-.  .  .  Roles: Expression,Assignment,Binary,Identifier,Left
+.  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
 .  .  .  TOKEN "a"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
@@ -19,11 +19,11 @@ UAST:
 .  .  .  .  Col: 8
 .  .  .  }
 .  .  .  Properties: {
-.  .  .  .  internalRole: module
+.  .  .  .  internalRole: file
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: float {
-.  .  .  .  .  Roles: Right
+.  .  .  .  .  Roles: Binary,Expression,Literal,Number,Primitive,Right
 .  .  .  .  .  TOKEN "1.23"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 4

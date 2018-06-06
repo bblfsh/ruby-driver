@@ -3,54 +3,83 @@
     "language": "ruby",
     "errors": [],
     "ast": {
-        "RUBYAST": {
-            "module": {
-                "body": [
-                    {
-                        "base": null,
-                        "end_col": 25,
-                        "end_line": 1,
-                        "selector": "require",
-                        "start_col": 0,
-                        "start_line": 1,
-                        "type": "send",
-                        "values": [
-                            {
-                                "end_col": 25,
-                                "end_line": 1,
-                                "start_col": 8,
-                                "start_line": 1,
-                                "token": "./u2_class_this",
-                                "type": "str"
-                            }
-                        ]
+        "@type": "module",
+        "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 32,
+                "line": 2
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
+            "@type": "begin",
+            "body": [
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 25,
+                        "line": 1
                     },
-                    {
-                        "base": null,
-                        "end_col": 32,
-                        "end_line": 2,
-                        "selector": "require_relative",
-                        "start_col": 0,
-                        "start_line": 2,
-                        "type": "send",
-                        "values": [
-                            {
-                                "end_col": 32,
-                                "end_line": 2,
-                                "start_col": 17,
-                                "start_line": 2,
-                                "token": "u2_class_this",
-                                "type": "str"
-                            }
-                        ]
-                    }
-                ],
-                "end_col": 32,
-                "end_line": 2,
-                "start_col": 0,
-                "start_line": 1,
-                "type": "begin"
-            }
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1
+                    },
+                    "@type": "send_statement",
+                    "base": null,
+                    "selector": "require",
+                    "values": [
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 25,
+                                "line": 1
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 9,
+                                "line": 1
+                            },
+                            "@token": "./u2_class_this",
+                            "@type": "str"
+                        }
+                    ]
+                },
+                {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 32,
+                        "line": 2
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 2
+                    },
+                    "@type": "send_qualified",
+                    "base": null,
+                    "selector": "require_relative",
+                    "values": [
+                        {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 32,
+                                "line": 2
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 18,
+                                "line": 2
+                            },
+                            "@token": "u2_class_this",
+                            "@type": "str"
+                        }
+                    ]
+                }
+            ]
         }
     }
 }
