@@ -5,85 +5,139 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 21,
+                "line": 2
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@type": "begin",
             "body": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 13,
+                        "line": 1
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 12,
+                        "line": 1
+                    },
                     "@type": "if",
                     "body": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 10,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 1
+                        },
                         "@type": "send_qualified",
                         "base": null,
-                        "pos_col_end": 10,
-                        "pos_col_start": 1,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1,
                         "selector": "puts",
                         "values": [
                             {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 10,
+                                    "line": 1
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 6,
+                                    "line": 1
+                                },
                                 "@token": "foo",
-                                "@type": "str",
-                                "pos_col_end": 10,
-                                "pos_col_start": 6,
-                                "pos_line_end": 1,
-                                "pos_line_start": 1
+                                "@type": "str"
                             }
                         ]
                     },
                     "condition": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 17,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 15,
+                            "line": 1
+                        },
                         "@type": "send_qualified",
                         "base": null,
-                        "pos_col_end": 17,
-                        "pos_col_start": 15,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1,
                         "selector": "foo"
                     },
-                    "else": null,
-                    "pos_col_end": 13,
-                    "pos_col_start": 12,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1
+                    "else": null
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 17,
+                        "line": 2
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 12,
+                        "line": 2
+                    },
                     "@type": "if",
                     "body": null,
                     "condition": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 21,
+                            "line": 2
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 19,
+                            "line": 2
+                        },
                         "@type": "send_qualified",
                         "base": null,
-                        "pos_col_end": 21,
-                        "pos_col_start": 19,
-                        "pos_line_end": 2,
-                        "pos_line_start": 2,
                         "selector": "foo"
                     },
                     "else": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 10,
+                            "line": 2
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 2
+                        },
                         "@type": "send_qualified",
                         "base": null,
-                        "pos_col_end": 10,
-                        "pos_col_start": 1,
-                        "pos_line_end": 2,
-                        "pos_line_start": 2,
                         "selector": "puts",
                         "values": [
                             {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 10,
+                                    "line": 2
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 6,
+                                    "line": 2
+                                },
                                 "@token": "bar",
-                                "@type": "str",
-                                "pos_col_end": 10,
-                                "pos_col_start": 6,
-                                "pos_line_end": 2,
-                                "pos_line_start": 2
+                                "@type": "str"
                             }
                         ]
-                    },
-                    "pos_col_end": 17,
-                    "pos_col_start": 12,
-                    "pos_line_end": 2,
-                    "pos_line_start": 2
+                    }
                 }
-            ],
-            "pos_col_end": 21,
-            "pos_col_start": 1,
-            "pos_line_end": 2,
-            "pos_line_start": 1
+            ]
         }
     }
 }

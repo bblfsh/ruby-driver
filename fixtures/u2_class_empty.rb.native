@@ -5,6 +5,16 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 5,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@token": "Testcls1",
             "@type": "class",
             "body": [
@@ -12,11 +22,7 @@
                     "@type": "NilNode"
                 }
             ],
-            "parent": null,
-            "pos_col_end": 5,
-            "pos_col_start": 1,
-            "pos_line_end": 1,
-            "pos_line_start": 1
+            "parent": null
         }
     }
 }

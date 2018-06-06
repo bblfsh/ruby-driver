@@ -5,201 +5,345 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 19,
+                "line": 4
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@type": "begin",
             "body": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 13,
+                        "line": 1
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1
+                    },
                     "@type": "lvasgn",
-                    "pos_col_end": 13,
-                    "pos_col_start": 1,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1,
                     "target": "a",
                     "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 13,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 5,
+                            "line": 1
+                        },
                         "@type": "array",
                         "contents": [
                             {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 6,
+                                    "line": 1
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 6,
+                                    "line": 1
+                                },
                                 "@token": 1,
-                                "@type": "int",
-                                "pos_col_end": 6,
-                                "pos_col_start": 6,
-                                "pos_line_end": 1,
-                                "pos_line_start": 1
+                                "@type": "int"
                             },
                             {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 9,
+                                    "line": 1
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 9,
+                                    "line": 1
+                                },
                                 "@token": 2,
-                                "@type": "int",
-                                "pos_col_end": 9,
-                                "pos_col_start": 9,
-                                "pos_line_end": 1,
-                                "pos_line_start": 1
+                                "@type": "int"
                             },
                             {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 12,
+                                    "line": 1
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 12,
+                                    "line": 1
+                                },
                                 "@token": 3,
-                                "@type": "int",
-                                "pos_col_end": 12,
-                                "pos_col_start": 12,
-                                "pos_line_end": 1,
-                                "pos_line_start": 1
+                                "@type": "int"
                             }
-                        ],
-                        "pos_col_end": 13,
-                        "pos_col_start": 5,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1
+                        ]
                     }
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 18,
+                        "line": 2
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 2
+                    },
                     "@type": "lvasgn",
-                    "pos_col_end": 18,
-                    "pos_col_start": 1,
-                    "pos_line_end": 2,
-                    "pos_line_start": 2,
                     "target": "inc_end",
                     "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 18,
+                            "line": 2
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 11,
+                            "line": 2
+                        },
                         "@type": "send_array",
                         "base": {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 11,
+                                "line": 2
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 11,
+                                "line": 2
+                            },
                             "@token": "a",
-                            "@type": "lvar",
-                            "pos_col_end": 11,
-                            "pos_col_start": 11,
-                            "pos_line_end": 2,
-                            "pos_line_start": 2
+                            "@type": "lvar"
                         },
-                        "pos_col_end": 18,
-                        "pos_col_start": 11,
-                        "pos_line_end": 2,
-                        "pos_line_start": 2,
                         "selector": "[]",
                         "values": [
                             {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 17,
+                                    "line": 2
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 13,
+                                    "line": 2
+                                },
                                 "@type": "irange",
                                 "_1": {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 13,
+                                        "line": 2
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 13,
+                                        "line": 2
+                                    },
                                     "@token": 1,
-                                    "@type": "int",
-                                    "pos_col_end": 13,
-                                    "pos_col_start": 13,
-                                    "pos_line_end": 2,
-                                    "pos_line_start": 2
+                                    "@type": "int"
                                 },
                                 "_2": {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 17,
+                                        "line": 2
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 16,
+                                        "line": 2
+                                    },
                                     "@token": -1,
-                                    "@type": "int",
-                                    "pos_col_end": 17,
-                                    "pos_col_start": 16,
-                                    "pos_line_end": 2,
-                                    "pos_line_start": 2
-                                },
-                                "pos_col_end": 17,
-                                "pos_col_start": 13,
-                                "pos_line_end": 2,
-                                "pos_line_start": 2
+                                    "@type": "int"
+                                }
                             }
                         ]
                     }
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 19,
+                        "line": 3
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 3
+                    },
                     "@type": "lvasgn",
-                    "pos_col_end": 19,
-                    "pos_col_start": 1,
-                    "pos_line_end": 3,
-                    "pos_line_start": 3,
                     "target": "inc_slice",
                     "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 19,
+                            "line": 3
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 13,
+                            "line": 3
+                        },
                         "@type": "send_array",
                         "base": {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 13,
+                                "line": 3
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 13,
+                                "line": 3
+                            },
                             "@token": "a",
-                            "@type": "lvar",
-                            "pos_col_end": 13,
-                            "pos_col_start": 13,
-                            "pos_line_end": 3,
-                            "pos_line_start": 3
+                            "@type": "lvar"
                         },
-                        "pos_col_end": 19,
-                        "pos_col_start": 13,
-                        "pos_line_end": 3,
-                        "pos_line_start": 3,
                         "selector": "[]",
                         "values": [
                             {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 18,
+                                    "line": 3
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 15,
+                                    "line": 3
+                                },
                                 "@type": "irange",
                                 "_1": {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 15,
+                                        "line": 3
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 15,
+                                        "line": 3
+                                    },
                                     "@token": 1,
-                                    "@type": "int",
-                                    "pos_col_end": 15,
-                                    "pos_col_start": 15,
-                                    "pos_line_end": 3,
-                                    "pos_line_start": 3
+                                    "@type": "int"
                                 },
                                 "_2": {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 18,
+                                        "line": 3
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 18,
+                                        "line": 3
+                                    },
                                     "@token": 2,
-                                    "@type": "int",
-                                    "pos_col_end": 18,
-                                    "pos_col_start": 18,
-                                    "pos_line_end": 3,
-                                    "pos_line_start": 3
-                                },
-                                "pos_col_end": 18,
-                                "pos_col_start": 15,
-                                "pos_line_end": 3,
-                                "pos_line_start": 3
+                                    "@type": "int"
+                                }
                             }
                         ]
                     }
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 19,
+                        "line": 4
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 4
+                    },
                     "@type": "lvasgn",
-                    "pos_col_end": 19,
-                    "pos_col_start": 1,
-                    "pos_line_end": 4,
-                    "pos_line_start": 4,
                     "target": "exc_end",
                     "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 19,
+                            "line": 4
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 11,
+                            "line": 4
+                        },
                         "@type": "send_array",
                         "base": {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 11,
+                                "line": 4
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 11,
+                                "line": 4
+                            },
                             "@token": "a",
-                            "@type": "lvar",
-                            "pos_col_end": 11,
-                            "pos_col_start": 11,
-                            "pos_line_end": 4,
-                            "pos_line_start": 4
+                            "@type": "lvar"
                         },
-                        "pos_col_end": 19,
-                        "pos_col_start": 11,
-                        "pos_line_end": 4,
-                        "pos_line_start": 4,
                         "selector": "[]",
                         "values": [
                             {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 18,
+                                    "line": 4
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 13,
+                                    "line": 4
+                                },
                                 "@type": "erange",
                                 "_1": {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 13,
+                                        "line": 4
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 13,
+                                        "line": 4
+                                    },
                                     "@token": 0,
-                                    "@type": "int",
-                                    "pos_col_end": 13,
-                                    "pos_col_start": 13,
-                                    "pos_line_end": 4,
-                                    "pos_line_start": 4
+                                    "@type": "int"
                                 },
                                 "_2": {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 18,
+                                        "line": 4
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 17,
+                                        "line": 4
+                                    },
                                     "@token": -1,
-                                    "@type": "int",
-                                    "pos_col_end": 18,
-                                    "pos_col_start": 17,
-                                    "pos_line_end": 4,
-                                    "pos_line_start": 4
-                                },
-                                "pos_col_end": 18,
-                                "pos_col_start": 13,
-                                "pos_line_end": 4,
-                                "pos_line_start": 4
+                                    "@type": "int"
+                                }
                             }
                         ]
                     }
                 }
-            ],
-            "pos_col_end": 19,
-            "pos_col_start": 1,
-            "pos_line_end": 4,
-            "pos_line_start": 1
+            ]
         }
     }
 }

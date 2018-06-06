@@ -5,28 +5,46 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 12,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@token": "foo",
             "@type": "send_assign",
             "base": {
-                "@type": "self",
-                "pos_col_end": 4,
-                "pos_col_start": 1,
-                "pos_line_end": 1,
-                "pos_line_start": 1
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 4,
+                    "line": 1
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 1,
+                    "line": 1
+                },
+                "@type": "self"
             },
-            "pos_col_end": 12,
-            "pos_col_start": 1,
-            "pos_line_end": 1,
-            "pos_line_start": 1,
             "selector": "foo=",
             "values": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 12,
+                        "line": 1
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 12,
+                        "line": 1
+                    },
                     "@token": 1,
-                    "@type": "int",
-                    "pos_col_end": 12,
-                    "pos_col_start": 12,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1
+                    "@type": "int"
                 }
             ]
         }

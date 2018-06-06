@@ -5,67 +5,109 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 5,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@token": "Foo",
             "@type": "class",
             "body": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 17,
+                        "line": 5
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 2
+                    },
                     "@type": "begin",
                     "body": [
                         {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 7,
+                                "line": 2
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 2
+                            },
                             "@token": "bar",
                             "@type": "def",
                             "args": {
-                                "@type": "args",
-                                "pos_col_end": 13,
-                                "pos_col_start": 12,
-                                "pos_line_end": 2,
-                                "pos_line_start": 2
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 13,
+                                    "line": 2
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 12,
+                                    "line": 2
+                                },
+                                "@type": "args"
                             },
                             "body": [
                                 {
                                     "@type": "NilNode"
                                 }
-                            ],
-                            "pos_col_end": 7,
-                            "pos_col_start": 5,
-                            "pos_line_end": 2,
-                            "pos_line_start": 2
+                            ]
                         },
                         {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 9,
+                                "line": 5
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 5
+                            },
                             "@type": "alias",
                             "_1": {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 13,
+                                    "line": 5
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 11,
+                                    "line": 5
+                                },
                                 "@token": "baz",
-                                "@type": "sym",
-                                "pos_col_end": 13,
-                                "pos_col_start": 11,
-                                "pos_line_end": 5,
-                                "pos_line_start": 5
+                                "@type": "sym"
                             },
                             "_2": {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 17,
+                                    "line": 5
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 15,
+                                    "line": 5
+                                },
                                 "@token": "bar",
-                                "@type": "sym",
-                                "pos_col_end": 17,
-                                "pos_col_start": 15,
-                                "pos_line_end": 5,
-                                "pos_line_start": 5
-                            },
-                            "pos_col_end": 9,
-                            "pos_col_start": 5,
-                            "pos_line_end": 5,
-                            "pos_line_start": 5
+                                "@type": "sym"
+                            }
                         }
-                    ],
-                    "pos_col_end": 17,
-                    "pos_col_start": 5,
-                    "pos_line_end": 5,
-                    "pos_line_start": 2
+                    ]
                 }
             ],
-            "parent": null,
-            "pos_col_end": 5,
-            "pos_col_start": 1,
-            "pos_line_end": 1,
-            "pos_line_start": 1
+            "parent": null
         }
     }
 }

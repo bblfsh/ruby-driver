@@ -74,13 +74,6 @@ var operatorRoles = StringToRolesMap(map[string][]role.Role{
 })
 
 var Annotations = []Mapping{
-	ObjectToNode{
-		LineKey:      "pos_line_start",
-		ColumnKey:    "pos_col_start",
-		EndLineKey:   "pos_line_end",
-		EndColumnKey: "pos_col_end",
-	}.Mapping(),
-
 	AnnotateType("file", nil, role.File),
 	AnnotateType("begin", nil, role.Block),
 	AnnotateType("body", nil, role.Body),

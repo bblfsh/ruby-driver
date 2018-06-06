@@ -5,172 +5,292 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 13,
+                "line": 6
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@type": "begin",
             "body": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 7,
+                        "line": 1
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1
+                    },
                     "@type": "and",
                     "left": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 1
+                        },
                         "@type": "send_qualified",
                         "base": null,
-                        "pos_col_end": 1,
-                        "pos_col_start": 1,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1,
                         "selector": "a"
                     },
-                    "pos_col_end": 7,
-                    "pos_col_start": 1,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1,
                     "right": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 1
+                        },
                         "@type": "send_qualified",
                         "base": null,
-                        "pos_col_end": 7,
-                        "pos_col_start": 7,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1,
                         "selector": "b"
                     }
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 6,
+                        "line": 2
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 2
+                    },
                     "@type": "or",
                     "left": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 2
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 2
+                        },
                         "@type": "send_qualified",
                         "base": null,
-                        "pos_col_end": 1,
-                        "pos_col_start": 1,
-                        "pos_line_end": 2,
-                        "pos_line_start": 2,
                         "selector": "a"
                     },
-                    "pos_col_end": 6,
-                    "pos_col_start": 1,
-                    "pos_line_end": 2,
-                    "pos_line_start": 2,
                     "right": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 2
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 2
+                        },
                         "@type": "send_qualified",
                         "base": null,
-                        "pos_col_end": 6,
-                        "pos_col_start": 6,
-                        "pos_line_end": 2,
-                        "pos_line_start": 2,
                         "selector": "b"
                     }
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 6,
+                        "line": 3
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 3
+                    },
                     "@type": "and",
                     "left": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 3
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 3
+                        },
                         "@type": "send_qualified",
                         "base": null,
-                        "pos_col_end": 1,
-                        "pos_col_start": 1,
-                        "pos_line_end": 3,
-                        "pos_line_start": 3,
                         "selector": "a"
                     },
-                    "pos_col_end": 6,
-                    "pos_col_start": 1,
-                    "pos_line_end": 3,
-                    "pos_line_start": 3,
                     "right": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 3
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 3
+                        },
                         "@type": "send_qualified",
                         "base": null,
-                        "pos_col_end": 6,
-                        "pos_col_start": 6,
-                        "pos_line_end": 3,
-                        "pos_line_start": 3,
                         "selector": "b"
                     }
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 6,
+                        "line": 4
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 4
+                    },
                     "@type": "or",
                     "left": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 4
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 4
+                        },
                         "@type": "send_qualified",
                         "base": null,
-                        "pos_col_end": 1,
-                        "pos_col_start": 1,
-                        "pos_line_end": 4,
-                        "pos_line_start": 4,
                         "selector": "a"
                     },
-                    "pos_col_end": 6,
-                    "pos_col_start": 1,
-                    "pos_line_end": 4,
-                    "pos_line_start": 4,
                     "right": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 4
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 6,
+                            "line": 4
+                        },
                         "@type": "send_qualified",
                         "base": null,
-                        "pos_col_end": 6,
-                        "pos_col_start": 6,
-                        "pos_line_end": 4,
-                        "pos_line_start": 4,
                         "selector": "b"
                     }
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 2,
+                        "line": 5
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 5
+                    },
                     "@type": "send_operator",
                     "base": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 2,
+                            "line": 5
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 2,
+                            "line": 5
+                        },
                         "@type": "send_qualified",
                         "base": null,
-                        "pos_col_end": 2,
-                        "pos_col_start": 2,
-                        "pos_line_end": 5,
-                        "pos_line_start": 5,
                         "selector": "b"
                     },
-                    "pos_col_end": 2,
-                    "pos_col_start": 1,
-                    "pos_line_end": 5,
-                    "pos_line_start": 5,
                     "selector": "!"
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 13,
+                        "line": 6
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 6
+                    },
                     "@type": "send_operator",
                     "base": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 13,
+                            "line": 6
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 5,
+                            "line": 6
+                        },
                         "@type": "begin",
                         "body": [
                             {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 12,
+                                    "line": 6
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 6,
+                                    "line": 6
+                                },
                                 "@type": "and",
                                 "left": {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 6,
+                                        "line": 6
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 6,
+                                        "line": 6
+                                    },
                                     "@type": "send_qualified",
                                     "base": null,
-                                    "pos_col_end": 6,
-                                    "pos_col_start": 6,
-                                    "pos_line_end": 6,
-                                    "pos_line_start": 6,
                                     "selector": "a"
                                 },
-                                "pos_col_end": 12,
-                                "pos_col_start": 6,
-                                "pos_line_end": 6,
-                                "pos_line_start": 6,
                                 "right": {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 12,
+                                        "line": 6
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 12,
+                                        "line": 6
+                                    },
                                     "@type": "send_qualified",
                                     "base": null,
-                                    "pos_col_end": 12,
-                                    "pos_col_start": 12,
-                                    "pos_line_end": 6,
-                                    "pos_line_start": 6,
                                     "selector": "b"
                                 }
                             }
-                        ],
-                        "pos_col_end": 13,
-                        "pos_col_start": 5,
-                        "pos_line_end": 6,
-                        "pos_line_start": 6
+                        ]
                     },
-                    "pos_col_end": 13,
-                    "pos_col_start": 1,
-                    "pos_line_end": 6,
-                    "pos_line_start": 6,
                     "selector": "!"
                 }
-            ],
-            "pos_col_end": 13,
-            "pos_col_start": 1,
-            "pos_line_end": 6,
-            "pos_line_start": 1
+            ]
         }
     }
 }

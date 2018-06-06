@@ -5,19 +5,31 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 5,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@type": "lvasgn",
-            "pos_col_end": 5,
-            "pos_col_start": 1,
-            "pos_line_end": 1,
-            "pos_line_start": 1,
             "target": "a",
             "value": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 5,
+                    "line": 1
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 5,
+                    "line": 1
+                },
                 "@token": 1,
-                "@type": "int",
-                "pos_col_end": 5,
-                "pos_col_start": 5,
-                "pos_line_end": 1,
-                "pos_line_start": 1
+                "@type": "int"
             }
         }
     }

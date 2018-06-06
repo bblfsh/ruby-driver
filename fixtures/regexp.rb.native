@@ -5,8 +5,28 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 12,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@type": "regexp",
             "options": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 12,
+                    "line": 1
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 11,
+                    "line": 1
+                },
                 "@type": "regopt",
                 "options": [
                     {
@@ -17,23 +37,21 @@
                         "@token": "m",
                         "@type": "Symbol"
                     }
-                ],
-                "pos_col_end": 12,
-                "pos_col_start": 11,
-                "pos_line_end": 1,
-                "pos_line_start": 1
+                ]
             },
-            "pos_col_end": 12,
-            "pos_col_start": 1,
-            "pos_line_end": 1,
-            "pos_line_start": 1,
             "text": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 9,
+                    "line": 1
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 2,
+                    "line": 1
+                },
                 "@token": "text(.*)",
-                "@type": "str",
-                "pos_col_end": 9,
-                "pos_col_start": 2,
-                "pos_line_end": 1,
-                "pos_line_start": 1
+                "@type": "str"
             }
         }
     }

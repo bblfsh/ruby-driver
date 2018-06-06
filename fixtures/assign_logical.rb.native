@@ -5,189 +5,327 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 16,
+                "line": 8
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@type": "begin",
             "body": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 5,
+                        "line": 1
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1
+                    },
                     "@type": "lvasgn",
-                    "pos_col_end": 5,
-                    "pos_col_start": 1,
-                    "pos_line_end": 1,
-                    "pos_line_start": 1,
                     "target": "a",
                     "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 5,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 5,
+                            "line": 1
+                        },
                         "@token": 0,
-                        "@type": "int",
-                        "pos_col_end": 5,
-                        "pos_col_start": 5,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1
+                        "@type": "int"
                     }
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 7,
+                        "line": 2
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 2
+                    },
                     "@type": "or_asgn",
-                    "pos_col_end": 7,
-                    "pos_col_start": 1,
-                    "pos_line_end": 2,
-                    "pos_line_start": 2,
                     "target": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 2
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 2
+                        },
                         "@type": "lvasgn",
-                        "pos_col_end": 1,
-                        "pos_col_start": 1,
-                        "pos_line_end": 2,
-                        "pos_line_start": 2,
                         "target": "a",
                         "value": null
                     },
                     "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 2
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 2
+                        },
                         "@token": 2,
-                        "@type": "int",
-                        "pos_col_end": 7,
-                        "pos_col_start": 7,
-                        "pos_line_end": 2,
-                        "pos_line_start": 2
+                        "@type": "int"
                     }
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 7,
+                        "line": 3
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 3
+                    },
                     "@type": "and_asgn",
-                    "pos_col_end": 7,
-                    "pos_col_start": 1,
-                    "pos_line_end": 3,
-                    "pos_line_start": 3,
                     "target": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 3
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 3
+                        },
                         "@type": "lvasgn",
-                        "pos_col_end": 1,
-                        "pos_col_start": 1,
-                        "pos_line_end": 3,
-                        "pos_line_start": 3,
                         "target": "a",
                         "value": null
                     },
                     "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 3
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 3
+                        },
                         "@token": 3,
-                        "@type": "int",
-                        "pos_col_end": 7,
-                        "pos_col_start": 7,
-                        "pos_line_end": 3,
-                        "pos_line_start": 3
+                        "@type": "int"
                     }
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 14,
+                        "line": 5
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 5
+                    },
                     "@type": "or_asgn",
-                    "pos_col_end": 14,
-                    "pos_col_start": 1,
-                    "pos_line_end": 5,
-                    "pos_line_start": 5,
                     "target": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 8,
+                            "line": 5
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 5
+                        },
                         "@type": "send_call",
                         "base": {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 4,
+                                "line": 5
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 1,
+                                "line": 5
+                            },
                             "@token": "@foo",
-                            "@type": "ivar",
-                            "pos_col_end": 4,
-                            "pos_col_start": 1,
-                            "pos_line_end": 5,
-                            "pos_line_start": 5
+                            "@type": "ivar"
                         },
-                        "pos_col_end": 8,
-                        "pos_col_start": 1,
-                        "pos_line_end": 5,
-                        "pos_line_start": 5,
                         "selector": "bar"
                     },
                     "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 14,
+                            "line": 5
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 14,
+                            "line": 5
+                        },
                         "@token": 4,
-                        "@type": "int",
-                        "pos_col_end": 14,
-                        "pos_col_start": 14,
-                        "pos_line_end": 5,
-                        "pos_line_start": 5
+                        "@type": "int"
                     }
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 13,
+                        "line": 6
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 6
+                    },
                     "@type": "and_asgn",
-                    "pos_col_end": 13,
-                    "pos_col_start": 1,
-                    "pos_line_end": 6,
-                    "pos_line_start": 6,
                     "target": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 6
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 6
+                        },
                         "@type": "send_call",
                         "base": {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 3,
+                                "line": 6
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 1,
+                                "line": 6
+                            },
                             "@type": "send_qualified",
                             "base": null,
-                            "pos_col_end": 3,
-                            "pos_col_start": 1,
-                            "pos_line_end": 6,
-                            "pos_line_start": 6,
                             "selector": "pok"
                         },
-                        "pos_col_end": 7,
-                        "pos_col_start": 1,
-                        "pos_line_end": 6,
-                        "pos_line_start": 6,
                         "selector": "pol"
                     },
                     "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 13,
+                            "line": 6
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 13,
+                            "line": 6
+                        },
                         "@token": 5,
-                        "@type": "int",
-                        "pos_col_end": 13,
-                        "pos_col_start": 13,
-                        "pos_line_end": 6,
-                        "pos_line_start": 6
+                        "@type": "int"
                     }
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 16,
+                        "line": 8
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 8
+                    },
                     "@type": "or_asgn",
-                    "pos_col_end": 16,
-                    "pos_col_start": 1,
-                    "pos_line_end": 8,
-                    "pos_line_start": 8,
                     "target": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 10,
+                            "line": 8
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 1,
+                            "line": 8
+                        },
                         "@type": "send_array",
                         "base": {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 4,
+                                "line": 8
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 1,
+                                "line": 8
+                            },
                             "@token": "@baz",
-                            "@type": "ivar",
-                            "pos_col_end": 4,
-                            "pos_col_start": 1,
-                            "pos_line_end": 8,
-                            "pos_line_start": 8
+                            "@type": "ivar"
                         },
-                        "pos_col_end": 10,
-                        "pos_col_start": 1,
-                        "pos_line_end": 8,
-                        "pos_line_start": 8,
                         "selector": "[]",
                         "values": [
                             {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 6,
+                                    "line": 8
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 6,
+                                    "line": 8
+                                },
                                 "@token": 1,
-                                "@type": "int",
-                                "pos_col_end": 6,
-                                "pos_col_start": 6,
-                                "pos_line_end": 8,
-                                "pos_line_start": 8
+                                "@type": "int"
                             },
                             {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 9,
+                                    "line": 8
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 9,
+                                    "line": 8
+                                },
                                 "@token": 2,
-                                "@type": "int",
-                                "pos_col_end": 9,
-                                "pos_col_start": 9,
-                                "pos_line_end": 8,
-                                "pos_line_start": 8
+                                "@type": "int"
                             }
                         ]
                     },
                     "value": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 16,
+                            "line": 8
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 16,
+                            "line": 8
+                        },
                         "@token": 6,
-                        "@type": "int",
-                        "pos_col_end": 16,
-                        "pos_col_start": 16,
-                        "pos_line_end": 8,
-                        "pos_line_start": 8
+                        "@type": "int"
                     }
                 }
-            ],
-            "pos_col_end": 16,
-            "pos_col_start": 1,
-            "pos_line_end": 8,
-            "pos_line_start": 1
+            ]
         }
     }
 }

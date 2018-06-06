@@ -5,34 +5,52 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 3,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@token": "testfnc1",
             "@type": "def",
             "args": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 16,
+                    "line": 1
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 13,
+                    "line": 1
+                },
                 "@type": "args",
                 "children": [
                     {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 15,
+                            "line": 1
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 15,
+                            "line": 1
+                        },
                         "@token": "a",
-                        "@type": "restarg",
-                        "pos_col_end": 15,
-                        "pos_col_start": 15,
-                        "pos_line_end": 1,
-                        "pos_line_start": 1
+                        "@type": "restarg"
                     }
-                ],
-                "pos_col_end": 16,
-                "pos_col_start": 13,
-                "pos_line_end": 1,
-                "pos_line_start": 1
+                ]
             },
             "body": [
                 {
                     "@type": "NilNode"
                 }
-            ],
-            "pos_col_end": 3,
-            "pos_col_start": 1,
-            "pos_line_end": 1,
-            "pos_line_start": 1
+            ]
         }
     }
 }

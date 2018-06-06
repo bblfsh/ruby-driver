@@ -5,22 +5,34 @@
     "ast": {
         "@type": "module",
         "file": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 9,
+                "line": 1
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1
+            },
             "@type": "block",
             "args": null,
             "blockdata": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 6,
+                    "line": 1
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 1,
+                    "line": 1
+                },
                 "@type": "send_statement",
                 "base": null,
-                "pos_col_end": 6,
-                "pos_col_start": 1,
-                "pos_line_end": 1,
-                "pos_line_start": 1,
                 "selector": "lambda"
             },
-            "body": null,
-            "pos_col_end": 9,
-            "pos_col_start": 1,
-            "pos_line_end": 1,
-            "pos_line_start": 1
+            "body": null
         }
     }
 }
