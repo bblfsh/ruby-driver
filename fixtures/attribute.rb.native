@@ -1,52 +1,47 @@
-{
-    "status": "ok",
-    "language": "ruby",
-    "errors": [],
-    "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 12,
-                "line": 1
+{ '@type': "module",
+   '@role': [Unannotated],
+   file: { '@type': "send_assign",
+      '@token': "foo",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            line: 1,
+            col: 12,
+         },
+      },
+      base: { '@type': "self",
+         '@role': [Unannotated],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               line: 1,
+               col: 1,
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
+            end: { '@type': "uast:Position",
+               line: 1,
+               col: 4,
             },
-            "@token": "foo",
-            "@type": "send_assign",
-            "base": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 4,
-                    "line": 1
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 1,
-                    "line": 1
-                },
-                "@type": "self"
+         },
+      },
+      selector: "foo=",
+      values: [
+         { '@type': "int",
+            '@token': 1,
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 1,
+                  col: 12,
+               },
+               end: { '@type': "uast:Position",
+                  line: 1,
+                  col: 12,
+               },
             },
-            "selector": "foo=",
-            "values": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 12,
-                        "line": 1
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 12,
-                        "line": 1
-                    },
-                    "@token": 1,
-                    "@type": "int"
-                }
-            ]
-        }
-    }
+         },
+      ],
+   },
 }

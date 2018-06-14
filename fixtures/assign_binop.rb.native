@@ -1,322 +1,317 @@
-{
-    "status": "ok",
-    "language": "ruby",
-    "errors": [],
-    "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 13,
-                "line": 8
+{ '@type': "module",
+   '@role': [Unannotated],
+   file: { '@type': "begin",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            line: 8,
+            col: 13,
+         },
+      },
+      body: [
+         { '@type': "lvasgn",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 1,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  line: 1,
+                  col: 5,
+               },
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
+            target: "a",
+            value: { '@type': "int",
+               '@token': 1,
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 1,
+                     col: 5,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 1,
+                     col: 5,
+                  },
+               },
             },
-            "@type": "begin",
-            "body": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 5,
-                        "line": 1
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 1
-                    },
-                    "@type": "lvasgn",
-                    "target": "a",
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 5,
-                            "line": 1
+         },
+         { '@type': "op_asgn",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 2,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  line: 2,
+                  col: 6,
+               },
+            },
+            operator: "+",
+            target: { '@type': "lvasgn",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 2,
+                     col: 1,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 2,
+                     col: 1,
+                  },
+               },
+               target: "a",
+               value: ~,
+            },
+            value: { '@type': "int",
+               '@token': 1,
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 2,
+                     col: 6,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 2,
+                     col: 6,
+                  },
+               },
+            },
+         },
+         { '@type': "op_asgn",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 3,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  line: 3,
+                  col: 6,
+               },
+            },
+            operator: "-",
+            target: { '@type': "lvasgn",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 3,
+                     col: 1,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 3,
+                     col: 1,
+                  },
+               },
+               target: "a",
+               value: ~,
+            },
+            value: { '@type': "int",
+               '@token': 1,
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 3,
+                     col: 6,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 3,
+                     col: 6,
+                  },
+               },
+            },
+         },
+         { '@type': "op_asgn",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 5,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  line: 5,
+                  col: 7,
+               },
+            },
+            operator: "+",
+            target: { '@type': "ivasgn",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 5,
+                     col: 1,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 5,
+                     col: 2,
+                  },
+               },
+               target: "@b",
+               value: ~,
+            },
+            value: { '@type': "int",
+               '@token': 2,
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 5,
+                     col: 7,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 5,
+                     col: 7,
+                  },
+               },
+            },
+         },
+         { '@type': "op_asgn",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 6,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  line: 6,
+                  col: 9,
+               },
+            },
+            operator: "+",
+            target: { '@type': "send_identifier",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 6,
+                     col: 1,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 6,
+                     col: 4,
+                  },
+               },
+               base: { '@type': "ivar",
+                  '@token': "@c",
+                  '@role': [Unannotated],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        line: 6,
+                        col: 1,
+                     },
+                     end: { '@type': "uast:Position",
+                        line: 6,
+                        col: 2,
+                     },
+                  },
+               },
+               selector: "x",
+            },
+            value: { '@type': "int",
+               '@token': 3,
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 6,
+                     col: 9,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 6,
+                     col: 9,
+                  },
+               },
+            },
+         },
+         { '@type': "op_asgn",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 8,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  line: 8,
+                  col: 13,
+               },
+            },
+            operator: "+",
+            target: { '@type': "send_call",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 8,
+                     col: 1,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 8,
+                     col: 8,
+                  },
+               },
+               base: { '@type': "ivar",
+                  '@token': "@j",
+                  '@role': [Unannotated],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        line: 8,
+                        col: 1,
+                     },
+                     end: { '@type': "uast:Position",
+                        line: 8,
+                        col: 2,
+                     },
+                  },
+               },
+               selector: "[]",
+               values: [
+                  { '@type': "int",
+                     '@token': 0,
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           line: 8,
+                           col: 4,
                         },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 5,
-                            "line": 1
+                        end: { '@type': "uast:Position",
+                           line: 8,
+                           col: 4,
                         },
-                        "@token": 1,
-                        "@type": "int"
-                    }
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 6,
-                        "line": 2
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 2
-                    },
-                    "@type": "op_asgn",
-                    "operator": "+",
-                    "target": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 2
+                     },
+                  },
+                  { '@type': "int",
+                     '@token': 1,
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           line: 8,
+                           col: 7,
                         },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 2
+                        end: { '@type': "uast:Position",
+                           line: 8,
+                           col: 7,
                         },
-                        "@type": "lvasgn",
-                        "target": "a",
-                        "value": null
-                    },
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 2
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 2
-                        },
-                        "@token": 1,
-                        "@type": "int"
-                    }
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 6,
-                        "line": 3
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 3
-                    },
-                    "@type": "op_asgn",
-                    "operator": "-",
-                    "target": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 3
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 3
-                        },
-                        "@type": "lvasgn",
-                        "target": "a",
-                        "value": null
-                    },
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 3
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 3
-                        },
-                        "@token": 1,
-                        "@type": "int"
-                    }
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 7,
-                        "line": 5
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 5
-                    },
-                    "@type": "op_asgn",
-                    "operator": "+",
-                    "target": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 2,
-                            "line": 5
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 5
-                        },
-                        "@type": "ivasgn",
-                        "target": "@b",
-                        "value": null
-                    },
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 7,
-                            "line": 5
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 7,
-                            "line": 5
-                        },
-                        "@token": 2,
-                        "@type": "int"
-                    }
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 9,
-                        "line": 6
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 6
-                    },
-                    "@type": "op_asgn",
-                    "operator": "+",
-                    "target": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 4,
-                            "line": 6
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 6
-                        },
-                        "@type": "send_call",
-                        "base": {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 2,
-                                "line": 6
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 1,
-                                "line": 6
-                            },
-                            "@token": "@c",
-                            "@type": "ivar"
-                        },
-                        "selector": "x"
-                    },
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 9,
-                            "line": 6
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 9,
-                            "line": 6
-                        },
-                        "@token": 3,
-                        "@type": "int"
-                    }
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 13,
-                        "line": 8
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 8
-                    },
-                    "@type": "op_asgn",
-                    "operator": "+",
-                    "target": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 8,
-                            "line": 8
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 8
-                        },
-                        "@type": "send_array",
-                        "base": {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 2,
-                                "line": 8
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 1,
-                                "line": 8
-                            },
-                            "@token": "@j",
-                            "@type": "ivar"
-                        },
-                        "selector": "[]",
-                        "values": [
-                            {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 4,
-                                    "line": 8
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 4,
-                                    "line": 8
-                                },
-                                "@token": 0,
-                                "@type": "int"
-                            },
-                            {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 7,
-                                    "line": 8
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 7,
-                                    "line": 8
-                                },
-                                "@token": 1,
-                                "@type": "int"
-                            }
-                        ]
-                    },
-                    "value": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 13,
-                            "line": 8
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 13,
-                            "line": 8
-                        },
-                        "@token": 4,
-                        "@type": "int"
-                    }
-                }
-            ]
-        }
-    }
+                     },
+                  },
+               ],
+            },
+            value: { '@type': "int",
+               '@token': 4,
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 8,
+                     col: 13,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 8,
+                     col: 13,
+                  },
+               },
+            },
+         },
+      ],
+   },
 }

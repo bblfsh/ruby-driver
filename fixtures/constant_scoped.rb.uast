@@ -1,46 +1,37 @@
-Status:  ok
-Language:  ruby
-Errors: 
-UAST: 
-module {
-.  Roles: Identifier,Module,Statement
-.  Children: {
-.  .  0: const {
-.  .  .  Roles: Expression,Identifier,Incomplete
-.  .  .  TOKEN "Foo"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 5
-.  .  .  .  Line: 1
-.  .  .  .  Col: 6
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: file
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: send_qualified {
-.  .  .  .  .  Roles: Expression,Identical,Qualified
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 0
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 1
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 0
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 1
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  selector: a
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "module",
+   '@role': [Identifier, Module, Statement],
+   file: { '@type': "const",
+      '@token': "Foo",
+      '@role': [Expression, Identifier, Incomplete],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 5,
+            line: 1,
+            col: 6,
+         },
+      },
+      base: { '@type': "send_qualified",
+         '@role': [Expression, Identifier, Qualified],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 0,
+               line: 1,
+               col: 1,
+            },
+            end: { '@type': "uast:Position",
+               offset: 0,
+               line: 1,
+               col: 1,
+            },
+         },
+         base: ~,
+         qnames: [a],
+         selector: "a",
+      },
+   },
 }
-

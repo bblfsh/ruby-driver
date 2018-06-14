@@ -1,98 +1,84 @@
-Status:  ok
-Language:  ruby
-Errors: 
-UAST: 
-module {
-.  Roles: Identifier,Module,Statement
-.  Children: {
-.  .  0: lvasgn {
-.  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
-.  .  .  TOKEN "a"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 14
-.  .  .  .  Line: 1
-.  .  .  .  Col: 15
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: file
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: if {
-.  .  .  .  .  Roles: Binary,If,Right,Statement
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 8
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 9
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 8
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 9
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: value
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: send_qualified {
-.  .  .  .  .  .  .  Roles: Condition,Expression,Identical,Qualified
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 4
-.  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 5
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 6
-.  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 7
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: condition
-.  .  .  .  .  .  .  .  selector: foo
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: int {
-.  .  .  .  .  .  .  Roles: Body,Expression,Literal,Number,Primitive,Then
-.  .  .  .  .  .  .  TOKEN "1"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 10
-.  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 11
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 10
-.  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 11
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  2: int {
-.  .  .  .  .  .  .  Roles: Else,Expression,Literal,Number,Primitive
-.  .  .  .  .  .  .  TOKEN "2"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 14
-.  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 15
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 14
-.  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 15
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: else
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "module",
+   '@role': [Identifier, Module, Statement],
+   file: { '@type': "lvasgn",
+      '@token': "a",
+      '@role': [Assignment, Binary, Expression, Identifier, Left],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 14,
+            line: 1,
+            col: 15,
+         },
+      },
+      value: { '@type': "if",
+         '@role': [Binary, If, Right, Statement],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 8,
+               line: 1,
+               col: 9,
+            },
+            end: { '@type': "uast:Position",
+               offset: 8,
+               line: 1,
+               col: 9,
+            },
+         },
+         body: { '@type': "int",
+            '@token': 1,
+            '@role': [Body, Expression, Literal, Number, Primitive, Then],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 10,
+                  line: 1,
+                  col: 11,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 10,
+                  line: 1,
+                  col: 11,
+               },
+            },
+         },
+         condition: { '@type': "send_qualified",
+            '@role': [Condition, Expression, Identifier, Qualified],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 4,
+                  line: 1,
+                  col: 5,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 6,
+                  line: 1,
+                  col: 7,
+               },
+            },
+            base: ~,
+            qnames: [foo],
+            selector: "foo",
+         },
+         else: { '@type': "int",
+            '@token': 2,
+            '@role': [Else, Expression, Literal, Number, Primitive],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 14,
+                  line: 1,
+                  col: 15,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 14,
+                  line: 1,
+                  col: 15,
+               },
+            },
+         },
+      },
+   },
 }
-

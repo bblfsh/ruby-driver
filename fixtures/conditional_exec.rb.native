@@ -1,143 +1,142 @@
-{
-    "status": "ok",
-    "language": "ruby",
-    "errors": [],
-    "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 21,
-                "line": 2
+{ '@type': "module",
+   '@role': [Unannotated],
+   file: { '@type': "begin",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            line: 2,
+            col: 21,
+         },
+      },
+      body: [
+         { '@type': "if",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 1,
+                  col: 12,
+               },
+               end: { '@type': "uast:Position",
+                  line: 1,
+                  col: 13,
+               },
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
+            body: { '@type': "send_qualified",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 1,
+                     col: 1,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 1,
+                     col: 10,
+                  },
+               },
+               base: ~,
+               qnames: [puts],
+               selector: "puts",
+               values: [
+                  { '@type': "str",
+                     '@token': "foo",
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           line: 1,
+                           col: 6,
+                        },
+                        end: { '@type': "uast:Position",
+                           line: 1,
+                           col: 10,
+                        },
+                     },
+                  },
+               ],
             },
-            "@type": "begin",
-            "body": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 13,
-                        "line": 1
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 12,
-                        "line": 1
-                    },
-                    "@type": "if",
-                    "body": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 10,
-                            "line": 1
+            condition: { '@type': "send_qualified",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 1,
+                     col: 15,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 1,
+                     col: 17,
+                  },
+               },
+               base: ~,
+               qnames: [foo],
+               selector: "foo",
+            },
+            else: ~,
+         },
+         { '@type': "if",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 2,
+                  col: 12,
+               },
+               end: { '@type': "uast:Position",
+                  line: 2,
+                  col: 17,
+               },
+            },
+            body: ~,
+            condition: { '@type': "send_qualified",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 2,
+                     col: 19,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 2,
+                     col: 21,
+                  },
+               },
+               base: ~,
+               qnames: [foo],
+               selector: "foo",
+            },
+            else: { '@type': "send_qualified",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 2,
+                     col: 1,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 2,
+                     col: 10,
+                  },
+               },
+               base: ~,
+               qnames: [puts],
+               selector: "puts",
+               values: [
+                  { '@type': "str",
+                     '@token': "bar",
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           line: 2,
+                           col: 6,
                         },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 1
+                        end: { '@type': "uast:Position",
+                           line: 2,
+                           col: 10,
                         },
-                        "@type": "send_qualified",
-                        "base": null,
-                        "selector": "puts",
-                        "values": [
-                            {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 10,
-                                    "line": 1
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 6,
-                                    "line": 1
-                                },
-                                "@token": "foo",
-                                "@type": "str"
-                            }
-                        ]
-                    },
-                    "condition": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 17,
-                            "line": 1
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 15,
-                            "line": 1
-                        },
-                        "@type": "send_qualified",
-                        "base": null,
-                        "selector": "foo"
-                    },
-                    "else": null
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 17,
-                        "line": 2
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 12,
-                        "line": 2
-                    },
-                    "@type": "if",
-                    "body": null,
-                    "condition": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 21,
-                            "line": 2
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 19,
-                            "line": 2
-                        },
-                        "@type": "send_qualified",
-                        "base": null,
-                        "selector": "foo"
-                    },
-                    "else": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 10,
-                            "line": 2
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 2
-                        },
-                        "@type": "send_qualified",
-                        "base": null,
-                        "selector": "puts",
-                        "values": [
-                            {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 10,
-                                    "line": 2
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 6,
-                                    "line": 2
-                                },
-                                "@token": "bar",
-                                "@type": "str"
-                            }
-                        ]
-                    }
-                }
-            ]
-        }
-    }
+                     },
+                  },
+               ],
+            },
+         },
+      ],
+   },
 }

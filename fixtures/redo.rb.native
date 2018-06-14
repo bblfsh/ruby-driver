@@ -1,47 +1,42 @@
-{
-    "status": "ok",
-    "language": "ruby",
-    "errors": [],
-    "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 5,
-                "line": 1
+{ '@type': "module",
+   '@role': [Unannotated],
+   file: { '@type': "while",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            line: 1,
+            col: 5,
+         },
+      },
+      body: { '@type': "redo",
+         '@role': [Unannotated],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               line: 2,
+               col: 5,
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
+            end: { '@type': "uast:Position",
+               line: 2,
+               col: 8,
             },
-            "@type": "while",
-            "body": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 8,
-                    "line": 2
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 5,
-                    "line": 2
-                },
-                "@type": "redo"
+         },
+      },
+      condition: { '@type': "true",
+         '@role': [Unannotated],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               line: 1,
+               col: 7,
             },
-            "condition": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 10,
-                    "line": 1
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 7,
-                    "line": 1
-                },
-                "@type": "true"
-            }
-        }
-    }
+            end: { '@type': "uast:Position",
+               line: 1,
+               col: 10,
+            },
+         },
+      },
+   },
 }

@@ -1,153 +1,100 @@
-Status:  ok
-Language:  ruby
-Errors: 
-UAST: 
-module {
-.  Roles: Identifier,Module,Statement
-.  Children: {
-.  .  0: if {
-.  .  .  Roles: If,Statement
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 5
-.  .  .  .  Line: 1
-.  .  .  .  Col: 6
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: file
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: send_qualified {
-.  .  .  .  .  Roles: Condition,Expression,Identical,Qualified
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 7
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 8
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 9
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 10
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: condition
-.  .  .  .  .  .  selector: foo
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: lvasgn {
-.  .  .  .  .  Roles: Assignment,Binary,Else,Expression,Identifier,Left
-.  .  .  .  .  TOKEN "a"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 15
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 19
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 9
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: else
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  Roles: Binary,Expression,Literal,Number,Primitive,Right
-.  .  .  .  .  .  .  TOKEN "1"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 19
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 19
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: value
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  2: lvasgn {
-.  .  .  .  .  Roles: Assignment,Binary,Body,Expression,Identifier,Left,Then
-.  .  .  .  .  TOKEN "b"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 30
-.  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 34
-.  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  Col: 9
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: body
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  Roles: Binary,Expression,Literal,Number,Primitive,Right
-.  .  .  .  .  .  .  TOKEN "2"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 34
-.  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 34
-.  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: value
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  2: lvasgn {
-.  .  .  .  .  Roles: Assignment,Binary,Body,Expression,Identifier,Left,Then
-.  .  .  .  .  TOKEN "b"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 30
-.  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 34
-.  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  Col: 9
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: body
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  Roles: Binary,Expression,Literal,Number,Primitive,Right
-.  .  .  .  .  .  .  TOKEN "2"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 34
-.  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 34
-.  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: value
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "module",
+   '@role': [Identifier, Module, Statement],
+   file: { '@type': "if",
+      '@role': [If, Statement],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 5,
+            line: 1,
+            col: 6,
+         },
+      },
+      body: { '@type': "lvasgn",
+         '@token': "b",
+         '@role': [Assignment, Binary, Body, Expression, Identifier, Left, Then],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 30,
+               line: 4,
+               col: 5,
+            },
+            end: { '@type': "uast:Position",
+               offset: 34,
+               line: 4,
+               col: 9,
+            },
+         },
+         value: { '@type': "int",
+            '@token': 2,
+            '@role': [Binary, Expression, Literal, Number, Primitive, Right],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 34,
+                  line: 4,
+                  col: 9,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 34,
+                  line: 4,
+                  col: 9,
+               },
+            },
+         },
+      },
+      condition: { '@type': "send_qualified",
+         '@role': [Condition, Expression, Identifier, Qualified],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 7,
+               line: 1,
+               col: 8,
+            },
+            end: { '@type': "uast:Position",
+               offset: 9,
+               line: 1,
+               col: 10,
+            },
+         },
+         base: ~,
+         qnames: [foo],
+         selector: "foo",
+      },
+      else: { '@type': "lvasgn",
+         '@token': "a",
+         '@role': [Assignment, Binary, Else, Expression, Identifier, Left],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 15,
+               line: 2,
+               col: 5,
+            },
+            end: { '@type': "uast:Position",
+               offset: 19,
+               line: 2,
+               col: 9,
+            },
+         },
+         value: { '@type': "int",
+            '@token': 1,
+            '@role': [Binary, Expression, Literal, Number, Primitive, Right],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 19,
+                  line: 2,
+                  col: 9,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 19,
+                  line: 2,
+                  col: 9,
+               },
+            },
+         },
+      },
+   },
 }
-

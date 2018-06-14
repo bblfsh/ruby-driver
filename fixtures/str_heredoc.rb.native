@@ -1,65 +1,60 @@
-{
-    "status": "ok",
-    "language": "ruby",
-    "errors": [],
-    "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 10,
-                "line": 1
+{ '@type': "module",
+   '@role': [Unannotated],
+   file: { '@type': "lvasgn",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            line: 1,
+            col: 10,
+         },
+      },
+      target: "a",
+      value: { '@type': "dstr",
+         '@role': [Unannotated],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               line: 1,
+               col: 5,
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
+            end: { '@type': "uast:Position",
+               line: 1,
+               col: 10,
             },
-            "@type": "lvasgn",
-            "target": "a",
-            "value": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 10,
-                    "line": 1
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 5,
-                    "line": 1
-                },
-                "@type": "dstr",
-                "children": [
-                    {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 3
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 2
-                        },
-                        "@token": "    Some text\n",
-                        "@type": "str"
-                    },
-                    {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 4
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 1,
-                            "line": 3
-                        },
-                        "@token": "    multiline\n",
-                        "@type": "str"
-                    }
-                ]
-            }
-        }
-    }
+         },
+         children: [
+            { '@type': "str",
+               '@token': "    Some text\n",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 2,
+                     col: 1,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 3,
+                     col: 1,
+                  },
+               },
+            },
+            { '@type': "str",
+               '@token': "    multiline\n",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 3,
+                     col: 1,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 4,
+                     col: 1,
+                  },
+               },
+            },
+         ],
+      },
+   },
 }

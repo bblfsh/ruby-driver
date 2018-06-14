@@ -1,4 +1,4 @@
-#!/usr/bin/ruby -wU
+#!/usr/bin/env ruby -wU
 
 require_relative '../lib/ruby_driver'
 

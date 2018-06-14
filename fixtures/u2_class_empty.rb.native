@@ -1,28 +1,23 @@
-{
-    "status": "ok",
-    "language": "ruby",
-    "errors": [],
-    "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 5,
-                "line": 1
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@token": "Testcls1",
-            "@type": "class",
-            "body": [
-                {
-                    "@type": "NilNode"
-                }
-            ],
-            "parent": null
-        }
-    }
+{ '@type': "module",
+   '@role': [Unannotated],
+   file: { '@type': "class",
+      '@token': "Testcls1",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            line: 1,
+            col: 5,
+         },
+      },
+      body: [
+         { '@type': "NilNode",
+            '@role': [Unannotated],
+         },
+      ],
+      parent: ~,
+   },
 }

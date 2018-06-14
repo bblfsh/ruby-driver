@@ -1,89 +1,73 @@
-Status:  ok
-Language:  ruby
-Errors: 
-UAST: 
-module {
-.  Roles: Identifier,Module,Statement
-.  Children: {
-.  .  0: def {
-.  .  .  Roles: Declaration,Function,Identifier,Statement
-.  .  .  TOKEN "testfnc1"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 2
-.  .  .  .  Line: 1
-.  .  .  .  Col: 3
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: file
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: NilNode {
-.  .  .  .  .  Roles: Null
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: body
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: args {
-.  .  .  .  .  Roles: Argument,Expression,Incomplete
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 12
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 13
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 17
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 18
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: args
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: kwoptarg {
-.  .  .  .  .  .  .  Roles: Argument,Expression,Incomplete,Name
-.  .  .  .  .  .  .  TOKEN "a"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 13
-.  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 14
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 13
-.  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 14
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: children
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: int {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Number,Primitive
-.  .  .  .  .  .  .  .  .  TOKEN "1"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 16
-.  .  .  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  .  .  Col: 17
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 16
-.  .  .  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  .  .  Col: 17
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: default
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "module",
+   '@role': [Identifier, Module, Statement],
+   file: { '@type': "def",
+      '@token': "testfnc1",
+      '@role': [Declaration, Function, Identifier, Statement],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 2,
+            line: 1,
+            col: 3,
+         },
+      },
+      args: { '@type': "args",
+         '@role': [Argument, Expression, Incomplete],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 12,
+               line: 1,
+               col: 13,
+            },
+            end: { '@type': "uast:Position",
+               offset: 17,
+               line: 1,
+               col: 18,
+            },
+         },
+         children: [
+            { '@type': "kwoptarg",
+               '@token': "a",
+               '@role': [Argument, Expression, Incomplete, Name],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     offset: 13,
+                     line: 1,
+                     col: 14,
+                  },
+                  end: { '@type': "uast:Position",
+                     offset: 13,
+                     line: 1,
+                     col: 14,
+                  },
+               },
+               default: { '@type': "int",
+                  '@token': 1,
+                  '@role': [Expression, Literal, Number, Primitive],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 16,
+                        line: 1,
+                        col: 17,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 16,
+                        line: 1,
+                        col: 17,
+                     },
+                  },
+               },
+            },
+         ],
+      },
+      body: [
+         { '@type': "NilNode",
+            '@role': ['Null'],
+         },
+      ],
+   },
 }
-

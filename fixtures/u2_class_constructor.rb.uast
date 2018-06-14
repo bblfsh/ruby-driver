@@ -1,148 +1,129 @@
-Status:  ok
-Language:  ruby
-Errors: 
-UAST: 
-module {
-.  Roles: Identifier,Module,Statement
-.  Children: {
-.  .  0: class {
-.  .  .  Roles: Declaration,Identifier,Statement,Type
-.  .  .  TOKEN "Testcls1"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 4
-.  .  .  .  Line: 1
-.  .  .  .  Col: 5
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: file
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: begin {
-.  .  .  .  .  Roles: Block
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 19
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 61
-.  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  Col: 22
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: body
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: def {
-.  .  .  .  .  .  .  Roles: Declaration,Function,Identifier,Statement
-.  .  .  .  .  .  .  TOKEN "initialize"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 19
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 5
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 21
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 7
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: NilNode {
-.  .  .  .  .  .  .  .  .  Roles: Null
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: args {
-.  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Incomplete
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 33
-.  .  .  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  .  .  Col: 19
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 34
-.  .  .  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  .  .  Col: 20
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: args
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: def {
-.  .  .  .  .  .  .  Roles: Declaration,Function,Identifier,Statement
-.  .  .  .  .  .  .  TOKEN "new"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 44
-.  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  Col: 5
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 46
-.  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  Col: 7
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: NilNode {
-.  .  .  .  .  .  .  .  .  Roles: Null
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: args {
-.  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Incomplete
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 51
-.  .  .  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  .  .  Col: 12
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 57
-.  .  .  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  .  .  Col: 18
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: args
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  0: restarg {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Identifier,List
-.  .  .  .  .  .  .  .  .  .  .  TOKEN "args"
-.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 53
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 14
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 56
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 17
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  internalRole: children
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "module",
+   '@role': [Identifier, Module, Statement],
+   file: { '@type': "class",
+      '@token': "Testcls1",
+      '@role': [Declaration, Identifier, Statement, Type],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 4,
+            line: 1,
+            col: 5,
+         },
+      },
+      body: [
+         { '@type': "begin",
+            '@role': [Block],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 19,
+                  line: 2,
+                  col: 5,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 61,
+                  line: 3,
+                  col: 22,
+               },
+            },
+            body: [
+               { '@type': "def",
+                  '@token': "initialize",
+                  '@role': [Declaration, Function, Identifier, Statement],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 19,
+                        line: 2,
+                        col: 5,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 21,
+                        line: 2,
+                        col: 7,
+                     },
+                  },
+                  args: { '@type': "args",
+                     '@role': [Argument, Expression, Incomplete],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 33,
+                           line: 2,
+                           col: 19,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 34,
+                           line: 2,
+                           col: 20,
+                        },
+                     },
+                  },
+                  body: [
+                     { '@type': "NilNode",
+                        '@role': ['Null'],
+                     },
+                  ],
+               },
+               { '@type': "def",
+                  '@token': "new",
+                  '@role': [Declaration, Function, Identifier, Statement],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 44,
+                        line: 3,
+                        col: 5,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 46,
+                        line: 3,
+                        col: 7,
+                     },
+                  },
+                  args: { '@type': "args",
+                     '@role': [Argument, Expression, Incomplete],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 51,
+                           line: 3,
+                           col: 12,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 57,
+                           line: 3,
+                           col: 18,
+                        },
+                     },
+                     children: [
+                        { '@type': "restarg",
+                           '@token': "args",
+                           '@role': [Argument, Expression, Identifier, List],
+                           '@pos': { '@type': "uast:Positions",
+                              start: { '@type': "uast:Position",
+                                 offset: 53,
+                                 line: 3,
+                                 col: 14,
+                              },
+                              end: { '@type': "uast:Position",
+                                 offset: 56,
+                                 line: 3,
+                                 col: 17,
+                              },
+                           },
+                        },
+                     ],
+                  },
+                  body: [
+                     { '@type': "NilNode",
+                        '@role': ['Null'],
+                     },
+                  ],
+               },
+            ],
+         },
+      ],
+      parent: ~,
+   },
 }
-

@@ -1,27 +1,19 @@
-Status:  ok
-Language:  ruby
-Errors: 
-UAST: 
-module {
-.  Roles: Identifier,Module,Statement
-.  Children: {
-.  .  0: gvar {
-.  .  .  Roles: Expression,Identifier,Visibility,World
-.  .  .  TOKEN "$foo"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 3
-.  .  .  .  Line: 1
-.  .  .  .  Col: 4
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: file
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "module",
+   '@role': [Identifier, Module, Statement],
+   file: { '@type': "gvar",
+      '@token': "$foo",
+      '@role': [Expression, Identifier, Visibility, World],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 3,
+            line: 1,
+            col: 4,
+         },
+      },
+   },
 }
-

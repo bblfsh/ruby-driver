@@ -1,63 +1,72 @@
-Status:  ok
-Language:  ruby
-Errors: 
-UAST: 
-module {
-.  Roles: Identifier,Module,Statement
-.  Children: {
-.  .  0: send_operator {
-.  .  .  Roles: Add,Arithmetic,Binary,Expression,Operator
-.  .  .  TOKEN "+"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 6
-.  .  .  .  Line: 1
-.  .  .  .  Col: 7
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: file
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: send_qualified {
-.  .  .  .  .  Roles: Expression,Identical,Left,Qualified
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 0
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 1
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 2
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 3
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: base
-.  .  .  .  .  .  selector: foo
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: int {
-.  .  .  .  .  Roles: Expression,Literal,Number,Primitive,Right
-.  .  .  .  .  TOKEN "1"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 6
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 7
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 6
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 7
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: values
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "module",
+   '@role': [Identifier, Module, Statement],
+   file: { '@type': "send_call",
+      '@token': "+",
+      '@role': [Call, Expression, Function],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 6,
+            line: 1,
+            col: 7,
+         },
+      },
+      base: { '@type': "send_qualified",
+         '@role': [Expression, Identifier, Qualified],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 0,
+               line: 1,
+               col: 1,
+            },
+            end: { '@type': "uast:Position",
+               offset: 2,
+               line: 1,
+               col: 3,
+            },
+         },
+         base: ~,
+         qnames: [
+            { '@type': "uast:Identifier",
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     offset: 0,
+                     line: 1,
+                     col: 1,
+                  },
+                  end: { '@type': "uast:Position",
+                     offset: 6,
+                     line: 1,
+                     col: 7,
+                  },
+               },
+               Name: "+",
+            },
+            foo,
+         ],
+         selector: "foo",
+      },
+      values: [
+         { '@type': "int",
+            '@token': 1,
+            '@role': [Argument, Call, Expression, Function, Literal, Number, Primitive],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 6,
+                  line: 1,
+                  col: 7,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 6,
+                  line: 1,
+                  col: 7,
+               },
+            },
+         },
+      ],
+   },
 }
-

@@ -1,85 +1,82 @@
-{
-    "status": "ok",
-    "language": "ruby",
-    "errors": [],
-    "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 32,
-                "line": 2
+{ '@type': "module",
+   '@role': [Unannotated],
+   file: { '@type': "begin",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            line: 2,
+            col: 32,
+         },
+      },
+      body: [
+         { '@type': "send_qualified",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 1,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  line: 1,
+                  col: 25,
+               },
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
+            base: ~,
+            qnames: [require],
+            selector: "require",
+            values: [
+               { '@type': "str",
+                  '@token': "./u2_class_this",
+                  '@role': [Unannotated],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        line: 1,
+                        col: 9,
+                     },
+                     end: { '@type': "uast:Position",
+                        line: 1,
+                        col: 25,
+                     },
+                  },
+               },
+            ],
+         },
+         { '@type': "send_qualified",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 2,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  line: 2,
+                  col: 32,
+               },
             },
-            "@type": "begin",
-            "body": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 25,
-                        "line": 1
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 1
-                    },
-                    "@type": "send_statement",
-                    "base": null,
-                    "selector": "require",
-                    "values": [
-                        {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 25,
-                                "line": 1
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 9,
-                                "line": 1
-                            },
-                            "@token": "./u2_class_this",
-                            "@type": "str"
-                        }
-                    ]
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 32,
-                        "line": 2
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 2
-                    },
-                    "@type": "send_qualified",
-                    "base": null,
-                    "selector": "require_relative",
-                    "values": [
-                        {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 32,
-                                "line": 2
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 18,
-                                "line": 2
-                            },
-                            "@token": "u2_class_this",
-                            "@type": "str"
-                        }
-                    ]
-                }
-            ]
-        }
-    }
+            base: ~,
+            qnames: ['require_relative'],
+            selector: "require_relative",
+            values: [
+               { '@type': "str",
+                  '@token': "u2_class_this",
+                  '@role': [Unannotated],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        line: 2,
+                        col: 18,
+                     },
+                     end: { '@type': "uast:Position",
+                        line: 2,
+                        col: 32,
+                     },
+                  },
+               },
+            ],
+         },
+      ],
+   },
 }

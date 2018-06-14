@@ -1,87 +1,82 @@
-{
-    "status": "ok",
-    "language": "ruby",
-    "errors": [],
-    "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 3,
-                "line": 5
+{ '@type': "module",
+   '@role': [Unannotated],
+   file: { '@type': "kwbegin",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            line: 5,
+            col: 3,
+         },
+      },
+      body: [
+         { '@type': "rescue",
+            '@role': [Unannotated],
+            body: { '@type': "lvasgn",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 2,
+                     col: 5,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 2,
+                     col: 9,
+                  },
+               },
+               target: "a",
+               value: { '@type': "int",
+                  '@token': 1,
+                  '@role': [Unannotated],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        line: 2,
+                        col: 9,
+                     },
+                     end: { '@type': "uast:Position",
+                        line: 2,
+                        col: 9,
+                     },
+                  },
+               },
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
+            else: { '@type': "NilNode",
+               '@role': [Unannotated],
             },
-            "@type": "kwbegin",
-            "body": [
-                {
-                    "@type": "rescue",
-                    "body": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 9,
-                            "line": 2
+            handlers: [
+               { '@type': "resbody",
+                  '@role': [Unannotated],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        line: 3,
+                        col: 1,
+                     },
+                     end: { '@type': "uast:Position",
+                        line: 4,
+                        col: 9,
+                     },
+                  },
+                  alias: ~,
+                  body: { '@type': "retry",
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           line: 4,
+                           col: 5,
                         },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 5,
-                            "line": 2
+                        end: { '@type': "uast:Position",
+                           line: 4,
+                           col: 9,
                         },
-                        "@type": "lvasgn",
-                        "target": "a",
-                        "value": {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 9,
-                                "line": 2
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 9,
-                                "line": 2
-                            },
-                            "@token": 1,
-                            "@type": "int"
-                        }
-                    },
-                    "else": {
-                        "@type": "NilNode"
-                    },
-                    "handlers": [
-                        {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 9,
-                                "line": 4
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 1,
-                                "line": 3
-                            },
-                            "@type": "resbody",
-                            "alias": null,
-                            "body": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 9,
-                                    "line": 4
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 5,
-                                    "line": 4
-                                },
-                                "@type": "retry"
-                            },
-                            "exceptions": null
-                        }
-                    ]
-                }
-            ]
-        }
-    }
+                     },
+                  },
+                  exceptions: ~,
+               },
+            ],
+         },
+      ],
+   },
 }

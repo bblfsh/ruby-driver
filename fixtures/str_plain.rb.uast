@@ -1,46 +1,35 @@
-Status:  ok
-Language:  ruby
-Errors: 
-UAST: 
-module {
-.  Roles: Identifier,Module,Statement
-.  Children: {
-.  .  0: lvasgn {
-.  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
-.  .  .  TOKEN "a"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 16
-.  .  .  .  Line: 1
-.  .  .  .  Col: 17
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: file
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: str {
-.  .  .  .  .  Roles: Binary,Expression,Literal,Primitive,Right,String
-.  .  .  .  .  TOKEN "some string"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 4
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 16
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 17
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: value
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "module",
+   '@role': [Identifier, Module, Statement],
+   file: { '@type': "lvasgn",
+      '@token': "a",
+      '@role': [Assignment, Binary, Expression, Identifier, Left],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 16,
+            line: 1,
+            col: 17,
+         },
+      },
+      value: { '@type': "str",
+         '@token': "some string",
+         '@role': [Binary, Expression, Literal, Primitive, Right, String],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 4,
+               line: 1,
+               col: 5,
+            },
+            end: { '@type': "uast:Position",
+               offset: 16,
+               line: 1,
+               col: 17,
+            },
+         },
+      },
+   },
 }
-
