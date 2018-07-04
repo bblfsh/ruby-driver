@@ -29,6 +29,8 @@
                col: 6,
             },
          },
+         XXXmarcado: "NOPE",
+         XXXsel: "lambda",
          base: ~,
          qnames: [lambda],
          selector: "lambda",

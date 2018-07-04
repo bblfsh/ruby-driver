@@ -12,6 +12,8 @@
             col: 18,
          },
       },
+      XXXmarcado: "NOPE",
+      XXXsel: "puts",
       base: ~,
       qnames: [puts],
       selector: "puts",

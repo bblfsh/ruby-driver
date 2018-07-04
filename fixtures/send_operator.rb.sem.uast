@@ -15,6 +15,8 @@
             col: 7,
          },
       },
+      XXXmarcado: "NOPE",
+      XXXsel: "+",
       base: { '@type': "uast:QualifiedIdentifier",
          '@pos': { '@type': "uast:Positions",
             start: { '@type': "uast:Position",

@@ -30,6 +30,8 @@
                   col: 11,
                },
             },
+            XXXmarcado: "NOPE",
+            XXXsel: "attr",
             base: ~,
             qnames: [attr],
             selector: "attr",

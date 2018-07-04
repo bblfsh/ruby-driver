@@ -12,6 +12,8 @@
             col: 15,
          },
       },
+      XXXmarcado: "NOPE",
+      XXXsel: "require",
       base: ~,
       qnames: [require],
       selector: "require",

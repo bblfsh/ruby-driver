@@ -15,6 +15,8 @@
             col: 7,
          },
       },
+      XXXmarcado: "NOPE",
+      XXXsel: "+",
       base: { '@type': "send_qualified",
          '@role': [Expression, Identifier, Qualified],
          '@pos': { '@type': "uast:Positions",
@@ -29,6 +31,8 @@
                col: 3,
             },
          },
+         XXXmarcado: "NOPE",
+         XXXsel: "foo",
          base: ~,
          qnames: [
             { '@type': "uast:Identifier",

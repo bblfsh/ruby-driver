@@ -95,6 +95,8 @@
                      col: 8,
                   },
                },
+               XXXmarcado: "NOPE",
+               XXXsel: "[]",
                base: { '@type': "lvar",
                   '@token': "a",
                   '@role': [Unannotated],

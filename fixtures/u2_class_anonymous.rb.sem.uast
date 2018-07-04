@@ -29,6 +29,8 @@
                col: 9,
             },
          },
+         XXXmarcado: "NOPE",
+         XXXsel: "new",
          base: { '@type': "const",
             '@token': "Class",
             '@role': [Expression, Identifier, Incomplete],

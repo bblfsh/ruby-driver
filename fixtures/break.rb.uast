@@ -105,6 +105,8 @@
                            col: 10,
                         },
                      },
+                     XXXmarcado: "NOPE",
+                     XXXsel: "puts",
                      base: ~,
                      qnames: [
                         { '@type': "uast:Identifier",
@@ -177,6 +179,8 @@
                      col: 12,
                   },
                },
+               XXXmarcado: "NOPE",
+               XXXsel: "!=",
                base: { '@type': "int",
                   '@token': 1,
                   '@role': [Expression, Literal, Number, Primitive],

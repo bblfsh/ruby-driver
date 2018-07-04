@@ -156,6 +156,8 @@
                      col: 12,
                   },
                },
+               XXXmarcado: "NOPE",
+               XXXsel: "!=",
                base: { '@type': "int",
                   '@token': 1,
                   '@role': [Expression, Literal, Number, Primitive],

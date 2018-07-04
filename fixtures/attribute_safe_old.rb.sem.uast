@@ -30,6 +30,8 @@
                col: 18,
             },
          },
+         XXXmarcado: "NOPE",
+         XXXsel: "try",
          base: { '@type': "self",
             '@role': [Expression, Left, This],
             '@pos': { '@type': "uast:Positions",
