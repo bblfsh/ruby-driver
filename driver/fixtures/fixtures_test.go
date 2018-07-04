@@ -41,7 +41,7 @@ var Suite = &fixtures.Suite{
 			"kwoptarg",
 			"restarg",
 			"kwrestarg",
-			//"comment", // FIXME: not working, additional fields?
+			"comment",
 		},
 	},
 	//Docker: fixtures.DockerConfig{

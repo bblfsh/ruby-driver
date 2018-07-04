@@ -1,5 +1,5 @@
-#!/usr/bin/env ruby -wU
-
+#!/usr/bin/env ruby
+#
 require_relative '../lib/ruby_driver'
 
 driver = RubyDriver::Driver.new
