@@ -59,8 +59,6 @@
                   col: 7,
                },
             },
-            XXXmarcado: "NOPE",
-            XXXsel: "foo",
             base: ~,
             qnames: [foo],
             selector: "foo",

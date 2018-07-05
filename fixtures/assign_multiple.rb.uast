@@ -243,8 +243,6 @@
                      col: 13,
                   },
                },
-               XXXmarcado: "NOPE",
-               XXXsel: "d",
                base: ~,
                qnames: [d],
                selector: "d",

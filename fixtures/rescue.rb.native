@@ -27,8 +27,6 @@
                      col: 15,
                   },
                },
-               XXXmarcado: "NOPE",
-               XXXsel: "raise",
                base: ~,
                qnames: [raise],
                selector: "raise",

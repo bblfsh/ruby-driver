@@ -63,10 +63,30 @@ var Normalizers = []Mapping{
 		CommentNode(false, "comm", nil),
 	)),
 
-	MapSemantic("send_require", uast.RuntimeImport{}, MapObj(
-		Obj{uast.KeyToken: Var("path")},
-		Obj{"Path": Var("path")},
-	)),
+
+	AnnotateType("send_require", MapObj(
+		Obj{
+			"base": Var("path"),
+			"values": Each("vals", Var("name")),
+		},
+		Obj{
+			"Path": Var("path"),
+			"Names": Each("vals", UASTType(uast.RuntimeImport{}, Obj{
+				"Path": Var("name"),
+			})),
+		},
+	), role.Expression, role.Import),
+
+	//MapSemantic("send_require", uast.RuntimeImport{}, MapObj(
+	//	Obj{
+	//		"base": Var("path"),
+	//		"values": Var("names"),
+	//	},
+	//	Obj{
+	//		"Path": Var("path"),
+	//		"Names": Var("names"),
+	//	},
+	//)),
 
 	MapSemantic("arg", uast.Argument{}, MapObj(
 		Obj{uast.KeyToken: Var("name")},

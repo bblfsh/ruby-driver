@@ -126,8 +126,6 @@
                               col: 17,
                            },
                         },
-                        XXXmarcado: "NOPE",
-                        XXXsel: "message",
                         base: { '@type': "uast:Identifier",
                            '@pos': { '@type': "uast:Positions",
                               start: { '@type': "uast:Position",

@@ -13,8 +13,6 @@
             col: 12,
          },
       },
-      XXXmarcado: "NOPE",
-      XXXsel: "foo=",
       base: { '@type': "self",
          '@role': [Unannotated],
          '@pos': { '@type': "uast:Positions",

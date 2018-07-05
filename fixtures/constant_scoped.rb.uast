@@ -29,8 +29,6 @@
                col: 1,
             },
          },
-         XXXmarcado: "NOPE",
-         XXXsel: "a",
          base: ~,
          qnames: [a],
          selector: "a",

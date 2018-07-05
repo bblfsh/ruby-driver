@@ -54,8 +54,6 @@
                                     col: 18,
                                  },
                               },
-                              XXXmarcado: "NOPE",
-                              XXXsel: "a=",
                               base: { '@type': "self",
                                  '@role': [Expression, Left, This],
                                  '@pos': { '@type': "uast:Positions",

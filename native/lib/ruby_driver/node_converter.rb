@@ -8,7 +8,7 @@ module NodeConverter
     @@typekey = "@type"
     @@tokenkey = "@token"
     @@statement_send = ["continue", "lambda", "require", "each", "public", "protected",
-                        "private"]
+                        "private", "require_relative"]
     @@operators = ["+", "-", "*", "/", "%", "**", "&", "|", "^", "~", "<<", ">>",
                    "==", "===", "<=", ">=", "!=", "!", "eql?", "equal?", "<==>"]
 
@@ -240,7 +240,7 @@ module NodeConverter
         hash_send["values"] = node.children[2..-1].map{ |x| convert(x) }.compact
       end
 
-      selector = hash_send["selector"]
+      selector = hash_send["selector"].to_s
       hash_send = add_position(node, hash_send)
 
       def convert_base(hash)
@@ -266,7 +266,7 @@ module NodeConverter
       end
 
       if @@statement_send.include? selector
-        if selector == "require"
+        if selector == "require" or selector == "require_relative"
             hash_send[@@typekey] = "send_require"
         else
             hash_send[@@typekey] = "send_statement"

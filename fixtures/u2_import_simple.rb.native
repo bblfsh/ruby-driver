@@ -1,6 +1,6 @@
 { '@type': "module",
    '@role': [Unannotated],
-   file: { '@type': "send_qualified",
+   file: { '@type': "send_require",
       '@role': [Unannotated],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
@@ -12,10 +12,7 @@
             col: 15,
          },
       },
-      XXXmarcado: "NOPE",
-      XXXsel: "require",
       base: ~,
-      qnames: [require],
       selector: "require",
       values: [
          { '@type': "str",
