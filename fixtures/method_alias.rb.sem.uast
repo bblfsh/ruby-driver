@@ -18,8 +18,7 @@
          Name: "Foo",
       },
       body: [
-         { '@type': "begin",
-            '@role': [Block],
+         { '@type': "uast:Block",
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   offset: 14,
@@ -32,7 +31,7 @@
                   col: 17,
                },
             },
-            body: [
+            Statements: [
                { '@type': "uast:FunctionGroup",
                   '@pos': { '@type': "uast:Positions",
                      start: { '@type': "uast:Position",

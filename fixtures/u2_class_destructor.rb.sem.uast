@@ -18,8 +18,7 @@
          Name: "Testcls1",
       },
       body: [
-         { '@type': "begin",
-            '@role': [Block],
+         { '@type': "uast:Block",
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   offset: 19,
@@ -32,7 +31,7 @@
                   col: 7,
                },
             },
-            body: [
+            Statements: [
                { '@type': "defs",
                   '@role': [Declaration, Function, Identifier, Incomplete, Statement],
                   '@pos': { '@type': "uast:Positions",

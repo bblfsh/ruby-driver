@@ -21,8 +21,7 @@
             Node: { '@type': "uast:Function",
                Body: { '@type': "uast:Block",
                   Statements: [
-                     { '@type': "begin",
-                        '@role': [Block],
+                     { '@type': "uast:Block",
                         '@pos': { '@type': "uast:Positions",
                            start: { '@type': "uast:Position",
                               offset: 25,
@@ -35,7 +34,7 @@
                               col: 12,
                            },
                         },
-                        body: [
+                        Statements: [
                            { '@type': "lvasgn",
                               '@role': [Assignment, Binary, Expression, Identifier, Left],
                               '@pos': { '@type': "uast:Positions",

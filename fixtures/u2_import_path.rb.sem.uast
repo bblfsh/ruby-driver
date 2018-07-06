@@ -1,7 +1,6 @@
 { '@type': "module",
    '@role': [Identifier, Module, Statement],
-   file: { '@type': "begin",
-      '@role': [Block],
+   file: { '@type': "uast:Block",
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             offset: 0,
@@ -14,7 +13,7 @@
             col: 32,
          },
       },
-      body: [
+      Statements: [
          { '@type': "send_require",
             '@token': "require",
             '@role': [Expression, Import],

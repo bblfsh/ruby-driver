@@ -18,8 +18,7 @@
          Name: "Testcls1",
       },
       body: [
-         { '@type': "begin",
-            '@role': [Block],
+         { '@type': "uast:Block",
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   offset: 19,
@@ -32,7 +31,7 @@
                   col: 22,
                },
             },
-            body: [
+            Statements: [
                { '@type': "send_statement",
                   '@token': "private",
                   '@role': [Instance, Statement, Visibility],

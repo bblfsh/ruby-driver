@@ -101,15 +101,6 @@ var Normalizers []Mapping = []Mapping{
 	MapSemantic("kwarg", uast.Argument{}, MapObj(
 		Obj{uast.KeyToken: Var("name")},
 		Obj{"Name": UASTType(uast.Identifier{}, Obj{
-			"MapVariadic": Bool(true),
-			"Name": Var("name"),
-		})},
-	)),
-
-	MapSemantic("vararg", uast.Argument{}, MapObj(
-		Obj{uast.KeyToken: Var("name")},
-		Obj{"Name": UASTType(uast.Identifier{}, Obj{
-			"Variadic": Bool(true),
 			"Name": Var("name"),
 		})},
 	)),
@@ -213,6 +204,15 @@ var Normalizers []Mapping = []Mapping{
 			})},
 		}),
 		role.Statement, role.Function, role.Declaration, role.Identifier, role.Incomplete),
+
+	MapSemantic("begin", uast.Block{}, MapObj(
+		Obj{
+			"body": Var("body"),
+		},
+		Obj{
+			"Statements": Var("body"),
+		},
+	)),
 
 	MapSemantic("def", uast.FunctionGroup{}, MapObj(
 		Obj{

@@ -1,7 +1,6 @@
 { '@type': "module",
    '@role': [Identifier, Module, Statement],
-   file: { '@type': "begin",
-      '@role': [Block],
+   file: { '@type': "uast:Block",
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             offset: 0,
@@ -14,7 +13,7 @@
             col: 18,
          },
       },
-      body: [
+      Statements: [
          { '@type': "lvasgn",
             '@role': [Assignment, Binary, Expression, Identifier, Left],
             '@pos': { '@type': "uast:Positions",
@@ -99,8 +98,7 @@
                      Format: "",
                      Value: "foo",
                   },
-                  { '@type': "begin",
-                     '@role': [Block],
+                  { '@type': "uast:Block",
                      '@pos': { '@type': "uast:Positions",
                         start: { '@type': "uast:Position",
                            offset: 16,
@@ -113,7 +111,7 @@
                            col: 14,
                         },
                      },
-                     body: [
+                     Statements: [
                         { '@type': "uast:Identifier",
                            '@pos': { '@type': "uast:Positions",
                               start: { '@type': "uast:Position",

@@ -1,7 +1,6 @@
 { '@type': "module",
    '@role': [Identifier, Module, Statement],
-   file: { '@type': "begin",
-      '@role': [Block],
+   file: { '@type': "uast:Block",
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             offset: 0,
@@ -14,7 +13,7 @@
             col: 3,
          },
       },
-      body: [
+      Statements: [
          { '@type': "class",
             '@role': [Declaration, Identifier, Statement, Type],
             '@pos': { '@type': "uast:Positions",

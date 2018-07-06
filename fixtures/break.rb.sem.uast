@@ -1,7 +1,6 @@
 { '@type': "module",
    '@role': [Identifier, Module, Statement],
-   file: { '@type': "begin",
-      '@role': [Block],
+   file: { '@type': "uast:Block",
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             offset: 0,
@@ -14,7 +13,7 @@
             col: 3,
          },
       },
-      body: [
+      Statements: [
          { '@type': "while",
             '@role': [Statement, While],
             '@pos': { '@type': "uast:Positions",
@@ -76,8 +75,8 @@
                   col: 5,
                },
             },
-            body: { '@type': "begin",
-               '@role': [Block, Body],
+            body: { '@type': "uast:Block",
+               '@role': [Body],
                '@pos': { '@type': "uast:Positions",
                   start: { '@type': "uast:Position",
                      offset: 43,
@@ -90,7 +89,7 @@
                      col: 9,
                   },
                },
-               body: [
+               Statements: [
                   { '@type': "send_qualified",
                      '@role': [Expression, Identifier, Qualified],
                      '@pos': { '@type': "uast:Positions",
