@@ -19,4 +19,8 @@ build-native-internal:
 	$(RUBY_MAKE_CMD) build --trace; \
 	cp -r pkg $(BUILD_PATH); \
 	mkdir -p $(BUILD_PATH)/dependencies; \
-	cp -r vendor/bundle/ruby/2.4.0/cache/* $(BUILD_PATH)/dependencies;
+	cp -r vendor/bundle/ruby/2.4.0/cache/* $(BUILD_PATH)/dependencies; \
+    $(RUBY_GEM_CMD) install -V --no-document --local --ignore-dependencies --install-dir $(BUILD_PATH)/gems $(BUILD_PATH)/dependencies/*; \
+    $(RUBY_GEM_CMD) install -V --no-document --local --ignore-dependencies --install-dir $(BUILD_PATH)/gems --bindir $(BUILD_PATH)/native $(BUILD_PATH)/pkg/*; \
+    cp bin/native.sh $(BUILD_PATH)/bin/native;
+

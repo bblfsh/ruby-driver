@@ -16,7 +16,7 @@ var Suite = &fixtures.Suite{
 	Ext:  ".rb",
 	Path: filepath.Join(projectRoot, fixtures.Dir),
 	NewDriver: func() driver.BaseDriver {
-		return driver.NewExecDriverAt(filepath.Join(projectRoot, "native/exe/native"))
+		return driver.NewExecDriverAt(filepath.Join(projectRoot, "build/bin/native"))
 	},
 	Transforms: normalizer.Transforms,
 	BenchName: "class_complete",
@@ -42,9 +42,9 @@ var Suite = &fixtures.Suite{
 			"comment",
 		},
 	},
-	//Docker: fixtures.DockerConfig{
-		//Image: "ruby:2.4",
-	//},
+	Docker: fixtures.DockerConfig{
+		Image: "ruby:2.4",
+	},
 }
 
 func TestRubyDriver(t *testing.T) {
