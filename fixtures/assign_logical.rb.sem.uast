@@ -233,7 +233,8 @@
                      col: 7,
                   },
                },
-               base: { '@type': "uast:QualifiedIdentifier",
+               base: { '@type': "send_qualified",
+                  '@role': [Expression, Identifier, Qualified],
                   '@pos': { '@type': "uast:Positions",
                      start: { '@type': "uast:Position",
                         offset: 38,
@@ -246,7 +247,8 @@
                         col: 3,
                      },
                   },
-                  Names: [
+                  base: ~,
+                  qnames: [
                      { '@type': "uast:Identifier",
                         '@pos': { '@type': "uast:Positions",
                            start: { '@type': "uast:Position",
@@ -279,6 +281,7 @@
                      },
                      pok,
                   ],
+                  selector: "pok",
                },
                selector: "pol",
             },

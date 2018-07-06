@@ -23,7 +23,7 @@ func mapIdentifier(key string) Mapping {
 	))
 }
 
-var Normalizers = []Mapping{
+var Normalizers []Mapping = []Mapping{
 	MapSemantic("str", uast.String{}, MapObj(
 		Obj{uast.KeyToken: Var("val")},
 		Obj{
@@ -40,11 +40,6 @@ var Normalizers = []Mapping{
 	mapIdentifier("Symbol"),
 	mapIdentifier("Sym"),
 	mapIdentifier("Const"),
-
-	MapSemantic("send_qualified", uast.QualifiedIdentifier{}, MapObj(
-		Obj{"qnames": Var("names")},
-		Obj{"Names": Var("names")},
-	)),
 
 	// iflipflop / eflipflop, have selector but not names
 	MapSemantic("flip_1", uast.Identifier{}, MapObj(
@@ -77,18 +72,14 @@ var Normalizers = []Mapping{
 		},
 	), role.Expression, role.Import),
 
-	//MapSemantic("send_require", uast.RuntimeImport{}, MapObj(
-	//	Obj{
-	//		"base": Var("path"),
-	//		"values": Var("names"),
-	//	},
-	//	Obj{
-	//		"Path": Var("path"),
-	//		"Names": Var("names"),
-	//	},
-	//)),
-
 	MapSemantic("arg", uast.Argument{}, MapObj(
+		Obj{uast.KeyToken: Var("name")},
+		Obj{"Name": UASTType(uast.Identifier{}, Obj{
+			"Name": Var("name"),
+		})},
+	)),
+
+	MapSemantic("kwarg", uast.Argument{}, MapObj(
 		Obj{uast.KeyToken: Var("name")},
 		Obj{"Name": UASTType(uast.Identifier{}, Obj{
 			"Name": Var("name"),
@@ -101,7 +92,9 @@ var Normalizers = []Mapping{
 			"default":     Var("init"),
 		},
 		Obj{
-			"Name": Var("name"),
+			"Name": UASTType(uast.Identifier{}, Obj{
+				"Name": Var("name"),
+			}),
 			"Init": Var("init"),
 		},
 	)),
@@ -112,7 +105,9 @@ var Normalizers = []Mapping{
 			"default":     Var("init"),
 		},
 		Obj{
-			"Name": Var("name"),
+			"Name": UASTType(uast.Identifier{}, Obj{
+				"Name": Var("name"),
+			}),
 			"Init": Var("init"),
 		},
 	)),
@@ -122,7 +117,9 @@ var Normalizers = []Mapping{
 			uast.KeyToken: Var("name"),
 		},
 		Obj{
-			"Name":     Var("name"),
+			"Name":     UASTType(uast.Identifier{}, Obj{
+				"Name": Var("name"),
+			}),
 			"Variadic": Bool(true),
 		},
 	)),
@@ -133,7 +130,9 @@ var Normalizers = []Mapping{
 			"default":     Var("init"),
 		},
 		Obj{
-			"Name":     Var("name"),
+			"Name":     UASTType(uast.Identifier{}, Obj{
+				"Name": Var("name"),
+			}),
 			"Init":     Var("init"),
 			"Variadic": Bool(true),
 		},
@@ -145,7 +144,9 @@ var Normalizers = []Mapping{
 			"default":     Var("init"),
 		},
 		Obj{
-			"Name":        Var("name"),
+			"Name":        UASTType(uast.Identifier{}, Obj{
+				"Name": Var("name"),
+			}),
 			"Init":        Var("init"),
 			"MapVariadic": Bool(true),
 		},
@@ -156,7 +157,9 @@ var Normalizers = []Mapping{
 			uast.KeyToken: Var("name"),
 		},
 		Obj{
-			"Name":        Var("name"),
+			"Name":        UASTType(uast.Identifier{}, Obj{
+				"Name": Var("name"),
+			}),
 			"MapVariadic": Bool(true),
 		},
 	)),
