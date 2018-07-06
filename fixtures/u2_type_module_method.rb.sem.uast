@@ -1,7 +1,6 @@
 { '@type': "module",
    '@role': [Identifier, Module, Statement],
    file: { '@type': "module",
-      '@token': "Testmodule1",
       '@role': [Identifier, Module, Statement],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
@@ -14,6 +13,9 @@
             line: 1,
             col: 6,
          },
+      },
+      '@token': { '@type': "uast:Identifier",
+         Name: "Testmodule1",
       },
       begin: [
          { '@type': "uast:FunctionGroup",

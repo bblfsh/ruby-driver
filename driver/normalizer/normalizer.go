@@ -60,6 +60,10 @@ var Normalizers []Mapping = []Mapping{
 	tokenIsIdentifier("gvasgn", "target", role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
 	tokenIsIdentifier("cvasgn", "target", role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
 	tokenIsIdentifier("send_assign", uast.KeyToken, role.Expression, role.Assignment, role.Left),
+	tokenIsIdentifier("module", uast.KeyToken, role.Statement, role.Module),
+	tokenIsIdentifier("sym", uast.KeyToken, role.Expression, role.Identifier),
+	tokenIsIdentifier("const", uast.KeyToken, role.Expression, role.Identifier, role.Incomplete),
+	tokenIsIdentifier("send_call", "selector", role.Expression, role.Function, role.Call),
 
 	// iflipflop / eflipflop, have selector but not names
 	MapSemantic("flip_1", uast.Identifier{}, MapObj(

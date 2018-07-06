@@ -189,7 +189,6 @@
                      },
                      contents: [
                         { '@type': "const",
-                           '@token': "Exception",
                            '@role': [Expression, Identifier, Incomplete],
                            '@pos': { '@type': "uast:Positions",
                               start: { '@type': "uast:Position",
@@ -202,6 +201,9 @@
                                  line: 3,
                                  col: 16,
                               },
+                           },
+                           '@token': { '@type': "uast:Identifier",
+                              Name: "Exception",
                            },
                            base: ~,
                         },
