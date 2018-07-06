@@ -40,7 +40,6 @@
                      Body: { '@type': "uast:Block",
                         Statements: [
                            { '@type': "send_assign",
-                              '@token': "a",
                               '@role': [Assignment, Expression, Left],
                               '@pos': { '@type': "uast:Positions",
                                  start: { '@type': "uast:Position",
@@ -53,6 +52,9 @@
                                     line: 3,
                                     col: 18,
                                  },
+                              },
+                              '@token': { '@type': "uast:Identifier",
+                                 Name: "a",
                               },
                               base: { '@type': "self",
                                  '@role': [Expression, Left, This],

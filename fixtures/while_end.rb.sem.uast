@@ -30,7 +30,6 @@
          },
          body: [
             { '@type': "lvasgn",
-               '@token': "a",
                '@role': [Assignment, Binary, Expression, Identifier, Left],
                '@pos': { '@type': "uast:Positions",
                   start: { '@type': "uast:Position",
@@ -43,6 +42,10 @@
                      line: 2,
                      col: 9,
                   },
+               },
+               '@token': { '@type': "uast:Identifier",
+                  '@role': [Binary, Left],
+                  Name: "a",
                },
                value: { '@type': "int",
                   '@token': 1,

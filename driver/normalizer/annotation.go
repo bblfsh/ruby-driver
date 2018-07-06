@@ -150,8 +150,6 @@ var Annotations = []Mapping{
 	AnnotateType("masgn", nil, role.Expression, role.Assignment, role.Incomplete),
 	// *Asgn with two children = binary and value have the "Right" role but with a single children = multiple assignment target :-/
 	annotateTypeTokenField("lvasgn", "target", role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
-	// is also a member
-	annotateTypeTokenField("ivasgn", "target", role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
 	annotateTypeTokenField("gvasgn", "target", role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
 	// class assign
 	annotateTypeTokenField("cvasgn", "target", role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),

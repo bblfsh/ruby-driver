@@ -19,7 +19,6 @@
       },
       body: [
          { '@type': "cvasgn",
-            '@token': "@@classvar",
             '@role': [Assignment, Binary, Expression, Identifier, Left],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
@@ -32,6 +31,10 @@
                   line: 2,
                   col: 18,
                },
+            },
+            '@token': { '@type': "uast:Identifier",
+               '@role': [Binary, Left],
+               Name: "@@classvar",
             },
             value: { '@type': "int",
                '@token': 1,

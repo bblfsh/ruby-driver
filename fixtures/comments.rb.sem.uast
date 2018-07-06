@@ -1,7 +1,6 @@
 { '@type': "module",
    '@role': [Identifier, Module, Statement],
    file: { '@type': "lvasgn",
-      '@token': "a",
       '@role': [Assignment, Binary, Expression, Identifier, Left],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
@@ -14,6 +13,10 @@
             line: 2,
             col: 5,
          },
+      },
+      '@token': { '@type': "uast:Identifier",
+         '@role': [Binary, Left],
+         Name: "a",
       },
       comments: [
          { '@type': "uast:Comment",

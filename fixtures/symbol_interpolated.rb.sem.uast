@@ -16,7 +16,6 @@
       },
       body: [
          { '@type': "lvasgn",
-            '@token': "bar",
             '@role': [Assignment, Binary, Expression, Identifier, Left],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
@@ -29,6 +28,10 @@
                   line: 1,
                   col: 7,
                },
+            },
+            '@token': { '@type': "uast:Identifier",
+               '@role': [Binary, Left],
+               Name: "bar",
             },
             value: { '@type': "int",
                '@token': 1,

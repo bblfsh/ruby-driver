@@ -16,7 +16,6 @@
       },
       body: [
          { '@type': "send_assign",
-            '@token': "d",
             '@role': [Assignment, Expression, Left],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
@@ -29,6 +28,9 @@
                   line: 1,
                   col: 11,
                },
+            },
+            '@token': { '@type': "uast:Identifier",
+               Name: "d",
             },
             base: { '@type': "send_identifier",
                '@role': [Expression, Identifier],
