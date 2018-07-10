@@ -23,7 +23,7 @@ func mapIdentifier(key string) Mapping {
 	))
 }
 
-func tokenIsIdentifier(typ, tokenKey string, roles... role.Role) Mapping {
+func tokenIsIdentifier(typ, tokenKey string, roles ...role.Role) Mapping {
 	return AnnotateType(typ, MapObj(
 		Fields{
 			{Name: tokenKey, Op: Var("name")},
@@ -34,6 +34,16 @@ func tokenIsIdentifier(typ, tokenKey string, roles... role.Role) Mapping {
 			})},
 		}),
 		roles...)
+}
+
+func identifierWithPos(nameVar string) ObjectOp {
+	return UASTType(uast.Identifier{}, Obj{
+		uast.KeyPos: UASTType(uast.Positions{}, Obj{
+			uast.KeyStart: Var(uast.KeyStart),
+			uast.KeyEnd:   Var(uast.KeyEnd),
+		}),
+		"Name": Var(nameVar),
+	})
 }
 
 var Normalizers []Mapping = []Mapping{
@@ -97,16 +107,12 @@ var Normalizers []Mapping = []Mapping{
 
 	MapSemantic("arg", uast.Argument{}, MapObj(
 		Obj{uast.KeyToken: Var("name")},
-		Obj{"Name": UASTType(uast.Identifier{}, Obj{
-			"Name": Var("name"),
-		})},
+		Obj{"Name": identifierWithPos("name")},
 	)),
 
 	MapSemantic("kwarg", uast.Argument{}, MapObj(
 		Obj{uast.KeyToken: Var("name")},
-		Obj{"Name": UASTType(uast.Identifier{}, Obj{
-			"Name": Var("name"),
-		})},
+		Obj{"Name": identifierWithPos("name")},
 	)),
 
 	MapSemantic("optarg", uast.Argument{}, MapObj(
@@ -115,9 +121,7 @@ var Normalizers []Mapping = []Mapping{
 			"default":     Var("init"),
 		},
 		Obj{
-			"Name": UASTType(uast.Identifier{}, Obj{
-				"Name": Var("name"),
-			}),
+			"Name": identifierWithPos("name"),
 			"Init": Var("init"),
 		},
 	)),
@@ -128,9 +132,7 @@ var Normalizers []Mapping = []Mapping{
 			"default":     Var("init"),
 		},
 		Obj{
-			"Name": UASTType(uast.Identifier{}, Obj{
-				"Name": Var("name"),
-			}),
+			"Name": identifierWithPos("name"),
 			"Init": Var("init"),
 		},
 	)),
@@ -140,9 +142,7 @@ var Normalizers []Mapping = []Mapping{
 			uast.KeyToken: Var("name"),
 		},
 		Obj{
-			"Name": UASTType(uast.Identifier{}, Obj{
-				"Name": Var("name"),
-			}),
+			"Name":     identifierWithPos("name"),
 			"Variadic": Bool(true),
 		},
 	)),
@@ -153,9 +153,7 @@ var Normalizers []Mapping = []Mapping{
 			"default":     Var("init"),
 		},
 		Obj{
-			"Name": UASTType(uast.Identifier{}, Obj{
-				"Name": Var("name"),
-			}),
+			"Name":     identifierWithPos("name"),
 			"Init":     Var("init"),
 			"Variadic": Bool(true),
 		},
@@ -167,9 +165,7 @@ var Normalizers []Mapping = []Mapping{
 			"default":     Var("init"),
 		},
 		Obj{
-			"Name": UASTType(uast.Identifier{}, Obj{
-				"Name": Var("name"),
-			}),
+			"Name":        identifierWithPos("name"),
 			"Init":        Var("init"),
 			"MapVariadic": Bool(true),
 		},
@@ -180,9 +176,7 @@ var Normalizers []Mapping = []Mapping{
 			uast.KeyToken: Var("name"),
 		},
 		Obj{
-			"Name": UASTType(uast.Identifier{}, Obj{
-				"Name": Var("name"),
-			}),
+			"Name":        identifierWithPos("name"),
 			"MapVariadic": Bool(true),
 		},
 	)),
