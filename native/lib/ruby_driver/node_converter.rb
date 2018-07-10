@@ -340,7 +340,7 @@ module NodeConverter
             @@typekey => "uast:Position",
             "line" => subelem.end.line,
             # str inside str have cols set at 0 from the native AST
-            "col" => subelem.end.column > 0 ? subelem.end.column : 1
+            "col" => subelem.end.column > 0 ? subelem.end.column + 1 : 1
           },
         }
       end
