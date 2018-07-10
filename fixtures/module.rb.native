@@ -10,7 +10,7 @@
          },
          end: { '@type': "uast:Position",
             line: 1,
-            col: 6,
+            col: 7,
          },
       },
       begin: [

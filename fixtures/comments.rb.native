@@ -9,7 +9,7 @@
          },
          end: { '@type': "uast:Position",
             line: 2,
-            col: 5,
+            col: 6,
          },
       },
       comments: [
@@ -73,7 +73,7 @@
             },
             end: { '@type': "uast:Position",
                line: 2,
-               col: 5,
+               col: 6,
             },
          },
       },

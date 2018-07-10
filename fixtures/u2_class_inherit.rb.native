@@ -9,7 +9,7 @@
          },
          end: { '@type': "uast:Position",
             line: 3,
-            col: 3,
+            col: 4,
          },
       },
       body: [
@@ -23,7 +23,7 @@
                },
                end: { '@type': "uast:Position",
                   line: 1,
-                  col: 5,
+                  col: 6,
                },
             },
             body: [
@@ -43,7 +43,7 @@
                },
                end: { '@type': "uast:Position",
                   line: 2,
-                  col: 5,
+                  col: 6,
                },
             },
             body: [
@@ -61,7 +61,7 @@
                   },
                   end: { '@type': "uast:Position",
                      line: 2,
-                     col: 25,
+                     col: 26,
                   },
                },
                base: ~,
