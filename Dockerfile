@@ -46,23 +46,22 @@ ADD driver $DRIVER_REPO_PATH/driver
 
 WORKDIR $DRIVER_REPO_PATH/
 
-# build tests
-RUN go test -c -o /tmp/fixtures.test ./driver/fixtures/
 # build server binary
 RUN go build -o /tmp/driver ./driver/main.go
+# build tests
+RUN go test -c -o /tmp/fixtures.test ./driver/fixtures/
 
 #=======================
 # Stage 3: Driver Build
 #=======================
 FROM ruby:2.4-alpine3.7
 
+
+
 LABEL maintainer="source{d}" \
       bblfsh.language="ruby"
 
 WORKDIR /opt/driver
-
-# copy driver manifest and static files
-ADD .manifest.release.toml ./etc/manifest.toml
 
 # copy static files from driver source directory
 ADD ./native/bin/native.sh ./bin/native
@@ -74,13 +73,16 @@ ADD ./native/lib ./bin/lib
 COPY --from=native /native/gems ./bin/gems
 
 
+# copy driver server binary
+COPY --from=driver /tmp/driver ./bin/
+
 # copy tests binary
 COPY --from=driver /tmp/fixtures.test ./bin/
 # move stuff to make tests work
 RUN ln -s /opt/driver ../build
 VOLUME /opt/fixtures
 
-# copy driver server binary
-COPY --from=driver /tmp/driver ./bin/
+# copy driver manifest and static files
+ADD .manifest.release.toml ./etc/manifest.toml
 
 ENTRYPOINT ["/opt/driver/bin/driver"]
