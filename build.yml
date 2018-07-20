@@ -1,0 +1,29 @@
+sdk: '2'
+go-runtime:
+  version: '1.10-alpine'
+native:
+  image: 'ruby:2.4-alpine3.7'
+  static:
+    - path: 'bin/native.sh'
+      dest: 'native'
+    - path: 'exe/native'
+      dest: 'native.rb'
+    - path: 'lib'
+      dest: 'lib'
+  build:
+    deps:
+      - 'apk add --no-cache make libc-dev gcc'
+      - 'gem install -V --no-document rake bundler io-console parser json'
+    run:
+      - 'export BUNDLE_IGNORE_CONFIG=1 && bundle install --path vendor/bundle --without development --verbose'
+      - 'rake build --trace'
+      - 'gem install  -V --no-document --local --ignore-dependencies --install-dir ./gems vendor/bundle/ruby/2.4.0/cache/*'
+      - 'gem install  -V --no-document --local --ignore-dependencies --install-dir ./gems --bindir ./build ./pkg/*'
+    artifacts:
+      - path: '/native/gems'
+        dest: 'gems'
+  test:
+    deps:
+      - 'export BUNDLE_IGNORE_CONFIG=1 && bundle install --path vendor/bundle --verbose'
+    run:
+      - 'export GEM_PATH=./vendor/bundle/ruby/2.4.0 && rake test --trace'
