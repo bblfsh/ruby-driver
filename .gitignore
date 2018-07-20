@@ -2,3 +2,5 @@
 build
 .bundle
 .gem
+.vscode
+makebuild.sh

@@ -1,100 +1,90 @@
-Status:  ok
-Language:  ruby
-Errors: 
-UAST: 
-module {
-.  Roles: Identifier,Module,Statement
-.  Children: {
-.  .  0: begin {
-.  .  .  Roles: Block
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 57
-.  .  .  .  Line: 2
-.  .  .  .  Col: 32
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: file
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: send_statement {
-.  .  .  .  .  Roles: Expression,Import
-.  .  .  .  .  TOKEN "require"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 0
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 1
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 24
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 25
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: body
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: str {
-.  .  .  .  .  .  .  Roles: Expression,Literal,Primitive,String
-.  .  .  .  .  .  .  TOKEN "./u2_class_this"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 8
-.  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 24
-.  .  .  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  .  .  Col: 25
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: values
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: send_qualified {
-.  .  .  .  .  Roles: Expression,Identical,Qualified
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 26
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 1
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 57
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 32
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  selector: require_relative
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: str {
-.  .  .  .  .  .  .  Roles: Expression,Literal,Primitive,String
-.  .  .  .  .  .  .  TOKEN "u2_class_this"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 43
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 18
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 57
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 32
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: values
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "module",
+   '@role': [Identifier, Module, Statement],
+   file: { '@type': "begin",
+      '@role': [Block],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 58,
+            line: 2,
+            col: 33,
+         },
+      },
+      body: [
+         { '@type': "send_require",
+            '@token': "require",
+            '@role': [Expression, Import],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 0,
+                  line: 1,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 25,
+                  line: 1,
+                  col: 26,
+               },
+            },
+            base: ~,
+            values: [
+               { '@type': "str",
+                  '@token': "./u2_class_this",
+                  '@role': [Expression, Literal, Primitive, String],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 8,
+                        line: 1,
+                        col: 9,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 25,
+                        line: 1,
+                        col: 26,
+                     },
+                  },
+               },
+            ],
+         },
+         { '@type': "send_require",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 26,
+                  line: 2,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 58,
+                  line: 2,
+                  col: 33,
+               },
+            },
+            base: ~,
+            selector: "require_relative",
+            values: [
+               { '@type': "str",
+                  '@token': "u2_class_this",
+                  '@role': [Expression, Literal, Primitive, String],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 43,
+                        line: 2,
+                        col: 18,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 58,
+                        line: 2,
+                        col: 33,
+                     },
+                  },
+               },
+            ],
+         },
+      ],
+   },
 }
-

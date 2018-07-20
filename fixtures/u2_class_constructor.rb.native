@@ -1,120 +1,115 @@
-{
-    "status": "ok",
-    "language": "ruby",
-    "errors": [],
-    "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 5,
-                "line": 1
+{ '@type': "module",
+   '@role': [Unannotated],
+   file: { '@type': "class",
+      '@token': "Testcls1",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            line: 1,
+            col: 6,
+         },
+      },
+      body: [
+         { '@type': "begin",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 2,
+                  col: 5,
+               },
+               end: { '@type': "uast:Position",
+                  line: 3,
+                  col: 23,
+               },
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
-            },
-            "@token": "Testcls1",
-            "@type": "class",
-            "body": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 22,
-                        "line": 3
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 5,
-                        "line": 2
-                    },
-                    "@type": "begin",
-                    "body": [
-                        {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 7,
-                                "line": 2
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 5,
-                                "line": 2
-                            },
-                            "@token": "initialize",
-                            "@type": "def",
-                            "args": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 20,
-                                    "line": 2
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 19,
-                                    "line": 2
-                                },
-                                "@type": "args"
-                            },
-                            "body": [
-                                {
-                                    "@type": "NilNode"
-                                }
-                            ]
+            body: [
+               { '@type': "def",
+                  '@token': "initialize",
+                  '@role': [Unannotated],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        line: 2,
+                        col: 5,
+                     },
+                     end: { '@type': "uast:Position",
+                        line: 2,
+                        col: 8,
+                     },
+                  },
+                  args: { '@type': "args",
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           line: 2,
+                           col: 19,
                         },
-                        {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 7,
-                                "line": 3
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 5,
-                                "line": 3
-                            },
-                            "@token": "new",
-                            "@type": "def",
-                            "args": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 18,
-                                    "line": 3
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 12,
-                                    "line": 3
-                                },
-                                "@type": "args",
-                                "children": [
-                                    {
-                                        "@end": {
-                                            "@type": "ast:Position",
-                                            "col": 17,
-                                            "line": 3
-                                        },
-                                        "@start": {
-                                            "@type": "ast:Position",
-                                            "col": 14,
-                                            "line": 3
-                                        },
-                                        "@token": "args",
-                                        "@type": "restarg"
-                                    }
-                                ]
-                            },
-                            "body": [
-                                {
-                                    "@type": "NilNode"
-                                }
-                            ]
-                        }
-                    ]
-                }
+                        end: { '@type': "uast:Position",
+                           line: 2,
+                           col: 21,
+                        },
+                     },
+                  },
+                  body: [
+                     { '@type': "NilNode",
+                        '@role': [Unannotated],
+                     },
+                  ],
+               },
+               { '@type': "def",
+                  '@token': "new",
+                  '@role': [Unannotated],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        line: 3,
+                        col: 5,
+                     },
+                     end: { '@type': "uast:Position",
+                        line: 3,
+                        col: 8,
+                     },
+                  },
+                  args: { '@type': "args",
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           line: 3,
+                           col: 12,
+                        },
+                        end: { '@type': "uast:Position",
+                           line: 3,
+                           col: 19,
+                        },
+                     },
+                     children: [
+                        { '@type': "restarg",
+                           '@token': "args",
+                           '@role': [Unannotated],
+                           '@pos': { '@type': "uast:Positions",
+                              start: { '@type': "uast:Position",
+                                 line: 3,
+                                 col: 14,
+                              },
+                              end: { '@type': "uast:Position",
+                                 line: 3,
+                                 col: 18,
+                              },
+                           },
+                        },
+                     ],
+                  },
+                  body: [
+                     { '@type': "NilNode",
+                        '@role': [Unannotated],
+                     },
+                  ],
+               },
             ],
-            "parent": null
-        }
-    }
+         },
+      ],
+      parent: ~,
+   },
 }

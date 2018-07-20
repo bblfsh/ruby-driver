@@ -1,52 +1,47 @@
-{
-    "status": "ok",
-    "language": "ruby",
-    "errors": [],
-    "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 3,
-                "line": 2
+{ '@type': "module",
+   '@role': [Unannotated],
+   file: { '@type': "block",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            line: 2,
+            col: 4,
+         },
+      },
+      args: ~,
+      blockdata: { '@type': "send_identifier",
+         '@role': [Unannotated],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               line: 1,
+               col: 1,
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
+            end: { '@type': "uast:Position",
+               line: 1,
+               col: 10,
             },
-            "@type": "block",
-            "args": null,
-            "blockdata": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 9,
-                    "line": 1
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 1,
-                    "line": 1
-                },
-                "@type": "send_call",
-                "base": {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 5,
-                        "line": 1
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 1
-                    },
-                    "@token": "Class",
-                    "@type": "const",
-                    "base": null
-                },
-                "selector": "new"
+         },
+         base: { '@type': "const",
+            '@token': "Class",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 1,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  line: 1,
+                  col: 6,
+               },
             },
-            "body": null
-        }
-    }
+            base: ~,
+         },
+         selector: "new",
+      },
+      body: ~,
+   },
 }

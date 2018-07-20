@@ -1,92 +1,88 @@
-{
-    "status": "ok",
-    "language": "ruby",
-    "errors": [],
-    "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 6,
-                "line": 1
+{ '@type': "module",
+   '@role': [Unannotated],
+   file: { '@type': "if",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            line: 1,
+            col: 7,
+         },
+      },
+      body: { '@type': "lvasgn",
+         '@role': [Unannotated],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               line: 4,
+               col: 5,
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
+            end: { '@type': "uast:Position",
+               line: 4,
+               col: 10,
             },
-            "@type": "if",
-            "body": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 9,
-                    "line": 4
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 5,
-                    "line": 4
-                },
-                "@type": "lvasgn",
-                "target": "b",
-                "value": {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 9,
-                        "line": 4
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 9,
-                        "line": 4
-                    },
-                    "@token": 2,
-                    "@type": "int"
-                }
+         },
+         target: "b",
+         value: { '@type': "int",
+            '@token': 2,
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 4,
+                  col: 9,
+               },
+               end: { '@type': "uast:Position",
+                  line: 4,
+                  col: 10,
+               },
             },
-            "condition": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 10,
-                    "line": 1
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 8,
-                    "line": 1
-                },
-                "@type": "send_qualified",
-                "base": null,
-                "selector": "foo"
+         },
+      },
+      condition: { '@type': "send_qualified",
+         '@role': [Unannotated],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               line: 1,
+               col: 8,
             },
-            "else": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 9,
-                    "line": 2
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 5,
-                    "line": 2
-                },
-                "@type": "lvasgn",
-                "target": "a",
-                "value": {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 9,
-                        "line": 2
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 9,
-                        "line": 2
-                    },
-                    "@token": 1,
-                    "@type": "int"
-                }
-            }
-        }
-    }
+            end: { '@type': "uast:Position",
+               line: 1,
+               col: 11,
+            },
+         },
+         base: ~,
+         qnames: [foo],
+         selector: "foo",
+      },
+      else: { '@type': "lvasgn",
+         '@role': [Unannotated],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               line: 2,
+               col: 5,
+            },
+            end: { '@type': "uast:Position",
+               line: 2,
+               col: 10,
+            },
+         },
+         target: "a",
+         value: { '@type': "int",
+            '@token': 1,
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 2,
+                  col: 9,
+               },
+               end: { '@type': "uast:Position",
+                  line: 2,
+                  col: 10,
+               },
+            },
+         },
+      },
+   },
 }

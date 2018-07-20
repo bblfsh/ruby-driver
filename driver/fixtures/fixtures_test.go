@@ -16,13 +16,35 @@ var Suite = &fixtures.Suite{
 	Ext:  ".rb",
 	Path: filepath.Join(projectRoot, fixtures.Dir),
 	NewDriver: func() driver.BaseDriver {
-		return driver.NewExecDriverAt(filepath.Join(projectRoot, "native/exe/native"))
+		return driver.NewExecDriverAt(filepath.Join(projectRoot, "build/bin/native"))
 	},
-	Transforms: driver.Transforms{
-		Native: normalizer.Native,
-		Code:   normalizer.Code,
-	},
+	Transforms: normalizer.Transforms,
 	BenchName: "class_complete",
+	Semantic: fixtures.SemanticConfig{
+		BlacklistTypes: []string{
+			"def",
+			"str",
+			"splay",
+			"lvar",
+			"ivar",
+			"gvar",
+			"cvar",
+			"Sym",
+			"Const",
+			"flip_1",
+			"flip_2",
+			"arg",
+			"kwarg",
+			"optarg",
+			"kwoptarg",
+			"restarg",
+			"kwrestarg",
+			"comment",
+		},
+	},
+	Docker: fixtures.DockerConfig{
+		Image: "ruby:2.4",
+	},
 }
 
 func TestRubyDriver(t *testing.T) {

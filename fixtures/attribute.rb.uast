@@ -1,63 +1,53 @@
-Status:  ok
-Language:  ruby
-Errors: 
-UAST: 
-module {
-.  Roles: Identifier,Module,Statement
-.  Children: {
-.  .  0: send_assign {
-.  .  .  Roles: Assignment,Expression,Left
-.  .  .  TOKEN "foo"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 11
-.  .  .  .  Line: 1
-.  .  .  .  Col: 12
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: file
-.  .  .  .  selector: foo=
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: self {
-.  .  .  .  .  Roles: Expression,Left,This
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 0
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 1
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 3
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 4
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: base
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: int {
-.  .  .  .  .  Roles: Assignment,Expression,Literal,Number,Primitive,Right
-.  .  .  .  .  TOKEN "1"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 11
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 12
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 11
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 12
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: values
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "module",
+   '@role': [Identifier, Module, Statement],
+   file: { '@type': "send_assign",
+      '@token': "foo",
+      '@role': [Assignment, Expression, Left],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 12,
+            line: 1,
+            col: 13,
+         },
+      },
+      base: { '@type': "self",
+         '@role': [Expression, Left, This],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 0,
+               line: 1,
+               col: 1,
+            },
+            end: { '@type': "uast:Position",
+               offset: 4,
+               line: 1,
+               col: 5,
+            },
+         },
+      },
+      selector: "foo=",
+      values: [
+         { '@type': "int",
+            '@token': 1,
+            '@role': [Assignment, Expression, Literal, Number, Primitive, Right],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 11,
+                  line: 1,
+                  col: 12,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 12,
+                  line: 1,
+                  col: 13,
+               },
+            },
+         },
+      ],
+   },
 }
-

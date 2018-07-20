@@ -1,37 +1,33 @@
-{
-    "status": "ok",
-    "language": "ruby",
-    "errors": [],
-    "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 6,
-                "line": 1
+{ '@type': "module",
+   '@role': [Unannotated],
+   file: { '@type': "const",
+      '@token': "Foo",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            line: 1,
+            col: 7,
+         },
+      },
+      base: { '@type': "send_qualified",
+         '@role': [Unannotated],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               line: 1,
+               col: 1,
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
+            end: { '@type': "uast:Position",
+               line: 1,
+               col: 2,
             },
-            "@token": "Foo",
-            "@type": "const",
-            "base": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 1,
-                    "line": 1
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 1,
-                    "line": 1
-                },
-                "@type": "send_qualified",
-                "base": null,
-                "selector": "a"
-            }
-        }
-    }
+         },
+         base: ~,
+         qnames: [a],
+         selector: "a",
+      },
+   },
 }

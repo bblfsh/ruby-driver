@@ -1,46 +1,39 @@
-Status:  ok
-Language:  ruby
-Errors: 
-UAST: 
-module {
-.  Roles: Identifier,Module,Statement
-.  Children: {
-.  .  0: send_qualified {
-.  .  .  Roles: Expression,Identical,Qualified
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 17
-.  .  .  .  Line: 1
-.  .  .  .  Col: 18
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: file
-.  .  .  .  selector: puts
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: str {
-.  .  .  .  .  Roles: Expression,Literal,Primitive,String
-.  .  .  .  .  TOKEN "hello world"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 5
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 6
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 17
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 18
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: values
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "module",
+   '@role': [Identifier, Module, Statement],
+   file: { '@type': "send_qualified",
+      '@role': [Expression, Identifier, Qualified],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 18,
+            line: 1,
+            col: 19,
+         },
+      },
+      base: ~,
+      qnames: [puts],
+      selector: "puts",
+      values: [
+         { '@type': "str",
+            '@token': "hello world",
+            '@role': [Expression, Literal, Primitive, String],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 5,
+                  line: 1,
+                  col: 6,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 18,
+                  line: 1,
+                  col: 19,
+               },
+            },
+         },
+      ],
+   },
 }
-

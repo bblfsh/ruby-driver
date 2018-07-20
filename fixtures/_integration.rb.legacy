@@ -1,0 +1,29 @@
+module {
+.  Roles: Identifier,Module,Statement
+.  Children: {
+.  .  0: class {
+.  .  .  Roles: Declaration,Identifier,Statement,Type
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 5
+.  .  .  .  Line: 1
+.  .  .  .  Col: 6
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: file
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: NilNode {
+.  .  .  .  .  Roles: Null
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: body
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  }
+}

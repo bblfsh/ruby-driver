@@ -1,35 +1,24 @@
-Status:  ok
-Language:  ruby
-Errors: 
-UAST: 
-module {
-.  Roles: Identifier,Module,Statement
-.  Children: {
-.  .  0: module {
-.  .  .  Roles: Identifier,Module,Statement
-.  .  .  TOKEN "Testmodule1"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 5
-.  .  .  .  Line: 1
-.  .  .  .  Col: 6
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: file
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: NilNode {
-.  .  .  .  .  Roles: Null
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: begin
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "module",
+   '@role': [Identifier, Module, Statement],
+   file: { '@type': "module",
+      '@token': "Testmodule1",
+      '@role': [Identifier, Module, Statement],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 6,
+            line: 1,
+            col: 7,
+         },
+      },
+      begin: [
+         { '@type': "NilNode",
+            '@role': ['Null'],
+         },
+      ],
+   },
 }
-

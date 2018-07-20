@@ -1,77 +1,72 @@
-{
-    "status": "ok",
-    "language": "ruby",
-    "errors": [],
-    "ast": {
-        "@type": "module",
-        "file": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 3,
-                "line": 3
+{ '@type': "module",
+   '@role': [Unannotated],
+   file: { '@type': "begin",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            line: 3,
+            col: 4,
+         },
+      },
+      body: [
+         { '@type': "class",
+            '@token': "Testcls1",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 1,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  line: 1,
+                  col: 6,
+               },
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1
+            body: [
+               { '@type': "NilNode",
+                  '@role': [Unannotated],
+               },
+            ],
+            parent: ~,
+         },
+         { '@type': "class",
+            '@token': "Testcls2",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  line: 2,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  line: 2,
+                  col: 6,
+               },
             },
-            "@type": "begin",
-            "body": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 5,
-                        "line": 1
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 1
-                    },
-                    "@token": "Testcls1",
-                    "@type": "class",
-                    "body": [
-                        {
-                            "@type": "NilNode"
-                        }
-                    ],
-                    "parent": null
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 5,
-                        "line": 2
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 2
-                    },
-                    "@token": "Testcls2",
-                    "@type": "class",
-                    "body": [
-                        {
-                            "@type": "NilNode"
-                        }
-                    ],
-                    "parent": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 25,
-                            "line": 2
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 18,
-                            "line": 2
-                        },
-                        "@token": "Testcls1",
-                        "@type": "const",
-                        "base": null
-                    }
-                }
-            ]
-        }
-    }
+            body: [
+               { '@type': "NilNode",
+                  '@role': [Unannotated],
+               },
+            ],
+            parent: { '@type': "const",
+               '@token': "Testcls1",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     line: 2,
+                     col: 18,
+                  },
+                  end: { '@type': "uast:Position",
+                     line: 2,
+                     col: 26,
+                  },
+               },
+               base: ~,
+            },
+         },
+      ],
+   },
 }

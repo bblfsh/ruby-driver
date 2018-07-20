@@ -32,13 +32,9 @@ func annotateTypeTokenField(typ, tokenfield string, roles ...role.Role) Mapping 
 
 // FIXME: move to the SDK and remove from here and the python driver
 func mapInternalProperty(key string, roles ...role.Role) Mapping {
-	return Map(key,
-		Part("other", Obj{
-			key: ObjectRoles(key),
-		}),
-		Part("other", Obj{
-			key: ObjectRoles(key, roles...),
-		}),
+	return Map(
+		Part("other", Obj{key: ObjectRoles(key)}),
+		Part("other", Obj{key: ObjectRoles(key, roles...)}),
 	)
 }
 
@@ -69,7 +65,7 @@ var operatorRoles = StringToRolesMap(map[string][]role.Role{
 	"eql?":   {role.Identical, role.Relational},
 	"equal?": {role.Identical, role.Relational},
 	// rocket ship operator
-	"===": {role.Identical, role.Relational},
+	"===":  {role.Identical, role.Relational},
 	"<==>": {role.Identical, role.Incomplete},
 })
 
@@ -142,6 +138,7 @@ var Annotations = []Mapping{
 	AnnotateType("args", nil, role.Expression, role.Argument, role.Incomplete),
 	AnnotateType("arg", nil, role.Expression, role.Argument, role.Name, role.Identifier),
 	AnnotateType("kwarg", nil, role.Expression, role.Argument, role.Name, role.Map),
+	AnnotateType("optarg", nil, role.Expression, role.Argument, role.Name, role.Default),
 	AnnotateType("kwoptarg", nil, role.Expression, role.Argument, role.Name, role.Incomplete),
 	AnnotateType("restarg", nil, role.Expression, role.Argument, role.Identifier, role.List),
 	AnnotateType("kwrestarg", nil, role.Expression, role.Argument, role.Identifier, role.Incomplete),
@@ -153,8 +150,6 @@ var Annotations = []Mapping{
 	AnnotateType("masgn", nil, role.Expression, role.Assignment, role.Incomplete),
 	// *Asgn with two children = binary and value have the "Right" role but with a single children = multiple assignment target :-/
 	annotateTypeTokenField("lvasgn", "target", role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
-	// is also a member
-	annotateTypeTokenField("ivasgn", "target", role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
 	annotateTypeTokenField("gvasgn", "target", role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
 	// class assign
 	annotateTypeTokenField("cvasgn", "target", role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
@@ -213,121 +208,146 @@ var Annotations = []Mapping{
 		"else": {role.Expression, role.Else},
 	}, role.Statement, role.If),
 
-	MapASTCustom("op_asgn",
+	AnnotateTypeCustom("op_asgn", MapObj(
 		Obj{
 			"operator": Var("op"),
-		}, Fields{
-			{Name: "operator", Op: Operator("op", operatorRoles, role.Binary)},
 		},
+		Fields{
+			{Name: "operator", Op: Operator("op", operatorRoles, role.Binary)},
+		}),
 		LookupArrOpVar("op", operatorRoles),
 		role.Expression, role.Binary, role.Assignment, role.Operator),
 
-	AnnotateType("iflipflop", ObjRoles{
-		"_1": {role.Identifier, role.Incomplete},
-		"_2": {role.Identical, role.Incomplete},
-	}, role.Expression, role.List, role.Incomplete),
+	AnnotateType("iflipflop", nil, role.Expression, role.List, role.Incomplete),
+	AnnotateType("flip_1", nil, role.Identifier, role.Value, role.Incomplete),
+	AnnotateType("flip_2", nil, role.Identifier, role.Value, role.Incomplete),
 
 	// The many faces of Ruby's "send" start here ===>
-	MapAST("send_statement", Obj{
-		"selector": String("continue"),
-	}, Obj{
-		uast.KeyToken: String("continue"),
-	}, role.Statement, role.Continue),
+	AnnotateType("send_statement", MapObj(
+		Obj{
+			"selector": String("continue"),
+		},
+		Obj{
+			uast.KeyToken: String("continue"),
+		}), role.Statement, role.Continue),
 
-	MapAST("send_statement", Obj{
-		"selector": String("lambda"),
-	}, Obj{
-		uast.KeyToken: String("lambda"),
-	}, role.Expression, role.Declaration, role.Function, role.Anonymous),
+	AnnotateType("send_statement", MapObj(
+		Obj{
+			"selector": String("lambda"),
+		},
+		Obj{
+			uast.KeyToken: String("lambda"),
+		}), role.Expression, role.Declaration, role.Function, role.Anonymous),
 
-	MapAST("send_statement", Obj{
-		"selector": String("require"),
-	}, Obj{
-		uast.KeyToken: String("require"),
-	}, role.Expression, role.Import),
+	AnnotateType("send_require", MapObj(
+		Obj{
+			"selector": String("require"),
+		},
+		Obj{
+			uast.KeyToken: String("require"),
+		}), role.Expression, role.Import),
 
-	MapAST("send_statement", Obj{
-		"selector": String("each"),
-	}, Obj{
-		uast.KeyToken: String("each"),
-	}, role.Statement, role.For, role.Iterator),
+	AnnotateType("send_statement", MapObj(
+		Obj{
+			"selector": String("each"),
+		},
+		Obj{
+			uast.KeyToken: String("each"),
+		}), role.Statement, role.For, role.Iterator),
 
-	MapAST("send_statement", Obj{
-		"selector": String("public"),
-	}, Obj{
-		uast.KeyToken: String("public"),
-	}, role.Statement, role.Visibility, role.World),
+	AnnotateType("send_statement", MapObj(
+		Obj{
+			"selector": String("public"),
+		},
+		Obj{
+			uast.KeyToken: String("public"),
+		}), role.Statement, role.Visibility, role.World),
 
-	MapAST("send_statement", Obj{
-		"selector": String("protected"),
-	}, Obj{
-		uast.KeyToken: String("protected"),
-	}, role.Statement, role.Visibility, role.Subtype),
+	AnnotateType("send_statement", MapObj(
+		Obj{
+			"selector": String("protected"),
+		},
+		Obj{
+			uast.KeyToken: String("protected"),
+		}), role.Statement, role.Visibility, role.Subtype),
 
-	MapAST("send_statement", Obj{
-		"selector": String("private"),
-	}, Obj{
-		uast.KeyType: String("private"),
-	}, role.Statement, role.Visibility, role.Instance),
+	AnnotateType("send_statement", MapObj(
+		Obj{
+			"selector": String("private"),
+		},
+		Obj{
+			uast.KeyToken: String("private"),
+		}), role.Statement, role.Visibility, role.Instance),
 
 	// Operator expression "send"
-	MapASTCustom("send_operator", Obj{
-		"base":     ObjectRoles("bs"),
-		"values":   EachObjectRoles("values"),
-		"selector": Var("selector"),
-	}, Obj{
-		"base":        ObjectRoles("bs", role.Left),
-		"values":      EachObjectRoles("values", role.Right),
-		uast.KeyToken: Var("selector"),
-	},
+	AnnotateTypeCustom("send_operator", MapObj(
+		Obj{
+			"base":     ObjectRoles("bs"),
+			"values":   EachObjectRoles("values"),
+			"selector": Var("selector"),
+		},
+		Obj{
+			"base":        ObjectRoles("bs", role.Left),
+			"values":      EachObjectRoles("values", role.Right),
+			uast.KeyToken: Var("selector"),
+		}),
 		LookupArrOpVar("selector", operatorRoles),
 		role.Expression, role.Binary, role.Operator),
 
 	// Same without values (unary)
-	MapASTCustom("send_operator", Obj{
-		"selector": Var("selector"),
-	}, Obj{
-		uast.KeyToken: Var("selector"),
-	},
+	AnnotateTypeCustom("send_operator", MapObj(
+		Obj{
+			"selector": Var("selector"),
+		},
+		Obj{
+			uast.KeyToken: Var("selector"),
+		}),
 		LookupArrOpVar("selector", operatorRoles),
 		role.Expression, role.Unary, role.Operator),
 
 	// Assignment "send" (self.foo = 1)
-	MapAST("send_assign", Obj{
-		"base":        Var("base"),
-		"values":      EachObjectRoles("values"),
-		"selector":    Var("sel"),
-		uast.KeyToken: Var("tk"),
-	}, Obj{
-		"base":        Var("base"),
-		"values":      EachObjectRoles("values", role.Assignment, role.Right),
-		"selector":    Var("sel"),
-		uast.KeyToken: Var("tk"),
-	}, role.Expression, role.Assignment, role.Left),
+	AnnotateType("send_assign", MapObj(
+		Obj{
+			"base":        Var("base"),
+			"values":      EachObjectRoles("values"),
+			"selector":    Var("sel"),
+			uast.KeyToken: Var("tk"),
+		},
+		Obj{
+			"base":        Var("base"),
+			"values":      EachObjectRoles("values", role.Assignment, role.Right),
+			"selector":    Var("sel"),
+			uast.KeyToken: Var("tk"),
+		}), role.Expression, role.Assignment, role.Left),
 
 	// Qualified identifier "send" (other than the parent of the last one that will
 	// match the rule above)
-	AnnotateType("send_qualified", nil, role.Expression, role.Qualified, role.Identical),
+	AnnotateType("send_qualified", nil, role.Expression, role.Qualified, role.Identifier),
+	AnnotateType("send_identifier", nil, role.Expression, role.Identifier),
 
 	// Function call "send" with arguments
-	MapAST("send_call", Obj{
-		"base":     Var("base"),
-		"selector": Var("selector"),
-		"values":   EachObjectRoles("values"),
-	}, Obj{
-		"base":        Var("base"),
-		"values":      EachObjectRoles("values", role.Function, role.Call, role.Argument),
-		uast.KeyToken: Var("selector"),
-	}, role.Expression, role.Function, role.Call),
+	AnnotateType("send_call", MapObj(
+		Obj{
+			"base":     Var("base"),
+			"selector": Var("selector"),
+			"values":   EachObjectRoles("values"),
+		},
+		Obj{
+			"base":        Var("base"),
+			"values":      EachObjectRoles("values", role.Function, role.Call, role.Argument),
+			uast.KeyToken: Var("selector"),
+		}), role.Expression, role.Function, role.Call),
 
 	// Function call "send" without arguments
-	MapAST("send_call", Obj{
-		"base":      Var("base"),
-		"selector":  Var("selector"),
-	}, Obj{
-		"base":        Var("base"),
-		uast.KeyToken: Var("selector"),
-	}, role.Expression, role.Function, role.Call),
+	AnnotateType("send_call", MapObj(
+		Obj{
+			"base":     Var("base"),
+			"selector": Var("selector"),
+		},
+		Obj{
+			"base":        Var("base"),
+			uast.KeyToken: Var("selector"),
+		}), role.Expression, role.Function, role.Call),
 
 	AnnotateType("send_array", nil, role.Expression, role.List),
 }
