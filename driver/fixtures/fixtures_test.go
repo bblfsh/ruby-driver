@@ -5,8 +5,9 @@ import (
 	"testing"
 
 	"github.com/bblfsh/ruby-driver/driver/normalizer"
-	"gopkg.in/bblfsh/sdk.v2/sdk/driver"
-	"gopkg.in/bblfsh/sdk.v2/sdk/driver/fixtures"
+	"gopkg.in/bblfsh/sdk.v2/driver"
+	"gopkg.in/bblfsh/sdk.v2/driver/fixtures"
+	"gopkg.in/bblfsh/sdk.v2/driver/native"
 )
 
 const projectRoot = "../../"
@@ -15,11 +16,11 @@ var Suite = &fixtures.Suite{
 	Lang: "ruby",
 	Ext:  ".rb",
 	Path: filepath.Join(projectRoot, fixtures.Dir),
-	NewDriver: func() driver.BaseDriver {
-		return driver.NewExecDriverAt(filepath.Join(projectRoot, "build/bin/native"))
+	NewDriver: func() driver.Native {
+		return native.NewDriverAt(filepath.Join(projectRoot, "build/bin/native"), native.UTF8)
 	},
 	Transforms: normalizer.Transforms,
-	BenchName: "class_complete",
+	BenchName:  "class_complete",
 	Semantic: fixtures.SemanticConfig{
 		BlacklistTypes: []string{
 			"def",

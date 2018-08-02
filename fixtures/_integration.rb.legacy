@@ -1,8 +1,8 @@
 module {
-.  Roles: Identifier,Module,Statement
+.  Roles: Statement,Module,Identifier
 .  Children: {
 .  .  0: class {
-.  .  .  Roles: Declaration,Identifier,Statement,Type
+.  .  .  Roles: Statement,Type,Declaration,Identifier
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
