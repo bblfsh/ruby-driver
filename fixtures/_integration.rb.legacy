@@ -3,6 +3,7 @@ module {
 .  Children: {
 .  .  0: class {
 .  .  .  Roles: Statement,Type,Declaration,Identifier
+.  .  .  TOKEN "Testcls1"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
