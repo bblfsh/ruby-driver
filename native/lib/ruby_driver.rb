@@ -19,7 +19,7 @@ module RubyDriver
         node, comments = Parser::CurrentRuby.parse_with_comments(req.content)
         res.ast = NodeConverter::Converter.new(node, comments).tohash()
         res.status = :ok
-      rescue Message::BadRequest => e
+      rescue Message::BadRequest, Parser::SyntaxError => e
         res.status = :error
         res.errors = [e.message]
       end
@@ -38,6 +38,7 @@ module RubyDriver
           res = response_ast(JSON.parse(line))
           @output.puts(JSON.generate(res.to_hash))
         rescue Exception => e
+          STDERR.puts "fatal error: #{e.class}: #{e.message}"
           res = Message::Response.new
           res.status = :fatal
           res.errors = [e.message]
