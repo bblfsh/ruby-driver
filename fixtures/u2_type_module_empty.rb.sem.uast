@@ -1,6 +1,6 @@
-{ '@type': "module",
+{ '@type': "ruby:module",
    '@role': [Identifier, Module, Statement],
-   file: { '@type': "module",
+   file: { '@type': "ruby:module",
       '@role': [Identifier, Module, Statement],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
@@ -18,7 +18,7 @@
          Name: "Testmodule1",
       },
       begin: [
-         { '@type': "NilNode",
+         { '@type': "ruby:NilNode",
             '@role': ['Null'],
          },
       ],

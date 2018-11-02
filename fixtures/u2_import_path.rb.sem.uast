@@ -1,4 +1,4 @@
-{ '@type': "module",
+{ '@type': "ruby:module",
    '@role': [Identifier, Module, Statement],
    file: { '@type': "uast:Block",
       '@pos': { '@type': "uast:Positions",
@@ -14,7 +14,7 @@
          },
       },
       Statements: [
-         { '@type': "send_require",
+         { '@type': "ruby:send_require",
             '@token': "require",
             '@role': [Expression, Import],
             '@pos': { '@type': "uast:Positions",
@@ -54,7 +54,7 @@
             ],
             Path: ~,
          },
-         { '@type': "send_require",
+         { '@type': "ruby:send_require",
             '@role': [Expression, Import],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",

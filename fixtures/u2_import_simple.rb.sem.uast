@@ -1,6 +1,6 @@
-{ '@type': "module",
+{ '@type': "ruby:module",
    '@role': [Identifier, Module, Statement],
-   file: { '@type': "send_require",
+   file: { '@type': "ruby:send_require",
       '@token': "require",
       '@role': [Expression, Import],
       '@pos': { '@type': "uast:Positions",

@@ -1,4 +1,4 @@
-{ '@type': "module",
+{ '@type': "ruby:module",
    '@role': [Identifier, Module, Statement],
    file: { '@type': "uast:Identifier",
       '@pos': { '@type': "uast:Positions",

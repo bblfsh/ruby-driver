@@ -1,6 +1,6 @@
-{ '@type': "module",
+{ '@type': "ruby:module",
    '@role': [Identifier, Module, Statement],
-   file: { '@type': "lvasgn",
+   file: { '@type': "ruby:lvasgn",
       '@role': [Assignment, Binary, Expression, Identifier, Left],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",

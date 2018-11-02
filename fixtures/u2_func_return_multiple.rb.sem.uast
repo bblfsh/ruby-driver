@@ -1,4 +1,4 @@
-{ '@type': "module",
+{ '@type': "ruby:module",
    '@role': [Identifier, Module, Statement],
    file: { '@type': "uast:FunctionGroup",
       '@pos': { '@type': "uast:Positions",
@@ -21,7 +21,7 @@
             Node: { '@type': "uast:Function",
                Body: { '@type': "uast:Block",
                   Statements: [
-                     { '@type': "return",
+                     { '@type': "ruby:return",
                         '@role': [Return, Statement],
                         '@pos': { '@type': "uast:Positions",
                            start: { '@type': "uast:Position",
@@ -35,7 +35,7 @@
                               col: 11,
                            },
                         },
-                        target: { '@type': "int",
+                        target: { '@type': "ruby:int",
                            '@token': 1,
                            '@role': [Binary, Expression, Left, Literal, Number, Primitive],
                            '@pos': { '@type': "uast:Positions",

@@ -1,6 +1,6 @@
-{ '@type': "module",
+{ '@type': "ruby:module",
    '@role': [Identifier, Module, Statement],
-   file: { '@type': "sym",
+   file: { '@type': "ruby:sym",
       '@role': [Expression, Identifier],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",

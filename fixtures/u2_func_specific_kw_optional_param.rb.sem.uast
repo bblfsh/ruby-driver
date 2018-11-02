@@ -1,4 +1,4 @@
-{ '@type': "module",
+{ '@type': "ruby:module",
    '@role': [Identifier, Module, Statement],
    file: { '@type': "uast:FunctionGroup",
       '@pos': { '@type': "uast:Positions",
@@ -21,7 +21,7 @@
             Node: { '@type': "uast:Function",
                Body: { '@type': "uast:Block",
                   Statements: [
-                     { '@type': "NilNode",
+                     { '@type': "ruby:NilNode",
                         '@role': ['Null'],
                      },
                   ],
@@ -41,7 +41,7 @@
                               col: 15,
                            },
                         },
-                        Init: { '@type': "int",
+                        Init: { '@type': "ruby:int",
                            '@token': 1,
                            '@role': [Expression, Literal, Number, Primitive],
                            '@pos': { '@type': "uast:Positions",
