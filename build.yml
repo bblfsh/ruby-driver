@@ -13,7 +13,7 @@ native:
   build:
     deps:
       - 'apk add --no-cache make libc-dev gcc'
-      - 'gem install -V --no-document rake bundler io-console parser json'
+      - 'gem install -V --no-document bundler -v 1.17.3 && gem install -V --no-document rake io-console parser json'
     run:
       - 'export BUNDLE_IGNORE_CONFIG=1 && bundle install --path vendor/bundle --without development --verbose'
       - 'rake build --trace'

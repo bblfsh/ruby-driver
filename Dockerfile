@@ -9,7 +9,7 @@ FROM ruby:2.4-alpine3.7 as native
 
 # install build dependencies
 RUN apk add --no-cache make libc-dev gcc
-RUN gem install -V --no-document rake bundler io-console parser json
+RUN gem install -V --no-document bundler -v 1.17.3 && gem install -V --no-document rake io-console parser json
 
 
 ADD native /native
