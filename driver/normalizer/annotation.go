@@ -16,6 +16,8 @@ var Code = []CodeTransformer{
 	positioner.NewFillOffsetFromLineCol(),
 }
 
+var PreprocessCode = []CodeTransformer{}
+
 // FIXME: move to the SDK and remove from here and the python driver
 func annotateTypeToken(typ, token string, roles ...role.Role) Mapping {
 	return AnnotateType(typ,

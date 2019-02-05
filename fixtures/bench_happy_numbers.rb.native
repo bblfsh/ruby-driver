@@ -1349,7 +1349,7 @@
       ],
       comments: [
          { '@type': "comment",
-            '@token': " for the cycle check",
+            '@token': "# for the cycle check",
             '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                '@end': { '@type': "uast:Position",
@@ -1365,7 +1365,7 @@
             inline: true,
          },
          { '@type': "comment",
-            '@token': " return 1:Happy number, 0:other",
+            '@token': "# return 1:Happy number, 0:other",
             '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                '@end': { '@type': "uast:Position",

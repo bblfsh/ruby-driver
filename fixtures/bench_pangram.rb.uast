@@ -485,7 +485,7 @@
       ],
       comments: [
          { '@type': "comment",
-            '@token': " ==> false",
+            '@token': "# ==> false",
             '@role': [Comment, Noop],
             '@pos': { '@type': "uast:Positions",
                '@end': { '@type': "uast:Position",
@@ -503,7 +503,7 @@
             inline: true,
          },
          { '@type': "comment",
-            '@token': " ==> true",
+            '@token': "# ==> true",
             '@role': [Comment, Noop],
             '@pos': { '@type': "uast:Positions",
                '@end': { '@type': "uast:Position",

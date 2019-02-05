@@ -413,7 +413,7 @@
       ],
       comments: [
          { '@type': "comment",
-            '@token': " mixing Integer and Float",
+            '@token': "# mixing Integer and Float",
             '@role': [Comment, Noop],
             '@pos': { '@type': "uast:Positions",
                '@end': { '@type': "uast:Position",
@@ -431,7 +431,7 @@
             inline: true,
          },
          { '@type': "comment",
-            '@token': " prints 8.3",
+            '@token': "# prints 8.3",
             '@role': [Comment, Noop],
             '@pos': { '@type': "uast:Positions",
                '@end': { '@type': "uast:Position",
