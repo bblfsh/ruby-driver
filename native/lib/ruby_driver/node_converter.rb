@@ -388,7 +388,7 @@ module NodeConverter
       @comments.each do |comment|
         commentdict = {
           @@typekey => "comment",
-          @@tokenkey => comment.text[1..-1],
+          @@tokenkey => comment.text,
           "inline" => comment.inline?,
           "documentation" => comment.document?,
           "@pos" => {

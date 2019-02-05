@@ -427,7 +427,7 @@
       ],
       comments: [
          { '@type': "comment",
-            '@token': " ==> false",
+            '@token': "# ==> false",
             '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                '@end': { '@type': "uast:Position",
@@ -443,7 +443,7 @@
             inline: true,
          },
          { '@type': "comment",
-            '@token': " ==> true",
+            '@token': "# ==> true",
             '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                '@end': { '@type': "uast:Position",
