@@ -55,6 +55,9 @@ var Normalizers []Mapping = []Mapping{
 		},
 	)),
 
+	MapSemantic("true", uast.Bool{}, MapObj(Obj{}, Obj{"Value": Bool(true)})),
+	MapSemantic("false", uast.Bool{}, MapObj(Obj{}, Obj{"Value": Bool(false)})),
+
 	mapIdentifier("splay"),
 	mapIdentifier("lvar"),
 	mapIdentifier("ivar"),
@@ -111,6 +114,11 @@ var Normalizers []Mapping = []Mapping{
 	)),
 
 	MapSemantic("kwarg", uast.Argument{}, MapObj(
+		Obj{uast.KeyToken: Var("name")},
+		Obj{"Name": identifierWithPos("name")},
+	)),
+
+	MapSemantic("blockarg", uast.Argument{}, MapObj(
 		Obj{uast.KeyToken: Var("name")},
 		Obj{"Name": identifierWithPos("name")},
 	)),

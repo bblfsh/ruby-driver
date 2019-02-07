@@ -4,3 +4,4 @@ build
 .gem
 .vscode
 makebuild.sh
+vendor/*

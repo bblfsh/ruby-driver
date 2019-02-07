@@ -91,11 +91,14 @@ var Annotations = []Mapping{
 	AnnotateType("block", nil, role.Block),
 	AnnotateType("int", nil, role.Expression, role.Literal, role.Number, role.Primitive),
 	AnnotateType("NilNode", nil, role.Null),
+	AnnotateType("nil", nil, role.Null),
 	AnnotateType("return", nil, role.Statement, role.Return),
 	AnnotateType("float", nil, role.Expression, role.Literal, role.Number, role.Primitive),
 	AnnotateType("complex", nil, role.Expression, role.Literal, role.Number, role.Primitive, role.Incomplete),
 	AnnotateType("rational", nil, role.Expression, role.Literal, role.Number, role.Primitive, role.Incomplete),
 	AnnotateType("str", nil, role.Expression, role.Literal, role.String, role.Primitive),
+	AnnotateType("xstr", nil, role.Expression, role.Literal, role.String, role.Block, role.Incomplete),
+	AnnotateType("dstr", nil, role.Expression, role.String, role.Block, role.Incomplete),
 	AnnotateType("pair", nil, role.Expression, role.Literal, role.Tuple, role.Primitive),
 	AnnotateType("array", nil, role.Expression, role.Literal, role.List, role.Primitive),
 	AnnotateType("hash", nil, role.Expression, role.Literal, role.Map, role.Primitive),
@@ -127,6 +130,9 @@ var Annotations = []Mapping{
 	AnnotateType("undef", nil, role.Statement, role.Incomplete),
 	AnnotateType("case", nil, role.Statement, role.Switch),
 	AnnotateType("when", nil, role.Expression, role.Case),
+	AnnotateType("super", nil, role.Expression, role.Call, role.Base),
+	AnnotateType("zsuper", nil, role.Expression, role.Call, role.Base),
+	AnnotateType("yield", nil, role.Return, role.Incomplete),
 
 	// Exceptions
 	AnnotateType("kwbegin", nil, role.Expression, role.Block),
@@ -139,6 +145,7 @@ var Annotations = []Mapping{
 	// grouping node for function definition (not for calls which just use send.values), need grouping role
 	AnnotateType("args", nil, role.Expression, role.Argument, role.Incomplete),
 	AnnotateType("arg", nil, role.Expression, role.Argument, role.Name, role.Identifier),
+	AnnotateType("blockarg", nil, role.Expression, role.Argument, role.Name, role.Identifier),
 	AnnotateType("kwarg", nil, role.Expression, role.Argument, role.Name, role.Map),
 	AnnotateType("optarg", nil, role.Expression, role.Argument, role.Name, role.Default),
 	AnnotateType("kwoptarg", nil, role.Expression, role.Argument, role.Name, role.Incomplete),
@@ -153,6 +160,7 @@ var Annotations = []Mapping{
 	// *Asgn with two children = binary and value have the "Right" role but with a single children = multiple assignment target :-/
 	annotateTypeTokenField("lvasgn", "target", role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
 	annotateTypeTokenField("gvasgn", "target", role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
+	AnnotateType("gvasgn", nil, role.Expression, role.Assignment, role.Binary),
 	// class assign
 	annotateTypeTokenField("cvasgn", "target", role.Expression, role.Assignment, role.Binary, role.Identifier, role.Left),
 	// instance member

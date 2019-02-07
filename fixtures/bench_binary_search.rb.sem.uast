@@ -773,7 +773,7 @@
                                           },
                                        },
                                        { '@type': "ruby:nil",
-                                          '@role': [Unannotated],
+                                          '@role': ['Null'],
                                           '@pos': { '@type': "uast:Positions",
                                              start: { '@type': "uast:Position",
                                                 offset: 294,
@@ -1586,7 +1586,7 @@
                         selector: "puts",
                         values: [
                            { '@type': "ruby:dstr",
-                              '@role': [Unannotated],
+                              '@role': [Block, Expression, Incomplete, String],
                               '@pos': { '@type': "uast:Positions",
                                  start: { '@type': "uast:Position",
                                     offset: 494,
@@ -1813,7 +1813,7 @@
                         selector: "puts",
                         values: [
                            { '@type': "ruby:dstr",
-                              '@role': [Unannotated],
+                              '@role': [Block, Expression, Incomplete, String],
                               '@pos': { '@type': "uast:Positions",
                                  start: { '@type': "uast:Position",
                                     offset: 550,
