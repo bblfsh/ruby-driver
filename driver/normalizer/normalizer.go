@@ -56,7 +56,7 @@ var Normalizers []Mapping = []Mapping{
 	)),
 
 	MapSemantic("true", uast.Bool{}, MapObj(Obj{}, Obj{"Value": Bool(true)})),
-	MapSemantic("false", uast.Bool{}, MapObj(Obj{}, Obj{"Value": Bool(true)})),
+	MapSemantic("false", uast.Bool{}, MapObj(Obj{}, Obj{"Value": Bool(false)})),
 
 	mapIdentifier("splay"),
 	mapIdentifier("lvar"),
