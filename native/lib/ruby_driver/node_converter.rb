@@ -42,6 +42,9 @@ module NodeConverter
 
       case type
 
+      when "Integer" # only nth refs seem to return raw integers (bug?)
+        return {@@typekey => "int", @@tokenkey => node}
+
       when "int", "float", "str"
         return sexp_to_hash(node, {"l_" + @@tokenkey => 0})
 
