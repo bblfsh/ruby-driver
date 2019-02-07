@@ -19,7 +19,7 @@
          Name: "a",
       },
       value: { '@type': "ruby:dstr",
-         '@role': [Binary, Right],
+         '@role': [Binary, Block, Expression, Incomplete, Right, String],
          '@pos': { '@type': "uast:Positions",
             start: { '@type': "uast:Position",
                offset: 4,

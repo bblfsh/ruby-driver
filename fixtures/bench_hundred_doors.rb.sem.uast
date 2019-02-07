@@ -947,7 +947,7 @@
                   selector: "puts",
                   values: [
                      { '@type': "ruby:dstr",
-                        '@role': [Unannotated],
+                        '@role': [Block, Expression, Incomplete, String],
                         '@pos': { '@type': "uast:Positions",
                            start: { '@type': "uast:Position",
                               offset: 251,

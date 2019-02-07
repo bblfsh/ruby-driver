@@ -95,7 +95,7 @@
                },
             },
             value: { '@type': "nil",
-               '@role': [Binary, Right],
+               '@role': [Binary, 'Null', Right],
                '@pos': { '@type': "uast:Positions",
                   start: { '@type': "uast:Position",
                      offset: 23,
