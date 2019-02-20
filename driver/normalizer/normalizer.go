@@ -85,7 +85,9 @@ var Normalizers []Mapping = []Mapping{
 			// could not find any case where this wasn't nil, but this will
 			// detect if we find any
 			"base": Is(nil),
-			"qnames": Any(), // same as ident
+			// same as ident, but with a slightly different format,
+			// so we just drop it
+			"qnames": Any(),
 		},
 		Obj{"Name": Var("ident")},
 	)),
@@ -95,7 +97,9 @@ var Normalizers []Mapping = []Mapping{
 			// could not find any case where this wasn't nil, but this will
 			// detect if we find any
 			"base": Is(nil),
-			"qnames": Any(), // same as ident
+			// same as ident, but with a slightly different format,
+			// so we just drop it
+			"qnames": Any(),
 		},
 		Obj{"Name": Var("ident")},
 	)),
