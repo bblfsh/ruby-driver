@@ -28,6 +28,7 @@
                },
             },
             Nodes: [
+               {},
                { '@type': "uast:Alias",
                   Name: { '@type': "uast:Identifier",
                      Name: "fnc1",
@@ -227,6 +228,7 @@
                },
             },
             Nodes: [
+               {},
                { '@type': "uast:Alias",
                   Name: { '@type': "uast:Identifier",
                      Name: "fnc2",

@@ -28,6 +28,7 @@
                },
             },
             Nodes: [
+               {},
                { '@type': "uast:Alias",
                   Name: { '@type': "uast:Identifier",
                      Name: "move",

@@ -80,17 +80,32 @@ var Normalizers []Mapping = []Mapping{
 
 	// iflipflop / eflipflop, have selector but not names
 	MapSemantic("flip_1", uast.Identifier{}, MapObj(
-		Obj{uast.KeyToken: Var("ident")},
+		Obj{
+			uast.KeyToken: Var("ident"),
+			// could not find any case where this wasn't nil, but this will
+			// detect if we find any
+			"base": Is(nil),
+			"qnames": Any(), // same as ident
+		},
 		Obj{"Name": Var("ident")},
 	)),
 	MapSemantic("flip_2", uast.Identifier{}, MapObj(
-		Obj{uast.KeyToken: Var("ident")},
+		Obj{
+			uast.KeyToken: Var("ident"),
+			// could not find any case where this wasn't nil, but this will
+			// detect if we find any
+			"base": Is(nil),
+			"qnames": Any(), // same as ident
+		},
 		Obj{"Name": Var("ident")},
 	)),
 
 	MapSemantic("comment", uast.Comment{}, MapObj(
 		Obj{
 			uast.KeyToken: CommentText([2]string{"#", ""}, "comm"),
+			// TODO(juanjux): map these two booleans in some way
+			"documentation": Any(),
+			"inline": Any(),
 		},
 		CommentNode(false, "comm", nil),
 	)),
@@ -212,8 +227,10 @@ var Normalizers []Mapping = []Mapping{
 		role.Statement, role.Function, role.Declaration, role.Identifier, role.Incomplete),
 
 	MapSemantic("begin", uast.Block{}, MapObj(
-		Obj{
-			"body": Var("body"),
+		Fields{
+			{Name: "body", Op: Var("body")},
+			// TODO(juanjux): dont drop these once we've a better solution
+			{Name: "comments", Optional: "opt_comments", Op: Any()},
 		},
 		Obj{
 			"Statements": Var("body"),
@@ -221,10 +238,10 @@ var Normalizers []Mapping = []Mapping{
 	)),
 
 	MapSemantic("def", uast.FunctionGroup{}, MapObj(
-		Obj{
-			"body":        Var("body"),
-			uast.KeyToken: Var("name"),
-			"args": Cases("case_args",
+		Fields{
+			{Name: "body", Op:        Var("body")},
+			{Name: uast.KeyToken, Op: Var("name")},
+			{Name: "args", Op: Cases("case_args",
 				Obj{
 					uast.KeyType: String("args"),
 					uast.KeyPos:  Var("_pos"),
@@ -234,10 +251,14 @@ var Normalizers []Mapping = []Mapping{
 					Not(Has{"children": Var("args")}),
 					Var("_nochildren"),
 				),
-			),
+			)},
+			{Name: "comments", Optional: "comments_opt", Op: Var("comments")},
 		},
 		Obj{
 			"Nodes": Arr(
+				Fields{
+					{Name: "comments", Optional: "comments_opt", Op: Var("comments")},
+				},
 				UASTType(uast.Alias{}, Obj{
 					"Name": UASTType(uast.Identifier{}, Obj{
 						"Name": Var("name"),

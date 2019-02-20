@@ -28,6 +28,7 @@
                },
             },
             Nodes: [
+               {},
                { '@type': "uast:Alias",
                   Name: { '@type': "uast:Identifier",
                      Name: "F",
@@ -299,6 +300,7 @@
                },
             },
             Nodes: [
+               {},
                { '@type': "uast:Alias",
                   Name: { '@type': "uast:Identifier",
                      Name: "M",

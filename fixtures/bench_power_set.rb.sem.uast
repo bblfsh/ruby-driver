@@ -60,6 +60,7 @@
                            },
                         },
                         Nodes: [
+                           {},
                            { '@type': "uast:Alias",
                               Name: { '@type': "uast:Identifier",
                                  Name: "power_set",
@@ -543,6 +544,7 @@
                            },
                         },
                         Nodes: [
+                           {},
                            { '@type': "uast:Alias",
                               Name: { '@type': "uast:Identifier",
                                  Name: "func_power_set",
@@ -956,6 +958,7 @@
                      },
                   },
                   Nodes: [
+                     {},
                      { '@type': "uast:Alias",
                         Name: { '@type': "uast:Identifier",
                            Name: "powerset",

@@ -888,6 +888,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "initialize",
@@ -1867,6 +1868,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "run",
@@ -2089,6 +2091,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "init",
@@ -2511,6 +2514,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "load_rakefile",
@@ -2594,6 +2598,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "top_level",
@@ -2947,6 +2952,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "run_with_threads",
@@ -3899,6 +3905,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "add_loader",
@@ -4263,6 +4270,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "options",
@@ -4364,6 +4372,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "thread_pool",
@@ -4665,6 +4674,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "invoke_task",
@@ -5018,6 +5028,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "parse_task_string",
@@ -5784,6 +5795,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "standard_exception_handling",
@@ -6383,6 +6395,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "exit_because_of_exception",
@@ -6484,6 +6497,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "display_error_message",
@@ -6959,6 +6973,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "display_exception_details",
@@ -7282,6 +7297,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "display_cause_details",
@@ -7538,6 +7554,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "display_exception_details_seen",
@@ -7670,6 +7687,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "has_cause?",
@@ -7836,6 +7854,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "display_exception_message_details",
@@ -8324,6 +8343,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "display_exception_backtrace",
@@ -8750,6 +8770,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "deprecate",
@@ -9246,6 +9267,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "has_chain?",
@@ -9449,6 +9471,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "have_rakefile",
@@ -10046,6 +10069,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "tty_output?",
@@ -10092,6 +10116,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "truncate_output?",
@@ -10295,6 +10320,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "display_tasks_and_comments",
@@ -12902,6 +12928,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "terminal_width",
@@ -13290,6 +13317,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "dynamic_width",
@@ -13473,6 +13501,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "dynamic_width_stty",
@@ -13603,6 +13632,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "dynamic_width_tput",
@@ -13683,6 +13713,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "unix?",
@@ -13857,6 +13888,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "windows?",
@@ -13923,6 +13955,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "truncate",
@@ -14366,6 +14399,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "display_prerequisites",
@@ -15001,6 +15035,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "trace",
@@ -15266,6 +15301,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "sort_options",
@@ -15771,6 +15807,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "standard_rake_options",
@@ -24444,6 +24481,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "select_tasks_to_show",
@@ -24881,6 +24919,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "select_trace_output",
@@ -25646,6 +25685,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "handle_options",
@@ -26638,6 +26678,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "rake_require",
@@ -27592,6 +27633,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "find_rakefile_location",
@@ -28255,6 +28297,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "print_rakefile_directory",
@@ -28636,6 +28679,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "raw_load_rakefile",
@@ -30305,6 +30349,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "glob",
@@ -30600,6 +30645,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "system_dir",
@@ -30899,6 +30945,7 @@
                                           },
                                        },
                                        Nodes: [
+                                          {},
                                           { '@type': "uast:Alias",
                                              Name: { '@type': "uast:Identifier",
                                                 Name: "standard_system_dir",
@@ -31001,6 +31048,7 @@
                                           },
                                        },
                                        Nodes: [
+                                          {},
                                           { '@type': "uast:Alias",
                                              Name: { '@type': "uast:Identifier",
                                                 Name: "standard_system_dir",
@@ -31182,6 +31230,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "collect_command_line_tasks",
@@ -31933,6 +31982,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "default_task_name",
@@ -31980,6 +32030,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "add_import",
@@ -32096,6 +32147,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "load_imports",
@@ -33023,6 +33075,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "rakefile_location",
@@ -33776,6 +33829,7 @@
                                        },
                                     },
                                     Nodes: [
+                                       {},
                                        { '@type': "uast:Alias",
                                           Name: { '@type': "uast:Identifier",
                                              Name: "set_default_options",

@@ -46,6 +46,7 @@
                      },
                   },
                   Nodes: [
+                     {},
                      { '@type': "uast:Alias",
                         Name: { '@type': "uast:Identifier",
                            Name: "initialize",
@@ -80,6 +81,7 @@
                      },
                   },
                   Nodes: [
+                     {},
                      { '@type': "uast:Alias",
                         Name: { '@type': "uast:Identifier",
                            Name: "new",

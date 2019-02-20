@@ -28,6 +28,7 @@
                },
             },
             Nodes: [
+               {},
                { '@type': "uast:Alias",
                   Name: { '@type': "uast:Identifier",
                      Name: "testfnc1",
@@ -49,6 +50,7 @@
                                  },
                               },
                               Nodes: [
+                                 {},
                                  { '@type': "uast:Alias",
                                     Name: { '@type': "uast:Identifier",
                                        Name: "testfnc2",
@@ -93,6 +95,7 @@
                },
             },
             Nodes: [
+               {},
                { '@type': "uast:Alias",
                   Name: { '@type': "uast:Identifier",
                      Name: "testfnc3",
@@ -114,6 +117,7 @@
                                  },
                               },
                               Nodes: [
+                                 {},
                                  { '@type': "uast:Alias",
                                     Name: { '@type': "uast:Identifier",
                                        Name: "testfnc4",
@@ -135,6 +139,7 @@
                                                    },
                                                 },
                                                 Nodes: [
+                                                   {},
                                                    { '@type': "uast:Alias",
                                                       Name: { '@type': "uast:Identifier",
                                                          Name: "testfnc5",

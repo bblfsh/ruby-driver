@@ -396,12 +396,12 @@ module NodeConverter
           "documentation" => comment.document?,
           "@pos" => {
             @@typekey => "uast:Positions",
-            "@start" => {
+            "start" => {
               @@typekey => "uast:Position",
               "line" => comment.loc.first_line,
               "col" => comment.loc.column + 1
             },
-            "@end" => {
+            "end" => {
               @@typekey => "uast:Position",
               "line" => comment.loc.last_line,
               "col" => comment.loc.last_column
