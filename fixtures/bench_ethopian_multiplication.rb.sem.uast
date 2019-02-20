@@ -28,6 +28,7 @@
                },
             },
             Nodes: [
+               {},
                { '@type': "uast:Alias",
                   Name: { '@type': "uast:Identifier",
                      Name: "halve",
@@ -144,6 +145,7 @@
                },
             },
             Nodes: [
+               {},
                { '@type': "uast:Alias",
                   Name: { '@type': "uast:Identifier",
                      Name: "double",
@@ -260,6 +262,7 @@
                },
             },
             Nodes: [
+               {},
                { '@type': "uast:Alias",
                   Name: { '@type': "uast:Identifier",
                      Name: "ethiopian_multiply",
@@ -931,6 +934,7 @@
                },
             },
             Nodes: [
+               {},
                { '@type': "uast:Alias",
                   Name: { '@type': "uast:Identifier",
                      Name: "rec_ethiopian_multiply",

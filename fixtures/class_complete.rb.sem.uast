@@ -137,6 +137,7 @@
                                  },
                               },
                               Nodes: [
+                                 {},
                                  { '@type': "uast:Alias",
                                     Name: { '@type': "uast:Identifier",
                                        Name: "initialize",
@@ -238,6 +239,7 @@
                                  },
                               },
                               Nodes: [
+                                 {},
                                  { '@type': "uast:Alias",
                                     Name: { '@type': "uast:Identifier",
                                        Name: "foo",
@@ -272,6 +274,7 @@
                                  },
                               },
                               Nodes: [
+                                 {},
                                  { '@type': "uast:Alias",
                                     Name: { '@type': "uast:Identifier",
                                        Name: "use",
@@ -438,6 +441,7 @@
                                  },
                               },
                               Nodes: [
+                                 {},
                                  { '@type': "uast:Alias",
                                     Name: { '@type': "uast:Identifier",
                                        Name: "selfinstance",

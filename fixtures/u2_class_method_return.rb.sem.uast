@@ -46,6 +46,7 @@
                      },
                   },
                   Nodes: [
+                     {},
                      { '@type': "uast:Alias",
                         Name: { '@type': "uast:Identifier",
                            Name: "method1",
@@ -93,6 +94,7 @@
                      },
                   },
                   Nodes: [
+                     {},
                      { '@type': "uast:Alias",
                         Name: { '@type': "uast:Identifier",
                            Name: "method2",
@@ -155,6 +157,7 @@
                      },
                   },
                   Nodes: [
+                     {},
                      { '@type': "uast:Alias",
                         Name: { '@type': "uast:Identifier",
                            Name: "method3",
