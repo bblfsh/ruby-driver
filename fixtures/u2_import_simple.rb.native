@@ -1,7 +1,5 @@
 { '@type': "module",
-   '@role': [Unannotated],
    file: { '@type': "send_require",
-      '@role': [Unannotated],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             line: 1,
@@ -17,7 +15,6 @@
       values: [
          { '@type': "str",
             '@token': "while",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   line: 1,

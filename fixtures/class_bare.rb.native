@@ -1,8 +1,6 @@
 { '@type': "module",
-   '@role': [Unannotated],
    file: { '@type': "class",
       '@token': "Foo",
-      '@role': [Unannotated],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             line: 1,
@@ -15,7 +13,6 @@
       },
       body: [
          { '@type': "NilNode",
-            '@role': [Unannotated],
          },
       ],
       parent: ~,

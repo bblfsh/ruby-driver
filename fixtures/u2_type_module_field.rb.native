@@ -1,8 +1,6 @@
 { '@type': "module",
-   '@role': [Unannotated],
    file: { '@type': "module",
       '@token': "Testmodule1",
-      '@role': [Unannotated],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             line: 1,
@@ -15,7 +13,6 @@
       },
       begin: [
          { '@type': "send_qualified",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   line: 2,
@@ -32,7 +29,6 @@
             values: [
                { '@type': "sym",
                   '@token': "a",
-                  '@role': [Unannotated],
                   '@pos': { '@type': "uast:Positions",
                      start: { '@type': "uast:Position",
                         line: 2,

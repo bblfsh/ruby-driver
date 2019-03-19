@@ -1,8 +1,6 @@
 { '@type': "module",
-   '@role': [Unannotated],
    file: { '@type': "class",
       '@token': "Testcls1",
-      '@role': [Unannotated],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             line: 1,
@@ -16,7 +14,6 @@
       body: [
          { '@type': "class",
             '@token': "Testcls2",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   line: 2,
@@ -29,7 +26,6 @@
             },
             body: [
                { '@type': "NilNode",
-                  '@role': [Unannotated],
                },
             ],
             parent: ~,

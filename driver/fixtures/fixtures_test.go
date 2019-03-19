@@ -47,9 +47,6 @@ var Suite = &fixtures.Suite{
 			"true",
 		},
 	},
-	Docker: fixtures.DockerConfig{
-		Image: "ruby:2.4",
-	},
 }
 
 func TestRubyDriver(t *testing.T) {

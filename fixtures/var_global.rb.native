@@ -1,8 +1,6 @@
 { '@type': "module",
-   '@role': [Unannotated],
    file: { '@type': "gvar",
       '@token': "$foo",
-      '@role': [Unannotated],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             line: 1,

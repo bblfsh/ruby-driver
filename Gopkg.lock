@@ -376,8 +376,8 @@
     "uast/viewer",
     "uast/yaml"
   ]
-  revision = "e39a01efecd8a8670471352b3276c17d5e0dd7a8"
-  version = "v2.14.1"
+  revision = "7f43f27c14a259a0a396cc70c911424b8e8b11c1"
+  version = "v2.15.0"
 
 [[projects]]
   name = "gopkg.in/src-d/go-errors.v1"
@@ -394,6 +394,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "45c4807619450f2081f649b53c89b8b2310eebfc2f33543c58de113f3c449f7a"
+  inputs-digest = "667361b2470dfb4df1b50f522109b120735a6354dc40c3cf7e0520f2f2080fe5"
   solver-name = "gps-cdcl"
   solver-version = 1

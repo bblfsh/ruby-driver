@@ -1,7 +1,5 @@
 { '@type': "module",
-   '@role': [Unannotated],
    file: { '@type': "send_qualified",
-      '@role': [Unannotated],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             line: 1,
@@ -18,7 +16,6 @@
       values: [
          { '@type': "str",
             '@token': "hello world",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   line: 1,
