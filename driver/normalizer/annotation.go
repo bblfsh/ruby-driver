@@ -13,7 +13,7 @@ var Native = Transformers([][]Transformer{
 }...)
 
 var Code = []CodeTransformer{
-	positioner.NewFillOffsetFromLineCol(),
+	positioner.FromLineCol(),
 }
 
 var PreprocessCode = []CodeTransformer{}
