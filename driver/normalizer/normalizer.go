@@ -1,9 +1,10 @@
 package normalizer
 
 import (
-	"gopkg.in/bblfsh/sdk.v2/uast"
-	"gopkg.in/bblfsh/sdk.v2/uast/role"
-	. "gopkg.in/bblfsh/sdk.v2/uast/transformer"
+	"github.com/bblfsh/sdk/v3/uast"
+	"github.com/bblfsh/sdk/v3/uast/role"
+	. "github.com/bblfsh/sdk/v3/uast/transformer"
+	"github.com/bblfsh/sdk/v3/uast/transformer/positioner"
 )
 
 var Preprocess = Transformers([][]Transformer{
@@ -15,6 +16,10 @@ var Normalize = Transformers([][]Transformer{
 }...)
 
 var Preprocessors = []Mapping{}
+
+var PreprocessCode = []CodeTransformer{
+	positioner.FromLineCol(),
+}
 
 func mapIdentifier(key string) Mapping {
 	return MapSemantic(key, uast.Identifier{}, MapObj(
@@ -109,7 +114,7 @@ var Normalizers []Mapping = []Mapping{
 			uast.KeyToken: CommentText([2]string{"#", ""}, "comm"),
 			// TODO(juanjux): map these two booleans in some way
 			"documentation": Any(),
-			"inline": Any(),
+			"inline":        Any(),
 		},
 		CommentNode(false, "comm", nil),
 	)),
@@ -243,7 +248,7 @@ var Normalizers []Mapping = []Mapping{
 
 	MapSemantic("def", uast.FunctionGroup{}, MapObj(
 		Fields{
-			{Name: "body", Op:        Var("body")},
+			{Name: "body", Op: Var("body")},
 			{Name: uast.KeyToken, Op: Var("name")},
 			{Name: "args", Op: Cases("case_args",
 				Obj{
