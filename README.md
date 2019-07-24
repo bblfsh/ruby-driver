@@ -1,4 +1,4 @@
-# Ruby driver for [Babelfish](https://github.com/bblfsh/bblfshd) ![Driver Status](https://img.shields.io/badge/status-beta-dbd25c.svg) [![Build Status](https://travis-ci.org/bblfsh/ruby-driver.svg?branch=master)](https://travis-ci.org/bblfsh/ruby-driver) ![Native Version](https://img.shields.io/badge/ruby%20version-2.4.4--r0-aa93ea.svg) ![Go Version](https://img.shields.io/badge/go%20version-1.12-63afbf.svg)
+# Ruby driver for [Babelfish](https://github.com/bblfsh/bblfshd) ![Driver Status](https://img.shields.io/badge/status-beta-dbd25c.svg) [![Build Status](https://travis-ci.org/bblfsh/ruby-driver.svg?branch=master)](https://travis-ci.org/bblfsh/ruby-driver) ![Native Version](https://img.shields.io/badge/ruby%20version-2.4-aa93ea.svg) ![Go Version](https://img.shields.io/badge/go%20version-1.12-63afbf.svg)
 
 ruby driver for [babelfish](https://github.com/bblfsh/bblfshd).
 

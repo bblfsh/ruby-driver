@@ -33,6 +33,7 @@ RUN gem install  -V --no-document --local --ignore-dependencies --install-dir ./
 # Stage 1.1: Native Driver Tests
 #================================
 FROM native as native_test
+
 # install test dependencies
 RUN export BUNDLE_IGNORE_CONFIG=1 && bundle install --path vendor/bundle --verbose
 
@@ -43,7 +44,7 @@ RUN export GEM_PATH=./vendor/bundle/ruby/2.4.0 && rake test --trace
 #=================================
 # Stage 2: Go Driver Server Build
 #=================================
-FROM golang:1.10-alpine as driver
+FROM golang:1.12-alpine as driver
 
 ENV DRIVER_REPO=github.com/bblfsh/ruby-driver
 ENV DRIVER_REPO_PATH=/go/src/$DRIVER_REPO
@@ -55,6 +56,9 @@ ADD driver $DRIVER_REPO_PATH/driver
 WORKDIR $DRIVER_REPO_PATH/
 
 ENV GO111MODULE=on GOFLAGS=-mod=vendor
+
+# workaround for https://github.com/golang/go/issues/28065
+ENV CGO_ENABLED=0
 
 # build server binary
 RUN go build -o /tmp/driver ./driver/main.go
