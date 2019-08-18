@@ -556,7 +556,7 @@
                                        },
                                        'when_clauses': [
                                           { '@type': "when",
-                                             '@role': [Case, Expression],
+                                             '@role': [Case, Expression, Switch],
                                              body: { '@type': "lvasgn",
                                                 '@token': "low",
                                                 '@role': [Assignment, Binary, Body, Expression, Identifier, Left],
@@ -643,7 +643,7 @@
                                              ],
                                           },
                                           { '@type': "when",
-                                             '@role': [Case, Expression],
+                                             '@role': [Case, Expression, Switch],
                                              body: { '@type': "lvasgn",
                                                 '@token': "high",
                                                 '@role': [Assignment, Binary, Body, Expression, Identifier, Left],

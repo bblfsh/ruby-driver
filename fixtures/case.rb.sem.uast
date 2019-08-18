@@ -115,7 +115,7 @@
             },
             'when_clauses': [
                { '@type': "ruby:when",
-                  '@role': [Case, Expression],
+                  '@role': [Case, Expression, Switch],
                   body: { '@type': "ruby:lvasgn",
                      '@role': [Assignment, Binary, Body, Expression, Identifier, Left],
                      '@pos': { '@type': "uast:Positions",
@@ -171,7 +171,7 @@
                   ],
                },
                { '@type': "ruby:when",
-                  '@role': [Case, Expression],
+                  '@role': [Case, Expression, Switch],
                   body: { '@type': "ruby:lvasgn",
                      '@role': [Assignment, Binary, Body, Expression, Identifier, Left],
                      '@pos': { '@type': "uast:Positions",

@@ -122,7 +122,7 @@ var Annotations = []Mapping{
 	AnnotateType("break", nil, role.Statement, role.Break),
 	AnnotateType("undef", nil, role.Statement, role.Incomplete),
 	AnnotateType("case", nil, role.Statement, role.Switch),
-	AnnotateType("when", nil, role.Expression, role.Case),
+	AnnotateType("when", nil, role.Expression, role.Switch, role.Case),
 	AnnotateType("super", nil, role.Expression, role.Call, role.Base),
 	AnnotateType("zsuper", nil, role.Expression, role.Call, role.Base),
 	AnnotateType("yield", nil, role.Return, role.Incomplete),
