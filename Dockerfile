@@ -12,7 +12,7 @@
 #==============================
 # Stage 1: Native Driver Build
 #==============================
-FROM ruby:2.4-alpine3.7 as native
+FROM ruby:2.5-alpine3.7 as native
 
 # install build dependencies
 RUN apk add --no-cache make libc-dev gcc
@@ -25,7 +25,7 @@ WORKDIR /native
 # build native driver
 RUN export BUNDLE_IGNORE_CONFIG=1 && bundle install --path vendor/bundle --without development --verbose
 RUN rake build --trace
-RUN gem install  -V --no-document --local --ignore-dependencies --install-dir ./gems vendor/bundle/ruby/2.4.0/cache/*
+RUN gem install  -V --no-document --local --ignore-dependencies --install-dir ./gems vendor/bundle/ruby/2.5.0/cache/*
 RUN gem install  -V --no-document --local --ignore-dependencies --install-dir ./gems --bindir ./build ./pkg/*
 
 
@@ -38,7 +38,7 @@ FROM native as native_test
 RUN export BUNDLE_IGNORE_CONFIG=1 && bundle install --path vendor/bundle --verbose
 
 # run native driver tests
-RUN export GEM_PATH=./vendor/bundle/ruby/2.4.0 && rake test --trace
+RUN export GEM_PATH=./vendor/bundle/ruby/2.5.0 && rake test --trace
 
 
 #=================================
@@ -68,7 +68,7 @@ RUN go test -c -o /tmp/fixtures.test ./driver/fixtures/
 #=======================
 # Stage 3: Driver Build
 #=======================
-FROM ruby:2.4-alpine3.7
+FROM ruby:2.5-alpine3.7
 
 
 

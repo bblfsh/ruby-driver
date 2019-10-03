@@ -8,8 +8,9 @@ class RubyDriverTest < Minitest::Test
 
   def test_wrong_request
     input = File.read("test/wrong_input.json")
-    @driver.response_ast(JSON::parse(input))
-    assert_raises
+    res = @driver.response_ast(JSON::parse(input))
+    assert(res.to_hash.has_key?(:status), res.to_hash)
+    assert_equal(:error, res.status)
   end
 
   def test_parse_request
