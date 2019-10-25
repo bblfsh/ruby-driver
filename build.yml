@@ -1,6 +1,6 @@
 sdk: '2'
 go-runtime:
-  version: '1.12-alpine'
+  version: '1.13-alpine'
 native:
   image: 'ruby:2.5-alpine3.7'
   static:
